@@ -1,0 +1,18 @@
+:template: product-landing
+:hidefeedback: header
+:noprevnext:
+
+================
+What is MongoDB?
+================
+
+.. introduction::
+
+   MongoDB is a document database designed for ease of application
+   development and scaling.
+
+.. toctree::
+   :titlesonly:
+
+   Introduction </introduction>
+   /installation
