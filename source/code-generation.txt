@@ -11,3 +11,10 @@ Code Generation
    :class: singlecol
 
 123
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   /code-generation/download-all-code-files
+   /code-generation/download-single-code-files
