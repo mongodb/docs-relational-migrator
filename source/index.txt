@@ -23,4 +23,3 @@ What is Relational Migrator
    /diagrams/diagrams
    /jobs/sync-jobs
    /connection-strings/connection-strings
-   /code-generation
