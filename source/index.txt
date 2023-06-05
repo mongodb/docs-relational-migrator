@@ -1,10 +1,19 @@
-===================
-Relational Migrator
-===================
+:template: product-landing
+:hidefeedback: header
+:noprevnext:
 
-.. default-domain:: mongodb
+================
+What is MongoDB?
+================
 
-Your words here. Don't forget to add a toctree!
+.. introduction::
 
-Have a lovely day!
+   MongoDB is a document database designed for ease of application
+   development and scaling.
 
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   Introduction </introduction>
+   Installation </installation>
