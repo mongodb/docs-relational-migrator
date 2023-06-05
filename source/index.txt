@@ -15,6 +15,7 @@ What is MongoDB?
    :titlesonly:
    :hidden:
 
-   Introduction </introduction>
-   Installation </installation>
-   Test
+   /introduction
+   /installation
+   /test
+   
