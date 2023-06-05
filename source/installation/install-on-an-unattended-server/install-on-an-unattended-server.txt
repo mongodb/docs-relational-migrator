@@ -1,0 +1,20 @@
+====================================
+Installation on an Unattended Server
+====================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+TBD.
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   /installation/install-on-an-unattended-server/install-debian-server
+   /installation/install-on-an-unattended-server/install-rhel-server
