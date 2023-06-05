@@ -15,6 +15,7 @@ What is MongoDB?
    :titlesonly:
    :hidden:
 
+   MongoDB Shell (mongosh) <https://docs.mongodb.com/mongodb-shell/>
    /introduction
    /installation
    /test
