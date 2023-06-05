@@ -17,3 +17,10 @@ What is MongoDB?
    /introduction
    /installation
    /code-generation/code-generation
+   /projects/projects
+   /mapping-rules
+   /table-filters
+   /diagrams
+   /jobs
+   /connections-strings
+   /code-generation
