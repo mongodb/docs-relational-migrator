@@ -2,9 +2,9 @@
 :hidefeedback: header
 :noprevnext:
 
-================
-What is MongoDB?
-================
+===========================
+What is Relational Migrator
+===========================
 
 .. introduction::
 
@@ -20,7 +20,7 @@ What is MongoDB?
    /projects/projects
    /mapping-rules/mapping-rules
    /table-filters/table-filters
+   /connection-strings/connection-strings
    /diagrams/diagrams
    /jobs/sync-jobs
-   /connections-strings/connection-strings
    /code-generation
