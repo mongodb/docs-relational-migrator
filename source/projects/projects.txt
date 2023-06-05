@@ -1,0 +1,29 @@
+========
+Projects
+========
+
+TBD.
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+TBD.
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   /projects/configure-settings
+   /projects/create-project-live-connection
+   /projects/create-project-loading-schema-files
+   /projects/create-project-sample-schema
+   /projects/deleting-projects
+   /projects/export-project
+   /projects/import-project
+   /projects/renaming-projects
+   /projects/manage-relational-connection
