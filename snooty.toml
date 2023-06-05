@@ -8,7 +8,6 @@ intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
 # toc_landing_pages = ["/paths/to/pages/that/have/nested/content"]
 toc_landing_pages = [
 "/installation",
-"/introduction",
 "/code-generation",
 "/code-generation/download-all-code-files",
 "/code-generation/download-single-code-files"
