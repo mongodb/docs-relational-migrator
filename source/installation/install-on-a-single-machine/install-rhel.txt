@@ -3,7 +3,3 @@ Install RHEL
 ============
 
 TBD.
-
-.. toctree::
-   :hidden:
-   :titlesonly:

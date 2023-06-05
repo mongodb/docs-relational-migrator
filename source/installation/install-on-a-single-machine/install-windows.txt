@@ -3,7 +3,3 @@ Install Windows
 ===============
 
 TBD.
-
-.. toctree::
-   :hidden:
-   :titlesonly:
