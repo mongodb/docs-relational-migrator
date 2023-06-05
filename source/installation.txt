@@ -16,7 +16,5 @@ TBD.
    :hidden:
    :titlesonly:
 
-   /installation/install-on-a-single-machine/install-mac
-   /installation/install-on-a-single-machine/install-rhel
-   /installation/install-on-a-single-machine/install-ubuntu
-   /installation/install-on-a-single-machine/install-windows
+   /installation/install-on-a-single-machine/install-on-a-single-machine
+   /installation/install-on-a-single-machine/install-on-an-unattended-server

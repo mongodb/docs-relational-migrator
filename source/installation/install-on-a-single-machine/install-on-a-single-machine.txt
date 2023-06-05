@@ -1,6 +1,6 @@
-===========================
-Install on a Single Machine
-===========================
+================================
+Installation on a Single Machine
+================================
 
 .. default-domain:: mongodb
 
