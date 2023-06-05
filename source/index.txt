@@ -18,9 +18,9 @@ What is MongoDB?
    /installation
    /code-generation/code-generation
    /projects/projects
-   /mapping-rules
-   /table-filters
-   /diagrams
-   /jobs
-   /connections-strings
+   /mapping-rules/mapping-rules
+   /table-filters/table-filters
+   /diagrams/diagrams
+   /jobs/sync-jobs
+   /connections-strings/connection-strings
    /code-generation
