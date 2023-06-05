@@ -16,5 +16,5 @@ TBD.
    :hidden:
    :titlesonly:
 
-   /installation/install-on-a-single-machine
-   /installation/install-on-an-unattended-server
+   /installation/install-on-a-single-machine/install-on-a-single-machine
+   /installation/install-on-an-unattended-server/install-on-an-unattended-server
