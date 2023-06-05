@@ -8,7 +8,6 @@ TBD.
    :hidden:
    :titlesonly:
 
-   /installation/install-on-a-single-machine/install-mac
    /installation/install-on-a-single-machine/install-rhel
    /installation/install-on-a-single-machine/install-ubuntu
    /installation/install-on-a-single-machine/install-windows

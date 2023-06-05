@@ -18,4 +18,4 @@ What is MongoDB?
    /introduction
    /installation
    /test
-   
+   /code-generation
