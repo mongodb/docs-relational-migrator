@@ -16,10 +16,10 @@ TBD.
    :hidden:
    :titlesonly:
 
-   /installation/install-on-an-unattended-server/install-debian-server
-   /installation/install-on-an-unattended-server/debian-system-service
-   /installation/install-on-an-unattended-server/install-rhel-server
    /installation/install-on-an-unattended-server/install-windows-server
+   /installation/install-on-an-unattended-server/install-debian-server
+   /installation/install-on-an-unattended-server/install-rhel-server
+   /installation/install-on-an-unattended-server/windows-system-service
+   /installation/install-on-an-unattended-server/debian-system-service
    /installation/install-on-an-unattended-server/rhel-system-service
    /installation/install-on-an-unattended-server/windows-external-access
-   /installation/install-on-an-unattended-server/windows-system-service

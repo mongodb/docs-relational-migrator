@@ -16,10 +16,10 @@ What is Relational Migrator
 
    /introduction
    /installation
-   /code-generation/code-generation
    /projects/projects
    /mapping-rules/mapping-rules
    /table-filters/table-filters
    /diagrams/diagrams
    /jobs/sync-jobs
    /connection-strings/connection-strings
+   /code-generation/code-generation
