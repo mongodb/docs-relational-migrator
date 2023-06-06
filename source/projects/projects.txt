@@ -18,12 +18,12 @@ TBD.
    :hidden:
    :titlesonly:
 
-   /projects/configure-settings
    /projects/create-project-live-connection
    /projects/create-project-loading-schema-files
    /projects/create-project-sample-schema
-   /projects/deleting-projects
-   /projects/export-project
-   /projects/import-project
-   /projects/renaming-projects
+   /projects/configure-settings
    /projects/manage-relational-connection
+   /projects/import-project
+   /projects/export-project
+   /projects/deleting-projects
+   /projects/renaming-projects
