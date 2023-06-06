@@ -16,10 +16,10 @@ TBD.
    :titlesonly:
    :hidden:
 
-   Install on Windows </installation/install-on-an-unattended-server/install-windows-server>
-   Install on Linux </installation/install-on-an-unattended-server/install-debian-server>
-   Install on RHEL/CentOS </installation/install-on-an-unattended-server/install-rhel-server>
-   Run Relational Migrator as a System Service on Windows </installation/install-on-an-unattended-server/windows-system-service>
-   Run Relational Migrator as a System Service on Debian </installation/install-on-an-unattended-server/debian-system-service>
-   Run Relational Migrator as a System Service on RHEL/CentOS </installation/install-on-an-unattended-server/rhel-system-service>
-   Enable External Access to Relational Migrator on Windows </installation/install-on-an-unattended-server/windows-external-access>
+   /installation/install-on-an-unattended-server/install-windows-server
+   /installation/install-on-an-unattended-server/install-debian-server
+   /installation/install-on-an-unattended-server/install-rhel-server
+   /installation/install-on-an-unattended-server/windows-system-service
+   /installation/install-on-an-unattended-server/debian-system-service
+   /installation/install-on-an-unattended-server/rhel-system-service
+   /installation/install-on-an-unattended-server/windows-external-access
