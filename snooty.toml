@@ -6,9 +6,9 @@ intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
               ]
 
 # toc_landing_pages = ["/paths/to/pages/that/have/nested/content"]
-toc_landing_pages = [
-"/installation/install-on-an-unattended-server"
-]
+#toc_landing_pages = [
+#"/installation/install-on-an-unattended-server"
+#]
 
 # [constants]
 # constant = "value"
