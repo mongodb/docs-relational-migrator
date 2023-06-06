@@ -13,8 +13,8 @@ Installation on an Unattended Server
 TBD.
 
 .. toctree::
-   :hidden:
    :titlesonly:
+   :hidden:
 
    Install on Windows </installation/install-on-an-unattended-server/install-windows-server>
    Install on Linux </installation/install-on-an-unattended-server/install-debian-server>
