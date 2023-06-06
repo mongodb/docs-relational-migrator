@@ -19,7 +19,7 @@ What is Relational Migrator
    /code-generation/code-generation
    /projects/projects
    /mapping-rules/mapping-rules
+   /jobs/sync-jobs
    /table-filters/table-filters
    /diagrams/diagrams
-   /jobs/sync-jobs
    /connection-strings/connection-strings
