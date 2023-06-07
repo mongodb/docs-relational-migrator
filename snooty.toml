@@ -20,7 +20,7 @@ toc_landing_pages = [
 "table-filters/table-filters",
 "diagrams/diagrams",
 "diagrams/navigate-diagrams/navigate-diagrams",
-"diagrams/working-with-entities/working-with-entities",
+"diagrams/navigate-diagrams/working-with-entities/working-with-entities",
 "jobs/sync-jobs",
 "jobs/data-verification/data-verification",
 "connection-strings/connection-strings",
