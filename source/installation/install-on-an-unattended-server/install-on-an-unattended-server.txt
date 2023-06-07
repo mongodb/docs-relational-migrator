@@ -4,10 +4,13 @@ Installation on an Unattended Server
 
 .. default-domain:: mongodb
 
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 1
-   :class: singlecol
-
 TBD.
+
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   /installation/install-on-an-unattended-server/windows-server-installation/windows-server-installation
+   /installation/install-on-an-unattended-server/rhel-centos-server-installation/rhel-centos-server-installation
+   /installation/install-on-an-unattended-server/debian-server-installation/debian-server-installation
