@@ -1,10 +1,25 @@
-===================
-Relational Migrator
-===================
+:template: product-landing
+:hidefeedback: header
+:noprevnext:
 
-.. default-domain:: mongodb
+===========================
+What is Relational Migrator
+===========================
 
-Your words here. Don't forget to add a toctree!
+.. introduction::
 
-Have a lovely day!
+   MongoDB Relational Migrator is...
 
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   /introduction
+   /installation
+   /projects/projects
+   /mapping-rules/mapping-rules
+   /table-filters/table-filters
+   /diagrams/diagrams
+   /jobs/sync-jobs
+   /connection-strings/connection-strings
+   /code-generation/code-generation
