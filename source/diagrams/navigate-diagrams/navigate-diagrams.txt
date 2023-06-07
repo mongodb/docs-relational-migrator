@@ -7,3 +7,4 @@ Navigate Diagrams and Entities
    :titlesonly:
 
    /diagrams/navigate-diagrams/apply-layout
+   /diagrams/navigate-diagrams/working-with-entities/working-with-entities
