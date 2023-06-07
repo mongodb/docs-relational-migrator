@@ -1,0 +1,25 @@
+:template: product-landing
+:hidefeedback: header
+:noprevnext:
+
+===========================
+What is Relational Migrator
+===========================
+
+.. introduction::
+
+   MongoDB Relational Migrator is...
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   /introduction
+   /installation
+   /projects/projects
+   /mapping-rules/mapping-rules
+   /table-filters/table-filters
+   /diagrams/diagrams
+   /jobs/sync-jobs
+   /connection-strings/connection-strings
+   /code-generation/code-generation
