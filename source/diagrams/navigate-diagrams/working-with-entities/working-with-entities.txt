@@ -8,8 +8,8 @@ TBD.
    :hidden:
    :titlesonly:
 
-   /diagrams/navigate-diagrams/working-with-entities/copy-entities
-   /diagrams/navigate-diagrams/working-with-entities/delete-entities
-   /diagrams/navigate-diagrams/working-with-entities/hide-entities
-   /diagrams/navigate-diagrams/working-with-entities/move-entities
    /diagrams/navigate-diagrams/working-with-entities/select-entities
+   /diagrams/navigate-diagrams/working-with-entities/move-entities
+   /diagrams/navigate-diagrams/working-with-entities/copy-entities
+   /diagrams/navigate-diagrams/working-with-entities/hide-entities
+   /diagrams/navigate-diagrams/working-with-entities/delete-entities
