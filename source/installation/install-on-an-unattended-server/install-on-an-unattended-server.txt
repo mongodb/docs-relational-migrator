@@ -2,10 +2,7 @@
 Installation on an Unattended Server
 ====================================
 
-.. default-domain:: mongodb
-
 TBD.
-
 
 .. toctree::
    :titlesonly:
