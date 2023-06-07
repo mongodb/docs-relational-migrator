@@ -6,5 +6,4 @@ Navigate Diagrams and Entities
    :hidden:
    :titlesonly:
 
-   /diagrams/understand-diagrams
    /diagrams/navigate-diagrams/apply-layout
