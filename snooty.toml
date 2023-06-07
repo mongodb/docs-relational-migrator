@@ -8,15 +8,15 @@ intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
 # toc_landing_pages = ["/paths/to/pages/that/have/nested/content"]
 
 toc_landing_pages = [
-"installation/install-on-an-unattended-server/install-on-a-single-machine",
+"installation/install-on-a-single-machine/install-on-a-single-machine",
 "installation/install-on-an-unattended-server/install-on-an-unattended-server",
 "installation/install-on-an-unattended-server/debian-server-installation/debian-server-installation",
 "installation/install-on-an-unattended-server/windows-server-installation/windows-server-installation",
 "installation/install-on-an-unattended-server/rhel-centos-server-installation/rhel-centos-server-installation",
 "projects/projects",
 "mapping-rules/mapping-rules",
-"mapping-rules/mapping-rule-options",
-"mapping-rules/calculated-fields",
+"mapping-rules/mapping-rule-options/mapping-rule-options",
+"mapping-rules/calculated-fields/calculated-fields",
 "table-filters/table-filters",
 "diagrams/diagrams",
 "diagrams/diagrams/navigate-diagrams/navigate-diagrams",
