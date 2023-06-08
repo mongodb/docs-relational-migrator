@@ -1,3 +1,54 @@
+
 ===============
 Stop a Sync Job
 ===============
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+You can stop a sync job from the **Job Overview** pane 
+on the **Data Migration** tab.
+
+About this Task
+---------------
+
+The effects of stopping a sync job on your destination database depend 
+on the type and stage of the sync job:
+
+- If you stop a snapshot sync job during the snapshot stage, any partially migrated data 
+  remains in the MongoDB database.
+
+- If you stop a continuous sync job during the CDC stage, the process ends gracefully, 
+  and Relational Migrator cleans up any temporary data.
+
+Once initiated, the process of canceling or completing a sync job may take up to one minute.
+
+Steps
+-----
+
+To stop your sync job, follow the instructions below based on the current stage of execution:
+
+.. tabs::
+
+   .. tab:: Stop a Sync Job in Snapshot stage
+      :tabid: stop-snapshot
+
+      #. Open the **Data Migration** tab.
+      #. Click on the sync job in the **History**  pane.
+      #. Click the red **Terminate** button in the upper-right corner of the screen.
+      #. Click the red **Terminate** button on the pop-up modal.
+      Once a sync job cancels, an **x** icon displays in the **History** pane, and the status of the sync job updates to **Snapshot cancelled**.
+
+   .. tab:: Stop a Sync Job in CDC stage
+      :tabid: stop-cdc
+      #. Open the **Data Migration** tab.
+      #. Click on the sync job in the **History**  pane.
+      #. Click the **Complete CDC**  button in the upper-right corner of the screen.
+      #. Click the green **Complete CDC** button on the pop-up modal.
+         Once the sync job completes, a checkmark icon displays in the **History** pane, all stages display a status of **COMPLETED**, and the status of the sync job updates to **CDC completed**.
+
+Learn More
+----------
+
+`Create a Sync job </Jobs/creating-jobs>`__ 
+`Monitor a Sync Job </Jobs/monitoring-jobs>`__ 

@@ -13,7 +13,7 @@ Snapshot: Snapshot sync jobs run once, typically for a point in time migration s
 
 Continuous: Continuous sync jobs cover new incoming data for a zero-downtime Change Data Capture (CDC) migration strategy. Continuous jobs run a snapshot stage first, followed by a CDC stage that captures database updates in near-real time. When you run a continuous sync job, your source and destination database data remain in sync.
 
-... note:: 
+.. note::
    **Private Preview : Kafka Deployment Model**
 
    The Kafka deployment model of Relational Migrator allows you to 
