@@ -33,7 +33,7 @@ and is more secure than specifying plaintext credentials in the URI.
 .. _rm-mysql:
 
 MySQL
------
+~~~~~
 
 The general form for a MySQL connection string is:
 
@@ -73,7 +73,7 @@ details:
 .. _rm-oracle:
 
 Oracle
-------
+~~~~~~
 
 The general form for an Oracle connection string is:
 
@@ -113,7 +113,7 @@ details:
 .. _rm-postgresql:
 
 PostgreSQL
-----------
+~~~~~~~~~~
 
 The general form for a PostgreSQL connection string is:
 
@@ -151,7 +151,7 @@ details:
 .. _rm-sql-server:
 
 SQL Server
-----------
+~~~~~~~~~~
 
 The general form for a SQL Server connection string is:
 
