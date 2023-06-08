@@ -98,16 +98,14 @@ details:
    * - SID (System Identifier)
      - ``ORCL``
 
-:::info
+.. note::
 
-To learn more about Oracle connection strings, see:
+   To learn more about Oracle connection strings, see:
 
+   * `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/cd/B28359_01/java.111/b31224/jdbcthin.htm>`__.
 
-* `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/cd/B28359_01/java.111/b31224/jdbcthin.htm>`__.
+   * `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
 
-* `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
-
-::
 
 .. _rm-postgresql:
 
@@ -141,14 +139,13 @@ details:
    * - Database
      - ``pg-demo``   
 
-:::info
+.. note::
 
-To learn more about PostgreSQL connection strings, see:
+   To learn more about PostgreSQL connection strings, see:
 
 
-* `PostgreSQL Connection Configuration Properties <https://jdbc.postgresql.org/documentation/80/connect.html>`__
+   * `PostgreSQL Connection Configuration Properties <https://jdbc.postgresql.org/documentation/80/connect.html>`__
 
-::
 
 .. _rm-sql-server:
 
@@ -195,18 +192,18 @@ The encrypt property controls TLS. To disable it, set ``encrypt=false;``.
 When TLS is enabled, the driver tries to validate the server's certificate by default.
 To implicitly trust the server certificate, set ``trustServerCertificate=true;``.
 
-:::info
+.. note::
 
-To learn more about SQL Server connection strings, see:
+   To learn more about SQL Server connection strings, see:
 
 
-* `Setting Connection Properties <https://learn.microsoft.com/en-us/sql/connect/jdbc/setting-the-connection-properties>`__
+   * `Setting Connection Properties <https://learn.microsoft.com/en-us/sql/connect/jdbc/setting-the-connection-properties>`__
 
-* `SQL Docs: Building the Connection URL <https://docs.microsoft.com/en-us/sql/connect/jdbc/building-the-connection-url?view=sql-server-ver15>`__.
+   * `SQL Docs: Building the Connection URL <https://docs.microsoft.com/en-us/sql/connect/jdbc/building-the-connection-url?view=sql-server-ver15>`__.
 
-* `Connecting to SQL Server with the JDBC Driver <https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-to-sql-server-with-the-jdbc-driver?view=sql-server-ver15>`__
+   * `Connecting to SQL Server with the JDBC Driver <https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-to-sql-server-with-the-jdbc-driver?view=sql-server-ver15>`__
 
-::
+
 
 ``databaseName`` Property Behavior
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

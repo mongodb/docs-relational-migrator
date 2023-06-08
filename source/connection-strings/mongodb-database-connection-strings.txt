@@ -132,5 +132,4 @@ creating a migration job.
 
 
 .. image:: /img/jobs/jobs-mongodb-connection-string-screen.png
-   :target: /img/jobs/jobs-mongodb-connection-string-screen.png
    :alt: MongoDB URI
