@@ -2,12 +2,36 @@
 Download Single Code Files
 ==========================
 
-.. default-domain:: mongodb
+Code Generation is a feature built into Relational Migrator that helps
+automatically generate code files for your applications connected 
+to MongoDB. This page details how to generate and download individual code files.
 
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 1
-   :class: singlecol
+About this Task
+---------------
 
-TBD.
+Some templates also generate additional files which are not specific to a MongoDB collection. These files are called ``Support files``. Click the ``Support files`` check box to indicate if you would like these files included in your downloads.
+
+Steps
+-----
+
+You can view, download, or copy a single collections code file.
+
+Navigate to the ``Code Generation`` screen, in the left ``Generate code`` pane:
+
+
+#. Select a ``Language``.
+#. Select a ``Template``.
+#. Click the MongoDB collection name.
+#. A tab displays for each code file. More than one code file per collection may be generated depending on the template. 
+#. Click the ``Copy`` or ``Download`` buttons in the target code file to download or copy that files contents.
+
+
+.. image:: /img/code-generation/code-generation-copy-download-button.png
+   :alt: Download Individual Code File
+
+
+Learn More
+----------
+
+`Download All Code Files </Code-Generation/download-all-code-files>`__
+
