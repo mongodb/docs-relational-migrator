@@ -1,5 +1,3 @@
-.. _rm-relational-connection-strings:
-
 ======================================
 Relational Database Connection Strings
 ======================================
