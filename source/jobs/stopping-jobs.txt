@@ -37,7 +37,8 @@ To stop your sync job, follow the instructions below based on the current stage 
       #. Click on the sync job in the **History**  pane.
       #. Click the red **Terminate** button in the upper-right corner of the screen.
       #. Click the red **Terminate** button on the pop-up modal.
-      Once a sync job cancels, an **x** icon displays in the **History** pane, and the status of the sync job updates to **Snapshot cancelled**.
+         Once a sync job cancels, an **x** icon displays in the **History** pane, 
+         and the status of the sync job updates to **Snapshot cancelled**.
 
    .. tab:: Stop a Sync Job in CDC stage
       :tabid: stop-cdc
@@ -50,5 +51,5 @@ To stop your sync job, follow the instructions below based on the current stage 
 Learn More
 ----------
 
-`Create a Sync job </Jobs/creating-jobs>`__ 
-`Monitor a Sync Job </Jobs/monitoring-jobs>`__ 
+:ref:`creating-jobs`
+:ref:`monitoring-jobs`
