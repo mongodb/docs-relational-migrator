@@ -2,6 +2,11 @@
 Download All Code Files
 =======================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
 
 Code Generation is a feature built into Relational Migrator that helps
 automatically generate code files for your applications connected 
