@@ -16,14 +16,10 @@ database systems.
 
 Relational Migrator can connect to the following relational database systems:
 
-
 * :ref:`MySQL <rm-mysql>`
 * :ref:`Oracle <rm-oracle>`
 * :ref:`PostgreSQL <rm-postgresql>`
 * :ref:`SQL Server <rm-sql-server>`
-
-Connection String Credentials
------------------------------
 
 Relational Migrator's connection form contains fields where you can specify a
 username and password for the connection. The form obscures passwords
@@ -33,7 +29,7 @@ and is more secure than specifying plaintext credentials in the URI.
 .. _rm-mysql:
 
 MySQL
-~~~~~
+-----
 
 The general form for a MySQL connection string is:
 
@@ -73,7 +69,7 @@ details:
 .. _rm-oracle:
 
 Oracle
-~~~~~~
+------
 
 The general form for an Oracle connection string is:
 
@@ -113,7 +109,7 @@ details:
 .. _rm-postgresql:
 
 PostgreSQL
-~~~~~~~~~~
+----------
 
 The general form for a PostgreSQL connection string is:
 
@@ -151,7 +147,7 @@ details:
 .. _rm-sql-server:
 
 SQL Server
-~~~~~~~~~~
+----------
 
 The general form for a SQL Server connection string is:
 
