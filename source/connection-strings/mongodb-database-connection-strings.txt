@@ -63,7 +63,7 @@ Connect to Your Deployment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 When connecting to your deployment with mongosh, use a user account 
-which has the `\ ``createRole`` <https://www.mongodb.com/docs/manual/reference/method/db.createRole/>`__
+which has the :ref:`createRole <https://www.mongodb.com/docs/manual/reference/method/db.createRole/>`__
 permissions in both the ``admin`` and ``MongoEnterprises`` databases.
 
 Copy the following code with your admin credentials into a terminal to 
