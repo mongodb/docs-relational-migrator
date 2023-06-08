@@ -50,5 +50,3 @@ To stop your sync job, follow the instructions below based on the current stage 
 Learn More
 ----------
 
-:ref:`rm-creating-jobs`
-:ref:`rm-monitoring-jobs`
