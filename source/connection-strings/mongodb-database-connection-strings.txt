@@ -34,15 +34,15 @@ Create a New User
 
 
 #. In the Security section of the left navigation, click Database Access.
-#. Click Add New Database User.
-#. In the Authentication Method section of the Add New Database User modal window, select the box labeled Password.
+#. Click **Add New Database User**.
+#. In the Authentication Method section of the Add New Database User modal, select the box labeled **Password**.
    Under Password Authentication, there are two text fields.
-   * Enter the username ``migrator-service`` for the new user in the top text field.
-   * Enter the password ``password`` for the new user in the lower text field.
+   - Enter the username ``migrator-service`` for the new user in the top text field.
+   - Enter the password ``password`` for the new user in the lower text field.
 
-#. Under Database User Privileges Built-in Role, select ``Read and write to any database``.
+#. Under Database User Privileges Built-in Role, select **Read and write to any database**.
 
-#. Click ``Add User``
+#. Click **Add User**.
 
 Connection URI
 ~~~~~~~~~~~~~~
@@ -71,19 +71,19 @@ which has the :ref:`createRole <https://www.mongodb.com/docs/manual/reference/me
 permissions in both the ``admin`` and ``MongoEnterprises`` databases.
 
 Copy the following code with your admin credentials into a terminal to 
-connect to your deployment with mongosh.
+connect to your deployment with ``mongosh``.
 
 .. code-block::
 
    mongosh "mongodb://myadminuser:myadminpassword@localhost:27017/admin"
 
-For details on mongosh connections see : 
+For details on ``mongosh`` connections see : 
 `Connecting to your MongoDB Deployment <https://www.mongodb.com/docs/mongodb-shell/connect/>`__.
 
 Create a new User
 ~~~~~~~~~~~~~~~~~
 
-In mongosh run the following command to create a 
+In ``mongosh`` run the following command to create a 
 user in the ``admin`` database:
 
 .. code-block::
@@ -115,7 +115,7 @@ These commands:
 
 * Creates new a user ``migrator-service`` with the password ``password`` 
   in the ``admin`` and ``MongoEnterprises`` databases.
-* Applies the ``readWrite`` system role to the ``MongoEnterprises``
+* Apply the ``readWrite`` system role to the ``MongoEnterprises``
   database for the user ``migrator-service``.
 
 Connection URI
@@ -131,9 +131,5 @@ URI for the target database. In this case ``MongoEnterprises``.
 Where do I use the MongoDB URI?
 -------------------------------
 
-The MongoDB connection URI will be specified as part of the process for
-creating a migration job.
-
-
-.. image:: /img/jobs/jobs-mongodb-connection-string-screen.png
-   :alt: MongoDB URI
+The MongoDB connection URI are optionally specified as part of the process for
+creating a new project and a sync job.
