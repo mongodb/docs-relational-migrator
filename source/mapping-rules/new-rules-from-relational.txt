@@ -1,3 +1,5 @@
+.. _new-rules-from-relational:
+
 ===========================
 Create Rule From Relational
 ===========================
