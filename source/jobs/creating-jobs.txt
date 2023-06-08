@@ -34,42 +34,42 @@ Enter a host IP or DNS name in the **Host** text box.
 Enter a port number in the **Port** text box.
 Enter a database name in the **Database** text field. 
    
-   Depending on your relational database, this behavior varies:
+Depending on your relational database, this behavior varies:
 
-   .. list-table::
-      :widths: 30 70
-      :header-rows: 1
-   
-   * - Database Type
-     - Behavior
+  .. list-table::
+    :widths: 30 70
+    :header-rows: 1
+  
+  * - Database Type
+    - Behavior
 
-   * - Oracle
-     - You must enter a database name and a **Service ID** or **SID**.
+  * - Oracle
+    - You must enter a database name and a **Service ID** or **SID**.
 
-   * - SQL Server
-     - Enter a database name, or leave blank to load all databases.
+  * - SQL Server
+    - Enter a database name, or leave blank to load all databases.
 
-   * - MySQL 
-     - Enter a database name, or leave blank to load all databases.
+  * - MySQL 
+    - Enter a database name, or leave blank to load all databases.
 
-   * - Postgres 
-     - Leaving database name blank loads schemas from the default database.
+  * - Postgres 
+    - Leaving database name blank loads schemas from the default database.
 
-   #.# Enter a user name in the **Username** text box. &nbsp;
-   #.# Enter a password in the **Password** text box. &nbsp;
-   #.# (Optional) Click the **Save a password for this session** checkbox. &nbsp;
-   #.# Click the **SSL** toggle switch to enable or disable SSL and select an SSL mode. &nbsp;
-   #.# Click **Connect**.
+Enter a user name in the **Username** text box. &nbsp;
+Enter a password in the **Password** text box. &nbsp;
+(Optional) Click the **Save a password for this session** checkbox. &nbsp;
+Click the **SSL** toggle switch to enable or disable SSL and select an SSL mode. &nbsp;
+Click **Connect**.
 
-   .. note:: Connection SSL details
+.. note:: Connection SSL details
 
-      Connection and SSL details depend on the database type you are 
-      connecting to. In addition to the generic connection properties 
-      listed above, you may also need to select an **Identifier** for 
-      Oracle and **Authentication** for SQL Server.
+  Connection and SSL details depend on the database type you are 
+  connecting to. In addition to the generic connection properties 
+  listed above, you may also need to select an **Identifier** for 
+  Oracle and **Authentication** for SQL Server.
 
-   If you want to specify the JDBC URI manually, click the **Enter URI manually** 
-   toggle switch on the **Connect SourceDB** form. For details, see `Relational Database Connection Strings <../../Connection-Strings/relational-database-connection-strings>`__.
+If you want to specify the JDBC URI manually, click the **Enter URI manually** 
+toggle switch on the **Connect SourceDB** form. For details, see `Relational Database Connection Strings <../../Connection-Strings/relational-database-connection-strings>`__.
 
 Click **Connect**. 
 
