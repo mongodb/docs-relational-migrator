@@ -4,12 +4,11 @@ Connection Strings
 
 
 This section covers the concept of connection strings as they relate
-to Relational Migrator. You will need to specify connection strings
+to Relational Migrator. You need to specify connection strings
 for both the source relational database instance and the MongoDB 
 database instance. 
 
 To learn how to create your connection strings, see:
-
 
 * `Relational Database Connection Strings <relational-database-connection-strings>`__
 * `MongoDB Database Connection Strings <mongodb-database-connection-strings>`__
