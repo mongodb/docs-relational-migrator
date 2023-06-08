@@ -34,10 +34,9 @@ Create a New User
 #. In the Security section of the left navigation, click **Database Access**.
 #. Click the **Add New Database User** button.
 #. On the **Add New Database User** modal in the **Authentication Method** section: 
-   - Select **Password** as the authentication method.
-   - Enter the username ``migrator-service`` in the top text field.
-   - Enter the password ``password`` in the lower text field.
-
+#. Select **Password** as the authentication method.
+#. Enter the username ``migrator-service`` in the top text field.
+#. Enter the password ``password`` in the lower text field.
 #. Under **Database User Privileges**, click **Add Built-in Role**. 
 #  Select **Read and write to any database**.
 #. Click **Add User**.
