@@ -15,19 +15,23 @@ to MongoDB. This page details how to generate and download all code files into a
 About this Task
 ---------------
 
-Some templates also generate additional files which are not specific to a MongoDB collection. These files are called ``Support files``. Click the ``Support files`` check box to indicate if you would like these files included in your downloads.
+Some templates also generate additional files which are not specific to 
+a MongoDB collection. These files are called **Support files**. 
+
+Click the **Support files** check box to indicate if you would like 
+these files included in your downloads.
 
 Steps
 -----
 
-Navigate to the ``Code Generation`` screen, in the left ``Generate code`` pane:
+Navigate to the **Code Generation** screen, in the left **Generate code** pane:
 
 
-#. Select a ``Language``.
-#. Select a ``Template``.
+#. Select a **Language**.
+#. Select a **Template**.
 #. Select the MongoDB collections by clicking check box next to the collection name.
-#. Click the ``Download selected files`` button. The selected files download into a zip file 
-   to your **Downloads folder**. The zip file has a naming convention of ``PROJECTNAME-LANGUAGE-TEMPLATE``.
+#. Click the **Download selected files** button. The selected files download into a zip file 
+   to your **Downloads folder**. The zip file has a naming convention of **PROJECTNAME-LANGUAGE-TEMPLATE**.
 
 .. image:: /img/code-generation/code-generation-download-all-button.png
    :alt: Download All Code Files
@@ -35,5 +39,5 @@ Navigate to the ``Code Generation`` screen, in the left ``Generate code`` pane:
 Learn More
 ----------
 
-See also `Download Single Code Files </Code-Generation/download-single-code-files>`__.
+See also Download Single Code Files.
 

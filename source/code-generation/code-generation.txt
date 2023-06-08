@@ -13,7 +13,7 @@ Code Generation:
 
 * Uses connections defined in your project to connect to MongoDB and generate application code files.
 * Shortens the application development time for converting an application from a relational database to MongoDB.
-* Provides language support for ``C#``\ ,\ ``Java``\ , ``JavaScript`` and ``JSON``.
+* Provides language support for C#, Java, JavaScript and JSON.
 
 For each collection in your destination MongoDB connection, Code Generation generates code files. These files contain language specific model classes and appropriate library imports to run your application on MongoDB. You can then download or copy these automatically generated files into your application. You may need to make manual updates to the generated code in order to integrate it with your existing application code.
 
