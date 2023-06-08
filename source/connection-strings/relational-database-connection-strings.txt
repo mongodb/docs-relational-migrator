@@ -11,10 +11,10 @@ database systems.
 Relational Migrator can connect to the following relational database systems:
 
 
-* `MySQL <#mysql>`__
-* `Oracle <#oracle>`__
-* `PostgreSQL <#postgresql>`__
-* `SQL Server <#sql-server>`__
+* :ref:`MySQL <rm-mysql>`
+* :ref:`Oracle <rm-oracle>`
+* :ref:`PostgreSQL <rm-postgresql>`
+* :ref:`SQL Server <rm-sql-server>`
 
 Connection String Credentials
 -----------------------------
@@ -22,6 +22,9 @@ Connection String Credentials
 Relational Migrator's connection form contains fields where you can specify a
 username and password for the connection. The form obscures passwords
 and is more secure than specifying plaintext credentials in the URI.
+
+
+.. _rm-mysql:
 
 MySQL
 -----
@@ -63,6 +66,8 @@ To learn more about MySQL connection strings, see:
 
 ::
 
+.. _rm-oracle:
+
 Oracle
 ------
 
@@ -98,14 +103,13 @@ details:
 To learn more about Oracle connection strings, see:
 
 
-* 
-  `Oracle JDBC Developer's Guide and
-  Reference <https://docs.oracle.com/cd/B28359_01/java.111/b31224/jdbcthin.htm>`__.
+* `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/cd/B28359_01/java.111/b31224/jdbcthin.htm>`__.
 
-* 
-  `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
+* `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
 
 ::
+
+.. _rm-postgresql:
 
 PostgreSQL
 ----------
@@ -145,6 +149,8 @@ To learn more about PostgreSQL connection strings, see:
 * `PostgreSQL Connection Configuration Properties <https://jdbc.postgresql.org/documentation/80/connect.html>`__
 
 ::
+
+.. _rm-sql-server:
 
 SQL Server
 ----------
