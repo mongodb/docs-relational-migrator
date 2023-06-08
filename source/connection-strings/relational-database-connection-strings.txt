@@ -8,6 +8,8 @@ Relational Database Connection Strings
    :depth: 1
    :class: singlecol
 
+.. include:: /includes/uri-usage-disclaimer.rst
+
 To analyze a schema or start a migration job, Relational Migrator must connect
 to your relational database. To connect to your source database, the
 Relational Migrator requires a JDBC-formatted connection string. This document

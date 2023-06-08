@@ -8,6 +8,8 @@ MongoDB Database Connection Strings
    :depth: 1
    :class: singlecol
 
+.. include:: /includes/uri-usage-disclaimer.rst
+
 To start a migration job, Relational Migrator must connect to your MongoDB 
 database. Relational Migrator requires a username and password which has ``readWrite`` 
 access in the target database. This page describes 
@@ -37,7 +39,8 @@ Create a New User
 #. Select **Password** as the authentication method.
 #. Enter the username ``migrator-service`` in the top text field.
 #. Enter the password ``password`` in the lower text field.
-#. Under **Database User Privileges**, click **Add Built-in Role**. 
+#. Under **Database User Privileges**, click **Add Built-in Role**.
+
 #  Select **Read and write to any database**.
 #. Click **Add User**.
 
@@ -110,10 +113,8 @@ Create the same user in the user in the ``MongoEnterprises`` database:
 
 These commands:
 
-* Creates new a user ``migrator-service`` with the password ``password`` 
-  in the ``admin`` and ``MongoEnterprises`` databases.
-* Apply the ``readWrite`` system role to the ``MongoEnterprises``
-  database for the user ``migrator-service``.
+- Creates new a user ``migrator-service`` with the password ``password`` in the ``admin`` and ``MongoEnterprises`` databases.
+- Apply the ``readWrite`` system role to the ``MongoEnterprises`` database for the user ``migrator-service``.
 
 Connection URI
 ~~~~~~~~~~~~~~
@@ -128,5 +129,5 @@ URI for the target database. In this case ``MongoEnterprises``.
 Where do I use the MongoDB URI?
 -------------------------------
 
-The MongoDB connection URI are optionally specified as part of the process for
+The MongoDB connection URIs are optionally specified as part of the process for
 creating a new project and a sync job.
