@@ -4,9 +4,6 @@
 Stop a Sync Job
 ===============
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
-
 You can stop a sync job from the **Job Overview** pane 
 on the **Data Migration** tab.
 
@@ -43,6 +40,7 @@ To stop your sync job, follow the instructions below based on the current stage 
 
    .. tab:: Stop a Sync Job in CDC stage
       :tabid: stop-cdc
+
       #. Open the **Data Migration** tab.
       #. Click on the sync job in the **History**  pane.
       #. Click the **Complete CDC**  button in the upper-right corner of the screen.
@@ -52,5 +50,5 @@ To stop your sync job, follow the instructions below based on the current stage 
 Learn More
 ----------
 
-:ref:`creating-jobs`
+:ref:`rm-creating-jobs`
 :ref:`rm-monitoring-jobs`
