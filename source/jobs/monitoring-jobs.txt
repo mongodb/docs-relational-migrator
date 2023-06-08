@@ -14,9 +14,8 @@ Sync jobs execute in a number of distinct stages which are visible on the **Job 
 
 For example:
 
-
-* A snapshot sync job includes a snapshot stage and, optionally, a verification stage.
-* A continuous sync job includes a snapshot stage followed by a CDC stage. 
+- A snapshot sync job includes a snapshot stage and, optionally, a verification stage.
+- A continuous sync job includes a snapshot stage followed by a CDC stage. 
 
 Job Overview
 ~~~~~~~~~~~~
@@ -109,9 +108,7 @@ Steps
    **Snapshot stage** and **CDC stage** logging information display next to each respective section of the **Job overview** pane.
 
    .. image:: /img/jobs/jobs-monitoring-job-history.png
-      :target: /img/jobs/jobs-monitoring-job-history.png
       :alt: View Job
-
 
 #. Click the **>** icon under the **Issues** section to view sync job errors.
 
