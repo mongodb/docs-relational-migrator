@@ -118,12 +118,7 @@ Learn More
 ----------
 
 
-* `Stop a Job </Jobs/stopping-jobs>`__ 
-* `Data Verification </Jobs/Data-Verification>`__
-
 Next Steps
 ----------
 
 
-* `Code Generation <../../Code-Generation>`__
-* `Add Calculated Fields <../../Mapping-Rules/calculated-fields>`__
