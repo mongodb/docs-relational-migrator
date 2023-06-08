@@ -50,8 +50,6 @@ Control Your Migration To MongoDB
             rules that convert your table row data to MongoDB documents. 
             Relational Migrator helps you transform your data models so 
             that they work best for your applications.
-
-            `To learn more, see mongoimport <https://www.mongodb.com/docs/database-tools/mongoimport/>`__
       
       .. image:: /images/Mapping-Rules.png
          :alt: Mapping Rules
@@ -67,12 +65,12 @@ Control Your Migration To MongoDB
       .. image:: /images/Schema-Models.png
          :alt: Schema Models
 
-   .. tab:: Deploy and scale your database
+   .. tab:: Convert Your Application Code
       :tabid: deploy
 
       .. procedure::
 
-         .. step:: Model your data
+         .. step:: 
 
             Relational Migrator Code Generation allows you to convert 
             your existing data layer application code. With Code Generation,
