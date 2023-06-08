@@ -1,4 +1,4 @@
-.. _mongodb-database-connection-strings:
+.. _rm-relational-connection-strings:
 
 ======================================
 Relational Database Connection Strings
@@ -28,7 +28,6 @@ Relational Migrator can connect to the following relational database systems:
 Relational Migrator's connection form contains fields where you can specify a
 username and password for the connection. The form obscures passwords
 and is more secure than specifying plaintext credentials in the URI.
-
 
 .. _rm-mysql:
 
