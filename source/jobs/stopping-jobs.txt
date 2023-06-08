@@ -1,3 +1,4 @@
+.. _rm-stopping-jobs:
 
 ===============
 Stop a Sync Job
@@ -52,4 +53,4 @@ Learn More
 ----------
 
 :ref:`creating-jobs`
-:ref:`monitoring-jobs`
+:ref:`rm-monitoring-jobs`

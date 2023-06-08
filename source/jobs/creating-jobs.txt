@@ -1,9 +1,8 @@
-.. _creating-jobs:
+.. _rm-creating-jobs:
 
 =================
 Create a Sync Job
 =================
-
 
 Create new sync jobs from the **Data Migration** tab.
 
@@ -114,7 +113,8 @@ Steps
 Learn More
 ----------
 
-For detailed information regarding the configuration requirements for each database, see the follow Debezium reference links, which are internally utilized by Relational Migrator:
+For detailed information regarding the configuration requirements for each database, 
+see the follow Debezium reference links, which are internally utilized by Relational Migrator:
 
 
 - `MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html#setting-up-mysql>`__
@@ -127,4 +127,4 @@ See `Data Verification </Jobs/Data-Verification>`__ to learn more about the data
 Next Steps
 ----------
 
-`Monitor a Sync job </Jobs/monitoring-jobs>`__
+:ref:`rm-monitoring-jobs`

@@ -33,11 +33,11 @@ You can perform the following tasks from the **Data Migration** tab.
 
    * - Task
      - Description
-   * - `Create a Sync job </Jobs/creating-jobs>`__
+   * - :ref:`rm-creating-jobs`
      - Create a sync job which uses the defined mapping rules and migration options.
-   * - `Monitor a Sync job </Jobs/monitoring-jobs>`__
+   * - :ref:`rm-monitoring-jobs`
      - View meta data, execution status, and issues for a sync job.
-   * - `Stop a Sync job </Jobs/stopping-jobs>`__
+   * - :ref:`rm-stopping-jobs`
      - Cancels the execution of a sync job.
 
 .. toctree::
