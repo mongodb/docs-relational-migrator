@@ -34,6 +34,11 @@ Control Your Migration To MongoDB
       Using snapshot or continuous sync jobs you can choose a migration strategy that is right for you.
       Relational Migrator supports migrations from Long-term support versions of the following databases:
 
+      - MySQL
+      - Oracle
+      - PostgreSQL
+      - SQL Server
+
    .. tab:: Model Your Data
       :tabid: Model Your Data
 
