@@ -55,10 +55,10 @@ Depending on your relational database, this behavior varies:
 * - Postgres 
   - Leaving database name blank loads schemas from the default database.
 
-Enter a user name in the **Username** text box. &nbsp;
-Enter a password in the **Password** text box. &nbsp;
-(Optional) Click the **Save a password for this session** checkbox. &nbsp;
-Click the **SSL** toggle switch to enable or disable SSL and select an SSL mode. &nbsp;
+Enter a user name in the **Username** text box.
+Enter a password in the **Password** text box.
+(Optional) Click the **Save a password for this session** checkbox. 
+Click the **SSL** toggle switch to enable or disable SSL and select an SSL mode. 
 Click **Connect**.
 
 .. note:: Connection SSL details
@@ -106,10 +106,10 @@ This script includes the required configuration statements and additional  instr
 
 ..warning:: Before proceeding with starting a sync job
 
-  #. Download the script. 
-  #. Carefully review its contents.
-  #. Execute the statements.
-  #. Follow any commented manual steps.
+#. Download the script. 
+#. Carefully review its contents.
+#. Execute the statements.
+#. Follow any commented manual steps.
 
 Click **Start**.
 
