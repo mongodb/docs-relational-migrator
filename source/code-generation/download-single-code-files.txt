@@ -29,13 +29,23 @@ You can view, download, or copy a single collections code file.
 
 .. procedure::
    
-   .. step:: Navigate to the :guilabel:`Code Generation` screen, in the left :guilabel:`Generate code` pane.
-   .. step:: Select a :guilabel:`Language`.
-   .. step:: Select a :guilabel:`Language`.
-   .. step:: Select a :guilabel:`Template`.
-   .. step:: Click the MongoDB collection name.
-   .. step:: A tab displays for each code file. More than one code file per collection may be generated depending on the template. 
-   .. step:: Click the :guilabel:`Copy` or :guilabel:`Download` buttons in the target code file to download or copy that files contents.
+   .. step:: 
+      Navigate to the :guilabel:`Code Generation` screen, in the left :guilabel:`Generate code` pane.
+   
+   .. step:: 
+      Select a :guilabel:`Language`.
+   
+   .. step:: 
+      Select a :guilabel:`Template`.
+   
+   .. step:: 
+      Click the MongoDB collection name.
+   
+   .. step:: 
+      A tab displays for each code file. More than one code file per collection may be generated depending on the template. 
+   
+   .. step:: 
+      Click the :guilabel:`Copy` or :guilabel:`Download` buttons in the target code file to download or copy that files contents.
 
 .. image:: /img/code-generation/code-generation-copy-download-button.png
    :alt: Download Individual Code File
