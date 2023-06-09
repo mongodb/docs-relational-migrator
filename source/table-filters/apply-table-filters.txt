@@ -20,10 +20,12 @@ Steps
 -----
 
 
-#. From the ``Schema model`` pane, click the table that you want to apply a filter to.
-#. On the ``Filter on`` section in the edit mapping rule pane, click ``+ Add``.
-#. Under the ``SQLquery`` header, enter a SQL where criteria. The SQL you specify must be ANSI SQL compliant with your relational database.
-   The following are examples of SQL where clauses used to apply ``SQLQuery`` table filters:
+#. From the **Schema model** pane, click the table that you want to apply a filter to.
+#. On the **Filter on** section in the edit mapping rule pane, click **+ Add**.
+#. Under the **SQL query** header, enter a SQL where criteria. The 
+   SQL you specify must be ANSI SQL compliant with your relational database.
+   The following are examples of SQL where clauses used to apply 
+   **SQL query** table filters:
 
    .. code-block:: SQL
 
@@ -33,8 +35,10 @@ Steps
       LASTNAME IN(SELECT LASTNAME FROM ASIA_CUSTOMERS WHERE ID < 100000)
       LASTNAME IN(SELECT LASTNAME FROM ASIA_CUSTOMERS WHERE PAYMENT_DATE >= 05/25/2015)
 
-#. (Optional) Under the ``Row limit`` header, click the ``Limit number of rows`` radio button and enter a value. This applies a limit clause at the end of your SQL query.
-#. Click ``Save and close``.
+#. (Optional) Under the **Row limit** header, click the **Limit number of rows**
+   radio button and enter a value. This applies a limit clause at the 
+   end of your SQL query.
+#. Click **Save and close**.
 
 Learn More
 ----------
