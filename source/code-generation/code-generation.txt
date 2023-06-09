@@ -74,8 +74,8 @@ Code Generation supports the following application templates:
 To learn how to download code files, see:
 
 
-* `Download Single Code </Code-Generation/download-single-code-files>`__
-* `Download All Code </Code-Generation/download-all-code-files>`__
+- :ref:`<rm-download-all-code-files>`
+- :ref:`<rm-download-single-code-file>`
 
 .. toctree::
    :hidden:

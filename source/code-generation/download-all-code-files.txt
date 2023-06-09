@@ -1,3 +1,5 @@
+.. _rm-download-all-code-files:
+
 =======================
 Download All Code Files
 =======================

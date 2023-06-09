@@ -1,3 +1,5 @@
+.. _rm-download-single-code-file:
+
 ==========================
 Download Single Code Files
 ==========================
@@ -41,5 +43,5 @@ Navigate to the **Code Generation** screen, in the left **Generate code** pane:
 Learn More
 ----------
 
-`Download All Code Files </Code-Generation/download-all-code-files>`__
+:ref:`Download All Code Files <rm-download-all-code-files`
 
