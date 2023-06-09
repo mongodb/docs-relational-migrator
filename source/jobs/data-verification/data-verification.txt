@@ -8,7 +8,7 @@ connection strings to validate that a sync job was successful.
 
 - Data verification is supported for one-time sync jobs.
 - By default, data verification is not performed when running a sync job. 
-  You must explicitly opt-in to verification in **Migration Options** 
+  You must explicitly opt-in to verification in :guilabel:`Migration Options` 
   before the job is started.
 - Enabling data verification can add significant compute time to a sync 
   job.
@@ -30,7 +30,7 @@ destination databases:
 - The data in the relational database tables has changed since the sync 
   job was started.
 
-See :ref:`<rm-use-data-verification>` for more information.
+See :ref:`rm-use-data-verification` for more information.
 
 .. toctree::
    :titlesonly:
