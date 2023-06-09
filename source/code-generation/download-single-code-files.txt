@@ -18,8 +18,8 @@ About this Task
 ---------------
 
 Some templates also generate additional files which are not specific to 
-a MongoDB collection. These files are called **Support files**. Click 
-the **Support files** check box to indicate if you would like these 
+a MongoDB collection. These files are called :guilabel:`Support files`. Click 
+the :guilabel:`Support files` check box to indicate if you would like these 
 files included in your downloads.
 
 Steps
@@ -27,21 +27,21 @@ Steps
 
 You can view, download, or copy a single collections code file.
 
-Navigate to the **Code Generation** screen, in the left **Generate code** pane:
-
-#. Select a **Language**.
-#. Select a **Template**.
-#. Click the MongoDB collection name.
-#. A tab displays for each code file. More than one code file per collection may be generated depending on the template. 
-#. Click the **Copy** or **Download** buttons in the target code file to download or copy that files contents.
-
+.. procedure::
+   
+   .. step:: Navigate to the :guilabel:`Code Generation` screen, in the left :guilabel:`Generate code` pane.
+   .. step:: Select a :guilabel:`Language`.
+   .. step:: Select a :guilabel:`Language`.
+   .. step:: Select a :guilabel:`Template`.
+   .. step:: Click the MongoDB collection name.
+   .. step:: A tab displays for each code file. More than one code file per collection may be generated depending on the template. 
+   .. step:: Click the :guilabel:`Copy` or :guilabel:`Download` buttons in the target code file to download or copy that files contents.
 
 .. image:: /img/code-generation/code-generation-copy-download-button.png
    :alt: Download Individual Code File
 
-
 Learn More
 ----------
 
-:ref:`Download All Code Files <rm-download-all-code-files`
+:ref:`Download All Code Files <rm-download-all-code-files>`
 
