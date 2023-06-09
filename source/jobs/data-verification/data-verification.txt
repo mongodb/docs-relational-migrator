@@ -3,7 +3,7 @@ Data Verification
 =================
 
 Data verification is a process which is built into the sync engine.
-The data verification process will use the source and destination 
+The data verification process uses the source and destination 
 connection strings to validate that a sync job was successful.
 
 - Data verification is supported for one-time sync jobs.
