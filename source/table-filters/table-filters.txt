@@ -7,6 +7,7 @@ volume of data migrated from each table. You can apply table filters
 when you configure the mapping rules from the relational schema model.
 
 Table filters allow you to:
+
 - Migrate your data in logical batches.
 - Limit the read operations on your source database.
 - Create test environments before migrating your entire database.
