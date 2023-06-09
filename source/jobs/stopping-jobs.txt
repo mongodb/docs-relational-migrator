@@ -1,5 +1,3 @@
-.. _rm-stopping-jobs:
-
 ===============
 Stop a Sync Job
 ===============
