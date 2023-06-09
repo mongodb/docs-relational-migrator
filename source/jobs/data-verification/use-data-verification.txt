@@ -71,7 +71,7 @@ A data verification process can be any of the following statuses:
 
 .. list-table::
    :header-rows: 1
-   :widths: 30 70
+   :widths: 20 80
 
    * - Status
      - Description
