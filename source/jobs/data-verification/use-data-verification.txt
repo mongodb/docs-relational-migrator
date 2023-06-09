@@ -4,6 +4,11 @@
 Use Data Verification
 =====================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
 
 Data verification runs as a separate process which is tightly
 coupled to a sync job. Data verification can be enabled for one-time 
