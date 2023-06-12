@@ -2,7 +2,7 @@
 Data Verification
 =================
 
-Data verification is a process which is built into the sync engine.
+Data verification is a process that is built into the sync engine.
 The data verification process uses the source and destination 
 connection strings to validate that a sync job was successful.
 
