@@ -2,6 +2,16 @@
 Connection Strings
 ==================
 
+This section covers the concept of connection strings as they relate
+to Relational Migrator. You will need to specify connection strings
+for both the source relational database instance and the MongoDB 
+database instance. 
+
+To learn how to create your connection strings, see:
+
+- :ref:`rm-relational-database-connection-strings>`
+- :ref:`mongodb-database-connection-strings>`
+
 .. toctree::
    :titlesonly:
    :hidden:
