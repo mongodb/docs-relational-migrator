@@ -1,4 +1,4 @@
-.. _rm-relational-database-connection-strings:
+.. _rm-mongodb-database-connection-strings:
 
 ===================================
 MongoDB Database Connection Strings
@@ -33,7 +33,7 @@ Create a New User
 #. In the Authentication Method section of the :guilabel:`Add New Database User` modal window, select the box labeled :guilabel:`Password`.
 #. Under :guilabel:`Password Authentication`, enter the username ``migrator-service`` for the new user in the top text field.
 #. Enter the password ``password`` for the new user in the lower text field.
-#. Under :guilabel:`Database User Privileges` click :guilabel:`Built-in Role`.
+#. Under :guilabel:`Database User Privileges`, click :guilabel:`Built-in Role`.
 #. Select :guilabel:`Read and write to any database`.
 #. Click :guilabel:`Add User`
 
