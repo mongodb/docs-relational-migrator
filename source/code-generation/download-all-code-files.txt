@@ -38,5 +38,5 @@ Steps
 Learn More
 ----------
 
-See also :ref:`rm-download-single-code-file`.
+:ref:`rm-download-single-code-file`.
 
