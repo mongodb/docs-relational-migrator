@@ -34,7 +34,6 @@ for a sync job, click the :guilabel:`SYNC JOB / DATA VERIFICATION` slider.
 
 .. image:: /img/jobs/data-verification/data-verification-click-slider.png
    :alt: Click Data Verification Slider
-   :figwidth: 500px
 
 Data Verification Overview
 --------------------------
