@@ -24,11 +24,6 @@ on the :guilabel:`Data Migration` tab.
 On the :guilabel:`Migration Options` module, click the 
 :guilabel:`Verify migrated data` check box for your sync job.
 
-
-.. image:: /img/jobs/data-verification/jobs-verify-migrated-data.png
-   :alt: Enabled Data Verification
-   :figwidth: 500px
-
 .. note:: Data Verification Duration
 
    The Data Verification process can take as long or longer than the data sync job.
