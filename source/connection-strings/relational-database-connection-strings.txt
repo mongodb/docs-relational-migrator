@@ -130,7 +130,7 @@ The preceding connection string specifies these connection details:
 
    To learn more about PostgreSQL connection strings, see:
 
-   - `PostgreSQL Connection Configuration Properties <https://jdbc.postgresql.org/documentation/80/connect.html>`__
+   - `PostgreSQL Connection Configuration Properties <https://jdbc.postgresql.org/documentation/use/>`__
 
 SQL Server
 ----------
