@@ -4,6 +4,8 @@
 MongoDB Database Connection Strings
 ===================================
 
+.. include:: /includes/uri-usage-disclaimer.rst
+
 To start a migration job, Relational Migrator must connect to your MongoDB 
 database. Relational Migrator requires a username and password which has ``readWrite`` 
 access in the target database. This page describes 
