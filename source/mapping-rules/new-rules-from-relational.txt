@@ -1,4 +1,4 @@
-.. _new-rules-from-relational:
+.. _rm-create-mapping-rules:
 
 ===========================
 Create Rule From Relational
