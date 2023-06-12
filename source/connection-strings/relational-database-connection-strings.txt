@@ -92,7 +92,7 @@ details:
 
    To learn more about Oracle connection strings, see:
 
-   - `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/cd/B28359_01/java.111/b31224/jdbcthin.htm>`__.
+   - `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/cd/B28359_01/java.111/b31224/jdbcthin.htm>`__
    - `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
 
 PostgreSQL
@@ -162,7 +162,7 @@ The preceding connection string specifies these connection details:
 **Using Windows Integrated Authentication**
 
 To enable Windows Integrated Authentication, add ``integratedSecurity=true;`` to the URI options.
-Leave the :guilabel`Username` and ``Password`` fields blank. Windows Integrated Authentication connects 
+Leave the :guilabel:`Username` and :guilabel:`Password` fields blank. Windows Integrated Authentication connects 
 to the database using the credentials of the user who launched the Relational Migrator executable.
 
 **Using TLS**
@@ -181,7 +181,7 @@ To implicitly trust the server certificate, set ``trustServerCertificate=true;``
    - `Connecting to SQL Server with the JDBC Driver <https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-to-sql-server-with-the-jdbc-driver?view=sql-server-ver15>`__
 
 ``databaseName`` Property Behavior
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In a SQL Server connection string, use the ``databaseName`` property to
 specify the database to connect to. If you omit the ``databaseName``
