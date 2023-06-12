@@ -4,4 +4,60 @@
 Stop a Sync Job
 ===============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can stop a sync job from the **Job Overview** pane on the **Data Migration** tab.
+
+About this Task
+---------------
+
+The effects of stopping a sync job on your destination database depend on 
+the type and stage of the sync job:
+
+- If you stop a snapshot sync job during the snapshot stage, any 
+  partially migrated data remains in the MongoDB database.
+- If you stop a continuous sync job during the CDC stage, the process 
+  ends gracefully, and Relational Migrator cleans up any temporary data.
+
+Once initiated, the process of canceling or completing a sync job may take up to one minute.
+
+Steps
+-----
+
+To stop your sync job, follow the instructions below based on the current stage of execution:
+
+.. tabs::
+
+      tabs:
+
+         - id: stop-snapshot
+           name: Stop a Sync Job in Snapshot stage
+           content: |
+
+              #. Open the :guilabel:`Data Migration` tab.
+              #. Click on the sync job in the :guilabel:`History` pane.
+              #. Click the red :guilabel:`Terminate` button in the upper-right corner of the screen.
+              #. Click the red :guilabel:`Terminate` button on the pop-up modal.
+                 Once a sync job cancels, an :guilabel:`x` icon displays 
+                 in the :guilabel:`History` pane, and the status of the sync
+                 job updates to :guilabel:`Snapshot cancelled`.
+
+         - id: stop-cdc
+           name: Stop a Sync Job in CDC stage
+           content: |
+              #. Open the :guilabel:`Data Migration` tab.
+              #. Click on the sync job in the :guilabel:`History` pane.
+              #. Click the red :guilabel:`Terminate` button in the upper-right corner of the screen.
+              #. Click the red :guilabel:`Terminate` button on the pop-up modal.
+                 Once a sync job cancels, an :guilabel:`x` icon displays in the  :guilabel:`History` pane, and the status of the sync job updates to :guilabel:`Snapshot cancelled`.
+
+Learn More
+----------
+
+:ref:`rm-create-jobs`
+:ref:`rm-monitor-jobs`
 

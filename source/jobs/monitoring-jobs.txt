@@ -4,6 +4,12 @@
 Monitor a Sync Job
 ==================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 You can monitor a sync job from the :guilabel:`History` pane on the 
 :guilabel:`Data Migration` tab. The :guilabel:`History` pane contains 
 in progress, completed, and failed jobs.
