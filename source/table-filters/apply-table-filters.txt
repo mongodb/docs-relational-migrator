@@ -31,7 +31,8 @@ Steps
    - ``LASTNAME = 'SMITH'``
    - ``LASTNAME IN('SMITH')``
    - ``LASTNAME IN(SELECT LASTNAME FROM ASIA_CUSTOMERS WHERE ID < 100000)``
-   - ``LASTNAME IN(SELECT LASTNAME FROM ASIA_CUSTOMERS WHERE PAYMENT_DATE >= 05/25/2015)``
+   - ``LASTNAME IN(SELECT LASTNAME FROM ASIA_CUSTOMERS 
+     WHERE PAYMENT_DATE >= 05/25/2015)``
 
 #. (Optional) Under the :guilabel:`Row limit` header, click the :guilabel:`Limit number of rows`
    radio button and enter a value. This applies a limit clause at the 
