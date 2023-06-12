@@ -10,7 +10,8 @@ Stop a Sync Job
    :depth: 1
    :class: singlecol
 
-You can stop a sync job from the **Job Overview** pane on the **Data Migration** tab.
+You can stop a sync job from the :guilabel:`Job Overview` pane on the 
+:guilabel:`Data Migration` tab.
 
 About this Task
 ---------------
