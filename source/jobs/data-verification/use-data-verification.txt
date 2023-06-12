@@ -27,6 +27,7 @@ On the :guilabel:`Migration Options` module, click the
 
 .. image:: /img/jobs/data-verification/jobs-verify-migrated-data.png
    :alt: Enabled Data Verification
+   :figwidth: 500px
 
 .. note:: Data Verification Duration
 
@@ -38,11 +39,12 @@ for a sync job, click the :guilabel:`SYNC JOB / DATA VERIFICATION` slider.
 
 .. image:: /img/jobs/data-verification/data-verification-click-slider.png
    :alt: Click Data Verification Slider
+   :figwidth: 500px
 
 Data Verification Overview
 --------------------------
 
-On the :guilabel:`Data Verification` pane you can view the meta data 
+On the :guilabel:`Data Verification` pane you can view the metadata 
 about a sync jobs verification process.
 
 .. list-table::
@@ -82,7 +84,7 @@ A data verification process can be any of the following statuses:
    * - CANCELLING
      - The data validation process is being canceled.
    * - FAILED
-     - The source and destination databases do not match. The corresponding errors will be in ``Issues`` pane.
+     - The source and destination databases do not match. The corresponding errors are listed on the ``Issues`` pane.
    * - VERIFIED
      - Data validation is successful, the source and destination databases match.
    * - VERIFYING
@@ -96,12 +98,13 @@ and a double checkmark is displayed in the :guilabel:`History` pane.
 
 .. image:: /img/jobs/data-verification/data-verification-double-checkmark.png
    :alt: History pane double checkmark
+   
 
 Data Verification Issues
 ------------------------
 
 If the data verification process detects any differences between the 
-source database and destination collections, the errors will be
+source database and destination collections, the errors are
 reported in the Data Verification :guilabel:`Issues` pane.
 
 In this example, the data verification process is detecting that the

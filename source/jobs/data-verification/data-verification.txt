@@ -30,7 +30,10 @@ destination databases:
 - The data in the relational database tables has changed since the sync 
   job was started.
 
-See :ref:`rm-use-data-verification` for more information.
+Learn More
+----------
+
+:ref:`rm-use-data-verification`
 
 .. toctree::
    :titlesonly:
