@@ -11,7 +11,8 @@ in progress, completed, and failed jobs.
 About this Task
 ---------------
 
-Sync jobs execute in a number of distinct stages which are visible on the :guilabel:`Job overview` pane. 
+Sync jobs execute in a number of distinct stages which are visible on 
+the :guilabel:`Job overview` pane. 
 
 For example:
 
@@ -72,7 +73,10 @@ Snapshot stage information displays in the :guilabel:`Snapshot stage` section of
 CDC Stage
 ~~~~~~~~~
 
-The CDC stage information is displayed in the :guilabel:`CDC stage` section of the :guilabel:`Job overview` pane. The CDC stage begins after the initial snapshot stage has completed and remains in the :guilabel:`RUNNING` status until it is explicitly completed or the sync job encounters an unrecoverable error.
+The CDC stage information is displayed in the :guilabel:`CDC stage` section 
+of the :guilabel:`Job overview` pane. The CDC stage begins after the initial 
+snapshot stage has completed and remains in the :guilabel:`RUNNING` status 
+until it is explicitly completed or the sync job encounters an unrecoverable error.
 
 .. list-table::
    :header-rows: 1
@@ -100,7 +104,8 @@ The CDC stage information is displayed in the :guilabel:`CDC stage` section of t
 Issues
 ~~~~~~
 
-If your sync job has errors during execution, you can find the details in the :guilabel:`Issues` pane on the :guilabel:`Data Migration` screen.
+If your sync job has errors during execution, you can find the details 
+in the :guilabel:`Issues` pane on the :guilabel:`Data Migration` screen.
 
 .. list-table::
    :header-rows: 1
