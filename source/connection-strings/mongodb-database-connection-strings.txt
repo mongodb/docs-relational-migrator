@@ -31,10 +31,8 @@ Create a New User
 #. In the :guilabel:`Security` section of the left navigation, click :guilabel:`Database Access`.
 #. Click :guilabel:`Add New Database User`.
 #. In the Authentication Method section of the :guilabel:`Add New Database User` modal window, select the box labeled :guilabel:`Password`.
-   Under Password Authentication:
-
-   - Enter the username ``migrator-service`` for the new user in the top text field.
-   - Enter the password ``password`` for the new user in the lower text field.
+#. Under :guilabel:`Password Authentication`, enter the username ``migrator-service`` for the new user in the top text field.
+#. Enter the password ``password`` for the new user in the lower text field.
 #. Under :guilabel:`Database User Privileges` click :guilabel:`Built-in Role`.
 #. Select :guilabel:`Read and write to any database`.
 #. Click :guilabel:`Add User`
