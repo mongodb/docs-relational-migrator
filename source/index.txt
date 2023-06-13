@@ -58,12 +58,19 @@ Control Your Migration To MongoDB
 
       .. procedure::
 
-         .. step:: Import your data
+         .. step:: Choose Your Mapping Rules
 
             Relational Migrator allows you to define customized mapping 
             rules that convert your table row data to MongoDB documents. 
             Relational Migrator helps you transform your data models so 
             that they work best for your applications.
+         
+         .. step:: Define Calculated Fields
+
+            Relational Migrator allows you to optionally define 
+            additional fields as part of your migration to MongoDB. 
+            You can define custom JavaScript expressions to bring your
+            MongoDB data to the next level.
       
       .. image:: /images/Mapping-Rules.png
          :alt: Mapping Rules
