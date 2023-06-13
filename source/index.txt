@@ -8,11 +8,12 @@ What is Relational Migrator
 
 .. introduction::
 
-   MongoDB Relational Migrator is a tool to help you migrate relational workloads to MongoDB. Relational Migrator allows you to:
+   MongoDB Relational Migrator is a tool to help you migrate relational workloads to MongoDB. 
+   Relational Migrator allows you to:
 
    - Transform your relational data and schemas to MongoDB.
-   - Plan and schedule your MongoDB migrations.
-   - Migrate at scale and resiliency with Kafka support.
+   - Plan and orchestrate your MongoDB migrations.
+   - Migrate at scale and resiliency.
 
    .. button:: Install Relational Migrator
       :uri: http://docs-migrator.s3-website-us-east-1.amazonaws.com/main/Installation/
@@ -30,14 +31,27 @@ Control Your Migration To MongoDB
    .. tab:: Migrate To MongoDB
       :tabid: Migrate To MongoDB
 
-      Relational Migrator allows you to to transfer your relational data and schemas to MongoDB.
-      Using snapshot or continuous sync jobs you can choose a migration strategy that is right for you.
-      Relational Migrator supports migrations from Long-term support versions of the following databases:
+      .. procedure::
 
-      - MySQL
-      - Oracle
-      - PostgreSQL
-      - SQL Server
+         .. step:: Check Relational Migrator For Supported Databases
+
+            Relational Migrator supports migrations from Long-term support 
+            versions of the following databases:
+
+            - MySQL
+            - Oracle
+            - PostgreSQL
+            - SQL Server
+
+         .. step:: Identify Your Migration Type
+
+            Relational Migrator allows you to transfer your relational 
+            data and schemas to MongoDB. Using snapshot or continuous 
+            sync jobs you can choose a migration strategy that is right 
+            for you.
+
+      .. image:: /images/Mapping-Rules.png
+         :alt: Mapping Rules
 
    .. tab:: Model Your Data
       :tabid: Model Your Data
@@ -57,10 +71,19 @@ Control Your Migration To MongoDB
    .. tab:: Visualize Your Migration
       :tabid: Visualize Your Migration
 
-      Relational Migrator allows you to view both your source 
-      relational and destination MongoDB data models. 
-      Using Relational Migrator diagraming helps you edit your 
-      data model and visualize your migration in real time.
+      .. procedure::
+
+         .. step:: Connect Your Source Relation Database
+
+         .. step:: Connect Your Destination Database
+
+         .. step:: Visualize Your Destination Data Model
+
+            Relational Migrator allows you to view both your source 
+            relational and destination MongoDB data models. 
+            Using Relational Migrator diagrams helps you edit your 
+            data model and visualize your migration in real time, before 
+            you run any sync jobs.
 
       .. image:: /images/Schema-Models.png
          :alt: Schema Models
