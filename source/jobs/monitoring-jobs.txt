@@ -142,6 +142,7 @@ Steps
    .. image:: /img/jobs/jobs-monitoring-job-history.png
       :alt: View Job History
 
+|
 
 #. Click the :guilabel:`>` icon under the :guilabel:`Issues` section to view sync job errors.
 
