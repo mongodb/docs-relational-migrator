@@ -73,9 +73,11 @@ Control Your Migration To MongoDB
 
       .. procedure::
 
-         .. step:: Connect Your Source Relation Database
+         .. step:: Connect Your Source And Destination Databases
 
-         .. step:: Connect Your Destination Database
+            When creating a Relational Migrator project, enter your 
+            connection details or provide a URI for each of your 
+            source and destination databases.
 
          .. step:: Visualize Your Destination Data Model
 
@@ -92,8 +94,13 @@ Control Your Migration To MongoDB
       :tabid: deploy
 
       .. procedure::
+         
+         .. step:: Pick A Data Modeling Template
 
-         .. step:: 
+            Relational Migrator supports C#, Java, JavaScript and JSON
+            languages and many templating code models to choose from.
+
+         .. step:: Convert Your Data Layer Source Code
 
             Relational Migrator Code Generation allows you to convert 
             your existing data layer application code. With Code Generation,
