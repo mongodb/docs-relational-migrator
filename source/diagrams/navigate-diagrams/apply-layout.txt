@@ -3,3 +3,49 @@
 ===========================
 Apply a Layout to a Diagram
 ===========================
+
+You can apply a preset layout to your diagram to organize its entities.
+Use diagram layouts to neatly arrange entities without needing to
+manually click and drag them.
+
+When you apply a layout to a diagram, Relational Migrator applies the
+layout to both the Relational and MongoDB views. The zoom level is
+automatically adjusted to display your chosen layout.
+
+Steps
+-----
+
+To apply a layout to a diagram:
+
+#. Click the tree diagram icon at the top of the diagram view.
+
+#. Choose your layout.
+
+Layout Options
+--------------
+
+Relational Migrator provides three layout options:
+
+- Left to Right
+- Top to Bottom
+- Star
+
+The following sections show examples of each layout option.
+
+Left to Right
+~~~~~~~~~~~~~
+
+.. image:: /img/diagrams/layouts/left-to-right.png
+   :alt: Left to Right Layout
+
+Top to Bottom
+~~~~~~~~~~~~~
+
+.. image:: /img/diagrams/layouts/top-to-bottom.png
+   :alt: Top to Bottom Layout
+
+Star
+~~~~
+
+.. image:: /img/diagrams/layouts/star.png
+   :alt: Star Layout

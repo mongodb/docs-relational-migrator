@@ -67,7 +67,7 @@ returns to Pan Mode.
 Learn More
 ----------
 
-To organize diagram entities, see :ref:`rm-apply-layout`
+:ref:`rm-apply-layout`
 
 .. toctree::
    :hidden:
