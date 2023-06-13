@@ -52,7 +52,7 @@ Control Your Migration To MongoDB
 
       .. image:: /img/tab1img.png
          :alt: Mapping Rules
-         :figwidth: 75%
+         :figwidth: 50%
 
    .. tab:: Model your Data
       :tabid: Model your Data
@@ -73,7 +73,7 @@ Control Your Migration To MongoDB
 
       .. image:: /img/Mapping-Rules.png
          :alt: Mapping Rules
-         :figwidth: 75%
+         :figwidth: 50%
 
    .. tab:: Visualize your Migration
       :tabid: Visualize your Migration
