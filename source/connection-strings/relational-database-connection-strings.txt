@@ -182,8 +182,8 @@ To implicitly trust the server certificate, set ``trustServerCertificate=true;``
    - `SQL Docs: Building the Connection URL <https://docs.microsoft.com/en-us/sql/connect/jdbc/building-the-connection-url?view=sql-server-ver15>`__.
    - `Connecting to SQL Server with the JDBC Driver <https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-to-sql-server-with-the-jdbc-driver?view=sql-server-ver15>`__
 
-``databaseName`` Property Behavior
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+databaseName Property Behavior
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In a SQL Server connection string, use the ``databaseName`` property to
 specify the database to connect to. If you omit the ``databaseName``

@@ -2,12 +2,14 @@
 Connection Strings
 ==================
 
-This section covers the concept of connection strings as they relate
-to Relational Migrator. You can optionally specify connection strings 
-URIs for both the source relational database instance and the MongoDB 
-database instance. 
+Relational Migrator uses connection strings to connect to both 
+the relational and MongoDB databases. You can create connection strings:
 
-To learn how to create your connection strings, see:
+- Using the UI when you create a project.
+- Using the UI when you create a sync job.
+- By Manually providing the Uniform Resource Identifiers (URI).
+
+To learn how to manually create your connection string URIs, see:
 
 - :ref:`rm-relational-database-connection-strings`
 - :ref:`rm-mongodb-database-connection-strings`

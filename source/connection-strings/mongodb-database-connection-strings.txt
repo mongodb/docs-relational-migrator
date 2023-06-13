@@ -59,10 +59,9 @@ default port of ``27017``.
 Connect to Your Deployment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-When connecting to your deployment with ``mongosh``, use a user account 
-which has the `createRole <https://www.mongodb.com/docs/manual/reference/method/db.createRole/>`__
-permissions in both the ``admin`` and ``MongoEnterprises`` databases.
-
+When connecting to your deployment, your user account requires the 
+`createRole <https://www.mongodb.com/docs/manual/reference/method/db.createRole/>`__
+permission in both the ``admin`` and ``MongoEnterprises`` databases.
 Copy the following code with your admin credentials into a terminal to 
 connect to your deployment with ``mongosh``.
 
@@ -73,7 +72,7 @@ connect to your deployment with ``mongosh``.
 For details on ``mongosh`` connections see : 
 `Connecting to your MongoDB Deployment <https://www.mongodb.com/docs/mongodb-shell/connect/>`__.
 
-Create a new User
+Create a New User
 ~~~~~~~~~~~~~~~~~
 
 In ``mongosh`` run the following command to create a 
@@ -104,7 +103,7 @@ Create the same user in the user in the ``MongoEnterprises`` database:
 
 These commands:
 
-- Creates new a user ``migrator-service`` with the password ``password`` 
+- Create a new user ``migrator-service`` with the password ``password`` 
   in the ``admin`` and ``MongoEnterprises`` databases.
 - Applies the ``readWrite`` system role to the ``MongoEnterprises``
   database for the user ``migrator-service``.
@@ -119,8 +118,8 @@ URI for the target database. In this case ``MongoEnterprises``.
 
    mongodb://migrator-service:password@localhost:27017/MongoEnterprises
 
-Where do I use the MongoDB URI?
--------------------------------
+Results
+-------
 
 The MongoDB connection URI is optionally specified as part of the process for
 creating a Relational Migrator project or when creating a sync job.
