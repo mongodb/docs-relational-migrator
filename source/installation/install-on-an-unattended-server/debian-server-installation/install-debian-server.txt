@@ -1,3 +1,5 @@
+.. _debian-install:
+
 =================
 Install On Debian
 =================

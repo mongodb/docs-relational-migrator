@@ -1,3 +1,5 @@
+.. _windows-install:
+
 ==================
 Install on Windows
 ==================

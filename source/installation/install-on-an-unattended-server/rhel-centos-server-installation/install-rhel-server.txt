@@ -1,3 +1,5 @@
+.. _rhel-install:
+
 ======================
 Install On RHEL Server
 ======================
