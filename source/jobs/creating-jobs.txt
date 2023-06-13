@@ -147,4 +147,4 @@ see the follow Debezium reference links, which are internally utilized by Relati
 Next Steps
 ----------
 
-:ref:`rm-monitor-jobs`
+- :ref:`rm-monitor-jobs`
