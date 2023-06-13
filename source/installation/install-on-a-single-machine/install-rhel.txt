@@ -14,9 +14,8 @@ You can install Relational Migrator on a single RHEL/CentOS machine. This
 installation method uses default settings and binds Relational Migrator to a single 
 IP and port.
 
-=====
 Steps
-=====
+-----
 
 .. procedure::
    :style:normal 
