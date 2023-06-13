@@ -11,14 +11,15 @@ What is Relational Migrator
    MongoDB Relational Migrator is a tool to help you migrate relational workloads to MongoDB. 
    Relational Migrator allows you to:
 
-   - Transition your relational data and schemas to MongoDB.
-   - Plan and orchestrate your MongoDB migrations.
-   - Migrate at scale and resiliency.
+   - Design an effective MongoDB schema, derived from an existing relational schema.
+   - Migrate data from Oracle, SQL Server, MySQL, PostgreSQL to MongoDB, 
+     while transforming to the target schema.
+   - Generate code artifacts to reduce the time required to update application code.
 
    |
 
    .. button:: Install Relational Migrator
-      :uri: http://docs-migrator.s3-website-us-east-1.amazonaws.com/main/Installation/
+      :uri: http://mongodb.com/try/download/relational-migrator
 
 .. image:: /img/hero.png
    :alt: Homepage hero image
