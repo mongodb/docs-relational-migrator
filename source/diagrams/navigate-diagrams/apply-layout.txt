@@ -14,6 +14,9 @@ You can apply a preset layout to your diagram to organize its entities.
 Use diagram layouts to neatly arrange entities without needing to
 manually click and drag them.
 
+About this Task
+---------------
+
 When you apply a layout to a diagram, Relational Migrator applies the
 layout to both the Relational and MongoDB views. The zoom level is
 automatically adjusted to display your chosen layout.
