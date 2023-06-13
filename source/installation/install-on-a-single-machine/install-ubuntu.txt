@@ -30,8 +30,8 @@ Steps
 
    .. step:: Change the directory to the Relational Migrator ``app/lib`` location.
 
-      .. code-block:: bash
-
+       .. code-block:: bash
+        
         cd /opt/mongodb-relational-migrator/lib/app/lib
 
    .. step:: (Optional) To connect to Oracle or MySQL drivers, download and place the drivers into your Relational Migrator directory.
