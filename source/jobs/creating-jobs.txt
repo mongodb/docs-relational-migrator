@@ -114,7 +114,7 @@ Steps
    job type on the :guilabel:`Migration Options` form, Relational Migrator
    conducts various checks to ensure that the database is configured 
    correctly. If any configuration is missing, a banner appears indicating
-   that the database is not properly configured with a 
+   that the database is not properly configured, with a 
    :guilabel:`GENERATE SCRIPT` button to download a SQL script. 
 
    This script includes the required configuration statements 
@@ -142,7 +142,7 @@ see the follow Debezium reference links, which are internally utilized by Relati
 * `PostgreSQL <https://debezium.io/documentation/reference/stable/connectors/postgresql.html#setting-up-postgresql>`__
 * `SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#setting-up-sqlserver>`__
 
-See :ref:`rm-data-Verification` to learn more about the data verification process.
+:ref:`rm-data-Verification`
 
 Next Steps
 ----------
