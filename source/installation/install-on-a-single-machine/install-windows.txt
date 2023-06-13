@@ -24,17 +24,15 @@ Steps
 
    .. step:: Double-click the ``MongoDB Relational Migrator-X.X.X.msi`` file.
 
-   .. step:: When you are prompted with the MongoDB Relational Migrator Setup Wizard, 
-    click :guilabel:`Next`.
+   .. step:: When you are prompted with the MongoDB Relational Migrator Setup Wizard, click :guilabel:`Next`.
 
-    Accept the license agreement and click :guilabel:`Next` to continue.
+      Accept the license agreement and click :guilabel:`Next` to continue.
 
    .. step:: Click :guilabel:`Install` to start your Migrator installation.
 
    .. step:: Click :guilabel:`Finish` to exit the installer.
 
-   .. step:: (Optional) To connect to Oracle or MySQL drivers, download and place 
-    the drivers into your Relational Migrator directory.
+   .. step:: (Optional) To connect to Oracle or MySQL drivers, download and place the drivers into your Relational Migrator directory.
 
     1. To download and install MySQL or Oracle drivers, see the following:
 
