@@ -57,22 +57,3 @@ The following tabs show examples of each layout option.
 
       .. image:: /img/diagrams/layouts/star.png
          :alt: Star Layout
-
-
-Left to Right
-~~~~~~~~~~~~~
-
-.. image:: /img/diagrams/layouts/left-to-right.png
-   :alt: Left to Right Layout
-
-Top to Bottom
-~~~~~~~~~~~~~
-
-.. image:: /img/diagrams/layouts/top-to-bottom.png
-   :alt: Top to Bottom Layout
-
-Star
-~~~~
-
-.. image:: /img/diagrams/layouts/star.png
-   :alt: Star Layout
