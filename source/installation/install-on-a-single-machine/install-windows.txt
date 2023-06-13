@@ -21,7 +21,7 @@ Steps
    :style: normal
 
    .. step:: Download the latest Windows Relational Migrator binary from the 
-   `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
+      `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
 
    .. step:: Double-click the ``MongoDB Relational Migrator-X.X.X.msi`` file.
 
@@ -43,7 +43,7 @@ Steps
 
     - `Oracle <https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html>`__
 
-   .. step:: Copy the driver files to ``/Library/Application Support/MongoDB/  Relational Migrator/Drivers``.
+   .. step:: Copy the driver files to ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``.
 
    .. note::
 
@@ -53,15 +53,15 @@ Steps
 Next Steps
 ----------
 
-- `Create a Project <Projects/create-project-live-connection.md>`__
+- :ref:`Create a Project <create-project-live-database>`
 
-- `Import a Project <Projects/import-project.md>`__
+- :ref:`Import a Project <import-project>`
 
 Learn More
 ----------
 
-- `Install on Mac <Installation/single-machine-install/install-mac.md>`__
+- :ref:`Install on Mac <single-mac>`
 
-- `Install on RHEL/CentOS <Installation/single-machine-install/install-rhel.md>`__
+- :ref:`Install on RHEL/CentOS <single-rhel>`
 
-- `Install on Ubuntu/Debian <Installation/single-machine-install/install-ubuntu.md>`__
+- :ref:`Install on Ubuntu/Debian <single-ubuntu>`

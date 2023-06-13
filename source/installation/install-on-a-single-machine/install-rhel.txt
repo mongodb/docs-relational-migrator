@@ -1,3 +1,5 @@
+.. _single-rhel:
+
 ============
 Install RHEL
 ============
