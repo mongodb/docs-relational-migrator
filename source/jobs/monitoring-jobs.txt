@@ -102,7 +102,7 @@ until it is explicitly completed or the sync job encounters an unrecoverable err
      - Latest date and time that Relational Migrator detected a data change event.
 
    * - Total events seen 
-     - Number of data change events Relational Migrator has detected since the CDC stage started. |
+     - Number of data change events Relational Migrator has detected since the CDC stage started.
 
    * - Events in the last hour 
      - Number of data change events Relational Migrator has detected in the last hour.

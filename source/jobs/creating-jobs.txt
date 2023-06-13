@@ -51,7 +51,7 @@ Steps
       * - Database Type
         - Behavior
       * - Oracle 
-        - You must enter a database name and a :guilabel:`Service ID` or :guilabel:`SID`. |
+        - You must enter a database name and a :guilabel:`Service ID` or :guilabel:`SID`.
       * - SQL Server
         - Enter a database name, or leave blank to load all databases.
       * - MySQL 
@@ -78,7 +78,7 @@ Steps
 
    If you want to specify the JDBC URI manually, click the 
    :guilabel:`Enter URI manually` toggle switch on the :guilabel:`Connect SourceDB` 
-   form. For details, see :ref:`rm-relational-database-connection-strings` .
+   form. For details, see :ref:`rm-relational-database-connection-strings`.
 
 #. Click :guilabel:`Connect`. 
 
