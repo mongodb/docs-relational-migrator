@@ -36,7 +36,7 @@ Relational Migrator provides three layout options:
 - Top to Bottom
 - Star
 
-The following sections show examples of each layout option.
+The following tabs show examples of each layout option.
 
 .. tabs::
 
