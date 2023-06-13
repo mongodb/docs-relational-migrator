@@ -20,8 +20,7 @@ Steps
 .. procedure::
    :style:normal
 
-   .. step:: Download the latest ``.deb`` binary from the 
-    `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
+   .. step:: Download the latest ``.deb`` binary from the `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
 
    .. step:: Install Relational Migrator.
 
@@ -35,14 +34,13 @@ Steps
 
         cd /opt/mongodb-relational-migrator/lib/app/lib
 
-   .. step:: (Optional) To connect to Oracle or MySQL drivers, download and place the 
-      drivers into your Relational Migrator directory.
+   .. step:: (Optional) To connect to Oracle or MySQL drivers, download and place the drivers into your Relational Migrator directory.
 
       1. To download and install MySQL or Oracle drivers, see the following:
 
-         - [MySQL: latest 8.0.x version, Platform Independent Version](https://dev.mysql.com/downloads/connector/j/)
+         - `MySQL: latest 8.0.x version, Platform Independent Version <https://dev.mysql.com/downloads/connector/j/>`_
 
-         - [Oracle: 21.6.0.0 of odjbc11.jar from the Oracle 21c](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
+         - `Oracle: 21.6.0.0 of odjbc11.jar from the Oracle 21c <https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html>`_
 
      2. Copy the driver files to ``/opt/mongodb-relational-migrator/lib/app/lib``.
 
