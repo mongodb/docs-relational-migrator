@@ -43,7 +43,7 @@ Steps
 
        - [Oracle: 21.6.0.0 of odjbc11.jar from the Oracle 21c](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 
-    2. Copy the driver files to `c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers`.
+    2. Copy the driver files to ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``.
 
    .. note::
 
@@ -55,7 +55,7 @@ Next Steps
 
 - :ref:`Create a Project <create-project-live-database>`
 
-- :ref:`Import a Project <import-project>
+- :ref:`Import a Project <import-project>`
 
 Learn More
 ----------
