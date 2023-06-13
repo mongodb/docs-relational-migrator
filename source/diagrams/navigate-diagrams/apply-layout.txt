@@ -30,12 +30,7 @@ To apply a layout to a diagram:
 Layout Options
 --------------
 
-Relational Migrator provides three layout options:
-
-- Left to Right
-- Top to Bottom
-- Star
-
+Relational Migrator provides three layout options.
 The following tabs show examples of each layout option.
 
 .. tabs::
