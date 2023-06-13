@@ -18,7 +18,7 @@ instructions on installation and configuration, see the following:
 Get Started
 -----------
 
-- :ref:`Install on Windows <server-windows-install>`
+- :ref:`Install on Windows <install-windows-server>`
 
 - :ref:`Run Relational Migrator as a System Service on Windows <windows-system-service>`
 
