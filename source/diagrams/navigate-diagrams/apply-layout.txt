@@ -34,7 +34,7 @@ Layout Options
 --------------
 
 Relational Migrator offers three layout options. 
-The examples of each layout option are shown in the following tabs:
+Examples of each layout option are shown in the following tabs:
 
 .. tabs::
 
