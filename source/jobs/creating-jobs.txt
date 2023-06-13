@@ -84,9 +84,10 @@ Steps
 #. Click :guilabel:`Connect`. 
 
 #. On the :guilabel:`Connect Destination DB` form, input your 
-   :guilabel:`MongoDB connection string (URI)`. If you leave any of the form 
-   fields for :guilabel:`Database`, :guilabel:`Username`, or :guilabel:`Password` blank, 
-   the values specified in the URI are used.
+   :guilabel:`MongoDB connection string (URI)`.
+
+   If you leave any of the form fields for :guilabel:`Database`, :guilabel:`Username`, 
+   or :guilabel:`Password` blank, the values specified in the URI are used.
 
 #. Click :guilabel:`Connect`.
 
@@ -120,9 +121,7 @@ Steps
    This script includes the required configuration statements 
    and additional instructions in the form of comments. 
 
-   .. warning: 
-
-      Before proceeding with starting a sync job:
+   .. warning:: Before proceeding with starting a sync job
 
       1. Download the script. 
       2. Carefully review its contents.
