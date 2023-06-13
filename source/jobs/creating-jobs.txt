@@ -73,7 +73,7 @@ Steps
 
       Connection and SSL details depend on the database type you are connecting to. 
       In addition to the generic connection properties listed above, you may also need
-      to select an :guilabel:`Identifier` for Oracle and :guilabel:`Authentication`
+      to select a :guilabel:`Identifier` for Oracle and :guilabel:`Authentication`
       for SQL Server.
 
    If you want to specify the JDBC URI manually, click the 
@@ -142,9 +142,8 @@ see the follow Debezium reference links, which are internally utilized by Relati
 * `PostgreSQL <https://debezium.io/documentation/reference/stable/connectors/postgresql.html#setting-up-postgresql>`__
 * `SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#setting-up-sqlserver>`__
 
-:ref:`rm-data-Verification`
-
 Next Steps
 ----------
 
 - :ref:`rm-monitor-jobs`
+- :ref:`rm-data-Verification`
