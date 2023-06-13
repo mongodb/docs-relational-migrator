@@ -1,3 +1,5 @@
+.. _rhel-system-service:
+
 ==========================================================
 Run Relational Migrator as a System Service on RHEL/CentOS
 ==========================================================
