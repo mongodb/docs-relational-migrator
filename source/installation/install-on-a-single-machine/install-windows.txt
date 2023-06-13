@@ -37,13 +37,13 @@ Steps
    .. step:: (Optional) To connect to Oracle or MySQL drivers, download and place 
     the drivers into your Relational Migrator directory.
 
-   .. step:: To download and install MySQL or Oracle drivers, see the following:
+    1. To download and install MySQL or Oracle drivers, see the following:
 
-    - `MySQL <https://dev.mysql.com/downloads/connector/j/>`__
+       - [MySQL: latest 8.0.x version, Platform Independent Version](https://dev.mysql.com/downloads/connector/j/)
 
-    - `Oracle <https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html>`__
+       - [Oracle: 21.6.0.0 of odjbc11.jar from the Oracle 21c](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 
-   .. step:: Copy the driver files to ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``.
+    2. Copy the driver files to `c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers`.
 
    .. note::
 
@@ -55,7 +55,7 @@ Next Steps
 
 - :ref:`Create a Project <create-project-live-database>`
 
-- :ref:`Import a Project <import-project>`
+- :ref:`Import a Project <import-project>
 
 Learn More
 ----------
