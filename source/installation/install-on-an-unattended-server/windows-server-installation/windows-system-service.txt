@@ -43,7 +43,7 @@ Steps
 
       .. note::
 
-        When the startup mode is Automatic, the service starts automatically when 
+        When the startup mode is :guilabel:`Automatic`, the service starts automatically when 
         the computer next restarts.
 
 Next Steps

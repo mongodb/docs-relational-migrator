@@ -27,7 +27,7 @@ Steps
 
    .. step:: Select :guilabel:`Port`. Click :guilabel:`Next`.
 
-   .. step:: Select :guilabel:`TCP`, :guilabel:`Specific Local Ports`, and enter the port 
+   .. step:: Select :guilabel:`TCP, Specific Local Ports`, and enter the port 
     number. Click :guilabel:`Next`. 
 
    .. step:: Select :guilabel:`Allow the connection`. Click :guilabel:`Next`.
