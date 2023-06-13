@@ -1,3 +1,5 @@
+.. _unattended-server:
+
 ====================================
 Installation on an Unattended Server
 ====================================
