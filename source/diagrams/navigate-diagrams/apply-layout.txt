@@ -1,3 +1,5 @@
+.. _rm-apply-layout:
+
 ===========================
 Apply a Layout to a Diagram
 ===========================
