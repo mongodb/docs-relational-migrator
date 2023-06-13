@@ -12,7 +12,6 @@ Installation on an Unattended Server
    :depth: 1
    :class: singlecol
 
-
 You can install Relational Migrator on an unattended server on both Linux 
 and Windows systems. The unattended server installation binds Relational 
 Migrator to any IP and port on the server and exposes it as a web application.

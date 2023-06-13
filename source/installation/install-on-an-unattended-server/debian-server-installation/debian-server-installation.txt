@@ -1,3 +1,5 @@
+.. _debian-install:
+
 ===========================
 Debian Systems Installation
 ===========================

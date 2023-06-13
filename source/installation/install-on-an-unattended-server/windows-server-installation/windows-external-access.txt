@@ -1,3 +1,5 @@
+.. _windows-external-access:
+
 ========================================================
 Enable External Access to Relational Migrator on Windows
 ========================================================

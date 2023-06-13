@@ -1,3 +1,5 @@
+.. _rhel-install:
+
 ================================
 RHEL/CentOS Systems Installation
 ================================
