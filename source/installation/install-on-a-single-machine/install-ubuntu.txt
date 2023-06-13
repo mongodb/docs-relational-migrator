@@ -44,7 +44,7 @@ Steps
 
         - [Oracle: 21.6.0.0 of odjbc11.jar from the Oracle 21c](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 
-     2. Copy the driver files to `/opt/mongodb-relational-migrator/lib/app/lib`.
+     2. Copy the driver files to ``/opt/mongodb-relational-migrator/lib/app/lib``.
 
        To copy the driver, use the following example: 
 
@@ -58,7 +58,7 @@ Steps
 
         cd /opt/mongodb-relational-migrator/bin
 
-        `./mongodb-relational-migrator`
+        ./mongodb-relational-migrator
 
 Next Steps
 ----------
