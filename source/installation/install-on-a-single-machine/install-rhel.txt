@@ -62,7 +62,7 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Create a Project <create-project-live-connection>`
+- :ref:`Create a Project <create-project-live-database>`
 
 - :ref:`Import a Project <import-project>`
 
