@@ -35,7 +35,7 @@ Steps
       installer on the `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
 
    .. step:: Launch the installer and follow the single machine :ref:`Install on Windows <single-windows>` 
-    instructions. 
+      instructions. 
 
    .. step:: Enable Relational Migrator to run as an unattended server.
 
@@ -58,7 +58,7 @@ Steps
       in your ``user.properties`` file to specify your preferred port.
 
    .. step:: Run Relational Migrator from its installed location or any shortcuts that 
-    were created during the installation process. 
+      were created during the installation process. 
 
    .. step:: (Optional) Check logs for errors or other information. 
 
