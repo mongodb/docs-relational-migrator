@@ -5,7 +5,7 @@ Navigate Diagrams and Entities
 This page describes how to navigate your project's diagrams and
 entities.
 
-After you :ref:`rm-create-project-live`, Relational
+After you :ref:`Create a Project<rm-create-project-live>`, Relational
 Migrator creates an initial diagram containing the entities and
 relationships in the Relational and MongoDB models.
 
