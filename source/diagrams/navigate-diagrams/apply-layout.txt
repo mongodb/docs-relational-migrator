@@ -24,8 +24,6 @@ automatically adjusted to display your chosen layout.
 Steps
 -----
 
-To apply a layout to a diagram:
-
 #. Click the tree diagram icon at the top of the diagram view.
 
 #. Choose your layout.
