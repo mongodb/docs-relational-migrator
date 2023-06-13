@@ -3,3 +3,61 @@
 ======================================================
 Run Relational Migrator as a System Service on Windows
 ======================================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+When you install Relational Migrator on a Windows server, you can set up Relational 
+Migrator to run as a system service. By running Relational Migrator as a system 
+service, Relational Migrator automatically starts when the server starts.
+
+Steps
+-----
+
+.. procedure::
+   :style:normal
+
+   .. step:: Launch the Service Manager of your choice.
+
+      These steps use `NSSM <http://nssm.cc/>`__ (a free service manager utility).
+
+   .. step:: From a command prompt, run ``.\nssm install RelationalMigrator``.
+
+   .. step:: From the :guilabel:`Application` tab, choose the path and startup directory of the installed ``MongoDB Relational Migrator.exe``.
+
+   .. step:: From the :guilabel:`Details` tab, enter :guilabel:`MongoDB Relational Migrator` as the service’s display name.
+
+   .. step:: From the :guilabel:`Log on` tab, keep the default local system account or choose a specific account to run the service under.
+
+   .. step:: Click :guilabel:`Install service`.
+
+   .. step:: Launch ``services.msc``. 
+
+      Find the newly installed MongoDB Relational Migrator service and click 
+      :guilabel:`Start Service`. 
+
+      .. note::
+
+        When the startup mode is Automatic, the service starts automatically when 
+        the computer next restarts.
+
+Next Steps
+----------
+
+- :ref:`Enable External Access to Relational Migrator on Windows <windows-external-access>`
+
+- :ref:`Create a Project <create-project-live-connection>`
+
+- :ref:`Import a Project <import-project>`
+
+Learn More
+----------
+
+- :ref:`Debian Systems Installation <debian-install>`
+
+- :ref:`RHEL/CentOS Systems Installation <rhel-install>`

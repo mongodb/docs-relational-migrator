@@ -34,8 +34,7 @@ Steps
       remotely copy it over to the instance. Find the latest Relational Migrator 
       installer on the `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
 
-   .. step:: Launch the installer and follow the single machine :ref:`Install on Windows <single-windows>` 
-      instructions. 
+   .. step:: Launch the installer and follow the single machine :ref:`Install on Windows <single-windows>` instructions. 
 
    .. step:: Enable Relational Migrator to run as an unattended server.
 
@@ -57,8 +56,7 @@ Steps
       To change the port Relational Migrator runs on, update the ``server.port`` line 
       in your ``user.properties`` file to specify your preferred port.
 
-   .. step:: Run Relational Migrator from its installed location or any shortcuts that 
-      were created during the installation process. 
+   .. step:: Run Relational Migrator from its installed location or any shortcuts that were created during the installation process. 
 
    .. step:: (Optional) Check logs for errors or other information. 
 
