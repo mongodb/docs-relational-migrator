@@ -1,4 +1,4 @@
-.. _debian-install:
+.. _install-debian-server:
 
 =================
 Install On Debian
