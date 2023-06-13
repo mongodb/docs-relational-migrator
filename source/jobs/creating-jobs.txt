@@ -78,7 +78,8 @@ Steps
 
    If you want to specify the JDBC URI manually, click the 
    :guilabel:`Enter URI manually` toggle switch on the :guilabel:`Connect SourceDB` 
-   form. For details, see :ref:`rm-relational-database-connection-strings`.
+   form. For details, see :ref:`rm-relational-database-connection-strings`
+   .
 
 #. Click :guilabel:`Connect`. 
 
