@@ -52,7 +52,6 @@ Control Your Migration To MongoDB
 
       .. image:: /img/tab1img.png
          :alt: Mapping Rules
-         :figwidth: 30%
 
    .. tab:: Model your Data
       :tabid: Model your Data
