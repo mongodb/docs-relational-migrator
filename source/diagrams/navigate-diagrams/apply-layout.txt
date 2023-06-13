@@ -24,7 +24,7 @@ automatically adjusted to display your chosen layout.
 Steps
 -----
 
-#. Click the tree diagram icon at the top of the diagram view.
+#. Click the tree diagram icon at the top-left of the :guilabel:`diagram` view.
 
 #. Choose your layout.
 
