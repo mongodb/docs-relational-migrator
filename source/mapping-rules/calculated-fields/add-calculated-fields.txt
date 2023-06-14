@@ -58,100 +58,226 @@ The new field is visible in MongoDB after your next sync job runs.
 Examples
 --------
 
-The following table shows examples of JavaScript expressions that you
-can use in calculated fields:
+The following examples show JavaScript expressions that you can use in
+calculated fields:
 
-.. list-table::
-   :header-rows: 1
+Concatenate Strings
+~~~~~~~~~~~~~~~~~~~
 
-   * - Task Description
+Combine two columns into a single field.
 
-     - Expression
+Expression:
 
-     - Input
+.. code-block:: none
 
-     - Output
+    columns["firstName"] + ' ' + columns["lastName"]
 
-   * - **String Concatenating** Combine two columns into a single field.
+Input:
 
-     - ``columns["firstName"] + ' ' + columns["lastName"]``
+.. code-block:: none
+    
+   firstName: "John"
+   lastName: "Smith"
 
-     - | firstName: "John", 
-       | lastName: "Smith"
+Output: 
+   
+.. code-block:: none
 
-     - "John Smith"
+   "John Smith"
 
-   * - **String Splitting** Split columns values based on a specific
-       character.
+Split Strings
+~~~~~~~~~~~~~
 
-     - ``columns["fullName"].split(' ')[0]``
+Split column values based on a specified character.
 
-     - fullName: "John Smith"
+Expression:
 
-     - "John"
+.. code-block:: none
 
-   * - **String Replacement** Apply regex patterns to replace string
-       values in a column.
+    columns["fullName"].split(' ')[0]
 
-     - ``columns["fullName"].replace(/smith/i, "Doe")``
+Input:
 
-     - fullName: "John Smith"
+.. code-block:: none
+    
+   fullName: "John Doe"
 
-     - "John Doe"
+Output: 
+   
+.. code-block:: none
 
-   * - **String Includes** Return true or false for column containing a
-       string value.
+   "John"
 
-     - ``columns["fullName"].includes("Smith")``
+Replace Strings
+~~~~~~~~~~~~~~~
 
-     - fullName: "John Smith"
+Apply regex patterns to replace string values in a column.
 
-     - true
+Expression:
 
-   * - **Number Manipulation** Perform mathematic operations on column
-       values.
+.. code-block:: none
 
-     - ``columns["foo"] * columns["bar"]``
+    columns["fullName"].replace(/smith/i, "Doe")
 
-     - foo: 1 , bar: 2
+Input:
 
-     - 2
+.. code-block:: none
+    
+   fullName: "John Smith"
 
-   * - **Ternaries** Assign column values based on logical conditions.
+Output: 
+   
+.. code-block:: none
 
-     - ``columns["foo"] === 1 ? "yes" : "no"``
+   "John Doe"
 
-     - foo: 1
+Check for String Values
+~~~~~~~~~~~~~~~~~~~~~~~
 
-     - "yes"
+Return true or false for column containing a string value.
 
-   * - **Extract JSON Values** Access data stored as JSON data type with
-       calculated field expressions. Requires JSON data type columns
-       (Postgres).
+Expression:
 
-     - ``columns["Employee"].Address.state``
+.. code-block:: none
 
-     - Employee: {  name: "Mark",  Address: {  &nbsp;state:"California"  &nbsp;}  }
+    columns["fullName"].includes("Smith")
 
-     - "California"
+Input:
 
-   * - **Access array elements** Access data stored as array data type
-       with calculated fields expressions. Requires array data type
-       columns (Postgres or MySQL).
+.. code-block:: none
+    
+   fullName: "John Smith"
 
-     - ``columns["myArray"][0]``
+Output: 
+   
+.. code-block:: none
 
-     - myArray: ["a","b","c"]
+   true
 
-     - "a"
-   * - **Date Parsing** Parse an ISO8601-formatted date string into a
-       date.
+Perform Mathematic Operations
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-     - ``new Date(columns["dateAsString"])``
+Perform mathematic operations on column values.
 
-     - dateAsString: "2009-02-11"
+Expression:
 
-     - 2009-02-11T0:00:00Z
+.. code-block:: none
+
+    columns["col1"] * columns["col2"]
+
+Input:
+
+.. code-block:: none
+    
+   col1: 3
+   col2: 2
+
+Output: 
+   
+.. code-block:: none
+
+   6
+
+Assign Values based on Logical Conditions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Assign column values based on logical conditions.
+
+Expression:
+
+.. code-block:: none
+
+    columns["col1"] === 1 ? "yes" : "no"
+
+Input:
+
+.. code-block:: none
+    
+   col1: 1
+
+Output: 
+   
+.. code-block:: none
+
+   yes
+
+Extract JSON Values
+~~~~~~~~~~~~~~~~~~~
+
+Access data stored as JSON data type with calculated field expressions.
+Requires JSON data type columns (Postgres).
+
+Expression:
+
+.. code-block:: none
+
+    columns["Employee"].Address.state
+
+Input:
+
+.. code-block:: json
+    
+   {
+      Employee: { 
+         name: "Mark",
+         Address: {
+            state: "California"
+         } 
+      }
+   }
+            
+Output: 
+   
+.. code-block:: none
+
+   "California"
+
+Access Array Elements
+~~~~~~~~~~~~~~~~~~~~~
+
+Access data stored as array data type with calculated fields
+expressions. Requires array data type columns (Postgres or MySQL).
+
+Expression:
+
+.. code-block:: none
+
+    columns["myArray"][0]
+
+Input:
+
+.. code-block:: json
+    
+   myArray: ["a","b","c"]
+            
+Output: 
+   
+.. code-block:: none
+
+   "a"
+
+Parse Dates
+~~~~~~~~~~~
+
+Parse an ISO8601-formatted date string into a date.
+
+Expression:
+
+.. code-block:: none
+
+    new Date(columns["dateAsString"])
+
+Input:
+
+.. code-block:: json
+    
+   dateAsString: "2009-02-11"
+            
+Output: 
+   
+.. code-block:: none
+
+   2009-02-11T0:00:00Z
 
 Learn More
 ----------
