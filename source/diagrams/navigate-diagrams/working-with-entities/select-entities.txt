@@ -4,6 +4,12 @@
 Select Entities
 ===============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 You can select one or more entities. You can select entities either in the 
 :ref:`diagram view <rm-diagram-view>` or in the :ref:`schema model <rm-schema-model-pane>` pane. 
 After you select your entities, you can move, copy, delete, or hide your selected 
