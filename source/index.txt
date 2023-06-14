@@ -106,7 +106,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
             classes, persistence layers and APIs
 
       .. image:: /img/tab4img.png
-         :alt: Data synchronization
+         :alt: Convert your Application Code
 
 .. kicker:: Related Products & Resources
 
