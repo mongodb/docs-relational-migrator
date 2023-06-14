@@ -93,7 +93,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
 
       .. procedure::
          
-         .. step:: Pick A Language and Template
+         .. step:: Pick a Language and Template
 
             Support for popular enterprise languages 
             including C#, Java, JavaScript, JSON and multiple 
