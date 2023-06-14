@@ -5,7 +5,7 @@ Navigate Diagrams and Entities
 This page describes how to navigate your project's diagrams and
 entities.
 
-After you :ref:`Create a Project<rm-create-project-live>`, Relational
+After you :ref:`create a project<rm-create-project-live>`, Relational
 Migrator creates an initial diagram containing the entities and
 relationships in the Relational and MongoDB models.
 
@@ -19,8 +19,8 @@ the top of the workspace.
    Diagram tabs appear in the order that the diagrams were created. You
    cannot reorder diagram tabs.
 
-Change Active Diagram
----------------------
+Change the Active Diagram
+-------------------------
 
 The active diagram is the diagram currently displayed by Relational
 Migrator.
