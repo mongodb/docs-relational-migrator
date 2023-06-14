@@ -25,7 +25,7 @@ Before you Begin
 
 - :ref:`Create one or more mapping rules <rm-create-mapping-rules>` in your 
   Relational Migrator project.
-- Prepare a :ref:`MongoDB URI <rm-mongodb-connection-string>` and
+- Prepare a :ref:`MongoDB URI <rm-mongodb-database-connection-strings>` and
   credentials that have read/write permissions on your destination database.
 
 Steps
