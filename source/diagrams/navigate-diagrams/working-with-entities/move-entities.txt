@@ -4,6 +4,12 @@
 Move Entities
 =============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 You can select one or more entities and move them to a different diagram. You 
 can move the entities to a newly created diagram or to a different existing 
 diagram. Moving entities lets you customize diagrams to help you visualize 

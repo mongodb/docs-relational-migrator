@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .. _navigate-diagrams-and-entities:
+=======
+.. _rm-navigate-diagrams:
+>>>>>>> b94c28d (copy entities)
 
 ==============================
 Navigate Diagrams and Entities
