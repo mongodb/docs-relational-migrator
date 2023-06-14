@@ -76,7 +76,8 @@ can use in calculated fields:
 
      - ``columns["firstName"] + ' ' + columns["lastName"]``
 
-     - firstName: "John", lastName: "Smith"
+     - | firstName: "John", 
+       | lastName: "Smith"
 
      - "John Smith"
 

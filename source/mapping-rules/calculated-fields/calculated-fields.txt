@@ -43,8 +43,8 @@ Calculated fields have the following characteristics:
 - They serve as a transformation layer as you migrate your data to
   MongoDB.
 
-Tasks
------
+Get Started
+-----------
 
 - To create calculated fields, see :ref:`rm-add-calculated-fields`.
 
