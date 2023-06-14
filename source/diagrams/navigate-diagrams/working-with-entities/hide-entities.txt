@@ -4,6 +4,12 @@
 Toggle Visibility of Entities
 =============================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 You can show or hide entities in your diagrams. Showing and hiding entities only 
 affects the current diagram and does not affect the model. By being able to show 
 and hide entities, you can focus your attention on specific entities and relationships 
