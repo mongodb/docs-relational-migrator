@@ -10,9 +10,11 @@ Create a Sync Job
    :depth: 1
    :class: singlecol
 
-Create new sync jobs from the :guilabel:`Data Migration` tab.
+Sync jobs are the worker processes responsible for transferring your 
+data and schemas from a relational database to MongoDB. Create a new 
+sync job from the :guilabel:`Data Migration` tab.
 
-About This Task
+About this Task
 ---------------
 
 The URI credentials you provide when creating a sync job do not 
@@ -35,13 +37,13 @@ Steps
 #. On the :guilabel:`Connect Source DB` form, enter the connection details 
    to create the JDBC URI for your relational database. 
 
-   2a. Select a database type from the :guilabel:`Database type` drop-down.
+   #. Select a database type from the :guilabel:`Database type` drop-down.
 
-   2b. Enter a host IP or DNS name in the :guilabel:`Host` text box. 
+   #. Enter a host IP or DNS name in the :guilabel:`Host` text box. 
 
-   2c. Enter a port number in the :guilabel:`Port` text box. 
+   #. Enter a port number in the :guilabel:`Port` text box. 
 
-   2d. Enter a database name in the :guilabel:`Database` text field.
+   #. Enter a database name in the :guilabel:`Database` text field.
 
    Depending on your relational database, this behavior varies:
 
@@ -59,15 +61,15 @@ Steps
       * - Postgres 
         - Leaving database name blank loads schemas from the default database.
 
-   2e. Enter a username in the :guilabel:`Username` text box. 
+   #. Enter a username in the :guilabel:`Username` text box. 
 
-   2f. Enter a password in the :guilabel:`Password` text box. 
+   #. Enter a password in the :guilabel:`Password` text box. 
 
-   2g. (Optional) Click the :guilabel:`Save a password for this session` checkbox.
+   #. (Optional) Click the :guilabel:`Save a password for this session` checkbox.
 
-   2h. Click the :guilabel:`SSL` toggle switch to enable or disable SSL and select an SSL mode.
+   #. Click the :guilabel:`SSL` toggle switch to enable or disable SSL and select an SSL mode.
 
-   2i. Click :guilabel:`Connect`.
+   #. Click :guilabel:`Connect`.
 
    .. note::
 
