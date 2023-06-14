@@ -48,7 +48,7 @@ Control Your Migration To MongoDB
             Define custom JavaScript expressions to create additional fields.
 
       .. image:: /img/tab1img.png
-         :alt: Mapping Rules
+         :alt: Mapping and Modelling
 
    .. tab:: Schema Recommendations
       :tabid: Schema Recommendations
@@ -67,7 +67,7 @@ Control Your Migration To MongoDB
             into a specific collection in your model.
 
       .. image:: /img/tab2img.png
-         :alt: Mapping Rules
+         :alt: Schema Recommendations
 
    .. tab:: Data synchronization
       :tabid: Data synchronization
@@ -86,9 +86,8 @@ Control Your Migration To MongoDB
 
             Replication can be one time or continuous.
 
-      .. image:: /img/Schema-Models.png
-         :alt: Schema Models
-         :figwidth: 75%
+      .. image:: /img/tab3img.png
+         :alt: Data synchronization
 
    .. tab:: Convert your Application Code
       :tabid: deploy
