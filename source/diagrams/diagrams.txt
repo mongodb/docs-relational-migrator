@@ -4,6 +4,12 @@
 Diagrams
 ========
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
 Diagrams function as an Entity Relationship Diagram (ERD) tool to
 visualize tables, foreign key relationships, and data types. Diagrams
 help you understand the relational database's schema, and show you how
