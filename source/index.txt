@@ -36,11 +36,6 @@ Control Your Migration To MongoDB
 
       .. procedure::
 
-         .. step:: Schema Recommendations
-
-            Get a MongoDB schema recommendation based on your relational 
-            model, or start with a blank slate.
-
          .. step:: Visualize Source and Destination Schemas
 
             Use the ER-style diagramming interface to visual 
@@ -60,19 +55,19 @@ Control Your Migration To MongoDB
 
       .. procedure::
 
-         .. step:: Choose your Mapping Rules
+         .. step:: Get Suggested Schema Recommendations
 
             Accelerate your schema mapping by asking Relational 
-            Migrator to suggest a MongoDB schema for your workload.
-         
-         .. step:: Define Calculated Fields
+            Migrator to suggest a MongoDB schema for your workload, 
+            or start with a blank slate.
+
+         .. step:: Apply Your Mapping Rules
 
             Quickly apply recommended table mappings 
             into a specific collection in your model.
 
-      .. image:: /img/Mapping-Rules.png
+      .. image:: /img/tab2img.png
          :alt: Mapping Rules
-         :figwidth: 50%
 
    .. tab:: Data synchronization
       :tabid: Data synchronization
