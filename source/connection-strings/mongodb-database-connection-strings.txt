@@ -1,4 +1,4 @@
-.. _rm-mongodb-connection-string:
+.. _rm-mongodb-database-connection-strings:
 
 ===================================
 MongoDB Database Connection Strings
