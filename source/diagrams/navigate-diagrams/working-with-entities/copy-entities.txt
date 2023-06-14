@@ -18,14 +18,16 @@ the different ways your data can be represented in MongoDB.
 Steps
 -----
 
-#. :ref:`Select entities <rm-select-entities>` to copy. 
+#. :ref:`Select entities <rm-select-entities>` you want to copy. 
+
    From your :guilabel:`Diagram` or :guilabel:`Schema model` pane, click 
    on the entities you want to copy. 
 
 #. Click :guilabel:`Copy entities to`, and select a diagram to copy your entities to. 
 
-   Click the ellipsis menu in the right pane or right-click the selected entities.
-   Then, click :guilabel:`Copy entities to`.
+#. Click the ellipsis menu in the right pane or right-click the selected entities.
+
+#. Click :guilabel:`Copy entities to`.
 
    You can select one of the following options to copy your entities to: 
 
