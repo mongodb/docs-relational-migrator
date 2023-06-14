@@ -1,3 +1,5 @@
+.. _rm-toggle-visibility-entities:
+
 =============================
 Toggle Visibility of Entities
 =============================

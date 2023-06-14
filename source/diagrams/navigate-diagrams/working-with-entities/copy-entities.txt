@@ -1,3 +1,5 @@
+.. _rm-copy-entities:
+
 =============
 Copy Entities
 =============
