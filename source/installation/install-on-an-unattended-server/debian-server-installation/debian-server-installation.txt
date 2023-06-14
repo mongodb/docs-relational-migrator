@@ -12,6 +12,17 @@ Debian Systems Installation
    :depth: 1
    :class: singlecol
 
+Install Relational Migrator on an unattended server in a Linux systems. For instructions 
+on installation and configuration, see the following: 
+
+Get Started
+-----------
+
+- :ref:`Install on Debian <install-debian-server>`
+
+- :ref:`Run Relational Migrator as a System Service on Debian <debian-system-service>`
+
+
 .. toctree::
    :hidden:
    :titlesonly:
