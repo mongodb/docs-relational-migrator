@@ -20,7 +20,7 @@ Steps
    .. image:: /img/diagrams/entity-menu.png
       :alt: Entity Pane
 
-#. Click **Move entities to**.
+#. Click :guilabel:`Move entities to`.
 
 #. Choose how to move the entities.
 
@@ -35,7 +35,7 @@ Steps
    - If you selected an existing diagram, the moved entities are displayed 
      with the other pre-existing entities in the diagram.
 
-   - If you selected **Create new diagram**, only the moved entities are displayed.
+   - If you selected :guilabel:`Create new diagram`, only the moved entities are displayed.
 
 Learn More
 ----------
