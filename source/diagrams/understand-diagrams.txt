@@ -103,7 +103,6 @@ database entities. If two boxes are connected, the corresponding
 entities are linked with a foreign key. The lines may show the following
 features of relationships:
 
-
 - A small bar across a relationship link indicates a one-to-one
   relationship between entities.
 
@@ -196,10 +195,10 @@ The following new mapping rules have been created to better utilize
 MongoDB's embedded data model:
 
 
-- The ``Order`` collection contains a rule which maps ``OrderLines`` as an
-  `Embedded array <../../Mapping-Rules/mapping-options/embedded-array>`__.
-  The ``OrderLine`` table from the relational schema is mapped as an
-  array of objects inside the ``Order`` documents, using the foreign key
+- The ``Order`` collection contains a rule that maps ``OrderLines`` as
+  an :ref:`Embedded array <mapping-rule-embedded-array>`. The
+  ``OrderLine`` table from the relational schema is mapped as an array
+  of objects inside the ``Order`` documents, using the foreign key
   relationship from the relational schema.
 
 
@@ -207,11 +206,11 @@ MongoDB's embedded data model:
      :alt: Order Mapping Rule Example
 
 
-- The ``Customer`` collection contains a rule which maps ``Orders`` as an
-  `Embedded array <../../Mapping-Rules/mapping-options/embedded-array>`__.
-  The ``Order`` table from the relational schema is mapped as an array of
-  objects inside the ``Customer`` documents, using the foreign key
-  relationship from the relational schema.
+- The ``Customer`` collection contains a rule which maps ``Orders`` as
+  an :ref:`Embedded array <mapping-rule-embedded-array>`. The ``Order``
+  table from the relational schema is mapped as an array of objects
+  inside the ``Customer`` documents, using the foreign key relationship
+  from the relational schema.
 
 
   .. image:: /img/diagrams/customer-mapping-example.png
@@ -219,6 +218,6 @@ MongoDB's embedded data model:
 
 
 Both of these mapping rules remove the ID fields from the mapping. Since
-the ``OrderLines`` and ``Orders`` fields are embedded in their parent fields
-rather than being referenced with a foreign key, the ID fields are no
-longer required to link the fields together.
+the ``OrderLines`` and ``Orders`` fields are embedded in their parent
+fields rather than being referenced with a foreign key, the ID fields
+are not required to link the fields together.
