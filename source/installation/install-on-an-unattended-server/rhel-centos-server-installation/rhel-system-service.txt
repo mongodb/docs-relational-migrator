@@ -19,41 +19,38 @@ a system service, Relational Migrator automatically starts when the server start
 Steps
 -----
 
-.. procedure::
-   :style:normal
+1. Create a ``/etc/systemd/system/migrator.service`` file. 
 
-   .. step:: Create a ``/etc/systemd/system/migrator.service`` file. 
+   Copy the text below into the ``/etc/systemd/system/migrator.service`` file. 
+   Replace the binary path as needed. 
 
-      Copy the text below into the ``/etc/systemd/system/migrator.service`` file. 
-      Replace the binary path as needed. 
+   .. code-block::
 
-      .. code-block::
+      [Unit]
+      Description=MongoDB Relational Migrator
 
-        [Unit]
-        Description=MongoDB Relational Migrator
+      [Service]
+      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB Relational Migrator"
 
-        [Service]
-        ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB Relational Migrator"
+      [Install]
+      WantedBy=multi-user.target
 
-        [Install]
-        WantedBy=multi-user.target
+#. Reload ``systemd`` to read the newly created service:
 
-   .. step:: Reload ``systemd`` to read the newly created service:
-
-      .. code-block
+   .. code-block
       
-        systemctl daemon-reload
+      systemctl daemon-reload
 
-   .. step:: Enable the Relational Migrator service to run on startup and start for the current session.
+#. Enable the Relational Migrator service to run on startup and start for the current session.
 
-      You can manage the service with ``systemctl`` commands. To run on startup and 
-      start the current session, run the following:
+   You can manage the service with ``systemctl`` commands. To run on startup and 
+   start the current session, run the following:
 
-      .. code-block
+   .. code-block
 
-         systemctl enable migrator.service
+      systemctl enable migrator.service
 
-         systemctl start migrator.service
+      systemctl start migrator.service
 
 Next Steps
 ----------

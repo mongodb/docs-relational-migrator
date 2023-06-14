@@ -18,22 +18,20 @@ access, incoming connections are allowed on the same port as Relational Migrator
 Steps
 -----
 
-.. procedure::
-   :style:normal
+1. Open Windows Defender Firewall with Advanced Security.
 
-   .. step:: Open Windows Defender Firewall with Advanced Security.
+#. Select :guilabel:`Inbound Rules`. Click :guilabel:`New Rule`.
 
-   .. step:: Select :guilabel:`Inbound Rules`. Click :guilabel:`New Rule`.
+#. Select :guilabel:`Port`. Click :guilabel:`Next`.
 
-   .. step:: Select :guilabel:`Port`. Click :guilabel:`Next`.
+#. Select :guilabel:`TCP, Specific Local Ports`, and enter the port number. Click 
+   :guilabel:`Next`. 
 
-   .. step:: Select :guilabel:`TCP, Specific Local Ports`, and enter the port number. Click :guilabel:`Next`. 
+#. Select :guilabel:`Allow the connection`. Click :guilabel:`Next`.
 
-   .. step:: Select :guilabel:`Allow the connection`. Click :guilabel:`Next`.
+#. Select the desired network profiles. Click :guilabel:`Next`. 
 
-   .. step:: Select the desired network profiles. Click :guilabel:`Next`. 
-
-   .. step:: Enter a name for the rule. Click :guilabel:`Finish`.
+#. Enter a name for the rule. Click :guilabel:`Finish`.
 
 Next Steps
 ----------

@@ -19,32 +19,32 @@ service, Relational Migrator automatically starts when the server starts.
 Steps
 -----
 
-.. procedure::
-   :style:normal
+1. Launch the Service Manager of your choice.
 
-   .. step:: Launch the Service Manager of your choice.
+   These steps use `NSSM <http://nssm.cc/>`__ (a free service manager utility).
 
-      These steps use `NSSM <http://nssm.cc/>`__ (a free service manager utility).
+#. From a command prompt, run ``.\nssm install RelationalMigrator``.
 
-   .. step:: From a command prompt, run ``.\nssm install RelationalMigrator``.
+#. From the :guilabel:`Application` tab, choose the path and startup directory 
+   of the installed ``MongoDB Relational Migrator.exe``.
 
-   .. step:: From the :guilabel:`Application` tab, choose the path and startup directory of the installed ``MongoDB Relational Migrator.exe``.
+#. From the :guilabel:`Details` tab, enter :guilabel:`MongoDB Relational Migrator` 
+   as the service’s display name.
 
-   .. step:: From the :guilabel:`Details` tab, enter :guilabel:`MongoDB Relational Migrator` as the service’s display name.
+#. From the :guilabel:`Log on` tab, keep the default local system account or 
+   choose a specific account to run the service under.
 
-   .. step:: From the :guilabel:`Log on` tab, keep the default local system account or choose a specific account to run the service under.
+#. Click :guilabel:`Install service`.
 
-   .. step:: Click :guilabel:`Install service`.
+#. Launch ``services.msc``. 
 
-   .. step:: Launch ``services.msc``. 
+   Find the newly installed MongoDB Relational Migrator service and click 
+   :guilabel:`Start Service`. 
 
-      Find the newly installed MongoDB Relational Migrator service and click 
-      :guilabel:`Start Service`. 
+   .. note::
 
-      .. note::
-
-        When the startup mode is :guilabel:`Automatic`, the service starts automatically when 
-        the computer next restarts.
+      When the startup mode is :guilabel:`Automatic`, the service starts automatically when 
+      the computer next restarts.
 
 Next Steps
 ----------
