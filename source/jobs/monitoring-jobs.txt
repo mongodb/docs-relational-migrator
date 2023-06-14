@@ -12,7 +12,7 @@ Monitor a Sync Job
 
 You can monitor a sync job from the :guilabel:`History` pane on the 
 :guilabel:`Data Migration` tab. The :guilabel:`History` pane contains 
-in progress, completed, and failed jobs.
+information about in progress, completed, and failed sync jobs.
 
 About this Task
 ---------------
@@ -23,7 +23,7 @@ the :guilabel:`Job overview` pane.
 For example:
 
 - A snapshot sync job includes a snapshot stage and, optionally, a verification stage.
-- A continuous sync job includes a snapshot stage followed by a CDC stage. 
+- A continuous sync job includes a snapshot stage, followed by a CDC stage. 
 
 Job Overview
 ~~~~~~~~~~~~
@@ -148,14 +148,14 @@ Steps
 
 3. Review the debugging information in the :guilabel:`Error detail` column.
 
-Learn More
-----------
-
-- :ref:`rm-stop-jobs`
-- :ref:`rm-data-Verification`
-
 Next Steps
 ----------
 
 - :ref:`rm-code-generation`
 - :ref:`rm-add-calculated-fields`
+
+Learn More
+----------
+
+- :ref:`rm-stop-jobs`
+- :ref:`rm-data-Verification`

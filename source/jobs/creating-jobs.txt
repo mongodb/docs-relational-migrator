@@ -37,13 +37,13 @@ Steps
 #. On the :guilabel:`Connect Source DB` form, enter the connection details 
    to create the JDBC URI for your relational database. 
 
-   #. Select a database type from the :guilabel:`Database type` drop-down.
+   2a. Select a database type from the :guilabel:`Database type` drop-down.
 
-   #. Enter a host IP or DNS name in the :guilabel:`Host` text box. 
+   2b. Enter a host IP or DNS name in the :guilabel:`Host` text box. 
 
-   #. Enter a port number in the :guilabel:`Port` text box. 
+   2c. Enter a port number in the :guilabel:`Port` text box. 
 
-   #. Enter a database name in the :guilabel:`Database` text field.
+   2d. Enter a database name in the :guilabel:`Database` text field.
 
    Depending on your relational database, this behavior varies:
 
@@ -61,15 +61,15 @@ Steps
       * - Postgres 
         - Leaving database name blank loads schemas from the default database.
 
-   #. Enter a username in the :guilabel:`Username` text box. 
+   2e. Enter a username in the :guilabel:`Username` text box. 
 
-   #. Enter a password in the :guilabel:`Password` text box. 
+   2f. Enter a password in the :guilabel:`Password` text box. 
 
-   #. (Optional) Click the :guilabel:`Save a password for this session` checkbox.
+   2g. (Optional) Click the :guilabel:`Save a password for this session` checkbox.
 
-   #. Click the :guilabel:`SSL` toggle switch to enable or disable SSL and select an SSL mode.
+   2h. Click the :guilabel:`SSL` toggle switch to enable or disable SSL and select an SSL mode.
 
-   #. Click :guilabel:`Connect`.
+   2i. Click :guilabel:`Connect`.
 
    .. note::
 
@@ -94,7 +94,7 @@ Steps
 #. Click :guilabel:`Connect`.
 
 #. On the :guilabel:`Migration Options` form, select your 
-   :guilabel:`Migration Options` :
+   :guilabel:`Migration Options`:
 
    .. list-table::
       :header-rows: 1
@@ -134,6 +134,12 @@ Steps
 
 #. Click :guilabel:`Start`.
 
+Next Steps
+----------
+
+- :ref:`rm-monitor-jobs`
+- :ref:`rm-data-Verification`
+
 Learn More
 ----------
 
@@ -144,9 +150,3 @@ see the follow Debezium reference links, which are internally utilized by Relati
 * `Oracle <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_database>`__
 * `PostgreSQL <https://debezium.io/documentation/reference/stable/connectors/postgresql.html#setting-up-postgresql>`__
 * `SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#setting-up-sqlserver>`__
-
-Next Steps
-----------
-
-- :ref:`rm-monitor-jobs`
-- :ref:`rm-data-Verification`
