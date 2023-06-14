@@ -38,8 +38,8 @@ Bring Your Relational Workloads to MongoDB With Confidence
 
          .. step:: Visualize Source and Destination Schemas
 
-            Use the ER-style diagramming interface to visual 
-            your schema to make mapping decisions.
+            Use the entity-relationship style diagramming interface 
+            to visual your schema and make schema mapping decisions.
 
          .. step:: Customize While Migrating
 
@@ -95,7 +95,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
          
          .. step:: Pick A Language and Template
 
-            Support for the most popular languages 
+            Support for popular enterprise languages 
             including C#, Java, JavaScript, JSON and multiple 
             template frameworks.
 
