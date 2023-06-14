@@ -74,16 +74,15 @@ Control Your Migration To MongoDB
 
       .. procedure::
 
-         .. step:: Connect your Source And Destination Databases
+         .. step:: Replicate From Supported Relation Systems
 
             Replicate data from Oracle, MySQL, SQL Server, or PostgreSQL 
             to MongoDB (Atlas or on-premises).
 
-         .. step:: Visualize your Destination Data Model
+         .. step:: Transform Data as Its Replicated
 
             Use the saved mapping definitions to transform data to 
             the MongoDB schema as its replicated.
-
             Replication can be one time or continuous.
 
       .. image:: /img/tab3img.png
