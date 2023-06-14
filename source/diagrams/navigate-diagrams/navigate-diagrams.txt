@@ -1,3 +1,5 @@
+.. _rm-navigate-diagrams:
+
 ==============================
 Navigate Diagrams and Entities
 ==============================

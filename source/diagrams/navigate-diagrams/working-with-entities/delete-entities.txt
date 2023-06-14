@@ -4,6 +4,12 @@
 Delete Entities
 ===============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Select one or more entities to delete from your Relational or MongoDB 
 model. Deleting entities allows you to:
 
@@ -32,8 +38,8 @@ About this Task
 Steps
 -----
 
-#. :ref:`Select the entities<rm-select-entities>`, and click the 
-   :guilabel:`delete` key on your keyboard. 
+#. :ref:`Select the entities<rm-select-entities>`, and press 
+   delete on your keyboard. 
 
    Relational Migrator prompts removal commands that include either removing the 
    entity from the model or hiding the entity from the diagram.
