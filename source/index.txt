@@ -61,7 +61,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
             Migrator to suggest a MongoDB schema for your workload, 
             or start with a blank slate.
 
-         .. step:: Apply Your Mapping Rules
+         .. step:: Apply your Mapping Rules
 
             Quickly apply recommended table mappings 
             into a specific collection in your model.
