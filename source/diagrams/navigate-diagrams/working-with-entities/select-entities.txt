@@ -1,3 +1,5 @@
+.. _rm-select-entities:
+
 ===============
 Select Entities
 ===============
