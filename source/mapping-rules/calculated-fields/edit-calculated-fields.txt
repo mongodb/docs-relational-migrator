@@ -1,3 +1,5 @@
+.. _rm-edit-calculated-fields:
+
 ======================
 Edit Calculated Fields
 ======================

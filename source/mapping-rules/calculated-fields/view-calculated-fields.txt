@@ -1,3 +1,5 @@
+.. _rm-view-calculated-fields:
+
 ======================
 View Calculated Fields
 ======================

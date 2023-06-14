@@ -1,3 +1,5 @@
+.. _rm-delete-calulcated-fields:
+
 ========================
 Delete Calculated Fields
 ========================

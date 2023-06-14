@@ -3,3 +3,158 @@
 =====================
 Add Calculated Fields
 =====================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+Calculated fields let you create new fields in your documents by
+combining values from existing database columns using JavaScript
+expressions. Calculated fields are evaluated each time a row is
+processed during a sync job.
+
+Before you Begin
+----------------
+
+To create a calculated field, you must define a mapping rule.
+
+To create mapping rules, see the following pages:
+
+- :ref:`rm-new-rules-from-mappings`
+
+- :ref:`rm-create-rule-to-mdb`
+
+- :ref:`rm-create-mapping-rules`
+
+About this Task
+---------------
+
+Calculated field expressions access values from the current source
+database row using the syntax ``columns["COLUMN_NAME"]``.
+
+Steps
+-----
+
+#. From the ``Mapping`` screen, click a table or collection name on the
+   ``schema model`` pane or diagram view.
+
+#. Add a new mapping rule or edit an existing mapping rule.
+
+#. Click the ``+`` icon to the right of the ``All fields`` label.
+
+#. Define a name for the new field in the ``Field Name`` text box.
+
+#. Define a valid JavaScript expression for the new field in the ``Value
+   expression`` text box.
+
+#. Click ``Done``.
+
+#. Click ``Save and close``.
+
+The new field is visible in MongoDB after your next sync job runs.
+
+Examples
+--------
+
+The following table shows examples of JavaScript expressions that you
+can use in calculated fields:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Task Description
+
+     - Expression
+
+     - Input
+
+     - Output
+
+   * - **String Concatenating** Combine two columns into a single field.
+
+     - ``columns["firstName"] + ' ' + columns["lastName"]``
+
+     - firstName: "John", lastName: "Smith"
+
+     - "John Smith"
+
+   * - **String Splitting** Split columns values based on a specific
+       character.
+
+     - ``columns["fullName"].split(' ')[0]``
+
+     - fullName: "John Smith"
+
+     - "John"
+
+   * - **String Replacement** Apply regex patterns to replace string
+       values in a column.
+
+     - ``columns["fullName"].replace(/smith/i, "Doe")``
+
+     - fullName: "John Smith"
+
+     - "John Doe"
+
+   * - **String Includes** Return true or false for column containing a
+       string value.
+
+     - ``columns["fullName"].includes("Smith")``
+
+     - fullName: "John Smith"
+
+     - true
+
+   * - **Number Manipulation** Perform mathematic operations on column
+       values.
+
+     - ``columns["foo"] * columns["bar"]``
+
+     - foo: 1 , bar: 2
+
+     - 2
+
+   * - **Ternaries** Assign column values based on logical conditions.
+
+     - ``columns["foo"] === 1 ? "yes" : "no"``
+
+     - foo: 1
+
+     - "yes"
+
+   * - **Extract JSON Values** Access data stored as JSON data type with
+       calculated field expressions. Requires JSON data type columns
+       (Postgres).
+
+     - ``columns["Employee"].Address.state``
+
+     - Employee: {  name: "Mark",  Address: {  &nbsp;state:"California"  &nbsp;}  }
+
+     - "California"
+
+   * - **Access array elements** Access data stored as array data type
+       with calculated fields expressions. Requires array data type
+       columns (Postgres or MySQL).
+
+     - ``columns["myArray"][0]``
+
+     - myArray: ["a","b","c"]
+
+     - "a"
+   * - **Date Parsing** Parse an ISO8601-formatted date string into a
+       date.
+
+     - ``new Date(columns["dateAsString"])``
+
+     - dateAsString: "2009-02-11"
+
+     - 2009-02-11T0:00:00Z
+
+Learn More
+----------
+
+- :ref:`rm-delete-calulcated-fields`
+- :ref:`rm-edit-calculated-fields`
+- :ref:`rm-view-calculated-fields`
