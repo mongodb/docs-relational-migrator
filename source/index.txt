@@ -18,7 +18,7 @@ What is Relational Migrator
 
    |
 
-   .. button:: Install Relational Migrator
+   .. button:: Download Relational Migrator
       :uri: http://mongodb.com/try/download/relational-migrator
 
 .. image:: /img/hero.png
@@ -31,67 +31,65 @@ Control Your Migration To MongoDB
 
 .. tabs::
 
-   .. tab:: Migrate To MongoDB
-      :tabid: Migrate To MongoDB
+   .. tab:: Mapping and Modelling
+      :tabid: Mapping-and-modelling
 
       .. procedure::
 
-         .. step:: Check Relational Migrator For Your Database
+         .. step:: Schema Recommendations
 
-            Relational Migrator supports migrations from Long-term support 
-            versions of the following databases:
+            Get a MongoDB schema recommendation based on your relational 
+            model, or start with a blank slate.
 
-            - MySQL
-            - Oracle
-            - PostgreSQL
-            - SQL Server
+         .. step:: Visualize Source and Destination Schemas
 
-         .. step:: Identify Your Migration Type
+            Use the ER-style diagramming interface to visual 
+            your schema to make mapping decisions.
 
-            Using snapshot or continuous sync jobs you can choose a 
-            migration strategy that is right for you.
+         .. step:: Customize While Migrating
+
+            Split or merge tables across collections. 
+            Embed a table as a nested document or array in an existing collection.
+            Define custom JavaScript expressions to create additional fields.
 
       .. image:: /img/tab1img.png
          :alt: Mapping Rules
 
-   .. tab:: Model your Data
-      :tabid: Model your Data
+   .. tab:: Schema Recommendations
+      :tabid: Schema Recommendations
 
       .. procedure::
 
          .. step:: Choose your Mapping Rules
 
-            Define customized mapping rules that convert your table 
-            ow data to MongoDB documents. Relational Migrator helps 
-            you transform your data models so that they work best 
-            for your applications.
+            Accelerate your schema mapping by asking Relational 
+            Migrator to suggest a MongoDB schema for your workload.
          
          .. step:: Define Calculated Fields
 
-            Optionally define additional fields in the form of custom 
-            JavaScript expressions as part of your migration to MongoDB. 
+            Quickly apply recommended table mappings 
+            into a specific collection in your model.
 
       .. image:: /img/Mapping-Rules.png
          :alt: Mapping Rules
          :figwidth: 50%
 
-   .. tab:: Visualize your Migration
-      :tabid: Visualize your Migration
+   .. tab:: Data synchronization
+      :tabid: Data synchronization
 
       .. procedure::
 
          .. step:: Connect your Source And Destination Databases
 
-            When creating a Relational Migrator project, enter your 
-            connection details or provide a URI for each of your 
-            source and destination databases.
+            Replicate data from Oracle, MySQL, SQL Server, or PostgreSQL 
+            to MongoDB (Atlas or on-premises).
 
          .. step:: Visualize your Destination Data Model
 
-            View both your source relational and destination MongoDB 
-            data models. Using Relational Migrator diagrams helps you edit your 
-            data model and visualize your migration in real time, before 
-            you run any sync jobs.
+            Use the saved mapping definitions to transform data to 
+            the MongoDB schema as its replicated.
+
+            Replication can be one time or continuous.
 
       .. image:: /img/Schema-Models.png
          :alt: Schema Models
@@ -102,19 +100,15 @@ Control Your Migration To MongoDB
 
       .. procedure::
          
-         .. step:: Pick A Data Modeling Template
+         .. step:: Pick A Language and Template
 
-            Select a language and a data model template for converting 
-            your legacy application code. Relational Migrator 
-            supports C#, Java, JavaScript and JSON and offers several
-            templating options.
+            Support for the most popular languages 
+            such as C#, Java, JavaScript, JSON and frameworks.
 
          .. step:: Convert your Data Layer Source Code
-
-            Convert your existing data layer application code. With Code Generation,
-            you can automatically transform application code that was 
-            written for connecting with relational data models to 
-            connect to MongoDB data models.
+            Use information known about the new schema to accelerate 
+            development of new code. Includes code generation of entity 
+            classes, persistence layers and APIs
 
       .. code-block:: javascript
 
