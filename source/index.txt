@@ -69,8 +69,8 @@ Control Your Migration To MongoDB
       .. image:: /img/tab2img.png
          :alt: Schema Recommendations
 
-   .. tab:: Data synchronization
-      :tabid: Data synchronization
+   .. tab:: Data Synchronization
+      :tabid: Data Synchronization
 
       .. procedure::
 
@@ -97,7 +97,8 @@ Control Your Migration To MongoDB
          .. step:: Pick A Language and Template
 
             Support for the most popular languages 
-            such as C#, Java, JavaScript, JSON and frameworks.
+            including C#, Java, JavaScript, JSON and multiple 
+            template frameworks.
 
          .. step:: Convert your Data Layer Source Code
 
