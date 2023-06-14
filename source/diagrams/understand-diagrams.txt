@@ -67,8 +67,8 @@ Horizontal Split, Vertical Split, Relational view, and MongoDB view.
 
    * - Horizontal Split
      - Displays the relational view on top and the MongoDB view is on
-       the bottom. When you create a new project, **Horizontal Split**
-       is the default view mode.
+       the bottom. When you create a new project, Horizontal Split is
+       the default view mode.
 
    * - Vertical Split
      - Displays the relational view on the left and the MongoDB view on
@@ -80,7 +80,8 @@ Horizontal Split, Vertical Split, Relational view, and MongoDB view.
    * - MongoDB View
      - Displays only your MongoDB database diagram.
 
-To switch view modes, click a view mode option in the left navigation bar.
+To switch view modes, click a view mode option in the left navigation
+bar:
 
 .. image:: /img/diagrams/viewing-mode.png
    :alt: View Modes
@@ -216,8 +217,7 @@ MongoDB's embedded data model:
   .. image:: /img/diagrams/customer-mapping-example.png
      :alt: Customer Mapping Rule Example
 
-
-Both of these mapping rules remove the ID fields from the mapping. Since
-the ``OrderLines`` and ``Orders`` fields are embedded in their parent
-fields rather than being referenced with a foreign key, the ID fields
-are not required to link the fields together.
+Both of the preceding mapping rules remove the ID fields from the
+mapping. Since the ``OrderLines`` and ``Orders`` fields are embedded in
+their parent fields rather than being referenced with a foreign key, the
+ID fields are not required to link the fields together.
