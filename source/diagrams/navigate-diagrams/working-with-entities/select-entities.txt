@@ -17,7 +17,7 @@ Select Entities in Diagram View
 Select Individual Entities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To select entities **individually** in the diagram view, click an entity to select 
+To select entities *individually* in the diagram view, click an entity to select 
 it. 
 
 To add entities to the existing selection, hold the :guilabel:`command(Mac)` key or the 
@@ -26,7 +26,7 @@ To add entities to the existing selection, hold the :guilabel:`command(Mac)` key
 Select Multiple Entities
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To select **multiple entities** at once in the diagram view, hold the :guilabel:`Shift` 
+To select *multiple entities* at once in the diagram view, hold the :guilabel:`Shift` 
 key and draw a box around all the entities you want to select.
 
 .. _rm-schema-model-pane:
@@ -37,7 +37,7 @@ Select Entities in Schema Model Pane
 Select Individual Entities
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To select entities **individually** in the left pane, click an entity to select it. 
+To select entities *individually* in the left pane, click an entity to select it. 
 
 To add entities to the existing selection, hold the :guilabel:`command(Mac)` key or the 
 :guilabel:`ctrl(Windows/Linux)` key.
@@ -45,7 +45,7 @@ To add entities to the existing selection, hold the :guilabel:`command(Mac)` key
 Select Multiple Entities
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To select **multiple entities** at once in the left pane, hold the :guilabel:`Shift` key 
+To select *multiple entities* at once in the left pane, hold the :guilabel:`Shift` key 
 and select two entities. All entities in between the two selected entities are 
 added to the selection.
 
