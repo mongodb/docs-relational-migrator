@@ -15,7 +15,7 @@ affects the current diagram and does not affect the model. By being able to show
 and hide entities, you can focus your attention on specific entities and relationships 
 and reduce clutter in your diagram.
 
-About This Task
+About this Task
 ---------------
 
 The visibility of an entity:
@@ -51,9 +51,6 @@ view. Specifically:
 Hide Entities using Schema Model Pane
 -------------------------------------
 
-Steps
-~~~~~
-
 To hide an entity, hover over the entity in the :guilabel:`Schema Model` pane and click 
 the eye icon.
 
@@ -64,9 +61,6 @@ the eye icon.
 
 Hide Entities using Diagram
 ---------------------------
-
-Steps
-~~~~~
 
 #. :ref:`Select the entities <rm-select-entities>` you want to hide.
 
