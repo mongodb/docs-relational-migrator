@@ -38,7 +38,7 @@ Next Steps
 
 - :ref:`Run Relational Migrator as a System Service on Windows <windows-system-service>`
 
-- :ref:`Create a Project <create-project-live-connection>`
+- :ref:`Create a Project <rm-create-project-live>`
 
 - :ref:`Import a Project <import-project>`
 

@@ -55,7 +55,7 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Create a Project <create-project-live-connection>`
+- :ref:`Create a Project <rm-create-project-live>`
 
 - :ref:`Import a Project <import-project>`
 
