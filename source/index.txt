@@ -26,8 +26,8 @@ What is Relational Migrator
 
 .. kicker:: What You Can Do
 
-Control Your Migration To MongoDB
----------------------------------
+Bring Your Relational Workloads to MongoDB With Confidence
+----------------------------------------------------------
 
 .. tabs::
 
