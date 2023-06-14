@@ -99,7 +99,7 @@ Control Your Migration To MongoDB
             including C#, Java, JavaScript, JSON and multiple 
             template frameworks.
 
-         .. step:: Convert your Data Layer Source Code
+         .. step:: Automatically Generate Application Code
 
             Use information known about the new schema to accelerate 
             development of new code. Includes code generation of entity 
