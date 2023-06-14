@@ -106,6 +106,7 @@ Control Your Migration To MongoDB
             such as C#, Java, JavaScript, JSON and frameworks.
 
          .. step:: Convert your Data Layer Source Code
+
             Use information known about the new schema to accelerate 
             development of new code. Includes code generation of entity 
             classes, persistence layers and APIs
