@@ -7,7 +7,7 @@ Relational Database Connection Strings
 .. include:: /includes/uri-usage-disclaimer.rst
 
 To analyze a schema or start a migration job, Relational Migrator must connect
-to your relational database. To connect to your source database, the
+to your relational database. To connect to your source database,
 Relational Migrator requires a JDBC-formatted connection string. This document
 describes the URI formats for defining connections to relational
 database systems.
