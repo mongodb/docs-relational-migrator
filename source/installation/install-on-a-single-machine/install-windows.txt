@@ -1,8 +1,8 @@
 .. _single-windows:
 
-===============
-Install Windows
-===============
+==================
+Install on Windows
+==================
 
 .. contents:: On this page
    :local:

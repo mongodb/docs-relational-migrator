@@ -1,8 +1,8 @@
 .. _single-ubuntu:
 
-==============
-Install Ubuntu
-==============
+=================
+Install on Ubuntu
+=================
 
 .. contents:: On this page
    :local:

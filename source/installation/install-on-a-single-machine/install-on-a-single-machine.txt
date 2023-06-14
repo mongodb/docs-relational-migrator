@@ -35,8 +35,7 @@ If you are migrating from a MySQL database:
 
 - Download the `latest 8.0.x version, Platform Independent Version <https://dev.mysql.com/downloads/connector/j/>`_.
 
-- Unzip the downloaded file and only copy the ``.jar`` file into the target 
-  folder.
+- Unzip the downloaded file and copy the ``.jar`` file into the target folder.
 
 If you are migrating from an Oracle database:
 
@@ -56,7 +55,7 @@ Tasks
 Learn More
 ----------
 
-- :ref:`Install on Server <unattended-server>`
+- :ref:`Install on an Unattended Server <unattended-server>`
 
 
 .. toctree::

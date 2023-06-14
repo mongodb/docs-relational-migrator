@@ -1,8 +1,8 @@
 .. _single-rhel:
 
-============
-Install RHEL
-============
+===============
+Install on RHEL
+===============
 
 .. contents:: On this page
    :local:
