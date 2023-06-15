@@ -40,9 +40,6 @@ Steps
 
 #. Select :guilabel:`Import an existing project`.
 
-   .. image:: /img/projects/import-project.png
-      :alt: Import a Project
-
 #. Choose a file, or drag and drop the ``.relmig`` file. 
 
 #. Click :guilabel:`Import`.
