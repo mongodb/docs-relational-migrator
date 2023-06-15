@@ -41,8 +41,8 @@ If you are migrating from an Oracle database:
 
 - Download `21.6.0.0 of odjbc11.jar from the Oracle 21c <https://www.oracle.com/database/technologies/appdev/jdbc-drivers-archive.html>`_. 
 
-Tasks
------
+Get Started
+-----------
 
 - :ref:`Install on Windows <single-windows>`
 
