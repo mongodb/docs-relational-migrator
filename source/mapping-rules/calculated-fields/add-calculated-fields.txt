@@ -135,9 +135,15 @@ Expression:
 
 Input:
 
-.. code-block:: none
-    
-   fullName: "John Smith"
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10
+
+   * - Column
+     - Value
+
+   * - ``fullName``
+     - ``John Smith``
 
 Output: 
    
@@ -158,9 +164,15 @@ Expression:
 
 Input:
 
-.. code-block:: none
-    
-   fullName: "John Smith"
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10
+
+   * - Column
+     - Value
+
+   * - ``fullName``
+     - ``John Smith``
 
 Output: 
    
@@ -181,10 +193,18 @@ Expression:
 
 Input:
 
-.. code-block:: none
-    
-   col1: 3
-   col2: 2
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10
+
+   * - Column
+     - Value
+
+   * - ``coll1``
+     - ``3``
+
+   * - ``coll2``
+     - ``2``
 
 Output: 
    
@@ -201,13 +221,19 @@ Expression:
 
 .. code-block:: none
 
-    columns["col1"] === 1 ? "yes" : "no"
+    columns["col1"] === 3 ? "yes" : "no"
 
 Input:
 
-.. code-block:: none
-    
-   col1: 1
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10
+
+   * - Column
+     - Value
+
+   * - ``coll1``
+     - ``3``
 
 Output: 
    
@@ -256,19 +282,25 @@ Expression:
 
 .. code-block:: none
 
-    columns["myArray"][0]
+    columns["myArray"][1]
 
 Input:
 
-.. code-block:: json
-    
-   myArray: ["a","b","c"]
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10
+
+   * - Column
+     - Value
+
+   * - ``myArray``
+     - [ "a", "b", "c" ]
             
 Output: 
    
 .. code-block:: none
 
-   "a"
+   "b"
 
 Parse Dates
 ~~~~~~~~~~~
@@ -283,9 +315,15 @@ Expression:
 
 Input:
 
-.. code-block:: json
-    
-   dateAsString: "2009-02-11"
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10
+
+   * - Column
+     - Value
+
+   * - ``dateAsString``
+     - "2009-02-11"
             
 Output: 
    
