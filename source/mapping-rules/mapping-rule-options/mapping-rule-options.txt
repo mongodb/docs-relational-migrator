@@ -4,7 +4,6 @@
 Mapping Rule Options
 ====================
 
-
 Mapping rule options are important options that help define the state
 of your MongoDB collection after a Migration.
 
@@ -65,6 +64,10 @@ Get Started
 - :ref:`New Documents <rm-new-documents>`
 - :ref:`Embedded Array <rm-embedded-array>`
 - :ref:`Embedded documents <rm-embedded-documents>`
+
+.. note::
+
+   .. include:: /includes/mapping-options-preview.rst
 
 Details
 -------

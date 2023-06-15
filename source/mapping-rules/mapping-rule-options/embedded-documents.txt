@@ -33,7 +33,7 @@ You have two main options when denormalizing your relational data
 with the :guilabel:`Embedded Documents` option:
 
 - You can embed the child documents into the parent and designate a 
-  ``Prefix`` and ``Field name`` to embed fields as sub documents.
+  :guilabel:`Prefix` and :guilabel:`Field name` to embed fields as sub documents.
 
 - You can merge into the parent, which represents the rows as 
   fields at the parent level.
@@ -45,7 +45,7 @@ This section demonstration the relational Input and
 the MongoDB output of the :guilabel:`Embedded Documents` mapping rule 
 for a single row.
 
-The blue dotted box in the MongoDB diagram pane is a visual preview of how each rule and option affect your destination data model. Using this feature, you can preview your destination data model before you run a sync job.
+.. include:: /includes/mapping-options-preview.rst
 
 Embedded Documents
 ~~~~~~~~~~~~~~~~~~
