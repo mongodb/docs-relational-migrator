@@ -36,10 +36,10 @@ Steps
       * - If you want to
         - Then
         - Result
-      * - Copy entities to an existing diagram
+      * - Copy entities to an existing diagram.
         - Select the existing diagram name in the :guilabel:`Target diagram` drop-down. 
         - The copied entities are displayed with the other pre-existing entities in the diagram.
-      * - Create a new diagram and copy entities to it
+      * - Create a new diagram and copy entities to it.
         - Select :guilabel:`Create new diagram` in the :guilabel:`Target diagram` drop-down.
         - Only the copied entities are displayed in the new diagram.
 

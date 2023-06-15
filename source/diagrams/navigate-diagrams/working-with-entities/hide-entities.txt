@@ -59,8 +59,8 @@ the eye icon.
 
 .. _rm-hide-diagram:
 
-Hide Entities using Diagram
----------------------------
+Hide Entities using a Diagram
+-----------------------------
 
 #. :ref:`Select the entities <rm-select-entities>` you want to hide.
 
