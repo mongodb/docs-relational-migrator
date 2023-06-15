@@ -269,7 +269,7 @@ Access data stored as JSON data type with calculated field expressions.
 Requires JSON data type columns (Postgres).
 
 The following example returns the value of the embedded ``state`` field
-inside of the ``Employee`` column values.
+from values in the ``Employee`` column.
 
 Expression:
 
