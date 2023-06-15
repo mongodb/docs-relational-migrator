@@ -13,7 +13,7 @@ Debian Systems Installation
    :class: singlecol
 
 Install Relational Migrator on an unattended server in a Linux systems. For instructions 
-on installation and configuration, see the following: 
+on installation and configuration, see the installation tasks. 
 
 Get Started
 -----------

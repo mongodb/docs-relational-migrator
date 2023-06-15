@@ -37,7 +37,7 @@ Steps
 
 #. Reload ``systemd`` to read the newly created service:
 
-   .. code-block
+   .. code-block::
       
       systemctl daemon-reload
 
@@ -46,7 +46,7 @@ Steps
    You can manage the service with ``systemctl`` commands. To run on startup and 
    start the current session, run the following:
 
-   .. code-block
+   .. code-block::
 
       systemctl enable migrator.service
 

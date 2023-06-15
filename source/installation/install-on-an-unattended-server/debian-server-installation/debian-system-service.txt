@@ -37,7 +37,7 @@ Steps
 
 #. Reload ``systemd`` to read the newly created service.
 
-   .. code-block
+   .. code-block::
 
       systemctl daemon-reload
 
