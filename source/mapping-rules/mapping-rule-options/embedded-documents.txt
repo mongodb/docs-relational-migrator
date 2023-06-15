@@ -58,6 +58,7 @@ In this example:
 - :guilabel:`Merge fields into the parent` is not selected.
 - The ``Field name`` is set to ``order``.
 
+Click the tab below to see the input and output for the mapping rule:
 
 .. tabs::
 
@@ -133,186 +134,119 @@ In this example:
          },
          }
 
-Input
-`````
-
-OrderLine Table:
-
-.. list-table::
-   :header-rows: 1
-
-   * - OrderLineID
-     - OrderID
-     - ProductID
-     - Quantity
-   * - 1
-     - 1
-     - 1
-     - 1
-   * - 4
-     - 1
-     - 3
-     - 1
-
-Order Table:
-
-.. list-table::
-   :header-rows: 1
-
-   * - OrderID
-     - CustomerID
-     - TotalAmount
-     - OrderStatusID
-   * - 1
-     - 1
-     - 550.00
-     - 1
-
-Output
-``````
-
-The documents in the ``OrderLine`` collection now has the ``Order`` details
-embedded as an embedded document called ``Orders``.
-
-.. code-block:: javascript
-
-   {
-     ObjectID: { 
-      OrderLineID: 1 
-     },
-     OrderID: 1,
-     ProductID: 1,
-     Quantity: 1,
-     Orders: {
-       OrderID: 1,
-       CustomerID: 1,
-       TotalAmount: 550,
-       OrderStatusID: 1,
-     },
-   },
-   {
-     ObjectID: { 
-      OrderLineID: 4 
-     },
-     OrderID: 1,
-     ProductID: 3,
-     Quantity: 1,
-     Orders: {
-       OrderID: 1,
-       CustomerID: 1,
-       TotalAmount: 550,
-       OrderStatusID: 1,
-     },
-   }
-
 Merge fields into the parent
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this example:
 
-- The OrderLine table has (4) rows and the Order table has (3) rows.
+- The OrderLine table has four rows and the Order table has three rows.
 - A :guilabel:`Embedded Documents` mapping rule is applied to the ``Order`` table.
 - The parent collection is set to  ``orderLine``.
 - :guilabel:`Merge fields into the parent` is selected.
 - The :guilabel:`Prefix` is set to (root).
 
-OrderLine Table:
+.. tabs::
 
-.. list-table::
-   :header-rows: 1
+   .. tab:: Merge fields into the Parent Input
+      :tabid: merge-parent-in
 
-   * - OrderLineID
-     - OrderID
-     - ProductID
-     - Quantity
-   * - 1
-     - 1
-     - 1
-     - 1
-   * - 2
-     - 2
-     - 2
-     - 1
-   * - 3
-     - 3
-     - 3
-     - 1
-   * - 4
-     - 1
-     - 3
-     - 1
+      OrderLine Table:
 
-Order Table:
+      .. list-table::
+         :header-rows: 1
 
-.. list-table::
-   :header-rows: 1
+         * - OrderLineID
+           - OrderID
+           - ProductID
+           - Quantity
+         * - 1
+           - 1
+           - 1
+           - 1
+         * - 2
+           - 2
+           - 2
+           - 1
+         * - 3
+           - 3
+           - 3
+           - 1
+         * - 4
+           - 1
+           - 3
+           - 1
 
-   * - OrderID
-     - CustomerID
-     - TotalAmount
-     - OrderStatusID
-   * - 1
-     - 1
-     - 550.00
-     - 1
-   * - 2
-     - 2
-     - 100.00
-     - 2
-   * - 3
-     - 3
-     - 500.00
-     - 3
+      Order Table:
 
-Output
-``````
+      .. list-table::
+         :header-rows: 1
 
-The documents in the ``OrderLine`` collection now has the ``Order`` details
-merged into the parent document as fields.
+         * - OrderID
+           - CustomerID
+           - TotalAmount
+           - OrderStatusID
+         * - 1
+           - 1
+           - 550.00
+           - 1
+         * - 2
+           - 2
+           - 100.00
+           - 2
+         * - 3
+           - 3
+           - 500.00
+           - 3
 
-.. code-block:: javascript
+   .. tab:: Merge fields into the Parent Output
+      :tabid: merge-parent-out
 
-   {
-     _id: {
-       orderLineId: 1,
-     },
-     orderId: 1,
-     productId: 1,
-     quantity: 1,
-     customerId: 1,
-     orderStatusId: 1,
-     totalAmount: 550,
-   },
-   {
-     _id: {
-       orderLineId: 2,
-     },
-     orderId: 2,
-     productId: 2,
-     quantity: 1,
-     customerId: 2,
-     orderStatusId: 2,
-     totalAmount: 100,
-   },
-   {
-     _id: {
-       orderLineId: 3,
-     },
-     orderId: 3,
-     productId: 3,
-     quantity: 1,
-     customerId: 3,
-     orderStatusId: 3,
-     totalAmount: 500,
-   },
-   {
-     _id: {
-       orderLineId: 4,
-     },
-     orderId: 1,
-     productId: 3,
-     quantity: 1,
-     customerId: 1,
-     orderStatusId: 1,
-     totalAmount: 550,
-   }
+      The documents in the ``OrderLine`` collection now has the ``Order`` details
+      merged into the parent document as fields.
+
+      .. code-block:: javascript
+
+         {
+         _id: {
+            orderLineId: 1,
+         },
+         orderId: 1,
+         productId: 1,
+         quantity: 1,
+         customerId: 1,
+         orderStatusId: 1,
+         totalAmount: 550,
+         },
+         {
+         _id: {
+         orderLineId: 2,
+         },
+         orderId: 2,
+         productId: 2,
+         quantity: 1,
+         customerId: 2,
+         orderStatusId: 2,
+         totalAmount: 100,
+         },
+         {
+         _id: {
+         orderLineId: 3,
+         },
+         orderId: 3,
+         productId: 3,
+         quantity: 1,
+         customerId: 3,
+         orderStatusId: 3,
+         totalAmount: 500,
+         },
+         {
+         _id: {
+         orderLineId: 4,
+         },
+         orderId: 1,
+         productId: 3,
+         quantity: 1,
+         customerId: 1,
+         orderStatusId: 1,
+         totalAmount: 550,
+         }
