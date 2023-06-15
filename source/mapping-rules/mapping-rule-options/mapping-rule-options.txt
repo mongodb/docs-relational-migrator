@@ -10,27 +10,24 @@ of your MongoDB collection after a Migration.
 
 These options are defined when creating or editing a mapping rule.
 
-Mapping Rule Concepts
----------------------
+Behavior
+--------
 
-Every mapping rule joins a source table to a destination collection.  You can create mapping rules from either a table or an entity and you must select the other entity. For example:
-
+Every mapping rule joins a source table to a destination collection. 
+You can create mapping rules from either a table or an entity.
+When creating a mapping rule you must select the other entity. For example:
 
 - If you select a table and choose to create a mapping rule you must choose the destination collection. 
 - If you select a collection and choose to create a mapping rule, you must select the source table.
 
 For :guilabel:`Embedded array` and :guilabel:`Embedded document` mapping rules, 
 you must also configure where you want the embedded data inserted into your document. 
-For details on each mapping rule option, see: 
-
-- `New Documents <../new-documents>`__
-- `Embedded Array <../embedded-array>`__
-- `Embedded documents <../embedded-documents>`__
 
 The following table summarizes the mapping rule option concepts and the mapping rules the concepts apply to:
 
 .. list-table::
    :header-rows: 1
+   :widths: 25 50 25
 
    * - Concept
      - Description
@@ -54,17 +51,23 @@ The following table summarizes the mapping rule option concepts and the mapping 
      - Merge the table rows as fields at the parent collection level.
      - :guilabel:`Embedded documents` 
 
-
 .. note::
 
    How Relational Migrator handles migrating primary key ``id`` fields is defined
    at the project level. 
 
    For details on how these project setting affect your migration, 
-   see `Key Handling Options </Projects/configure-settings#key-handling-options>`__.
+   see :ref:`Key Handling Options <rm-key-handling-setting>`.
 
-Entity Relationship Diagram
----------------------------
+Get Started
+-----------
+
+- :ref:`New Documents <rm-new-documents>`
+- :ref:`Embedded Array <rm-embedded-array>`
+- :ref:`Embedded documents <rm-embedded-documents>`
+
+Details
+-------
 
 To help conceptualize the examples of each mapping rule, the following 
 ``Mongo Enterprise`` schema is used to help explain each mapping rule 
