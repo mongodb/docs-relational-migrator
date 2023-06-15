@@ -27,7 +27,7 @@ Steps
 
    .. note::
 
-      You can also right-click the entities to view commands for your entities.
+      You can also right-click the entities to view commands.
 
 #. Click :guilabel:`Move entities to`.
 
