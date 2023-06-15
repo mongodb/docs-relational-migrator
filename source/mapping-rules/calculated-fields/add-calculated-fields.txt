@@ -165,7 +165,7 @@ Output:
 Check for String Values
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Return true or false for column containing a string value.
+Return true or false based on whether a column contains a string value.
 
 The following example returns ``true`` if the value in the ``fullName``
 column includes the string ``Smith``. If the ``fullName`` column does
