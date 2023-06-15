@@ -10,8 +10,8 @@ of your MongoDB collection after a Migration.
 
 These options are defined when creating or editing a mapping rule.
 
-Behavior
---------
+Mapping Rule Concepts
+---------------------
 
 Every mapping rule joins a source table to a destination collection. 
 You can create mapping rules from either a table or an entity.
@@ -69,9 +69,9 @@ Get Started
 Details
 -------
 
-To help conceptualize the examples of each mapping rule, the following 
-``Mongo Enterprise`` schema is used to help explain each mapping rule 
-option in detail.
+To conceptualize the examples of each mapping rule, the following 
+``Mongo Enterprise`` relational schema is used to help explain each 
+mapping rule option.
 
 .. image:: /img/mapping-options/mapping-options-mongo-enterprises.png
    :alt: Mongo Enterprises ERD
