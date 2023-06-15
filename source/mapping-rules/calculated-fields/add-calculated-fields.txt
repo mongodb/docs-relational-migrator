@@ -235,8 +235,8 @@ Assign Values based on Logical Conditions
 
 Assign column values based on logical conditions.
 
-The following example returns ``yes`` if the value of ``coll1`` is
-``3``, and ``no`` if ``coll1`` is a value other than ``3``.
+The following example returns ``yes`` if the value of ``col1`` is
+``3``, and ``no`` if ``col1`` is a value other than ``3``.
 
 Expression:
 
