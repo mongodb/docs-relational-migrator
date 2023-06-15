@@ -13,6 +13,8 @@ modify entities to customize your initial diagram and create additional diagrams
 Get Started
 -----------
 
+|
+
 - :ref:`rm-select-entities`
 - :ref:`rm-move-entities`
 - :ref:`rm-copy-entities`
