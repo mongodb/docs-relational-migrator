@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-.. _understand-diagrams:
-=======
 .. _rm-understand-diagrams:
->>>>>>> b94c28d (copy entities)
 
 ===================
 Understand Diagrams
