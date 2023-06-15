@@ -32,7 +32,7 @@ About this Task
 ---------------
 
 Calculated field expressions access values from the current source
-database row using the syntax ``columns["COLUMN_NAME"]``.
+database row using the syntax ``columns["<COLUMN_NAME>"]``.
 
 Steps
 -----
