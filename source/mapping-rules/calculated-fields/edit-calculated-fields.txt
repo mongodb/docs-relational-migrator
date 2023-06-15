@@ -5,7 +5,7 @@ Edit Calculated Fields
 ======================
 
 You can update the JavaScript expression used in existing calcualted
-fields. Newly edited calculated fields are visible in MongoDB after your
+fields. Newly edited calculated fields are updated in MongoDB after your
 next sync job runs.
 
 Steps
