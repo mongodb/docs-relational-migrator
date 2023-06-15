@@ -58,6 +58,81 @@ In this example:
 - :guilabel:`Merge fields into the parent` is not selected.
 - The ``Field name`` is set to ``order``.
 
+
+.. tabs::
+
+   .. tab:: Embedded Documents Input
+      :tabid: Embedded-doc-in
+
+      OrderLine Table:
+
+      .. list-table::
+         :header-rows: 1
+
+         * - OrderLineID
+           - OrderID
+           - ProductID
+           - Quantity
+         * - 1
+           - 1
+           - 1
+           - 1
+         * - 4
+           - 1
+           - 3
+           - 1
+
+      Order Table:
+
+      .. list-table::
+         :header-rows: 1
+
+         * - OrderID
+           - CustomerID
+           - TotalAmount
+           - OrderStatusID
+         * - 1
+           - 1
+           - 550.00
+           - 1
+
+   .. tab:: Embedded Documents Output
+      :tabid: Embedded-doc-out
+
+      The documents in the ``OrderLine`` collection now has the ``Order`` details
+      embedded as an embedded document called ``Orders``.
+
+      .. code-block:: javascript
+
+         {
+         ObjectID: { 
+            OrderLineID: 1 
+         },
+         OrderID: 1,
+         ProductID: 1,
+         Quantity: 1,
+         Orders: {
+            OrderID: 1,
+            CustomerID: 1,
+            TotalAmount: 550,
+            OrderStatusID: 1,
+         },
+         },
+         {
+         ObjectID: { 
+            OrderLineID: 4 
+         },
+         OrderID: 1,
+         ProductID: 3,
+         Quantity: 1,
+         Orders: {
+            OrderID: 1,
+            CustomerID: 1,
+            TotalAmount: 550,
+            OrderStatusID: 1,
+         },
+         }
+
 Input
 `````
 

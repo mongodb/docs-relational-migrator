@@ -65,9 +65,7 @@ Get Started
 - :ref:`Embedded Array <rm-embedded-array>`
 - :ref:`Embedded documents <rm-embedded-documents>`
 
-.. note::
-
-   .. include:: /includes/mapping-options-preview.rst
+.. include:: /includes/mapping-options-preview.rst
 
 Details
 -------
