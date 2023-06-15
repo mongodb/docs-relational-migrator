@@ -79,8 +79,8 @@ In this example:
            - 500.00
            - 3
 
-   .. tab:: Embedded Documents Output
-      :tabid: Embedded-doc-out
+   .. tab:: Embedded Array Output
+      :tabid: Embedded-array-out
 
       The document in the ``Customer`` collection now has the ``Order`` details
       embedded as an array of objects field called ``Orders``.
