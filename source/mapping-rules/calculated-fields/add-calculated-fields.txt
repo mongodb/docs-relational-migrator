@@ -95,6 +95,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    "John Smith"
 
@@ -125,9 +126,10 @@ Input:
    * - ``fullName``
      - ``John Doe``
 
-Output: 
+Output:
    
 .. code-block:: none
+   :copyable: false
 
    "John"
 
@@ -161,6 +163,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    "John Doe"
 
@@ -194,6 +197,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    true
 
@@ -229,10 +233,11 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    6
 
-Assign Values based on Logical Conditions
+Assign Values Based on Logical Conditions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Assign column values based on logical conditions.
@@ -261,6 +266,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    yes
 
@@ -295,6 +301,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    "California"
 
@@ -328,6 +335,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    "b"
 
@@ -360,6 +368,7 @@ Input:
 Output: 
    
 .. code-block:: none
+   :copyable: false
 
    2009-02-11T0:00:00Z
 

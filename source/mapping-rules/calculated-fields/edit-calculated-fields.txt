@@ -17,8 +17,6 @@ next sync job runs.
 Steps
 -----
 
-To edit a calculated field:
-
 #. From the :guilabel:`Mapping` screen, click a table or collection name
    on the :guilabel:`Schema Model` pane or diagram view.
 

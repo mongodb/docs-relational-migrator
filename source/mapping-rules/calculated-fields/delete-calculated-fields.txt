@@ -17,8 +17,6 @@ sync job runs.
 Steps
 -----
 
-To delete a calculated field:
-
 #. From the :guilabel:`Mapping` screen, click a table or collection name
    on the :guilabel:`Schema Model` pane or diagram view.
 
@@ -34,8 +32,8 @@ To delete a calculated field:
 
 #. Click :guilabel:`Save and close`.
 
-The next time that you run a sync job, the deleted field will not be
-updated in the MongoDB collection.
+The next time that you run a sync job, the deleted field is not updated
+in the MongoDB collection.
 
 Learn More
 ----------
