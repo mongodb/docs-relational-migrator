@@ -1,3 +1,5 @@
+.. _rm-embedded-documents:
+
 ==================
 Embedded Documents
 ==================

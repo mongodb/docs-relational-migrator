@@ -1,4 +1,4 @@
-.. _mapping-rule-embedded-array:
+.. _rm-embedded-array:
 
 ==============
 Embedded Array
