@@ -10,7 +10,7 @@ Install on Ubuntu
    :depth: 1
    :class: singlecol
 
-You can install Relational Migrator on a single Ubuntu/Debian machine. This 
+You can install Relational Migrator on a single Ubuntu or Debian machine. This 
 installation method uses default settings and binds Relational Migrator to a single 
 IP and port. 
 
@@ -35,13 +35,13 @@ Steps
 #. (Optional) To connect to Oracle or MySQL drivers, download and place the drivers 
    into your Relational Migrator directory.
 
-   1. To download and install MySQL or Oracle drivers, see the following:
+   a. To download and install MySQL or Oracle drivers, see the following:
 
       - `MySQL: latest 8.0.x version, Platform Independent Version <https://dev.mysql.com/downloads/connector/j/>`_
 
       - `Oracle: 21.6.0.0 of odjbc11.jar from the Oracle 21c <https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html>`_
 
-   2. Copy the driver files to ``/opt/mongodb-relational-migrator/lib/app/lib``.
+   b. Copy the driver files to ``/opt/mongodb-relational-migrator/lib/app/lib``.
 
       To copy the driver, use the following example:
 
