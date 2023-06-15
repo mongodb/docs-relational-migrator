@@ -200,8 +200,8 @@ Perform Mathematic Operations
 
 Perform mathematic operations on column values.
 
-The following example multiplies values from the columns ``coll1`` and
-``coll2``.
+The following example multiplies values from the columns ``col1`` and
+``col2``.
 
 Expression:
 
