@@ -103,7 +103,7 @@ Click the tab below to see the input and output for the mapping rule:
       The documents in the ``OrderLine`` collection now has the ``Order`` details
       embedded as an embedded document called ``Orders``.
 
-      .. code-block:: javascript
+      .. code-block:: 
          :copyable: false
 
          {
@@ -205,7 +205,7 @@ In this example:
       The documents in the ``OrderLine`` collection now has the ``Order`` details
       merged into the parent document as fields.
 
-      .. code-block:: javascript
+      .. code-block:: 
          :copyable: false
 
          {
