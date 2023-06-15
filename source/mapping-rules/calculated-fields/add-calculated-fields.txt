@@ -69,7 +69,7 @@ Concatenate Strings
 Combine two columns into a single field.
 
 The following example concatenates string values from the ``firstName``
-and ``lastName`` columns:
+and ``lastName`` columns.
 
 Expression:
 
