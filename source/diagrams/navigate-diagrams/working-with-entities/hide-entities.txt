@@ -69,7 +69,7 @@ Hide Entities using Diagram
 
 #. Select :guilabel:`Hide from the diagram`.
 
-#. Click :guilabel:`Hide entity`.
+#. Click the red :guilabel:`Hide` button.
 
 .. note::
 
