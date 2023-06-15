@@ -67,12 +67,14 @@ Hide Entities using Diagram
 #. Press the ``delete`` key on your keyboard. Relational Migrator prompts 
    removal commands.
 
-   You can also right-click the entities to view commands for your entities. 
-   Here, select :guilabel:`Hide Entity` to prompt removal commands. 
-
 #. Select :guilabel:`Hide from the diagram`.
 
 #. Click :guilabel:`Hide Entity`.
+
+.. note::
+
+    You can also right-click an entity and select :guilabel:`Hide Entity` 
+    to hide it. 
 
 Showing Entities
 ----------------
