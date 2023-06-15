@@ -44,9 +44,10 @@ Steps
    Relational Migrator prompts removal commands that include either removing the 
    entity from the model or hiding the entity from the diagram.
 
-   You can also right-click the entities to view commands for your entities. 
-   Select :guilabel:`Remove Entity` to prompt removal commands when you right-click 
-   entities.
+   .. note:: 
+
+      You can also right-click the entities and select :guilabel:`Remove Entity` to prompt 
+      removal commands.
 
 #. Specify where you want to delete the entity.
    Select :guilabel:`Remove from relational model` or :guilabel:`Remove from MongoDB model`.
