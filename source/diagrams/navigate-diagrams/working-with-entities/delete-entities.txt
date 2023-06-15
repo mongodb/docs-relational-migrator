@@ -27,7 +27,7 @@ About this Task
   table from the project's model. 
 
   - To revert this change, re-add the table to the :guilabel:`Manage Relational Model` 
-    dialog. See :ref:`manage relational model <rm-manage-relational-model>`.
+    dialog. See :ref:`manage the relational model <rm-manage-relational-model>`.
 
 - Deleting an entity on the :guilabel:`MongoDB Model` is the equivalent of removing all 
   mappings to that collection. 
