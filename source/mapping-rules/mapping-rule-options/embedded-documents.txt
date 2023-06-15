@@ -58,7 +58,7 @@ In this example:
 - :guilabel:`Merge fields into the parent` is not selected.
 - The ``Field name`` is set to ``order``.
 
-Click the tab below to see the input and output for the mapping rule:
+Click the tabs below to see the input and output for this example:
 
 .. tabs::
 
@@ -145,6 +145,8 @@ In this example:
 - The parent collection is set to  ``orderLine``.
 - :guilabel:`Merge fields into the parent` is selected.
 - The :guilabel:`Prefix` is set to (root).
+
+Click the tabs below to see the input and output for this example:
 
 .. tabs::
 
