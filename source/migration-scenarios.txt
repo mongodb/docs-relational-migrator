@@ -60,15 +60,18 @@ scenarios:
 - Migrating multiple applications through a phased migration without
   downtime. In this scenario, multiple legacy applications are
   decommissioned and migrated to the new database while the original
-  database still supports writes. The migration uses CDC to keep the
-  legacy application in sync with the destination database.
+  database still supports writes. The migration uses :abbr:`CDC (Change
+  Data Capture)` to keep the legacy application in sync with the
+  destination database.
 
 - Migrating an operational data store. Depending on your workload, this
-  scenario could involve CDC running indefinitely without completing.
+  scenario could involve :abbr:`CDC (Change Data Capture)` running
+  indefinitely without completing.
 
-The preceding scenarios require long-running CDC, or in some cases
-involve CDC running indefinitely. Therefore, these scenarios are not
-recommended with Relational Migrator.
+The preceding scenarios require long-running :abbr:`CDC (Change Data
+Capture)`, or in some cases involve :abbr:`CDC (Change Data Capture)`
+running indefinitely. Therefore, these scenarios are not recommended
+with Relational Migrator.
 
 Relational Migrator will support more migration scenarios and use cases
 in future releases.
