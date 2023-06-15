@@ -37,21 +37,23 @@ database row using the syntax ``columns["<COLUMN_NAME>"]``.
 Steps
 -----
 
-#. From the ``Mapping`` screen, click a table or collection name on the
-   ``schema model`` pane or diagram view.
+#. From the :guilabel:`Mapping` screen, click a table or collection name
+   on the :guilabel:`schema model` pane or diagram view.
 
 #. Add a new mapping rule or edit an existing mapping rule.
 
-#. Click the ``+`` icon to the right of the ``All fields`` label.
+#. Click the :guilabel:`+` icon to the right of the :guilabel:`All
+   fields` label.
 
-#. Define a name for the new field in the ``Field Name`` text box.
+#. Define a name for the new field in the :guilabel:`Field Name` text
+   box.
 
 #. Define a valid JavaScript expression for the new field in the ``Value
    expression`` text box.
 
-#. Click ``Done``.
+#. Click :guilabel:`Done`.
 
-#. Click ``Save and close``.
+#. Click :guilabel:`Save and close`.
 
 The new field is visible in MongoDB after your next sync job runs.
 
