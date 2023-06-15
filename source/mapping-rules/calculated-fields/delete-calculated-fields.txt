@@ -4,6 +4,12 @@
 Delete Calculated Fields
 ========================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
 You can delete an existing calculated field and remove the field from
 your mapping rule. Deleted calculated fields do not update in future
 sync job runs.
