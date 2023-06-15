@@ -104,6 +104,7 @@ Click the tab below to see the input and output for the mapping rule:
       embedded as an embedded document called ``Orders``.
 
       .. code-block:: javascript
+         :copyable: false
 
          {
          ObjectID: {
@@ -205,6 +206,7 @@ In this example:
       merged into the parent document as fields.
 
       .. code-block:: javascript
+         :copyable: false
 
          {
          _id: {
