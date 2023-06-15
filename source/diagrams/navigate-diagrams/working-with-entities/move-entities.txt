@@ -21,10 +21,14 @@ Steps
 #. :ref:`Select the entities <rm-select-entities>` you want to move.
 
 #. To view commands for your entities, click the ellipsis menu in the right pane.
-   You can also right-click the entities to view commands for your entities. 
+    
 
    .. image:: /img/diagrams/entity-menu.png
       :alt: Entity Pane
+
+   .. note::
+
+      You can also right-click the entities to view commands for your entities.
 
 #. Click :guilabel:`Move entities to`.
 
