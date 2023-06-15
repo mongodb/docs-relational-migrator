@@ -21,7 +21,7 @@ Steps
 #. From the :guilabel:`Diagram` view or :guilabel:`Schema model` pane, 
    :ref:`select the entities <rm-select-entities>` you want to copy. 
 
-#. Right click and select :guilabel:`Copy entities to`, and choose a diagram to copy your entities to. 
+#. Right click and select :guilabel:`Copy entities to`. 
    
    .. note::
 
@@ -36,9 +36,11 @@ Steps
       * - If you want to
         - Then
       * - Copy entities to an existing diagram
-        - The copied entities are displayed with the other pre-existing entities in the diagram.
+        - Select the existing diagram name in the :guilabel:`Target diagram` drop-down. 
+          The copied entities are displayed with the other pre-existing entities in the diagram.
       * - Create a new diagram and copy entities to it
-        - Only the copied entities are displayed.
+        - Select :guilabel:`Create new diagram` in the :guilabel:`Target diagram` drop-down.
+          Only the copied entities are displayed in the new diagram.
 
 #. Click the green :guilabel:`Copy entities` button. 
 
