@@ -39,7 +39,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Visualize Source and Destination Schemas
 
             Use the entity-relationship style diagramming interface 
-            to visual your schema and make schema mapping decisions.
+            to visualize your schema and make schema mapping decisions.
 
          .. step:: Customize While Migrating
 
@@ -64,7 +64,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Apply your Mapping Rules
 
             Quickly apply recommended table mappings 
-            into a specific collection in your model.
+            to a specific collection in your model.
 
       .. image:: /img/tab2img.png
          :alt: Schema Recommendations
@@ -77,12 +77,12 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Replicate From Supported Relation Systems
 
             Replicate data from Oracle, MySQL, SQL Server, or PostgreSQL 
-            to MongoDB (Atlas or on-premises).
+            to MongoDB Atlas or on-premises.
 
          .. step:: Transform Data as Its Replicated
 
             Use the saved mapping definitions to transform data to 
-            the MongoDB schema as its replicated.
+            the MongoDB schema as it's replicated.
             Replication can be one time or continuous.
 
       .. image:: /img/tab3img.png
@@ -96,14 +96,14 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Pick a Language and Template
 
             Support for popular enterprise languages 
-            including C#, Java, JavaScript, JSON and multiple 
+            including C#, Java, JavaScript, JSON, and multiple 
             template frameworks.
 
          .. step:: Automatically Generate Application Code
 
-            Use information known about the new schema to accelerate 
+            Use information about the new schema to accelerate 
             development of new code. Includes code generation of entity 
-            classes, persistence layers and APIs
+            classes, persistence layers, and APIs.
 
       .. image:: /img/tab4img.png
          :alt: Convert your Application Code
