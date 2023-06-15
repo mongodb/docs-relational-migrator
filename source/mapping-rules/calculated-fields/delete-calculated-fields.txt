@@ -34,8 +34,8 @@ To delete a calculated field:
 
 #. Click :guilabel:`Save and close`.
 
-The next time that you run a sync job, the field will not be added to
-the MongoDB collection.
+The next time that you run a sync job, the deleted field will not be
+updated in the MongoDB collection.
 
 Learn More
 ----------
