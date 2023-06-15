@@ -106,8 +106,8 @@ Click the tab below to see the input and output for the mapping rule:
       .. code-block:: javascript
 
          {
-         ObjectID: { 
-            OrderLineID: 1 
+         ObjectID: {
+            OrderLineID: 1,
          },
          OrderID: 1,
          ProductID: 1,
@@ -120,8 +120,8 @@ Click the tab below to see the input and output for the mapping rule:
          },
          },
          {
-         ObjectID: { 
-            OrderLineID: 4 
+         ObjectID: {
+            OrderLineID: 4,
          },
          OrderID: 1,
          ProductID: 3,
@@ -219,7 +219,7 @@ In this example:
          },
          {
          _id: {
-         orderLineId: 2,
+            orderLineId: 2,
          },
          orderId: 2,
          productId: 2,
@@ -230,7 +230,7 @@ In this example:
          },
          {
          _id: {
-         orderLineId: 3,
+            orderLineId: 3,
          },
          orderId: 3,
          productId: 3,
@@ -241,7 +241,7 @@ In this example:
          },
          {
          _id: {
-         orderLineId: 4,
+            orderLineId: 4,
          },
          orderId: 1,
          productId: 3,
