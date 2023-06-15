@@ -364,6 +364,6 @@ Output:
 Learn More
 ----------
 
-- :ref:`rm-delete-calulcated-fields`
+- :ref:`rm-delete-calculated-fields`
 - :ref:`rm-edit-calculated-fields`
 - :ref:`rm-view-calculated-fields`
