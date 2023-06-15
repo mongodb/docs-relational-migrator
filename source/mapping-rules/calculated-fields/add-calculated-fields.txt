@@ -66,6 +66,9 @@ Concatenate Strings
 
 Combine two columns into a single field.
 
+The following example concatenates string values from the ``firstName``
+and ``lastName`` columns:
+
 Expression:
 
 .. code-block:: none
@@ -96,7 +99,11 @@ Output:
 Split Strings
 ~~~~~~~~~~~~~
 
-Split column values based on a specified character.
+Split column values into an array based on a specified character.
+
+The following example splits the ``fullName`` column into an array using
+a space character as a delimiter, and returns the first element of the
+array.
 
 Expression:
 
@@ -127,6 +134,10 @@ Replace Strings
 
 Apply regex patterns to replace string values in a column.
 
+The following example performs a case-insensitive regex search on the
+``fullName`` column for the string ``smith``. If a match is found, the
+expression replaces the matching string with ``Doe``.
+
 Expression:
 
 .. code-block:: none
@@ -156,6 +167,10 @@ Check for String Values
 
 Return true or false for column containing a string value.
 
+The following example returns ``true`` if the value in the ``fullName``
+column includes the string ``Smith``. If the ``fullName`` column does
+not include the string ``Smith``, the expression returns ``false``.
+
 Expression:
 
 .. code-block:: none
@@ -184,6 +199,9 @@ Perform Mathematic Operations
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Perform mathematic operations on column values.
+
+The following example multiplies values from the columns ``coll1`` and
+``coll2``.
 
 Expression:
 
@@ -217,6 +235,9 @@ Assign Values based on Logical Conditions
 
 Assign column values based on logical conditions.
 
+The following example returns ``yes`` if the value of ``coll1`` is
+``3``, and ``no`` if ``coll1`` is a value other than ``3``.
+
 Expression:
 
 .. code-block:: none
@@ -246,6 +267,9 @@ Extract JSON Values
 
 Access data stored as JSON data type with calculated field expressions.
 Requires JSON data type columns (Postgres).
+
+The following example returns the value of the embedded ``state`` field
+inside of the ``Employee`` column values.
 
 Expression:
 
@@ -278,6 +302,9 @@ Access Array Elements
 Access data stored as array data type with calculated fields
 expressions. Requires array data type columns (Postgres or MySQL).
 
+The following example returns the second element of the values in the
+``myArray`` column.
+
 Expression:
 
 .. code-block:: none
@@ -306,6 +333,9 @@ Parse Dates
 ~~~~~~~~~~~
 
 Parse an ISO8601-formatted date string into a date.
+
+The following example converts string values from the ``dateAsString``
+column into dates.
 
 Expression:
 
