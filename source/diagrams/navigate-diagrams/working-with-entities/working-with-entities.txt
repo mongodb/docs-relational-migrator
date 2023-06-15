@@ -4,13 +4,14 @@
 Working with Entities
 =====================
 
-After you :ref:`rm-create-project-live`, Relational Migrator creates an 
+After you :ref:`create a project <rm-create-project-live>`, Relational Migrator creates an 
 initial diagram containing the entities and relationships in 
 the Relational and MongoDB models. The term "entity" refers to either a table in 
 the relational model, or a collection in the MongoDB model. You can move and 
 modify entities to customize your initial diagram and create additional diagrams.
 
-You can work with entities in the following ways:
+Get Started
+-----------
 
 - :ref:`rm-select-entities`
 - :ref:`rm-move-entities`

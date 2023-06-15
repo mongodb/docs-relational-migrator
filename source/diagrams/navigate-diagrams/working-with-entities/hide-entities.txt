@@ -11,8 +11,8 @@ Toggle Visibility of Entities
    :class: singlecol
 
 You can show or hide entities in your diagrams. Showing and hiding entities only 
-affects the current diagram and does not affect the model. By being able to show 
-and hide entities, you can focus your attention on specific entities and relationships 
+affects the current diagram and does not affect the model. By toggling the visibility 
+of entities, you can focus your attention on specific entities and relationships 
 and reduce clutter in your diagram.
 
 About this Task
@@ -48,8 +48,8 @@ view. Specifically:
 
 .. _rm-hide-schema-model:
 
-Hide Entities using Schema Model Pane
--------------------------------------
+Hide Entities using the Schema Model Pane
+-----------------------------------------
 
 To hide an entity, hover over the entity in the :guilabel:`Schema Model` pane and click 
 the eye icon.
