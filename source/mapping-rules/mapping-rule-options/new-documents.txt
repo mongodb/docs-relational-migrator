@@ -34,8 +34,7 @@ Example
 -------
 
 This section demonstrates the relational input and
-the MongoDB output of the :guilabel:`New Documents` mapping rule for a single 
-row.
+the MongoDB output of the :guilabel:`New Documents` mapping rule.
 
 New Documents
 ~~~~~~~~~~~~~

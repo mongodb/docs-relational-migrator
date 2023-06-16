@@ -33,8 +33,7 @@ Example
 -------
 
 This section demonstrates the relational input and
-the MongoDB output of the :guilabel:`Embedded array` mapping rule 
-for a single row.
+the MongoDB output of the :guilabel:`Embedded array` mapping rule.
 
 Embedded array
 ~~~~~~~~~~~~~~
@@ -54,7 +53,7 @@ Click the tabs below to see the input and output for this example:
    .. tab:: Relational Input
       :tabid: Embedded-array-in
 
-      Customer Table:
+      ``Customer`` table:
 
       .. list-table::
          :header-rows: 1
@@ -70,7 +69,7 @@ Click the tabs below to see the input and output for this example:
            - Carregal
            - 3800-854
 
-      Orders Table:
+      ``Orders`` table:
 
       .. list-table::
          :header-rows: 1

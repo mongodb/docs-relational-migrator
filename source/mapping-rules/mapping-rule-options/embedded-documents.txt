@@ -41,9 +41,8 @@ with the :guilabel:`Embedded Documents` option:
 Examples
 --------
 
-This section demonstates the relational input and
-the MongoDB output of the :guilabel:`Embedded Documents` mapping rule 
-for a single row.
+This section demonstrates the relational input and
+the MongoDB output of the :guilabel:`Embedded Documents` mapping rule.
 
 Embedded Documents
 ~~~~~~~~~~~~~~~~~~
