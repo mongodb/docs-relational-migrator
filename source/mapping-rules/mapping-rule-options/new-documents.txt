@@ -11,8 +11,8 @@ New Documents
    :class: singlecol
 
 
-The :guilabel:`New Documents` mapping rule is the most basic mapping rule option
-which creates a document for each row of data in your relational database.
+The :guilabel:`New Documents` mapping rule is the most basic mapping rule option.
+It creates a document for each row of data in your relational database.
 
 About this Task
 ---------------
@@ -26,8 +26,8 @@ Use this mapping rule when you want data from a table to be
 stored in a dedicated collection. 
 
 You can have multiple :guilabel:`New Documents` mapping rules from
-different tables into the same collection. Relational Migrator will treat
-these tables as isolated data and the destination documents will not be 
+different tables into the same collection. Relational Migrator treats
+these tables as isolated data and the destination documents are not 
 merged together in any way. 
 
 Example

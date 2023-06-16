@@ -5,7 +5,7 @@ Mapping Rule Options
 ====================
 
 Mapping rule options are important options that help define the state
-of your MongoDB collection after a Migration.
+of your MongoDB collection after a migration.
 
 These options are defined when creating or editing a 
 :ref:`mapping rule <rm-mapping-rules>`.
@@ -40,22 +40,22 @@ mapping rule options and the mapping rules they apply to.
      - The destination collection where the relational rows of data are migrated.
      - :guilabel:`Embedded documents` :guilabel:`Embedded array` 
    * - Prefix
-     - A drop-down where you can choose where in the hierarchy the rule goes.
+     - A drop-down where you can specify your rule hierarchy.
      - :guilabel:`Embedded documents` :guilabel:`Embedded array` 
    * - Field name
-     - A text field which indicates the field that contains the array or document.
+     - Indicates the field containing the array or document.
      - :guilabel:`Embedded documents` :guilabel:`Embedded array` 
    * - Create an array of primitive values
-     - Creates an array of a single field in the parent collection.
+     - Creates a single field array in the parent collection.
      - :guilabel:`Embedded array` 
    * - Merge fields into the parent
-     - Merge the table rows as fields at the parent collection level.
+     - Merges the table rows as fields at the parent collection level.
      - :guilabel:`Embedded documents` 
 
 .. note::
 
-   How Relational Migrator handles migrating primary key ``id`` fields is defined
-   at the project level. 
+   Relational Migratory primary key id field migration is defined at 
+   the project level.
 
    For details on how these project setting affect your migration, 
    see :ref:`Key Handling Options <rm-key-handling-setting>`.

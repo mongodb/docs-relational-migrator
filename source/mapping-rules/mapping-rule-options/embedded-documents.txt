@@ -11,7 +11,7 @@ Embedded Documents
    :class: singlecol
 
 The :guilabel:`Embedded Documents` mapping rule is an advanced mapping 
-rule option which must be explicitly added to a mapping model.
+rule option. It must be explicitly added to a mapping model.
 
 About this Task
 ---------------
@@ -19,7 +19,7 @@ About this Task
 The :guilabel:`Embedded Documents` mapping rule is available if the relational
 table it is mapping from is on the one side of the foreign key relationship.
 
-The table which contains the foreign key must also be mapped to a 
+The table containing the foreign key must also be mapped to a 
 collection in the MongoDB model.
 
 Behavior
