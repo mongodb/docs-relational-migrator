@@ -22,8 +22,7 @@ You can manage many aspects of your Relational Migrator project from this dashbo
        return to the project home screen, configure project settings, and access the help menu.
 
    * - Left Pane
-     - :guilabel:`Manage` your Relational connections. Filter and toggle visibility of your 
-        entities.
+     - :guilabel:`Manage` your Relational connections. Filter and toggle visibility of your entities.
 
    * - Diagram toolbar
      - Select diagram layout options add synthetic foreign keys and create additional diagram tabs.
