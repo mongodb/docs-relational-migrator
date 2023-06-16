@@ -27,10 +27,6 @@ To open the :guilabel:`Project Settings` dialog:
 
 #. From the project view, the gear icon next to your project's name.
 
-   .. image:: /img/project-settings-gear-icon.png
-      :figwidth: 200 px
-      :alt: Project Settings Gear Icon
-
 Configurable Project Settings
 -----------------------------
 
