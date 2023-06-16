@@ -58,6 +58,7 @@ In this example:
 - :guilabel:`Merge fields into the parent` is not selected.
 - The ``Field name`` is set to ``order``.
 
+
 Click the tabs below to see the input and output for this example:
 
 .. tabs::
@@ -147,7 +148,6 @@ In this example:
 - :guilabel:`Merge fields into the parent` is selected.
 - The :guilabel:`Prefix` is set to (root).
 
-|
 
 Click the tabs below to see the input and output for this example:
 

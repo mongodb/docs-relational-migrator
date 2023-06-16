@@ -45,7 +45,6 @@ New Documents
 In this example a :guilabel:`New Documents` mapping rule is applied to a single row 
 from the ``Customer`` table.
 
-|
 
 Click the tabs below to see the input and output for this example:
 
