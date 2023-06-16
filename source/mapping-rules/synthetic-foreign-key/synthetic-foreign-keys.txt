@@ -55,3 +55,9 @@ Learn More
 - :ref:`Mapping Rules <rm-mapping-rules>`
 
 - :ref:`Understand Diagrams <rm-understand-diagrams>`
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   /mapping-rules/synthetic-foreign-key/add-foreign-key
