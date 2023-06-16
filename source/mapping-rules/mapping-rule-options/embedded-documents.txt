@@ -25,7 +25,7 @@ collection in the MongoDB model.
 Behavior
 --------
 
-You would use the :guilabel:`Embedded Documents` mapping rule to denormalize
+Use the :guilabel:`Embedded Documents` mapping rule to denormalize
 a foreign key relationship. With :guilabel:`Embedded Documents` you can
 nest child foreign key fields in a parent collection.
 
@@ -41,7 +41,7 @@ with the :guilabel:`Embedded Documents` option:
 Examples
 --------
 
-This section demonstration the relational Input and
+This section demonstration the relational input and
 the MongoDB output of the :guilabel:`Embedded Documents` mapping rule 
 for a single row.
 
@@ -65,7 +65,7 @@ Click the tabs below to see the input and output for this example:
    .. tab:: Relational Input
       :tabid: Embedded-doc-in
 
-      OrderLine Table:
+      ``OrderLine`` table:
 
       .. list-table::
          :header-rows: 1
@@ -83,7 +83,7 @@ Click the tabs below to see the input and output for this example:
            - 3
            - 1
 
-      Order Table:
+      ``Order`` table:
 
       .. list-table::
          :header-rows: 1
@@ -154,7 +154,7 @@ Click the tabs below to see the input and output for this example:
    .. tab:: Relational Input
       :tabid: merge-parent-in
 
-      OrderLine Table:
+      ``OrderLine`` table:
 
       .. list-table::
          :header-rows: 1
@@ -180,7 +180,7 @@ Click the tabs below to see the input and output for this example:
            - 3
            - 1
 
-      Order Table:
+      ``Order`` table:
 
       .. list-table::
          :header-rows: 1

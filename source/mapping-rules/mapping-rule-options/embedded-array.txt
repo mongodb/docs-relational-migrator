@@ -25,16 +25,18 @@ collection in the MongoDB model.
 Behavior
 --------
 
-You would use the :guilabel:`Embedded array` mapping rule to insert the 
+Use the :guilabel:`Embedded array` mapping rule to insert the 
 values of the child table as array elements under documents in
 the collection mapped to the parent table.
 
 Example
 -------
 
-This section demonstration the relational Input and
-the MongoDB Output of the :guilabel:`Embedded array` mapping rule 
+This section demonstration the relational input and
+the MongoDB output of the :guilabel:`Embedded array` mapping rule 
 for a single row.
+
+.. include:: /includes/mapping-options-preview.rst
 
 Embedded array
 ~~~~~~~~~~~~~~
@@ -96,7 +98,7 @@ In this example:
 
       .. code-block:: javascript
          :copyable: false
-         :emphasize-lines: 7-18
+         :emphasize-lines: 7-19
 
          {  
          "_id": {    "CustomerID": 1  },
