@@ -23,7 +23,8 @@ When creating a mapping rule you must select the other entity. For example:
 For :guilabel:`Embedded array` and :guilabel:`Embedded document` mapping rules, 
 you must also configure where you want the embedded data inserted into your document. 
 
-The following table summarizes the mapping rule option concepts and the mapping rules the concepts apply to:
+The table below provides a summary of the concepts associated with 
+mapping rule options and the mapping rules they apply to.
 
 .. list-table::
    :header-rows: 1
@@ -65,8 +66,6 @@ Get Started
 - :ref:`New Documents <rm-new-documents>`
 - :ref:`Embedded Array <rm-embedded-array>`
 - :ref:`Embedded documents <rm-embedded-documents>`
-
-.. include:: /includes/mapping-options-preview.rst
 
 Details
 -------
