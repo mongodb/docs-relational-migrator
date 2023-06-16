@@ -94,8 +94,9 @@ In this example:
       All of the customers orders are now visible in the ``Customer`` collection
       as an array of nested documents.
 
-      .. code-block::
+      .. code-block:: javascript
          :copyable: false
+         :emphasize-lines: 7-18
 
          {  
          "_id": {    "CustomerID": 1  },

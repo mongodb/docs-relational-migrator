@@ -103,8 +103,9 @@ Click the tabs below to see the input and output for this example:
       The documents in the ``OrderLine`` collection now has the ``Order`` details
       embedded as an embedded document called ``Orders``.
 
-      .. code-block:: 
+      .. code-block:: javascript
          :copyable: false
+         :emphasize-lines: 8-13,22-27
 
          {
          ObjectID: {
@@ -207,8 +208,9 @@ Click the tabs below to see the input and output for this example:
       The documents in the ``OrderLine`` collection now has the ``Order`` details
       merged into the parent document as fields.
 
-      .. code-block:: 
+      .. code-block:: javascript
          :copyable: false
+         :emphasize-lines: 8-10,19-21,30-32,41-43
 
          {
          _id: {
