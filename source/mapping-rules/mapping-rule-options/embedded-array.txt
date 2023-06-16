@@ -48,6 +48,10 @@ In this example:
 - The :guilabel:`Prefix` is set to :guilabel:`(root)`.
 - The :guilabel:`Field Name` is set to :guilabel:`orders`.
 
+|
+
+Click the tabs below to see the input and output for this example:
+
 .. tabs::
 
    .. tab:: Relational Input

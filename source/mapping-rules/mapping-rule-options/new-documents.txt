@@ -45,15 +45,16 @@ New Documents
 In this example a :guilabel:`New Documents` mapping rule is applied to a single row 
 from the ``Customer`` table.
 
-.. image:: /img/mapping-options/mapping-options-new-documents-example.png
-   :alt: New Documents Example
+|
+
+Click the tabs below to see the input and output for this example:
 
 .. tabs::
 
    .. tab:: Relational Input
       :tabid: new-document-in
 
-      ``Customer`` Table:
+      ``Customer`` table:
 
       .. list-table::
          :header-rows: 1
