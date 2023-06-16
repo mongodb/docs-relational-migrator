@@ -24,7 +24,7 @@ option see:
 
 - :ref:`New Documents <rm-new-documents>`
   
-- :ref:`Array in Parent Document <rm-embedded-array>`
+- :ref:`Embedded Array <rm-embedded-array>`
 
 - :ref:`Embedded Documents <rm-embedded-documents>`
 
@@ -48,7 +48,7 @@ Learn More
 
 To learn more about managing mapping rules, see:
 
-- :ref:`Create Rule From Relational <rm-create-rule-to-mdb>`
+- :ref:`Create Rule From Relational <rm-create-mapping-rules>`
 
 - :ref:`Create Rule To MongoDB <rm-create-rule-to-mdb>`
 

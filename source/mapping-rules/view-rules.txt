@@ -30,6 +30,6 @@ Steps
 Learn More
 ----------
 
-:ref:`Edit Rules <mapping-rules-edit>`
+- :ref:`Edit Rules <mapping-rules-edit>`
 
-:ref:`Delete Rules <delete-rules>`
+- :ref:`Delete Rules <delete-rules>`

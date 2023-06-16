@@ -43,7 +43,7 @@ Steps
    
    This prompts the :guilabel:`Mappings` pane to open on the right of the screen.
 
-#. Click the :guilabel:`Trash Can` icon to delete a mapping rule. 
+#. On the :guilabel:`Mappings` pane, click the :guilabel:`Trash Can` icon.
 
 #. Click :guilabel:`Delete` to confirm.
 
@@ -54,6 +54,6 @@ Learn More
 
 - :ref:`Create Rule To MongoDB <rm-create-rule-to-mdb>`
 
-- :ref:`Delete mapping rules <delete-rules>`
+- :ref:`View mapping rules <view-rules>`
 
 - :ref:`Edit mapping rules <mapping-rules-edit>`
