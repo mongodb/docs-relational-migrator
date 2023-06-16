@@ -20,4 +20,4 @@ Mapping Rules
    /mapping-rules/delete-rules
    /mapping-rules/mapping-rule-options/mapping-rule-options
    /mapping-rules/calculated-fields/calculated-fields
-   /mapping-rules/synthetic-foreign-keys
+   /mapping-rules/synthetic-foreign-key/synthetic-foreign-keys
