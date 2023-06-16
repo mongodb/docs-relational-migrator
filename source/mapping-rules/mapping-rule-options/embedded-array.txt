@@ -4,6 +4,12 @@
 Embedded Array
 ==============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 The :guilabel:`Embedded array` mapping rule is an advanced mapping 
 rule option which must be explicitly added to a mapping model.
 
@@ -42,7 +48,7 @@ In this example:
 
 .. tabs::
 
-   .. tab:: Embedded Array Input
+   .. tab:: Relational Input
       :tabid: Embedded-array-in
 
       Customer Table:
@@ -79,7 +85,7 @@ In this example:
            - 500.00
            - 3
 
-   .. tab:: Embedded Array Output
+   .. tab:: MongoDB Output
       :tabid: Embedded-array-out
 
       The document in the ``Customer`` collection now has the ``Order`` details
@@ -91,7 +97,8 @@ In this example:
       .. code-block::
          :copyable: false
 
-         {  "_id": {    "CustomerID": 1  },
+         {  
+         "_id": {    "CustomerID": 1  },
          "Name": "Joelynn Fawthrop",
          "Address1": "86 Dwight Pass",
          "Address2": "Carregal",

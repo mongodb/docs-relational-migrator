@@ -62,7 +62,7 @@ Click the tabs below to see the input and output for this example:
 
 .. tabs::
 
-   .. tab:: Embedded Documents Input
+   .. tab:: Relational Input
       :tabid: Embedded-doc-in
 
       OrderLine Table:
@@ -97,7 +97,7 @@ Click the tabs below to see the input and output for this example:
            - 550.00
            - 1
 
-   .. tab:: Embedded Documents Output
+   .. tab:: MongoDB Output
       :tabid: Embedded-doc-out
 
       The documents in the ``OrderLine`` collection now has the ``Order`` details
@@ -150,7 +150,7 @@ Click the tabs below to see the input and output for this example:
 
 .. tabs::
 
-   .. tab:: Merge fields into the Parent Input
+   .. tab:: Relational Input
       :tabid: merge-parent-in
 
       OrderLine Table:
@@ -201,7 +201,7 @@ Click the tabs below to see the input and output for this example:
            - 500.00
            - 3
 
-   .. tab:: Merge fields into the Parent Output
+   .. tab:: MongoDB Output
       :tabid: merge-parent-out
 
       The documents in the ``OrderLine`` collection now has the ``Order`` details
