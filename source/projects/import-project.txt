@@ -16,7 +16,7 @@ You can use Relational Migrator to import projects. Import a project when you
 want to collaborate on a shared project. You can also duplicate a project by 
 :ref:`exporting <export-project>` the project and then importing it. 
 
-About This Task
+About this Task
 ---------------
 
 Be aware of the following information when you import projects:
