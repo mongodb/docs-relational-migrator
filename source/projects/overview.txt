@@ -4,11 +4,12 @@
 Project Overview
 ================
 
-This page gives summary information on the project overview screen
-You can manage many aspects of your Relational Migrator from the project overview screen.
+When you open a project in Relational Migrator, the project dashboard displays.
 
-.. image:: /img/projects/project-overview.png
+.. image:: /img/projects/project-overview-annotated.png
    :alt: Project Overview Screen
+
+You can manage many aspects of your Relational Migrator project from this dashboard.
 
 .. list-table::
    :header-rows: 1
@@ -16,7 +17,7 @@ You can manage many aspects of your Relational Migrator from the project overvie
    * - UI Element
      - Description
    * - Top Navigation Bar
-     - Project navigation, settings, primary app navigation, Get Help menu
+     - Project navigation, settings, primary application navigation, get help menu
    * - Left pane
      - Relational and MongoDB schema models, filter options, view modes
    * - Diagram toolbar
