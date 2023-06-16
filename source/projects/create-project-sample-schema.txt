@@ -38,8 +38,10 @@ Before you can run sync jobs from the sample schema you must either:
    PostgreSQL database container. This container comes preloaded with the sample 
    schema presented in Relational Migrator.
 
-2. Download and execute the `Northwind.sql <https://github.com/pthom/northwind_psql/blob/master/northwind.sql>`__ database setup script on an existing PostgreSQL instance. This 
-script loads the sample schema.
+2. Download and execute the 
+   `Northwind.sql <https://github.com/pthom/northwind_psql/blob/master/northwind.sql>`__ 
+   database setup script on an existing PostgreSQL instance. This script loads 
+   the sample schema.
 
 Steps
 -----
