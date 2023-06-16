@@ -32,7 +32,7 @@ the collection mapped to the parent table.
 Example
 -------
 
-This section demonstration the relational input and
+This section demonstrates the relational input and
 the MongoDB output of the :guilabel:`Embedded array` mapping rule 
 for a single row.
 
