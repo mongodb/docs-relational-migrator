@@ -9,6 +9,7 @@ You can manage many aspects of your Relational Migrator project from this dashbo
 
 .. image:: /img/projects/project-overview.png
    :alt: Project Overview Screen
+   :lightbox:
 
 .. list-table::
    :header-rows: 1
