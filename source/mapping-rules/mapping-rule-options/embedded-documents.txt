@@ -51,7 +51,7 @@ In this example:
 
 - A :guilabel:`Embedded Documents` mapping rule is applied to the ``Order`` table.
 - The ``OrderLine`` table has two rows and the Order table has one row.
-- The parent collection is set to  ``OrderLine``.
+- The parent collection is set to ``OrderLine``.
 - :guilabel:`Merge fields into the parent` is not selected.
 - The ``Field name`` is set to ``order``.
 
@@ -141,9 +141,9 @@ In this example:
 
 - The ``OrderLine`` table has four rows and the Order table has three rows.
 - A :guilabel:`Embedded Documents` mapping rule is applied to the ``Order`` table.
-- The parent collection is set to ``orderLine``.
+- The parent collection is set to ``OrderLine``.
 - :guilabel:`Merge fields into the parent` is selected.
-- The :guilabel:`Prefix` is set to (root).
+- The :guilabel:`Prefix` is set to :guilabel:`(root)`.
 
 
 Click the tabs below to see the input and output for this example:
