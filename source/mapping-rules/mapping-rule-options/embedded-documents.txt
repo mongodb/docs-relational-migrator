@@ -45,8 +45,6 @@ This section demonstration the relational input and
 the MongoDB output of the :guilabel:`Embedded Documents` mapping rule 
 for a single row.
 
-.. include:: /includes/mapping-options-preview.rst
-
 Embedded Documents
 ~~~~~~~~~~~~~~~~~~
 

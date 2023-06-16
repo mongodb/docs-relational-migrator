@@ -37,8 +37,6 @@ This section demonstration the relational input and
 the MongoDB output of the :guilabel:`New Documents` mapping rule for a single 
 row.
 
-.. include:: /includes/mapping-options-preview.rst
-
 New Documents
 ~~~~~~~~~~~~~
 
