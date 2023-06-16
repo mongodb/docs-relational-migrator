@@ -4,25 +4,35 @@
 Project Overview
 ================
 
-When you open a project in Relational Migrator, the project dashboard displays.
+When you open a project in Relational Migrator, the project dashboard displays:
+You can manage many aspects of your Relational Migrator project from this dashboard.
 
 .. image:: /img/projects/project-overview-annotated.png
    :alt: Project Overview Screen
-
-You can manage many aspects of your Relational Migrator project from this dashboard.
 
 .. list-table::
    :header-rows: 1
 
    * - UI Element
      - Description
+
    * - Top Navigation Bar
-     - Project navigation, settings, primary application navigation, get help menu
-   * - Left pane
-     - Relational and MongoDB schema models, filter options, view modes
+     - The top navigation bar allows you to switch context between :guilabel:`Mapping`,
+       :guilabel:`Code Generation`, and :guilabel:`Data Migration` views. You can also 
+       return to the project home screen, configure project settings, and access the help menu.
+
+   * - Left Pane
+     - :guilabel:`Manage` your Relational connections. Filter and toggle visibility of your 
+        entities.
+
    * - Diagram toolbar
-     - selection, layout, foreign keys, diagram tabs
+     - Select diagram layout options add synthetic foreign keys and create additional diagram tabs.
+
    * - Diagrams
-     - Relational and MongoDB diagrams, zoom control, mini map
-   * - Right pane 
-     - Viewing and modifying mapping rules
+     - View relational and MongoDB diagrams, view field names and data types. 
+       Control diagram zoom level and view the entity mini map.
+
+   * - Right Pane 
+     - View, edit, and add mapping rules. Select and rename fields 
+       included in a mapping rule. Add and remove table filters.
+
