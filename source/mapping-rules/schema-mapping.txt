@@ -35,7 +35,7 @@ Example
 This provides a scenario and example implementation for the schema mapping process. 
 This example will be converting a relational data model to a MongoDB data model.
 
-Using the :guilabel:`MongoEnterprises` relational database, the goal is to flatten 
+Using the ``MongoEnterprises`` relational database, the goal is to flatten 
 all of the databases tables so that all the order and customer data will be 
 available in a single MongoDB collection.
 
