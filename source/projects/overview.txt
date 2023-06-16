@@ -1,0 +1,27 @@
+.. _rm-project-overview:
+
+================
+Project Overview
+================
+
+This page gives summary information on the project overview screen
+You can manage many aspects of your Relational Migrator from the project overview screen.
+
+.. image:: /img/projects/project-overview.png
+   :alt: Project Overview Screen
+
+.. list-table::
+   :header-rows: 1
+
+   * - UI Element
+     - Description
+   * - Top Navigation Bar
+     - Project navigation, settings, primary app navigation, Get Help menu
+   * - Left pane
+     - Relational and MongoDB schema models, filter options, view modes
+   * - Diagram toolbar
+     - selection, layout, foreign keys, diagram tabs
+   * - Diagrams
+     - Relational and MongoDB diagrams, zoom control, mini map
+   * - Right pane 
+     - Viewing and modifying mapping rules
