@@ -86,10 +86,11 @@ Steps
       In addition to the generic connection properties listed above, you may also 
       need to select an ``Identifier`` for Oracle and ``Authentication`` for SQL Server.
 
-.. note::
+      .. note::
 
-   If you want to specify the JDBC URI manually, click the :guilabel:`Enter URI manually` 
-   toggle switch on the :guilabel:`Connect to the database screen`. For details see, :ref:`Relational Database Connection Strings <rm-relational-database-connection-strings>`.
+         If you want to specify the JDBC URI manually, click the :guilabel:`Enter URI manually` 
+         toggle switch on the :guilabel:`Connect to the database screen`. For 
+         details see, :ref:`Relational Database Connection Strings <rm-relational-database-connection-strings>`.
 
 #. From the :guilabel:`Select tables` screen, indicate the tables you want to migrate 
    and click :guilabel:`Next`.
@@ -103,16 +104,16 @@ Steps
       * - Target
         - Action
 
-      * - All tables within a database.
+      * - All tables within a database
         - Click the check mark for the target database.
 
-      * -  All tables within a schema.
+      * -  All tables within a schema
         - Expand the target database and click the check mark for the target schema.
 
-      * - Specific tables within a schema.
+      * - Specific tables within a schema
         - Expand the target database and schema. Select the target tables individually.
     
-      * - Specific table names.
+      * - Specific table names
         - Use the :guilabel:`Filter` bar above the :guilabel:`Relational Schema` list.
 
 #. Choose a :guilabel:`Global casing` option for collection names. 
@@ -132,7 +133,7 @@ Steps
      - ``snake_case``
      - ``UPPER_SNAKE_CASE``
 
-#. Choose an :guilabel:`Initial mappings` option for your MongoDB schema:
+#. Choose an :guilabel:`Initial mappings` option for your MongoDB schema. 
 
    - :guilabel:`Start with a MongoDB schema that matches your relational schema`: Creates your 
      initial project with a new document mapping rule for each table.

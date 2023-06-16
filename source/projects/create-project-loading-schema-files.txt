@@ -48,55 +48,58 @@ To create a project from schema files, you must export your schema files
 from your source relational system. Follow the instructions below
 to generate DDL files from your relational system.
 
-Oracle
-~~~~~~
 
-1. Open :guilabel:`Oracle SQL Developer`.
+.. tabs::
 
-#. In the main menu, select :guilabel:`Tools` then :guilabel:`Database Export`.
+   .. tab:: Oracle
+      :tabid: oracle-ddl
 
-#. Select the database connection.
+      1. Open :guilabel:`Oracle SQL Developer`.
 
-#. Uncheck :guilabel:`Export Data`. 
+      #. In the main menu, select :guilabel:`Tools` then :guilabel:`Database Export`.
 
-#. On the :guilabel:`Specify Data` page, click :guilabel:`Lookup` and choose the 
-   tables you want to include.
+      #. Select the database connection.
 
-SQL Server
-~~~~~~~~~~
+      #. Uncheck :guilabel:`Export Data`. 
 
-1. Open :guilabel:`SQL Server Management Studio (SSMS)`.
+      #. On the :guilabel:`Specify Data` page, click :guilabel:`Lookup` and choose the 
+         tables you want to include.
 
-#. Under :guilabel:`Server Explorer`, right-click the database.
+   .. tab:: SQL Server
+      :tabid: sql-ddl
 
-#. Select :guilabel`Tasks` then :guilabel:`Generate Scripts`.
+      1. Open :guilabel:`SQL Server Management Studio (SSMS)`.
 
-#. Select :guilabel:`Save script as file` and specify a file path.
+      #. Under :guilabel:`Server Explorer`, right-click the database.
 
-MySQL
-~~~~~
+      #. Select :guilabel:`Tasks` then :guilabel:`Generate Scripts`.
 
-1. Open :guilabel:`MySQL Workbench`.
+      #. Select :guilabel:`Save script as file` and specify a file path.
 
-#. In the main menu, select :guilabel:`Server` then :guilabel:`Data Export`.
+   .. tab:: MySQL
+      :tabid: mysql-ddl
 
-#. Select the schema objects to export.
+      1. Open :guilabel:`MySQL Workbench`.
 
-#. Choose :guilabel:`Dump Structure Only`, :guilabel:`Export to Self-Contained File` 
-   and :guilabel:`Include Create Schema` options.
+      #. In the main menu, select :guilabel:`Server` then :guilabel:`Data Export`.
 
-PostgreSQL
-~~~~~~~~~~
+      #. Select the schema objects to export.
 
-1. Open :guilabel:`pgAdmin`.
+      #. Choose :guilabel:`Dump Structure Only`, :guilabel:`Export to Self-Contained File` 
+         and :guilabel:`Include Create Schema` options.
 
-#. Right-click the :guilabel:`Database` then :guilabel:`Backup`.
+   .. tab:: PostgreSQL
+      :tabid: postgresql-ddl
 
-#. Enter a path, a filename, and select :guilabel:`Plain` format.
+      1. Open :guilabel:`pgAdmin`.
 
-#. Select :guilabel:`Dump options` and enable :guilabel:`Only schema`.
+      #. Right-click the :guilabel:`Database` then :guilabel:`Backup`.
 
-#. Select :guilabel:`Options` and enable :guilabel:`Include CREATE DATABASE statement`.
+      #. Enter a path, a filename, and select :guilabel:`Plain` format.
+
+      #. Select :guilabel:`Dump options` and enable :guilabel:`Only schema`.
+
+      #. Select :guilabel:`Options` and enable :guilabel:`Include CREATE DATABASE statement`.
 
 Steps
 -----
