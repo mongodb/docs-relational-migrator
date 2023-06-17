@@ -31,7 +31,7 @@ There are multiple options for you to create a project:
      - Description
 
    * - :ref:`rm-create-project-live`
-     - Provide source and destination connection details and migrate data from a live SQL instance.
+     - Provide source and destination connection details and migrate data from a live relational system.
    * - :ref:`create-project-schema-file`
      - Export a Data Definition Language (DDL) file from your relational system and import it into Relational Migrator.
    * - :ref:`create-project-sample-schema`
