@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .. _delete-project:
+=======
+.. _rm-delete-project:
+>>>>>>> 014d12f (*)
 
 ================
 Delete a Project
