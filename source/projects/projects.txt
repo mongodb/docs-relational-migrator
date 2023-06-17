@@ -10,18 +10,15 @@ Projects
    :depth: 1
    :class: singlecol
 
-You interact with Relation Migrator through a project.
-A project holds various configuration settings, mapping rules,
-and details specific to your migration.
-
-You can :ref:`import-project`, :ref:`rm-export-project`, and 
-:ref:`rm-delete-project` projects as well as 
-:ref:`rm-manage-relational-model` in your project.
+To interact with Relation Migrator, you use a project. A project holds
+different configuration settings, mapping rules, and migration-specific details.
+Within a project, you have the ability to :ref:`import-project`, :ref:`rm-export-project`, 
+and delete :ref:`rm-delete-project`, as well as :ref:`rm-manage-relational-model`.
 
 Get Started
 -----------
 
-You have multiple options to create a project:
+There are multiple options for creating a project, summarized in the table below:
 
 .. list-table::
    :header-rows: 1
