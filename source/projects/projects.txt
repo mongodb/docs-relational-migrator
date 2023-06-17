@@ -21,7 +21,7 @@ from a project.
 Get Started
 -----------
 
-There are multiple options for you to create a project, summarized in the table below:
+There are multiple options for you to create a project:
 
 .. list-table::
    :header-rows: 1
