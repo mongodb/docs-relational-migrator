@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 .. _create-project-sample-schema:
+=======
+.. _rm-create-project-sample-schema:
+>>>>>>> 91fde48 (*)
 
 =========================================
 Create a Project by Using a Sample Schema

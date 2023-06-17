@@ -1,6 +1,33 @@
+.. _rm-projects:
+
 ========
 Projects
 ========
+
+You interact with Relation Migrator through a project.
+A project holds various configuration settings, mapping rules,
+and details specific to your migration.
+
+You can import, export and delete projects as well as manage your 
+relational connections in your project.
+
+Get Started
+-----------
+
+You have multiple options to create a project:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Creation Option
+     - Description
+
+   * - :ref:`rm-create-project-live`
+     - Provide source and destination connection details and migrate data from a live SQL instance.
+   * - :ref:`rm-create-project-schema-file`
+     - Export a Data Definition Language (DDL) file from your relational system and import it into Relational Migrator.
+   * - :ref:`rm-create-project-sample-schema`
+     - Use a predefined sample schema even if you do not have a relational system to connect to.
 
 .. toctree::
    :hidden:
