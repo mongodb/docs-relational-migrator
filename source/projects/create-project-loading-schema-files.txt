@@ -1,4 +1,4 @@
-.. _rm-create-project-schema-file:
+.. _create-project-schema-file:
 
 ================================================
 Create a Project by Loading a Schema From a File
