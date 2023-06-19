@@ -11,19 +11,19 @@ Schema Mapping
    :class: singlecol
 
 Schema mapping is the process by which you decide how your source relational schema 
-should be represented in your target MongoDB database. You facilitate the schema 
+should be represented in your target MongoDB database. Facilitate the schema 
 mapping process in Relational Migrator through customized mappings rules.
 
 Mapping Rules
 -------------
 
-During the schema mapping design process, Relational Migrator will automatically derive 
+During the schema mapping design process, Relational Migrator automatically derives 
 the source data model from the schema of your relational database. The destination data 
 model can be influenced by customizing:
 
 - Mapping Rule options
 
-- Project Id field options
+- Project ID field options
 
 .. image:: /img/schema-mapping/schema-mapping-relational-migrator-concept-diagram-b.png
    :figwidth: 450 px
@@ -32,17 +32,18 @@ model can be influenced by customizing:
 Example
 -------
 
-This provides a scenario and example implementation for the schema mapping process. 
-This example will be converting a relational data model to a MongoDB data model.
+This section provides a scenario and example implementation for the schema mapping 
+process. This example converts a relational data model to a MongoDB data 
+model.
 
 Using the ``MongoEnterprises`` relational database, the goal is to flatten 
-all of the databases tables so that all the order and customer data will be 
+all of the database's tables, so that all the order and customer data is 
 available in a single MongoDB collection.
 
 Use-Case Denormalizing Table Structure
---------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The following image shows the relational data model which will be denormalized using the 
+The following image shows the relational data model to be denormalized using the 
 Relational Migrator.
 
 .. image:: /img/schema-mapping/schema-mapping-mongo-enterprises.png
@@ -50,11 +51,11 @@ Relational Migrator.
    :alt: Relational Data Model
 
 Mapping Rule Results
---------------------
+~~~~~~~~~~~~~~~~~~~~
 
-The goal when using Relational Migrator is to achieve the following MongoDB data model. 
+When using Relational Migrator, the goal is to achieve the following MongoDB data model. 
 The ``Order`` collection contains all the child elements from the ``Customer``, 
-``Order``, ``Product`` and ``Order Line`` tables. The collection will have nested 
+``Order``, ``Product`` and ``Order Line`` tables. The collection has nested 
 objects for the migrated tables. The results look like this:
 
 .. code-block:: json
@@ -104,7 +105,7 @@ objects for the migrated tables. The results look like this:
    }
 
 Mapping Rule Implementation
----------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To accomplish the target data model results with Relational Migrator, configure 
 the ``Order`` table with the following mapping rule options:

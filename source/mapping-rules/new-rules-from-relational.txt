@@ -1,8 +1,8 @@
 .. _create-rule-relational:
 
-===========================
-Create Rule From Relational
-===========================
+============================
+Create Rules From Relational
+============================
 
 .. default-domain:: mongodb
 

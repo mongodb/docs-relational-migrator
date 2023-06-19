@@ -63,6 +63,11 @@ Steps
 
    The suggested mapping rules are added to your project.
 
+Next Steps
+----------
+
+- :ref:`Create a Sync job <rm-create-jobs>`
+
 Learn More
 ----------
 
@@ -71,8 +76,3 @@ You can also manually create your mapping rules:
 - :ref:`Create Rule From Relational <rm-create-mapping-rules>`
 
 - :ref:`Create Rule To MongoDB <rm-create-rule-to-mdb>`
-
-Next Steps
-----------
-
-- :ref:`Create a Sync job <rm-create-jobs>`
