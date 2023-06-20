@@ -59,9 +59,9 @@ Next Steps
   model between two tables. On the :guilabel:`Relationships` pane, you can click 
   the :guilabel:`Edit relationship` or :guilabel:`Delete relationship` button.
 
-- :ref:`Create Rule From Relational <create-rule-relational>`
+- :ref:`Create Rules From Relational <create-rule-relational>`
 
-- :ref:`Create Rule To MongoDB <create-rule-mongodb>`
+- :ref:`Create Rules To MongoDB <create-rule-mongodb>`
 
 - :ref:`Create Rules From Suggested Mappings <rm-new-rules-from-mappings>`
 

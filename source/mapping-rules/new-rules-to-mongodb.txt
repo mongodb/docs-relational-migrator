@@ -1,8 +1,8 @@
 .. _create-rule-mongodb:
 
-======================
-Create Rule to MongoDB
-======================
+========================
+Create Rules to MongoDB
+========================
 
 .. default-domain:: mongodb
 
