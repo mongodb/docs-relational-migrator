@@ -50,9 +50,9 @@ Steps
 Learn More
 ----------
 
-- :ref:`Create Rule From Relational <rm-create-mapping-rules>`
+- :ref:`Create Rule From Relational <create-rule-relational>`
 
-- :ref:`Create Rule To MongoDB <rm-create-rule-to-mdb>`
+- :ref:`Create Rule To MongoDB <create-rule-mongodb>`
 
 - :ref:`View mapping rules <view-rules>`
 

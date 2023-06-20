@@ -30,7 +30,7 @@ option see:
 - :ref:`Embedded documents <rm-embedded-documents>`
 
 You can also create mapping rules based on a destination MongoDB model. For more 
-information, see :ref:`Create Rule to MongoDB <rm-create-rule-to-mdb>`.
+information, see :ref:`Create Rule to MongoDB <create-rule-mongodb>`.
 
 Steps
 -----

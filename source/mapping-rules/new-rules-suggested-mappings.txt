@@ -73,6 +73,6 @@ Learn More
 
 You can also manually create your mapping rules:
 
-- :ref:`Create Rule From Relational <rm-create-mapping-rules>`
+- :ref:`Create Rule From Relational <create-rule-relational>`
 
 - :ref:`Create Rule To MongoDB <rm-create-rule-to-mdb>`
