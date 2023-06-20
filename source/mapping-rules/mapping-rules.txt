@@ -29,17 +29,16 @@ or based on a destination :ref:`MongoDB model <create-rule-mongodb>`.
 Relationships
 -------------
 
-Mapping rules help define a ``one-to-one``\ ,
-``one-to-many`` or ``many-to-many`` relationship between your tables and collections.
-
-&nbsp;   
+Mapping rules help define a ``one-to-one``, ``one-to-many``, or ``many-to-many`` 
+relationship between your tables and collections.
 
 You can define mapping rules for the following configurations: 
 
+- A single table that maps to a single MongoDB collection. 
 
-* A single table that maps to a single MongoDB collection. 
-* A single table that maps to multiple MongoDB collections. 
-* Multiple tables that map into a single collection.
+- A single table that maps to multiple MongoDB collections. 
+
+- Multiple tables that map into a single collection.
 
 Default Rules
 -------------
@@ -62,8 +61,6 @@ Migrate as Options
 ------------------
 
 Mapping rules can be defined with the following ``Migrate as`` options:
-
-&nbsp    
 
 .. list-table::
    :header-rows: 1
