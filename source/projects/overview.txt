@@ -1,8 +1,8 @@
 .. _rm-project-overview:
 
-==========================
-Project Interface Overview
-==========================
+=======================
+User Interface Overview
+=======================
 
 .. contents:: On this page
    :local:
@@ -10,8 +10,8 @@ Project Interface Overview
    :depth: 1
    :class: singlecol
 
-When you open a project in Relational Migrator, the project dashboard displays.
-You can manage many aspects of your Relational Migrator project from this dashboard:
+When you open a project in Relational Migrator, the project user interface displays.
+You can manage many aspects of your Relational Migrator project from this interface:
 
 .. figure:: /img/projects/project-overview.png
    :alt: Project Overview Screen
