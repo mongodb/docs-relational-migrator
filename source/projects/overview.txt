@@ -1,8 +1,8 @@
 .. _rm-project-overview:
 
-================
-Project Overview
-================
+==========================
+Project Interface Overview
+==========================
 
 .. contents:: On this page
    :local:
@@ -10,12 +10,15 @@ Project Overview
    :depth: 1
    :class: singlecol
 
-When you open a project in Relational Migrator, the project dashboard displays:
+When you open a project in Relational Migrator, the project dashboard displays.
 You can manage many aspects of your Relational Migrator project from this dashboard.
 
 .. figure:: /img/projects/project-overview.png
    :alt: Project Overview Screen
    :lightbox:
+
+UI Elements
+-----------
 
 .. list-table::
    :header-rows: 1
@@ -24,20 +27,23 @@ You can manage many aspects of your Relational Migrator project from this dashbo
      - Description
 
    * - Top Navigation Bar
-     - The top navigation bar allows you to switch context between :guilabel:`Mapping`,
-       :guilabel:`Code Generation`, and :guilabel:`Data Migration` views. You can also 
-       return to the project home screen, configure project settings, and access the help menu.
-
+     - Switch between different contexts, including the :guilabel:`Mapping`, 
+       :guilabel:`Code Generation`, and :guilabel:`Data Migration` views. 
+       You can also navigate back to the project home screen, 
+       configure project settings, and access the help menu.
+  
    * - Left Pane
-     - :guilabel:`Manage` your relational connections. Filter and toggle visibility of your entities.
+     - :guilabel:`Manage` your relational connections. Filter and 
+       toggle visibility of your database entities.
 
    * - Diagram toolbar
-     - Select diagram layout options add synthetic foreign keys and create additional diagram tabs.
+     - Select diagram layout options, add synthetic foreign keys, and 
+       create additional diagram tabs.
 
    * - Diagrams
-     - View relational and MongoDB diagrams, view field names and data types. 
+     - View relational and MongoDB diagrams, view field names, and data types. 
        Control diagram zoom level and view the entity mini map.
 
    * - Right Pane 
-     - View, edit, and add mapping rules. Select and rename fields 
+     - View, edit, delete, and add mapping rules. Select and rename fields 
        included in a mapping rule. Add and remove table filters.
