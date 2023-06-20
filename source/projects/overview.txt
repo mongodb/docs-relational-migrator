@@ -13,9 +13,10 @@ Project Overview
 When you open a project in Relational Migrator, the project dashboard displays:
 You can manage many aspects of your Relational Migrator project from this dashboard.
 
-.. image:: /img/projects/project-overview.png
+.. figure:: /img/projects/project-overview.png
    :alt: Project Overview Screen
-   :lightbox:
+   :height: 100%
+   :lightbox: true
 
 .. list-table::
    :header-rows: 1
