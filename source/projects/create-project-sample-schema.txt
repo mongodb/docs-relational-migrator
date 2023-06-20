@@ -117,6 +117,8 @@ skip step one.
      - ``snake_case``
      - ``UPPER_SNAKE_CASE``
 
+#. .. include:: /includes/project-initial-mappings.rst
+
 #. Choose an :guilabel:`Initial mappings` option for your MongoDB schema.
 
    - :guilabel:`Start with a MongoDB schema that matches your relational schema`: Creates your 
