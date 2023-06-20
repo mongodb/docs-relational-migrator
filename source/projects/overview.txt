@@ -15,7 +15,7 @@ You can manage many aspects of your Relational Migrator project from this dashbo
 
 .. figure:: /img/projects/project-overview.png
    :alt: Project Overview Screen
-   :height: 100%
+   :lightbox:
 
 .. list-table::
    :header-rows: 1
