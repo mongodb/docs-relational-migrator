@@ -98,7 +98,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Pick a Language and Template
 
             Support for popular enterprise languages including C#, Java, 
-            JavaScript, JSON, and :ref:`multiple template frameworks <rm-code-generation>`.
+            JavaScript, JSON, and :ref:`multiple template frameworks <rm-code-generation-templates>`.
 
          .. step:: Automatically Generate Application Code
 
