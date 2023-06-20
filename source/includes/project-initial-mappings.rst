@@ -12,7 +12,8 @@ Choose an :guilabel:`Initial mappings` option for your MongoDB schema.
    checkbox next to each row to select or deselect the table
    for your project.
 
-- Relational Migrator creates mapping rules for a suggested MongoDB schema. 
+- :guilabel:`Start with a recommended MongoDB schema`
+  Relational Migrator creates mapping rules for a suggested MongoDB schema. 
   When you choose this option, a table appears showing the imported relational tables. 
   Relational Migrator suggests which tables should be represented as 
   :guilabel:`top-level` or :guilabel:`embedded` collections. 
