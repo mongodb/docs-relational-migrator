@@ -10,7 +10,7 @@ Choose an :guilabel:`Initial mappings` option for your MongoDB schema.
    Each row in the table represents the existing relational table, 
    the collection, and type of schema recommended. You can use the 
    checkbox next to each row to select or deselect the table
-   for your project
+   for your project.
 
 - :guilabel:`Start with an empty MongoDB schema` 
    Creates your initial project with no mapping rules.
