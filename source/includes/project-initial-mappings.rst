@@ -16,7 +16,7 @@ Choose an :guilabel:`Initial mappings` option for your MongoDB schema.
   When you choose this option, a table appears showing the imported relational tables. 
   Relational Migrator suggests which tables should be represented as 
   :guilabel:`top-level` or :guilabel:`embedded` collections. 
-  You can use the checkboxes to indicate which tables will be mapped 
+  You can use the checkboxes to indicate which tables are mapped 
   into collections.
 
 - :guilabel:`Start with an empty MongoDB schema` 
