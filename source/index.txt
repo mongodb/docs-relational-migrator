@@ -44,9 +44,9 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Customize While Migrating
 
             Split or merge tables across collections. 
-            :ref:`Embed a table <rm-embedded-documents>` as a nested document 
-            or array in an existing collection. Define 
-            :ref:`custom JavaScript expressions <rm-calculated-fields>` 
+            Embed a table as a :ref:`nested document <rm-embedded-documents>`
+            or :ref:`array <rm-embedded-array>` in an existing collection. 
+            Define :ref:`custom JavaScript expressions <rm-calculated-fields>` 
             to create additional fields.
 
       .. image:: /img/tab1img.png
