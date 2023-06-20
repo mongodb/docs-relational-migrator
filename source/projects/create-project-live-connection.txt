@@ -133,7 +133,7 @@ Steps
      - ``snake_case``
      - ``UPPER_SNAKE_CASE``
 
-#. .. include:: /includes/uri-usage-disclaimer.rst
+#. .. include:: /includes/project-initial-mappings.rst
 
 #. Enter a name for your project.
 
