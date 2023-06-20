@@ -103,7 +103,7 @@ Bring Your Relational Workloads to MongoDB With Confidence
          .. step:: Automatically Generate Application Code
 
             Use information about the new schema to accelerate 
-            :ref:`development of new code <rm-download-all-code-files>`. 
+            :ref:`new code development <rm-download-all-code-files>`. 
             Includes code generation of entity classes, persistence layers, and APIs.
 
       .. image:: /img/tab4img.png
@@ -146,7 +146,6 @@ Explore libraries and tools for MongoDB.
    :titlesonly:
    :hidden:
 
-   /introduction
    /migration-scenarios
    /installation
    /projects/projects
