@@ -29,6 +29,8 @@ About this Task
 Creating a project with a sample schema is the quickest and easiest way 
 to test drive Relational Migrator.
 
+.. include:: /includes/project-initial-mappings-att.rst
+
 Before you Begin
 ----------------
 
