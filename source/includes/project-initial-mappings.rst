@@ -12,5 +12,19 @@ Choose an :guilabel:`Initial mappings` option for your MongoDB schema.
    checkbox next to each row to select or deselect the table
    for your project.
 
+- Relational Migrator creates mapping rules for a suggested MongoDB schema. 
+  When you choose this option, a table appears showing the imported relational tables. 
+  Relational Migrator suggests which tables should be represented as 
+  :guilabel:`top-level` or :guilabel:`embedded` collections. 
+  You can use the checkboxes to indicate which tables will be mapped 
+  into collections.
+
 - :guilabel:`Start with an empty MongoDB schema` 
    Creates your initial project with no mapping rules.
+
+.. note::
+
+   Regardless of the option you choose when starting your project, 
+   you have the flexibility to manually add, remove, or modify mapping 
+   rules at any time. This allows you to customize the MongoDB schema 
+   according to the specific requirements of your workload.
