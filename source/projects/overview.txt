@@ -11,7 +11,7 @@ User Interface Overview
    :class: singlecol
 
 Review the UI element descriptions to understand how you can use the UI 
-to manage the project appearance, functionality, and capabilities
+to manage the project appearance, functionality, and capabilities.
 
 .. figure:: /img/projects/project-overview.png
    :alt: Project Overview Screen
