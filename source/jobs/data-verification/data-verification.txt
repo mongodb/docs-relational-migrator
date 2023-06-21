@@ -4,6 +4,12 @@
 Data Verification
 =================
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Data verification is a process that is built into the sync engine.
 The data verification process uses the source and destination 
 connection strings to validate that a sync job was successful.

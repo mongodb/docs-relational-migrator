@@ -2,6 +2,12 @@
 Table Filters
 =============
 
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 In a migration project, you can apply table filters to control the 
 volume of data migrated from each table. You can apply table filters 
 when you configure the mapping rules from the relational schema model.
