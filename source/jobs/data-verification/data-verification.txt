@@ -38,8 +38,8 @@ destination databases:
 - The data in the relational database tables has changed since the sync 
   job was started.
 
-Learn More
-----------
+Get Started
+-----------
 
 :ref:`rm-use-data-verification`
 
