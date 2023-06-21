@@ -41,7 +41,7 @@ destination databases:
 Get Started
 -----------
 
-:ref:`rm-use-data-verification`
+- :ref:`rm-use-data-verification`
 
 .. toctree::
    :titlesonly:
