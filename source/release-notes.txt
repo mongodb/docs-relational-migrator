@@ -15,5 +15,5 @@ Relational Migrator 1.0
 
 *Released Jun 22, 2023*
 
-:doc:`Relational Migrator </index>` 1.0 is now available. 
-It helps users to migrate relational workloads to MongoDB.
+:doc:`Relational Migrator </index>` 1.0 is now generally available. 
+Relational Migrator assists in migrating your relational workloads to MongoDB.
