@@ -10,10 +10,10 @@ Release Notes
    :depth: 1
    :class: twocols
 
-Relational Migrator 1.0
------------------------
+Relational Migrator 1.1.2
+-------------------------
 
 *Released Jun 22, 2023*
 
-Relational Migrator 1.0 is now generally available. 
+Relational Migrator 1.1.2 is now generally available. 
 Relational Migrator assists in migrating your relational workloads to MongoDB.
