@@ -10,8 +10,8 @@ User Interface Overview
    :depth: 1
    :class: singlecol
 
-When you open a project in Relational Migrator, the project user interface displays.
-You can manage many aspects of your Relational Migrator project from this interface:
+Review the UI element descriptions to understand how you can use the UI 
+to manage the project appearance, functionality, and capabilities
 
 .. figure:: /img/projects/project-overview.png
    :alt: Project Overview Screen
@@ -34,8 +34,9 @@ UI Elements
        configure project settings, and access the help menu.
   
    * - Left Pane
-     - :guilabel:`Manage` your relational connections. Filter and 
-       toggle visibility of your database entities.
+     - 
+       - :guilabel:`Manage` your relational connections. 
+       - Filter and toggle visibility of your database entities.
 
    * - Diagram Toolbar
      - Select diagram layout options, add synthetic foreign keys, and 
