@@ -75,7 +75,7 @@ returns to Pan Mode.
 Get Started
 -----------
 
-:ref:`rm-apply-layout`
+- :ref:`rm-apply-layout`
 
 .. toctree::
    :hidden:
