@@ -28,6 +28,7 @@ The file locations for the Mac OS:
 
 .. list-table::
    :header-rows: 1
+   :widths: 75 25
 
    * - File location 
      - Description
