@@ -32,14 +32,14 @@ The file locations for the Mac OS:
    * - File location 
      - Description
  
-   * - ~/Library/Application Support/MongoDB/Relational Migrator/user.properties 
-     - Location for application configuration.  
+   * - ``~/Library/Application Support/MongoDB/Relational Migrator/user.properties``
+     - File Location for your application configuration.  
 
-   * - /Library/Application Support/MongoDB/Relational Migrator/Drivers
-     - Location for driver downloads. 
+   * - ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``
+     - File location for your driver downloads.
 
-   * - ~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log
-     - Location for log information. 
+   * - ``~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log``
+     - File location for your log information. 
 
 Windows
 -------
@@ -52,14 +52,14 @@ The file locations for the Windows OS:
    * - File location 
      - Description
 
-   * - c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties 
-     - Location for application configuration.
+   * - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties``
+     - File Location for your application configuration.
 
-   * - c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers
-     - Location for driver downloads.
+   * - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
+     - File location for your driver downloads.
 
-   * - c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log
-     - Location for log information. 
+   * - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log``
+     - File location for your log information.
 
 Linux
 -----
@@ -72,14 +72,14 @@ The file locations for the Linux OS:
    * - File location 
      - Description
 
-   * - ~/Migrator/user.properties
-     - Location for application configuration.
+   * - ``~/Migrator/user.properties``
+     - File Location for your application configuration.
 
-   * - /opt/mongodb-relational-migrator/lib/app/lib
-     - Location for driver downloads.
+   * - ``/opt/mongodb-relational-migrator/lib/app/lib``
+     - File location for your driver downloads.
 
-   * - ~/Migrator/Logs/migrator.log
-     - Location for log information. 
+   * - ``~/Migrator/Logs/migrator.log``
+     - File location for your log information.
 
 Learn More
 ----------
