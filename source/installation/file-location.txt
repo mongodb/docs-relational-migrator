@@ -28,7 +28,6 @@ The file locations for the Mac OS:
 
 .. list-table::
    :header-rows: 1
-   :widths: 60 40
 
    * - File location 
      - Description
@@ -49,7 +48,7 @@ The file locations for the Windows OS:
 
 .. list-table::
    :header-rows: 1
-   :width: 40 60
+   :widths: 50 50
 
    * - File location 
      - Description
