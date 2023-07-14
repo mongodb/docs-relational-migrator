@@ -49,7 +49,7 @@ The file locations for the Windows OS:
 
 .. list-table::
    :header-rows: 1
-   :width: 60 40
+   :width: 50 50
 
    * - File location 
      - Description
