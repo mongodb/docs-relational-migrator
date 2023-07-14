@@ -1,0 +1,89 @@
+.. _file-location:
+
+==================================
+Relational Migrator File Locations
+==================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+The following page provides the location of files needed when working with 
+Relational Migrator. The location of the files varies according to the OS 
+you are working with. 
+
+.. note::
+
+    This information is correct for Relational Migrator v1.0.35 and higher (earlier 
+    versions store files in different locations).
+
+Mac
+---
+
+The file locations for the Mac OS:
+
+.. list-table::
+   :header-rows: 1
+
+   * - File location 
+     - Description
+ 
+   * - ~/Library/Application Support/MongoDB/Relational Migrator/user.properties 
+     - Location for application configuration.  
+
+   * - /Library/Application Support/MongoDB/Relational Migrator/Drivers
+     - Location for driver downloads. 
+
+   * - ~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log
+     - Location for log information. 
+
+Windows
+-------
+
+The file locations for the Windows OS:
+
+.. list-table::
+   :header-rows: 1
+
+   * - File location 
+     - Description
+
+   * - c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties 
+     - Location for application configuration.
+
+   * - c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers
+     - Location for driver downloads.
+
+   * - c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log
+     - Location for log information. 
+
+Linux
+-----
+
+The file locations for the Linux OS: 
+
+.. list-table::
+   :header-rows: 1
+
+   * - File location 
+     - Description
+
+   * - ~/Migrator/user.properties
+     - Location for application configuration.
+
+   * - /opt/mongodb-relational-migrator/lib/app/lib
+     - Location for driver downloads.
+
+   * - ~/Migrator/Logs/migrator.log
+     - Location for log information. 
+
+Learn More
+----------
+
+- :ref:`Installation on a Single Machine <single-machine-install>` 
+
+- :ref:`Installation on an Unattended Server <unattended-server>`
