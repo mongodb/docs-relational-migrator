@@ -102,7 +102,7 @@ Next Steps
 
 - :ref:`Create a Project <rm-create-project-live>`
 
-- :ref:`Configure Project Settings <rm-configure-settings>`
+- :ref:`Configure Project Settings <rm-configure-settings>` 
 
 Learn More
 ----------

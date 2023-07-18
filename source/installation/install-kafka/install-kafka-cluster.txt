@@ -17,7 +17,7 @@ installation method is ideal if you are already running Kafka or have your
 own approach to installing and configuring Kafka.
 
 Before you Begin
-----------------
+---------------- 
 
 - You must have Kafka and a Kafka Connect cluster accessible to the computer 
   running Relational Migrator.

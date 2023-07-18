@@ -73,6 +73,6 @@ Learn More
    :hidden:
    :titlesonly:
 
-   /installation/kafka-intro/install-kafka-cluster
-   /installation/kafka-intro/install-kubernetes
-   /installation/kafka-intro/install-docker
+   /installation/install-kafka/install-kafka-cluster
+   /installation/install-kafka/install-kubernetes
+   /installation/install-kafka/install-docker
