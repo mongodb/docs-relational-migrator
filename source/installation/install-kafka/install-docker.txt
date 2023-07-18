@@ -1,0 +1,94 @@
+.. _install-docker:
+
+===================
+Install with Docker
+===================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can install Relational Migrator with Kafka using Docker. Relational Migrator 
+with Kafka is intended for large migration jobs that normally require long run 
+times. The Docker installation method is ideal if you are using a containerized 
+cluster.  
+
+Before you Begin
+----------------
+
+You must have Docker installed on your computer. For more information, see
+the `Docker Documentation <https://docs.docker.com/engine/install/>`__.
+
+Steps
+-----
+
+1. Install a Kafka cluster. 
+
+   To install a Kafka cluster, follow the Docker 
+   `Clustered Deployment <https://docs.confluent.io/4.0.0/installation/docker/docs/tutorials/clustered-deployment.html#docker-compose-setting-up-a-three-node-kafka-cluster>`__ 
+   example.
+
+2. Install a Kafka Connect cluster. 
+
+   Install a Kafka Connect cluster using the `Relational Migrator Connect image <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
+
+   If you have an existing Kafka cluster, you can provide configuration details 
+   to Docker to connect your existing cluster. For more information on 
+   configuration parameters, `Docker Configuration Parameters <https://docs.confluent.io/platform/current/installation/docker/config-reference.html#docker-configuration-parameters-for-cp>`__.
+
+3. Install Relational Migrator.
+
+   You have two options for installing Relational Migrator: 
+
+   - Install Relational Migrator using the `Relational Migrator image <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__. 
+   
+   - Create your own Docker image using the ``.msi`` Relational Migrator 
+     installer provided on the `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
+
+     For guidance on creating your own Docker image, see `Docker Build <https://docs.docker.com/build/building/base-images/>`__.
+
+4. Configure the options to run Relational Migrator with Kafka.
+
+   Update the following configurations in the ``user.properties`` file to run 
+   Relational Migrator with Kafka:
+
+   - Set ``spring.profiles.active`` to ``kafka``. For example: 
+
+     .. code-block::
+
+        ``spring.profiles.active: kafka``
+
+   - For ``migrator.kafka.connect.url``, provide the Kafka Connect URL. The URL 
+     must be in the ``http://{host}:{port}`` format. For example: 
+
+     .. code-block::
+    
+        migrator.kafka.connect.url: http://{host}:{port}
+
+5. (Optional) Use TLS encryption with your Kafka Connect cluster.
+
+   Kafka communicates across platforms using plaintext, which does not require 
+   decryption to interpret information. To provide additional protection to 
+   data or information, encryption is required. 
+
+   To encrypt your Kafka Connect cluster with TLS, see `TLS Encryption <https://docs.confluent.io/platform/current/kafka/encryption.html>`__.
+
+Next Steps
+----------
+
+- :ref:`Create a Project <rm-create-project-live>`
+
+- :ref:`Configure Project Settings <rm-configure-settings>`
+
+Learn More
+----------
+
+- :ref:`Install Relational Migrator with Kafka <kafka-intro>`
+
+- :ref:`Install with Existing Kafka Cluster <install-kafka-cluster>`
+
+- :ref:`Install with Kubernetes <install-kubernetes>`

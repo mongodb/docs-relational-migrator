@@ -1,0 +1,88 @@
+.. _install-kafka-cluster:
+
+======================================
+Install with an Existing Kafka Cluster
+======================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can install Relational Migrator on an existing Kafka Connect cluster. This 
+installation method is ideal if you are already running Kafka or have your 
+own approach to installing and configuring Kafka.
+
+Before you Begin
+----------------
+
+- You must have Kafka and a Kafka Connect cluster accessible to the computer 
+  running Relational Migrator.
+
+- You must install the Debezium source connect plug-in and the Migrator sink connect 
+  plug-in on a Kafka Connect server. To install the plug-ins on a Kafka Connect 
+  server:
+
+  1. Download the ``.jar`` file found on the Relational Migrator 
+     `release page <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__. 
+
+  2. Place the ``.jar`` file in a directory listed in the plug-in path and restart 
+     your Kafka Connect workers. 
+
+     For more information on installing Kafka Connect plug-ins, see 
+     `Installing Connect Plug-ins <https://docs.confluent.io/kafka-connectors/self-managed/userguide.html>`__.
+
+Steps
+-----
+
+1. Download the latest `Relational Migrator release <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
+
+2. Update the following configurations in the ``user.properties`` file to run 
+   Relational Migrator with Kafka:
+
+   - Set ``spring.profiles.active`` to ``kafka``. 
+
+     .. code-block::
+
+        spring.profiles.active: kafka
+
+   - For ``migrator.kafka.bootstrap.servers``, list the ``host:port`` pairs of your 
+     pre-existing Kafka cluster. 
+
+     .. code-block::
+
+        migrator.kafka.bootstrap.servers: [host:port]
+
+   - For ``migrator.kafka.connect.url``, provide the Kafka Connect URL. The URL 
+     must be in the ``http://{host}:{port}`` format. 
+
+     .. code-block::
+    
+        migrator.kafka.connect.url: http://{host}:{port}
+ 
+3. If you are connecting to MySQL or Oracle, you must download and install drivers:
+
+   - `MySQL <https://dev.mysql.com/downloads/connector/j/>`__
+   
+   - `Oracle <https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html>`__
+
+4. Copy the driver files to ``<path-to-installation>/mongodb-relational-migrator/lib/app/lib``.
+
+Next Steps
+----------
+
+- :ref:`Create a Project <rm-create-project-live>`
+
+- :ref:`Configure Project Settings <rm-configure-settings>`
+
+Learn More
+----------
+
+- :ref:`Install Relational Migrator with Kafka <kafka-intro>`
+
+- [Install with Docker](/Installation/kafka-installs/install-docker)
+
+- [Install with Kubernetes](/Installation/kafka-installs/install-kubernetes)

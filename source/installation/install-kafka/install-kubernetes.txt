@@ -1,0 +1,120 @@
+.. _install-kubernetes:
+
+=======================
+Install with Kubernetes
+=======================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can install Relational Migrator with Kafka using Kubernetes. Relational Migrator 
+with Kafka is intended for large migration jobs that typically require long run 
+times. This installation can be used in either POC, testing, or production 
+environments. 
+
+About This Task
+---------------
+
+- You are using Strimzi to install Kafka with Kubernetes. Strimzi simplifies the 
+  Kafka with Kubernetes installation process by providing various configuration 
+  options not provided by other installation methods. 
+
+- Use minikube to test your installation locally. For more information, see the 
+  `minikube documentation <https://minikube.sigs.k8s.io/docs/start/>`__.
+
+- If you are using Kubernetes in a production environment, see the 
+  `Kubernetes production considerations <https://kubernetes.io/docs/setup/production-environment/>`__.
+
+Before You Begin
+----------------
+
+- Your Kubernetes cluster must be running before you install the Kafka cluster.
+
+- Follow the `Strimzi Documentation <https://strimzi.io/docs/operators/latest/deploying.html#deploy-tasks-prereqs_str>`__ 
+  to prepare for installation. 
+
+Steps
+-----
+
+1. Install your Kafka cluster.
+
+   To install your Kafka cluster, use Strimzi to perform the following steps.
+
+   a. `Install the cluster operator <https://strimzi.io/docs/operators/latest/deploying.html#cluster-operator-str>`__.
+
+   b. `Install the Kafka cluster <https://strimzi.io/docs/operators/latest/deploying.html#kafka-cluster-str>`__.
+
+2. Create a Kafka Connect build.
+
+   Once you have installed the Kafka cluster, use the 
+   `Strimzi spec reference <https://strimzi.io/docs/operators/latest/configuring.html#type-KafkaConnectSpec-reference>`__ 
+   to build Kafka Connect. Building Kafka Connect sets up the framework to stream data 
+   to and from Apache Kafka.
+
+3. Add the Debezium plug-in to the Kafka Connect build.
+
+   Debezium extracts data from your original source database and converts the 
+   data into event streams so that Relational Migrator can then interpret and 
+   transform events from Debezium. 
+
+   Add Debezium to the plug-ins component of the Kafka Connect build:
+
+   .. code-block::
+   
+      build:
+       output:
+        type: docker
+        image: {registry-url}/debezium-connect-mysql:latest
+       plugins:
+         - name: debezium-mysql-connector
+           artifacts:
+             - type: tgz
+               url: https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/{debezium-version}/debezium-connector-mysql-{debezium-version}-plugin.tar.gz
+
+4. Add the Relational Migrator plug-in to the Kafka Connect build.
+
+   The Relational Migrator plug-in is a sink connector that converts data coming 
+   from Apache Kafka and loads the data into a MongoDB cluster.
+
+   Add Relational Migrator to the plug-ins component of the Kafka Connect build:
+
+   .. code-block::
+
+      build:
+       output:
+         type: docker
+         image: {registry-url}/kafka-connect-migrator:latest
+       plugins:
+         - name: debezium-mysql-connector
+           artifacts:
+             - type: tgz
+               url: https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/{migrator-version}/kafka-connect-migrator-{migrator-version}.jar
+
+5. (Optional) You can update default configurations in ``/opt/mongodb-relational-migrator/lib/app/user.properties``.
+
+Next Steps
+----------
+
+- :ref:`Create a Project <rm-create-project-live>`
+
+- :ref:`Configure Project Settings <rm-configure-settings>`
+
+Learn More
+----------
+
+- :ref:`Install Relational Migrator with Kafka <kafka-intro>`
+
+- :ref:`Install with Existing Kafka Cluster <install-kafka-cluster>`
+
+- :ref:`Install with Docker <install-docker>`
+
+- `Debezium <https://debezium.io/documentation/reference/stable/install.html>`__
+
+- `Strimzi <https://strimzi.io/docs/operators/latest/configuring.html>`__
+
+- `minikube <https://strimzi.io/docs/operators/latest/configuring.html>`__

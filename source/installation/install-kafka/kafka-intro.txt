@@ -1,0 +1,70 @@
+.. _kafka-intro:
+
+==============================================
+Install Relational Migrator with Kafka Connect
+==============================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can use Relational Migrator to migrate data to and from Kafka. 
+Relational Migrator can be used as a Kafka Connect plug-in that improves 
+resilience and scalability of big data migration jobs.
+
+Use Cases
+---------
+
+Relational Migrator with Kafka is intended for large migration jobs that normally
+require long run times. By using Relational Migrator with Kafka, you help reduce 
+migration times. 
+
+Behavior
+--------
+
+Relational Migrator works with Kafka as a Kafka Connect sink connector. A 
+`Debezium connector <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
+extracts data from a SQL database and is an event source. Relational Migrator 
+interprets and transforms events from the Debezium source and sends them to a 
+MongoDB cluster which acts as a data sink.
+
+Relational Migrator is not packaged with Kafka Connect. To use Relational Migrator 
+with Kafka you have to install Relational Manager and integrate it with your 
+Kafka cluster. To set up the Kafka Connect cluster, configure the following 
+components:
+
+- `Apache Zookeeper <https://zookeeper.apache.org/doc/r3.8.0/zookeeperOver.html>`__
+
+- `Apache Kafka <https://kafka.apache.org/documentation/>`__
+
+- (Optional)`Schema Registry <https://docs.confluent.io/platform/current/schema-registry/schema_registry_tutorial.html>`__
+
+Tasks
+-----
+
+You can install Relational Migrator with Kafka in the following ways:
+
+- :ref:`Install with Existing Kafka Cluster <install-kafka-cluster>`
+
+  Install with an existing Kafka cluster if you are already running Kafka or 
+  have your own approach to installing and configuring Kafka.
+
+- :ref:`Install with Docker <install-docker>`
+
+  Install with Docker if you are using a containerized cluster. 
+
+- :ref:`Install with Kubernetes <install-kubernetes>`
+
+  Install with Kubernetes if you need a production-scale option and have experience 
+  with Kubernetes. 
+
+Learn More
+----------
+
+- `Kafka and Kafka Connect <https://www.mongodb.com/docs/kafka-connector/current/introduction/kafka-connect/>`__
+
+- `Debezium <https://debezium.io/documentation/reference/stable/install.html>`__
