@@ -41,7 +41,7 @@ components:
 
 - `Apache Kafka <https://kafka.apache.org/documentation/>`__
 
-- (Optional)`Schema Registry <https://docs.confluent.io/platform/current/schema-registry/schema_registry_tutorial.html>`__
+- (Optional) `Schema Registry <https://docs.confluent.io/platform/current/schema-registry/schema_registry_tutorial.html>`__
 
 Tasks
 -----
@@ -68,3 +68,11 @@ Learn More
 - `Kafka and Kafka Connect <https://www.mongodb.com/docs/kafka-connector/current/introduction/kafka-connect/>`__
 
 - `Debezium <https://debezium.io/documentation/reference/stable/install.html>`__
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   /installation/kafka-intro/install-kafka-cluster
+   /installation/kafka-intro/install-kubernetes
+   /installation/kafka-intro/install-docker
