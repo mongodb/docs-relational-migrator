@@ -83,6 +83,6 @@ Learn More
 
 - :ref:`Install Relational Migrator with Kafka <kafka-intro>`
 
-- [Install with Docker](/Installation/kafka-installs/install-docker)
+- :ref:`Install with Docker <install-docker>`
 
-- [Install with Kubernetes](/Installation/kafka-installs/install-kubernetes)
+- :ref:`Install with Kubernetes <install-kubernetes>`
