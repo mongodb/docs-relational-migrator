@@ -33,7 +33,7 @@ interprets and transforms events from the Debezium source and sends them to a
 MongoDB cluster which acts as a data sink.
 
 Relational Migrator is not packaged with Kafka Connect. To use Relational Migrator 
-with Kafka you have to install Relational Manager and integrate it with your 
+with Kafka, install Relational Manager and integrate it with your 
 Kafka cluster. To set up the Kafka Connect cluster, configure the following 
 components:
 
@@ -59,8 +59,7 @@ You can install Relational Migrator with Kafka in the following ways:
 
 - :ref:`Install with Kubernetes <install-kubernetes>`
 
-  Install with Kubernetes if you need a production-scale option and have experience 
-  with Kubernetes. 
+  Install with Kubernetes if you need a production-scale option.
 
 Learn More
 ----------

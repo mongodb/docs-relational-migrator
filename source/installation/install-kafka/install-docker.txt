@@ -14,7 +14,7 @@ Install with Docker
 
 You can install Relational Migrator with Kafka using Docker. Relational Migrator 
 with Kafka is intended for large migration jobs that normally require long run 
-times. The Docker installation method is ideal if you are using a containerized 
+times. The Docker installation method is ideal if you want a containerized 
 cluster.  
 
 Before you Begin

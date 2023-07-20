@@ -17,7 +17,7 @@ with Kafka is intended for large migration jobs that typically require long run
 times. This installation can be used in either POC, testing, or production 
 environments. 
 
-About This Task
+About this Task
 ---------------
 
 - You are using Strimzi to install Kafka with Kubernetes. Strimzi simplifies the 
@@ -30,7 +30,7 @@ About This Task
 - If you are using Kubernetes in a production environment, see the 
   `Kubernetes production considerations <https://kubernetes.io/docs/setup/production-environment/>`__.
 
-Before You Begin
+Before you Begin
 ----------------
 
 - Your Kubernetes cluster must be running before you install the Kafka cluster.
