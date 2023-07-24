@@ -27,13 +27,16 @@ Mac
 The file locations for the Mac OS:
 
 - :guilabel:`Configuration file`
-  - ``~/Library/Application Support/MongoDB/Relational Migrator/user.properties``
+  
+  ``~/Library/Application Support/MongoDB/Relational Migrator/user.properties``
 
 - :guilabel:`Driver downloads`
-  - ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``
+
+  ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``
 
 - :guilabel:`Log information`
-  - ``~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log``
+  
+  ``~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log``
 
 Windows
 -------
@@ -41,13 +44,16 @@ Windows
 The file locations for the Windows OS:
 
 - :guilabel:`Configuration file`
-  - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties``
+
+  ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties``
 
 - :guilabel:`Driver downloads`
-  - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
+
+  ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
 
 - :guilabel:`Log information`
-  - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log``
+
+  ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log``
 
 Linux
 -----
@@ -55,13 +61,16 @@ Linux
 The file locations for the Linux OS: 
 
 - :guilabel:`Configuration file`
-  - ``~/Migrator/user.properties``
+
+  ``~/Migrator/user.properties``
 
 - :guilabel:`Driver downloads`
-    - ``/opt/mongodb-relational-migrator/lib/app/lib``
+
+  ``/opt/mongodb-relational-migrator/lib/app/lib``
 
 - :guilabel:`Log information`
-  - ``~/Migrator/Logs/migrator.log``
+
+  ``~/Migrator/Logs/migrator.log``
 
 Learn More
 ----------
