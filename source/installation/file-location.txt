@@ -40,41 +40,28 @@ Windows
 
 The file locations for the Windows OS:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 20 70 
+- :guilabel:`Configuration file`
+  - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties``
 
-   * - File location 
-     - Description
+- :guilabel:`Driver downloads`
+  - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
 
-   * - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties``
-     - File Location for your application configuration.
-
-   * - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
-     - File location for your driver downloads.
-
-   * - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log``
-     - File location for your log information.
+- :guilabel:`Log information`
+  - ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log``
 
 Linux
 -----
 
 The file locations for the Linux OS: 
 
-.. list-table::
-   :header-rows: 1
+- :guilabel:`Configuration file`
+  - ``~/Migrator/user.properties``
 
-   * - File location 
-     - Description
+- :guilabel:`Driver downloads`
+    - ``/opt/mongodb-relational-migrator/lib/app/lib``
 
-   * - ``~/Migrator/user.properties``
-     - File Location for your application configuration.
-
-   * - ``/opt/mongodb-relational-migrator/lib/app/lib``
-     - File location for your driver downloads.
-
-   * - ``~/Migrator/Logs/migrator.log``
-     - File location for your log information.
+- :guilabel:`Log information`
+  - ``~/Migrator/Logs/migrator.log``
 
 Learn More
 ----------
