@@ -26,20 +26,14 @@ Mac
 
 The file locations for the Mac OS:
 
-.. list-table::
-   :header-rows: 1
+- :guilabel:`Configuration file`
+  - ``~/Library/Application Support/MongoDB/Relational Migrator/user.properties``
 
-   * - File location 
-     - Description
- 
-   * - ``~/Library/Application Support/MongoDB/Relational Migrator/user.properties``
-     - File Location for your application configuration.  
+- :guilabel:`Driver downloads`
+  - ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``
 
-   * - ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``
-     - File location for your driver downloads.
-
-   * - ``~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log``
-     - File location for your log information. 
+- :guilabel:`Log information`
+  - ``~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log``
 
 Windows
 -------
