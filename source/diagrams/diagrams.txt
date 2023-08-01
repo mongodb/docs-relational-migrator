@@ -48,5 +48,5 @@ Get Started
    :hidden:
    :titlesonly:
 
-   /diagrams/understand-diagrams
+   /diagrams/stand-diagrams
    /diagrams/navigate-diagrams/navigate-diagrams
