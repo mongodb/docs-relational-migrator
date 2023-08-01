@@ -45,7 +45,7 @@ Steps
    radio button and enter a value. This applies a limit clause at the 
    end of your SQL query.
 #. Click :guilabel:`Save and close`.
-   Tables with table filters applied show a :icon-fa5:`filter`
+   Tables with table filters applied display a :icon-fa5:`filter`
    icon in the :guilabel:`Schema model` pane under the 
    :guilabel:`Relational` header.
 
