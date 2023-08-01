@@ -12,8 +12,8 @@ Relational Migrator File Locations
    :depth: 1
    :class: singlecol
 
-Review the location of files needed when working with Relational Migrator. 
-Their location varies according to the OS you are working with. 
+Use Relational Migrator file locations when: modifying application configuration 
+files, deploying additional JDBC drivers, or reviewing log files. 
 
 Mac
 ---
@@ -24,11 +24,11 @@ The file locations for the Mac OS:
   
   ``~/Library/Application Support/MongoDB/Relational Migrator/user.properties``
 
-- **Driver downloads**
+- **Downloaded JDBC Drivers**
 
-  ``~/Library/Application Support/MongoDB/Relational Migrator/Drivers``
+  ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``
 
-- **Log information**
+- **Log files**
   
   ``~/Library/Application Support/MongoDB/Relational Migrator/Logs/migrator.log``
 
@@ -39,15 +39,17 @@ The file locations for the Windows OS:
 
 - **Configuration file**
 
-  ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\user.properties``
+  ``c:\Users\<username>\AppData\Local\MongoDB\Relational 
+  Migrator\Data\user.properties``
 
-- **Driver downloads**
+- **Downloaded JDBC Drivers**
 
   ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
 
-- **Log information**
+- **Log files**
 
-  ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Logs\migrator.log``
+  ``c:\Users\<username>\AppData\Local\MongoDB\Relational 
+  Migrator\Data\Logs\migrator.log``
 
 Linux
 -----
@@ -58,11 +60,11 @@ The file locations for the Linux OS:
 
   ``~/Migrator/user.properties``
 
-- **Driver downloads**
+- **Downloaded JDBC Drivers**
 
   ``/opt/mongodb-relational-migrator/lib/app/lib``
 
-- **Log information**
+- **Log files**
 
   ``~/Migrator/Logs/migrator.log``
 
