@@ -46,8 +46,8 @@ Steps
    end of your SQL query.
 #. Click :guilabel:`Save and close`.
    After you save your filter, the :guilabel:`Schema model` pane 
-   displays a :icon-fa5:`filter` icon under the :guilabel:`Relational` 
-   header.
+   displays a :icon-fa5:`filter` icon for any tables containing a filter 
+   under the :guilabel:`Relational` header.
 
 Learn More
 ----------
