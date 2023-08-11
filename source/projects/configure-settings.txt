@@ -28,7 +28,7 @@ To open the :guilabel:`Project Settings` dialog:
 #. From the Relational Migrator home page, click the target project.
 
 #. From the project overview screen, click the :icon-fa5:`cog` icon
-   on the top-left of the screen next to your project's name.
+   on the top-left of the screen, next to your project's name.
 
 Configurable Project Settings
 -----------------------------
