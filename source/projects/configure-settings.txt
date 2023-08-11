@@ -12,8 +12,8 @@ Configuring Project Settings
    :depth: 2
    :class: singlecol
 
-After you create a Relational Migrator project, you can configure settings for that
-project.
+After you create a Relational Migrator project, you can configure 
+settings for that project.
 
 .. note::
 
@@ -27,7 +27,8 @@ To open the :guilabel:`Project Settings` dialog:
 
 1. From the Relational Migrator home page, click the target project.
 
-#. From the project view, the gear icon next to your project's name.
+#. From the project view, click the gear icon next to your project's name
+   on the top-left of the project overview screen.
 
 Configurable Project Settings
 -----------------------------
@@ -53,16 +54,22 @@ inserted into a collection. You can choose one of the following options:
     You may choose to keep the original primary key as a different field
     in the collection.
 
-    For example, if your relational table row has a primary key of ``personId = 1``, 
-    after migration your MongoDB ``_id`` field is ``_id: ObjectId("62472f3d5849820a91d7b52f")``.
+    .. example::
+  
+       If your relational table row has a primary key of ``personId = 1``, 
+       after migration your MongoDB ``_id`` field is 
+       ``_id: ObjectId("62472f3d5849820a91d7b52f")``.
 
 - :guilabel:`Single Inherited Primary Key`
 
   - Your ``_id`` field is populated with the value of the primary key
     field. The name of your primary key field is not included in the ``_id``.
 
-    For example, if your relational table row has a primary key of ``personId=1``, 
-    after migration your MongoDB ``_id`` field is ``_id: 1``. 
+    
+    .. example::
+
+       If your relational table row has a primary key of ``personId=1``, 
+       after migration your MongoDB ``_id`` field is ``_id: 1``. 
 
 - :guilabel:`Wrapped Inherited Primary Key`
 
@@ -70,10 +77,11 @@ inserted into a collection. You can choose one of the following options:
     name of your primary key field and the value is the value of your
     primary key field.
 
-    For example, if your relational table row has a primary key of 
-    ``personId = 1``, after  migration your MongoDB ``_id``field is 
-    ``_id: { personId: 1 }``. 
-
+    .. example:: 
+      
+      If your relational table row has a primary key of 
+      ``personId = 1``, after  migration your MongoDB ``_id``field is 
+      ``_id: { personId: 1 }``. 
 
 Key Handling Behavior
 `````````````````````
@@ -114,5 +122,6 @@ You can choose one of the following options:
 Suggested Mappings
 ~~~~~~~~~~~~~~~~~~
 
-Enabling :guilabel:`Suggested mappings` allows Relational Migrator to automatically
-suggest mapping rules based upon your relational schema.
+Enabling :guilabel:`Suggested mappings` allows Relational Migrator 
+to automatically suggest mapping rules based upon your relational 
+schema.
