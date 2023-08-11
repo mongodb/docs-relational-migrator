@@ -27,7 +27,7 @@ To open the :guilabel:`Project Settings` dialog:
 
 1. From the Relational Migrator home page, click the target project.
 
-#. From the project view, click the gear icon next to your project's name
+#. From the project view, click the :icon-fa5:`cog` icon next to your project's name
    on the top-left of the project overview screen.
 
 Configurable Project Settings
@@ -65,7 +65,6 @@ inserted into a collection. You can choose one of the following options:
   - Your ``_id`` field is populated with the value of the primary key
     field. The name of your primary key field is not included in the ``_id``.
 
-    
     .. example::
 
        If your relational table row has a primary key of ``personId=1``, 
