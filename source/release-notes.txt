@@ -24,12 +24,11 @@ New features:
 
 Bug fixes:
 
-- Improvements to validation and error handling in mapping rules.
-- Ability to parse a wider range of Oracle DDL files.
+- Improves to validation and error handling in mapping rules.
+- Improves ability to parse a wider range of Oracle DDL files.
 - Fixes an issue where tables were lost when refreshing a schema using SQL Server and Windows authentication. 
 - Fixes an issue where CDC updates may target the wrong document when tables do not have a primary key.
 - Fixes an issue where database passwords can be incorrectly saved to the browser's password library. 
-
 
 1.1.3 Changelog
 ---------------
