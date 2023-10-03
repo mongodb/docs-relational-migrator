@@ -10,9 +10,14 @@ Code Generation
    :depth: 1
    :class: singlecol
 
-Relational Migrator allows you to convert your code to MongoDB syntax. 
+Relational Migrator allows you to convert your SQL and application code 
+to MongoDB syntax.
+
+Use Cases
+---------
+
 You can use the following features within the 
-:guilabel:`Code Generation` tab to convert your code:
+:guilabel:`Code Generation` tab to convert your code.
 
 .. list-table::
    :header-rows: 1
@@ -27,7 +32,7 @@ You can use the following features within the
       - Stored procedures 
    * - Generate App Code
      - 
-      - Language specific application code
+      - ``C#``, ``Java``, ``JavaScript``, and ``JSON`` application code.
 
 Get Started
 -----------
