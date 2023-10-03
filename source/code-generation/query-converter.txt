@@ -11,7 +11,12 @@ Query Converter
    :class: singlecol
 
 Query Converter allows you to convert your SQL statements, views, and 
-stored procedures to MongoDB syntax. The Query Converter feature is in private 
+stored procedures to MongoDB syntax. 
+
+Sign Up for Private Preview
+---------------------------
+
+The Query Converter feature is in private 
 preview. To request private preview access, use the sign-up form within the
 Relational Migrator application:
 
