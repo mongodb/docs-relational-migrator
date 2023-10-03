@@ -10,7 +10,24 @@ Code Generation
    :depth: 1
    :class: singlecol
 
-Rewrite this.
+Relational Migrator allows you to convert your code to MongoDB syntax. 
+You can use the following features within the 
+:guilabel:`Code Generation` tab to convert your code:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - Feature 
+     - Supported Conversion 
+
+   * - Query Converter 
+     - 
+      - SQL queries 
+      - SQL views
+      - Stored procedures 
+   * - Generate App Code
+     - 
+      - Language specific application code
 
 Get Started
 -----------
