@@ -11,7 +11,7 @@ Code Generation
    :class: singlecol
 
 Relational Migrator can help you convert your SQL and application code 
-to MongoDB syntax. Using Relational Migrator code generation features 
+to MongoDB. Using Relational Migrator code generation features 
 can reduce the time and effort involved in migrating to MongoDB.
 
 Use Cases
@@ -24,7 +24,7 @@ You can use the following features within the
    :header-rows: 1
    
    * - Feature 
-     - Supported Conversion 
+     - Supported Conversions 
 
    * - Query Converter 
      - 
