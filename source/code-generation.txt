@@ -19,7 +19,7 @@ Use Cases
 ---------
 
 You can use the following features within the 
-:guilabel:`Code Generation` tab to convert your legacy code.
+:guilabel:`Code Generation` tab to convert your legacy code:
 
 .. list-table::
    :header-rows: 1
