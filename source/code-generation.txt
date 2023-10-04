@@ -10,15 +10,16 @@ Code Generation
    :depth: 1
    :class: singlecol
 
-Relational Migrator can help you convert your SQL and application code 
-to MongoDB. Using Relational Migrator code generation features 
-can reduce the time and effort involved in migrating to MongoDB.
+Relational Migrator can assist you in converting both your SQL and 
+application code to MongoDB. By utilizing Relational Migrator's code 
+generation features, you can streamline the migration process and 
+save time and effort.
 
 Use Cases
 ---------
 
 You can use the following features within the 
-:guilabel:`Code Generation` tab to convert your code.
+:guilabel:`Code Generation` tab to convert your legacy code.
 
 .. list-table::
    :header-rows: 1
