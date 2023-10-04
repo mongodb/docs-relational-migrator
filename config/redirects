@@ -15,6 +15,6 @@ define: versions master
 
 # Redirect for previous Code Generation Page DOCSP-33055 - Prep Code Generation
 # Prep Code Generation begin
-[*]: ${prefix}/relational-migrator/code-generation/code-generation/ -> ${base}/relational-migrator/code-generation/
+[*]: ${prefix}/code-generation/code-generation/ -> ${base}/relational-migrator/code-generation/
 # Prep Code Generation end
 
