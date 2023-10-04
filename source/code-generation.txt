@@ -36,6 +36,11 @@ You can use the following features within the
      - 
       - ``C#``, ``Java``, ``JavaScript``, and ``JSON`` application code.
 
+.. note::
+
+   Query Converter is in private preview, for details on how to sign up
+   see :ref:`rm-query-converter`.
+
 Get Started
 -----------
 
