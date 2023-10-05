@@ -10,8 +10,8 @@ Query Converter
    :depth: 1
    :class: singlecol
 
-Query Converter allows you to convert your SQL statements, views, and 
-stored procedures to MongoDB syntax. 
+Use Query Converter to convert SQL statements, views, and stored 
+procedures to MongoDB syntax. 
 
 Sign Up for Private Preview
 ---------------------------
