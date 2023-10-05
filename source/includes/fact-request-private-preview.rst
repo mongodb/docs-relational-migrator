@@ -1,7 +1,6 @@
 .. procedure::
 
-      .. step:: In the :guilabel:`Code Generation` tab, click the 
-         :guilabel:`Query Converter` pane
+      .. step:: In the :guilabel:`Code Generation` tab, click the :guilabel:`Query Converter` pane
       
       .. step:: Click the :guilabel:`Register interest` button
       
