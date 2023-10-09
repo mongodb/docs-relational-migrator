@@ -43,7 +43,7 @@ Steps
    - Change the collection name. 
    - Change field names.
    - Include or exclude a field from your sync job by clicking the
-     :icon-fa5:`code` icon next to the field name.
+     :icon-fa5:`lg-CurlyBraces` icon next to the field name.
 
 #. Optionally, if you want to select a BSON type or set null handling 
    rules for your mapping rule:
