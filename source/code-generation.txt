@@ -19,7 +19,7 @@ Use Cases
 
 You can use the following features in the :guilabel:`Code Generation` 
 tab to convert your relational database SQL and generate new 
-application code based on your MongoDB schema:
+application code:
 
 .. list-table::
    :header-rows: 1
