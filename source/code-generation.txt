@@ -18,21 +18,27 @@ Use Cases
 ---------
 
 You can use the following features in the :guilabel:`Code Generation` 
-tab to convert your relational database SQL and application code 
-to work with MongoDB:
+tab to convert your relational database SQL and generate new 
+application code based on your MongoDB schema:
 
 .. list-table::
    :header-rows: 1
    
    * - Feature 
-     - Supported Conversions 
+     - Description
+     - Supports 
 
-   * - Query Converter 
+   * - Query Converter
+     - Converts SQL based relational database objects to function with 
+       MongoDB. The converted code takes into consideration your 
+       project's schema transformations.
      - 
       - SQL queries 
       - SQL views
       - Stored procedures 
    * - Generate App Code
+     - Automatically generates new application code based on your 
+       project's schema transformations.
      - 
       - ``C#``, ``Java``, ``JavaScript``, and ``JSON`` application code
 

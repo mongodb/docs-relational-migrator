@@ -11,7 +11,9 @@ Query Converter
    :class: singlecol
 
 Use Query Converter to convert SQL statements, views, and stored 
-procedures to MongoDB syntax. 
+procedures to MongoDB syntax. Relational Migrator consider the mapping 
+rules and schema transformations defined in your project when converting
+your SQL code.
 
 Sign Up for Private Preview
 ---------------------------
