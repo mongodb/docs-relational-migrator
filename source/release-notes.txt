@@ -18,8 +18,10 @@ Release Notes
 
 New features:
 
-- Ability to select target language for stored procedure conversions in 
-  the query converter (private preview).
+- Ability to select a target language for stored procedure conversions 
+  in the query converter (private preview). The available options for 
+  target languages are ``C#``, ``Java``, and ``JavaScript``.
+
 - Query conversions are now included when you export/import projects.
 
 Bug fixes:
