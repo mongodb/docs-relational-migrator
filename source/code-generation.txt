@@ -29,16 +29,16 @@ application code based on your MongoDB schema:
      - Supports 
 
    * - Query Converter
-     - Converts SQL based relational database objects to function with 
-       MongoDB. The converted code takes into consideration your 
-       project's schema transformations.
+     - Converts SQL based relational database code to function with 
+       MongoDB. The converted code takes into consideration the mapping 
+       rules and schema transformations defined in your project.
      - 
       - SQL queries 
       - SQL views
       - Stored procedures 
    * - Generate App Code
      - Automatically generates new application code based on your 
-       project's schema transformations.
+       project's mapping rules and schema transformations.
      - 
       - ``C#``, ``Java``, ``JavaScript``, and ``JSON`` application code
 
