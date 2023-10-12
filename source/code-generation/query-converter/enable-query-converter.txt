@@ -89,11 +89,3 @@ If there is one or many logical next things to do, you can link to them here.
 
 Learn More
 ----------
-
-.. toctree::
-   :hidden:
-   :titlesonly:
-
-   /code-generation/query-converter/convert-queries
-   /code-generation/query-converter/convert-stored-procedures
-   /code-generation/query-converter/convert-views
