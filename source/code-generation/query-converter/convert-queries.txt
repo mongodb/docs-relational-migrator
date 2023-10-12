@@ -49,10 +49,10 @@ Steps
    
    .. step:: Convert, export and test syntax
 
-      a. Click the :guilabel:`Convert` button.
-         Wait for the AI to convert your code. The converted 
-         MongoDB syntax code displays in the 
-         :guilabel:`Converted MongoDB Query` text box.
+      a. Click the :guilabel:`Convert` button. Wait for the AI to 
+         convert your code. The converted MongoDB syntax code displays 
+         in the :guilabel:`Converted MongoDB Query` text box.
+         
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax to your 
          clipboard.
       #. Test and validate the generated MongoDB syntax. 
@@ -69,7 +69,6 @@ syntax using query converter:
    :copyable: false
 
    * - SQL Syntax
-
      - MongoDB Syntax
 
    * - 
@@ -82,9 +81,9 @@ syntax using query converter:
        .. code-block:: node
           :copyable: true
 
-          async function query(db) {
-             return await db.collection('CUSTOMERS').find({}).toArray();
-          }
+           async function query(db) {
+              return await db.collection('CUSTOMERS').find({}).toArray();
+           }
 
    * -
        .. code-block:: sql
@@ -93,13 +92,13 @@ syntax using query converter:
    
      - .. code-block:: node
 
-       async function query(db) {
-       return await db.collection('CUSTOMERS').find({
-          CONTACTNAME: { $regex: '.*SMITH.*' }
-       }, {
-          projection: { CONTACTNAME: 1, CITY: 1, _id: 0 }
-       }).toArray();
-       }
+          async function query(db) {
+          return await db.collection('CUSTOMERS').find({
+             CONTACTNAME: { $regex: '.*SMITH.*' }
+          }, {
+             projection: { CONTACTNAME: 1, CITY: 1, _id: 0 }
+          }).toArray();
+         }
 
    * -
        .. code-block:: sql
