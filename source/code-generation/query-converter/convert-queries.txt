@@ -44,47 +44,58 @@ An ordered or unordered list of any prerequisites for the task.
 Steps
 -----
 
-These are the steps to complete the task. 
-
-In some cases, we recomend that you use a stepped content approach. In others, 
-a single statement and copyable command or syntax example.  In most cases, it's helpful 
-to include an example of what a successful result looks like. It could be a 
-brief description, code block, or screenshot. 
-
 .. procedure::
-   :style:  connected
+   :style:  normal
 
-   .. step:: Take an action
-     
-      Say a little more or provide additional substeps or examples.
+   .. step:: Navigate to the Query Converter pane
 
-      .. note:: 
-     
-         Use admonitions sparingly. This note gives critical context or a tip 
-         for step completion. It could also include a link to more 
-         context or important information.
+      a. From the `Code Generation` tab, click the `Query Converter` pane.
+      #. Click the :guilabel:`+ ADD` button on the left-hand pane 
+         next to :guilabel:`Queries`.
 
-   .. step:: Take another action
-     
-      Say a little more or provide additional substeps or examples.
+   .. step:: Enter your SQL query
 
+      a. Copy your SQL query to your clipboard.
+      #. Under the :guilabel:`SQL Query` header, paste your SQL query 
+         into the text box.
+   
+   .. step:: Convert, export and test syntax
+
+      a. Click the :guilabel:`Convert` button.
+         Wait for the AI to convert your code. The converted 
+         MongoDB syntax code displays in the 
+         :guilabel:`Converted MongoDB Query` text box
+      #. Click the :icon-fa5:`copy` to copy the MongoDB syntax to your 
+         clipboard.
+      #. Test and validate the generated MongoDB syntax. 
 
 Example
 -------
 
-Optional.
+The following table shows examples of SQL queries converted to MongoDB 
+syntax using query converter:
 
-In some cases, you can work through a specific example throughout the steps. 
-In others, it is helpful to show a complete example at the end. In most cases, 
-it's helpful to include an example of what a successful result looks like. It 
-could be a brief description, code block, or screenshot. 
+.. list-table::
+   :header-rows: 1
+
+   * - SQL Syntax
+
+     - MongoDB Syntax
+   
+   * - ``SELECT * FROM TABLEA``
+
+     - 
+       .. code-block:: node
+          :copyable: true
+          :caption: test
+
+          sync function query(db) {
+            return await db.collection('TABLEA').find({}).toArray();
+          }
 
 Next Steps
 ----------
 
-Optional.
-
-If there is one or many logical next things to do, you can link to them here.
 
 Learn More
 ----------

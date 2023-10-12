@@ -7,7 +7,7 @@ Convert Views
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 2
+   :depth: 1
    :class: singlecol
 
 Task page titles begin with a present-tense action verb. 
