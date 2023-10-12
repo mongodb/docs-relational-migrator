@@ -34,12 +34,11 @@ Include important conceptual or behavioral information that's directly relevant
 to the task. If task-related information is extensive, consider a bulleted list 
 that contains brief descriptions of important concepts and links to deeper reading.  
 
+
 Before you Begin
 ----------------
 
-Optional.
-
-An ordered or unordered list of any prerequisites for the task.
+.. include:: /includes/fact-query-converter-disclaimer.rst
 
 Steps
 -----

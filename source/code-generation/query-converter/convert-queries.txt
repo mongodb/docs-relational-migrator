@@ -28,18 +28,16 @@ required for this task.
 About this Task
 ---------------
 
-Optional.
+There are complexity limits to consider when using query converter. 
+The AI model cannot handle overly complex SQL syntax. If your SQL syntax
+is not being converted accurately, consider refactoring the SQL code.
 
-Include important conceptual or behavioral information that's directly relevant 
-to the task. If task-related information is extensive, consider a bulleted list 
-that contains brief descriptions of important concepts and links to deeper reading.  
+Conversions are currently limited to 10,000 character.
 
 Before you Begin
 ----------------
 
-Optional.
-
-An ordered or unordered list of any prerequisites for the task.
+.. include:: /includes/fact-query-converter-disclaimer.rst
 
 Steps
 -----
@@ -65,7 +63,7 @@ Steps
          Wait for the AI to convert your code. The converted 
          MongoDB syntax code displays in the 
          :guilabel:`Converted MongoDB Query` text box
-      #. Click the :icon-fa5:`copy` to copy the MongoDB syntax to your 
+      #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax to your 
          clipboard.
       #. Test and validate the generated MongoDB syntax. 
 
@@ -81,13 +79,16 @@ syntax using query converter:
    * - SQL Syntax
 
      - MongoDB Syntax
-   
-   * - ``SELECT * FROM TABLEA``
+
+   * - 
+       .. code-block:: sql
+          :copyable: true 
+
+          SELECT * FROM TABLEA
 
      - 
        .. code-block:: node
           :copyable: true
-          :caption: test
 
           sync function query(db) {
             return await db.collection('TABLEA').find({}).toArray();
@@ -96,7 +97,5 @@ syntax using query converter:
 Next Steps
 ----------
 
-
-Learn More
-----------
-
+- ref:`rm-convert-views`
+- ref:`rm-convert-stored-procedures`
