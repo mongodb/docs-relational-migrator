@@ -62,7 +62,7 @@ Steps
       a. Click the :guilabel:`Convert` button.
          Wait for the AI to convert your code. The converted 
          MongoDB syntax code displays in the 
-         :guilabel:`Converted MongoDB Query` text box
+         :guilabel:`Converted MongoDB Query` text box.
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax to your 
          clipboard.
       #. Test and validate the generated MongoDB syntax. 
@@ -75,6 +75,7 @@ syntax using query converter:
 
 .. list-table::
    :header-rows: 1
+   :widths: 30 70
 
    * - SQL Syntax
 
@@ -84,18 +85,19 @@ syntax using query converter:
        .. code-block:: sql
           :copyable: true 
 
-          SELECT * FROM TABLEA
+          SELECT * FROM CARS
 
      - 
        .. code-block:: node
           :copyable: true
 
-          sync function query(db) {
-            return await db.collection('TABLEA').find({}).toArray();
+          sync
+          function query(db) {
+             return await db.collection('CARS').find({}).toArray();
           }
 
 Next Steps
 ----------
 
-- ref:`rm-convert-views`
-- ref:`rm-convert-stored-procedures`
+- :ref:`rm-convert-views`
+- :ref:`rm-convert-stored-procedures`
