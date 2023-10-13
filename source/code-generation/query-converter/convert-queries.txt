@@ -103,16 +103,17 @@ syntax using query converter:
             }).toArray();
          }
 
-  * -
+   * -
       .. code-block:: sql
          :copyable: false
 
-         SELECT CUSTOMERID, COMPANYNAME,CITY FROM CUSTOMERS AS C
-                  JOIN ORDERS AS O
-                     ON C.CUSTOMERID = O.CUSTOMERID
+         SELECT CUSTOMERID, COMPANYNAME,CITY 
+         FROM CUSTOMERS AS C
+         JOIN ORDERS AS O
+            ON C.CUSTOMERID = O.CUSTOMERID
          WHERE CONTACTNAME LIKE '%SMITH%'
 
-    -
+     -
       .. code-block:: node
          :copyable: false
 
