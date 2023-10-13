@@ -81,7 +81,8 @@ syntax using query converter:
           :copyable: false
 
           async function query(db) {
-            return await db.collection('CUSTOMERS').find({}).toArray();
+            return await db.collection('CUSTOMERS').find({
+            }).toArray();
           }
 
    * -
