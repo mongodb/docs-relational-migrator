@@ -57,32 +57,12 @@ Steps
          clipboard.
       #. Test and validate the generated MongoDB syntax. 
 
-Example
--------
+Examples
+--------
 
 The following table shows examples of SQL queries converted to MongoDB 
 syntax using query converter:
 
-.. list-table::
-   :header-rows: 1
-   :widths: 30 70
-
-   * - SQL Syntax
-     - MongoDB Syntax
-
-   * - 
-       .. code-block:: sql
-          :copyable: false
-
-          SELECT * 
-          FROM CUSTOMERS
-     - 
-       .. code-block:: javascript
-          :copyable: false
-
-          async function query(db) {
-            return await db.collection('CUSTOMERS').find({}).toArray();
-         }
 
 Next Steps
 ----------
