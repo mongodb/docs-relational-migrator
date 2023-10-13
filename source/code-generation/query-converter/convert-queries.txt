@@ -140,7 +140,7 @@ syntax using query converter:
                CITY: 1
                }
             }
-         ]).toArray();
+            ]).toArray();
          };
 
 Next Steps
