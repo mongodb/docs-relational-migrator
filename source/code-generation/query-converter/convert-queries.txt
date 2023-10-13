@@ -72,10 +72,13 @@ syntax using query converter:
 
    * - 
        .. code-block:: sql
+          :copyable: false
 
-          SELECT * FROM CUSTOMERS
+          SELECT * 
+          FROM CUSTOMERS
      - 
        .. code-block:: node
+          :copyable: false
 
           async function query(db) {
             return await db.collection('CUSTOMERS').find({}).toArray();
