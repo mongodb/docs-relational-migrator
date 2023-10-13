@@ -66,27 +66,22 @@ syntax using query converter:
 .. list-table::
    :header-rows: 1
    :widths: 30 70
-   :copyable: false
 
    * - SQL Syntax
      - MongoDB Syntax
 
    * - 
        .. code-block:: sql
-          :copyable: true 
 
           SELECT * FROM CUSTOMERS
-
      - 
        .. code-block:: node
-          :copyable: true
 
-           async function query(db) {
-              return await db.collection('CUSTOMERS').find({}).toArray();
-           }
+          async function query(db) {
+            return await db.collection('CUSTOMERS').find({}).toArray();
+         }
 
 Next Steps
 ----------
-
 - :ref:`rm-convert-views`
 - :ref:`rm-convert-stored-procedures`
