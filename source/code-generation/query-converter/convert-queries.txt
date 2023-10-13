@@ -77,12 +77,41 @@ syntax using query converter:
           SELECT * 
           FROM CUSTOMERS
      - 
-       .. code-block:: javascript
+       .. code-block:: 
           :copyable: false
 
           async function query(db) {
             return await db.collection('CUSTOMERS').find({}).toArray();
          }
+
+  * -
+      .. code-block:: sql
+
+         SELECT CONTACTNAME, CITY FROM CUSTOMERS WHERE CONTACTNAME LIKE '%SMITH%'
+ 
+    - .. code-block:: node
+
+         async function query(db) {
+         return await db.collection('CUSTOMERS').find({
+            CONTACTNAME: { $regex: '.*SMITH.*' }
+         }, {
+            projection: { CONTACTNAME: 1, CITY: 1, _id: 0 }
+         }).toArray();
+        }
+
+  * -
+      .. code-block:: sql
+
+        SELECT CUSTOMERID, COMPANYNAME,CITY FROM CUSTOMERS AS C
+                 JOIN ORDERS AS O
+                    ON C.CUSTOMERID = O.CUSTOMERID
+        WHERE CONTACTNAME LIKE '%SMITH%'
+
+    -
+      .. code-block:: node
+
+         async function query(db) {}
+
 
 Next Steps
 ----------
