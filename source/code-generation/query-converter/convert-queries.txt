@@ -85,11 +85,15 @@ syntax using query converter:
          }
    * -
       .. code-block:: sql
+         :copyable: false
 
-         SELECT CONTACTNAME, CITY FROM CUSTOMERS WHERE CONTACTNAME LIKE '%SMITH%'
- 
+         SELECT CONTACTNAME, CITY 
+         FROM CUSTOMERS 
+         WHERE CONTACTNAME LIKE '%SMITH%'
+
      - 
       .. code-block:: node
+         :copyable: false
 
          async function query(db) {
          return await db.collection('CUSTOMERS').find({
@@ -101,6 +105,7 @@ syntax using query converter:
 
   * -
       .. code-block:: sql
+         :copyable: false
 
          SELECT CUSTOMERID, COMPANYNAME,CITY FROM CUSTOMERS AS C
                   JOIN ORDERS AS O
@@ -109,6 +114,7 @@ syntax using query converter:
 
     -
       .. code-block:: node
+         :copyable: false
 
          async function query(db) {}
 
