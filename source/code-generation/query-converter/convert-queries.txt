@@ -37,7 +37,7 @@ Steps
 
    .. step:: Navigate to the Query Converter pane
 
-      a. From the `Code Generation` tab, click the `Query Converter` pane.
+      a. From the :guilabel:`Code Generation` tab, click the :guilabel:`Query Converter` pane.
       #. Click the :guilabel:`+ ADD` button on the left-hand pane 
          next to :guilabel:`Queries`.
 
@@ -83,13 +83,12 @@ syntax using query converter:
           async function query(db) {
             return await db.collection('CUSTOMERS').find({}).toArray();
          }
-
-  * -
+   * -
       .. code-block:: sql
 
          SELECT CONTACTNAME, CITY FROM CUSTOMERS WHERE CONTACTNAME LIKE '%SMITH%'
  
-    - 
+     - 
       .. code-block:: node
 
          async function query(db) {
@@ -112,7 +111,6 @@ syntax using query converter:
       .. code-block:: node
 
          async function query(db) {}
-
 
 Next Steps
 ----------
