@@ -119,7 +119,29 @@ syntax using query converter:
       .. code-block:: node
          :copyable: false
 
-         async function query(db) {}
+         const query = async (db) => {
+         return await db.collection('CUSTOMERS').aggregate([
+            {
+               $lookup: {
+               from: 'ORDERS',
+               localField: 'CUSTOMERID',
+               foreignField: 'CUSTOMERID',
+               as: 'customer_orders'
+               }
+            },
+            {
+               $match: {
+               CONTACTNAME: { $regex: '.*SMITH.*' }
+               }
+            },
+            {
+               $project: {
+               CUSTOMERID: 1,
+               CITY: 1
+               }
+            }
+         ]).toArray();
+         };
 
 Next Steps
 ----------
