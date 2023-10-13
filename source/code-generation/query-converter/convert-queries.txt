@@ -109,7 +109,7 @@ syntax using query converter:
       .. code-block:: sql
          :copyable: false
 
-         SELECT CUSTOMERID, COMPANYNAME,CITY 
+         SELECT CUSTOMERID, CITY 
          FROM CUSTOMERS AS C
          JOIN ORDERS AS O
             ON C.CUSTOMERID = O.CUSTOMERID
