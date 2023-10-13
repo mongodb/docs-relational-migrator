@@ -18,11 +18,15 @@ transformations defined in your project when converting your SQL code.
 About this Task
 ---------------
 
-There are complexity limits to consider when using query converter. 
-The AI model cannot handle overly complex SQL syntax. If your SQL syntax
-is not being converted accurately, consider refactoring the SQL code.
+- There are complexity limits to consider when using query converter. 
+  The AI model cannot handle overly complex SQL syntax. If your SQL syntax
+  is not being converted accurately, consider refactoring the SQL code.
 
-Conversions are currently limited to 10,000 character.
+- Relational Migrator uses metadata from your relational and MongoDB 
+  connections to help convert syntax. For best results, use queries that 
+  are sourced from your projects relational database connection.
+
+- Conversions are currently limited to 10,000 character.
 
 Before you Begin
 ----------------
@@ -109,21 +113,21 @@ syntax using query converter:
       .. code-block:: sql
          :copyable: false
 
-         SELECT CUSTOMERID, CITY 
+         SELECT CUSTOMERID, CITY
          FROM CUSTOMERS AS C
          JOIN ORDERS AS O
             ON C.CUSTOMERID = O.CUSTOMERID
-         WHERE CONTACTNAME LIKE '%SMITH%'
+         WHERE CONTACTNAME IN('SMITH','JONES')
 
      -
       .. code-block:: node
          :copyable: false
 
          const query = async (db) => {
-         return await db.collection('CUSTOMERS').aggregate([
+         return await db.collection('Customers').aggregate([
             {
                $lookup: {
-               from: 'ORDERS',
+               from: 'Orders',
                localField: 'CUSTOMERID',
                foreignField: 'CUSTOMERID',
                as: 'customer_orders'
@@ -131,7 +135,7 @@ syntax using query converter:
             },
             {
                $match: {
-               CONTACTNAME: { $regex: '.*SMITH.*' }
+               CONTACTNAME: { $in: ['SMITH', 'JONES'] }
                }
             },
             {
