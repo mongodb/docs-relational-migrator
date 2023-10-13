@@ -119,6 +119,8 @@ syntax using query converter:
 
          async function query(db) {}
 
+:icon-lg:`Building`
+
 Next Steps
 ----------
 - :ref:`rm-convert-views`
