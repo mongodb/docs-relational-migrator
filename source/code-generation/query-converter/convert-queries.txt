@@ -83,6 +83,7 @@ syntax using query converter:
           async function query(db) {
             return await db.collection('CUSTOMERS').find({}).toArray();
          }
+
    * -
       .. code-block:: sql
          :copyable: false
