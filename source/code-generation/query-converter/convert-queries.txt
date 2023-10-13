@@ -117,7 +117,7 @@ syntax using query converter:
          FROM CUSTOMERS AS C
          JOIN ORDERS AS O
             ON C.CUSTOMERID = O.CUSTOMERID
-         WHERE CONTACTNAME IN('SMITH','JONES')
+         WHERE CONTACTNAME IN('ABI','JIM')
 
      -
       .. code-block:: node
@@ -135,7 +135,7 @@ syntax using query converter:
             },
             {
                $match: {
-               CONTACTNAME: { $in: ['SMITH', 'JONES'] }
+               CONTACTNAME: { $in: ['ABI', 'JIM'] }
                }
             },
             {
