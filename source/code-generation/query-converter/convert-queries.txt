@@ -10,7 +10,6 @@ Convert Queries
    :depth: 1
    :class: singlecol
 
-
 You can convert SQL queries to MongoDB syntax with query converter. 
 Relational Migrator considers the mapping rules and schema 
 transformations defined in your project when converting your SQL code.
@@ -24,9 +23,10 @@ About this Task
 
 - Relational Migrator uses metadata from your relational and MongoDB 
   connections to help convert syntax. For best results, use queries that 
-  are sourced from your projects relational database connection.
+  are based on the schema of your project's relational database 
+  connection.
 
-- Conversions are currently limited to 10,000 character.
+- Conversions are currently limited to 10,000 characters.
 
 Before you Begin
 ----------------
