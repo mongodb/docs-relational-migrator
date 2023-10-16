@@ -67,10 +67,10 @@ Steps
          convert your code. The converted MongoDB syntax code displays 
          in the :guilabel:`Converted MongoDB Query` text box.
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
-         to your clipboard. To add additional queries, click the 
-         :guilabel:`+ ADD` button on the left-hand pane next to 
-         :guilabel:`Queries`.
-      #. Test and validate the generated MongoDB syntax.
+         to your clipboard.
+      #. Test and validate the generated MongoDB syntax. To convert 
+         additional queries, click the :guilabel:`+ ADD` button on the 
+         left-hand pane next to :guilabel:`Queries`.
 
       .. tip:: 
 
