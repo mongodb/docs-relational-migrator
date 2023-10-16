@@ -49,7 +49,7 @@ Steps
 
    .. step:: Open the SQL Query Convert view
 
-      #. If it is your first time using the Query Converter in your 
+      a. If it is your first time using the Query Converter in your 
          project, click :guilabel:`Paste SQL Query`.
       #. If your project already has a converted query, click the 
          :guilabel:`+ ADD` button on the left-hand pane next to 
@@ -60,6 +60,11 @@ Steps
       a. Copy your SQL query to your clipboard.
       #. Under the :guilabel:`SQL Query` header, paste your SQL query
          into the text box.
+
+      .. tip:: 
+
+         You can use the :guilabel:`Filter` text box to filter queries 
+         based on table names and syntax.
    
    .. step:: Convert, export and test syntax
 
