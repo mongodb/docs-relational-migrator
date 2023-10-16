@@ -64,7 +64,7 @@ Steps
       .. tip:: 
 
          You can use the :guilabel:`Filter` text box to filter queries 
-         based on table names and syntax.
+         based on table name and SQL syntax.
    
    .. step:: Convert, export and test syntax
 
