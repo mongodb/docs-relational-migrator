@@ -42,8 +42,10 @@ Steps
    .. step:: Navigate to the Query Converter pane
 
       a. From the :guilabel:`Code Generation` tab, click the :guilabel:`Query Converter` pane.
-      #. Click the :guilabel:`+ ADD` button on the left-hand pane 
-         next to :guilabel:`Queries`.
+      #. If it is your first time using Query Converter in your project, 
+         click :guilabel:`Paste SQL Query`.
+      #. To add additional queries, click the :guilabel:`+ ADD` button 
+         on the left-hand pane next to :guilabel:`Queries`.
 
    .. step:: Enter your SQL query
 
@@ -56,7 +58,6 @@ Steps
       a. Click the :guilabel:`Convert` button. Wait for the AI to 
          convert your code. The converted MongoDB syntax code displays 
          in the :guilabel:`Converted MongoDB Query` text box.
-         
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax to your 
          clipboard.
       #. Test and validate the generated MongoDB syntax. 
