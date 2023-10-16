@@ -55,37 +55,22 @@ brief description, code block, or screenshot.
 .. procedure::
    :style:  connected
 
-   .. step:: Take an action
+   .. step:: Enable the Query Converter Feature
      
-      Say a little more or provide additional substeps or examples.
-
-      .. note:: 
-     
-         Use admonitions sparingly. This note gives critical context or a tip 
-         for step completion. It could also include a link to more 
-         context or important information.
-
-   .. step:: Take another action
-     
-      Say a little more or provide additional substeps or examples.
-
-
-Example
--------
-
-Optional.
-
-In some cases, you can work through a specific example throughout the steps. 
-In others, it is helpful to show a complete example at the end. In most cases, 
-it's helpful to include an example of what a successful result looks like. It 
-could be a brief description, code block, or screenshot. 
+      a. Navigate to the :guilabel:`Query Converter` pane.
+      #. Read the user agreement for Query Converter.
+      #. Click :guilabel:`Use Query Converter`.
+      #. The :guilabel:`Query Converter` pane displays.
 
 Next Steps
 ----------
 
-Optional.
-
-If there is one or many logical next things to do, you can link to them here.
+- :ref:`rm-convert-queries`
+- :ref:`rm-convert-views`
+- :ref:`rm-convert-stored-procedures`
 
 Learn More
 ----------
+
+- `SQL Comparison Chart <https://www.mongodb.com/docs/manual/reference/sql-comparison/>`_
+- `SQL to Aggregation Mapping Chart <https://www.mongodb.com/docs/manual/reference/sql-aggregation-comparison/>`_
