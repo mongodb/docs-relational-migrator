@@ -170,6 +170,6 @@ Next Steps
 Learn More
 ----------
 
-- `MongoDB Modernization Guide <https://www.mongodb.com/modernize?tck=docs_server>`_
 - `SQL Comparison Chart <https://www.mongodb.com/docs/manual/reference/sql-comparison/>`_
 - `SQL to Aggregation Mapping Chart <https://www.mongodb.com/docs/manual/reference/sql-aggregation-comparison/>`_
+.. - `MongoDB Modernization Guide <https://www.mongodb.com/modernize?tck=docs_server>`_
