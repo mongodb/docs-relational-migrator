@@ -60,11 +60,6 @@ Steps
       a. Copy your SQL query to your clipboard.
       #. Under the :guilabel:`SQL Query` header, paste your SQL query
          into the text box.
-
-      .. tip:: 
-
-         You can use the :guilabel:`Filter` text box to filter queries 
-         based on table name and SQL syntax.
    
    .. step:: Convert, export and test syntax
 
@@ -79,6 +74,11 @@ Steps
 
          To add additional queries, click the :guilabel:`+ ADD` button 
          on the left-hand pane next to :guilabel:`Queries`.
+
+      .. tip:: 
+
+         You can use the :guilabel:`Filter` text box to filter queries 
+         based on table name and SQL syntax.
 
 Examples
 --------
