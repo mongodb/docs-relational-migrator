@@ -43,30 +43,40 @@ Before you Begin
 Steps
 -----
 
-These are the steps to complete the task. 
-
-In some cases, we recomend that you use a stepped content approach. In others, 
-a single statement and copyable command or syntax example.  In most cases, it's helpful 
-to include an example of what a successful result looks like. It could be a 
-brief description, code block, or screenshot. 
-
 .. procedure::
-   :style:  connected
+   :style:  normal
 
-   .. step:: Take an action
-     
-      Say a little more or provide additional substeps or examples.
+   .. step:: Navigate to the Query Converter pane
 
-      .. note:: 
-     
-         Use admonitions sparingly. This note gives critical context or a tip 
-         for step completion. It could also include a link to more 
-         context or important information.
+      a. From the :guilabel:`Code Generation` tab, click the 
+         :guilabel:`Query Converter` pane.
 
-   .. step:: Take another action
-     
-      Say a little more or provide additional substeps or examples.
+   .. step:: Open the SQL Query Converter view
 
+      a. If it is your first time using the Query Converter in your 
+         project, click :guilabel:`Paste SQL Query`.
+         If your project already has a converted query, click the 
+         :guilabel:`+ ADD` button on the left-hand pane next to 
+         :guilabel:`Queries`.
+
+   .. step:: Enter your SQL query
+
+      a. Copy your SQL query to your clipboard.
+      #. Under the :guilabel:`SQL Query` header, paste your SQL query
+         into the text box.
+   
+   .. step:: Convert, export and test syntax
+
+      a. Click the :guilabel:`Convert` button. Wait for the AI to 
+         convert your code. The converted MongoDB syntax code displays 
+         in the :guilabel:`Converted MongoDB Query` text box.
+      #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
+         to your clipboard.
+      #. Test and validate the generated MongoDB syntax.
+
+      .. tip:: 
+
+         .. include:: /includes/fact-query-converter-filter.rst
 
 Example
 -------
