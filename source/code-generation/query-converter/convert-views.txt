@@ -55,7 +55,7 @@ Steps
 
       a. If it is your first time using the Query Converter in your 
          project, click :guilabel:`Paste SQL Query`.
-         If your project already has a converted query, click the 
+         If your project already has converted SQL code, click the 
          :guilabel:`+ ADD` button on the left-hand pane next to 
          :guilabel:`Queries`.
 
