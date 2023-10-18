@@ -28,7 +28,7 @@ Steps
 -----
 
 .. procedure::
-   :style:  connected
+   :style: normal
 
    .. step:: Navigate to the Query Converter pane
 
@@ -37,11 +37,11 @@ Steps
 
    .. step:: Read the user agreement
 
-      #. Read the user agreement for Query Converter.
+      a. Read the user agreement for Query Converter.
 
    .. step:: Enable the Query Converter Feature
 
-      #. Click :guilabel:`Use Query Converter`. 
+      a. Click :guilabel:`Use Query Converter`. 
          The :guilabel:`Query Converter` pane displays.
 
 Next Steps
