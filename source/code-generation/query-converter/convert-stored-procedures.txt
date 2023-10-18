@@ -11,7 +11,7 @@ Convert Stored Procedures
    :class: singlecol
 
 You can convert SQL stored procedures to MongoDB syntax with query 
-converter. Relational Migrator considers the mapping rules and schema 
+converter. Query converter considers the mapping rules and schema 
 transformations defined in your project when converting your SQL code.
 
 About this Task
