@@ -77,22 +77,11 @@ Steps
 
          .. include:: /includes/fact-query-converter-filter.rst
 
-Example
--------
-
-Optional.
-
-In some cases, you can work through a specific example throughout the steps. 
-In others, it is helpful to show a complete example at the end. In most cases, 
-it's helpful to include an example of what a successful result looks like. It 
-could be a brief description, code block, or screenshot. 
+Examples
+--------
 
 Next Steps
 ----------
-
-Optional.
-
-If there is one or many logical next things to do, you can link to them here.
 
 Learn More
 ----------
