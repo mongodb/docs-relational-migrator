@@ -80,6 +80,25 @@ Steps
 Examples
 --------
 
+The following example shows a MySQL view converted to MongoDB syntax.
+
+.. tabs::
+
+   .. tab:: Relational Input
+      :tabid: Embedded-doc-in
+
+      .. code-block:: sql
+         :copyable: false
+
+
+
+   .. tab:: MongoDB Output
+      :tabid: Embedded-doc-out
+
+      .. code-block:: csharp
+         :copyable: false
+
+
 Next Steps
 ----------
 
