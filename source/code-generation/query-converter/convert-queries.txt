@@ -17,19 +17,7 @@ transformations defined in your project when converting your SQL code.
 About this Task
 ---------------
 
-- There are complexity limits to consider when using query converter. 
-  The AI model cannot handle overly complex SQL syntax. If your SQL syntax
-  is not being converted accurately, consider refactoring the SQL code.
-
-- Relational Migrator uses metadata from your relational and MongoDB 
-  connections to help convert syntax. For best results, use queries that 
-  are based on the schema of your project's relational database 
-  connection.
-
-- Converted queries, views, and stored procedures are saved in your 
-  project and persist through project import and exports.
-
-- Conversions are limited to 10,000 characters.
+.. include:: /includes/fact-query-converter-generic.rst
 
 Before you Begin
 ----------------
@@ -42,14 +30,14 @@ Steps
 .. procedure::
    :style:  normal
 
-   .. step:: Navigate to the Query Converter pane
+   .. step:: Navigate to the query converter pane
 
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
 
-   .. step:: Open the SQL Query Converter view
+   .. step:: Open the SQL query converter view
 
-      a. If it is your first time using the Query Converter in your 
+      a. If it is your first time using the query converter in your 
          project, click :guilabel:`Paste SQL Query`.
          If your project already has converted SQL code, click the 
          :guilabel:`+ ADD` button on the left-hand pane next to 
@@ -72,8 +60,7 @@ Steps
 
       .. tip:: 
 
-         You can use the :guilabel:`Filter` text box to filter queries 
-         based on table name and SQL syntax.
+         .. include:: /includes/fact-query-converter-filter.rst
 
 Examples
 --------

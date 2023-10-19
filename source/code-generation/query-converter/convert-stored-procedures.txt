@@ -30,14 +30,14 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: Navigate to the Query Converter pane
+   .. step:: Navigate to the query converter pane
 
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
 
-   .. step:: Open the Query Converter view
+   .. step:: Open the query converter view
 
-      a. If it is your first time using the Query Converter in your 
+      a. If it is your first time using the query converter in your 
          project, click :guilabel:`Import From Database`.
          If your project already has converted SQL code, click the 
          :guilabel:`Manage Database Objects` button on the left-hand 
@@ -69,10 +69,10 @@ Steps
          The SQL syntax is loaded into the :guilabel:`Imported Stored Procedure`
          text field.
       #. Select a :guilabel:`Target Language` from the drop-down.
-         Query Converter supports conversions to ``C#``, ``Java``, 
-         and ``JavaScript``.
+         Query converter supports stored procedure conversions to 
+         ``C#``, ``Java``, and ``JavaScript``.
       #. Click the :guilabel:`Convert` button. Wait for the AI to 
-         convert your code. The converted MongoDB syntax code displays
+         convert your code. The converted MongoDB syntax displays
          in the :guilabel:`Converted MongoDB Query` text field. 
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
          to your clipboard.
