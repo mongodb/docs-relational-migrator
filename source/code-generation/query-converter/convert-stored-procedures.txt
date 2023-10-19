@@ -85,8 +85,11 @@ Steps
 Examples
 --------
 
-The following table shows examples of SQL stored procedure's converted 
-to MongoDB syntax using query converter:
+The examples show SQL stored procedure's converted to MongoDB syntax 
+using query converter.
+
+The following example shows a MySQL stored procedure 
+converted to JavaScript:
 
 .. tabs::
 
@@ -123,12 +126,12 @@ to MongoDB syntax using query converter:
          :copyable: false
 
          async function query(db, p_inventory_id) {
-         const v_rentals = await db.collection('rental').countDocuments({ inventoryId: p_inventory_id });
-
+         const v_rentals = await db.collection('rental').countDocuments(
+            { inventoryId: p_inventory_id }
+         );
          if (v_rentals === 0) {
             return true;
          }
-
          const v_out = await db.collection('inventory').aggregate([
             {
                $lookup: {
@@ -148,13 +151,48 @@ to MongoDB syntax using query converter:
                $count: 'rentalId'
             }
          ]).toArray();
-
          if (v_out.length > 0 && v_out[0].rentalId > 0) {
             return false;
          } else {
             return true;
          }
          }
+
+The following example shows a MySQL stored procedure 
+converted to C#:
+
+.. tabs::
+
+   .. tab:: Relational Input
+      :tabid: Embedded-doc-in
+
+      .. code-block:: sql
+         :copyable: false
+
+        BEGIN
+            DECLARE v_customer_id INT;
+            DECLARE EXIT HANDLER FOR NOT FOUND RETURN NULL;
+            SELECT customer_id INTO v_customer_id
+            FROM rental
+            WHERE return_date IS NULL
+            AND inventory_id = p_inventory_id;
+            RETURN v_customer_id;
+         END
+
+
+   .. tab:: MongoDB Output
+      :tabid: Embedded-doc-out
+
+      .. code-block:: c#
+         :copyable: false
+
+        async Task<int?> Query(IMongoDatabase db)
+        {
+          var rentalCollection = db.GetCollection<BsonDocument>("rental");
+          var filter = Builders<BsonDocument>.Filter.Eq("inventoryId", p_inventory_id) & Builders<BsonDocument>.Filter.Eq("returnDate", null);
+          var result = await rentalCollection.Find(filter).FirstOrDefaultAsync();
+          return result != null ? result["customerId"].AsInt32 : (int?)null;
+        }
 
 
 Next Steps
