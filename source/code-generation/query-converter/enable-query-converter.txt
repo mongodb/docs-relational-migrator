@@ -7,7 +7,7 @@ Enable Query Converter
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 2
+   :depth: 1
    :class: singlecol
 
 You can use Query Converter to convert SQL statements, views, and stored 
@@ -20,9 +20,8 @@ Before you Begin
 
 The Query Converter feature is in private 
 preview. To request private preview access, use the sign-up form within the
-Relational Migrator application:
-
-.. include:: /includes/fact-request-private-preview.rst
+Relational Migrator application. For instructions, see 
+:ref:`rm-query-converter`.
 
 Steps
 -----
