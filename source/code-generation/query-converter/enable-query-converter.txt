@@ -37,8 +37,6 @@ Steps
 
    .. step:: Read the user agreement
 
-      a. Read the user agreement for Query Converter.
-
    .. step:: Enable the Query Converter Feature
 
       a. Click :guilabel:`Use Query Converter`. 
