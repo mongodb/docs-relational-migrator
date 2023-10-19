@@ -49,7 +49,7 @@ Steps
          details, see :ref:`rm-relational-database-connection-strings`.
       #. Click :guilabel:`Connect`.
    
-   .. step:: Select your stored procedures
+   .. step:: Select stored procedures
 
       a. On the :guilabel:`Import Database Objects` modal, click 
          :guilabel:`Database`.

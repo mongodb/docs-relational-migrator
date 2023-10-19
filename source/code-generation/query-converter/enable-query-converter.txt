@@ -10,15 +10,15 @@ Enable Query Converter
    :depth: 1
    :class: singlecol
 
-You can use Query Converter to convert SQL statements, views, and stored 
-procedures to MongoDB syntax. Query Converter considers the mapping 
+You can use query converter to convert SQL statements, views, and stored 
+procedures to MongoDB syntax. Query converter considers the mapping 
 rules and schema transformations defined in your project when converting
 your SQL code.
 
 Before you Begin
 ----------------
 
-The Query Converter feature is in private 
+The query converter feature is in private 
 preview. To request private preview access, use the sign-up form within the
 Relational Migrator application. For instructions, see 
 :ref:`rm-query-converter`.
