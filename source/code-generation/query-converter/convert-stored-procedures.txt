@@ -85,6 +85,81 @@ Steps
 Examples
 --------
 
+The following table shows examples of SQL stored procedure's converted 
+to MongoDB syntax using query converter:
+
+.. tabs::
+
+   .. tab:: Relational Input
+      :tabid: Embedded-doc-in
+
+      .. code-block:: sql
+         :copyable: false
+
+         BEGIN
+            DECLARE v_rentals INT;
+            DECLARE v_out     INT;
+            #AN ITEM IS IN-STOCK IF THERE ARE EITHER NO ROWS IN THE rental TABLE
+            #FOR THE ITEM OR ALL ROWS HAVE return_date POPULATED
+            SELECT COUNT(*) INTO v_rentals
+            FROM rental
+            WHERE inventory_id = p_inventory_id;
+            IF v_rentals = 0 THEN
+               RETURN TRUE;
+            END IF;
+            SELECT COUNT(rental_id) INTO v_out
+            FROM inventory LEFT JOIN rental USING(inventory_id)
+            WHERE inventory.inventory_id = p_inventory_id
+            AND rental.return_date IS NULL;
+            IF v_out > 0 THEN
+               RETURN FALSE;
+            ELSE
+               RETURN TRUE;
+            END IF;
+         END
+
+   .. tab:: MongoDB Output
+      :tabid: Embedded-doc-out
+
+      .. code-block:: javascript
+         :copyable: false
+         :emphasize-lines: 8-13,22-27
+
+         async function query(db, p_inventory_id) {
+         const v_rentals = await db.collection('rental').countDocuments({ inventoryId: p_inventory_id });
+
+         if (v_rentals === 0) {
+            return true;
+         }
+
+         const v_out = await db.collection('inventory').aggregate([
+            {
+               $lookup: {
+               from: 'rental',
+               localField: 'inventoryId',
+               foreignField: 'inventoryId',
+               as: 'rentalData'
+               }
+            },
+            {
+               $match: {
+               inventoryId: p_inventory_id,
+               'rentalData.returnDate': { $exists: false }
+               }
+            },
+            {
+               $count: 'rentalId'
+            }
+         ]).toArray();
+
+         if (v_out.length > 0 && v_out[0].rentalId > 0) {
+            return false;
+         } else {
+            return true;
+         }
+         }
+
+
 Next Steps
 ----------
 

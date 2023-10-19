@@ -56,7 +56,7 @@ Steps
       #. Click the :icon-fa5:`chevron-right` icon next to 
          :guilabel:`Views`.
       #. You can toggle views for conversion by clicking 
-         the :icon-fa5:`check-square` icon next to a stored procedure's 
+         the :icon-fa5:`check-square` icon next to a view's 
          name. All views are selected for conversion by default.
       #. Click :guilabel:`Save`.
 
