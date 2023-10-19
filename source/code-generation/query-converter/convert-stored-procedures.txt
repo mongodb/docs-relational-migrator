@@ -150,13 +150,13 @@ converted to ``JavaScript``:
             {
                $count: 'rentalId'
             }
-         ]).toArray();
-         if (v_out.length > 0 && v_out[0].rentalId > 0) {
-            return false;
-         } else {
-            return true;
-         }
-         }
+            ]).toArray();
+            if (v_out.length > 0 && v_out[0].rentalId > 0) {
+               return false;
+            } else {
+               return true;
+            }
+            }
 
 The following example shows a MySQL stored procedure 
 converted to ``C#``:
