@@ -183,7 +183,7 @@ converted to ``C#``:
    .. tab:: MongoDB Output
       :tabid: Embedded-doc-out
 
-      .. code-block:: c#
+      .. code-block:: csharp
          :copyable: false
 
          async Task<int?> Query(IMongoDatabase db)
