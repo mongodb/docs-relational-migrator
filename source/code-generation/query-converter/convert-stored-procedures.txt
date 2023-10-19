@@ -89,7 +89,7 @@ The examples show SQL stored procedure's converted to MongoDB syntax
 using query converter.
 
 The following example shows a MySQL stored procedure 
-converted to JavaScript:
+converted to ``JavaScript``:
 
 .. tabs::
 
@@ -159,7 +159,7 @@ converted to JavaScript:
          }
 
 The following example shows a MySQL stored procedure 
-converted to C#:
+converted to ``C#``:
 
 .. tabs::
 
@@ -169,15 +169,15 @@ converted to C#:
       .. code-block:: sql
          :copyable: false
 
-        BEGIN
-            DECLARE v_customer_id INT;
-            DECLARE EXIT HANDLER FOR NOT FOUND RETURN NULL;
-            SELECT customer_id INTO v_customer_id
-            FROM rental
-            WHERE return_date IS NULL
-            AND inventory_id = p_inventory_id;
-            RETURN v_customer_id;
-         END
+         BEGIN
+               DECLARE v_customer_id INT;
+               DECLARE EXIT HANDLER FOR NOT FOUND RETURN NULL;
+               SELECT customer_id INTO v_customer_id
+               FROM rental
+               WHERE return_date IS NULL
+               AND inventory_id = p_inventory_id;
+               RETURN v_customer_id;
+            END
 
 
    .. tab:: MongoDB Output
@@ -186,13 +186,64 @@ converted to C#:
       .. code-block:: c#
          :copyable: false
 
-        async Task<int?> Query(IMongoDatabase db)
-        {
-          var rentalCollection = db.GetCollection<BsonDocument>("rental");
-          var filter = Builders<BsonDocument>.Filter.Eq("inventoryId", p_inventory_id) & Builders<BsonDocument>.Filter.Eq("returnDate", null);
-          var result = await rentalCollection.Find(filter).FirstOrDefaultAsync();
-          return result != null ? result["customerId"].AsInt32 : (int?)null;
-        }
+         async Task<int?> Query(IMongoDatabase db)
+         {
+            var rentalCollection = db.GetCollection<BsonDocument>("rental");
+            var filter = Builders<BsonDocument>.Filter.Eq("inventoryId", p_inventory_id) & Builders<BsonDocument>.Filter.Eq("returnDate", null);
+            var result = await rentalCollection.Find(filter).FirstOrDefaultAsync();
+            return result != null ? result["customerId"].AsInt32 : (int?)null;
+         }
+
+
+The following example shows a MySQL stored procedure 
+converted to ``Java``:
+
+.. tabs::
+
+   .. tab:: Relational Input
+      :tabid: Embedded-doc-in
+
+      .. code-block:: sql
+         :copyable: false
+
+         BEGIN
+            SELECT inventory_id
+            FROM inventory
+            WHERE film_id = p_film_id
+            AND store_id = p_store_id
+            AND NOT inventory_in_stock(inventory_id);
+            SELECT COUNT(*)
+            FROM inventory
+            WHERE film_id = p_film_id
+            AND store_id = p_store_id
+            AND NOT inventory_in_stock(inventory_id)
+            INTO p_film_count;
+         END
+
+
+   .. tab:: MongoDB Output
+      :tabid: Embedded-doc-out
+
+      .. code-block:: java
+         :copyable: false
+
+         void query(MongoDatabase db) {
+            int p_film_id = 0;
+            int p_store_id = 0;
+            int p_film_count = 0;
+
+            MongoCollection<Document> inventoryCollection = db.getCollection("inventory");
+
+            Bson filter = Filters.and(Filters.eq("filmId", p_film_id), Filters.eq("storeId", p_store_id), Filters.not(inventory_in_stock("inventoryId")));
+            FindIterable<Document> result = inventoryCollection.find(filter);
+
+            for (Document doc : result) {
+               System.out.println(doc.getInteger("inventoryId"));
+            }
+
+            p_film_count = (int) inventoryCollection.countDocuments(filter);
+         }
+
 
 
 Next Steps
