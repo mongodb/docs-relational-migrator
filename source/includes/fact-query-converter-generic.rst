@@ -1,6 +1,6 @@
-- Consider limiting complexity when using query converter. The AI 
-  model cannot handle highly complex SQL syntax. If your SQL code isn't  
-  converting accurately, think about refactoring it.
+- Consider SQL complexity when using query converter. The AI 
+  model cannot convert highly complex SQL syntax. If your SQL 
+  code isn't converting accurately, refactor it and try again.
 
 - Query converter utilizes metadata from your relational and MongoDB 
   connections for syntax conversion. For optimal results, use queries 
