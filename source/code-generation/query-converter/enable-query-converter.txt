@@ -29,7 +29,7 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: Navigate to the Query Converter pane
+   .. step:: Navigate to the query converter pane
 
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
@@ -47,9 +47,3 @@ Next Steps
 - :ref:`rm-convert-queries`
 - :ref:`rm-convert-views`
 - :ref:`rm-convert-stored-procedures`
-
-Learn More
-----------
-
-- `SQL Comparison Chart <https://www.mongodb.com/docs/manual/reference/sql-comparison/>`_
-- `SQL to Aggregation Mapping Chart <https://www.mongodb.com/docs/manual/reference/sql-aggregation-comparison/>`_

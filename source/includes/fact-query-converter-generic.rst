@@ -1,13 +1,12 @@
-- There are complexity limits to consider when using query converter. 
-  The AI model cannot handle overly complex SQL syntax. If your SQL syntax
-  is not being converted accurately, consider refactoring the SQL code.
+- Consider limiting complexity when using query converter. The AI 
+  model cannot handle highly complex SQL syntax. If your SQL code isn't  
+  converting accurately, think about refactoring it.
 
-- Relational Migrator uses metadata from your relational and MongoDB 
-  connections to help convert syntax. For best results, use queries that 
-  are based on the schema of your project's relational database 
-  connection.
+- Query converter utilizes metadata from your relational and MongoDB 
+  connections for syntax conversion. For optimal results, use queries 
+  aligned with your project's relational database schema.
 
 - Converted queries, views, and stored procedures are saved in your 
   project and persist through project import and exports.
 
-- Conversions are limited to 10,000 characters.
+- Conversions are limited to 10,000 text characters.
