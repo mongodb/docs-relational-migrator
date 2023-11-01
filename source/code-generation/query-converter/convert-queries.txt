@@ -10,17 +10,14 @@ Convert Queries
    :depth: 1
    :class: singlecol
 
-You can convert SQL queries to MongoDB syntax with query converter. 
-Query converter considers the mapping rules and schema 
-transformations defined in your project when converting your SQL code.
+You can convert SQL queries to MongoDB syntax with the query converter. 
+Query converter accounts for your project's mapping rules and schema 
+transformations when converting your SQL code.
 
 About this Task
 ---------------
 
 .. include:: /includes/fact-query-converter-generic.rst
-
-Before you Begin
-----------------
 
 .. include:: /includes/fact-query-converter-disclaimer.rst
 
@@ -33,15 +30,15 @@ Steps
    .. step:: Navigate to the query converter pane
 
       From the :guilabel:`Code Generation` tab, click the 
-         :guilabel:`Query Converter` pane.
+      :guilabel:`Query Converter` pane.
 
    .. step:: Open the SQL query converter view
 
-      a. If it is your first time using the query converter in your 
-         project, click :guilabel:`Paste SQL Query`.
-         If you have previously converted SQL code in your project, click the
-         :guilabel:`+ ADD` button on the left-hand pane next to 
-         :guilabel:`Queries`.
+      If it is your first time using the query converter in your 
+      project, click :guilabel:`Paste SQL Query`.
+      If you have previously converted SQL code in your project, click the
+      :guilabel:`+ ADD` button on the left-hand pane next to 
+      :guilabel:`Queries`.
 
    .. step:: Enter your SQL query
 
