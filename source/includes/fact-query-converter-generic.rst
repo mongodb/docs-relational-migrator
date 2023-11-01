@@ -2,8 +2,8 @@
   model cannot convert highly complex SQL syntax. If your SQL 
   code isn't converting accurately, refactor it and try again.
 
-- Query converter utilizes metadata from your relational and MongoDB 
-  connections for syntax conversion. For optimal results, use queries 
+- Query converter uses metadata from your relational and MongoDB 
+  connections to convert syntax. For optimal results, use queries 
   aligned with your project's relational database schema.
 
 - Converted queries, views, and stored procedures are saved in your 

@@ -32,14 +32,14 @@ Steps
 
    .. step:: Navigate to the query converter pane
 
-      a. From the :guilabel:`Code Generation` tab, click the 
+      From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
 
    .. step:: Open the SQL query converter view
 
       a. If it is your first time using the query converter in your 
          project, click :guilabel:`Paste SQL Query`.
-         If your project already has converted SQL code, click the 
+         If you have previously converted SQL code in your project, click the
          :guilabel:`+ ADD` button on the left-hand pane next to 
          :guilabel:`Queries`.
 
