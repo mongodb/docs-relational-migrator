@@ -48,8 +48,8 @@ Steps
    
    .. step:: Convert and test syntax
 
-      a. Click the :guilabel:`Convert` button. Wait for the AI to 
-         convert your code. The converted MongoDB syntax code displays 
+      a. Click the :guilabel:`Convert` button. Wait for your SQL code to 
+         converted. The converted MongoDB syntax code displays 
          in the :guilabel:`Converted MongoDB Query` text box.
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
          to your clipboard.
