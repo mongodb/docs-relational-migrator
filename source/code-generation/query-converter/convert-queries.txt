@@ -155,4 +155,4 @@ Learn More
 ----------
 
 - :ref:`sql-to-mongodb-mapping`
-- :manual:`</reference/sql-aggregation-comparison>`
+- :manual:`SQL to Aggregation Mapping Chart </reference/sql-aggregation-comparison>`
