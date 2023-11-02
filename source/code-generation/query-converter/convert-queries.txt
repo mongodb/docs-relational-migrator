@@ -125,10 +125,10 @@ syntax using query converter:
          return await db.collection('Customers').aggregate([
             {
                $lookup: {
-               from: 'Orders',
-               localField: 'CUSTOMERID',
-               foreignField: 'CUSTOMERID',
-               as: 'customer_orders'
+                  from: 'Orders',
+                  localField: 'CUSTOMERID',
+                  foreignField: 'CUSTOMERID',
+                  as: 'customer_orders'
                }
             },
             {
@@ -154,5 +154,5 @@ Next Steps
 Learn More
 ----------
 
-- `SQL Comparison Chart <https://www.mongodb.com/docs/manual/reference/sql-comparison/>`_
-- `SQL to Aggregation Mapping Chart <https://www.mongodb.com/docs/manual/reference/sql-aggregation-comparison/>`_
+- :ref:`sql-to-mongodb-mapping`
+- :doc:`</reference/sql-aggregation-comparison>`
