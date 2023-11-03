@@ -79,7 +79,7 @@ Steps
 
          .. tip:: 
 
-            - .. include:: /includes/fact-query-converter-filter.rst
+            .. include:: /includes/fact-query-converter-filter.rst
 
 Examples
 --------
