@@ -66,13 +66,12 @@ Steps
          converted. The converted MongoDB syntax code displays 
          in the :guilabel:`Converted MongoDB Query` text box.
 
-         - You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
-           button on the :guilabel:`SQL Query` pane and clicking the
-           :icon-fa5:`pencil-alt` icon.
+         .. tip:: 
 
-         - You can delete queries by clicking the :icon-fa4:`ellipsis-h` 
-           button on the :guilabel:`SQL Query` pane and clicking the
-           :icon-fa4:`trash` icon.
+            You can rename or delete queries from your project 
+            by clicking the :icon-fa4:`ellipsis-h` 
+            button on the :guilabel:`SQL Query` pane and clicking the
+            :icon-fa5:`pencil-alt` or :icon-fa4:`trash` icon.
 
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
          to your clipboard.
