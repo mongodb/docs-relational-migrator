@@ -54,7 +54,7 @@ Steps
          .. note::
             
             Queries copied into the :guilabel:`SQL Query` text field 
-            must be SELECT query. For example, 
+            must be a SELECT query. For example, 
             ``SELECT * FROM inventory``.
 
       #. Under the :guilabel:`SQL Query` header, paste your SQL query
@@ -66,13 +66,13 @@ Steps
          converted. The converted MongoDB syntax code displays 
          in the :guilabel:`Converted MongoDB Query` text box.
 
-         - You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
-           button on the :guilabel:`SQL Query` pane and clicking the
-           :icon-fa5:`pencil-alt` icon.
+         You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
+         button on the :guilabel:`SQL Query` pane and clicking the
+         :icon-fa5:`pencil-alt` icon.
 
-         - You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
-           button on the :guilabel:`SQL Query` pane and clicking the
-           :icon-fa4:`trash` icon.
+         You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
+         button on the :guilabel:`SQL Query` pane and clicking the
+         :icon-fa4:`trash` icon.
 
       #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
          to your clipboard.
