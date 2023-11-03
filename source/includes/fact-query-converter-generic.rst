@@ -2,10 +2,11 @@
   converter cannot convert highly complex SQL syntax. If your SQL 
   code isn't converting accurately, refactor it and try again.
 
-- The query converter uses metadata from both your relational and 
-  MongoDB connections for syntax conversion. For best results, 
-  use SQL queries referencing your project's relational database 
-  schema, tables, and columns.
+- The query converter uses the relational schema, the MongoDB schema,  
+  and the mapping rules in your current project to determine how the 
+  queries should be converted. Conversions may fail or be incorrect if 
+  the queries reference tables that are not in your relational schema
+  or if they are not mapped to MongoDB collections.
 
 - Converted queries, views, and stored procedures are saved in your 
   project and persist through project import and exports.

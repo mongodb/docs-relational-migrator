@@ -10,6 +10,13 @@ Convert Queries
    :depth: 1
    :class: singlecol
 
+
+
+Your can convert existing application and reporting SQL queries 
+embedded in your applications. You can paste these queries 
+into the query converter to update them to work with MongoDB and 
+your migrated schema.
+
 You can convert SQL queries to MongoDB syntax with the query converter. 
 Query converter accounts for your project's mapping rules and schema 
 transformations when converting your SQL code.
@@ -43,6 +50,13 @@ Steps
    .. step:: Enter your SQL query
 
       a. Copy your SQL query to your clipboard.
+
+         .. note::
+            
+            Queries copied into the :guilabel:`SQL Query` text field 
+            must be SELECT query. For example, 
+            ``SELECT * FROM inventory``.
+
       #. Under the :guilabel:`SQL Query` header, paste your SQL query
          into the text box.
    
@@ -57,7 +71,18 @@ Steps
 
       .. tip:: 
 
-         .. include:: /includes/fact-query-converter-filter.rst
+         - .. include:: /includes/fact-query-converter-filter.rst
+         
+         - You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
+           button on the :guilabel:`SQL Query` pane and clicking the
+           :icon-fa5:`pencil-alt` icon.
+
+         - You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
+           button on the :guilabel:`SQL Query` pane and clicking the
+           :icon-fa4:`trash` icon.
+
+
+
 
 Examples
 --------
