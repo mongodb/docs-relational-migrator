@@ -65,14 +65,7 @@ Steps
       a. Click the :guilabel:`Convert` button. Wait for your SQL code to 
          converted. The converted MongoDB syntax code displays 
          in the :guilabel:`Converted MongoDB Query` text box.
-      #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
-         to your clipboard.
-      #. Test and validate the generated MongoDB syntax.
 
-      .. tip:: 
-
-         - .. include:: /includes/fact-query-converter-filter.rst
-         
          - You can rename queries by clicking the :icon-fa4:`ellipsis-h` 
            button on the :guilabel:`SQL Query` pane and clicking the
            :icon-fa5:`pencil-alt` icon.
@@ -81,6 +74,15 @@ Steps
            button on the :guilabel:`SQL Query` pane and clicking the
            :icon-fa4:`trash` icon.
 
+      #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
+         to your clipboard.
+      #. Test and validate the generated MongoDB syntax.
+
+      .. tip:: 
+
+         - .. include:: /includes/fact-query-converter-filter.rst
+         
+
 
 
 
@@ -88,7 +90,8 @@ Examples
 --------
 
 The following table shows examples of SQL queries converted to MongoDB 
-syntax using query converter:
+syntax using query converter. The syntax and structure of the converted 
+queries vary depending on the mapping rules used in the project:
 
 .. list-table::
    :header-rows: 1
