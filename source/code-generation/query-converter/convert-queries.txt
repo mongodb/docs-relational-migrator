@@ -10,16 +10,10 @@ Convert Queries
    :depth: 1
    :class: singlecol
 
-
-
-Your can convert existing application and reporting SQL queries 
-embedded in your applications. You can paste these queries 
-into the query converter to update them to work with MongoDB and 
-your migrated schema.
-
-You can convert SQL queries to MongoDB syntax with the query converter. 
-Query converter accounts for your project's mapping rules and schema 
-transformations when converting your SQL code.
+You can convert embedded application and reporting SQL queries to MongoDB 
+syntax using the query converter. Copy and paste your queries into the 
+query converter to update them to work with MongoDB and your migrated 
+schema.
 
 About this Task
 ---------------
@@ -54,8 +48,8 @@ Steps
          .. note::
             
             Queries copied into the :guilabel:`SQL Query` text field 
-            must be a SELECT query. For example, 
-            ``SELECT * FROM inventory``.
+            must be a SELECT query. For example: 
+            ``SELECT ID,ITEMNAME,PRICE FROM inventory``.
 
       #. Under the :guilabel:`SQL Query` header, paste your SQL query
          into the text box.
@@ -106,7 +100,7 @@ queries vary depending on the mapping rules used in the project:
           :copyable: false
 
           async function query(db) {
-            return await db.collection('CUSTOMERS').find({
+            return await db.collection('Customers').find({
             }).toArray();
           }
 
@@ -123,10 +117,10 @@ queries vary depending on the mapping rules used in the project:
          :copyable: false
 
          async function query(db) {
-         return await db.collection('CUSTOMERS').find({
-               CONTACTNAME: { $regex: '.*SMITH.*' }
+         return await db.collection('Customers').find({
+               ContactName: { $regex: '.*SMITH.*' }
             }, {
-               projection: { CONTACTNAME: 1, CITY: 1, _id: 0 }
+               projection: { ContactName: 1, City: 1, _id: 0 }
             }).toArray();
          }
 
@@ -149,8 +143,8 @@ queries vary depending on the mapping rules used in the project:
             {
                $lookup: {
                   from: 'Orders',
-                  localField: 'CUSTOMERID',
-                  foreignField: 'CUSTOMERID',
+                  localField: 'CustomerId',
+                  foreignField: 'CustomerId',
                   as: 'customer_orders'
                }
             },
@@ -161,8 +155,8 @@ queries vary depending on the mapping rules used in the project:
             },
             {
                $project: {
-               CUSTOMERID: 1,
-               CITY: 1
+               CustomerId: 1,
+               City: 1
                }
             }
             ]).toArray();
