@@ -88,7 +88,7 @@ Steps
 
       #. Click the :guilabel:`Convert` button. Wait for the query 
          converter to convert your code. 
-         
+
          The converted MongoDB syntax displays
          in the :guilabel:`Converted MongoDB Query` text field.
 
