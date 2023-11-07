@@ -84,7 +84,7 @@ Steps
       #. Select a :guilabel:`Target Language` from the drop-down.
          
          Query converter supports stored procedure conversions to
-         ``C#``, ``Java``, and ``JavaScript``.
+         ``Javascript``, ``C#``, and ``Java``.
 
       #. Click the :guilabel:`Convert` button. Wait for the query 
          converter to convert your code. 
