@@ -68,8 +68,8 @@ Steps
 
       #. Click :guilabel:`Save`.
 
-         All SQL syntax for each stored procedure in your database 
-         schema is loaded into your project and displays in the 
+         The SQL syntax for each stored procedure in your database 
+         schema is imported into your project and is visible in the 
          :guilabel:`Query Converter` pane under 
          :guilabel:`Stored Procedures`.
 
