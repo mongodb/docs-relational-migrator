@@ -78,8 +78,8 @@ Steps
       a. Click a stored procedure's name from the left-hand pane under
          :guilabel:`Stored Procedures`.
          
-         The SQL syntax displays in the :guilabel:`Imported Stored Procedure`
-         text field.
+         The SQL syntax displays in the 
+         :guilabel:`Imported Stored Procedure` pane.
 
       #. Select a :guilabel:`Target Language` from the drop-down.
          
@@ -281,5 +281,5 @@ Next Steps
 Learn More
 ----------
 
-- `SQL Comparison Chart <https://www.mongodb.com/docs/manual/reference/sql-comparison/>`_
-- `SQL to Aggregation Mapping Chart <https://www.mongodb.com/docs/manual/reference/sql-aggregation-comparison/>`_
+- :ref:`sql-to-mongodb-mapping`
+- :manual:`SQL to Aggregation Mapping Chart </reference/sql-aggregation-comparison>`
