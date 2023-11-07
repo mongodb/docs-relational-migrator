@@ -85,7 +85,7 @@ Steps
       #. Select a :guilabel:`Target Language` from the drop-down.
          
          Query converter supports stored procedure conversions to
-         ``Javascript``, ``C#``, and ``Java``.
+         Javascript, C#, and Java.
 
       #. Click the :guilabel:`Convert` button. Wait for the query 
          converter to convert your code. 
@@ -107,14 +107,14 @@ Examples
 --------
 
 The query converter can convert your stored procedures
-to ``Javascript``, ``C#``, or ``Java`` syntax. The examples below
+to Javascript, C#, or Java syntax. The examples below
 show conversions to each language.
 
 JavaScript
 ~~~~~~~~~~
 
 The following example shows a MySQL stored procedure
-converted to ``JavaScript``:
+converted to JavaScript:
 
 .. tabs::
 
@@ -187,7 +187,7 @@ C#
 ~~
 
 The following example shows a MySQL stored procedure
-converted to ``C#``:
+converted to C#:
 
 .. tabs::
 
@@ -226,7 +226,7 @@ Java
 ~~~~
 
 The following example shows a MySQL stored procedure
-converted to ``Java``:
+converted to Java:
 
 .. tabs::
 
