@@ -90,9 +90,9 @@ Steps
          converter to convert your code. 
 
          The converted MongoDB syntax displays
-         in the :guilabel:`Converted MongoDB Query` text field.
+         on the :guilabel:`Converted MongoDB Query` pane.
 
-      #. Click the :icon-fa5:`copy` icon in the 
+      #. Click the :icon-fa5:`copy` icon on the 
          :guilabel:`Converted MongoDB Query` pane to copy the MongoDB 
          syntax to your clipboard.
 
