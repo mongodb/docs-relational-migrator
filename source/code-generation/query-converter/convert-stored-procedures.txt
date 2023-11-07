@@ -10,8 +10,8 @@ Convert Stored Procedures
    :depth: 1
    :class: singlecol
 
-You can convert SQL stored procedures to MongoDB syntax with query
-converter. Query converter considers the mapping rules and schema
+You can convert SQL stored procedures to MongoDB syntax with the query
+converter. The query converter considers the mapping rules and schema
 transformations defined in your project when converting your SQL code.
 
 About this Task
@@ -52,20 +52,30 @@ Steps
    .. step:: Select stored procedures
 
       a. On the :guilabel:`Import Database Objects` modal, click
-         :guilabel:`Database`.
+         the :icon-fa5:`chevron-right` icon next :guilabel:`Database`.
       #. Click the :icon-fa5:`chevron-right` icon next to your schema.
       #. Click the :icon-fa5:`chevron-right` icon next to
          :guilabel:`Stored Procedures`.
-      #. You can toggle stored procedures for conversion by clicking
-         the :icon-fa5:`check-square` icon next to a stored procedure's
-         name. All stored procedures are selected for conversion by
-         default.
+
+         .. tip::
+
+            You can toggle stored procedures for conversion by clicking
+            the :icon-fa5:`check-square` icon next to a stored procedure's
+            name. All stored procedures are selected for conversion by
+            default.
+
       #. Click :guilabel:`Save`.
+
+         All the SQL syntax for each stored procedure in your database 
+         schema is loaded into your project and displays in the 
+         :guilabel:`Query Converter` pane under 
+         :guilabel:`Stored Procedures`.
 
    .. step:: Convert and test syntax
 
       a. Click a stored procedure's name from the left-hand pane under
          :guilabel:`Stored Procedures`.
+         
          The SQL syntax is loaded into the :guilabel:`Imported Stored Procedure`
          text field.
       #. Select a :guilabel:`Target Language` from the drop-down.
