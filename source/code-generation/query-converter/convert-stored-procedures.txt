@@ -92,6 +92,11 @@ Steps
          The converted MongoDB syntax displays
          in the :guilabel:`Converted MongoDB Query` text field.
 
+      #. Click the :icon-fa5:`copy` icon in the 
+      :guilabel:`Converted MongoDB Query` pane to copy the MongoDB 
+      syntax to your clipboard.
+
+      #. Test and validate the generated MongoDB syntax.
 
       .. tip::
 
