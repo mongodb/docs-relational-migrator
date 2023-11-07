@@ -83,8 +83,8 @@ Steps
          
          Query converter supports stored procedure conversions to
          ``C#``, ``Java``, and ``JavaScript``.
-      #. Click the :guilabel:`Convert` button. Wait for the AI to
-         convert your code. 
+      #. Click the :guilabel:`Convert` button. Wait for the query 
+         converter to convert your code. 
          
          The converted MongoDB syntax displays
          in the :guilabel:`Converted MongoDB Query` text field.
