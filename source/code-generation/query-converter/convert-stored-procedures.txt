@@ -90,7 +90,7 @@ converted to ``JavaScript``:
 .. tabs::
 
    .. tab:: Relational Input
-  	   :tabid: Embedded-doc-in
+      :tabid: Embedded-doc-in
 
       .. code-block:: sql
          :copyable: false
@@ -116,7 +116,7 @@ converted to ``JavaScript``:
          END
 
    .. tab:: MongoDB Output
-  	   :tabid: Embedded-doc-out
+      :tabid: Embedded-doc-out
 
       .. code-block:: javascript
          :copyable: false
@@ -160,7 +160,7 @@ converted to ``C#``:
 .. tabs::
 
    .. tab:: Relational Input
-  	   :tabid: Embedded-doc-in
+      :tabid: Embedded-doc-in
 
       .. code-block:: sql
          :copyable: false
