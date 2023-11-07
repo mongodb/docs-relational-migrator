@@ -105,6 +105,13 @@ Steps
 Examples
 --------
 
+The query converter can convert your stored procedures
+to ``Javascript``, ``C#``, or ``Java`` syntax. The below examples
+show an example conversion of each language.
+
+JavaScript
+~~~~~~~~~~
+
 The following example shows a MySQL stored procedure
 converted to ``JavaScript``:
 
@@ -175,6 +182,9 @@ converted to ``JavaScript``:
             }
             }
 
+C#
+~~
+
 The following example shows a MySQL stored procedure
 converted to ``C#``:
 
@@ -211,6 +221,8 @@ converted to ``C#``:
             return result != null ? result["customerId"].AsInt32 : (int?)null;
          }
 
+Java
+~~~~
 
 The following example shows a MySQL stored procedure
 converted to ``Java``:
