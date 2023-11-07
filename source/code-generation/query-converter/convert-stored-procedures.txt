@@ -54,7 +54,7 @@ Steps
    .. step:: Select stored procedures
 
       a. On the :guilabel:`Import Database Objects` modal, click
-         the :icon-fa5:`chevron-right` icon next :guilabel:`Database`.
+         the :icon-fa5:`chevron-right` icon next to :guilabel:`Database`.
 
       #. Click the :icon-fa5:`chevron-right` icon next to your schema.
 
