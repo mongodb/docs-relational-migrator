@@ -27,10 +27,9 @@ Before you Begin
   stored procedure. Instead, MongoDB supports custom JavaScript and 
   driver code that hosts the database logic. Part of your application 
   modernization journey is to choose the programming language and hosting 
-  option that best serves your application needs.
-
-  You can host your converted stored procedure code in your application
-  or with :ref:`MongoDB App Services Functions <functions>`.
+  option that best serves your application needs. You can host your
+  converted stored procedure code in your applicationor with 
+  :ref:`MongoDB App Services Functions <functions>`.
 
 - .. include:: /includes/fact-query-converter-disclaimer.rst
 
