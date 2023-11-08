@@ -67,11 +67,15 @@ Steps
 
      a. Click a view's name from the left-hand pane under
         :guilabel:`Views`.
+        
         The SQL code is loaded into the :guilabel:`Imported View`
         pane.
      #. Click the :guilabel:`Convert` button. Wait for the query 
-        converter to convert your code. The converted MongoDB code 
+        converter to convert your code. 
+        
+        The converted MongoDB code 
         displays in the :guilabel:`Converted MongoDB Query` pane.
+        
      #. Click the :icon-fa5:`copy` icon to copy the MongoDB code
         to your clipboard.
      #. Test and validate the generated MongoDB code.
