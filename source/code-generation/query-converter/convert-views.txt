@@ -83,9 +83,12 @@ Steps
 Examples
 --------
 
-The following examples show PostGreSQL views from the 
+The query converter can convert your SQL views to MongoDB code. 
+The examples below show PostGreSQL views from the
 :ref:`example Northwind database<create-project-sample-schema>` 
 converted to MongoDB code.
+
+The following example shows an ``inner join`` view converted to MongoDB.
 
 .. tabs::
 
@@ -138,6 +141,9 @@ converted to MongoDB code.
          ]).toArray();
          }
 
+The following example shows an aggregated ``group by`` view converted 
+to MongoDB.
+
 .. tabs::
 
   .. tab:: Relational Input
@@ -146,12 +152,12 @@ converted to MongoDB code.
      .. code-block:: sql
         :copyable: false
 
-         SELECT 
-            POSTAL_CODE, 
-            COUNT(*) AS CUSTOMERCOUNT
-         FROM CUSTOMERS
-         GROUP BY POSTAL_CODE
-         ORDER BY CUSTOMERCOUNT DESC;
+        SELECT 
+           POSTAL_CODE, 
+           COUNT(*) AS CUSTOMERCOUNT
+        FROM CUSTOMERS
+        GROUP BY POSTAL_CODE
+        ORDER BY CUSTOMERCOUNT DESC;
 
   .. tab:: MongoDB Output
      :tabid: mongodb-output-2
@@ -159,19 +165,19 @@ converted to MongoDB code.
      .. code-block:: javascript
         :copyable: false
 
-         sync function query(db) {
-            return db.collection('customers').aggregate([
-               {
-                  $group: {
-                  _id: "$postalCode",
-                  customercount: { $sum: 1 }
-                  }
-               },
-               {
-                  $sort: { customercount: -1 }
+        sync function query(db) {
+         return db.collection('customers').aggregate([
+            {
+               $group: {
+               _id: "$postalCode",
+               customercount: { $sum: 1 }
                }
-            ]).toArray();
-         }
+            },
+            {
+               $sort: { customercount: -1 }
+            }
+         ]).toArray();
+        }
 
 Next Steps
 ----------
