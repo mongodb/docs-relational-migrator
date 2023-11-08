@@ -88,7 +88,7 @@ The examples below show PostGreSQL views from the
 :ref:`example Northwind database<create-project-sample-schema>` 
 converted to MongoDB code.
 
-The following example shows an ``inner join`` view converted to MongoDB.
+The following example shows a ``inner join`` view converted to MongoDB:
 
 .. tabs::
 
@@ -139,10 +139,10 @@ The following example shows an ``inner join`` view converted to MongoDB.
                }
             }
          ]).toArray();
-         }
+        }
 
 The following example shows an aggregated ``group by`` view converted 
-to MongoDB.
+to MongoDB:
 
 .. tabs::
 
@@ -165,7 +165,7 @@ to MongoDB.
      .. code-block:: javascript
         :copyable: false
 
-        sync function query(db) {
+        async function query(db) {
          return db.collection('customers').aggregate([
             {
                $group: {
