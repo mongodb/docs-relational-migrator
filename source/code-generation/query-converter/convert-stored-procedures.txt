@@ -10,7 +10,7 @@ Convert Stored Procedures
    :depth: 1
    :class: singlecol
 
-You can import and convert your SQL stored procedures to MongoDB syntax 
+You can import and convert your SQL stored procedures to MongoDB code 
 with the query converter. The query converter considers the mapping 
 rules and schema transformations defined in your project when converting
 your SQL code.
@@ -19,6 +19,15 @@ About this Task
 ---------------
 
 .. include:: /includes/fact-query-converter-generic.rst
+
+- MongoDB does not have an official synonym object type for the SQL 
+  stored procedures. Instead, MongoDB supports custom JavaScript and 
+  driver code that hosts the database logic. Part of your application 
+  modernization journey is to choose the programming language and hosting 
+  option that best serves your application needs.
+
+  You can host your converted stored procedure code in your application
+  or with :ref:`MongoDB App Services Functions <functions>`.
 
 Before you Begin
 ----------------
@@ -69,17 +78,17 @@ Steps
 
       #. Click :guilabel:`Save`.
 
-         The SQL syntax for each stored procedure in your database 
+         The code for each stored procedure in your database 
          schema is imported into your project and is visible in the 
          :guilabel:`Query Converter` pane under 
          :guilabel:`Stored Procedures`.
 
-   .. step:: Convert and test syntax
+   .. step:: Convert and test code
 
       a. Click a stored procedure's name from the left-hand pane under
          :guilabel:`Stored Procedures`.
          
-         The SQL syntax displays in the 
+         The code displays in the 
          :guilabel:`Imported Stored Procedure` pane.
 
       #. Select a :guilabel:`Target Language` from the drop-down.
@@ -90,14 +99,14 @@ Steps
       #. Click the :guilabel:`Convert` button. Wait for the query 
          converter to convert your code. 
 
-         The converted MongoDB syntax displays
+         The converted MongoDB code displays
          on the :guilabel:`Converted MongoDB Query` pane.
 
       #. Click the :icon-fa5:`copy` icon on the 
          :guilabel:`Converted MongoDB Query` pane to copy the MongoDB 
-         syntax to your clipboard.
+         code to your clipboard.
 
-      #. Test and validate the generated MongoDB syntax.
+      #. Test and validate the generated MongoDB code.
 
          .. tip::
 
@@ -107,7 +116,7 @@ Examples
 --------
 
 The query converter can convert your stored procedures
-to Javascript, C#, or Java syntax. The examples below
+to Javascript, C#, or Java code. The examples below
 show conversions to each language.
 
 JavaScript
