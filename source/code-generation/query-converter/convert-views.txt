@@ -83,9 +83,9 @@ Steps
 Examples
 --------
 
-The following example shows a PostGreSQL view from the 
-:ref:`Northwind <create-project-sample-schema>` database converted to 
-MongoDB code.
+The following examples show PostGreSQL views from the 
+:ref:`example Northwind database<create-project-sample-schema>` 
+converted to MongoDB code.
 
 .. tabs::
 
@@ -137,6 +137,8 @@ MongoDB code.
             }
          ]).toArray();
          }
+
+.. tabs::
 
   .. tab:: Relational Input
      :tabid: sql-input-2
