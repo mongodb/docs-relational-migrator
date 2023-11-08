@@ -107,7 +107,7 @@ The following example shows a ``inner join`` view converted to MongoDB:
         OD.DISCOUNT
 
          FROM ORDERS AS O
-            JOIN ORDER_DETAILS AS OD 
+            INNER JOIN ORDER_DETAILS AS OD 
                ON O.ORDER_ID = OD.ORDER_ID;
 
   .. tab:: MongoDB Output
