@@ -3,7 +3,7 @@ title = "Relational Migrator"
 
 intersphinx = [ "https://www.mongodb.com/docs/manual/objects.inv",
                 "https://www.mongodb.com/docs/atlas/objects.inv",
-                "https://www.mongodb.com/atlas/app-services/objects.inv"
+                "https://www.mongodb.com/docs/atlas/app-services/objects.inv"
               ]
 
 # toc_landing_pages = ["/paths/to/pages/that/have/nested/content"]
