@@ -1,0 +1,65 @@
+.. _rm-refresh-database-objects:
+
+========================
+Refresh Database Objects
+========================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can refresh the database objects from your relational database to
+import newly created objects or SQL syntax updates.
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Navigate to the query converter pane
+
+      From the :guilabel:`Code Generation` tab, click the 
+      :guilabel:`Query Converter` pane.
+
+   .. step:: Connect to your source database
+
+      a. Click the :guilabel:`Manage Database Objects`.
+
+      #. On the :guilabel:`Manage Database Objects` modal, click 
+         the :guilabel:`Refresh Objects` button.
+
+      #. Provide the connection details to your source relational 
+         database.
+
+      .. note::
+
+         The credentials used for refreshing your database objects do 
+         not need to be the same credentials used when creating your
+         project.
+
+   .. step:: Select database objects 
+
+      #. On the :guilabel:`Manage Database Objects` modal, click
+         the :icon-fa5:`chevron-right` icon next to :guilabel:`Database`.
+
+      #. Click the :icon-fa5:`chevron-right` icon next to your schema.
+
+      #. Click the :icon-fa5:`chevron-right` icon next to
+         :guilabel:`Stored Procedures` and :guilabel:`Views`.
+
+         Newly created stored procedures and views are visible under 
+         the appropriate header.
+
+   .. step:: Select the new database objects
+
+      #. Click the :icon-fa5:`check-square` icon next to newly imported
+         views or stored procedures.
+
+      #. Click :guilabel:`Save`.
+
+         The newly imported objects are visible under the appropriate header
+         on the :guilabel:`Query Converter` pane.
+
