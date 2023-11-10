@@ -144,6 +144,51 @@ The following example shows an ``inner join`` view converted to MongoDB:
          ]).toArray();
         }
 
+
+
+.. code-block:: sql
+   :copyable: false
+
+
+   SELECT 
+   O.ORDER_ID,
+   O.CUSTOMER_ID,
+   O.ORDER_DATE,
+   OD.UNIT_PRICE,
+   OD.DISCOUNT
+
+   FROM ORDERS AS O
+      INNER JOIN ORDER_DETAILS AS OD 
+         ON O.ORDER_ID = OD.ORDER_ID;
+
+.. code-block:: javascript
+   :copyable: false
+
+   async function query(db) {
+   return await db.collection('orders').aggregate([
+      {
+         $lookup: {
+         from: 'orderDetails',
+         localField: 'orderId',
+         foreignField: 'orderId',
+         as: 'orderDetails'
+         }
+      },
+      {
+         $unwind: '$orderDetails'
+      },
+      {
+         $project: {
+         orderId: 1,
+         customerId: 1,
+         orderDate: 1,
+         unitPrice: '$orderDetails.unitPrice',
+         discount: '$orderDetails.discount'
+         }
+      }
+   ]).toArray();
+   }
+
 The following example shows an aggregated ``group by`` view converted 
 to MongoDB:
 
