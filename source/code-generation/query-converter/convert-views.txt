@@ -68,13 +68,13 @@ Steps
      a. Click a view's name from the left-hand pane under
         :guilabel:`Views`.
         
-        The SQL code is loaded into the :guilabel:`Imported View`
+        The SQL code is displayed in the :guilabel:`Imported View`
         pane.
      #. Click the :guilabel:`Convert` button. Wait for the query 
         converter to convert your code. 
         
         The converted MongoDB code 
-        displays in the :guilabel:`Converted MongoDB Query` pane.
+        is displayed in the :guilabel:`Converted MongoDB Query` pane.
         
      #. Click the :icon-fa5:`copy` icon to copy the MongoDB code
         to your clipboard.
@@ -88,11 +88,11 @@ Examples
 --------
 
 The query converter can convert your SQL views to MongoDB code. 
-The examples below show PostGreSQL views from the
+The examples below show PostgreSQL views from the
 :ref:`example Northwind database<create-project-sample-schema>` 
 converted to MongoDB code.
 
-The following example shows a ``inner join`` view converted to MongoDB:
+The following example shows an ``inner join`` view converted to MongoDB:
 
 .. tabs::
 
