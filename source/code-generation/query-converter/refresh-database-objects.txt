@@ -10,8 +10,9 @@ Refresh Database Objects
    :depth: 1
    :class: singlecol
 
-You can refresh the database objects from your relational database to
-import newly created objects or SQL syntax updates.
+You can refresh database objects from your relational database and
+import newly created objects or SQL syntax updates since your project 
+was created.
 
 Steps
 -----
