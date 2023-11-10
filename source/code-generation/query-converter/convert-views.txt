@@ -193,4 +193,3 @@ Learn More
 
 - :ref:`sql-to-mongodb-mapping`
 - :manual:`SQL to Aggregation Mapping Chart </reference/sql-aggregation-comparison>`
-
