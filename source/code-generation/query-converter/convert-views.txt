@@ -58,9 +58,9 @@ Steps
      #. Click the :icon-fa5:`chevron-right` icon next to your schema.
      #. Click the :icon-fa5:`chevron-right` icon next to
         :guilabel:`Views`.
-     #. You can toggle views for conversion by clicking
-        the :icon-fa5:`check-square` icon next to a view's
-        name. All views are selected for conversion by default.
+     #. To select the views to convert, click the 
+        :icon-fa5:`check-square` icon next to a view's name. 
+        By default, all views are selected.
      #. Click :guilabel:`Save`.
 
   .. step:: Convert and test code
@@ -87,7 +87,6 @@ Steps
 Examples
 --------
 
-The query converter can convert your SQL views to MongoDB code. 
 The examples below show PostgreSQL views from the
 :ref:`example Northwind database<create-project-sample-schema>` 
 converted to MongoDB code.
