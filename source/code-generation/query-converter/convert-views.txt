@@ -157,12 +157,13 @@ to MongoDB:
        .. code-block:: sql
           :copyable: false
 
-         SELECT 
-            POSTAL_CODE, 
-            COUNT(*) AS CUSTOMERCOUNT
-         FROM CUSTOMERS
-         GROUP BY POSTAL_CODE
-         ORDER BY CUSTOMERCOUNT DESC;
+          SELECT 
+          POSTAL_CODE, 
+          COUNT(*) AS CUSTOMERCOUNT
+
+          FROM CUSTOMERS
+          GROUP BY POSTAL_CODE
+          ORDER BY CUSTOMERCOUNT DESC;
      - 
        .. code-block:: javascript
           :copyable: false
