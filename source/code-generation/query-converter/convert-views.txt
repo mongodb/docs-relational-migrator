@@ -165,8 +165,8 @@ The following example shows an inner join view converted to MongoDB:
             OD.DISCOUNT
 
             FROM ORDERS AS O
-               INNER JOIN ORDER_DETAILS AS OD 
-                  ON O.ORDER_ID = OD.ORDER_ID;
+            INNER JOIN ORDER_DETAILS AS OD 
+               ON O.ORDER_ID = OD.ORDER_ID;
      - 
        .. code-block:: 
           :copyable: false
@@ -195,8 +195,6 @@ The following example shows an inner join view converted to MongoDB:
                 }
              ]).toArray();
              }
-
-
 
 The following example shows an aggregated ``group by`` view converted 
 to MongoDB:
