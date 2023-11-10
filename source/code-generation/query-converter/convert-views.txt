@@ -194,45 +194,45 @@ The following example shows an inner join view converted to MongoDB:
                    }
                 }
              ]).toArray();
-             }
+          }
 
-The following example shows an aggregated ``group by`` view converted 
+The following example shows an aggregated group by view converted 
 to MongoDB:
 
-.. tabs::
+.. list-table::
+   :header-rows: 1
+   :widths: 40 60
 
-  .. tab:: Relational Input
-     :tabid: sql-input-2
+   * - SQL Syntax
+     - MongoDB Syntax
 
-     .. code-block:: sql
-        :copyable: false
+   * - 
+       .. code-block:: sql
+          :copyable: false
 
-        SELECT 
-           POSTAL_CODE, 
-           COUNT(*) AS CUSTOMERCOUNT
-        FROM CUSTOMERS
-        GROUP BY POSTAL_CODE
-        ORDER BY CUSTOMERCOUNT DESC;
+         SELECT 
+            POSTAL_CODE, 
+            COUNT(*) AS CUSTOMERCOUNT
+         FROM CUSTOMERS
+         GROUP BY POSTAL_CODE
+         ORDER BY CUSTOMERCOUNT DESC;
+     - 
+       .. code-block:: javascript
+          :copyable: false
 
-  .. tab:: MongoDB Output
-     :tabid: mongodb-output-2
-
-     .. code-block:: javascript
-        :copyable: false
-
-        async function query(db) {
-         return db.collection('customers').aggregate([
-            {
-               $group: {
-               _id: "$postalCode",
-               customercount: { $sum: 1 }
-               }
-            },
-            {
-               $sort: { customercount: -1 }
-            }
-         ]).toArray();
-        }
+          async function query(db) {
+             return db.collection('customers').aggregate([
+                {
+                   $group: {
+                   _id: "$postalCode",
+                   customercount: { $sum: 1 }
+                   }
+                },
+                {
+                   $sort: { customercount: -1 }
+                }
+             ]).toArray();
+          }
 
 Next Steps
 ----------
