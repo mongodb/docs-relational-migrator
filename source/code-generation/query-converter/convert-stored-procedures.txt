@@ -128,7 +128,7 @@ converted to JavaScript:
 .. tabs::
 
    .. tab:: Relational Input
-      :tabid: Embedded-doc-in
+      :tabid: sql-input-1
 
       .. code-block:: sql
          :copyable: false
@@ -154,7 +154,7 @@ converted to JavaScript:
          END
 
    .. tab:: MongoDB Output
-      :tabid: Embedded-doc-out
+      :tabid: mongodb-output-1
 
       .. code-block:: javascript
          :copyable: false
@@ -201,7 +201,7 @@ converted to C#:
 .. tabs::
 
    .. tab:: Relational Input
-      :tabid: Embedded-doc-in
+      :tabid: sql-input-2
 
       .. code-block:: sql
          :copyable: false
@@ -218,7 +218,7 @@ converted to C#:
 
 
    .. tab:: MongoDB Output
-      :tabid: Embedded-doc-out
+      :tabid: mongodb-output-2
 
       .. code-block:: csharp
          :copyable: false
@@ -240,7 +240,7 @@ converted to Java:
 .. tabs::
 
    .. tab:: Relational Input
-      :tabid: Embedded-doc-in
+      :tabid: sql-input-3
 
       .. code-block:: sql
          :copyable: false
@@ -260,7 +260,7 @@ converted to Java:
          END
 
    .. tab:: MongoDB Output
-      :tabid: Embedded-doc-out
+      :tabid: mongodb-output-3
 
       .. code-block:: java
          :copyable: false
