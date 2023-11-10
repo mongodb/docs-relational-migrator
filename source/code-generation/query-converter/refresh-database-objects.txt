@@ -42,7 +42,7 @@ Steps
 
    .. step:: Select database objects 
 
-      #. On the :guilabel:`Manage Database Objects` modal, click
+      a. On the :guilabel:`Manage Database Objects` modal, click
          the :icon-fa5:`chevron-right` icon next to :guilabel:`Database`.
 
       #. Click the :icon-fa5:`chevron-right` icon next to your schema.
@@ -55,7 +55,7 @@ Steps
 
    .. step:: Select the new database objects
 
-      #. Click the :icon-fa5:`check-square` icon next to newly imported
+      a. Click the :icon-fa5:`check-square` icon next to newly imported
          views or stored procedures.
 
       #. Click :guilabel:`Save`.
