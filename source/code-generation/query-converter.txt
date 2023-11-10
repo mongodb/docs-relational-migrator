@@ -32,3 +32,4 @@ Relational Migrator application:
    /code-generation/query-converter/convert-queries
    /code-generation/query-converter/convert-stored-procedures
    /code-generation/query-converter/convert-views
+   /code-generation/query-converter/refresh-database-objects
