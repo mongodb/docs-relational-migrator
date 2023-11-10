@@ -104,16 +104,16 @@ The following example shows an inner join view converted to MongoDB:
        .. code-block:: sql
           :copyable: false
 
-            SELECT 
-            O.ORDER_ID,
-            O.CUSTOMER_ID,
-            O.ORDER_DATE,
-            OD.UNIT_PRICE,
-            OD.DISCOUNT
+          SELECT 
+          O.ORDER_ID,
+          O.CUSTOMER_ID,
+          O.ORDER_DATE,
+          OD.UNIT_PRICE,
+          OD.DISCOUNT
 
-            FROM ORDERS AS O
-            INNER JOIN ORDER_DETAILS AS OD 
-               ON O.ORDER_ID = OD.ORDER_ID;
+          FROM ORDERS AS O
+          INNER JOIN ORDER_DETAILS AS OD 
+             ON O.ORDER_ID = OD.ORDER_ID;
      - 
        .. code-block:: javascript
           :copyable: false
