@@ -35,11 +35,11 @@ Steps
 
    .. step:: Open the SQL query converter view
 
-      If it is your first time using the query converter in your 
-      project, click :guilabel:`Paste SQL Query`.
-      If you have previously converted SQL code in your project, click the
-      :guilabel:`+ ADD` button on the left-hand pane next to 
-      :guilabel:`Queries`.
+      - If it is your first time using the query converter in your 
+        project, click :guilabel:`Paste SQL Query`.
+      - If you have previously converted SQL code in your project, click the
+        :guilabel:`+ ADD` button on the left-hand pane next to 
+        :guilabel:`Queries`.
 
    .. step:: Enter your SQL query
 

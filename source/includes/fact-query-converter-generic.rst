@@ -1,6 +1,7 @@
-- Consider SQL complexity when using the query converter. The query 
-  converter cannot convert highly complex SQL syntax. If your SQL 
-  code isn't converting accurately, refactor it and try again.
+- The query converter uses :abbr:`AI (Artificial Intelligence)` 
+  technology which may not be able to convert long or complex queries 
+  or stored procedures. Some queries may not be converted correctly 
+  while others may not be converted at all.
 
 - The query converter uses the relational schema, the MongoDB schema,  
   and the mapping rules in your current project to determine how the 
