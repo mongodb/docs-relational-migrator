@@ -115,7 +115,7 @@ The following example shows an inner join view converted to MongoDB:
             INNER JOIN ORDER_DETAILS AS OD 
                ON O.ORDER_ID = OD.ORDER_ID;
      - 
-       .. code-block:: 
+       .. code-block:: javascript
           :copyable: false
 
           async function query(db) {
