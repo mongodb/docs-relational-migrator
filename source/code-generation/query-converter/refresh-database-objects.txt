@@ -63,9 +63,10 @@ Steps
 
       #. Click :guilabel:`Save`.
 
-         The imported objects and refreshed SQL definitions are 
-         visible under the appropriate header on the 
-         :guilabel:`Query Converter` pane.
+         - Newly imported objects are visible under the appropriate 
+           header on the :guilabel:`Query Converter` pane. 
+         - You can click a view or stored procedure's name to 
+           see its SQL definition.
 
 Next Steps
 ----------
