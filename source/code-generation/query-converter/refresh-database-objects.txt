@@ -37,13 +37,13 @@ Steps
          
          For details, see :ref:`rm-relational-database-connection-strings`.
       
-      #. Click :guilabel:`Connect`.
-
          .. note::
 
             The credentials used to refresh your database objects do 
             not need to be the same credentials used when creating your
             project.
+
+      #. Click :guilabel:`Connect`.
 
    .. step:: Select database objects 
 
