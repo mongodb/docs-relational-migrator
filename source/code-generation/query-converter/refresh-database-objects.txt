@@ -39,11 +39,11 @@ Steps
       
       #. Click :guilabel:`Connect`.
 
-      .. note::
+         .. note::
 
-         The credentials used to refresh your database objects do 
-         not need to be the same credentials used when creating your
-         project.
+            The credentials used to refresh your database objects do 
+            not need to be the same credentials used when creating your
+            project.
 
    .. step:: Select database objects 
 
