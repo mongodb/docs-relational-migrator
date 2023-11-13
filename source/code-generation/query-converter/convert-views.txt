@@ -51,7 +51,7 @@ Steps
 
      #. Click :guilabel:`Connect`.
  
-  .. step:: Select stored views
+  .. step:: Select views
 
      a. On the :guilabel:`Import Database Objects` modal, click
         :guilabel:`Database`.
