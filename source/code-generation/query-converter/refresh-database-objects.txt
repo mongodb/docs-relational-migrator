@@ -72,7 +72,7 @@ Steps
          .. tip::
             
             You can click a view or stored procedure's name on the 
-            left-hand :guilabel:`Query Converter` pane to view the 
+            left-hand :guilabel:`Query Converter` pane to see the 
             SQL definition.
 
 Next Steps
