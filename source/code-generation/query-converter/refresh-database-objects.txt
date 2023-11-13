@@ -10,9 +10,10 @@ Refresh Database Objects
    :depth: 1
    :class: singlecol
 
-You can refresh database objects from your relational database and
-import newly created objects or SQL syntax updates since your project 
-was created.
+You can refresh relational database views and stored procedures 
+from your relational database. Refresh database objects to import 
+new views and stored procedures into your project or update SQL 
+syntax if object definitions have changed.
 
 Steps
 -----
@@ -64,3 +65,8 @@ Steps
          The newly imported objects are visible under the appropriate header
          on the :guilabel:`Query Converter` pane.
 
+Next Steps
+----------
+
+- :ref:`rm-convert-views`
+- :ref:`rm-convert-stored-procedures`
