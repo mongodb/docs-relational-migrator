@@ -36,6 +36,8 @@ Steps
       #. Specify the connection details to your source database. 
          
          For details, see :ref:`rm-relational-database-connection-strings`.
+      
+      #. Click :guilabel:`Connect`.
 
       .. note::
 
@@ -67,8 +69,11 @@ Steps
          the appropriate header on the :guilabel:`Query Converter` 
          pane.
 
-         You can click a view or stored procedure's name to 
-         see its SQL definition.
+      .. tip::
+         
+         You can click a view or stored procedure's name on the 
+         left-hand :guilabel:`Query Converter` pane to view the 
+         SQL definition.
 
 Next Steps
 ----------
