@@ -55,9 +55,6 @@ Steps
       #. Click the :icon-fa5:`chevron-right` icon next to
          :guilabel:`Stored Procedures` or :guilabel:`Views`.
 
-         Newly created views and stored procedures are visible under 
-         the appropriate header.
-
    .. step:: Select the new database objects
 
       a. Click the :icon-fa5:`check-square` icon next to the
