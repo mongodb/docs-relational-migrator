@@ -13,7 +13,7 @@ Refresh Database Objects
 You can refresh relational database objects from the 
 :guilabel:`Query Converter` pane. Refreshing database objects imports 
 new views and stored procedures into your project or updates SQL 
-syntax definitions if objects have changed.
+syntax if object definitions have changed.
 
 Steps
 -----
