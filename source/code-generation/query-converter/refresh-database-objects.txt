@@ -36,35 +36,36 @@ Steps
       #. Specify the connection details to your source database. 
          
          For details, see :ref:`rm-relational-database-connection-strings`.
-         
+
       .. note::
 
-         The credentials used for refreshing your database objects do 
+         The credentials used to refresh your database objects do 
          not need to be the same credentials used when creating your
          project.
 
    .. step:: Select database objects 
 
       a. On the :guilabel:`Manage Database Objects` modal, click
-         the :icon-fa5:`chevron-right` icon next to :guilabel:`Database`.
+         the :icon-fa5:`chevron-right` icon next to your database.
 
       #. Click the :icon-fa5:`chevron-right` icon next to your schema.
 
       #. Click the :icon-fa5:`chevron-right` icon next to
-         :guilabel:`Stored Procedures` and :guilabel:`Views`.
+         :guilabel:`Stored Procedures` or :guilabel:`Views`.
 
          Newly created stored procedures and views are visible under 
          the appropriate header.
 
    .. step:: Select the new database objects
 
-      a. Click the :icon-fa5:`check-square` icon next to newly imported
-         views or stored procedures.
+      a. Click the :icon-fa5:`check-square` icon next to the
+         views or stored procedures you want to import or refresh.
 
       #. Click :guilabel:`Save`.
 
-         The newly imported objects are visible under the appropriate header
-         on the :guilabel:`Query Converter` pane.
+         The imported objects and refreshed SQL definitions are 
+         visible under the appropriate header on the 
+         :guilabel:`Query Converter` pane.
 
 Next Steps
 ----------
