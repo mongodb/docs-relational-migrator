@@ -213,20 +213,41 @@ to MongoDB:
      - 
        .. code-block:: javascript
           :copyable: false
+          :emphasize-lines: 2-12
 
           async function query(db) {
              return db.collection('customers').aggregate([
                 {
                    $group: {
-                   _id: "$postalCode",
+                   _id: "$postal_code",
                    customercount: { $sum: 1 }
                    }
                 },
                 {
                    $sort: { customercount: -1 }
                 }
-             ]).toArray();
+             ]
+            ).toArray();
           }
+
+The shell command to create this view in MongoDB is:
+
+.. code-block:: javascript
+   :copyable: false
+   :emphasize-lines: 2-11
+
+   db.createView("VW_Customers", "customers",
+   [
+      {
+         $group: {
+         _id: "$postal_code",
+         customercount: { $sum: 1 }
+         }
+      },
+      {
+         $sort: { customercount: -1 }
+      }
+   ]
 
 Next Steps
 ----------
