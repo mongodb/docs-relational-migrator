@@ -10,16 +10,12 @@ Convert Views
   :depth: 1
   :class: singlecol
 
-You can convert SQL views to MongoDB code with the query
-converter. The query converter considers the mapping rules and schema
-transformations defined in your project when converting your SQL code.
-
 The query converter takes the :abbr:`SQL (Structured Query Language)` 
 to create the view and converts it to the equivalent 
 :abbr:`MQL (MongoDB Query Language)`. The query converter considers 
 the mapping rules and schema transformations defined in your project 
 when converting your SQL code. For details on the conversion process, 
-see :ref:``
+see :ref:`convert view examples <rm-convert-view-examples>`.
 
 About this Task
 ---------------
@@ -90,6 +86,8 @@ Steps
      .. tip::
 
         .. include:: /includes/fact-query-converter-filter.rst
+
+.. _rm-convert-view-examples:
 
 Examples
 --------
