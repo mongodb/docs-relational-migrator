@@ -68,8 +68,8 @@ Steps
 
          .. tip::
 
-            To see the SQL definition you can click a view or stored 
-            procedure's name on the left-hand 
+            To see a view or stored procedures SQL definition you can 
+            click the object's name on the left-hand 
             :guilabel:`Query Converter` pane.
 
 Next Steps
