@@ -129,9 +129,11 @@ The following example shows an inner join view converted to MongoDB:
      - 
        .. code-block:: javascript
           :copyable: false
+          :emphasize-lines: 3-24
 
           async function query(db) {
-             return await db.collection('orders').aggregate([
+             return await db.collection('orders').aggregate(
+             [
                 {
                    $lookup: {
                    from: 'orderDetails',
@@ -152,42 +154,40 @@ The following example shows an inner join view converted to MongoDB:
                    discount: '$orderDetails.discount'
                    }
                 }
-             ]).toArray();
+             ]
+            ).toArray();
           }
 
 The shell command to create this view in MongoDB is:
 
 .. code-block:: javascript
-         :copyable: false
-         :emphasize-lines: 4-27
+   :copyable: false
+   :emphasize-lines: 2-24
 
-         db.createView(
-            "OrderDetails",
-            "Orders",
-            pipeline: [
-                  {
-                  $lookup: 
-                     {
-                     from: 'orderDetails',
-                     localField: 'orderId',
-                     foreignField: 'orderId',
-                     as: 'orderDetails'
-                     }
-                  },
-                  {
-                     $unwind: '$orderDetails'
-                  },
-                  {
-                     $project: {
-                     orderId: 1,
-                     customerId: 1,
-                     orderDate: 1,
-                     unitPrice: '$orderDetails.unitPrice',
-                     discount: '$orderDetails.discount'
-                     }
-                  }
-               ]
-            )
+   db.createView("VW_OrderDetails", "orders", 
+      [
+      {
+         $lookup: {
+            from: "order_details",
+            localField: "orderId",
+            foreignField: "orderId",
+            as: "orderDetails",
+         },
+      },
+      {
+         $unwind: "$orderDetails",
+      },
+      {
+         $project: {
+            order_id: 1,
+            customer_id: 1,
+            order_date: 1,
+            unitPrice: "$orderDetails.unit_price",
+            discount: "$orderDetails.discount",
+         },
+      },
+      ]
+   )
 
 The following example shows an aggregated group by view converted 
 to MongoDB:
