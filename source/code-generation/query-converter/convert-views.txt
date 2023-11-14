@@ -100,8 +100,9 @@ converted to MongoDB code.
 
 If you want to create a MongoDB view from the query:
 
-- Copy the pipeline from the aggregate command.
-- Use the aggregation pipeline syntax with the createView shell command. 
+- Copy the aggregation pipeline syntax from the aggregate command.
+- Use the aggregation pipeline syntax with the 
+  :ref:`createView shell command <manual-views-create>`. 
 
 The following example shows an inner join view converted to MongoDB:
 
