@@ -14,6 +14,13 @@ You can convert SQL views to MongoDB code with the query
 converter. The query converter considers the mapping rules and schema
 transformations defined in your project when converting your SQL code.
 
+The query converter takes the :abbr:`SQL (Structured Query Language)` 
+to create the view and converts it to the equivalent 
+:abbr:`MQL (MongoDB Query Language)`. The query converter considers 
+the mapping rules and schema transformations defined in your project 
+when converting your SQL code. For details on the conversion process, 
+see :ref:``
+
 About this Task
 ---------------
 
@@ -91,6 +98,11 @@ The examples below show PostgreSQL views from the
 :ref:`example Northwind database<create-project-sample-schema>` 
 converted to MongoDB code.
 
+If you want to create a MongoDB view from the query:
+
+- Copy the pipeline from the aggregate command.
+- Use the aggregation pipeline syntax with the createView shell command. 
+
 The following example shows an inner join view converted to MongoDB:
 
 .. list-table::
@@ -142,6 +154,40 @@ The following example shows an inner join view converted to MongoDB:
                 }
              ]).toArray();
           }
+
+The shell command to create this view in MongoDB is:
+
+.. code-block:: javascript
+         :copyable: false
+         :emphasize-lines: 4-27
+
+         db.createView(
+            "OrderDetails",
+            "Orders",
+            pipeline: [
+                  {
+                  $lookup: 
+                     {
+                     from: 'orderDetails',
+                     localField: 'orderId',
+                     foreignField: 'orderId',
+                     as: 'orderDetails'
+                     }
+                  },
+                  {
+                     $unwind: '$orderDetails'
+                  },
+                  {
+                     $project: {
+                     orderId: 1,
+                     customerId: 1,
+                     orderDate: 1,
+                     unitPrice: '$orderDetails.unitPrice',
+                     discount: '$orderDetails.discount'
+                     }
+                  }
+               ]
+            )
 
 The following example shows an aggregated group by view converted 
 to MongoDB:
