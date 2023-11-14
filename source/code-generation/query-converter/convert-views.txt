@@ -213,7 +213,7 @@ to MongoDB:
      - 
        .. code-block:: javascript
           :copyable: false
-          :emphasize-lines: 2-12
+          :emphasize-lines: 3-12
 
           async function query(db) {
              return db.collection('customers').aggregate([
