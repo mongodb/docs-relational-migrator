@@ -214,10 +214,11 @@ to MongoDB:
      - 
        .. code-block:: javascript
           :copyable: false
-          :emphasize-lines: 3-12
+          :emphasize-lines: 3-13
 
           async function query(db) {
-             return db.collection('customers').aggregate([
+             return db.collection('customers').aggregate(
+             [
                 {
                    $group: {
                    _id: "$postal_code",
@@ -235,7 +236,7 @@ The shell command to create this view in MongoDB is:
 
 .. code-block:: javascript
    :copyable: false
-   :emphasize-lines: 2-11
+   :emphasize-lines: 2-12
 
    db.createView("VW_Customers", "customers",
    [
