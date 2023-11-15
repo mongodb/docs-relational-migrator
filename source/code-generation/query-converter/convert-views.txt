@@ -57,7 +57,7 @@ Steps
   .. step:: Select views
 
      a. On the :guilabel:`Import Database Objects` modal, click
-        :guilabel:`Database`.
+        your database.
      #. Click the :icon-fa5:`chevron-right` icon next to your schema.
      #. Click the :icon-fa5:`chevron-right` icon next to
         :guilabel:`Views`.
