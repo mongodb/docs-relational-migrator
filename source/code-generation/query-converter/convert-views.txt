@@ -167,8 +167,8 @@ The shell command to create this view in MongoDB is:
 
    db.createView("VW_OrderDetails", "orders", 
       [
-         {
-         $lookup: 
+      {
+      $lookup: 
          {
            from: "orderDetails",
            localField: "orderId",
