@@ -139,18 +139,18 @@ The following example shows an inner join view converted to MongoDB:
                   localField: "orderId",
                   foreignField: "orderId",
                   as: "orderDetails",
-               },
-               },
-               {
-                  $unwind: "$orderDetails",
+                  },
                },
                {
-                  $project: {
-                     orderId: 1,
-                     customerId: 1,
-                     orderDate: 1,
-                     unitPrice: "$orderDetails.unitPrice",
-                     discount: "$orderDetails.discount",
+               $unwind: "$orderDetails",
+               },
+               {
+               $project: {
+                  orderId: 1,
+                  customerId: 1,
+                  orderDate: 1,
+                  unitPrice: "$orderDetails.unitPrice",
+                  discount: "$orderDetails.discount",
                   },
                }
              ]
@@ -164,28 +164,28 @@ The shell command to create this view in MongoDB is:
    :emphasize-lines: 2-23
 
    db.createView("VW_OrderDetails", "orders", 
-             [
-             {
-             $lookup: {
-                from: "orderDetails",
-                localField: "orderId",
-                foreignField: "orderId",
-                as: "orderDetails",
-             },
-             },
-             {
-                $unwind: "$orderDetails",
-             },
-             {
-             $project: {
-                   orderId: 1,
-                   customerId: 1,
-                   orderDate: 1,
-                   unitPrice: "$orderDetails.unitPrice",
-                   discount: "$orderDetails.discount",
-                   },
-                }
-             ]
+   [
+      {
+      $lookup: {
+         from: "orderDetails",
+         localField: "orderId",
+         foreignField: "orderId",
+         as: "orderDetails",
+      },
+   },
+   {
+      $unwind: "$orderDetails",
+   },
+   {
+      $project: {
+         orderId: 1,
+         customerId: 1,
+         orderDate: 1,
+         unitPrice: "$orderDetails.unitPrice",
+         discount: "$orderDetails.discount",
+         },
+      }
+   ]
    )
 
 The following example shows an aggregated group by view converted 
