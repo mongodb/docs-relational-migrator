@@ -133,31 +133,31 @@ The following example shows an inner join view converted to MongoDB:
           async function query(db) {
              return await db.collection('orders').aggregate(
              [
-               {
-               $lookup: 
-                  {
-                    from: "orderDetails",
-                    localField: "orderId",
-                    foreignField: "orderId",
-                    as: "orderDetails"
-                  },
-               },
-               {
-               $unwind: "$orderDetails",
-               },
-               {
-               $project: 
-                  {
-                    orderId: 1,
-                    customerId: 1,
-                    orderDate: 1,
-                    unitPrice: "$orderDetails.unitPrice",
-                    discount: "$orderDetails.discount"
-                  }
-               }
+             {
+                $lookup: 
+                {
+                   from: "orderDetails",
+                   localField: "orderId",
+                   foreignField: "orderId",
+                   as: "orderDetails"
+                },
+             },
+             {
+                $unwind: "$orderDetails",
+             },
+             {
+                $project: 
+                   {
+                      orderId: 1,
+                      customerId: 1,
+                      orderDate: 1,
+                      unitPrice: "$orderDetails.unitPrice",
+                      discount: "$orderDetails.discount"
+                   }
+                }
              ]
-            ).toArray();
-          }
+             ).toArray();
+           }
 
 The shell command to create this view in MongoDB is:
 
