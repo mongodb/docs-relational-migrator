@@ -131,7 +131,7 @@ The following example shows an inner join view converted to MongoDB:
           :emphasize-lines: 3-26
 
           async function query(db) {
-             return await db.collection('orders').aggregate(
+            return await db.collection('orders').aggregate(
             [
              {
                 $lookup: 
