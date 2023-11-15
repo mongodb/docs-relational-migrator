@@ -168,29 +168,29 @@ The shell command to create this view in MongoDB is:
    db.createView("VW_OrderDetails", "orders", 
       [
        {
-        $lookup: 
-         {
-           from: "orderDetails",
-           localField: "orderId",
-           foreignField: "orderId",
-           as: "orderDetails"
-         },
-      },
-      {
-         $unwind: "$orderDetails",
-      },
-      {
-         $project: 
-            {
-              orderId: 1,
-              customerId: 1,
-              orderDate: 1,
-              unitPrice: "$orderDetails.unitPrice",
-              discount: "$orderDetails.discount"
-            }
-         }
-      ]
-   )
+         $lookup: 
+          {
+            from: "orderDetails",
+            localField: "orderId",
+            foreignField: "orderId",
+            as: "orderDetails"
+          },
+       },
+       {
+          $unwind: "$orderDetails",
+       },
+       {
+          $project: 
+             {
+               orderId: 1,
+               customerId: 1,
+               orderDate: 1,
+               unitPrice: "$orderDetails.unitPrice",
+               discount: "$orderDetails.discount"
+             }
+          }
+       ]
+    )
 
 The following example shows an aggregated group by view converted 
 to MongoDB:
