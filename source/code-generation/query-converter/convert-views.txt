@@ -132,7 +132,8 @@ The following example shows an inner join view converted to MongoDB:
 
           async function query(db) {
              return await db.collection('orders').aggregate(
-             [ {
+             [
+               {
                $lookup: 
                   {
                     from: "orderDetails",
@@ -165,8 +166,9 @@ The shell command to create this view in MongoDB is:
    :emphasize-lines: 2-25
 
    db.createView("VW_OrderDetails", "orders", 
-      [{
-      $lookup: 
+      [
+       {
+        $lookup: 
          {
            from: "orderDetails",
            localField: "orderId",
