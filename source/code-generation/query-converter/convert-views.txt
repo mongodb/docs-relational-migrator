@@ -128,7 +128,7 @@ The following example shows an inner join view converted to MongoDB:
      - 
        .. code-block:: javascript
           :copyable: false
-          :emphasize-lines: 3-25
+          :emphasize-lines: 3-26
 
           async function query(db) {
              return await db.collection('orders').aggregate(
