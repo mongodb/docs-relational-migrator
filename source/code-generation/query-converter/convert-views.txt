@@ -166,7 +166,8 @@ The shell command to create this view in MongoDB is:
    db.createView("VW_OrderDetails", "orders", 
       [
          {
-         $lookup: {
+         $lookup: 
+         {
             from: "orderDetails",
             localField: "orderId",
             foreignField: "orderId",
@@ -177,12 +178,13 @@ The shell command to create this view in MongoDB is:
          $unwind: "$orderDetails",
       },
       {
-         $project: {
-            orderId: 1,
-            customerId: 1,
-            orderDate: 1,
-            unitPrice: "$orderDetails.unitPrice",
-            discount: "$orderDetails.discount",
+         $project: 
+            {
+               orderId: 1,
+               customerId: 1,
+               orderDate: 1,
+               unitPrice: "$orderDetails.unitPrice",
+               discount: "$orderDetails.discount",
             },
          }
       ]
@@ -218,9 +220,10 @@ to MongoDB:
              return db.collection('customers').aggregate(
              [
                 {
-                   $group: {
-                   _id: "$postal_code",
-                   customercount: { $sum: 1 }
+                   $group: 
+                   {
+                     _id: "$postal_code",
+                     customercount: { $sum: 1 }
                    }
                 },
                 {
@@ -239,9 +242,10 @@ The shell command to create this view in MongoDB is:
    db.createView("VW_Customers", "customers",
       [
          {
-            $group: {
-            _id: "$postal_code",
-            customercount: { $sum: 1 }
+            $group: 
+            {
+               _id: "$postal_code",
+               customercount: { $sum: 1 }
             }
          },
          {
