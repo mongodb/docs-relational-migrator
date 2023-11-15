@@ -136,22 +136,23 @@ The following example shows an inner join view converted to MongoDB:
                {
                $lookup: 
                   {
-                     from: "orderDetails",
-                     localField: "orderId",
-                     foreignField: "orderId",
-                     as: "orderDetails"
+                    from: "orderDetails",
+                    localField: "orderId",
+                    foreignField: "orderId",
+                    as: "orderDetails"
                   },
                },
                {
                $unwind: "$orderDetails",
                },
                {
-               $project: {
-                  orderId: 1,
-                  customerId: 1,
-                  orderDate: 1,
-                  unitPrice: "$orderDetails.unitPrice",
-                  discount: "$orderDetails.discount"
+               $project: 
+                  {
+                    orderId: 1,
+                    customerId: 1,
+                    orderDate: 1,
+                    unitPrice: "$orderDetails.unitPrice",
+                    discount: "$orderDetails.discount"
                   }
                }
              ]
@@ -169,10 +170,10 @@ The shell command to create this view in MongoDB is:
          {
          $lookup: 
          {
-            from: "orderDetails",
-            localField: "orderId",
-            foreignField: "orderId",
-            as: "orderDetails"
+           from: "orderDetails",
+           localField: "orderId",
+           foreignField: "orderId",
+           as: "orderDetails"
          },
       },
       {
@@ -181,11 +182,11 @@ The shell command to create this view in MongoDB is:
       {
          $project: 
             {
-               orderId: 1,
-               customerId: 1,
-               orderDate: 1,
-               unitPrice: "$orderDetails.unitPrice",
-               discount: "$orderDetails.discount"
+              orderId: 1,
+              customerId: 1,
+              orderDate: 1,
+              unitPrice: "$orderDetails.unitPrice",
+              discount: "$orderDetails.discount"
             }
          }
       ]
