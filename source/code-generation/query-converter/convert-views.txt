@@ -128,7 +128,7 @@ The following example shows an inner join view converted to MongoDB:
      - 
        .. code-block:: javascript
           :copyable: false
-          :emphasize-lines: 3-24
+          :emphasize-lines: 3-25
 
           async function query(db) {
              return await db.collection('orders').aggregate(
@@ -239,7 +239,7 @@ The shell command to create this view in MongoDB is:
 
 .. code-block:: javascript
    :copyable: false
-   :emphasize-lines: 2-12
+   :emphasize-lines: 2-13
 
    db.createView("VW_Customers", "customers",
       [
