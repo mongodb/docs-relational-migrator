@@ -163,7 +163,7 @@ The shell command to create this view in MongoDB is:
 
 .. code-block:: javascript
    :copyable: false
-   :emphasize-lines: 2-23
+   :emphasize-lines: 2-25
 
    db.createView("VW_OrderDetails", "orders", 
       [
