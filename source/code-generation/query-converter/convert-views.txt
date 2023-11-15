@@ -134,11 +134,12 @@ The following example shows an inner join view converted to MongoDB:
              return await db.collection('orders').aggregate(
              [
                {
-               $lookup: {
-                  from: "orderDetails",
-                  localField: "orderId",
-                  foreignField: "orderId",
-                  as: "orderDetails",
+               $lookup: 
+                  {
+                     from: "orderDetails",
+                     localField: "orderId",
+                     foreignField: "orderId",
+                     as: "orderDetails"
                   },
                },
                {
@@ -150,8 +151,8 @@ The following example shows an inner join view converted to MongoDB:
                   customerId: 1,
                   orderDate: 1,
                   unitPrice: "$orderDetails.unitPrice",
-                  discount: "$orderDetails.discount",
-                  },
+                  discount: "$orderDetails.discount"
+                  }
                }
              ]
             ).toArray();
@@ -171,7 +172,7 @@ The shell command to create this view in MongoDB is:
             from: "orderDetails",
             localField: "orderId",
             foreignField: "orderId",
-            as: "orderDetails",
+            as: "orderDetails"
          },
       },
       {
@@ -184,8 +185,8 @@ The shell command to create this view in MongoDB is:
                customerId: 1,
                orderDate: 1,
                unitPrice: "$orderDetails.unitPrice",
-               discount: "$orderDetails.discount",
-            },
+               discount: "$orderDetails.discount"
+            }
          }
       ]
    )
