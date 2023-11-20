@@ -17,6 +17,14 @@ migrated to and how the columns should be mapped to fields in
 MongoDB documents. Mapping rules are created inside a project after you have provided a 
 valid :ref:`relational database connection string and credentials <rm-relational-database-connection-strings>`.
 
+Application Data Models 
+-----------------------
+
+When designing your mapping rules, consider 
+the best practices outlined in the :ref:`data-modeling-patterns` 
+documentation and the `Building with Patterns blog post 
+<https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__.
+
 Mapping Direction Preference
 ----------------------------
 
