@@ -20,8 +20,8 @@ valid :ref:`relational database connection string and credentials <rm-relational
 Application Data Models 
 -----------------------
 
-Before designing your application's mapping rules and data models, consider 
-the following documentation:
+Before designing your application's mapping rules and data models, 
+review the following documentation:
 
 - Best practices outlined in the :ref:`data-modeling-patterns`.
 - The following MongoDB blog posts: 
