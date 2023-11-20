@@ -22,8 +22,9 @@ Application Data Models
 
 When designing your mapping rules, consider 
 the best practices outlined in the :ref:`data-modeling-patterns` 
-documentation and the `Building with Patterns blog post 
-<https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__.
+documentation and the `Building with Patterns
+<https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__
+blog post.
 
 Mapping Direction Preference
 ----------------------------
