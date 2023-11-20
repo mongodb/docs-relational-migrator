@@ -28,8 +28,8 @@ the following documentation:
 - The MongoDB `Building with Patterns
   <https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__
   blog post.
-- `<A Summary of Schema Design Anti-Patterns and How to Spot Them>
-   https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/`__.
+- `A Summary of Schema Design Anti-Patterns and How to Spot Them
+  <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__.
 
 Mapping Direction Preference
 ----------------------------
