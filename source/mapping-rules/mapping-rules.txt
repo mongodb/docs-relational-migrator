@@ -23,14 +23,13 @@ Application Data Models
 Before designing your application's mapping rules and data models, 
 review the following documentation:
 
-- Best practices outlined in the :ref:`data-modeling-patterns`.
-- The following MongoDB blog posts: 
+- :ref:`data-modeling-patterns`.
 
-  - `Building with Patterns
-    <https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__.
+- `Building with Patterns
+  <https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__.
 
-  - `Summary of Schema Design Anti-Patterns and How to Spot Them
-    <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__.
+- `Summary of Schema Design Anti-Patterns and How to Spot Them
+  <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__.
 
 Mapping Direction Preference
 ----------------------------
