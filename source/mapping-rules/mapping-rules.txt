@@ -20,16 +20,17 @@ valid :ref:`relational database connection string and credentials <rm-relational
 Application Data Models 
 -----------------------
 
-Before designing your applications mapping rules and data models, consider 
+Before designing your application's mapping rules and data models, consider 
 the following documentation:
 
-- Best practices outlined in the :ref:`data-modeling-patterns` 
-  documentation.
-- The MongoDB `Building with Patterns
+- Best practices outlined in the :ref:`data-modeling-patterns`.
+- The MongoDB blog posts: 
+  - `Building with Patterns
   <https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__
-  blog post.
-- `A Summary of Schema Design Anti-Patterns and How to Spot Them
-  <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__.
+
+  - The MongoDB `Summary of Schema Design Anti-Patterns and How to Spot Them
+    <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__
+    blog post.
 
 Mapping Direction Preference
 ----------------------------
