@@ -20,7 +20,7 @@ valid :ref:`relational database connection string and credentials <rm-relational
 Application Data Models 
 -----------------------
 
-When designing your mapping rules, consider 
+Before designing your applications mapping rules and data models, consider 
 the following documentation:
 
 - Best practices outlined in the :ref:`data-modeling-patterns` 
