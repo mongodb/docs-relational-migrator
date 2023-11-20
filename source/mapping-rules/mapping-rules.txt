@@ -26,7 +26,7 @@ the following documentation:
 - Best practices outlined in the :ref:`data-modeling-patterns`.
 - The MongoDB blog posts: 
   - `Building with Patterns
-  <https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__
+  <https://www.mongodb.com/blog/post/building-with-patterns-a-summary>`__.
 
   - The MongoDB `Summary of Schema Design Anti-Patterns and How to Spot Them
     <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__
