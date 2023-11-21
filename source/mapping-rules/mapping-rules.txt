@@ -22,13 +22,13 @@ MongoDB Schema Design Patterns
 
 Data modeling in MongoDB shapes how data is organized, accessed, and 
 queried. These decisions influence performance and 
-scalability of your MongoDB deployment. Effective modeling ensures 
-efficient storage, retrieval, and manipulation of your data. 
+scalability of your MongoDB deployment. Good data modeling practices 
+ensure efficient storage, retrieval, and manipulation of your data. 
 Relational Migrator allows you to make key decisions such as combining 
 multiple tables into a single collection or embedding data in your documents.
 
-Before designing your application's mapping rules and data models, 
-review the following documentation:
+For an overview of data modeling best practices review the following 
+documentation:
 
 - :ref:`data-modeling-patterns`.
 
