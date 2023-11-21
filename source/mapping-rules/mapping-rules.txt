@@ -20,12 +20,12 @@ valid :ref:`relational database connection string and credentials <rm-relational
 MongoDB Schema Design Patterns
 ------------------------------
 
-Schema design patterns in MongoDB shape how data is organized, accessed, and 
-queried. Your schema design influences the performance and 
-scalability of your MongoDB deployment. Good schema design practices 
-ensure efficient storage, retrieval, and manipulation of your data. 
-Relational Migrator allows you to make key decisions such as combining 
-multiple tables into a single collection or embedding data in your documents.
+Schema design patterns in MongoDB shape how your data is organized. 
+Good schema design practices ensure efficient storage, retrieval, and 
+manipulation of your data which promote the performance and scalability
+of your MongoDB deployment. Relational Migrator allows you to make key 
+schema design decisions such as combining multiple tables into a 
+single collection or embedding data in your documents.
 
 For an overview of schema design best practices, review the following 
 documentation:
