@@ -17,8 +17,15 @@ migrated to and how the columns should be mapped to fields in
 MongoDB documents. Mapping rules are created inside a project after you have provided a 
 valid :ref:`relational database connection string and credentials <rm-relational-database-connection-strings>`.
 
-Application Data Models 
------------------------
+MongoDB Schema Design Patterns
+------------------------------
+
+Data modeling in MongoDB shapes how data is organized, accessed, and 
+queried. These decisions influence performance and 
+scalability of your MongoDB deployment. Effective modeling ensures 
+efficient storage, retrieval, and manipulation of your data. 
+Relational Migrator allows you to make key decisions such as combining 
+multiple tables into a single collection or embedding data in your documents.
 
 Before designing your application's mapping rules and data models, 
 review the following documentation:
