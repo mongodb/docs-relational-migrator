@@ -1,8 +1,8 @@
 .. _rm-prerequisites:
 
-=======================
-Migration Prerequisites
-=======================
+=============
+Prerequisites
+=============
 
 .. contents:: On this page
    :local:

@@ -1,8 +1,8 @@
 .. _rm-prereq-mysql:
 
-==================================
-MySQL Data Migration Prerequisites
-==================================
+=============================
+MySQL Migration Prerequisites
+=============================
 
 .. contents:: On this page
    :local:

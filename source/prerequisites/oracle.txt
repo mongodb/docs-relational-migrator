@@ -1,8 +1,8 @@
 .. _rm-prereq-oracle:
 
-===================================
-Oracle Data Migration Prerequisites
-===================================
+==============================
+Oracle Migration Prerequisites
+==============================
 
 .. contents:: On this page
    :local:
