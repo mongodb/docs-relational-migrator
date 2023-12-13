@@ -25,7 +25,8 @@ About this Task
 - Relational Migrator supports all connection string options except 
   ``appName``. Relational Migrator overrides the ``appName`` connection
   string option when connecting to your MongoDB deployment. For details 
-  on MongoDB connection string options, see :ref:`mongodb-uri`.
+  on MongoDB connection string options, see :ref:`connection string 
+  <mongodb-uri>`.
 
 - Relational Migrator can use both Atlas and on-premises URIs. This page 
   provides separate instructions for each deployment type.
