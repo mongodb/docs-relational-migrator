@@ -56,7 +56,7 @@ Relational Migrator supports the following source databases:
 
 .. note::
 
-  For migrations from Microsoft SQL Server versions prior to 2016 SP1,
+  For migrations from Microsoft SQL Server versions before 2016 SP1,
   Relational Migrator requires MongoDB Enterprise Edition or Developer
   Edition.
 
