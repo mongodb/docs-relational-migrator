@@ -18,8 +18,13 @@ About this Task
 ---------------
 
 To log in with your Atlas account, Relational Migrator must be running on 
-localhost under ports 8278, 8080, or 443. If Relational Migrator runs on 
-any other ports, the Atlas log in feature is disabled.
+localhost under ports 
+- 8278, 
+- 8080, 
+- or 443. 
+
+If Relational Migrator runs on any other ports, the Atlas log in feature is 
+disabled.
 
 Steps
 -----
