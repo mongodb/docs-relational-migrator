@@ -42,8 +42,12 @@ Relational Migrator supports the following source databases:
      - 12c and higher
      - Self hosted, AWS RDS
 
-   * - Microsoft SQL Server
+   * - Microsoft SQL Server Enterprise and Developer Edition
      - 2012 and higher
+     - Self hosted, AWS RDS, Azure SQL Database
+
+   * - Microsoft SQL Server Standard Edition
+     - 2016 and higher
      - Self hosted, AWS RDS, Azure SQL Database
 
    * - PostgreSQL
@@ -53,13 +57,6 @@ Relational Migrator supports the following source databases:
    * - MySQL
      - 5.7 and higher
      - Self hosted, AWS RDS/Aurora, Azure Database
-
-.. note::
-
-  For migrations from Microsoft SQL Server versions before 2016 SP1,
-  Relational Migrator requires MongoDB Enterprise Edition or Developer
-  Edition.
-
 
 MongoDB Databases and Versions
 ------------------------------
