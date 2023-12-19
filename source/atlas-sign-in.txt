@@ -1,0 +1,46 @@
+.. _atlas-sign-in:
+
+=================
+Log In with Atlas
+=================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+Log in to Relational Migrator using your MongoDB Atlas account. When you log 
+in with your Atlas account, you can access your MongoDB Atlas cluster and 
+use Relational Migrator's :ref:`Query Converter <rm-query-converter>`.
+
+About this Task
+---------------
+
+To log in with your Atlas account, Relational Migrator must be running on 
+localhost under ports 8278, 8080, or 443. If Relational Migrator runs on 
+any other ports, the Atlas log in feature is disabled.
+
+Steps
+-----
+
+1. Click the :guilabel:`Log in` button on the Relational Migrator home screen.
+
+2. Click :guilabel:`Yes, log in with Atlas`.
+
+3. Provide your Atlas credentials.
+
+4. Once logged in, click on the profile icon on the top right to log out 
+   or see user profile details. 
+
+Next Steps
+----------
+
+- Atlas cluster
+
+- Query Converter
+
+Learn More
+----------
+
+- :ref:`rm-mongodb-database-connection-strings`
