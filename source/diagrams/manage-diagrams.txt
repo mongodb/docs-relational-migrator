@@ -1,0 +1,23 @@
+.. _manage_diagrams:
+
+===============
+Manage Diagrams
+===============
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+The following pages outline the details and specifics of managing
+diagrams use with Relational Migrator.
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   /manage-diagrams/create-diagrams
+   /manage-diagrams/clone-diagrams
+   /manage-diagrams/rename-diagrams
+   /manage-diagrams/delete-diagrams
