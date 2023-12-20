@@ -17,7 +17,7 @@ diagrams use with Relational Migrator.
    :titlesonly:
    :hidden:
 
-   /manage-diagrams/create-diagrams.txt
-   /manage-diagrams/clone-diagrams.txt
-   /manage-diagrams/rename-diagrams.txt
-   /manage-diagrams/delete-diagrams.txt
+   /diagrams/manage-diagrams/create-diagrams
+   /diagrams/manage-diagrams/clone-diagrams
+   /diagrams/manage-diagrams/rename-diagrams
+   /diaigrams/manage-diagrams/delete-diagrams
