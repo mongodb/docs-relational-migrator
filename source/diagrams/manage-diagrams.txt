@@ -13,6 +13,14 @@ Manage Diagrams
 The following pages outline the details and specifics of managing
 diagrams use with Relational Migrator.
 
+Get Started
+-----------
+
+- :ref:`create-diagrams`
+- :ref:`clone-diagrams`
+- :ref:`rename-diagrams`
+- :ref:`delete-diagrams`
+
 .. toctree::
    :titlesonly:
    :hidden:
