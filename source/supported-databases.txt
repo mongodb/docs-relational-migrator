@@ -44,7 +44,7 @@ Relational Migrator supports the following source databases:
 
    * - Microsoft SQL Server
      - 2012 and higher (Enterprise or Developer edition required for
-     versions prior to 2016)
+       versions before 2016)
      - Self hosted, AWS RDS, Azure SQL Database
 
    * - PostgreSQL
