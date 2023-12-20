@@ -28,4 +28,4 @@ Get Started
    /diagrams/manage-diagrams/create-diagrams
    /diagrams/manage-diagrams/clone-diagrams
    /diagrams/manage-diagrams/rename-diagrams
-   /diaigrams/manage-diagrams/delete-diagrams
+   /diagrams/manage-diagrams/delete-diagrams
