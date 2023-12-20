@@ -1,4 +1,4 @@
-.. clone_diagrams:
+.. _clone_diagrams:
 
 ==============
 Clone Diagrams
