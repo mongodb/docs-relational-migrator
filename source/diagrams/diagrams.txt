@@ -56,4 +56,5 @@ Get Started
    :titlesonly:
 
    /diagrams/understand-diagrams
+   /diagrams/manage-diagrams
    /diagrams/navigate-diagrams/navigate-diagrams
