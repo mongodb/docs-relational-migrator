@@ -1,4 +1,4 @@
-.. _rm_create_diagrams:
+.. _rm-create-diagrams:
 
 ===============
 Create Diagrams
