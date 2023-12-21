@@ -16,10 +16,10 @@ diagrams in Relational Migrator.
 Get Started
 -----------
 
-- :ref:`rm_create_diagrams`
-- :ref:`rm_clone_diagrams`
-- :ref:`rm_rename_diagrams`
-- :ref:`rm_delete_diagrams`
+- :ref:`rm-create-diagrams`
+- :ref:`rm-clone-diagrams`
+- :ref:`rm-rename-diagrams`
+- :ref:`rm-delete-diagrams`
 
 .. toctree::
    :titlesonly:
