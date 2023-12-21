@@ -10,4 +10,4 @@ Clone Diagrams
    :depth: 1
    :class: singlecol
 
-Clone diagrams
+Clone diagrams.
