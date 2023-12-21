@@ -1,4 +1,4 @@
-.. _rm_delete_diagrams:
+.. _rm-delete-diagrams:
 
 ===============
 Delete Diagrams

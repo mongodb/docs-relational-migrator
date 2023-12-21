@@ -1,4 +1,4 @@
-.. _manage_diagrams:
+.. _rm-manage-diagrams:
 
 ===============
 Manage Diagrams

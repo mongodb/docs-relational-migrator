@@ -1,4 +1,4 @@
-.. _rm_rename_diagrams:
+.. _rm-rename-diagrams:
 
 ===============
 Rename Diagrams

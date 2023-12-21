@@ -1,4 +1,4 @@
-.. _rm_clone_diagrams:
+.. _rm-clone-diagrams:
 
 ==============
 Clone Diagrams
