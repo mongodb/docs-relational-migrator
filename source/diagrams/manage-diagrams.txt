@@ -10,16 +10,16 @@ Manage Diagrams
    :depth: 1
    :class: singlecol
 
-The following pages outline the details and specifics of managing
-diagrams use with Relational Migrator.
+The following pages outline the details and specifics of how to manage
+diagrams in Relational Migrator.
 
 Get Started
 -----------
 
-- :ref:`create_diagrams`
-- :ref:`clone_diagrams`
-- :ref:`rename_diagrams`
-- :ref:`delete_diagrams`
+- :ref:`rm_create_diagrams`
+- :ref:`rm_clone_diagrams`
+- :ref:`rm_rename_diagrams`
+- :ref:`rm_delete_diagrams`
 
 .. toctree::
    :titlesonly:

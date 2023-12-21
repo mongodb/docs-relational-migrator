@@ -1,4 +1,4 @@
-.. _rename_diagrams:
+.. _rm_rename_diagrams:
 
 ===============
 Rename Diagrams
@@ -10,4 +10,4 @@ Rename Diagrams
    :depth: 1
    :class: singlecol
 
-MySQL.
+Rename diagrams.

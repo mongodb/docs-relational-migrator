@@ -1,4 +1,4 @@
-.. _clone_diagrams:
+.. _rm_clone_diagrams:
 
 ==============
 Clone Diagrams
@@ -10,4 +10,4 @@ Clone Diagrams
    :depth: 1
    :class: singlecol
 
-MySQL.
+Clone diagrams

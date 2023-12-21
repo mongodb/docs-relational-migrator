@@ -1,4 +1,4 @@
-.. _create_diagrams:
+.. _rm_create_diagrams:
 
 ===============
 Create Diagrams
@@ -10,4 +10,4 @@ Create Diagrams
    :depth: 1
    :class: singlecol
 
-MySQL.
+Create diagrams.

@@ -1,4 +1,4 @@
-.. _delete_diagrams:
+.. _rm_delete_diagrams:
 
 ===============
 Delete Diagrams
@@ -10,4 +10,4 @@ Delete Diagrams
    :depth: 1
    :class: singlecol
 
-MySQL.
+Delete diagrams.
