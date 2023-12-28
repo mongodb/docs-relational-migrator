@@ -59,45 +59,45 @@ Steps
       configure your SQL Server Instance appropriatly. Use the tab below
       for details on how to configure your database for snapshot and 
       continuous sync jobs.
-
+      
       .. tabs:: 
-
+         
          .. tab:: Snapshot Jobs
-           :tabid: enable-snapshot-jobs
+            :tabid: enable-snapshot-jobs
 
-           For Snapshot jobs against SQL Server, it is necessary to enable CDC at 
-           the database level. This creates a small number of system tables in the 
-           database, but it does not change any user tables, and it does not by 
-           itself result in changes being captured from your tables or introduce 
-           any performance overheads. This is a sample of 
-           the automatically-generated code, which you could also run manually by 
-           substituting your database name:
+            For Snapshot jobs against SQL Server, it is necessary to enable CDC at 
+            the database level. This creates a small number of system tables in the 
+            database, but it does not change any user tables, and it does not by 
+            itself result in changes being captured from your tables or introduce 
+            any performance overheads. This is a sample of 
+            the automatically-generated code, which you could also run manually by 
+            substituting your database name:
 
-           .. code-block:: sql
-              :copyable: false
+            .. code-block:: sql
+               :copyable: false
 
-              USE MyDB
-              GO
-              EXEC sys.sp_cdc_enable_db
-              GO
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_db
+               GO
 
          .. tab:: Continuous Jobs
-           :tabid: enable-continuous-jobs
+            :tabid: enable-continuous-jobs
 
-           For Continuous jobs against SQL Server, it is necessary to enable 
-           CDC at both the database level as above, and at the table level for 
-           each table that you want to track, using the sys.sp_cdc_enable_table 
-           function. The tool will automatically generate the required SQL query. 
-           This is a sample of the automatically-generated code, which you 
-           could also run manually by substituting your table name for each table:
+            For Continuous jobs against SQL Server, it is necessary to enable 
+            CDC at both the database level as above, and at the table level for 
+            each table that you want to track, using the sys.sp_cdc_enable_table 
+            function. The tool will automatically generate the required SQL query. 
+            This is a sample of the automatically-generated code, which you 
+            could also run manually by substituting your table name for each table:
 
-           .. code-block:: sql
-              :copyable: false
+            .. code-block:: sql
+               :copyable: false
 
-              USE MyDB
-              GO
-              EXEC sys.sp_cdc_enable_db
-              GO
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_db
+               GO
 
    .. step:: Enable a Table Specifying Filegroup Option Template
 
