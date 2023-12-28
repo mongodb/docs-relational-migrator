@@ -10,15 +10,19 @@ SQL Server Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-When you setup a new connection, the Migrator tool will automatically 
-generate the required SQL code for a database administrator. 
-Connecting Migrator to SQL Server requires a database administrator to 
-enable change data capture (CDC) mode on the database, if not already 
-enabled. Relational Migrator supports two types of sync jobs:
+When you setup a new connection, Relational Migrator automatically 
+generates the required SQL code for a configuring the database. 
+Connecting Relational Migrator to SQL Server requires change data 
+capture (CDC) mode on the database. 
+Relational Migrator supports two types of sync jobs:
 
-- Snapshot which migrates all the data and then stops.
-- Continuous which runs a snapshot and then enters a CDC stage to 
-  continuously replicate changes.
+- **Snapshot**: Snapshot sync jobs run once, typically for a point in time 
+  migration strategy.
+- **Continuous**: Continuous sync jobs cover new incoming data for a zero-downtime 
+  Change Data Capture (CDC) migration strategy. Continuous jobs run a snapshot stage first,
+  followed by a CDC stage that captures database updates in near-real time. 
+  When you run a continuous sync job, your source and destination database 
+  data remain in sync.
 
 About this Task
 ---------------
@@ -45,13 +49,14 @@ found at Enable and Disable change data capture
 Before you Begin
 ----------------
 
-The migrator SQL Server account requires Select permission against all 
-required tables.
+The migrator SQL Server account requires ``Select`` permission against 
+all required tables.
 
 Steps
 -----
 
 .. procedure::
+   :style: normal
 
    .. step:: Configure Database
 
@@ -105,21 +110,13 @@ Steps
       :copyable: false
 
       USE MyDB
-
       GO
-
       EXEC sys.sp_cdc_enable_table
-
       @source_schema = N'dbo',
-
       @source_name   = N'MyTable',
-
       @role_name     = N'MyRole',
-
       @filegroup_name = N'MyDB_CT',
-
       @supports_net_changes = 1
-
       GO
 
 
@@ -129,8 +126,5 @@ Learn More
 The migrator tool relies on the open-source Debezium connector to 
 capture row-level changes.
 
-`Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#_enabling_cdc_on_a_sql_server_table>`__
-
-`Enable and Disable change data capture - SQL Server <https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16>`__
-
-x
+- `Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#_enabling_cdc_on_a_sql_server_table>`__
+- `Enable and Disable change data capture - SQL Server <https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16>`__
