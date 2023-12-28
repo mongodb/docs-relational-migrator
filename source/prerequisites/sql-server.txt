@@ -10,7 +10,7 @@ SQL Server Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-When you setup a new data migration, the Migrator tool will automatically 
+When you setup a new connection, the Migrator tool will automatically 
 generate the required SQL code for a database administrator. 
 Connecting Migrator to SQL Server requires a database administrator to 
 enable change data capture (CDC) mode on the database, if not already 
@@ -40,7 +40,7 @@ examining the is_tracked_by_cdc column in the ``sys.tables`` catalog
 view. Documentation from Microsoft explaining these options can be 
 found at Enable and Disable change data capture 
 
-- SQL Server | Microsoft Learn. https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16
+- `SQL Server <https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16>`__
 
 Before you Begin
 ----------------
@@ -61,7 +61,6 @@ Steps
       continuous sync jobs.
 
       ..tabs:: 
-
         .. tab:: Snapshot Jobs
            :tabid: enable-snapshot-jobs
 
