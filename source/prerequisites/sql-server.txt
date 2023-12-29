@@ -81,43 +81,43 @@ continuous sync jobs.
                EXEC sys.sp_cdc_enable_db
                GO
 
-      .. tab:: Continuous Jobs
-         :tabid: enable-continuous-jobs
+   .. tab:: Continuous Jobs
+      :tabid: enable-continuous-jobs
 
-         For Continuous jobs against SQL Server, it is necessary to enable 
-         CDC at both the database level as above, and at the table level for 
-         each table that you want to track, using the sys.sp_cdc_enable_table 
-         function. The tool will automatically generate the required SQL query. 
-         This is a sample of the automatically-generated code, which you 
-         could also run manually by substituting your table name for each table:
+      For Continuous jobs against SQL Server, it is necessary to enable 
+      CDC at both the database level as above, and at the table level for 
+      each table that you want to track, using the sys.sp_cdc_enable_table 
+      function. The tool will automatically generate the required SQL query. 
+      This is a sample of the automatically-generated code, which you 
+      could also run manually by substituting your table name for each table:
 
-         .. procedure::
-            :style: normal
-
-            .. step:: Configure CDC at the Database Level
-               
-               .. code-block:: sql
-                  :copyable: false
-
-                  USE MyDB
-                  GO
-                  EXEC sys.sp_cdc_enable_db
-                  GO
+      .. procedure::
+         :style: normal
 
          .. step:: Configure CDC at the Database Level
-
+            
             .. code-block:: sql
                :copyable: false
 
                USE MyDB
                GO
-               EXEC sys.sp_cdc_enable_table
-               @source_schema = N'dbo',
-               @source_name   = N'MyTable',
-               @role_name     = N'MyRole',
-               @filegroup_name = N'MyDB_CT',
-               @supports_net_changes = 1
+               EXEC sys.sp_cdc_enable_db
                GO
+
+      .. step:: Configure CDC at the Database Level
+
+         .. code-block:: sql
+            :copyable: false
+
+            USE MyDB
+            GO
+            EXEC sys.sp_cdc_enable_table
+            @source_schema = N'dbo',
+            @source_name   = N'MyTable',
+            @role_name     = N'MyRole',
+            @filegroup_name = N'MyDB_CT',
+            @supports_net_changes = 1
+            GO
 
 Learn More
 ----------
