@@ -13,8 +13,8 @@ SQL Server Migration Prerequisites
 Connecting Relational Migrator to SQL Server requires Change Data 
 Capture (CDC) mode enabled. When you set up a new connection, 
 Relational Migrator automatically generates the required SQL code for 
-configuring the relational database. Setup differs slightly 
-depending if your running a Snapshot or Continuous sync job. 
+configuring SQL Server. Setup differs slightly 
+depending on if your running a Snapshot or Continuous sync job. 
 For details on sync job types see :ref:`rm-sync-jobs`.
 
 About this Task
@@ -30,7 +30,7 @@ statements to enable CDC if required.
 .. tip::
 
    You can also check CDC settings by examining the ``is_tracked_by_cdc`` 
-   column in the ``sys.tables`` catalog view. 
+   column in the `sys.tables catalog view <https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-tables-transact-sql?view=sql-server-ver16>`__. 
    For details, see `Enable and Disable change data capture  
    <https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16>`__ .
 
@@ -99,7 +99,10 @@ continuous sync jobs.
             - Substituting the database name for ``MyDB``
             - Substituting role name for ``MyRole``
             - Substituting your filegroup name for ``MyDB_CT``
-            - Substituting the table name for each ``MyTable``
+            - Substituting the table name for ``MyTable``
+
+            You must run this stored procedure on each table in the 
+            migration.
 
             .. code-block:: sql
                :copyable: false
