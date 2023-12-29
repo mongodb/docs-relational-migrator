@@ -31,8 +31,8 @@ statements to enable CDC if required.
 
    You can also check CDC settings by examining the ``is_tracked_by_cdc`` 
    column in the `sys.tables catalog view <https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-tables-transact-sql?view=sql-server-ver16>`__. 
-   For details, see `Enable and Disable change data capture  
-   <https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16>`__ .
+   A bit value of ``1`` in the ``sys.tables`` view indicates the table 
+   is enabled for change data capture.
 
 Before you Begin
 ----------------
