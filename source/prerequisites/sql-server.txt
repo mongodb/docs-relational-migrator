@@ -62,13 +62,8 @@ continuous sync jobs.
    .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
-      For Snapshot jobs against SQL Server, it is necessary to enable 
+      For Snapshot jobs against SQL Server, you must enable 
       CDC at the database level. 
-
-      Enabling CDC generates a small number of system tables in the 
-      database, leaving user tables unchanged and does not cause any performance 
-      overhead. Enabling CDC alone does not result in changes being 
-      captured.
 
       .. procedure::
          :style: normal
@@ -80,7 +75,7 @@ continuous sync jobs.
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
-      For Continuous jobs against SQL Server, it is necessary to enable 
+      For Continuous jobs against SQL Server, you must enable 
       CDC at both the database level and at the table level for 
       each table that you want to track.
 
