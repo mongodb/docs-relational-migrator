@@ -109,20 +109,20 @@ continuous sync jobs.
                EXEC sys.sp_cdc_enable_db
                GO
 
-      .. step:: Configure CDC at the Database Level
+         .. step:: Configure CDC at the Database Level
 
-         .. code-block:: sql
-            :copyable: false
+            .. code-block:: sql
+               :copyable: false
 
-            USE MyDB
-            GO
-            EXEC sys.sp_cdc_enable_table
-            @source_schema = N'dbo',
-            @source_name   = N'MyTable',
-            @role_name     = N'MyRole',
-            @filegroup_name = N'MyDB_CT',
-            @supports_net_changes = 1
-            GO
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_table
+               @source_schema = N'dbo',
+               @source_name   = N'MyTable',
+               @role_name     = N'MyRole',
+               @filegroup_name = N'MyDB_CT',
+               @supports_net_changes = 1
+               GO
 
 Learn More
 ----------
