@@ -10,8 +10,8 @@ SQL Server Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-Connecting Relational Migrator to SQL Server requires change data 
-capture (CDC) mode enabled. When you set up a new connection, 
+Connecting Relational Migrator to SQL Server requires Change Data 
+Capture (CDC) mode enabled. When you set up a new connection, 
 Relational Migrator automatically generates the required SQL code for 
 configuring the relational database. Setup differs slightly 
 depending if your running a Snapshot or Continuous sync job. 
@@ -75,46 +75,36 @@ continuous sync jobs.
 
          .. step:: Configure CDC at the Database Level
 
-            The code block below is a sample of the automatically-generated 
-            code which you can run manually by substituting your 
-            database name for ``MyDB``:
-
-            .. code-block:: sql
-               :copyable: false
-
-               USE MyDB
-               GO
-               EXEC sys.sp_cdc_enable_db
-               GO
+            .. include:: /includes/fact-enable-cdc-database.rst
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
       For Continuous jobs against SQL Server, it is necessary to enable 
       CDC at both the database level and at the table level for 
-      each table that you want to track. To enable CDC at the table level
-      use the ``sys.sp_cdc_enable_table`` stored procedure. 
-      
+      each table that you want to track.
 
       .. procedure::
          :style: normal
 
          .. step:: Configure CDC at the Database Level
 
-            .. code-block:: sql
-               :copyable: false
+            .. include:: /includes/fact-enable-cdc-database.rst
 
-               USE MyDB
-               GO
-               EXEC sys.sp_cdc_enable_db
-               GO
+         .. step:: Configure CDC at the Table Level
 
-         .. step:: Configure CDC at the Database Level
+            To enable CDC at the table level
+            use the ``sys.sp_cdc_enable_table`` stored procedure. 
 
             The code block below is a sample of the 
-            automatically-generated code, which you 
-            could also run manually by substituting your table name 
-            for each table:
+            automatically-generated code.
+
+            You can run the code manually by:
+
+            - Substituting the database name for ``MyDB``
+            - Substituting role name for ``MyRole``
+            - Substituting your filegroup name for ``MyDB_CT``
+            - Substituting the table name for each ``MyTable``
 
             .. code-block:: sql
                :copyable: false
@@ -133,8 +123,5 @@ Learn More
 ----------
 
 The migrator tool relies on the open-source Debezium connector to 
-capture row-level changes.
-
-- `Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#_enabling_cdc_on_a_sql_server_table>`__
-- `Enable and Disable change data capture - SQL Server <https://learn.microsoft.com/en-us/sql/relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server?view=sql-server-ver16>`__
-
+capture row-level changes. For details on the Debezium connector, see
+`Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#_enabling_cdc_on_a_sql_server_table>`__.
