@@ -75,17 +75,17 @@ continuous sync jobs.
 
          .. step:: Configure CDC at the Database Level
 
-         The code block below is a sample of the automatically-generated 
-         code which you can run manually by substituting your 
-         database name for ``MyDB``:
+            The code block below is a sample of the automatically-generated 
+            code which you can run manually by substituting your 
+            database name for ``MyDB``:
 
-         .. code-block:: sql
-            :copyable: false
+            .. code-block:: sql
+               :copyable: false
 
-            USE MyDB
-            GO
-            EXEC sys.sp_cdc_enable_db
-            GO
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_db
+               GO
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
