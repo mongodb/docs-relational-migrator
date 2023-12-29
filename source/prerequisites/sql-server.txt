@@ -10,12 +10,12 @@ SQL Server Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-When you set up a new connection, Relational Migrator automatically 
-generates the required SQL code for configuring the relational database. 
 Connecting Relational Migrator to SQL Server requires change data 
-capture (CDC) mode enabled. Setup differs slightly depending if your 
-running a Snapshot or Continuous sync job. For details on sync job 
-types see :ref:`rm-sync-jobs`.
+capture (CDC) mode enabled. When you set up a new connection, 
+Relational Migrator automatically generates the required SQL code for 
+configuring the relational database. Setup differs slightly 
+depending if your running a Snapshot or Continuous sync job. 
+For details on sync job types see :ref:`rm-sync-jobs`.
 
 About this Task
 ---------------
@@ -65,14 +65,13 @@ continuous sync jobs.
       For Snapshot jobs against SQL Server, it is necessary to enable 
       CDC at the database level. 
 
-      This creates a small number of system tables in the database, but it does not change any 
-      user tables, and it does not by itself result in changes being 
-      captured from your tables or introduce any performance 
-      overheads. 
+      Enabling CDC generates a small number of system tables in the 
+      database, leaving user tables unchanged and does not cause any performance 
+      overhead. Enabling CDC alone does not result in changes being 
+      captured.
 
       .. procedure::
          :style: normal
-
 
          .. step:: Configure CDC at the Database Level
 
@@ -94,16 +93,14 @@ continuous sync jobs.
       For Continuous jobs against SQL Server, it is necessary to enable 
       CDC at both the database level and at the table level for 
       each table that you want to track. To enable CDC at the table level
-      use the ``sys.sp_cdc_enable_table`` function. 
+      use the ``sys.sp_cdc_enable_table`` stored procedure. 
       
-      This is a sample of the automatically-generated code, which you 
-      could also run manually by substituting your table name for each table:
 
       .. procedure::
          :style: normal
 
          .. step:: Configure CDC at the Database Level
-            
+
             .. code-block:: sql
                :copyable: false
 
@@ -113,6 +110,11 @@ continuous sync jobs.
                GO
 
          .. step:: Configure CDC at the Database Level
+
+            The code block below is a sample of the 
+            automatically-generated code, which you 
+            could also run manually by substituting your table name 
+            for each table:
 
             .. code-block:: sql
                :copyable: false
