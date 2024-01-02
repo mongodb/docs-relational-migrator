@@ -18,18 +18,18 @@ About this Task
 ---------------
 
 To log in with your Atlas account, Relational Migrator must be running on 
-localhost under ports 
+localhost under ports  
 - 8278, 
 - 8080, 
 - or 443. 
 
-If Relational Migrator runs on any other ports, the Atlas log in feature is 
-disabled.
+If you run Relational Migrator on ports not listed above, the Atlas log in 
+feature becomes unavailable.
 
 Steps
 -----
 
-1. Click the :guilabel:`Log in` button on the Relational Migrator home screen.
+1. On the Relational Migrator home screen, click the :guilabel:`Log in` button.
 
 2. Click :guilabel:`Yes, log in with Atlas`.
 
@@ -41,9 +41,9 @@ Steps
 Next Steps
 ----------
 
-- Atlas cluster
+- :atlas:`Atlas Clusters </create-database-deployment/#clusters>`
 
-- Query Converter
+- :ref:`Query Converter <rm-query-converter>`
 
 Learn More
 ----------
