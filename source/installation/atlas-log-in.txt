@@ -42,11 +42,9 @@ Steps
 Next Steps
 ----------
 
-- :atlas:`Atlas Clusters </create-database-deployment/#clusters>`
-
 - :ref:`Query Converter <rm-query-converter>`
 
 Learn More
 ----------
 
-- :ref:`rm-mongodb-database-connection-strings`
+- :atlas:`Atlas Clusters </create-database-deployment/#clusters>`
