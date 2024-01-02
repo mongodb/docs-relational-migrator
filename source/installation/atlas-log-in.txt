@@ -1,4 +1,4 @@
-.. _atlas-sign-in:
+.. _atlas-log-in:
 
 =================
 Log In with Atlas
@@ -18,7 +18,8 @@ About this Task
 ---------------
 
 To log in with your Atlas account, Relational Migrator must be running on 
-localhost under ports  
+localhost under the following ports:
+
 - 8278, 
 - 8080, 
 - or 443. 
