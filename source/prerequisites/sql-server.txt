@@ -122,6 +122,6 @@ continuous sync jobs.
 Learn More
 ----------
 
-The migrator tool relies on the open-source Debezium connector to 
+Relational Migrator relies on the open-source Debezium connector to 
 capture row-level changes. For details on the Debezium connector, see
 `Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/sqlserver.html#_enabling_cdc_on_a_sql_server_table>`__.
