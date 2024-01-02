@@ -101,8 +101,10 @@ continuous sync jobs.
             - Replacing your filegroup name for ``MyDB_CT``
             - Replacing the table name for ``MyTable``
 
-            You must run this stored procedure on each table in the 
-            migration.
+            .. note:: 
+
+               You must run this stored procedure on each table in the 
+               migration.
 
             .. code-block:: sql
                :copyable: false
