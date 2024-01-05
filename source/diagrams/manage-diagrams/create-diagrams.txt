@@ -10,4 +10,21 @@ Create Diagrams
    :depth: 1
    :class: singlecol
 
-Create diagrams.
+You can create new diagrams in the Mapping tab of Relational Migrator.
+After you create a diagram, you can clone, rename, and delete your new
+diagrams. 
+
+To create a new diagram, click the plus sign button on the right of the
+workspace tab. This creates and opens a blank diagram. By default, the
+diagram view pane hides all entities in the project. 
+
+.. image:: /img/diagrams/create_diagram.png
+   :alt: Create Diagram in Diagram View Pane
+
+When you create a new diagram, the new diagram is the active diagram
+that Relational Migrator displays. 
+
+.. note::
+
+   Diagram tabs appear in the order that the diagrams were created. You
+   cannot reorder diagram tabs.
