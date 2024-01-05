@@ -30,17 +30,17 @@ You must have at least one digram on your ribbon tab.
 Steps
 -----
 
-.. procedure:: 
+.. procedure::
 
-   Click the plus sign button on the right of the workspace tab to
-   create a new diagram. This creates and opens a blank diagram. By
-   default, the diagram view pane hides all entities in the project. 
+      Click the plus sign button on the right of the workspace tab to
+      create a new diagram. This creates and opens a blank diagram. By
+      default, the diagram view pane hides all entities in the project. 
 
-   .. image:: /img/diagrams/create_diagram.png
-      :alt: Create Diagram in Diagram View Pane
+      .. image:: /img/diagrams/create_diagram.png
+         :alt: Create Diagram in Diagram View Pane
 
-   When you create a new diagram, Relational Migrators displays it on the
-   mapping tab. 
+      When you create a new diagram, Relational Migrators displays it on the
+      Mapping tab. 
 
 .. note::
 
