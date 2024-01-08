@@ -44,7 +44,7 @@ Steps
       notes. By default, Relational Migrator names diagrams in the order
       they were created and leaves the notes field empty. 
 
-   .. step:: Type your new diagram name in the name box. 
+   .. step:: Enter your new diagram name in the Name box. 
 
       Relational Migrator saves your new diagram name automatically and
       updates the ribbon tab accordingly.
