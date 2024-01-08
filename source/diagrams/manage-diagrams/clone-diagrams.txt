@@ -30,12 +30,12 @@ Steps
 
    .. step:: Navigate to the diagram you want to clone. 
 
-      Click on the name of the diagram in the ribbon tab to display the
+      Click the name of the diagram in the ribbon tab to display the
       diagram. 
 
    .. step:: Open the Diagram Properties pane.
 
-      Click on the arrow button on the right of your window to open the
+      Click the arrow button on the right of your window to open the
       Diagram Properties pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
