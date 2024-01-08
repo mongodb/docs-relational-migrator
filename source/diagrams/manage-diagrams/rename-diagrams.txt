@@ -28,10 +28,10 @@ Steps
 
    .. step:: Navigate to the diagram you want to rename. 
 
-      Click on the name of the diagram in the ribbon tab to display it
-      as the active diagram. 
+      Click on the name of the diagram in the ribbon tab to display the
+      diagram. 
    
-   .. step:: Open the Diagram Properties Box.
+   .. step:: Open the Diagram Properties box.
 
       Click on the arrow button on the right of your window to open the
       Diagram Properties box. 
@@ -45,7 +45,7 @@ Steps
 
    .. step:: Enter your new diagram name in the Name box. 
 
-      Relational Migrator saves your new diagram name automatically and
+      Relational Migrator automatically saves your new diagram name and
       updates the ribbon tab accordingly.
 
 Learn More
