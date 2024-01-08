@@ -1,40 +1,38 @@
 .. _rm-rename-diagrams:
 
-===============
-Rename Diagrams
+=============== 
+Rename Diagrams 
 ===============
 
 .. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 1
-   :class: singlecol
+   :local: :backlinks: none :depth: 1 :class: singlecol
 
-You can rename diagrams on the Mapping tab of Relational Migrator.
-Relational Migrator displays diagram names on the ribbon tab. 
+You can rename diagrams on the :guilabel:`Mapping` tab of Relational
+Migrator. Relational Migrator displays diagram names on the ribbon tab. 
 
-About this Task
+About this Task 
 ---------------
 
 You can rename diagrams to customize your diagram properties. Relational
-Migrator shows your diagram names on the ribbon tab of the Mapping view and in
-the Diagram Properties pane. 
+Migrator shows your diagram names on the ribbon tab of the
+:guilabel:`Mapping` view and in the :guilabel:`Diagram Properties` pane. 
 
-Steps
+Steps 
 -----
 
 .. procedure::
    :style:  connected
 
-   .. step:: Navigate to the diagram you want to rename. 
+   .. step:: Navigate to the diagram you want to rename
 
       Click the name of the diagram in the ribbon tab to display the
       diagram. 
    
-   .. step:: Open the Diagram Properties pane.
+   .. step:: Open the Diagram Properties pane
 
-      Click the arrow button on the right of your window to open the
-      Diagram Properties pane. 
+      Click the :icon-fa5:`chevron-circle-right` arrow button on the
+      right of your window to open the :guilabel:`Diagram Properties`
+      pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties pane
@@ -43,14 +41,14 @@ Steps
       notes. By default, Relational Migrator names diagrams in the order
       they were created and leaves the notes field empty. 
 
-   .. step:: Enter your new diagram name in the Name box. 
+   .. step:: Enter your new diagram name in the Name box
 
       Relational Migrator automatically saves your new diagram name and
       updates the ribbon tab accordingly.
 
-Learn More
+Learn More 
 ----------
 
-- :ref:`rm-create-diagrams`
-- :ref:`rm-clone-diagrams`
+- :ref:`rm-create-diagrams` 
+- :ref:`rm-clone-diagrams` 
 - :ref:`rm-delete-diagrams`
