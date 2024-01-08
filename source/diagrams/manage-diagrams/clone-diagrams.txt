@@ -10,8 +10,8 @@ Clone Diagrams
    :depth: 1
    :class: singlecol
 
-You can clone existing diagrams on the Mapping tab of Relational
-Migrator. 
+You can clone existing diagrams on the :guilabel:`Mapping` tab of
+Relational Migrator. 
 
 About this Task
 ---------------
