@@ -32,17 +32,26 @@ Steps
       as the active diagram. 
 
    
-   .. step:: Click the arrow button on the right of the window to open
-            the Diagram Properties Box.
+   .. step:: Open the Diagram Properties Box.
+
+      Click on the arrow button on the right of the screen to open the
+      Diagram Properties box. 
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties box
       
-      This shows the active diagram name and notes. By default, Relational
-      Migrator names diagrams in the order they were created and leaves
-      the notes field empty. 
+      The Diagram Properties box displays the active diagram name and
+      notes. By default, Relational Migrator names diagrams in the order
+      they were created and leaves the notes field empty. 
 
    .. step:: Type your new diagram name in the name box. 
 
-      Relational Migrator saves diagram name automatically and updates
-      the ribbon tab accordingly.
+      Relational Migrator saves your new diagram name automatically and
+      updates the ribbon tab accordingly.
+
+Learn More
+----------
+
+- :ref:`rm-create-diagrams`
+- :ref:`rm-clone-diagrams`
+- :ref:`rm-delete-diagrams`
