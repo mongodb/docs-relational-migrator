@@ -28,30 +28,30 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Navigate to the diagram you want to clone. 
+   .. step:: Navigate to the diagram you want to clone
 
       Click the name of the diagram in the ribbon tab to display the
       diagram. 
 
-   .. step:: Open the Diagram Properties pane.
+   .. step:: Open the :guilabel:`Diagram Properties` pane
 
       Click the arrow button on the right of your window to open the
-      Diagram Properties pane. 
+      :guilabel:`Diagram Properties`pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties pane
 
-      The Diagram Properties pane displays the active diagram name and
+      The :guilabel:`Diagram Properties` pane displays the active diagram name and
       notes. 
 
-   .. step:: Click the ellipsis button in the Diagram Properties pane.
+   .. step:: Click the ellipsis button in the :guilabel:`Diagram Properties` pane
 
       This opens a menu of diagram options. 
 
       .. image:: /img/diagrams/duplicate_diagram.png
          :alt: Diagram Properties Options menu
 
-   .. step:: Click the Duplicate Diagram option.
+   .. step:: Click the Duplicate Diagram option
 
       This create and opens a new diagram with the same entities as the
       duplicated diagram. The visibility of entities on your new diagram
