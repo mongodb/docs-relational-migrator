@@ -16,7 +16,7 @@ Migrator.
 About this Task
 ---------------
 
-You can clone one or more diagram to create new diagrams that contain
+You can clone one or more diagrams to create new diagrams that contain
 the same entities as existing diagrams. Once you clone a diagram, you
 can edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
 <rm-delete-diagrams>` your new diagram. 
@@ -28,36 +28,36 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Navigate to the diagram you want to rename. 
+   .. step:: Navigate to the diagram you want to clone. 
 
       Click on the name of the diagram in the ribbon tab to display the
       diagram. 
 
-   .. step:: Open the Diagram Properties box.
+   .. step:: Open the Diagram Properties pane.
 
       Click on the arrow button on the right of your window to open the
-      Diagram Properties box. 
+      Diagram Properties pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
-         :alt: Diagram Properties box
+         :alt: Diagram Properties pane
 
-      The Diagram Properties box displays the active diagram name and
+      The Diagram Properties pane displays the active diagram name and
       notes. 
 
-   .. step:: Click the ellipsis button in the Diagram Properties box.
+   .. step:: Click the ellipsis button in the Diagram Properties pane.
 
       This opens a menu of diagram options. 
 
       .. image:: /img/diagrams/duplicate_diagram.png
          :alt: Diagram Properties Options menu
 
-   .. step:: Click the Duplicate Diagram options
+   .. step:: Click the Duplicate Diagram option
 
       This create and opens a new diagram with the same entities as the
-      original diagram. The visibility of entities on the newly created
-      diagram is identical to the visibility of the cloned diagram. 
+      duplicated diagram. The visibility of entities on the your new
+      diagram is identical to the visibility of the duplicated diagram. 
       
       .. note :: 
 
-         The cloned diagram name and notes are not duplicated on the new
+         The duplicated diagram name and notes are not cloned on the new
          diagram. 
