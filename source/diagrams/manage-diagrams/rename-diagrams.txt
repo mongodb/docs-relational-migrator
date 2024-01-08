@@ -16,9 +16,9 @@ Relational Migrator displays diagram names on the ribbon tab.
 About this Task
 ---------------
 
-Renaming diagrams allows you to customize your diagram properties. You
-can view your diagram names on the ribbon tab of the Mapping view and in
-the Diagram Properties box. 
+You can rename diagrams to customize your diagram properties. Relational
+Migrator shows your diagram names on the ribbon tab of the Mapping view and in
+the Diagram Properties pane. 
 
 Steps
 -----
@@ -31,15 +31,15 @@ Steps
       Click on the name of the diagram in the ribbon tab to display the
       diagram. 
    
-   .. step:: Open the Diagram Properties box.
+   .. step:: Open the Diagram Properties pane.
 
       Click on the arrow button on the right of your window to open the
-      Diagram Properties box. 
+      Diagram Properties pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
-         :alt: Diagram Properties box
+         :alt: Diagram Properties pane
       
-      The Diagram Properties box displays the active diagram name and
+      The Diagram Properties pane displays the active diagram name and
       notes. By default, Relational Migrator names diagrams in the order
       they were created and leaves the notes field empty. 
 
