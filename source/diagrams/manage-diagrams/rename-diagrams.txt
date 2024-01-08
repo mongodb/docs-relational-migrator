@@ -30,11 +30,10 @@ Steps
 
       Click on the name of the diagram in the ribbon tab to display it
       as the active diagram. 
-
    
    .. step:: Open the Diagram Properties Box.
 
-      Click on the arrow button on the right of the screen to open the
+      Click on the arrow button on the right of your window to open the
       Diagram Properties box. 
 
       .. image:: /img/diagrams/diagram_properties.png
