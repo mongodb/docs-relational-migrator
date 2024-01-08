@@ -19,7 +19,7 @@ About this Task
 Cloning diagrams allows you to create new diagrams that have identical
 properties to exisiting diagrams. Once you clone a diagram, you can
 edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
-<rm-delete-diagrams> your new diagram. 
+<rm-delete-diagrams>` your new diagram. 
 
 
 Steps
