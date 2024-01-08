@@ -33,8 +33,7 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Click the plus sign button on the right of the workspace
-             tab. 
+   .. step:: Click the plus sign button on the right of the workspace tab. 
    
       This creates and opens a blank diagram. By default, the diagram
       view pane hides all entities in the project. 
@@ -42,13 +41,13 @@ Steps
       .. image:: /img/diagrams/create_diagram.png
          :alt: Create Diagram in Diagram View Pane
 
-      When you create a new diagram, Relational Migrators displays it on the
+      When you create a new diagram, Relational Migrator displays it on the
       Mapping tab. 
 
-.. note::
+      .. note::
 
-   Diagram tabs appear in the order that the diagrams were created. You
-   cannot reorder diagram tabs.
+         Diagram tabs appear in the order that the diagrams were created. You
+         cannot reorder diagram tabs.
 
 Learn More
 ----------
