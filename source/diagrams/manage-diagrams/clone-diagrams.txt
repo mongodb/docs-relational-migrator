@@ -51,7 +51,7 @@ Steps
       .. image:: /img/diagrams/duplicate_diagram.png
          :alt: Diagram Properties Options menu
 
-   .. step:: Click the Duplicate Diagram option
+   .. step:: Click the Duplicate Diagram option.
 
       This create and opens a new diagram with the same entities as the
       duplicated diagram. The visibility of entities on your new diagram
