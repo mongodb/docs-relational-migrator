@@ -54,10 +54,11 @@ Steps
    .. step:: Click the Duplicate Diagram option
 
       This create and opens a new diagram with the same entities as the
-      duplicated diagram. The visibility of entities on the your new
-      diagram is identical to the visibility of the duplicated diagram. 
+      duplicated diagram. The visibility of entities on your new diagram
+      is identical to the visibility of entities on the duplicated
+      diagram. 
       
       .. note :: 
 
-         The duplicated diagram name and notes are not cloned on the new
-         diagram. 
+         Relational Migrator does not clone the duplicated diagram's
+         name and notes to the new diagram.
