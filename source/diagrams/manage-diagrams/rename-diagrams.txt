@@ -28,7 +28,7 @@ Steps
       Click the name of the diagram in the ribbon tab to display the
       diagram. 
    
-   .. step:: Open the Diagram Properties pane
+   .. step:: Open the :guilabel:`Diagram Properties` pane
 
       Click the :icon-fa5:`chevron-circle-right` arrow button on the
       right of your window to open the :guilabel:`Diagram Properties`
@@ -37,14 +37,15 @@ Steps
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties pane
       
-      The Diagram Properties pane displays the active diagram name and
-      notes. By default, Relational Migrator names diagrams in the order
-      they were created and leaves the notes field empty. 
+      The :guilabel:`Diagram Properties` pane displays the active
+      diagram name and notes. By default, Relational Migrator names
+      diagrams in the order they were created and leaves the notes field
+      empty. 
 
    .. step:: Enter your new diagram name in the Name box
 
       Relational Migrator automatically saves your new diagram name and
-      updates the ribbon tab accordingly.
+      updates the ribbon tab.
 
 Learn More 
 ----------
