@@ -10,4 +10,48 @@ Clone Diagrams
    :depth: 1
    :class: singlecol
 
-Clone diagrams.
+You can clone existing diagrams on the Mapping tab of Relational
+Migrator. 
+
+About this Task
+---------------
+
+Cloning diagrams allows you to create new diagrams that have identical
+properties to exisiting diagrams. Once you clone a diagram, you can
+edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
+<rm-delete-diagrams> your new diagram. 
+
+
+Steps
+-----
+
+.. procedure::
+   :style:  connected
+
+   .. step:: Navigate to the diagram you want to rename. 
+
+      Click on the name of the diagram in the ribbon tab to display the
+      diagram. 
+
+   .. step:: Open the Diagram Properties box.
+
+      Click on the arrow button on the right of your window to open the
+      Diagram Properties box. 
+
+      .. image:: /img/diagrams/diagram_properties.png
+         :alt: Diagram Properties box
+
+      The Diagram Properties box displays the active diagram name and
+      notes. 
+
+   .. step:: Click the ellipsis button in the Diagram Properties box
+
+      This opens a menu of diagram options. 
+
+      .. step:: Click the Duplicate Diagram options
+
+      This create and opens a new diagram that contains the same
+      contents as the original diagram. The visibility of entities on
+      the newly created diagram is identical to the visibility of the
+      cloned diagram. The cloned diagram name and notes are not copied
+      to the new diagram. 
