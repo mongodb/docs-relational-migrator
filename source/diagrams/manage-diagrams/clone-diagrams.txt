@@ -16,8 +16,8 @@ Migrator.
 About this Task
 ---------------
 
-Cloning diagrams allows you to create new diagrams that have identical
-properties to exisiting diagrams. Once you clone a diagram, you can
+Cloning diagrams allows you to create new diagrams that contain the same
+entities as existing diagramas. Once you clone a diagram, you can
 edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
 <rm-delete-diagrams>` your new diagram. 
 
@@ -44,14 +44,20 @@ Steps
       The Diagram Properties box displays the active diagram name and
       notes. 
 
-   .. step:: Click the ellipsis button in the Diagram Properties box
+   .. step:: Click the ellipsis button in the Diagram Properties box.
 
       This opens a menu of diagram options. 
 
-      .. step:: Click the Duplicate Diagram options
+      .. image:: /img/diagrams/duplicate_diagram.png
+         :alt: Diagram Properties Options menu
 
-      This create and opens a new diagram that contains the same
-      contents as the original diagram. The visibility of entities on
-      the newly created diagram is identical to the visibility of the
-      cloned diagram. The cloned diagram name and notes are not copied
-      to the new diagram. 
+   .. step:: Click the Duplicate Diagram options
+
+      This create and opens a new diagram with the same entities as the
+      original diagram. The visibility of entities on the newly created
+      diagram is identical to the visibility of the cloned diagram. 
+      
+      .. note :: 
+
+         The cloned diagram name and notes are not duplicated on the new
+         diagram. 
