@@ -16,9 +16,9 @@ Migrator.
 About this Task
 ---------------
 
-Cloning diagrams allows you to create new diagrams that contain the same
-entities as existing diagramas. Once you clone a diagram, you can
-edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
+You can clone one or more diagram to create new diagrams that contain
+the same entities as existing diagrams. Once you clone a diagram, you
+can edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
 <rm-delete-diagrams>` your new diagram. 
 
 
