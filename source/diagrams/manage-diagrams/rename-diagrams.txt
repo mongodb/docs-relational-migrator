@@ -11,13 +11,12 @@ Rename Diagrams
    :class: singlecol
 
 You can rename diagrams on the Mapping tab of Relational Migrator.
-Relational Migrator displays diagram names on the ribbon tab of the
-Mapping view. 
+Relational Migrator displays diagram names on the ribbon tab. 
 
 About this Task
 ---------------
 
-Renaming diagrams allows you to customize your diagrams' properties. You
+Renaming diagrams allows you to customize your diagram properties. You
 can view your diagram names on the ribbon tab of the Mapping view and in
 the Diagram Properties box. 
 
@@ -29,21 +28,21 @@ Steps
 
    .. step:: Navigate to the diagram you want to rename. 
 
-      When you navigate to the diagram you want to remane, Relational
-      Migrator displays it as the active diagram. 
+      Click on the name of the diagram in the ribbon tab to display it
+      as the active diagram. 
 
    
    .. step:: Click the arrow button on the right of the window to open
-   the Diagram Properties Box.
+            the Diagram Properties Box.
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties box
       
-      This shows the diagram name and notes. By default, Relational
+      This shows the active diagram name and notes. By default, Relational
       Migrator names diagrams in the order they were created and leaves
       the notes field empty. 
 
    .. step:: Type your new diagram name in the name box. 
 
-      The diagram name is saved automatically and the ribbon tab updates
-      the diagram name accordingly. 
+      Relational Migrator saves diagram name automatically and updates
+      the ribbon tab accordingly.
