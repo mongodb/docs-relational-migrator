@@ -10,4 +10,57 @@ Delete Diagrams
    :depth: 1
    :class: singlecol
 
-Delete diagrams.
+You can delete diagrams on the :guilabel:`Mapping` tab of Relational
+Migrator. 
+
+About this Task 
+---------------
+
+If you have at least two diagrams, you can delete diagrams in Relational
+Migrator. Relational Migrator requires at least one diagram and by
+default, creates the ``Main Diagram`` diagram with a Relational view and a
+MongoDB view.
+
+Steps 
+-----
+
+.. procedure::
+   :style:  connected
+
+   .. step:: Navigate to the diagram you want to delete
+
+      Click the name of the diagram in the ribbon tab to display the
+      diagram. 
+
+   .. step:: Open the :guilabel:`Diagram Properties` pane
+
+      Click the arrow button on the right of your window to open the
+      :guilabel:`Diagram Properties`pane. 
+
+      .. image:: /img/diagrams/diagram_properties.png
+         :alt: Diagram Properties pane
+
+      The :guilabel:`Diagram Properties` pane displays the active diagram name and
+      notes. 
+
+   .. step:: Click the ellipsis button in the :guilabel:`Diagram Properties` pane
+
+      This opens a menu of diagram options. 
+
+      .. image:: /img/diagrams/duplicate_diagram.png
+         :alt: Diagram Properties Options menu
+
+   .. step:: Click the Delete Diagram option
+
+      This deletes the active diagram. 
+
+
+
+Learn More 
+----------
+
+- :ref:`rm-create-diagrams` 
+- :ref:`rm-rename-diagrams`
+- :ref:`rm-clone-diagrams` 
+
+
