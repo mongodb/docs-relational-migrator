@@ -32,7 +32,7 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Click the :icon-lg:`Plus` Plus button on the right of the workspace tab 
+   .. step:: Click the :icon-lg:`Plus` button on the right of the workspace tab 
    
       .. image:: /img/diagrams/create_diagram.png
          :alt: Create Diagram in Diagram View Pane
