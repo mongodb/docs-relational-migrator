@@ -17,8 +17,8 @@ configuring SQL Server. How you configure SQL Server varies
 depending on if you are running a Snapshot or a Continuous sync job.
 
 - Snapshot sync jobs migrate all the data and then stops.
-- Continuous run a snapshot and then enters a CDC stage to 
-  continuously replicate changes.
+- Continuous sync job run a snapshot and then enter a CDC stage to 
+  continuously replicate data changes.
 
 About this Task
 ---------------
