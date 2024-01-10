@@ -20,8 +20,6 @@ depending on if you are running a Snapshot or a Continuous sync job.
 - Continuous run a snapshot and then enters a CDC stage to 
   continuously replicate changes.
 
-For details on sync job types see :ref:`rm-sync-jobs`.
-
 About this Task
 ---------------
 
@@ -58,8 +56,9 @@ Steps
 
 The easiest way to set up your database is to run the automatically 
 generated script that Relational Migrator prompts you to download when
-you run a sync job. If you would like to understand the permissions, 
-or run the SQL manually read the procedures below.
+you :ref:`create a sync job <rm-create-jobs>`. If you would like to 
+understand the permissions or run the SQL manually, read the 
+procedures below.
 
 Depending on the type of sync job you need to run, you need to 
 configure your SQL Server Instance appropriately. Use the tab below
