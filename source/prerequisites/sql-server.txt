@@ -32,7 +32,7 @@ About this Task
   connecting to your database and generates the appropriate SQL 
   statements to enable CDC if required.
 
-- You can also check CDC settings by examining the ``is_tracked_by_cdc`` 
+- You can also check SQL Server CDC settings by examining the ``is_tracked_by_cdc`` 
   column in the `sys.tables catalog view <https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-tables-transact-sql?view=sql-server-ver16>`__. 
   A value of ``1`` for ``is_tracked_by_cdc`` indicates the table 
   is enabled for change data capture.
@@ -50,7 +50,7 @@ To enable the CDC option on SQL Server:
 - You must have the database level ``db_owner`` role.
 - The `SQL Server agent <https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver16>`__
   must be running.
-- The service account used to connect to the SQL Server requires 
+- The service account used to connect to SQL Server requires 
   Select permission against all required tables.
 
 Steps
@@ -102,17 +102,7 @@ continuous sync jobs.
             The code block below is a sample of the 
             automatically-generated code.
 
-            You can run the code manually by:
-
-            - Replacing the database name for ``MyDB``
-            - Replacing role name for ``MyRole``
-            - Replacing your filegroup name for ``MyDB_CT``
-            - Replacing the table name for ``MyTable``
-
-            .. note:: 
-
-               You must run this stored procedure on each table in the 
-               migration.
+            You can run the code manually to enable table CDC:
 
             .. code-block:: sql
                :copyable: false
