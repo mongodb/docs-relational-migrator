@@ -17,10 +17,10 @@ Toolbar.
 About this Task 
 ---------------
 
-You can rename diagrams to customize your diagram properties. Relational
-Migrator displays your diagram names on the Diagram Toolbar of the
-:guilabel:`Mapping` screen and in the :guilabel:`Diagram Properties`
-pane. 
+- You can rename diagrams to customize your diagram properties. 
+- Relational Migrator displays your diagram names on the Diagram Toolbar
+  of the :guilabel:`Mapping` screen and in the :guilabel:`Diagram
+  Properties` pane. 
 
 Steps 
 -----
