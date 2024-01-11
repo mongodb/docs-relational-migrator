@@ -13,7 +13,7 @@ Create Diagrams
 You can create new diagrams on the :guilabel:`Mapping` screen of
 Relational Migrator. You can also create multiple diagrams and navigate
 between them to view specific entities of your data model. By default,
-Relational Migrator creates the :guilabel:`Main Diagram` diagram with a
+Relational Migrator creates the :guilabel:`Main Diagram` with a
 Relational view and a MongoDB view.
 
 About this Task
@@ -24,7 +24,7 @@ About this Task
 - After you create a diagram, you can
   :ref:`clone <rm-clone-diagrams>`, :ref:`rename <rm-rename-diagrams>`,
   and :ref:`delete <rm-delete-diagrams>` your new diagram. 
-- You must have at least one digram on your ``Diagram Toolbar``. 
+- You must have at least one digram on your Diagram Toolbar. 
 
 Steps
 -----
