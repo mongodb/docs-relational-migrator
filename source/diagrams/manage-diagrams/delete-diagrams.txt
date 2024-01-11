@@ -18,7 +18,6 @@ About this Task
 
 - You must have at least two diagrams before you can delete a diagram
   because Relational Migrator requires at least one diagram in your project.
-. 
 
 Steps 
 -----
@@ -35,7 +34,7 @@ Steps
 
       Click the :icon-fa5:`chevron-circle-right` arrow button on the
       right of your window to open the :guilabel:`Diagram
-      Properties`pane. 
+      Properties` pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties pane
@@ -47,7 +46,7 @@ Steps
 
       This opens a menu of diagram options. 
 
-      .. image:: /img/diagrams/duplicate_diagram.png
+      .. image:: /img/diagrams/diagram_options.png
          :alt: Diagram Properties Options menu
 
    .. step:: Click the :guilabel:`Delete Diagram` option
