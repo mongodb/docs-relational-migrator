@@ -16,10 +16,9 @@ Migrator.
 About this Task 
 ---------------
 
-If you have at least two diagrams, you can delete diagrams in Relational
-Migrator. Relational Migrator requires at least one diagram and by
-default, creates the ``Main Diagram`` diagram with a Relational view and a
-MongoDB view.
+- You must have at least two diagrams before you can delete a diagram
+  because Relational Migrator requires at least one diagram in your project.
+. 
 
 Steps 
 -----
@@ -34,8 +33,9 @@ Steps
 
    .. step:: Open the :guilabel:`Diagram Properties` pane
 
-      Click the arrow button on the right of your window to open the
-      :guilabel:`Diagram Properties`pane. 
+      Click the :icon-fa5:`chevron-circle-right` arrow button on the
+      right of your window to open the :guilabel:`Diagram
+      Properties`pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties pane
@@ -43,16 +43,23 @@ Steps
       The :guilabel:`Diagram Properties` pane displays the active diagram name and
       notes. 
 
-   .. step:: Click the ellipsis button in the :guilabel:`Diagram Properties` pane
+   .. step:: Click the :icon-fa5:`ellipsis-v` ellipsis button in the :guilabel:`Diagram Properties` pane
 
       This opens a menu of diagram options. 
 
       .. image:: /img/diagrams/duplicate_diagram.png
          :alt: Diagram Properties Options menu
 
-   .. step:: Click the Delete Diagram option
+   .. step:: Click the :guilabel:`Delete Diagram` option
 
       This deletes the active diagram. 
+
+   .. step:: Click the :guilabel:`Delete Diagram` button in the confirmation box. 
+
+      Once you confirm that you want to delete the selected diagram,
+      Relational Migrator deletes the diagram. This step can not be
+      undone. 
+
 
 
 
