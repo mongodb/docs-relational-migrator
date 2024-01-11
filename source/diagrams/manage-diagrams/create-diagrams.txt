@@ -32,10 +32,9 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Click the :icon-lg:`Plus` button on the right of the
-   Diagram Toolbar. 
+   .. step:: Click the :icon-lg:`Plus` button on the Diagram Toolbar
    
-      .. image:: /img/diagrams/create_diagram.png
+      .. image:: /img/diagrams/create-diagram.png
          :alt: Create Diagram in Diagram View Pane
 
       This creates and opens a blank diagram. By default, the diagram
