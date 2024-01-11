@@ -40,7 +40,7 @@ Steps
    .. step:: Open the :guilabel:`Diagram Properties` pane
 
       Click the :icon-fa5:`chevron-circle-right` arrow button to open the
-      :guilabel:`Diagram Properties`pane. 
+      :guilabel:`Diagram Properties` pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
          :alt: Diagram Properties pane
