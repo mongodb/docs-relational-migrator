@@ -10,16 +10,17 @@ Clone Diagrams
    :depth: 1
    :class: singlecol
 
-You can clone existing diagrams on the :guilabel:`Mapping` tab of
+You can clone existing diagrams on the :guilabel:`Mapping` screen of
 Relational Migrator. 
 
 About this Task
 ---------------
 
-You can clone one or more diagrams to create new diagrams that contain
-the same entities as existing diagrams. Once you clone a diagram, you
-can edit, :ref:`rename <rm-rename-diagrams>`, and :ref:`delete
-<rm-delete-diagrams>` your new diagram. 
+- You can clone one or more diagrams to create new diagrams that contain
+  the same entities as existing diagrams. 
+- Once you clone a diagram, you can edit, :ref:`rename
+  <rm-rename-diagrams>`, and :ref:`delete <rm-delete-diagrams>` your new
+  diagram. 
 
 
 Steps
@@ -30,12 +31,15 @@ Steps
 
    .. step:: Navigate to the diagram you want to clone
 
-      Click the name of the diagram in the ribbon tab to display the
+      Click the name of the diagram in the Diagram Toolbar to display the
       diagram. 
+
+      .. image:: /img/diagrams/diagram-toolbar.png
+         :alt: Diagram toolbar    
 
    .. step:: Open the :guilabel:`Diagram Properties` pane
 
-      Click the arrow button on the right of your window to open the
+      Click the :icon-fa5:`chevron-circle-right` arrow button to open the
       :guilabel:`Diagram Properties`pane. 
 
       .. image:: /img/diagrams/diagram_properties.png
@@ -44,9 +48,9 @@ Steps
       The :guilabel:`Diagram Properties` pane displays the active diagram name and
       notes. 
 
-   .. step:: Click the ellipsis button in the :guilabel:`Diagram Properties` pane
+   .. step:: Click the :icon-fa5:`ellipsis-h` button in the :guilabel:`Diagram Properties` pane
 
-      This opens a menu of diagram options. 
+      A menu opens. 
 
       .. image:: /img/diagrams/duplicate_diagram.png
          :alt: Diagram Properties Options menu
