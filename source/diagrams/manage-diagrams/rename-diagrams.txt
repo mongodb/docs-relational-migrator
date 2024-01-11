@@ -5,7 +5,10 @@ Rename Diagrams
 ===============
 
 .. contents:: On this page
-   :local: :backlinks: none :depth: 1 :class: singlecol
+   :local: 
+   :backlinks: none 
+   :depth: 1 
+   :class: singlecol
 
 You can rename diagrams on the :guilabel:`Mapping` screen of Relational
 Migrator. Relational Migrator displays diagram names on the Diagram
