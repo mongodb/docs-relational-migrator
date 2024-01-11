@@ -46,7 +46,7 @@ Steps
 
       This opens a menu of diagram options. 
 
-      .. image:: /img/diagrams/diagram_options.png
+      .. image:: /img/diagrams/diagram-options.png
          :alt: Diagram Properties Options menu
 
    .. step:: Click the :guilabel:`Delete Diagram` option
