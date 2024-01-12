@@ -1,8 +1,8 @@
 .. _rm-rename-diagrams:
 
-=============== 
-Rename Diagrams 
-===============
+================
+Rename A Diagram
+================
 
 .. contents:: On this page
    :local: 
