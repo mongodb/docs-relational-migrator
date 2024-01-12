@@ -1,8 +1,8 @@
 .. _rm-create-diagrams:
 
-===============
-Create Diagrams
-===============
+================
+Create a Diagram
+================
 
 .. contents:: On this page
    :local:
@@ -39,9 +39,9 @@ Steps
       .. image:: /img/diagrams/create-diagram.png
          :alt: Create Diagram in Diagram View Pane
 
-      This creates and opens a blank diagram. By default, the diagram
-      view pane hides all entities in the project. When you create a new
-      diagram, Relational Migrator displays it on the :guilabel:`Mapping` screen. 
+      A new blank diagram opens. By default, the diagram view pane hides
+      all entities in the project. Relational Migrator displays the new
+      diagram on the :guilabel:`Mapping` screen. 
 
       .. note::
 
