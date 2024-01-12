@@ -1,7 +1,7 @@
 .. _rm-clone-diagrams:
 
 ===============
-Clone A Diagram
+Clone a Diagram
 ===============
 
 .. contents:: On this page
