@@ -46,6 +46,8 @@ Get Started
 
 - :ref:`rm-understand-diagrams`
 
+- :ref:`rm-create-diagrams`
+
 - :ref:`rm-navigate-diagrams`
 
 - :ref:`rm-apply-layout`
