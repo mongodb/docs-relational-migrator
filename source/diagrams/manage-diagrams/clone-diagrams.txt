@@ -50,17 +50,16 @@ Steps
 
    .. step:: Click the :icon-fa5:`ellipsis-h` button in the :guilabel:`Diagram Properties` pane
 
-      A menu opens. 
-
       .. image:: /img/diagrams/duplicate_diagram.png
          :alt: Diagram Properties Options menu
 
+      A menu opens. 
+
    .. step:: Click the Duplicate Diagram option
 
-      This create and opens a new diagram with the same entities as the
-      duplicated diagram. The visibility of entities on your new diagram
-      is identical to the visibility of entities on the duplicated
-      diagram. 
+      A new diagram with the same entities as the duplicated diagram
+      opens. The visibility of entities on your new diagram is identical
+      to the duplicated diagram. 
       
       .. note :: 
 
