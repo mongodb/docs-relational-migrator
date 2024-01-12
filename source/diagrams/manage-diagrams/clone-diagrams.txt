@@ -1,8 +1,8 @@
 .. _rm-clone-diagrams:
 
-==============
-Clone Diagrams
-==============
+===============
+Clone A Diagram
+===============
 
 .. contents:: On this page
    :local:
