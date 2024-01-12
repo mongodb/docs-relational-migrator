@@ -10,7 +10,7 @@ Delete a Diagram
    :depth: 1
    :class: singlecol
 
-You can delete diagrams on the :guilabel:`Mapping` tab of Relational
+You can delete diagrams on the :guilabel:`Mapping` screen of Relational
 Migrator. 
 
 About this Task 
@@ -27,8 +27,11 @@ Steps
 
    .. step:: Navigate to the diagram you want to delete
 
-      Click the name of the diagram in the ribbon tab to display the
+      Click the name of the diagram in the Diagram Toolbar to display the
       diagram. 
+
+      .. image:: /img/diagrams/diagram-toolbar.png
+         :alt: Diagram toolbar   
 
    .. step:: Open the :guilabel:`Diagram Properties` pane
 
