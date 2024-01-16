@@ -10,8 +10,7 @@ Delete a Diagram
    :depth: 1
    :class: singlecol
 
-You can delete diagrams on the :guilabel:`Mapping` screen of Relational
-Migrator. 
+You can delete diagrams on the :guilabel:`Mapping` screen.
 
 About this Task 
 ---------------
