@@ -30,7 +30,7 @@ Steps
 
    .. step:: Navigate to the diagram you want to rename
 
-      In the Diagram Toolbar, click the name of the diagram  to display the
+      In the Diagram Toolbar, click the name of the diagram to display the
       diagram. 
 
       .. image:: /img/diagrams/diagram-toolbar.png
@@ -52,7 +52,7 @@ Steps
    .. step:: Enter your new diagram name in the Name box
 
       Relational Migrator automatically saves your new diagram name and
-      updates the Diagram Toolbar.
+      updates the Diagram Toolbar after you click outside the Name box. 
 
 Learn More 
 ----------
