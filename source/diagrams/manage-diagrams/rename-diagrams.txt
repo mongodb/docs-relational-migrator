@@ -10,9 +10,8 @@ Rename a Diagram
    :depth: 1 
    :class: singlecol
 
-You can rename diagrams on the :guilabel:`Mapping` screen of Relational
-Migrator. Relational Migrator displays diagram names on the Diagram
-Toolbar. 
+You can rename diagrams on the :guilabel:`Mapping` screen. Relational
+Migrator displays diagram names on the Diagram Toolbar. 
 
 About this Task 
 ---------------
