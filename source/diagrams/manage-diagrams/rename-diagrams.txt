@@ -51,8 +51,9 @@ Steps
 
    .. step:: Enter your new diagram name in the Name box
 
-      Relational Migrator automatically saves your new diagram name and
-      updates the Diagram Toolbar after you click outside the Name box. 
+      When you click outside the Name box, Relational Migrator
+      automatically saves your new diagram name and updates the Diagram
+      Toolbar.
 
 Learn More 
 ----------
