@@ -10,32 +10,44 @@ Postgres Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-Overview
+About this Task
+---------------
 
+Connect Relational Migrator to PostgreSQL using the built-in logical 
+decoding feature. When you set up a sync job, Relational Migrator 
+automatically generates the required SQL code for a database 
+administrator to enable replication and configure the migrator account, 
+which they can inspect and manually execute. It will take a few minutes 
+to review and execute the generated SQL code script. This document 
+explains the purpose of those scripts.
 
-Connect Relational Migrator to PostgreSQL using the built-in logical decoding feature. When you set up a new data job, Relational Migrator automatically generates the required SQL code for a database administrator to enable replication and configure the migrator account, which they can inspect and manually execute. It will take a few minutes to review and execute the generated SQL code script. This document explains the purpose of those scripts.
 Supported Database Versions
-  	 
 
- from https://www.mongodb.com/docs/relational-migrator/supported-databases/
+from https://www.mongodb.com/docs/relational-migrator/supported-databases/
 Configure PostgreSQL for Snapshot Jobs
 
 No additional configuration is needed to run snapshot jobs.
 Configure PostgreSQL for CDC Jobs
 
-If PostgreSQL is configured as a cluster, the tool must be pointed to a master server, not a hot or warm standby replica.
+Before you Begin
+----------------
 
-Relational Migrator uses pgoutput plugin for logical decoding. This plug-in is always present in PostgreSQL 10+, so no additional installation or configuration required. Logical replication may not be enabled by default. Hence, the following change is required to the configuration file postgresql.conf:  
+If PostgreSQL is configured as a cluster, the tool must be pointed to a 
+master server, not a hot or warm standby replica.
 
- 
+Relational Migrator uses pgoutput plugin for logical decoding. This 
+plug-in is always present in PostgreSQL 10+, so no additional 
+installation or configuration required. Logical replication may not be 
+enabled by default. Hence, the following change is required to the 
+configuration file postgresql.conf:  
 
 wal_level = logical 
 
- 
+Steps
+-----
 
-Please note that database restart may be required after the above change. For more information on wal_level, see https://postgresqlco.nf/doc/en/param/wal_level
-
-
+Please note that database restart may be required after the above change. 
+For more information on wal_level, see https://postgresqlco.nf/doc/en/param/wal_level
 
 The PostgreSQL account requires at least REPLICATION and LOGIN permission on the database, plus SELECT and USAGE permissions on the source tables:
 
@@ -44,6 +56,9 @@ CREATE ROLE <name> REPLICATION LOGIN;
 Migrator will also require creating a publication by running:
 
 CREATE PUBLICATION "migrator_<name>_publication" FOR TABLE <tables>; 
+
+Learn More
+----------
 
 Further Reading
 
