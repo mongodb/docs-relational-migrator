@@ -37,7 +37,7 @@ Steps
       Click the :icon-fa5:`chevron-circle-right` arrow button to open
       the :guilabel:`Diagram Properties` pane. 
 
-      .. image:: /img/diagrams/diagram_properties.png
+      .. image:: /img/diagrams/diagram-properties.png
          :alt: Diagram Properties pane
 
       The :guilabel:`Diagram Properties` pane displays the active diagram name and
