@@ -85,4 +85,4 @@ Learn More
 
 Relational Migrator uses on the open-source Debezium connector to 
 capture row-level changes. Debezium PostgreSQL 
-`logical decoding <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>__.
+`logical decoding <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>`__.
