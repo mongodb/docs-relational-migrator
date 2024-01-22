@@ -13,13 +13,12 @@ Postgres Migration Prerequisites
 About this Task
 ---------------
 
-Connect Relational Migrator to PostgreSQL using the built-in logical 
-decoding feature. When you set up a sync job, Relational Migrator 
-automatically generates the required SQL code for a database 
-administrator to enable replication and configure the migrator account, 
-which they can inspect and manually execute. It will take a few minutes 
-to review and execute the generated SQL code script. This document 
-explains the purpose of those scripts.
+Connecting Relational Migrator to Postgres requires the
+`logical decoding 
+<https://www.postgresql.org/docs/current/logicaldecoding-explanation.html>`__ 
+enabled. When you set up a new connection, Relational Migrator
+automatically generates the required SQL code to configure PostGres. 
+This document explains the purpose of those scripts.
 
 Supported Database Versions
 
@@ -32,36 +31,51 @@ Configure PostgreSQL for CDC Jobs
 Before you Begin
 ----------------
 
-If PostgreSQL is configured as a cluster, the tool must be pointed to a 
-master server, not a hot or warm standby replica.
+- If PostgreSQL is configured as a cluster, the tool must be connected 
+  to a master server, not a hot or warm standby replica.
 
-Relational Migrator uses pgoutput plugin for logical decoding. This 
-plug-in is always present in PostgreSQL 10+, so no additional 
-installation or configuration required. Logical replication may not be 
-enabled by default. Hence, the following change is required to the 
-configuration file postgresql.conf:  
+- Relational Migrator uses ``pgoutput`` plugin for logical decoding. This 
+  plug-in is included in PostgreSQL versions 10+, no additional 
+  installation or configuration is required. 
 
-wal_level = logical 
+- Logical replication may not be enabled by default. To enable logical 
+  replication change the following line in the ``postgresql.conf`` 
+  configuration file. A database restart is required after 
+  making the change:  
+
+.. code-block:: none
+
+   wal_level = logical 
+
+For more information on ``wal_level``, see 
+`logical decoding <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
 
 Steps
 -----
 
-Please note that database restart may be required after the above change. 
-For more information on wal_level, see https://postgresqlco.nf/doc/en/param/wal_level
+.. procedure::
+   :style: normal
 
-The PostgreSQL account requires at least REPLICATION and LOGIN permission on the database, plus SELECT and USAGE permissions on the source tables:
+   .. step:: Create a SQL Replication Login
 
-CREATE ROLE <name> REPLICATION LOGIN;
+      The PostgreSQL account requires at least REPLICATION and LOGIN 
+      permission on the database, and SELECT and USAGE permissions on the source tables:
 
-Migrator will also require creating a publication by running:
+      .. code-block:: sql
 
-CREATE PUBLICATION "migrator_<name>_publication" FOR TABLE <tables>; 
+         CREATE ROLE <name> REPLICATION LOGIN;
+
+   .. step:: Create a Publication
+
+      Migrator will also require creating a publication by running:
+
+      .. code-block:: sql
+
+         CREATE PUBLICATION "migrator_<name>_publication" FOR TABLE <tables>; 
 
 Learn More
 ----------
 
-Further Reading
-
-The migrator tool relies on the open-source Debezium connector to capture row-level changes.
-
-Debezium PostgreSQL https://debezium.io/documentation/reference/stable/connectors/postgresql.html
+Relational Migrator relies on the open-source Debezium connector to 
+capture row-level changes. Debezium PostgreSQL 
+`logical decoding <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>__.
