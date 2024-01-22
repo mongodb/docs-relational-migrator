@@ -13,20 +13,19 @@ Postgres Migration Prerequisites
 About this Task
 ---------------
 
-Connecting Relational Migrator to Postgres requires the
+Connecting Relational Migrator to Postgres requires
 `logical decoding 
 <https://www.postgresql.org/docs/current/logicaldecoding-explanation.html>`__ 
 enabled. When you set up a new connection, Relational Migrator
 automatically generates the required SQL code to configure PostGres. 
 This document explains the purpose of those scripts.
 
-Supported Database Versions
+These instructions configure PostGres for both Snapshot and 
+Continuous sync jobs.
 
-from https://www.mongodb.com/docs/relational-migrator/supported-databases/
-Configure PostgreSQL for Snapshot Jobs
-
-No additional configuration is needed to run snapshot jobs.
-Configure PostgreSQL for CDC Jobs
+- Snapshot sync jobs migrate all the data and then stops.
+- Continuous sync job run a snapshot and then enter a CDC stage to 
+  continuously replicate data changes.
 
 Before you Begin
 ----------------
@@ -38,23 +37,26 @@ Before you Begin
   plug-in is included in PostgreSQL versions 10+, no additional 
   installation or configuration is required. 
 
-- Logical replication may not be enabled by default. To enable logical 
-  replication change the following line in the ``postgresql.conf`` 
-  configuration file. A database restart is required after 
-  making the change:  
-
-.. code-block:: none
-
-   wal_level = logical 
-
-For more information on ``wal_level``, see 
-`logical decoding <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
-
 Steps
 -----
 
 .. procedure::
    :style: normal
+
+
+   .. step:: Edit the Configuration file 
+
+      Logical replication may not be enabled by default. To enable logical 
+      replication change the following line in the ``postgresql.conf`` 
+      configuration file. A database restart is required after 
+      making the change:  
+
+      .. code-block:: none
+
+         wal_level = logical 
+
+      For more information on ``wal_level``, see 
+      `logical decoding <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
 
    .. step:: Create a SQL Replication Login
 
@@ -67,7 +69,9 @@ Steps
 
    .. step:: Create a Publication
 
-      Migrator will also require creating a publication by running:
+      Migrator requires creating a 
+      `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
+      by running:
 
       .. code-block:: sql
 
