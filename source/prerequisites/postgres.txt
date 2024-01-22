@@ -27,15 +27,18 @@ Continuous sync jobs.
 - Continuous sync job run a snapshot and then enter a CDC stage to 
   continuously replicate data changes.
 
+About this Task
+---------------
+
+Relational Migrator uses ``pgoutput`` plugin for logical decoding. 
+This plug-in is included in PostgreSQL versions 10+, no additional 
+installation or configuration is required. 
+
 Before you Begin
 ----------------
 
-- If PostgreSQL is configured as a cluster, the tool must be connected 
-  to a master server.
-
-- Relational Migrator uses ``pgoutput`` plugin for logical decoding. 
-  This plug-in is included in PostgreSQL versions 10+, no additional 
-  installation or configuration is required. 
+If PostgreSQL is configured as a cluster, the tool must be connected 
+to a master server.
 
 Steps
 -----
@@ -80,6 +83,6 @@ Steps
 Learn More
 ----------
 
-Relational Migrator relies on the open-source Debezium connector to 
+Relational Migrator uses on the open-source Debezium connector to 
 capture row-level changes. Debezium PostgreSQL 
 `logical decoding <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>__.
