@@ -90,8 +90,8 @@ job configurations.
             #. You must have the database level ``db_owner`` role.
             #. The `SQL Server agent <https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver16>`__
                must be running.
-            #. The service account used to connect to SQL Server requires 
-               Select permission against all required tables.
+            #. The service account used to connect to SQL Server 
+               must have Select permission against all required tables.
 
          .. step:: Configure CDC at the database level
 
