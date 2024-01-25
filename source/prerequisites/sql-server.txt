@@ -82,7 +82,7 @@ job configurations.
       .. procedure::
          :style: normal
 
-         .. step:: Enable SQL Server agent and check privilege levels
+         .. step:: Enable SQL Server agent and check database permissions
 
             To enable the CDC option on SQL Server:
 
