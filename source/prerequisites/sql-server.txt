@@ -108,7 +108,7 @@ job configurations.
             use the ``sys.sp_cdc_enable_table`` stored procedure. 
 
             The code block below is a sample of the 
-            automatically-generated code.
+            automatically generated code.
 
             You can run the code manually to enable table CDC:
 
