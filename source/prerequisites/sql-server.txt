@@ -113,7 +113,7 @@ job configurations.
             You can run the code manually to enable table CDC:
 
             .. code-block:: sql
-               :copyable: false
+               :copyable: true
 
                USE MyDB
                GO
