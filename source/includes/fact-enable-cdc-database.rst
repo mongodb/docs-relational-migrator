@@ -14,7 +14,7 @@ database name for ``MyDB``:
    EXEC sys.sp_cdc_enable_db
    GO
 
-For AWS RDS SQL Server:
+For SQL Server instances hosted on AWS RDS:
 
 .. code-block:: sql
    :copyable: true
