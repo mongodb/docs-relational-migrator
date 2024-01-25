@@ -82,7 +82,7 @@ job configurations.
       .. procedure::
          :style: normal
 
-         .. step:: Enable SQL Server agent and check database permissions
+         .. step:: Enable the SQL Server agent and check database permissions
 
             To enable the CDC option on SQL Server:
 
@@ -93,7 +93,7 @@ job configurations.
             #. The service account used to connect to SQL Server requires 
                Select permission against all required tables.
 
-         .. step:: Configure CDC at the Database Level
+         .. step:: Configure CDC at the database level
 
             You can check the SQL Server CDC settings by examining the ``is_tracked_by_cdc`` 
             column in the `sys.tables catalog view <https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-tables-transact-sql?view=sql-server-ver16>`__. 
@@ -102,7 +102,7 @@ job configurations.
 
             .. include:: /includes/fact-enable-cdc-database.rst
 
-         .. step:: Configure CDC at the Table Level
+         .. step:: Configure CDC at the table level
 
             To enable CDC at the table level
             use the ``sys.sp_cdc_enable_table`` stored procedure. 
