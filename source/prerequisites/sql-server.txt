@@ -77,7 +77,7 @@ job configurations.
 
       For continuous jobs against SQL Server, you must enable 
       CDC at both the database level and at the table level for 
-      each table that you want to track.
+      each table.
 
       .. procedure::
          :style: normal
