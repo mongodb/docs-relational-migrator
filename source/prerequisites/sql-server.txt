@@ -44,14 +44,12 @@ Steps
 
 The easiest way to set up your database is to run the automatically 
 generated script that Relational Migrator prompts you to download when
-you :ref:`create a sync job <rm-create-jobs>`. To  
-understand the permissions or run the SQL manually, read the 
-procedures below.
+you :ref:`create a sync job <rm-create-jobs>`. To  understand the 
+permissions or run the SQL manually, read the procedures below.
 
 Configure your SQL Server instance based on the sync job type. 
 Refer to the tab below for details on snapshot and continuous sync 
 job configurations.
-
 
 .. tabs::
 
