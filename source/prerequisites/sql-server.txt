@@ -15,8 +15,9 @@ the database may require some configuration changes. Before you start a
 sync job, Relational Migrator checks if the 
 database is configured correctly. If Relational Migrator determines the 
 database needs configuration changes, it automatically generates a 
-SQL script with the required changes. The commands in this script should 
-be reviewed by a DBA and executed on the database server. This topic 
+SQL script with the required changes. It is recommended to have a 
+Database Administrator (DBA) review the commands in this script and 
+perform their execution on the database server. This topic 
 provides more details on the required configuration steps. SQL Server 
 configuration depends on the type of sync job: 
 
