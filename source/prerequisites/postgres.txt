@@ -50,16 +50,14 @@ Steps
    .. step:: Edit the Configuration file 
 
       Logical replication may not be enabled by default. To enable logical 
-      replication change the following line in the ``postgresql.conf`` 
+      replication change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
+      configuration in the ``postgresql.conf``
       `configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
-      You must restart the database instance after changing the configuration file.  
+      You **must restart the database instance** after changing the configuration file. 
 
       .. code-block:: none
 
          wal_level = logical 
-
-      For more information on ``wal_level``, see 
-      `logical decoding <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
 
    .. step:: Create a SQL Replication Login
 
