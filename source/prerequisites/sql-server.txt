@@ -14,7 +14,7 @@ To run sync jobs from a SQL Server source database,
 the database may require some configuration changes. Before you start a 
 sync job, Relational Migrator checks if the 
 database is configured correctly. If Relational Migrator determines the 
-database needs configuration changes, it will automatically generate a 
+database needs configuration changes, it automatically generates a 
 SQL script with the required changes. The commands in this script should 
 be reviewed by a DBA and executed on the database server. This topic 
 provides more details on the required configuration steps. SQL Server 
@@ -43,11 +43,11 @@ Steps
 
 The easiest way to set up your database is to run the automatically 
 generated script that Relational Migrator prompts you to download when
-you :ref:`create a sync job <rm-create-jobs>`. If you would like to 
+you :ref:`create a sync job <rm-create-jobs>`. To  
 understand the permissions or run the SQL manually, read the 
 procedures below.
 
-Configure your SQL Server Instance based on the sync job type. 
+Configure your SQL Server instance based on the sync job type. 
 Refer to the tab below for details on snapshot and continuous sync 
 job configurations.
 
