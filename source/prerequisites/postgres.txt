@@ -61,8 +61,9 @@ Steps
 
    .. step:: Create a SQL Replication Login
 
-      The PostgreSQL account requires at least REPLICATION and LOGIN 
-      permission on the database, and SELECT and USAGE permissions on the source tables:
+      The PostgreSQL account requires ``REPLICATION`` and ``LOGIN`` 
+      database permissions as well as ``SELECT`` and ``USAGE`` 
+      permissions on each source table:
 
       .. code-block:: sql
 
@@ -81,6 +82,6 @@ Steps
 Learn More
 ----------
 
-Relational Migrator uses on the open-source Debezium connector to 
-capture row-level changes. Debezium PostgreSQL 
-`logical decoding <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>`__.
+Relational Migrator relies on the open-source Debezium connector to 
+capture row-level changes. For more details, see
+`Debezium PostgreSQL <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>`__.
