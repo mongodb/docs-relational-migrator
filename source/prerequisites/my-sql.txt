@@ -107,4 +107,4 @@ Learn More
 
 Relational Migrator relies on the open-source Debezium connector to 
 capture row-level changes. For more details, see
-`Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/mysql.html >`__.
+`Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
