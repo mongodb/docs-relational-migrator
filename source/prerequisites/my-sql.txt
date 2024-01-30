@@ -10,4 +10,88 @@ MySQL Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-MySQL.
+To run sync jobs from a MySQL source database, the database may require 
+some configuration changes. If Relational Migrator determines the 
+database needs configuration changes, it automatically generates a 
+SQL script with the required changes. It is recommended to have a 
+Database Administrator (DBA) review the commands in this script and 
+perform their execution on the database server. This topic 
+provides more details on the required configuration steps.
+
+.. include:: /includes/fact-short-sync-job-desc.rst
+
+For details on supported versions of MySQL, see 
+:ref:`supported-databases`.
+
+About this Task
+---------------
+
+
+Steps
+-----
+
+Connecting Relational Migrator to MySQL 
+requires the ``binary log feature`` enabed on your MySQL instance. 
+The binary log (Binlog) records all operations in the order
+they are committed to the database. Relational Migrator 
+supports two types of sync jobs:
+
+
+User Permissions & Job Setup 
+
+.. procedure::
+   :style: normal
+
+   .. step:: User Permissions & Job Setup 
+
+      The tool generates SQL that can be executed to enable Binlog for 
+      the source MySQL database, and optionally create a new MySQL 
+      account for the migrator tool. 
+      Reference SQL for Binlog and account creation below:
+
+      .. code-block:: sql
+         :copyable: true
+
+         CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+
+      .. code-block:: sql
+         :copyable: true
+         
+         GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
+
+      .. code-block:: sql
+         :copyable: true
+
+         FLUSH PRIVILEGES; 
+
+   .. step:: Manually Verify Binlog Is Enabled
+
+         Note that the tool will automatically check this setting for you. 
+         To manually verify:
+
+         To manually check whether the log-bin option is already enabled:
+
+         .. code-block:: sql
+            :copyable: true
+
+            // for MySql 5.x
+
+            SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+            FROM information_schema.global_variables WHERE variable_name='log_bin';
+
+         .. code-block:: sql
+            :copyable: true
+
+            // for MySql 8.x
+
+            SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+            FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+
+Learn More
+----------
+
+Relational Migrator relies on the open-source Debezium connector to 
+capture row-level changes. For more details, see
+`Debezium SQL Server <https://debezium.io/documentation/reference/stable/connectors/mysql.html >`__.
