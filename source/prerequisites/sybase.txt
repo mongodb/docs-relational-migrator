@@ -11,5 +11,5 @@ Sybase Migration Prerequisites
    :class: singlecol
 
 
-There are no prerequisites requirements to use Relational Migrator with
+There are no prerequisite requirements to use Relational Migrator with
 Sybase ASE.
