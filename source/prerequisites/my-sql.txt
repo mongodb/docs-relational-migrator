@@ -26,18 +26,13 @@ For details on supported versions of MySQL, see
 About this Task
 ---------------
 
+Connecting Relational Migrator to MySQL 
+requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
+enabed on your MySQL instance. The binary log (Binlog) records all 
+operations in the order they are committed to the database. 
 
 Steps
 -----
-
-Connecting Relational Migrator to MySQL 
-requires the ``binary log feature`` enabed on your MySQL instance. 
-The binary log (Binlog) records all operations in the order
-they are committed to the database. Relational Migrator 
-supports two types of sync jobs:
-
-
-User Permissions & Job Setup 
 
 .. procedure::
    :style: normal
