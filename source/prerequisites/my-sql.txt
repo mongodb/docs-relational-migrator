@@ -40,9 +40,9 @@ Steps
    .. step:: (Optional) User permissions setup 
 
       Relational Migrator generates SQL that can be executed to enable 
-      ``Binlog`` for the source MySQL database. The following optional 
-      code creates a new MySQL account for Relational Migrator to connect
-      to the MySQL instance. 
+      ``Binlog`` for the source MySQL database. The following 
+      code creates a new MySQL service account for Relational Migrator 
+      to connect to the MySQL instance. 
 
       Create a service account:
 
