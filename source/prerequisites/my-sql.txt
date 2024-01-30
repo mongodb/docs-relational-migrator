@@ -67,13 +67,9 @@ Steps
 
    .. step:: Manually Verify Binlog Is Enabled
 
-         To manually check the if ``log-bin`` option is already 
+         Relational Migrator automaticaly checks this setting for 
+         you. To manually check the if ``log-bin`` option is already 
          enabled use the code below for your version of MySQL:
-
-         .. note:: 
-            
-            Relational Migrator automaticaly checks this setting for 
-            you. 
 
          .. tabs::
 
