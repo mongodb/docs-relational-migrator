@@ -65,11 +65,11 @@ Steps
 
          FLUSH PRIVILEGES; 
 
-   .. step:: Manually Verify Binlog Is Enabled
+   .. step:: Manually verify Binlog is enabled
 
          Relational Migrator automaticaly checks this setting for 
-         you. To manually check the if ``Binlog`` option is already 
-         enabled use the queries below for your version of MySQL:
+         you. To manually check the if the Binlog`` option is 
+         enabled, use the queries below for your version of MySQL:
 
          .. tabs::
 
