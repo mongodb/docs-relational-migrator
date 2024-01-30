@@ -77,16 +77,6 @@ Steps
 
          .. tabs::
 
-            .. tab:: MySql 5.x
-               :tabid: mysql-5x
-
-               .. code-block:: sql
-                  :copyable: true
-
-                  SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
-
-                  FROM information_schema.global_variables WHERE variable_name='log_bin';
-
             .. tab:: MySql 8.x
                :tabid: mysql-8x
 
@@ -96,6 +86,16 @@ Steps
                   SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
 
                   FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+
+            .. tab:: MySql 5.x
+               :tabid: mysql-5x
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                  FROM information_schema.global_variables WHERE variable_name='log_bin';
 
 Learn More
 ----------
