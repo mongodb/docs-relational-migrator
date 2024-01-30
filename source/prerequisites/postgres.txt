@@ -1,7 +1,7 @@
 .. _rm-prereq-postgres:
 
 ================================
-Postgres Migration Prerequisites
+PostgreSQL Migration Prerequisites
 ================================
 
 .. contents:: On this page
@@ -13,14 +13,14 @@ Postgres Migration Prerequisites
 About this Task
 ---------------
 
-Connecting Relational Migrator to Postgres requires
+Connecting Relational Migrator to PostgreSQL requires
 `logical decoding 
 <https://www.postgresql.org/docs/current/logicaldecoding-explanation.html>`__ 
-enabled. When you set up a new connection, Relational Migrator
-automatically generates the required SQL code to configure PostgreSQL. 
-This document explains the purpose of those scripts.
+enabled on your PostGreSQL instance. When you set up a new connection, 
+Relational Migrator automatically generates the required SQL code to 
+configure PostgreSQL. This document explains the purpose of those scripts.
 
-These instructions configure PostgreSQL for both Snapshot and 
+These instructions configure PostgreSQL **for both** Snapshot and 
 Continuous sync jobs.
 
 - Snapshot sync jobs migrate all the data and then stops.
@@ -30,9 +30,9 @@ Continuous sync jobs.
 About this Task
 ---------------
 
-Relational Migrator uses ``pgoutput`` plugin for logical decoding. 
-This plug-in is included in PostgreSQL versions 10+, no additional 
-installation or configuration is required. 
+Relational Migrator uses the PostgreSQL ``pgoutput`` plugin for logical 
+decoding. This plug-in is included in PostgreSQL versions 10+, no 
+additional installation or configuration is required. 
 
 Before you Begin
 ----------------
@@ -51,8 +51,8 @@ Steps
 
       Logical replication may not be enabled by default. To enable logical 
       replication change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
-      configuration in the ``postgresql.conf``
-      `configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
+      configuration in the 
+      `postgresql.conf configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
       You **must restart the database instance** after changing the configuration file. 
 
       .. code-block:: none
