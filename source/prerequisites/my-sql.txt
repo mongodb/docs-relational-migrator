@@ -42,22 +42,28 @@ User Permissions & Job Setup
 .. procedure::
    :style: normal
 
-   .. step:: User Permissions & Job Setup 
+   .. step:: (Optional) User permissions and job setup 
 
-      The tool generates SQL that can be executed to enable Binlog for 
-      the source MySQL database, and optionally create a new MySQL 
-      account for the migrator tool. 
-      Reference SQL for Binlog and account creation below:
+      Relational Migrator generates SQL that can be executed to enable 
+      ``Binlog`` for the source MySQL database. The following optional 
+      code creates a new MySQL account for Relational Migrator to connect
+      to the MySQL instance. 
+
+      Create a service account:
 
       .. code-block:: sql
          :copyable: true
 
          CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 
+      Grant the required permissions to the service account:
+
       .. code-block:: sql
          :copyable: true
          
          GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
+
+      Apply the user privilege changes:
 
       .. code-block:: sql
          :copyable: true
@@ -66,28 +72,35 @@ User Permissions & Job Setup
 
    .. step:: Manually Verify Binlog Is Enabled
 
-         Note that the tool will automatically check this setting for you. 
-         To manually verify:
+         To manually check the if ``log-bin`` option is already 
+         enabled use the code below for your version of MySQL:
 
-         To manually check whether the log-bin option is already enabled:
+         .. note:: 
+            
+            Relational Migrator automaticaly checks this setting for 
+            you. 
 
-         .. code-block:: sql
-            :copyable: true
+         .. tabs::
 
-            // for MySql 5.x
+            .. tab:: MySql 5.x
+               :tabid: mysql-5x
 
-            SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+               .. code-block:: sql
+                  :copyable: true
 
-            FROM information_schema.global_variables WHERE variable_name='log_bin';
+                  SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
 
-         .. code-block:: sql
-            :copyable: true
+                  FROM information_schema.global_variables WHERE variable_name='log_bin';
 
-            // for MySql 8.x
+            .. tab:: MySql 8.x
+               :tabid: mysql-8x
 
-            SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+               .. code-block:: sql
+                  :copyable: true
 
-            FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+                  SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                  FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
 
 Learn More
 ----------
