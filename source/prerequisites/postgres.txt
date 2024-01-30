@@ -71,7 +71,7 @@ Steps
 
    .. step:: Create a Publication
 
-      Migrator requires creating a 
+      Relational Migrator require creating a 
       `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
       by running:
 
