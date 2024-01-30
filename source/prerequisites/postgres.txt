@@ -37,8 +37,8 @@ additional installation or configuration is required.
 Before you Begin
 ----------------
 
-If PostgreSQL is configured as a cluster, the tool must be connected 
-to a master server.
+If PostgreSQL is configured as a cluster, Relational Migrator connect
+to the master server.
 
 Steps
 -----
