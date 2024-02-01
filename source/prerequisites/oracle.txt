@@ -10,4 +10,116 @@ Oracle Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-Oracle.
+Overview
+
+Connecting Relational Migrator to Oracle requires a system administrator role user to enable LogMiner in the database, if not already enabled. Relational Migrator supports two types of sync jobs:
+
+    Snapshot which migrates all the data and then stops.
+    Continuous which runs a snapshot and then enters a CDC stage to continuously replicate changes.
+
+When you set up a new data migration, Relational Migrator will automatically generate the required SQL code for a database administrator to enable CDC for that job, which they can inspect and manually execute. It will take a few minutes to review and execute the generated SQL code script. This document explains the purpose of those scripts.
+Supported Database Versions
+12c and higher 	Self hosted, AWS RDS, Azure SQL Database
+
+ from https://www.mongodb.com/docs/relational-migrator/supported-databases/
+User Permissions
+
+For one-time enablement of LogMiner: A database administrator with a SYSDBA role must manually enable this setting.
+
+For a snapshot only job, the following grants are required:
+
+GRANT CREATE SESSION TO {{user}};
+
+GRANT SELECT_CATALOG_ROLE TO {{user}};
+
+GRANT SELECT ANY TABLE TO {{user}};
+
+GRANT SELECT ON V$DATABASE TO {{user}}; 
+
+For a CDC job, the following grants are required:
+
+GRANT SET CONTAINER TO {{user}};
+
+GRANT FLASHBACK ANY TABLE TO {{user}};
+
+GRANT EXECUTE_CATALOG_ROLE TO {{user}};
+
+GRANT SELECT ANY TRANSACTION TO {{user}};
+
+GRANT LOGMINING TO {{user}};
+
+GRANT CREATE TABLE TO {{user}};
+
+GRANT LOCK ANY TABLE TO {{user}};
+
+GRANT CREATE SEQUENCE TO {{user}};
+
+GRANT SELECT ON DBA_TABLESPACES TO {{user}}; GRANT EXECUTE ON DBMS_LOGMNR TO {{user}};
+
+GRANT EXECUTE ON DBMS_LOGMNR_D TO {{user}};
+
+GRANT SELECT ON V_$LOG TO {{user}};
+
+GRANT SELECT ON V_$LOG_HISTORY TO {{user}};
+
+GRANT SELECT ON V_$LOGMNR_LOGS TO {{user}};
+
+GRANT SELECT ON V_$LOGMNR_CONTENTS TO {{user}};
+
+GRANT SELECT ON V_$LOGMNR_PARAMETERS TO {{user}};
+
+GRANT SELECT ON V_$LOGFILE TO {{user}};
+
+GRANT SELECT ON V_$ARCHIVED_LOG TO {{user}};
+
+GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO {{user}};
+
+GRANT SELECT ON V_$TRANSACTION TO {{user}};
+
+Check If LogMiner Mode Already Enabled
+
+Simply set up a new data migration job, and when you input your Oracle account details on the 'Source Database' connection screen, the tool will automatically detect your LogMiner status and generate SQL statements to enable this if required. You can also check manually by running the following query:
+
+select log_mode from v$database; 
+
+ 
+
+Documentation from Oracle explaining how to toggle archive logging. https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm
+Snapshot Jobs
+
+For Snapshot jobs against Oracle, it is necessary to enable LogMiner at the database level. This is a sample of the automatically-generated code, which you could also run manually by substituting your database name:
+
+ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
+
+ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' SCOPE=spfile;
+
+ 
+
+SHUTDOWN IMMEDIATE;
+
+STARTUP MOUNT
+
+ALTER DATABASE ARCHIVELOG;
+
+ 
+
+ALTER DATABASE OPEN;
+
+Continuous Jobs
+
+For Continuous jobs against Oracle, it is necessary to enable supplemental logging on a database level by executing the following query:
+
+ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
+
+Supplemental logging should also be enabled for every captured table (alternatively, the entire database) using:
+
+ALTER TABLE {{schemaName}}.{{tableName}} ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS; 
+
+
+Further Reading
+
+The migrator tool relies on the open-source Debezium connector to capture row-level changes.
+
+Debezium Oracle https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_database
+
+Documentation from Oracle explaining how to toggle archive logging. https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm
