@@ -90,20 +90,20 @@ Steps
                following ``mysqld`` command from the terminal:
 
                .. tab:: MacOS / Linux
-                     :tabid: macos-linux
+                  :tabid: macos-linux
 
-                     .. code-block:: 
-                        :copyable: true
+                  .. code-block:: 
+                     :copyable: true
 
-                        mysql --help | grep cnf
+                     mysql --help | grep cnf
 
                .. tab:: Windows
-                     :tabid: windows
+                  :tabid: windows
 
-                     .. code-block:: 
-                        :copyable: true
+                  .. code-block:: 
+                     :copyable: true
 
-                        mysql --help | findstr cnf
+                     mysql --help | findstr cnf
 
             #. Run the following SQL query to get the ``server_id`` 
                value for your deployment:

@@ -69,7 +69,7 @@ job configurations.
           unchanged, and does not add any performance overhead. Enabling
           CDC alone does not result in changes being captured.
 
-            .. include:: /includes/fact-enable-cdc-database.rst
+         .. include:: /includes/fact-enable-cdc-database.rst
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
