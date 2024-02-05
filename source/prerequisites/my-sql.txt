@@ -134,7 +134,7 @@ Steps
 
                         mysql --help | grep cnf
 
-            #. Under the ``[mysqld] `` section of your MySQL 
+            #. Under the ``[mysqld]`` section of your MySQL 
                configuration file add the following lines. Replace 
                the ``XXXXX`` value with the ``server_id`` from the 
                previous query:
