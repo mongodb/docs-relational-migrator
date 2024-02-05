@@ -129,30 +129,32 @@ Steps
                   automated backups for binary logging. If automated 
                   backups are not enabled, ``binlog`` is disabled even
                   if setting the values in the configuration file.
-                  
-               .. tab:: MySql 8.x
-                  :tabid: mysql-8x
 
-                  .. code-block::
-                     :copyable: true
+               .. tabs::
 
-                     server-id         = XXXXX
-                     log_bin                     = mysql-bin
-                     binlog_format               = ROW
-                     binlog_row_image            = FULL
-                     binlog_expire_logs_seconds  = 864000
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
 
-               .. tab:: MySql 5.x
-                  :tabid: mysql-5x
+                     .. code-block::
+                        :copyable: true
 
-                  .. code-block:: 
-                     :copyable: true
+                        server-id         = XXXXX
+                        log_bin                     = mysql-bin
+                        binlog_format               = ROW
+                        binlog_row_image            = FULL
+                        binlog_expire_logs_seconds  = 864000
 
-                     server-id         = XXXXX
-                     log_bin                     = mysql-bin
-                     binlog_format               = ROW
-                     binlog_row_image            = FULL
-                     expire_log_days = 10 
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        server-id         = XXXXX
+                        log_bin                     = mysql-bin
+                        binlog_format               = ROW
+                        binlog_row_image            = FULL
+                        expire_log_days = 10 
 
 
 Learn More
