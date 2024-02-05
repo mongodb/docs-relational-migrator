@@ -138,11 +138,11 @@ Steps
                      .. code-block::
                         :copyable: true
 
-                        server-id         = XXXXX
-                        log_bin                     = mysql-bin
-                        binlog_format               = ROW
-                        binlog_row_image            = FULL
-                        binlog_expire_logs_seconds  = 864000
+                        server-id = XXXXX
+                        log_bin = mysql-bin
+                        binlog_format = ROW
+                        binlog_row_image = FULL
+                        binlog_expire_logs_seconds = 864000
 
                   .. tab:: MySql 5.x
                      :tabid: mysql-5x
@@ -150,12 +150,11 @@ Steps
                      .. code-block:: 
                         :copyable: true
 
-                        server-id         = XXXXX
-                        log_bin                     = mysql-bin
-                        binlog_format               = ROW
-                        binlog_row_image            = FULL
+                        server-id = XXXXX
+                        log_bin = mysql-bin
+                        binlog_format = ROW
+                        binlog_row_image = FULL
                         expire_log_days = 10 
-
 
 Learn More
 ----------
