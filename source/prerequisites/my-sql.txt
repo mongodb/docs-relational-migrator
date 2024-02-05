@@ -146,7 +146,7 @@ Steps
                         binlog_format               = ROW
                         binlog_row_image            = FULL
                         expire_log_days = 10 
-
+            
 Learn More
 ----------
 
