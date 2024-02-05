@@ -46,14 +46,63 @@ Steps
       .. procedure::
          :style: normal
 
-         .. step:: Configure CDC at the Database Level
+         .. step:: (Optional) Set up user permissions
 
-          Enabling CDC at the database-level CDC generates a small 
-          number of system tables in the database, leaving user tables 
-          unchanged, and does not add any performance overhead. Enabling
-          CDC alone does not result in changes being captured.
+            Relational Migrator generates SQL scripts that can 
+            be executed to enable 
+            ``Binlog`` for the source MySQL database. The 
+            following code creates a new MySQL service account 
+            for Relational Migrator to connect to the MySQL 
+            instance. 
 
-            .. include:: /includes/fact-enable-cdc-database.rst
+            Create a service account:
+
+            .. code-block:: sql
+               :copyable: true
+
+               CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+
+            Grant the required permissions to the service account:
+
+            .. code-block:: sql
+               :copyable: true
+               
+               GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
+
+            Apply the user privilege changes:
+
+            .. code-block:: sql
+               :copyable: true
+
+               FLUSH PRIVILEGES; 
+
+         .. step:: Manually verify Binlog is enabled
+
+               Relational Migrator automatically checks this setting for 
+               you. To manually check the if the ``Binlog`` option is 
+               enabled, use the queries below for your version of MySQL:
+
+               .. tabs::
+
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                        FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                        FROM information_schema.global_variables WHERE variable_name='log_bin';
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
