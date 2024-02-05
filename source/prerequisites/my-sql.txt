@@ -123,13 +123,6 @@ Steps
                file add the following lines. Replace the ``XXXXX`` value 
                with the ``server_id`` from the previous query:
 
-               .. note::
-
-                  If your running MySQL on AWS RDS, you must enable 
-                  automated backups for binary logging. If automated 
-                  backups are not enabled, ``binlog`` is disabled even
-                  if setting the values in the configuration file.
-
                .. tabs::
 
                   .. tab:: MySql 8.x
@@ -155,6 +148,13 @@ Steps
                         binlog_format = ROW
                         binlog_row_image = FULL
                         expire_log_days = 10 
+
+               .. note::
+
+                  If your running MySQL on AWS RDS, you must enable 
+                  automated backups for binary logging. If automated 
+                  backups are not enabled, ``binlog`` is disabled even
+                  if setting the values in the configuration file.
 
 Learn More
 ----------
