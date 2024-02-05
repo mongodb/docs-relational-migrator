@@ -49,33 +49,7 @@ Steps
       .. procedure::
          :style: normal
 
-         .. step:: (Optional) Set up user permissions
-
-            Relational Migrator generates SQL scripts that can be executed to enable 
-            ``Binlog`` for the source MySQL database. The following 
-            code creates a new MySQL service account for Relational Migrator 
-            to connect to the MySQL instance. 
-
-            Create a service account:
-
-            .. code-block:: sql
-               :copyable: true
-
-               CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-
-            Grant the required permissions to the service account:
-
-            .. code-block:: sql
-               :copyable: true
-               
-               GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
-
-            Apply the user privilege changes:
-
-            .. code-block:: sql
-               :copyable: true
-
-               FLUSH PRIVILEGES; 
+         .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
 
          .. step:: Manually verify Binlog is enabled
 
