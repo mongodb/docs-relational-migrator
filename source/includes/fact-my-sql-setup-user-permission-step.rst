@@ -16,7 +16,9 @@
    .. code-block:: sql
       :copyable: true
       
-      GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
+      GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT 
+      ON *.* 
+      TO 'user'@'%';
 
    Apply the user privilege changes:
 

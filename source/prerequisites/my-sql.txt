@@ -18,7 +18,7 @@ Database Administrator (DBA) review the commands in this script and
 perform their execution on the database server. The 
 MySQL Server configurations depend on the type of sync job:
 
-.. include:: /includes/fact-short-sync-job-desc.rst
+.. include:: /includes/pfact-short-sync-job-desc.rst
 
 For details on supported versions of MySQL, see 
 :ref:`supported-databases`.
