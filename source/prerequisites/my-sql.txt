@@ -40,11 +40,11 @@ Steps
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
-         Running continuous jobs on Relational Migrator 
-         requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
-         to be enabled on your MySQL instance. The binary log (Binlog) 
-         records all operations in the order they are committed to the 
-         database. 
+      Running continuous jobs on Relational Migrator 
+      requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
+      to be enabled on your MySQL instance. The binary log (Binlog) 
+      records all operations in the order they are committed to the 
+      database. 
 
       .. procedure::
          :style: normal
@@ -83,7 +83,7 @@ Steps
                         SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
 
                         FROM information_schema.global_variables WHERE variable_name='log_bin';
-         
+
          .. step:: Locate the ``mycnf`` configuration file
 
             a. To locate the config file for your MySQL instance run the 
@@ -120,29 +120,29 @@ Steps
                file add the following lines, replace the ``XXXXX`` value 
                with the ``server_id`` from the previous query:
 
-                  .. tab:: MySql 8.x
-                     :tabid: mysql-8x
+               .. tab:: MySql 8.x
+                  :tabid: mysql-8x
 
-                     .. code-block::
-                        :copyable: true
+                  .. code-block::
+                     :copyable: true
 
-                        server-id         = XXXXX
-                        log_bin                     = mysql-bin
-                        binlog_format               = ROW
-                        binlog_row_image            = FULL
-                        binlog_expire_logs_seconds  = 864000
+                     server-id         = XXXXX
+                     log_bin                     = mysql-bin
+                     binlog_format               = ROW
+                     binlog_row_image            = FULL
+                     binlog_expire_logs_seconds  = 864000
 
-                  .. tab:: MySql 5.x
-                     :tabid: mysql-5x
+               .. tab:: MySql 5.x
+                  :tabid: mysql-5x
 
-                     .. code-block:: 
-                        :copyable: true
+                  .. code-block:: 
+                     :copyable: true
 
-                        server-id         = XXXXX
-                        log_bin                     = mysql-bin
-                        binlog_format               = ROW
-                        binlog_row_image            = FULL
-                        expire_log_days = 10 
+                     server-id         = XXXXX
+                     log_bin                     = mysql-bin
+                     binlog_format               = ROW
+                     binlog_row_image            = FULL
+                     expire_log_days = 10 
 
 Learn More
 ----------
