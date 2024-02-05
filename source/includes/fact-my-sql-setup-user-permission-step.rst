@@ -2,7 +2,9 @@
 
    The following code creates a new MySQL service account 
    for Relational Migrator to connect to the MySQL 
-   instance. 
+   instance. Alternatively, you can use an existing MySQL service 
+   account to connect to Relational Migrator with the appropriate 
+   permissions.
 
    Create a service account:
 

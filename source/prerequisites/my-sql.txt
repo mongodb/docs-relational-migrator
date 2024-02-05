@@ -18,7 +18,7 @@ Database Administrator (DBA) review the commands in this script and
 perform their execution on the database server. The 
 MySQL Server configurations depend on the type of sync job:
 
-.. include:: /includes/pfact-short-sync-job-desc.rst
+.. include:: /includes/fact-short-sync-job-desc.rst
 
 For details on supported versions of MySQL, see 
 :ref:`supported-databases`.
@@ -53,10 +53,14 @@ Steps
 
          .. step:: Manually verify Binlog is enabled
 
-               
                Relational Migrator automatically checks this setting for 
                you. To manually check the if the ``Binlog`` option is 
                enabled, use the queries below for your version of MySQL:
+
+               .. note:: 
+
+                  ``Binlog`` is automatically enabled by default 
+                  on MySQL ``8.x`` versions.
 
                .. tabs::
 
@@ -79,6 +83,33 @@ Steps
                         SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
 
                         FROM information_schema.global_variables WHERE variable_name='log_bin';
+         
+         .. step:: Locate the ``mycnf`` configuration file
+
+            To locate the config file for your MySQL instance run the 
+            following mysqld command from the terminal:
+
+            a. 
+               mysql --help | grep cnf //macOS / Linux
+               mysql --help | findstr cnf // Windows
+
+            b. Under the ``under [mysqld] section`` add the following 
+               lines:
+
+               server_id               = 1
+               log_bin                 = /var/log/mysql/mysql-bin.log
+               max_binlog_size         = 100M
+               binlog_format           = mixed
+               binlog_expire_logs_seconds = 864000
+
+
+               For MySQL ``5.x``:
+
+               server_id               = 1
+               log_bin                 = /var/log/mysql/mysql-bin.log
+               max_binlog_size         = 100M
+               binlog_format           = mixed
+               expire_log_days = 10 
 
 Learn More
 ----------
