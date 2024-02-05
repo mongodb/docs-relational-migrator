@@ -16,7 +16,7 @@ About this Task
 Connecting Relational Migrator to PostgreSQL requires
 `logical decoding 
 <https://www.postgresql.org/docs/current/logicaldecoding-explanation.html>`__ 
-enabled on your PostGreSQL instance. When you set up a new connection, 
+to be enabled on your PostgreSQL instance. When you set up a new connection, 
 Relational Migrator automatically generates the required SQL code to 
 configure PostgreSQL. This document explains the purpose of those scripts.
 
@@ -47,10 +47,10 @@ Steps
    :style: normal
 
 
-   .. step:: Edit the Configuration file 
+   .. step:: Edit the configuration file 
 
       Logical replication may not be enabled by default. To enable logical 
-      replication change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
+      replication, change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
       configuration in the 
       `postgresql.conf configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
       You **must restart the database instance** after changing the configuration file. 
@@ -59,7 +59,7 @@ Steps
 
          wal_level = logical 
 
-   .. step:: Create a SQL Replication Login
+   .. step:: Create a SQL replication login
 
       The PostgreSQL account requires ``REPLICATION`` and ``LOGIN`` 
       database permissions as well as ``SELECT`` and ``USAGE`` 
@@ -71,7 +71,7 @@ Steps
 
    .. step:: Create a Publication
 
-      Relational Migrator require creating a 
+      Relational Migrator requires you create a 
       `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
       by running:
 
