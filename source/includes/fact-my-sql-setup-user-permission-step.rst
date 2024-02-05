@@ -6,25 +6,25 @@
    account to connect to Relational Migrator with the appropriate 
    permissions.
 
-   Create a service account:
+   a. Create a service account:
 
-   .. code-block:: sql
-      :copyable: true
+      .. code-block:: sql
+         :copyable: true
 
-      CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+         CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 
-   Grant the required permissions to the service account:
+   #. Grant the required permissions to the service account:
 
-   .. code-block:: sql
-      :copyable: true
-      
-      GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT 
-      ON *.* 
-      TO 'user'@'%';
+      .. code-block:: sql
+         :copyable: true
+         
+         GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT 
+         ON *.* 
+         TO 'user'@'%';
 
-   Apply the user privilege changes:
+   #. Apply the user privilege changes:
 
-   .. code-block:: sql
-      :copyable: true
+      .. code-block:: sql
+         :copyable: true
 
-      FLUSH PRIVILEGES; 
+         FLUSH PRIVILEGES; 
