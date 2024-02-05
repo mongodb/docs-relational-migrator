@@ -89,13 +89,29 @@ Steps
             a. Run the following SQL query to get the ``server_id`` 
                value for your MySQL instance:
 
-               .. code-block:: sql
-                  :copyable: true
+               .. tabs::
 
-                  SELECT variable_value 
-                  FROM 
-                  information_schema.global_variables 
-                  WHERE variable_name='server_id';
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value 
+                        FROM 
+                        performance_schema.global_variables 
+                        WHERE variable_name='server_id';
+
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value 
+                        FROM 
+                        information_schema.global_variables 
+                        WHERE variable_name='server_id';
 
             #. To locate the config file for your MySQL instance run the 
                following ``mysqld`` command from the terminal:
@@ -118,10 +134,10 @@ Steps
 
                         mysql --help | grep cnf
 
-
-            #. Under the ``mysqld`` section of your mySQL configuration 
-               file add the following lines. Replace the ``XXXXX`` value 
-               with the ``server_id`` from the previous query:
+            #. Under the ``[mysqld] `` section of your MySQL 
+               configuration file add the following lines. Replace 
+               the ``XXXXX`` value with the ``server_id`` from the 
+               previous query:
 
                .. tabs::
 
