@@ -57,65 +57,65 @@ Steps
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
-      
-   .. procedure::
-      :style: normal
 
-      .. step:: (Optional) Set up user permissions
+      .. procedure::
+         :style: normal
 
-         Relational Migrator generates SQL scripts that can be executed to enable 
-         ``Binlog`` for the source MySQL database. The following 
-         code creates a new MySQL service account for Relational Migrator 
-         to connect to the MySQL instance. 
+         .. step:: (Optional) Set up user permissions
 
-         Create a service account:
+            Relational Migrator generates SQL scripts that can be executed to enable 
+            ``Binlog`` for the source MySQL database. The following 
+            code creates a new MySQL service account for Relational Migrator 
+            to connect to the MySQL instance. 
 
-         .. code-block:: sql
-            :copyable: true
+            Create a service account:
 
-            CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+            .. code-block:: sql
+               :copyable: true
 
-         Grant the required permissions to the service account:
+               CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 
-         .. code-block:: sql
-            :copyable: true
-            
-            GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
+            Grant the required permissions to the service account:
 
-         Apply the user privilege changes:
+            .. code-block:: sql
+               :copyable: true
+               
+               GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
 
-         .. code-block:: sql
-            :copyable: true
+            Apply the user privilege changes:
 
-            FLUSH PRIVILEGES; 
+            .. code-block:: sql
+               :copyable: true
 
-      .. step:: Manually verify Binlog is enabled
+               FLUSH PRIVILEGES; 
 
-            Relational Migrator automatically checks this setting for 
-            you. To manually check the if the ``Binlog`` option is 
-            enabled, use the queries below for your version of MySQL:
+         .. step:: Manually verify Binlog is enabled
 
-            .. tabs::
+               Relational Migrator automatically checks this setting for 
+               you. To manually check the if the ``Binlog`` option is 
+               enabled, use the queries below for your version of MySQL:
 
-               .. tab:: MySql 8.x
-                  :tabid: mysql-8x
+               .. tabs::
 
-                  .. code-block:: sql
-                     :copyable: true
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
 
-                     SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+                     .. code-block:: sql
+                        :copyable: true
 
-                     FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
 
-               .. tab:: MySql 5.x
-                  :tabid: mysql-5x
+                        FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
 
-                  .. code-block:: sql
-                     :copyable: true
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
 
-                     SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+                     .. code-block:: sql
+                        :copyable: true
 
-                     FROM information_schema.global_variables WHERE variable_name='log_bin';
+                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                        FROM information_schema.global_variables WHERE variable_name='log_bin';
 
 Learn More
 ----------
