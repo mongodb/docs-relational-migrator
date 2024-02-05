@@ -51,7 +51,7 @@ Steps
 
          .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
 
-         .. step:: Manually verify Binlog is enabled
+         .. step:: (Optional) Manually verify Binlog is enabled
 
                Relational Migrator automatically checks this setting for 
                you. To manually check the if the ``Binlog`` option is 
