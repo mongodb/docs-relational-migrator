@@ -10,9 +10,6 @@ PostgreSQL Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-About this Task
----------------
-
 Connecting Relational Migrator to PostgreSQL requires
 `logical decoding 
 <https://www.postgresql.org/docs/current/logicaldecoding-explanation.html>`__ 
@@ -53,7 +50,7 @@ Steps
       replication, change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
       configuration in the 
       `postgresql.conf configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
-      You **must restart the database instance** after changing the configuration file. 
+      You *must restart the database instance* after changing the configuration file. 
 
       .. code-block:: none
 
