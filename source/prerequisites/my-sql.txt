@@ -113,8 +113,8 @@ Steps
                         information_schema.global_variables 
                         WHERE variable_name='server_id';
 
-            #. To locate the config file for your MySQL instance run the 
-               following ``mysqld`` command from the terminal:
+            #. Locate the config file for your MySQL instance by running 
+               the following ``mysqld`` command in your terminal:
 
                .. tabs::
 
