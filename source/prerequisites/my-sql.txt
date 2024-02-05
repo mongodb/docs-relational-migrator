@@ -90,26 +90,62 @@ Steps
             following mysqld command from the terminal:
 
             a. 
-               mysql --help | grep cnf //macOS / Linux
-               mysql --help | findstr cnf // Windows
-
-            b. Under the ``under [mysqld] section`` add the following 
-               lines:
-
-               server_id               = 1
-               log_bin                 = /var/log/mysql/mysql-bin.log
-               max_binlog_size         = 100M
-               binlog_format           = mixed
-               binlog_expire_logs_seconds = 864000
 
 
-               For MySQL ``5.x``:
+               .. tab:: MacOS / Linux
+                     :tabid: macos-linux
 
-               server_id               = 1
-               log_bin                 = /var/log/mysql/mysql-bin.log
-               max_binlog_size         = 100M
-               binlog_format           = mixed
-               expire_log_days = 10 
+                     .. code-block:: 
+                        :copyable: true
+
+                        mysql --help | grep cnf
+
+               .. tab:: Windows
+                     :tabid: windows
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        mysql --help | findstr cnf
+
+            #. Run the following SQL query to get the ``server_id`` 
+               value for your deployment:
+               
+               .. code-block:: sql
+                  :copyable: true
+
+                  SELECT variable_value 
+                  FROM 
+                  information_schema.global_variables 
+                  WHERE variable_name='server_id';
+
+            #. Under the ``mysqld`` section add the following 
+               lines, replace the ``XXXXX`` value with the ``server_id``
+               from the previous query:
+
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
+
+                     .. code-block::
+                        :copyable: true
+
+                        server-id         = XXXXX
+                        log_bin                     = mysql-bin
+                        binlog_format               = ROW
+                        binlog_row_image            = FULL
+                        binlog_expire_logs_seconds  = 864000
+
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        server-id         = XXXXX
+                        log_bin                     = mysql-bin
+                        binlog_format               = ROW
+                        binlog_row_image            = FULL
+                        expire_log_days = 10 
 
 Learn More
 ----------
