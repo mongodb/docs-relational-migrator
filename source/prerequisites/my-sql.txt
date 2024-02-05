@@ -89,21 +89,23 @@ Steps
             a. To locate the config file for your MySQL instance run the 
                following ``mysqld`` command from the terminal:
 
-               .. tab:: MacOS / Linux
-                  :tabid: macos-linux
+               .. tabs::
 
-                  .. code-block:: 
-                     :copyable: true
+                  .. tab:: MacOS / Linux
+                     :tabid: macos-linux
 
-                     mysql --help | grep cnf
+                     .. code-block:: 
+                        :copyable: true
 
-               .. tab:: Windows
-                  :tabid: windows
+                        mysql --help | grep cnf
 
-                  .. code-block:: 
-                     :copyable: true
+                  .. tab:: Windows
+                     :tabid: windows
 
-                     mysql --help | findstr cnf
+                     .. code-block:: 
+                        :copyable: true
+
+                        mysql --help | findstr cnf
 
             #. Run the following SQL query to get the ``server_id`` 
                value for your deployment:
