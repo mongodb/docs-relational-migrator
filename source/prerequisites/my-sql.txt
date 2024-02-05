@@ -84,9 +84,20 @@ Steps
 
                         FROM information_schema.global_variables WHERE variable_name='log_bin';
 
-         .. step:: Locate the ``mycnf`` configuration file
+         .. step:: Locate and update the MySQL configuration file
 
-            a. To locate the config file for your MySQL instance run the 
+            a. Run the following SQL query to get the ``server_id`` 
+               value for your MySQL instance:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  SELECT variable_value 
+                  FROM 
+                  information_schema.global_variables 
+                  WHERE variable_name='server_id';
+
+            #. To locate the config file for your MySQL instance run the 
                following ``mysqld`` command from the terminal:
 
                .. tabs::
@@ -107,21 +118,17 @@ Steps
 
                         mysql --help | findstr cnf
 
-            #. Run the following SQL query to get the ``server_id`` 
-               value for your deployment:
-               
-               .. code-block:: sql
-                  :copyable: true
-
-                  SELECT variable_value 
-                  FROM 
-                  information_schema.global_variables 
-                  WHERE variable_name='server_id';
-
             #. Under the ``mysqld`` section of your mySQL configuration 
-               file add the following lines, replace the ``XXXXX`` value 
+               file add the following lines. Replace the ``XXXXX`` value 
                with the ``server_id`` from the previous query:
 
+            .. note::
+
+               If your running MySQL on AWS RDS, you must enable 
+               automated backups for binary logging. If automated 
+               backups are not enabled, ``binlog`` is disabled even
+               if setting the values in the configuration file.
+               
                .. tab:: MySql 8.x
                   :tabid: mysql-8x
 
@@ -145,6 +152,7 @@ Steps
                      binlog_format               = ROW
                      binlog_row_image            = FULL
                      expire_log_days = 10 
+
 
 Learn More
 ----------
