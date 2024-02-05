@@ -102,14 +102,6 @@ Steps
 
                .. tabs::
 
-                  .. tab:: MacOS / Linux
-                     :tabid: macos-linux
-
-                     .. code-block:: 
-                        :copyable: true
-
-                        mysql --help | grep cnf
-
                   .. tab:: Windows
                      :tabid: windows
 
@@ -118,17 +110,26 @@ Steps
 
                         mysql --help | findstr cnf
 
+                  .. tab:: MacOS / Linux
+                     :tabid: macos-linux
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        mysql --help | grep cnf
+
+
             #. Under the ``mysqld`` section of your mySQL configuration 
                file add the following lines. Replace the ``XXXXX`` value 
                with the ``server_id`` from the previous query:
 
-            .. note::
+               .. note::
 
-               If your running MySQL on AWS RDS, you must enable 
-               automated backups for binary logging. If automated 
-               backups are not enabled, ``binlog`` is disabled even
-               if setting the values in the configuration file.
-               
+                  If your running MySQL on AWS RDS, you must enable 
+                  automated backups for binary logging. If automated 
+                  backups are not enabled, ``binlog`` is disabled even
+                  if setting the values in the configuration file.
+                  
                .. tab:: MySql 8.x
                   :tabid: mysql-8x
 
