@@ -15,8 +15,8 @@ some configuration changes. If Relational Migrator determines the
 database needs configuration changes, it automatically generates a 
 SQL script with the required changes. It is recommended to have a 
 Database Administrator (DBA) review the commands in this script and 
-perform their execution on the database server. This topic 
-MySQL Server configuration depends on the type of sync job:
+perform their execution on the database server. The 
+MySQL Server configurations depend on the type of sync job:
 
 .. include:: /includes/fact-short-sync-job-desc.rst
 
