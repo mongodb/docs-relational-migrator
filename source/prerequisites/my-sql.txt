@@ -86,11 +86,8 @@ Steps
          
          .. step:: Locate the ``mycnf`` configuration file
 
-            To locate the config file for your MySQL instance run the 
-            following mysqld command from the terminal:
-
-            a. 
-
+            a. To locate the config file for your MySQL instance run the 
+               following ``mysqld`` command from the terminal:
 
                .. tab:: MacOS / Linux
                      :tabid: macos-linux
@@ -119,9 +116,9 @@ Steps
                   information_schema.global_variables 
                   WHERE variable_name='server_id';
 
-            #. Under the ``mysqld`` section add the following 
-               lines, replace the ``XXXXX`` value with the ``server_id``
-               from the previous query:
+            #. Under the ``mysqld`` section of your mySQL configuration 
+               file add the following lines, replace the ``XXXXX`` value 
+               with the ``server_id`` from the previous query:
 
                   .. tab:: MySql 8.x
                      :tabid: mysql-8x
@@ -146,7 +143,7 @@ Steps
                         binlog_format               = ROW
                         binlog_row_image            = FULL
                         expire_log_days = 10 
-            
+
 Learn More
 ----------
 
