@@ -23,6 +23,16 @@ MySQL Server configurations depend on the type of sync job:
 For details on supported versions of MySQL, see 
 :ref:`supported-databases`.
 
+
+About this Task
+---------------
+
+If your running MySQL on AWS RDS, you must 
+`enable automated backups 
+<https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html>`__ . 
+If automated backups are not enabled, ``binlog`` is 
+disabled even if setting the values in the configuration file.
+
 Steps
 -----
 
