@@ -23,14 +23,6 @@ MySQL Server configuration depends on the type of sync job:
 For details on supported versions of MySQL, see 
 :ref:`supported-databases`.
 
-About this Task
----------------
-
-Connecting Relational Migrator to MySQL 
-requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
-to be enabled on your MySQL instance. The binary log (Binlog) records all 
-operations in the order they are committed to the database. 
-
 Steps
 -----
 
@@ -40,72 +32,19 @@ Steps
    .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
-      For snapshot jobs against SQL Server, you must enable 
-      CDC at the database level. 
-
       .. procedure::
          :style: normal
 
-         .. step:: (Optional) Set up user permissions
-
-            Relational Migrator generates SQL scripts that can 
-            be executed to enable 
-            ``Binlog`` for the source MySQL database. The 
-            following code creates a new MySQL service account 
-            for Relational Migrator to connect to the MySQL 
-            instance. 
-
-            Create a service account:
-
-            .. code-block:: sql
-               :copyable: true
-
-               CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
-
-            Grant the required permissions to the service account:
-
-            .. code-block:: sql
-               :copyable: true
-               
-               GRANT SELECT, RELOAD, SHOW DATABASES, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'user'@'%';
-
-            Apply the user privilege changes:
-
-            .. code-block:: sql
-               :copyable: true
-
-               FLUSH PRIVILEGES; 
-
-         .. step:: Manually verify Binlog is enabled
-
-               Relational Migrator automatically checks this setting for 
-               you. To manually check the if the ``Binlog`` option is 
-               enabled, use the queries below for your version of MySQL:
-
-               .. tabs::
-
-                  .. tab:: MySql 8.x
-                     :tabid: mysql-8x
-
-                     .. code-block:: sql
-                        :copyable: true
-
-                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
-
-                        FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
-
-                  .. tab:: MySql 5.x
-                     :tabid: mysql-5x
-
-                     .. code-block:: sql
-                        :copyable: true
-
-                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
-
-                        FROM information_schema.global_variables WHERE variable_name='log_bin';
+         .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
+
+         Running continuous jobs on Relational Migrator 
+         requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
+         to be enabled on your MySQL instance. The binary log (Binlog) 
+         records all operations in the order they are committed to the 
+         database. 
 
       .. procedure::
          :style: normal
@@ -140,6 +79,7 @@ Steps
 
          .. step:: Manually verify Binlog is enabled
 
+               
                Relational Migrator automatically checks this setting for 
                you. To manually check the if the ``Binlog`` option is 
                enabled, use the queries below for your version of MySQL:
