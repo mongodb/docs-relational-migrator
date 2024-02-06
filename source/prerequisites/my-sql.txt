@@ -1,7 +1,7 @@
 .. _rm-prereq-mysql:
 
 =============================
-Configure MySQL for Sync Jobs
+MySQL Migration Prerequisites
 =============================
 
 .. contents:: On this page
