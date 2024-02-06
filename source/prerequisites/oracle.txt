@@ -14,112 +14,60 @@ Overview
 
 Connecting Relational Migrator to Oracle requires a system administrator role user to enable LogMiner in the database, if not already enabled. Relational Migrator supports two types of sync jobs:
 
-    Snapshot which migrates all the data and then stops.
-    Continuous which runs a snapshot and then enters a CDC stage to continuously replicate changes.
+- Snapshot which migrates all the data and then stops.
+- Continuous which runs a snapshot and then enters a CDC stage to 
+  continuously replicate changes.
 
 When you set up a new data migration, Relational Migrator will automatically generate the required SQL code for a database administrator to enable CDC for that job, which they can inspect and manually execute. It will take a few minutes to review and execute the generated SQL code script. This document explains the purpose of those scripts.
 Supported Database Versions
 12c and higher 	Self hosted, AWS RDS, Azure SQL Database
+from https://www.mongodb.com/docs/relational-migrator/supported-databases/
 
- from https://www.mongodb.com/docs/relational-migrator/supported-databases/
-User Permissions
+Steps
+-----
 
-For one-time enablement of LogMiner: A database administrator with a SYSDBA role must manually enable this setting.
+.. tabs::
 
-For a snapshot only job, the following grants are required:
+   .. tab:: Snapshot Jobs
+      :tabid: enable-snapshot-jobs
 
-GRANT CREATE SESSION TO {{user}};
+      For snapshot jobs against SQL Server, you must enable 
+      CDC at the database level. 
 
-GRANT SELECT_CATALOG_ROLE TO {{user}};
+      .. procedure::
+         :style: normal
 
-GRANT SELECT ANY TABLE TO {{user}};
+         .. step:: Configure CDC at the Database Level
 
-GRANT SELECT ON V$DATABASE TO {{user}}; 
+            A.
 
-For a CDC job, the following grants are required:
+   .. tab:: Continuous Jobs
+      :tabid: enable-continuous-jobs
 
-GRANT SET CONTAINER TO {{user}};
+      .. procedure::
+         :style: normal
 
-GRANT FLASHBACK ANY TABLE TO {{user}};
+         .. step:: Configure CDC at the database level
 
-GRANT EXECUTE_CATALOG_ROLE TO {{user}};
+            .. code-block:: sql
+               :copyable: true
 
-GRANT SELECT ANY TRANSACTION TO {{user}};
-
-GRANT LOGMINING TO {{user}};
-
-GRANT CREATE TABLE TO {{user}};
-
-GRANT LOCK ANY TABLE TO {{user}};
-
-GRANT CREATE SEQUENCE TO {{user}};
-
-GRANT SELECT ON DBA_TABLESPACES TO {{user}}; GRANT EXECUTE ON DBMS_LOGMNR TO {{user}};
-
-GRANT EXECUTE ON DBMS_LOGMNR_D TO {{user}};
-
-GRANT SELECT ON V_$LOG TO {{user}};
-
-GRANT SELECT ON V_$LOG_HISTORY TO {{user}};
-
-GRANT SELECT ON V_$LOGMNR_LOGS TO {{user}};
-
-GRANT SELECT ON V_$LOGMNR_CONTENTS TO {{user}};
-
-GRANT SELECT ON V_$LOGMNR_PARAMETERS TO {{user}};
-
-GRANT SELECT ON V_$LOGFILE TO {{user}};
-
-GRANT SELECT ON V_$ARCHIVED_LOG TO {{user}};
-
-GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO {{user}};
-
-GRANT SELECT ON V_$TRANSACTION TO {{user}};
-
-Check If LogMiner Mode Already Enabled
-
-Simply set up a new data migration job, and when you input your Oracle account details on the 'Source Database' connection screen, the tool will automatically detect your LogMiner status and generate SQL statements to enable this if required. You can also check manually by running the following query:
-
-select log_mode from v$database; 
-
- 
-
-Documentation from Oracle explaining how to toggle archive logging. https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm
-Snapshot Jobs
-
-For Snapshot jobs against Oracle, it is necessary to enable LogMiner at the database level. This is a sample of the automatically-generated code, which you could also run manually by substituting your database name:
-
-ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
-
-ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' SCOPE=spfile;
-
- 
-
-SHUTDOWN IMMEDIATE;
-
-STARTUP MOUNT
-
-ALTER DATABASE ARCHIVELOG;
-
- 
-
-ALTER DATABASE OPEN;
-
-Continuous Jobs
-
-For Continuous jobs against Oracle, it is necessary to enable supplemental logging on a database level by executing the following query:
-
-ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
-
-Supplemental logging should also be enabled for every captured table (alternatively, the entire database) using:
-
-ALTER TABLE {{schemaName}}.{{tableName}} ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS; 
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_table
+               @source_schema = N'dbo',
+               @source_name   = N'MyTable',
+               @role_name     = N'MyRole',
+               @filegroup_name = N'MyDB_CT',
+               @supports_net_changes = 1
+               GO
 
 
-Further Reading
+Learn More
+----------
 
-The migrator tool relies on the open-source Debezium connector to capture row-level changes.
+Relational Migrator relies on the open-source Debezium connector to 
+capture row-level changes. For more details, see:
 
-Debezium Oracle https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_database
-
-Documentation from Oracle explaining how to toggle archive logging. https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm
+- `Debezium Oracle <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_databas>`__
+- `Oracle docs how to toggle archive logging https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm`__.
