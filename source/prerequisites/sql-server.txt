@@ -21,9 +21,7 @@ perform their execution on the database server. This topic
 provides more details on the required configuration steps. SQL Server 
 configuration depends on the type of sync job: 
 
-- Snapshot sync jobs migrate all the data and then stops.
-- Continuous sync job run a snapshot and then enter a CDC stage to 
-  continuously replicate data changes.
+.. include:: /includes/fact-short-sync-job-desc.rst
 
 About this Task
 ---------------
