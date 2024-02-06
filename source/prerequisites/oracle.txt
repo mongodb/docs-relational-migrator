@@ -96,7 +96,7 @@ Steps
       .. procedure::
          :style: normal
 
-        .. step:: Set up user permissions
+         .. step:: Set up user permissions
 
             The following code creates a new Oracle service account 
             for Relational Migrator to connect to the Oracle 
@@ -106,35 +106,35 @@ Steps
 
             a. Create a service account:
 
-                .. code-block:: sql
-                    :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-                    CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+                  CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 
             #. Grant the required permissions to the service account:
 
-                .. code-block:: sql
-                    :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-                    GRANT SET CONTAINER TO user;
-                    GRANT FLASHBACK ANY TABLE TO user;
-                    GRANT EXECUTE_CATALOG_ROLE TO user;
-                    GRANT SELECT ANY TRANSACTION TO user;
-                    GRANT LOGMINING TO user;
-                    GRANT CREATE TABLE TO user;
-                    GRANT LOCK ANY TABLE TO user;
-                    GRANT CREATE SEQUENCE TO user;
-                    GRANT SELECT ON DBA_TABLESPACES TO user; GRANT EXECUTE ON DBMS_LOGMNR TO user;
-                    GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
-                    GRANT SELECT ON V_$LOG TO user;
-                    GRANT SELECT ON V_$LOG_HISTORY TO user;
-                    GRANT SELECT ON V_$LOGMNR_LOGS TO user;
-                    GRANT SELECT ON V_$LOGMNR_CONTENTS TO user;
-                    GRANT SELECT ON V_$LOGMNR_PARAMETERS TO user;
-                    GRANT SELECT ON V_$LOGFILE TO user;
-                    GRANT SELECT ON V_$ARCHIVED_LOG TO user;
-                    GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
-                    GRANT SELECT ON V_$TRANSACTION TO user;
+                  GRANT SET CONTAINER TO user;
+                  GRANT FLASHBACK ANY TABLE TO user;
+                  GRANT EXECUTE_CATALOG_ROLE TO user;
+                  GRANT SELECT ANY TRANSACTION TO user;
+                  GRANT LOGMINING TO user;
+                  GRANT CREATE TABLE TO user;
+                  GRANT LOCK ANY TABLE TO user;
+                  GRANT CREATE SEQUENCE TO user;
+                  GRANT SELECT ON DBA_TABLESPACES TO user; GRANT EXECUTE ON DBMS_LOGMNR TO user;
+                  GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
+                  GRANT SELECT ON V_$LOG TO user;
+                  GRANT SELECT ON V_$LOG_HISTORY TO user;
+                  GRANT SELECT ON V_$LOGMNR_LOGS TO user;
+                  GRANT SELECT ON V_$LOGMNR_CONTENTS TO user;
+                  GRANT SELECT ON V_$LOGMNR_PARAMETERS TO user;
+                  GRANT SELECT ON V_$LOGFILE TO user;
+                  GRANT SELECT ON V_$ARCHIVED_LOG TO user;
+                  GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
+                  GRANT SELECT ON V_$TRANSACTION TO user;
 
          .. step:: Check if ``LogMiner`` is enabled
 
