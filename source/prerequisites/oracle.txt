@@ -136,6 +136,55 @@ Steps
                     GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
                     GRANT SELECT ON V_$TRANSACTION TO user;
 
+         .. step:: Check if ``LogMiner`` is enabled
+
+            When you connect Relational Migrator to your Oracle database 
+            with a new sync :guilabel:`Source Database` connection screen, the tool 
+            automatically detects your ``LogMiner`` status and 
+            generates the SQL scripts to enable ``LogMiner`` if required. 
+            You can check if ``LogMiner`` is enabled with the following 
+            query:
+            
+            .. code-block:: sql
+               :copyable: true
+
+                SELECT LOG_MODE FROM V$DATABASE; 
+
+         .. step:: Turn on ``LogMiner`` at the database level
+            
+            In order to run Snapshot jobs against Oracle, you must enable 
+            ``LogMiner`` at the database level. The following code-block
+            is an example of automatically-generated code, which you 
+            can run manually by substituting your database name:
+
+            .. code-block:: sql
+                :copyable: true
+
+                ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
+                ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' SCOPE=spfile;
+                SHUTDOWN IMMEDIATE;
+                STARTUP MOUNT
+                ALTER DATABASE ARCHIVELOG;
+                ALTER DATABASE OPEN;
+
+         .. step:: Enable supplemental logging at the database level
+
+            To run continuous sync jobs against Oracle, you must 
+            enable supplemental logging at the database level:
+
+            .. code-block:: sql
+                :copyable: true
+
+                ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
+
+            You must also enable supplemental logging for every 
+            captured table using:
+
+            .. code-block:: sql
+                :copyable: true
+
+                ALTER TABLE {{schemaName}}.{{tableName}} ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS; 
+
 Learn More
 ----------
 
