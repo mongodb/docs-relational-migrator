@@ -38,16 +38,31 @@ Steps
       .. procedure::
          :style: normal
 
-         .. step:: Grant permissions to service account
+         .. step:: Set up user permissions
 
-            .. code-block:: sql
-               :copyable: true
+            The following code creates a new Oracle service account 
+            for Relational Migrator to connect to the MySQL 
+            instance. Alternatively, you can use an existing MySQL 
+            service account to connect to Relational Migrator with 
+            the appropriate permissions.
 
-                GRANT CREATE SESSION TO {{user}};
-                GRANT SELECT_CATALOG_ROLE TO {{user}};
-                GRANT SELECT ANY TABLE TO {{user}};
-                GRANT SELECT ON V$DATABASE TO {{user}}; 
-         
+            a. Create a service account:
+
+                .. code-block:: sql
+                    :copyable: true
+
+                    CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+
+            #. Grant the required permissions to the service account:
+
+                .. code-block:: sql
+                   :copyable: true
+
+                   GRANT CREATE SESSION TO user;
+                   GRANT SELECT_CATALOG_ROLE TO user;
+                   GRANT SELECT ANY TABLE TO user;
+                   GRANT SELECT ON V$DATABASE TO user; 
+
          .. step:: Check if LogMiner is enabled
 
             Check If `LogMiner Mode <https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-logminer-utility.html#GUID-3417B738-374C-4EE3-B15C-3A66E01AE2B5>`__ 
@@ -71,14 +86,14 @@ Steps
             manually by substituting your database name:
 
             .. code-block:: sql
-               :copyable: true
+                :copyable: true
 
-               ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
-               ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' SCOPE=spfile;
-               SHUTDOWN IMMEDIATE;
-               STARTUP MOUNT
-               ALTER DATABASE ARCHIVELOG;
-               ALTER DATABASE OPEN;
+                ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
+                ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' SCOPE=spfile;
+                SHUTDOWN IMMEDIATE;
+                STARTUP MOUNT
+                ALTER DATABASE ARCHIVELOG;
+                ALTER DATABASE OPEN;
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
@@ -86,30 +101,45 @@ Steps
       .. procedure::
          :style: normal
 
-         .. step:: Grant permissions to service account
+        .. step:: Set up user permissions
+
+            The following code creates a new Oracle service account 
+            for Relational Migrator to connect to the MySQL 
+            instance. Alternatively, you can use an existing MySQL 
+            service account to connect to Relational Migrator with 
+            the appropriate permissions.
+
+            a. Create a service account:
+
+                .. code-block:: sql
+                    :copyable: true
+
+                    CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
+
+            #. Grant the required permissions to the service account:
 
             .. code-block:: sql
-               :copyable: true
+                :copyable: true
 
-               GRANT SET CONTAINER TO {{user}};
-               GRANT FLASHBACK ANY TABLE TO {{user}};
-               GRANT EXECUTE_CATALOG_ROLE TO {{user}};
-               GRANT SELECT ANY TRANSACTION TO {{user}};
-               GRANT LOGMINING TO {{user}};
-               GRANT CREATE TABLE TO {{user}};
-               GRANT LOCK ANY TABLE TO {{user}};
-               GRANT CREATE SEQUENCE TO {{user}};
-               GRANT SELECT ON DBA_TABLESPACES TO {{user}}; GRANT EXECUTE ON DBMS_LOGMNR TO {{user}};
-               GRANT EXECUTE ON DBMS_LOGMNR_D TO {{user}};
-               GRANT SELECT ON V_$LOG TO {{user}};
-               GRANT SELECT ON V_$LOG_HISTORY TO {{user}};
-               GRANT SELECT ON V_$LOGMNR_LOGS TO {{user}};
-               GRANT SELECT ON V_$LOGMNR_CONTENTS TO {{user}};
-               GRANT SELECT ON V_$LOGMNR_PARAMETERS TO {{user}};
-               GRANT SELECT ON V_$LOGFILE TO {{user}};
-               GRANT SELECT ON V_$ARCHIVED_LOG TO {{user}};
-               GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO {{user}};
-               GRANT SELECT ON V_$TRANSACTION TO {{user}};
+                GRANT SET CONTAINER TO user;
+                GRANT FLASHBACK ANY TABLE TO user;
+                GRANT EXECUTE_CATALOG_ROLE TO user;
+                GRANT SELECT ANY TRANSACTION TO user;
+                GRANT LOGMINING TO user;
+                GRANT CREATE TABLE TO user;
+                GRANT LOCK ANY TABLE TO user;
+                GRANT CREATE SEQUENCE TO user;
+                GRANT SELECT ON DBA_TABLESPACES TO user; GRANT EXECUTE ON DBMS_LOGMNR TO user;
+                GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
+                GRANT SELECT ON V_$LOG TO user;
+                GRANT SELECT ON V_$LOG_HISTORY TO user;
+                GRANT SELECT ON V_$LOGMNR_LOGS TO user;
+                GRANT SELECT ON V_$LOGMNR_CONTENTS TO user;
+                GRANT SELECT ON V_$LOGMNR_PARAMETERS TO user;
+                GRANT SELECT ON V_$LOGFILE TO user;
+                GRANT SELECT ON V_$ARCHIVED_LOG TO user;
+                GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
+                GRANT SELECT ON V_$TRANSACTION TO user;
 
 Learn More
 ----------
