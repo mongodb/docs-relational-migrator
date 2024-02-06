@@ -1,8 +1,8 @@
 .. _rm-prereq-postgres:
 
-================================
-Postgres Migration Prerequisites
-================================
+==================================
+Configure PostGreSQL for Sync Jobs
+==================================
 
 .. contents:: On this page
    :local:

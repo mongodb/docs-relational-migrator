@@ -1,7 +1,7 @@
 .. _rm-prereq-mysql:
 
 ==============================
-Sybase Migration Prerequisites
+Configure Sybase for Sync Jobs
 ==============================
 
 .. contents:: On this page

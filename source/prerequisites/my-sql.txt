@@ -1,7 +1,7 @@
 .. _rm-prereq-mysql:
 
 =============================
-MySQL Migration Prerequisites
+Configure MySQL for Sync Jobs
 =============================
 
 .. contents:: On this page
@@ -167,7 +167,7 @@ Steps
 
                .. note::
 
-                  If you're running MySQL on AWS RDS, you must enable 
+                  If your running MySQL on AWS RDS, you must enable 
                   automated backups for binary logging. If automated 
                   backups are not enabled, ``Binlog`` is disabled even
                   if setting the values in the configuration file.
