@@ -17,11 +17,11 @@ to be enabled on your PostgreSQL instance. When you set up a new connection,
 Relational Migrator automatically generates the required SQL code to 
 configure PostgreSQL. This document explains the purpose of those scripts.
 
-These instructions configure PostgreSQL **for both** Snapshot and 
+These instructions configure PostgreSQL *for both* Snapshot and 
 Continuous sync jobs.
 
-- Snapshot sync jobs migrate all the data and then stops.
-- Continuous sync job run a snapshot and then enter a CDC stage to 
+- Snapshot sync jobs migrate all the data and then stop.
+- Continuous sync jobs run a snapshot and then enter a CDC stage to 
   continuously replicate data changes.
 
 About this Task
@@ -66,7 +66,7 @@ Steps
 
          CREATE ROLE <name> REPLICATION LOGIN;
 
-   .. step:: Create a Publication
+   .. step:: Create a publication
 
       Relational Migrator requires you create a 
       `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
