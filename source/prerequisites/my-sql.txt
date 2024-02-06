@@ -89,29 +89,29 @@ Steps
             a. Run the following SQL query to get the ``server_id`` 
                value for your MySQL instance:
 
-                  .. tabs::
+               .. tabs::
 
-                     .. tab:: MySql 8.x
-                        :tabid: mysql-8x
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
 
-                        .. code-block:: sql
-                           :copyable: true
+                     .. code-block:: sql
+                        :copyable: true
 
-                           SELECT variable_value 
-                           FROM 
-                           performance_schema.global_variables 
-                           WHERE variable_name='server_id';
+                        SELECT variable_value 
+                        FROM 
+                        performance_schema.global_variables 
+                        WHERE variable_name='server_id';
 
-                     .. tab:: MySql 5.x
-                        :tabid: mysql-5x
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
 
-                        .. code-block:: sql
-                           :copyable: true
+                     .. code-block:: sql
+                        :copyable: true
 
-                           SELECT variable_value 
-                           FROM 
-                           information_schema.global_variables 
-                           WHERE variable_name='server_id';
+                        SELECT variable_value 
+                        FROM 
+                        information_schema.global_variables 
+                        WHERE variable_name='server_id';
 
             #. Locate the config file for your MySQL instance by running 
                the following ``mysqld`` command in your terminal:
