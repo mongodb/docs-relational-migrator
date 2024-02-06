@@ -118,4 +118,4 @@ Relational Migrator relies on the open-source Debezium connector to
 capture row-level changes. For more details, see:
 
 - `Debezium Oracle <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_databas>`__
-- `Oracle docs how to toggle archive logging https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm`__.
+- `Oracle docs how to toggle archive logging <https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm>`__.
