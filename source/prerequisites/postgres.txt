@@ -56,15 +56,30 @@ Steps
 
          wal_level = logical 
 
-   .. step:: Create a SQL replication login
+   .. step:: Create a SQL replication role
 
-      The PostgreSQL account requires ``REPLICATION`` and ``LOGIN`` 
-      database permissions as well as ``SELECT`` and ``USAGE`` 
-      permissions on each source table:
+      a. Create a role with ``REPLICATION`` and ``LOGIN`` 
+         database permissions:
 
-      .. code-block:: sql
+         .. code-block:: sql
 
-         CREATE ROLE <name> REPLICATION LOGIN;
+            CREATE ROLE <name> REPLICATION LOGIN;
+
+     #. Grant the required ``SELECT`` table and ``USAGE``
+        schema permissions to the role:
+
+        .. code-block:: sql
+           :copyable: true
+
+           GRANT USAGE ON SCHEMA schema_name TO <role_name>;
+           GRANT SELECT ON table_name TO <role_name>;
+
+     #. Grant the role to the service account user:
+
+        .. code-block:: sql
+           :copyable: true
+
+            GRANT <role_name> TO <user>;
 
    .. step:: Create a publication
 
