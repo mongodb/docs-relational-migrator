@@ -72,7 +72,7 @@ Steps
          .. code-block:: sql
             :copyable: true
 
-            GRANT USAGE ON SCHEMA schema_name TO username;
+            GRANT USAGE ON SCHEMA schema_name TO RM_SERVICEACCOUNT;
             GRANT SELECT ON table_name TO RM_SERVICEACCOUNT;
 
          .. note::
@@ -88,7 +88,7 @@ Steps
 
       .. code-block:: sql
 
-         CREATE PUBLICATION "migrator_<name>_publication" FOR TABLE <tables>; 
+         CREATE PUBLICATION "migrator_publication" FOR TABLE MYTABLE; 
 
 Learn More
 ----------
