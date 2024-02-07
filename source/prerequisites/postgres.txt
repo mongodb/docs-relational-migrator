@@ -18,11 +18,9 @@ Relational Migrator automatically generates the required SQL code to
 configure PostgreSQL. This document explains the purpose of those scripts.
 
 These instructions configure PostgreSQL *for both* Snapshot and 
-Continuous sync jobs.
+Continuous sync jobs:
 
-- Snapshot sync jobs migrate all the data and then stop.
-- Continuous sync jobs run a snapshot and then enter a CDC stage to 
-  continuously replicate data changes.
+.. include:: /includes/fact-short-sync-job-desc.rst
 
 About this Task
 ---------------
