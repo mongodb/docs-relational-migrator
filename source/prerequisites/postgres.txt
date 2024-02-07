@@ -10,19 +10,15 @@ PostgreSQL Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-Connecting Relational Migrator to PostgreSQL requires
-`logical decoding 
-<https://www.postgresql.org/docs/current/logicaldecoding-explanation.html>`__ 
-to be enabled on your PostgreSQL instance. When you set up a new connection, 
-Relational Migrator automatically generates the required SQL code to 
-configure PostgreSQL. This document explains the purpose of those scripts.
+To run sync jobs from an PostGreSQL source database, the database may 
+require some configuration changes. If Relational Migrator determines the 
+database needs configuration changes, it automatically generates a 
+SQL script with the required changes. It is recommended to have a 
+Database Administrator (DBA) review the commands in this script and 
+perform their execution on the database server. The 
+PostGreSQL configurations depend on the type of sync job:
 
-These instructions configure PostgreSQL *for both* Snapshot and 
-Continuous sync jobs.
-
-- Snapshot sync jobs migrate all the data and then stop.
-- Continuous sync jobs run a snapshot and then enter a CDC stage to 
-  continuously replicate data changes.
+.. include:: /includes/fact-short-sync-job-desc.rst
 
 About this Task
 ---------------
