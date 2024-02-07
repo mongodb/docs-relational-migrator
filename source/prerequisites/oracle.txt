@@ -124,7 +124,8 @@ Steps
                   GRANT CREATE TABLE TO user;
                   GRANT LOCK ANY TABLE TO user;
                   GRANT CREATE SEQUENCE TO user;
-                  GRANT SELECT ON DBA_TABLESPACES TO user; GRANT EXECUTE ON DBMS_LOGMNR TO user;
+                  GRANT SELECT ON DBA_TABLESPACES TO user; 
+                  GRANT EXECUTE ON DBMS_LOGMNR TO user;
                   GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
                   GRANT SELECT ON V_$LOG TO user;
                   GRANT SELECT ON V_$LOG_HISTORY TO user;
