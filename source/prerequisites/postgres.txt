@@ -64,19 +64,19 @@ Steps
 
             CREATE ROLE <name> REPLICATION LOGIN;
 
-     #. Grant the required ``SELECT`` table and ``USAGE``
-        schema permissions to the role:
+      #. Grant the required ``SELECT`` table and ``USAGE``
+         schema permissions to the role:
 
-        .. code-block:: sql
-           :copyable: true
+         .. code-block:: sql
+            :copyable: true
 
-           GRANT USAGE ON SCHEMA schema_name TO <role_name>;
-           GRANT SELECT ON table_name TO <role_name>;
+            GRANT USAGE ON SCHEMA schema_name TO <role_name>;
+            GRANT SELECT ON table_name TO <role_name>;
 
-     #. Grant the role to the service account user:
+      #. Grant the role to the service account user:
 
-        .. code-block:: sql
-           :copyable: true
+         .. code-block:: sql
+            :copyable: true
 
             GRANT <role_name> TO <user>;
 
