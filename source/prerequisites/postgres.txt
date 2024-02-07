@@ -82,8 +82,7 @@ Steps
 
    .. step:: Create a publication
 
-      Relational Migrator requires you create a 
-      `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
+      Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
       by running:
 
       .. code-block:: sql
