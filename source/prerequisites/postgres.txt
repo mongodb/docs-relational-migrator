@@ -64,7 +64,8 @@ Steps
          .. code-block:: sql
             :copyable: true
 
-            CREATE USER RM_SERVICEACCOUNT WITH PASSWORD 'password' REPLICATION LOGIN;
+            CREATE USER RM_SERVICEACCOUNT 
+            WITH PASSWORD 'password' REPLICATION LOGIN;
 
       #. Grant the required ``SELECT`` table and ``USAGE`` 
          schema permissions to the service account:
