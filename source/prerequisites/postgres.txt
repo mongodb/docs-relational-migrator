@@ -18,9 +18,11 @@ Relational Migrator automatically generates the required SQL code to
 configure PostgreSQL. This document explains the purpose of those scripts.
 
 These instructions configure PostgreSQL *for both* Snapshot and 
-Continuous sync jobs:
+Continuous sync jobs.
 
-.. include:: /includes/fact-short-sync-job-desc.rst
+- Snapshot sync jobs migrate all the data and then stop.
+- Continuous sync jobs run a snapshot and then enter a CDC stage to 
+  continuously replicate data changes.
 
 About this Task
 ---------------
@@ -56,28 +58,13 @@ Steps
 
    .. step:: Create a SQL replication login
 
-      a. Create a PostgreSQL service account user with ``REPLICATION`` 
-         and ``LOGIN`` database permissions:
+      The PostgreSQL account requires ``REPLICATION`` and ``LOGIN`` 
+      database permissions as well as ``SELECT`` and ``USAGE`` 
+      permissions on each source table:
 
-         .. code-block:: sql
-            :copyable: true
+      .. code-block:: sql
 
-            CREATE USER RM_SERVICEACCOUNT 
-            WITH PASSWORD 'password' REPLICATION LOGIN;
-
-      #. Grant the required ``SELECT`` table and ``USAGE`` 
-         schema permissions to the service account:
-
-         .. code-block:: sql
-            :copyable: true
-
-            GRANT USAGE ON SCHEMA schema_name TO RM_SERVICEACCOUNT;
-            GRANT SELECT ON table_name TO RM_SERVICEACCOUNT;
-
-         .. note::
-
-            You must grant ``SELECT`` permissions for each table in the 
-            migration.
+         CREATE ROLE <name> REPLICATION LOGIN;
 
    .. step:: Create a publication
 
@@ -87,7 +74,7 @@ Steps
 
       .. code-block:: sql
 
-         CREATE PUBLICATION "migrator_publication" FOR TABLE MYTABLE; 
+         CREATE PUBLICATION "migrator_<name>_publication" FOR TABLE <tables>; 
 
 Learn More
 ----------
