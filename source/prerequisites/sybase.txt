@@ -1,8 +1,8 @@
 .. _rm-prereq-mysql:
 
-==============================
-Sybase Migration Prerequisites
-==============================
+=================================================
+Configure Data Migration Prerequisites for Sybase
+=================================================
 
 .. contents:: On this page
    :local:
