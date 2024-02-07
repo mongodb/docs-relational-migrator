@@ -43,7 +43,6 @@ Steps
 .. procedure::
    :style: normal
 
-
    .. step:: Edit the configuration file 
 
       Logical replication may not be enabled by default. To enable logical 
