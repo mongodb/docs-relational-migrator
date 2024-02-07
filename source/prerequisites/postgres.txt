@@ -58,13 +58,27 @@ Steps
 
    .. step:: Create a SQL replication login
 
-      The PostgreSQL account requires ``REPLICATION`` and ``LOGIN`` 
-      database permissions as well as ``SELECT`` and ``USAGE`` 
-      permissions on each source table:
+      a. Create a PostgreSQL service account user with ``REPLICATION`` 
+         and ``LOGIN`` database permissions:
 
-      .. code-block:: sql
+         .. code-block:: sql
+            :copyable: true
 
-         CREATE ROLE <name> REPLICATION LOGIN;
+            CREATE USER RM_SERVICEACCOUNT WITH PASSWORD 'password' REPLICATION LOGIN;
+
+      #. Grant the required ``SELECT`` table and ``USAGE`` 
+         schema permissions to the service account:
+
+         .. code-block:: sql
+            :copyable: true
+
+            GRANT USAGE ON SCHEMA schema_name TO username;
+            GRANT SELECT ON table_name TO RM_SERVICEACCOUNT;
+
+         .. note::
+
+            You must grant ``SELECT`` permissions for each table in the 
+            migration.
 
    .. step:: Create a publication
 
