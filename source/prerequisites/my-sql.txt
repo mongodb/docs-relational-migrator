@@ -167,10 +167,10 @@ Steps
 
                .. note::
 
-                  If your running MySQL on AWS RDS, you must enable 
-                  automated backups for binary logging. If automated 
-                  backups are not enabled, ``Binlog`` is disabled even
-                  if setting the values in the configuration file.
+                  If you're running MySQL on AWS RDS and `automated backups 
+                  <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html>`__
+                  are not enabled, ``Binlog`` will be disabled, even if 
+                  the values are set in the configuration file. 
 
 Learn More
 ----------
