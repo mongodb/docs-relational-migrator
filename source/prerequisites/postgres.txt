@@ -82,8 +82,8 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT USAGE ON SCHEMA schema_name TO <role_name>;
-                  GRANT SELECT ON table_name TO <role_name>;
+                  GRANT USAGE ON SCHEMA schema_name TO REPLICATION_GROUP;
+                  GRANT SELECT ON table_name TO REPLICATION_GROUP;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
          .. step:: Grant ownership of the tables to the REPLICATION_GROUP
