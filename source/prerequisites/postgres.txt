@@ -83,6 +83,7 @@ Steps
 
                   GRANT USAGE ON SCHEMA schema_name TO <role_name>;
                   GRANT SELECT ON table_name TO <role_name>;
+                  -- ADDITIONAL GRANT SELECT STATEMENTS...
 
             #. Grant the role to the service account user:
 
@@ -90,16 +91,8 @@ Steps
                   :copyable: true
 
                   GRANT <role_name> TO <user>;
-
-         .. step:: Create a publication
-
-            Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
-            by running:
-
-            .. code-block:: sql
-
-               CREATE PUBLICATION "migrator_<name>_publication" 
-               FOR TABLE <tables>; 
+                  GRANT REPLICATION_GROUP TO <original_owner>;
+                  GRANT REPLICATION_GROUP TO postgres;
 
          .. step:: Grant ownership of the tables to the REPLICATION_GROUP
 
@@ -112,27 +105,27 @@ Steps
 
                GRANT REPLICATION_GROUP TO <original_owner>;
                GRANT REPLICATION_GROUP TO postgres;
-               ALTER TABLE "public"."schema_migrations" OWNER TO REPLICATION_GROUP;
-               -- Additional ALTER TABLE statements...
+               ALTER TABLE "<schema>"."<table>" OWNER TO REPLICATION_GROUP;
+               -- ADDITIONAL ALTER TABLE STATEMENTS...
 
-         .. step:: Set replica identity to FULL for each table
+         .. step:: Create a publication
 
-            Set Replica identity to FULL for each table participating in 
-            migration. For more information refer to PostgreSQL 
-            documentation here - https://www.postgresql.org/docs/current/sql-altertable.html#SQL-ALTERTABLE-REPLICA-IDENTITY
+            Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
+            by running:
 
             .. code-block:: sql
                :copyable: true
 
-               ALTER TABLE "public"."schema_migrations" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."ar_internal_metadata" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."submission_views" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."products" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."playlists" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."playlist_items" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."challenges" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."activities" REPLICA IDENTITY FULL;
-               ALTER TABLE "public"."submissions" REPLICA IDENTITY FULL;
+               CREATE PUBLICATION "migrator_<name>_publication" 
+               FOR TABLE <tables>; 
+
+         .. step:: Set replica identity to FULL for each table
+
+            .. code-block:: sql
+               :copyable: true
+
+               ALTER TABLE "<schema>"."<table>" REPLICA IDENTITY FULL;
+               -- ADDITIONAL ALTER TABLE STATEMENTS...
 
 Learn More
 ----------
