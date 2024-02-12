@@ -36,54 +36,103 @@ to the master server.
 Steps
 -----
 
-.. procedure::
-   :style: normal
 
-   .. step:: Edit the configuration file 
+.. tabs::
 
-      Logical replication may not be enabled by default. To enable logical 
-      replication, change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
-      configuration in the 
-      `postgresql.conf configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
-      You *must restart the database instance* after changing the configuration file. 
+   .. tab:: Snapshot Jobs
+      :tabid: enable-snapshot-jobs
 
-      .. code-block:: none
+      For snapshot jobs against PostGreSQL, there are no prerequisites. 
 
-         wal_level = logical 
+   .. tab:: Continuous Jobs
+      :tabid: enable-continuous-jobs
 
-   .. step:: Create a SQL replication role
+   .. procedure::
+      :style: normal
 
-      a. Create a role with ``REPLICATION`` and ``LOGIN`` 
-         database permissions:
+      For continuous jobs against PostGreSQL, you must edit the 
+      configuration, grant role permissions to the service account, 
+      and create a publication.
+
+      .. step:: Edit the configuration file 
+
+         Logical replication may not be enabled by default. To enable logical 
+         replication, change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
+         configuration in the 
+         `postgresql.conf configuration file <https://www.postgresql.org/docs/current/config-setting.html>`__. 
+         You *must restart the database instance* after changing the configuration file. 
+
+         .. code-block:: none
+
+            wal_level = logical 
+
+      .. step:: Create a SQL replication role
+
+         a. Create a role with ``REPLICATION`` and ``LOGIN`` 
+            database permissions:
+
+            .. code-block:: sql
+
+               CREATE ROLE <name> REPLICATION LOGIN;
+
+         #. Grant the required ``SELECT`` table and ``USAGE``
+            schema permissions to the role:
+
+            .. code-block:: sql
+               :copyable: true
+
+               GRANT USAGE ON SCHEMA schema_name TO <role_name>;
+               GRANT SELECT ON table_name TO <role_name>;
+
+         #. Grant the role to the service account user:
+
+            .. code-block:: sql
+               :copyable: true
+
+               GRANT <role_name> TO <user>;
+
+      .. step:: Create a publication
+
+         Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
+         by running:
 
          .. code-block:: sql
 
-            CREATE ROLE <name> REPLICATION LOGIN;
+            CREATE PUBLICATION "migrator_<name>_publication" 
+            FOR TABLE <tables>; 
 
-      #. Grant the required ``SELECT`` table and ``USAGE``
-         schema permissions to the role:
+      .. step:: Grant ownership of the tables to the REPLICATION_GROUP
+
+         Replace <original_owner> with the owner of the 
+         participating tables. You must do this for each table in the 
+         migration.
 
          .. code-block:: sql
             :copyable: true
 
-            GRANT USAGE ON SCHEMA schema_name TO <role_name>;
-            GRANT SELECT ON table_name TO <role_name>;
+            GRANT REPLICATION_GROUP TO <original_owner>;
+            GRANT REPLICATION_GROUP TO postgres;
+            ALTER TABLE "public"."schema_migrations" OWNER TO REPLICATION_GROUP;
+            -- Additional ALTER TABLE statements...
 
-      #. Grant the role to the service account user:
+      .. step:: Set replica identity to FULL for each table
+
+         Set Replica identity to FULL for each table participating in 
+         migration. For more information refer to PostgreSQL 
+         documentation here - https://www.postgresql.org/docs/current/sql-altertable.html#SQL-ALTERTABLE-REPLICA-IDENTITY
 
          .. code-block:: sql
             :copyable: true
 
-            GRANT <role_name> TO <user>;
-
-   .. step:: Create a publication
-
-      Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
-      by running:
-
-      .. code-block:: sql
-
-         CREATE PUBLICATION "migrator_<name>_publication" FOR TABLE <tables>; 
+            ALTER TABLE "public"."schema_migrations" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."ar_internal_metadata" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."submission_views" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."products" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."playlists" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."playlist_items" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."challenges" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."activities" REPLICA IDENTITY FULL;
+            ALTER TABLE "public"."submissions" REPLICA IDENTITY FULL;
 
 Learn More
 ----------
@@ -91,3 +140,6 @@ Learn More
 Relational Migrator relies on the open-source Debezium connector to 
 capture row-level changes. For more details, see
 `Debezium PostgreSQL <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>`__.
+
+
+
