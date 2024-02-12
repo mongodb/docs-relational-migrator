@@ -74,7 +74,7 @@ Steps
 
                .. code-block:: sql
 
-                  CREATE ROLE <name> REPLICATION LOGIN;
+                  CREATE ROLE REPLICATION_GROUP REPLICATION LOGIN;
 
             #. Grant the required ``SELECT`` table and ``USAGE``
                schema permissions to the role:
@@ -86,26 +86,26 @@ Steps
                   GRANT SELECT ON table_name TO <role_name>;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
-            #. Grant the role to the service account user:
+         .. step:: Grant ownership of the tables to the REPLICATION_GROUP
+
+            a. Replace <original_owner> with the owner of the 
+               participating tables. You must do this for each table in the 
+               migration.
 
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT <role_name> TO <user>;
+                  GRANT REPLICATION_GROUP TO <original_owner>;
+                  GRANT REPLICATION_GROUP TO postgres;
 
-         .. step:: Grant ownership of the tables to the REPLICATION_GROUP
+            #. Grant ownership of each table to the ``REPLICATION_GROUP`` 
+               role:
 
-            Replace <original_owner> with the owner of the 
-            participating tables. You must do this for each table in the 
-            migration.
+               .. code-block:: sql
+                  :copyable: true
 
-            .. code-block:: sql
-               :copyable: true
-
-               GRANT REPLICATION_GROUP TO <original_owner>;
-               GRANT REPLICATION_GROUP TO postgres;
-               ALTER TABLE "<schema>"."<table>" OWNER TO REPLICATION_GROUP;
-               -- ADDITIONAL ALTER TABLE STATEMENTS...
+                  ALTER TABLE "<schema>"."<table>" OWNER TO REPLICATION_GROUP;
+                  -- ADDITIONAL ALTER TABLE STATEMENTS...
 
          .. step:: Create a publication
 
