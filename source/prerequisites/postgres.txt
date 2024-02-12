@@ -42,7 +42,8 @@ Steps
    .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
-      For snapshot jobs against PostGreSQL, there are no prerequisites. 
+      For snapshot jobs against PostGreSQL, there are no required 
+      prerequisites.
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
@@ -91,8 +92,6 @@ Steps
                   :copyable: true
 
                   GRANT <role_name> TO <user>;
-                  GRANT REPLICATION_GROUP TO <original_owner>;
-                  GRANT REPLICATION_GROUP TO postgres;
 
          .. step:: Grant ownership of the tables to the REPLICATION_GROUP
 
