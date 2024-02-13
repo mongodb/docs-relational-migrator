@@ -90,6 +90,9 @@ Steps
                   GRANT SELECT ANY TABLE TO user;
                   GRANT SELECT ON V$DATABASE TO user;
 
+            #. Grant additional requirements for continous sync job 
+               permissions:
+
                   GRANT SET CONTAINER TO user;
                   GRANT FLASHBACK ANY TABLE TO user;
                   GRANT EXECUTE_CATALOG_ROLE TO user;
