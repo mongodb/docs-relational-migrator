@@ -57,7 +57,7 @@ Steps
                   GRANT CREATE SESSION TO user;
                   GRANT SELECT_CATALOG_ROLE TO user;
                   GRANT SELECT ANY TABLE TO user;
-                  GRANT SELECT ON V$DATABASE TO user; 
+                  GRANT SELECT ON V_$DATABASE TO user; 
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
@@ -111,6 +111,18 @@ Steps
                   GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
                   GRANT SELECT ON V_$TRANSACTION TO user;
 
+         .. note::
+
+            If your Oracle instance is hosted on AWS RDS, then use the 
+            ``stored_procedure`` for all grant statements:
+
+            For example:
+
+            .. code-block:: sql
+                :copyable: true
+            
+            CALL rdsadmin.rdsadmin_util.grant_sys_object('V_$DATABASE', 'user', 'SELECT');
+
          .. step:: Turn on ``LogMiner`` at the database level
             
             In order to run continous jobs against Oracle, you must enable 
@@ -155,7 +167,7 @@ Steps
                 :copyable: true
 
                 ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
-                // Additional ALTER TABLE STATEMENTS.. 
+                /* Additional ALTER TABLE STATEMENTS... */ 
 
 Learn More
 ----------
