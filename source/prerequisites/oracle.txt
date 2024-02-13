@@ -66,7 +66,7 @@ Steps
          :style: normal
 
          .. step:: Set up user permissions
-         .. include:: /includes/fact-fact-data-prep-oracle-step1.rst
+         .. include:: /includes/fact-data-prep-oracle-step1.rst
 
             #. Grant additional requirements for continous sync job 
                permissions:
