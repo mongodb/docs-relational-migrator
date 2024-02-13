@@ -59,37 +59,6 @@ Steps
                   GRANT SELECT ANY TABLE TO user;
                   GRANT SELECT ON V$DATABASE TO user; 
 
-         .. step:: Check if ``LogMiner`` is enabled
-
-            When you connect Relational Migrator to your Oracle database 
-            with a new sync :guilabel:`Source Database` connection screen, the tool 
-            automatically detects your ``LogMiner`` status and 
-            generates the SQL scripts to enable ``LogMiner`` if required. 
-            You can check if ``LogMiner`` is enabled with the following 
-            query:
-            
-            .. code-block:: sql
-               :copyable: true
-
-               SELECT LOG_MODE FROM V$DATABASE; 
-
-         .. step:: Turn on ``LogMiner`` at the database level
-            
-            In order to run Snapshot jobs against Oracle, you must enable 
-            ``LogMiner`` at the database level. The following code-block
-            is an example of automatically-generated code, which you 
-            can run manually by substituting your database name:
-
-            .. code-block:: sql
-                :copyable: true
-
-                ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
-                ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' SCOPE=spfile;
-                SHUTDOWN IMMEDIATE;
-                STARTUP MOUNT
-                ALTER DATABASE ARCHIVELOG;
-                ALTER DATABASE OPEN;
-
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
@@ -116,6 +85,11 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
+                  GRANT CREATE SESSION TO user;
+                  GRANT SELECT_CATALOG_ROLE TO user;
+                  GRANT SELECT ANY TABLE TO user;
+                  GRANT SELECT ON V$DATABASE TO user;
+
                   GRANT SET CONTAINER TO user;
                   GRANT FLASHBACK ANY TABLE TO user;
                   GRANT EXECUTE_CATALOG_ROLE TO user;
@@ -137,23 +111,9 @@ Steps
                   GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
                   GRANT SELECT ON V_$TRANSACTION TO user;
 
-         .. step:: Check if ``LogMiner`` is enabled
-
-            When you connect Relational Migrator to your Oracle database 
-            with a new sync :guilabel:`Source Database` connection screen, the tool 
-            automatically detects your ``LogMiner`` status and 
-            generates the SQL scripts to enable ``LogMiner`` if required. 
-            You can check if ``LogMiner`` is enabled with the following 
-            query:
-            
-            .. code-block:: sql
-               :copyable: true
-
-                SELECT LOG_MODE FROM V$DATABASE; 
-
          .. step:: Turn on ``LogMiner`` at the database level
             
-            In order to run Snapshot jobs against Oracle, you must enable 
+            In order to run continous jobs against Oracle, you must enable 
             ``LogMiner`` at the database level. The following code-block
             is an example of automatically-generated code, which you 
             can run manually by substituting your database name:
@@ -167,7 +127,17 @@ Steps
                 STARTUP MOUNT
                 ALTER DATABASE ARCHIVELOG;
                 ALTER DATABASE OPEN;
+            
+            .. tip::
 
+                To check if ``LogMiner`` is already enabled, run the following
+                query:
+
+                .. code-block:: sql
+                   :copyable: true
+
+                    SELECT LOG_MODE FROM V$DATABASE; 
+    
          .. step:: Enable supplemental logging at the database level
 
             To run continuous sync jobs against Oracle, you must 
@@ -179,12 +149,13 @@ Steps
                 ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
 
             You must also enable supplemental logging for every 
-            captured table using:
+            table in the migration:
 
             .. code-block:: sql
                 :copyable: true
 
-                ALTER TABLE {{schemaName}}.{{tableName}} ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS; 
+                ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
+                // Additional ALTER TABLE STATEMENTS.. 
 
 Learn More
 ----------
