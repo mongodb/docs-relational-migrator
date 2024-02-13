@@ -13,7 +13,7 @@ Release Notes
 1.4.6 Changelog
 ---------------
 
-*Released February 13, 2024*
+*Released February 12, 2024*
 
 Improvements:
 
