@@ -48,7 +48,7 @@ Steps
 
             .. include:: /includes/fact-data-prep-oracle-step1.rst
 
-            #. Grant additional permissions to the service account 
+            c. Grant additional permissions to the service account 
                in order to run continuous sync jobs:
 
                 .. code-block:: sql
