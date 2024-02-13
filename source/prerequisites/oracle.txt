@@ -111,17 +111,18 @@ Steps
                   GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
                   GRANT SELECT ON V_$TRANSACTION TO user;
 
-         .. note::
+               .. note::
 
-            If your Oracle instance is hosted on AWS RDS, then use the 
-            ``stored_procedure`` for all grant statements:
+                  If your Oracle instance is hosted on AWS RDS, then use the 
+                  ``rdsadmin.rdsadmin_util.grant_sys_object`` stored procedure 
+                  for all grant statements:
 
-            For example:
+                  For example:
 
-            .. code-block:: sql
-                :copyable: true
-            
-            CALL rdsadmin.rdsadmin_util.grant_sys_object('V_$DATABASE', 'user', 'SELECT');
+                  .. code-block:: sql
+                     :copyable: true
+                
+                     CALL rdsadmin.rdsadmin_util.grant_sys_object('V_$DATABASE', 'user', 'SELECT');
 
          .. step:: Turn on ``LogMiner`` at the database level
             
