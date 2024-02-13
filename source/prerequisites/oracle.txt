@@ -66,32 +66,35 @@ Steps
          :style: normal
 
          .. step:: Set up user permissions
-            
+
             .. include:: /includes/fact-data-prep-oracle-step1.rst
 
             #. Grant additional requirements for continous sync job 
                permissions:
 
-                  GRANT SET CONTAINER TO user;
-                  GRANT FLASHBACK ANY TABLE TO user;
-                  GRANT EXECUTE_CATALOG_ROLE TO user;
-                  GRANT SELECT ANY TRANSACTION TO user;
-                  GRANT LOGMINING TO user;
-                  GRANT CREATE TABLE TO user;
-                  GRANT LOCK ANY TABLE TO user;
-                  GRANT CREATE SEQUENCE TO user;
-                  GRANT SELECT ON DBA_TABLESPACES TO user; 
-                  GRANT EXECUTE ON DBMS_LOGMNR TO user;
-                  GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
-                  GRANT SELECT ON V_$LOG TO user;
-                  GRANT SELECT ON V_$LOG_HISTORY TO user;
-                  GRANT SELECT ON V_$LOGMNR_LOGS TO user;
-                  GRANT SELECT ON V_$LOGMNR_CONTENTS TO user;
-                  GRANT SELECT ON V_$LOGMNR_PARAMETERS TO user;
-                  GRANT SELECT ON V_$LOGFILE TO user;
-                  GRANT SELECT ON V_$ARCHIVED_LOG TO user;
-                  GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
-                  GRANT SELECT ON V_$TRANSACTION TO user;
+                .. code-block:: sql
+                    :copyable: true
+
+                    GRANT SET CONTAINER TO user;
+                    GRANT FLASHBACK ANY TABLE TO user;
+                    GRANT EXECUTE_CATALOG_ROLE TO user;
+                    GRANT SELECT ANY TRANSACTION TO user;
+                    GRANT LOGMINING TO user;
+                    GRANT CREATE TABLE TO user;
+                    GRANT LOCK ANY TABLE TO user;
+                    GRANT CREATE SEQUENCE TO user;
+                    GRANT SELECT ON DBA_TABLESPACES TO user; 
+                    GRANT EXECUTE ON DBMS_LOGMNR TO user;
+                    GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
+                    GRANT SELECT ON V_$LOG TO user;
+                    GRANT SELECT ON V_$LOG_HISTORY TO user;
+                    GRANT SELECT ON V_$LOGMNR_LOGS TO user;
+                    GRANT SELECT ON V_$LOGMNR_CONTENTS TO user;
+                    GRANT SELECT ON V_$LOGMNR_PARAMETERS TO user;
+                    GRANT SELECT ON V_$LOGFILE TO user;
+                    GRANT SELECT ON V_$ARCHIVED_LOG TO user;
+                    GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
+                    GRANT SELECT ON V_$TRANSACTION TO user;
 
             If your Oracle instance is hosted on AWS RDS, then use the 
             ``rdsadmin.rdsadmin_util.grant_sys_object`` stored procedure 
