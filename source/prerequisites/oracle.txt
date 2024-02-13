@@ -143,8 +143,8 @@ Steps
             
             .. tip::
 
-                To check if ``LogMiner`` is already enabled, run the following
-                query:
+                To check if ``LogMiner`` is already enabled, run the 
+                following query:
 
                 .. code-block:: sql
                    :copyable: true
@@ -153,22 +153,22 @@ Steps
     
          .. step:: Enable supplemental logging at the database level
 
-            To run continuous sync jobs against Oracle, you must 
-            enable supplemental logging at the database level:
+            a. To run continuous sync jobs against Oracle, you must 
+               enable supplemental logging at the database level:
 
-            .. code-block:: sql
-                :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-                ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
+                  ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
 
-            You must also enable supplemental logging for every 
-            table in the migration:
+            #. You must also enable supplemental logging for every 
+               table in the migration:
 
-            .. code-block:: sql
-                :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-                ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
-                /* Additional ALTER TABLE STATEMENTS... */ 
+                  ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
+                  /* Additional ALTER TABLE STATEMENTS... */ 
 
 Learn More
 ----------
