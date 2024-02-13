@@ -113,7 +113,7 @@ Steps
 
                     SELECT LOG_MODE FROM V$DATABASE; 
     
-         .. step:: Enable supplemental logging at the database level
+         .. step:: Enable supplemental logging
 
             a. To run continuous sync jobs against Oracle, you must 
                enable supplemental logging at the database level:
