@@ -11,7 +11,7 @@ a. Create a service account:
 
       CREATE USER 'user'@'localhost' IDENTIFIED BY 'password';
 
-#. Grant the required permissions to the service account:
+#. Grant select permissions to the service account:
 
    .. code-block:: sql
       :copyable: true
