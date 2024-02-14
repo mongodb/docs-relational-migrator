@@ -36,7 +36,6 @@ to the master server.
 Steps
 -----
 
-
 .. tabs::
 
    .. tab:: Snapshot Jobs
@@ -88,15 +87,15 @@ Steps
 
          .. step:: Grant ownership of the tables to the REPLICATION_GROUP
 
-            a. Replace <original_owner> with the owner of the 
+            a. Replace ``ORIGINAL_OWNER`` with the owner of the 
                participating tables. You must do this for each table in the 
                migration.
 
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT REPLICATION_GROUP TO <original_owner>;
-                  GRANT REPLICATION_GROUP TO postgres;
+                  GRANT REPLICATION_GROUP TO ORIGINAL_OWNER;
+                  GRANT REPLICATION_GROUP TO POSTGRES;
 
             #. Grant ownership of each table to the ``REPLICATION_GROUP`` 
                role:
@@ -104,7 +103,7 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
-                  ALTER TABLE "<schema>"."<table>" OWNER TO REPLICATION_GROUP;
+                  ALTER TABLE SCHEMA.TABLE OWNER TO REPLICATION_GROUP;
                   -- ADDITIONAL ALTER TABLE STATEMENTS...
 
          .. step:: Create a publication
@@ -115,7 +114,7 @@ Steps
             .. code-block:: sql
                :copyable: true
 
-               CREATE PUBLICATION "migrator_<name>_publication" 
+               CREATE PUBLICATION "migrator_name_publication" 
                FOR TABLE <tables>; 
 
          .. step:: Set replica identity to FULL for each table
@@ -123,7 +122,7 @@ Steps
             .. code-block:: sql
                :copyable: true
 
-               ALTER TABLE "<schema>"."<table>" REPLICA IDENTITY FULL;
+               ALTER TABLE SCHEMA.TABLE REPLICA IDENTITY FULL;
                -- ADDITIONAL ALTER TABLE STATEMENTS...
 
 Learn More
