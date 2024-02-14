@@ -106,6 +106,9 @@ Steps
                   GRANT REPLICATION_GROUP TO POSTGRES;
 
          .. step:: Grant ownership of each table to the REPLICATION_GROUP role
+            
+            Each table in the migration requires a ``ALTER TABLE`` 
+            statement:
 
             .. code-block:: sql
                :copyable: true
@@ -126,6 +129,9 @@ Steps
                FOR TABLE "SCHEMA"."TABLE","SCHEMA"."TABLE2"; 
 
          .. step:: Set replica identity to FULL for each table
+
+            Each table in the migration requires a ``ALTER TABLE`` 
+            statement:
 
             .. code-block:: sql
                :copyable: true
