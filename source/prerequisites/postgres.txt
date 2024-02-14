@@ -130,7 +130,7 @@ Steps
          .. step:: Create a publication
 
             Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
-            each ``SCHEMA.TABLE`` in the migration must be specified 
+            each table in the migration must be specified 
             in the ``FOR`` statement separated by commas:
 
             .. code-block:: sql
