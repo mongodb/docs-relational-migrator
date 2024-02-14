@@ -25,7 +25,7 @@ About this Task
 
 Relational Migrator uses the PostgreSQL ``pgoutput`` plugin for logical 
 decoding. This plug-in is included in PostgreSQL versions 10+, no 
-additional installation or configuration is required. 
+additional installation or configuration is required.
 
 Before you Begin
 ----------------
@@ -42,7 +42,8 @@ Steps
       :tabid: enable-snapshot-jobs
 
       For snapshot jobs against PostGreSQL, the service account requires
-      schema ``USAGE`` and table ``SELECT`` permissions:
+      schema ``USAGE`` and table ``SELECT`` permissions. Replace 
+      ``POSTGRES`` with the name of your service account user.
 
       .. code-block:: sql
          :copyable: true
@@ -95,8 +96,8 @@ Steps
 
                Replace ``ORIGINAL_OWNER`` with the owner of the 
                participating tables. You must do this for each table in 
-               the migration. ``POSTGRES`` is a placeholder for the 
-               service account used with Relational Migrator.
+               the migration. Replace ``POSTGRES`` with the name of 
+               your service account user.
 
                .. code-block:: sql
                   :copyable: true
