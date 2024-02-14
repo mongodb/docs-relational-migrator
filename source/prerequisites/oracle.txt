@@ -80,8 +80,6 @@ Steps
             <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.System.html#Appendix.Oracle.CommonDBATasks.TransferPrivileges>`__ 
             stored procedure for all grant statements:
 
-            For example:
-
             .. code-block:: sql
                 :copyable: true
         
