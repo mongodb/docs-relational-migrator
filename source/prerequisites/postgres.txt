@@ -41,7 +41,7 @@ Steps
          :copyable: true
 
          GRANT USAGE ON SCHEMA <schema_name> TO <database_user_name>;
-         GRANT SELECT ON TABLE <schema_name>.<table_name> TO <database_user_name>;;
+         GRANT SELECT ON TABLE <schema_name>.<table_name> TO <database_user_name>;
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
