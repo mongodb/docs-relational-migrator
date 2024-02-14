@@ -41,8 +41,14 @@ Steps
    .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
-      For snapshot jobs against PostGreSQL, there are no required 
-      prerequisites.
+      For snapshot jobs against PostGreSQL, the service account requires
+      schema ``USAGE`` and table ``SELECT`` permissions:
+
+      .. code-block:: sql
+         :copyable: true
+
+         GRANT USAGE ON SCHEMA SCHEMA_NAME TO POSTGRES;
+         GRANT SELECT ON TABLE SCHEMA_NAME.TABLE_NAME TO POSTGRES;
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
