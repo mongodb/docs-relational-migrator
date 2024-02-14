@@ -109,13 +109,14 @@ Steps
          .. step:: Create a publication
 
             Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
-            by running:
+            each ``schema.table`` needs to be in the ``FOR`` statement 
+            comma-separated:
 
             .. code-block:: sql
                :copyable: true
 
-               CREATE PUBLICATION "migrator_name_publication" 
-               FOR TABLE <tables>; 
+               CREATE PUBLICATION "MIGRATOR_NAME_PUBLICATION" 
+               FOR TABLE "SCHEMA"."TABLE","SCHEMA"."TABLE2"; 
 
          .. step:: Set replica identity to FULL for each table
 
