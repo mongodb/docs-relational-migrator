@@ -101,8 +101,8 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT USAGE ON SCHEMA SCHEMA_NAME TO <role>;
-                  GRANT SELECT ON TABLE_NAME TO <role>;
+                  GRANT USAGE ON SCHEMA <schema> TO <role>;
+                  GRANT SELECT ON <schema>.<table> TO <role>;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
             #. Grant the REPLICATION_GROUP role to the service account
@@ -124,7 +124,7 @@ Steps
             .. code-block:: sql
                :copyable: true
 
-               ALTER TABLE SCHEMA.TABLE OWNER TO <role>;
+               ALTER TABLE <schema>.<table> OWNER TO <role>;
                -- ADDITIONAL ALTER TABLE STATEMENTS...
 
          .. step:: Create a publication
