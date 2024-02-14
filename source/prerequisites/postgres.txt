@@ -10,22 +10,15 @@ PostgreSQL Migration Prerequisites
    :depth: 1
    :class: singlecol
 
-To run sync jobs from an PostGreSQL source database, the database may 
+To run sync jobs from an PostgreSQL source database, the database may 
 require some configuration changes. If Relational Migrator determines the 
 database needs configuration changes, it automatically generates a 
 SQL script with the required changes. It is recommended to have a 
 Database Administrator (DBA) review the commands in this script and 
 perform their execution on the database server. These instructions 
-configuration PostGreSQL for both types of sync jobs:
+configuration PostgreSQL for both types of sync jobs:
 
 .. include:: /includes/fact-short-sync-job-desc.rst
-
-About this Task
----------------
-
-Relational Migrator uses the PostgreSQL ``pgoutput`` plugin for logical 
-decoding. This plug-in is included in PostgreSQL versions 10+, no 
-additional installation or configuration is required.
 
 Before you Begin
 ----------------
@@ -41,15 +34,14 @@ Steps
    .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
-      For snapshot jobs against PostGreSQL, the service account requires
-      schema ``USAGE`` and table ``SELECT`` permissions. Replace 
-      ``POSTGRES`` with the name of your service account user:
+      For snapshot jobs against PostgreSQL, the service account requires
+      schema ``USAGE`` and table ``SELECT`` permissions.
 
       .. code-block:: sql
          :copyable: true
 
-         GRANT USAGE ON SCHEMA SCHEMA_NAME TO POSTGRES;
-         GRANT SELECT ON TABLE SCHEMA_NAME.TABLE_NAME TO POSTGRES;
+         GRANT USAGE ON SCHEMA <schema_name> TO <database_user_name>;
+         GRANT SELECT ON TABLE <schema_name>.<table_name> TO <database_user_name>;;
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
@@ -57,11 +49,11 @@ Steps
       .. procedure::
          :style: normal
 
-         For continuous jobs against PostGreSQL, you must edit the 
+         For continuous jobs against PostgreSQL, you must edit the 
          configuration file, grant role permissions to the service 
          account, and create a publication.
 
-         .. step:: Edit the configuration file 
+         .. step:: Enable logical replication 
 
             Logical replication may not be enabled by default. To enable logical 
             replication, change the `wal_level <https://postgresqlco.nf/doc/en/param/wal_level>`__ 
@@ -73,6 +65,23 @@ Steps
 
                wal_level = logical 
 
+            If you are using PostgreSQL hosted on AWS RDS, you must 
+            set the ``rds.logical_replication`` parameter. For details, 
+            see `Enable Logical Replication on AWS 
+            <https://repost.aws/knowledge-center/rds-postgresql-use-logical-replication>`__.
+         
+            .. tip
+
+               You can check if your AWS RDS instance has logical 
+               replication enabled with the following query:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  SELECT name,setting 
+                  FROM pg_settings 
+                  WHERE name IN ('wal_level','rds.logical_replication');
+
          .. step:: Create a SQL replication role
 
             a. Create a role with ``REPLICATION`` and ``LOGIN`` 
@@ -80,7 +89,7 @@ Steps
 
                .. code-block:: sql
 
-                  CREATE ROLE REPLICATION_GROUP REPLICATION LOGIN;
+                  CREATE ROLE <role> REPLICATION LOGIN;
 
             #. Grant the table ``SELECT`` and schema ``USAGE``
                permissions to the ``REPLICATION_GROUP`` role. Each table in
@@ -89,21 +98,20 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT USAGE ON SCHEMA SCHEMA_NAME TO REPLICATION_GROUP;
-                  GRANT SELECT ON TABLE_NAME TO REPLICATION_GROUP;
+                  GRANT USAGE ON SCHEMA SCHEMA_NAME TO <role>;
+                  GRANT SELECT ON TABLE_NAME TO <role>;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
             #. Grant the REPLICATION_GROUP role to the service account
 
-               Replace ``ORIGINAL_OWNER`` with the owner of the 
-               participating tables. Replace ``POSTGRES`` with the name of 
-               your service account user:
+               Replace ``<original_owner>`` with the owner of the 
+               participating tables.
 
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT REPLICATION_GROUP TO ORIGINAL_OWNER;
-                  GRANT REPLICATION_GROUP TO POSTGRES;
+                  GRANT REPLICATION_GROUP TO <original_owner>;
+                  GRANT REPLICATION_GROUP TO <database_user_name>;
 
          .. step:: Grant ownership of each table to the REPLICATION_GROUP role
             
@@ -113,7 +121,7 @@ Steps
             .. code-block:: sql
                :copyable: true
 
-               ALTER TABLE SCHEMA.TABLE OWNER TO REPLICATION_GROUP;
+               ALTER TABLE SCHEMA.TABLE OWNER TO <role>;
                -- ADDITIONAL ALTER TABLE STATEMENTS...
 
          .. step:: Create a publication
@@ -126,7 +134,7 @@ Steps
                :copyable: true
 
                CREATE PUBLICATION "MIGRATOR_NAME_PUBLICATION" 
-               FOR TABLE "SCHEMA"."TABLE","SCHEMA"."TABLE2"; 
+               FOR TABLE "<schema>"."<table1>","<schema>"."<table2>"; 
 
          .. step:: Set replica identity to full
 
@@ -136,7 +144,7 @@ Steps
             .. code-block:: sql
                :copyable: true
 
-               ALTER TABLE SCHEMA.TABLE REPLICA IDENTITY FULL;
+               ALTER TABLE <schema>.<table> REPLICA IDENTITY FULL;
                -- ADDITIONAL ALTER TABLE STATEMENTS...
 
 Learn More
