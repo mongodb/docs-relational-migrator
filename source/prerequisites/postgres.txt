@@ -82,8 +82,9 @@ Steps
 
                   CREATE ROLE REPLICATION_GROUP REPLICATION LOGIN;
 
-            #. Grant the required ``SELECT`` table and ``USAGE``
-               schema permissions to the role:
+            #. Grant the table ``SELECT`` and schema ``USAGE``
+               permissions to the REPLICATION_GROUP role. Each table in
+               the migration requires a ``GRANT SELECT`` statement:
 
                .. code-block:: sql
                   :copyable: true
