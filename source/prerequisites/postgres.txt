@@ -70,7 +70,7 @@ Steps
             see `Enable Logical Replication on AWS 
             <https://repost.aws/knowledge-center/rds-postgresql-use-logical-replication>`__.
          
-            .. tip:
+            .. tip::
 
                You can use the following query to check if your 
                AWS RDS instance has logical 
