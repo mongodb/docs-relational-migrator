@@ -66,10 +66,12 @@ Steps
                wal_level = logical 
 
             If you are using PostgreSQL hosted on AWS RDS, you must 
-            set the ``rds.logical_replication`` parameter. For details, 
-            see `Enable Logical Replication on AWS 
+            set the ``rds.logical_replication`` parameter to ``1``. 
+            For details, see `Enable Logical Replication on AWS 
             <https://repost.aws/knowledge-center/rds-postgresql-use-logical-replication>`__.
-         
+            You *must restart the database instance* after setting the 
+            parameter.
+
             .. tip::
 
                You can use the following query to check if your 
