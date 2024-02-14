@@ -30,8 +30,8 @@ additional installation or configuration is required.
 Before you Begin
 ----------------
 
-If PostgreSQL is configured as a cluster, Relational Migrator must connect
-to the master server.
+If PostgreSQL is configured as a cluster, Relational Migrator must 
+connect to the master server.
 
 Steps
 -----
@@ -115,8 +115,8 @@ Steps
          .. step:: Create a publication
 
             Create a `publication <https://www.postgresql.org/docs/current/logical-replication-publication.html>`__ 
-            each ``schema.table`` needs to be in the ``FOR`` statement 
-            comma-separated:
+            each ``schema.table`` in the migration must be specified 
+            in the ``FOR`` statement separated by commas:
 
             .. code-block:: sql
                :copyable: true
