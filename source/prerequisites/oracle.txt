@@ -110,7 +110,7 @@ Steps
                 .. code-block:: sql
                    :copyable: true
 
-                    SELECT LOG_MODE FROM V$DATABASE; 
+                    SELECT LOG_MODE FROM V_$DATABASE; 
     
          .. step:: Enable supplemental logging
 
