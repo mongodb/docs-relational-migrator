@@ -105,7 +105,7 @@ Steps
                   GRANT SELECT ON <schema>.<table> TO <role>;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
-            #. Grant the REPLICATION_GROUP role to the service account
+            #. Grant the role to the service account
 
                Replace ``<original_owner>`` with the owner of the 
                participating tables.
@@ -113,10 +113,10 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT REPLICATION_GROUP TO <original_owner>;
-                  GRANT REPLICATION_GROUP TO <database_user_name>;
+                  GRANT <role> TO <original_owner>;
+                  GRANT <role> TO <database_user_name>;
 
-         .. step:: Grant ownership of each table to the REPLICATION_GROUP role
+         .. step:: Grant ownership of each table to the role
             
             Each table in the migration requires a ``ALTER TABLE`` 
             statement:
@@ -136,7 +136,7 @@ Steps
             .. code-block:: sql
                :copyable: true
 
-               CREATE PUBLICATION "MIGRATOR_NAME_PUBLICATION" 
+               CREATE PUBLICATION "MIGRATOR_<name>_PUBLICATION" 
                FOR TABLE "<schema>"."<table1>","<schema>"."<table2>"; 
 
          .. step:: Set replica identity to full
