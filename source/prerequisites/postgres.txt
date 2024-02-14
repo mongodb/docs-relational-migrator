@@ -83,7 +83,7 @@ Steps
                   CREATE ROLE REPLICATION_GROUP REPLICATION LOGIN;
 
             #. Grant the table ``SELECT`` and schema ``USAGE``
-               permissions to the REPLICATION_GROUP role. Each table in
+               permissions to the ``REPLICATION_GROUP`` role. Each table in
                the migration requires a ``GRANT SELECT`` statement:
 
                .. code-block:: sql
@@ -128,7 +128,7 @@ Steps
                CREATE PUBLICATION "MIGRATOR_NAME_PUBLICATION" 
                FOR TABLE "SCHEMA"."TABLE","SCHEMA"."TABLE2"; 
 
-         .. step:: Set replica identity to FULL for each table
+         .. step:: Set replica identity to full
 
             Each table in the migration requires a ``ALTER TABLE`` 
             statement:
