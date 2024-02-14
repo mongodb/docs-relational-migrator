@@ -81,15 +81,16 @@ Steps
                .. code-block:: sql
                   :copyable: true
 
-                  GRANT USAGE ON SCHEMA schema_name TO REPLICATION_GROUP;
+                  GRANT USAGE ON SCHEMA SCHEMA_NAME TO REPLICATION_GROUP;
                   GRANT SELECT ON table_name TO REPLICATION_GROUP;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
-         .. step:: Grant ownership of the tables to the REPLICATION_GROUP
+            #. Grant the REPLICATION_GROUP role to the service account
 
-            a. Replace ``ORIGINAL_OWNER`` with the owner of the 
-               participating tables. You must do this for each table in the 
-               migration.
+               Replace ``ORIGINAL_OWNER`` with the owner of the 
+               participating tables. You must do this for each table in 
+               the migration. ``POSTGRES`` is a placeholder for the 
+               service account used with Relational Migrator.
 
                .. code-block:: sql
                   :copyable: true
@@ -97,14 +98,13 @@ Steps
                   GRANT REPLICATION_GROUP TO ORIGINAL_OWNER;
                   GRANT REPLICATION_GROUP TO POSTGRES;
 
-            #. Grant ownership of each table to the ``REPLICATION_GROUP`` 
-               role:
+         .. step:: Grant ownership of the tables to the REPLICATION_GROUP role
 
-               .. code-block:: sql
-                  :copyable: true
+            .. code-block:: sql
+               :copyable: true
 
-                  ALTER TABLE SCHEMA.TABLE OWNER TO REPLICATION_GROUP;
-                  -- ADDITIONAL ALTER TABLE STATEMENTS...
+               ALTER TABLE SCHEMA.TABLE OWNER TO REPLICATION_GROUP;
+               -- ADDITIONAL ALTER TABLE STATEMENTS...
 
          .. step:: Create a publication
 
