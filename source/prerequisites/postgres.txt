@@ -58,8 +58,8 @@ Steps
          :style: normal
 
          For continuous jobs against PostGreSQL, you must edit the 
-         configuration, grant role permissions to the service account, 
-         and create a publication.
+         configuration file, grant role permissions to the service 
+         account, and create a publication.
 
          .. step:: Edit the configuration file 
 
