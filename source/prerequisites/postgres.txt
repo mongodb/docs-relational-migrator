@@ -89,7 +89,7 @@ Steps
                   :copyable: true
 
                   GRANT USAGE ON SCHEMA SCHEMA_NAME TO REPLICATION_GROUP;
-                  GRANT SELECT ON table_name TO REPLICATION_GROUP;
+                  GRANT SELECT ON TABLE_NAME TO REPLICATION_GROUP;
                   -- ADDITIONAL GRANT SELECT STATEMENTS...
 
             #. Grant the REPLICATION_GROUP role to the service account
@@ -105,7 +105,7 @@ Steps
                   GRANT REPLICATION_GROUP TO ORIGINAL_OWNER;
                   GRANT REPLICATION_GROUP TO POSTGRES;
 
-         .. step:: Grant ownership of the tables to the REPLICATION_GROUP role
+         .. step:: Grant ownership of each table to the REPLICATION_GROUP role
 
             .. code-block:: sql
                :copyable: true
