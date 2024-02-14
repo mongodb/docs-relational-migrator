@@ -43,7 +43,7 @@ Steps
 
       For snapshot jobs against PostGreSQL, the service account requires
       schema ``USAGE`` and table ``SELECT`` permissions. Replace 
-      ``POSTGRES`` with the name of your service account user.
+      ``POSTGRES`` with the name of your service account user:
 
       .. code-block:: sql
          :copyable: true
