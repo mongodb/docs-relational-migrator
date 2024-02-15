@@ -75,16 +75,6 @@ Steps
                     GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
                     GRANT SELECT ON V_$TRANSACTION TO user;
 
-            If your Oracle instance is hosted on AWS RDS, then use the 
-            `rdsadmin.rdsadmin_util.grant_sys_object 
-            <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.Oracle.CommonDBATasks.System.html#Appendix.Oracle.CommonDBATasks.TransferPrivileges>`__ 
-            stored procedure for all grant statements:
-
-            .. code-block:: sql
-                :copyable: true
-        
-                CALL rdsadmin.rdsadmin_util.grant_sys_object('V_$DATABASE', 'user', 'SELECT');
-
          .. step:: Turn on ``LogMiner`` at the database level
             
             In order to run continous jobs against Oracle, you must enable 
