@@ -49,8 +49,8 @@ Steps
       .. procedure::
          :style: normal
 
-         For continuous jobs against PostgreSQL, you must edit the 
-         configuration file, grant role permissions to the service 
+         For continuous jobs against PostgreSQL, you must enable 
+         logical replication, grant role permissions to the service 
          account, and create a publication.
 
          .. step:: Enable logical replication 
