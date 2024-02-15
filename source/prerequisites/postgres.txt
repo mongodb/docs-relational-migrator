@@ -1,8 +1,8 @@
 .. _rm-prereq-postgres:
 
-==================================
-PostgreSQL Migration Prerequisites
-==================================
+================================================
+Configure Migration Prerequisites for PostgreSQL
+================================================
 
 .. contents:: On this page
    :local:
