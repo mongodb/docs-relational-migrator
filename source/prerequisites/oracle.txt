@@ -32,7 +32,7 @@ About this Task
   of these commands can be run on PDB(plugable database) while commands 
   such as enabling ``ARCHIVELOG`` must be run on the
   CDB(container/master database). For details on each architecture, 
-  see `Overview of Container Databases (CDB) and Pluggable Databases (PDB) 
+  see `Overview of Container Databases and Pluggable Databases
   <https://oracle-base.com/articles/12c/multitenant-overview-container-database-cdb-12cr1>`__.
 - Supplemental logging is not allowed in Oracle Express editions.
 
