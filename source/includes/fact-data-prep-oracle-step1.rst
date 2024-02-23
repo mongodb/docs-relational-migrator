@@ -22,7 +22,7 @@ a. Create a service account:
       GRANT SELECT ON V_$DATABASE TO <user>;
       GRANT FLASHBACK ON <table> TO user;
 
-   .. note:
+   .. note::
 
       The service account only needs these permissions *if it is 
       not* the table owner. To check table ownership you can run the 
