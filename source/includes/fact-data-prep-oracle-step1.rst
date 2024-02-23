@@ -25,22 +25,22 @@ a. Create a service account:
       WHERE TABLE_NAME ='<table_name>'
       ORDER BY OWNER, TABLE_NAME;
 
-      If the service account *is* the table owner:
+   If the service account *is* the table owner:
 
-      .. code-block:: sql
-         :copyable: true
+   .. code-block:: sql
+      :copyable: true
 
-         GRANT CREATE SESSION TO <user>;
-         GRANT SELECT ON V_$DATABASE TO <user>;
-         GRANT FLASHBACK ON <table> TO user;
+      GRANT CREATE SESSION TO <user>;
+      GRANT SELECT ON V_$DATABASE TO <user>;
+      GRANT FLASHBACK ON <table> TO user;
 
-      If the service account *is not* the table owner:
+   If the service account *is not* the table owner:
 
-      .. code-block:: sql
-         :copyable: true
+   .. code-block:: sql
+      :copyable: true
 
-         GRANT CREATE SESSION TO <user>;
-         GRANT SELECT_CATALOG_ROLE TO <user>;
-         GRANT SELECT ANY TABLE TO <user>;
-         GRANT SELECT ON V_$DATABASE TO <user>;
-         GRANT FLASHBACK ON <table> TO user;
+      GRANT CREATE SESSION TO <user>;
+      GRANT SELECT_CATALOG_ROLE TO <user>;
+      GRANT SELECT ANY TABLE TO <user>;
+      GRANT SELECT ON V_$DATABASE TO <user>;
+      GRANT FLASHBACK ON <table> TO user;
