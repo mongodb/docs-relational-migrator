@@ -34,9 +34,6 @@ About this Task
   For details on each architexture, see `the oracle docs 
   <https://oracle-base.com/articles/12c/multitenant-overview-container-database-cdb-12cr1>`__.
 - Supplemental logging is not allowed in Oracle Express editions.
-- For additional troubleshooting and debugging information,
-  see the `debezium oracle help blog post
-  <https://debezium.io/blog/2022/09/30/debezium-oracle-series-part-1/#configure-oracle-users>`__.
 
 Steps
 -----
@@ -144,3 +141,6 @@ capture row-level changes. For more details, see:
 
 - `Debezium Oracle <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_databas>`__
 - `Oracle docs how to toggle archive logging <https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm>`__.
+
+For additional troubleshooting and debugging information, see the `debezium oracle help blog post
+<https://debezium.io/blog/2022/09/30/debezium-oracle-series-part-1/#configure-oracle-users>`__.
