@@ -54,26 +54,26 @@ Steps
                 .. code-block:: sql
                     :copyable: true
 
-                    GRANT SET CONTAINER TO user;
-                    GRANT FLASHBACK ANY TABLE TO user;
-                    GRANT EXECUTE_CATALOG_ROLE TO user;
-                    GRANT SELECT ANY TRANSACTION TO user;
-                    GRANT LOGMINING TO user;
-                    GRANT CREATE TABLE TO user;
-                    GRANT LOCK ANY TABLE TO user;
-                    GRANT CREATE SEQUENCE TO user;
-                    GRANT SELECT ON DBA_TABLESPACES TO user; 
-                    GRANT EXECUTE ON DBMS_LOGMNR TO user;
-                    GRANT EXECUTE ON DBMS_LOGMNR_D TO user;
-                    GRANT SELECT ON V_$LOG TO user;
-                    GRANT SELECT ON V_$LOG_HISTORY TO user;
-                    GRANT SELECT ON V_$LOGMNR_LOGS TO user;
-                    GRANT SELECT ON V_$LOGMNR_CONTENTS TO user;
-                    GRANT SELECT ON V_$LOGMNR_PARAMETERS TO user;
-                    GRANT SELECT ON V_$LOGFILE TO user;
-                    GRANT SELECT ON V_$ARCHIVED_LOG TO user;
-                    GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO user;
-                    GRANT SELECT ON V_$TRANSACTION TO user;
+                    GRANT SET CONTAINER TO <user>;
+                    GRANT FLASHBACK ANY TABLE TO <user>;
+                    GRANT EXECUTE_CATALOG_ROLE TO <user>;
+                    GRANT SELECT ANY TRANSACTION TO <user>;
+                    GRANT LOGMINING TO <user>;
+                    GRANT CREATE TABLE TO <user>;
+                    GRANT LOCK ANY TABLE TO <user>;
+                    GRANT CREATE SEQUENCE TO <user>;
+                    GRANT SELECT ON DBA_TABLESPACES TO <user>; 
+                    GRANT EXECUTE ON DBMS_LOGMNR TO <user>;
+                    GRANT EXECUTE ON DBMS_LOGMNR_D TO <user>;
+                    GRANT SELECT ON V_$LOG TO <user>;
+                    GRANT SELECT ON V_$LOG_HISTORY TO <user>;
+                    GRANT SELECT ON V_$LOGMNR_LOGS TO <user>;
+                    GRANT SELECT ON V_$LOGMNR_CONTENTS TO <user>;
+                    GRANT SELECT ON V_$LOGMNR_PARAMETERS TO <user>;
+                    GRANT SELECT ON V_$LOGFILE TO <user>;
+                    GRANT SELECT ON V_$ARCHIVED_LOG TO <user>;
+                    GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO <user>;
+                    GRANT SELECT ON V_$TRANSACTION TO <user>;
 
          .. step:: Turn on ``LogMiner`` at the database level
             
