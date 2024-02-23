@@ -13,37 +13,42 @@ a. Create a service account:
 
 #. Grant select permissions to the service account:
 
-   If the service account *is* the table owner:
+   The service account only needs these permissions *if it is 
+   not* the table owner. To check table ownership you can run the 
+   following query:
 
    .. code-block:: sql
       :copyable: true
 
-      GRANT CREATE SESSION TO <user>;
-      GRANT SELECT ON V_$DATABASE TO <user>;
-      GRANT FLASHBACK ON <table> TO user;
+      SELECT TABLE_NAME, OWNER 
+      FROM ALL_TABLES 
+      WHERE TABLE_NAME ='<table_name>'
+      ORDER BY OWNER, TABLE_NAME;
 
-   .. note::
+   .. tabs::
 
-      The service account only needs these permissions *if it is 
-      not* the table owner. To check table ownership you can run the 
-      following query:
+      .. tab:: Service account is table owner
+         :tabid: service-account-is
 
-      .. code-block:: sql
-         :copyable: true
+         If the service account *is* the table owner:
 
-         SELECT TABLE_NAME, OWNER 
-         FROM ALL_TABLES 
-         WHERE TABLE_NAME ='<table_name>'
-         ORDER BY OWNER, TABLE_NAME;
+         .. code-block:: sql
+            :copyable: true
 
-   If the service account *is not* the table owner:
+            GRANT CREATE SESSION TO <user>;
+            GRANT SELECT ON V_$DATABASE TO <user>;
+            GRANT FLASHBACK ON <table> TO user;
 
-   .. code-block:: sql
-      :copyable: true
+      .. tab:: Service Account is not table owner
+         :tabid: service-account-is-not
 
-      GRANT CREATE SESSION TO <user>;
-      GRANT SELECT_CATALOG_ROLE TO <user>;
-      GRANT SELECT ANY TABLE TO <user>;
-      GRANT SELECT ON V_$DATABASE TO <user>;
-      GRANT FLASHBACK ON <table> TO user;
-      
+         If the service account *is not* the table owner:
+
+         .. code-block:: sql
+            :copyable: true
+
+            GRANT CREATE SESSION TO <user>;
+            GRANT SELECT_CATALOG_ROLE TO <user>;
+            GRANT SELECT ANY TABLE TO <user>;
+            GRANT SELECT ON V_$DATABASE TO <user>;
+            GRANT FLASHBACK ON <table> TO user;
