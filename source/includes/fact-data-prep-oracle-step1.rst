@@ -13,9 +13,9 @@ a. Create a service account:
 
 #. Grant select permissions to the service account:
 
-   The required permission for the service account depends on whether 
+   The required permission for the service account depend on whether 
    the tables are owned by the service account used to run the sync job.
-   To check table ownership you can run the following query:
+   To check table ownership run the following query:
 
    .. code-block:: sql
       :copyable: true

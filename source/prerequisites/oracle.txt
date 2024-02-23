@@ -49,35 +49,35 @@ Steps
             .. include:: /includes/fact-data-prep-oracle-step1.rst
 
             c. Grant additional permissions to the service account 
-               in order to run continuous sync jobs:
+               to run continuous sync jobs:
 
-                .. code-block:: sql
-                    :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-                    GRANT SET CONTAINER TO <user>;
-                    GRANT FLASHBACK ANY TABLE TO <user>;
-                    GRANT EXECUTE_CATALOG_ROLE TO <user>;
-                    GRANT SELECT ANY TRANSACTION TO <user>;
-                    GRANT LOGMINING TO <user>;
-                    GRANT CREATE TABLE TO <user>;
-                    GRANT LOCK ANY TABLE TO <user>;
-                    GRANT CREATE SEQUENCE TO <user>;
-                    GRANT SELECT ON DBA_TABLESPACES TO <user>; 
-                    GRANT EXECUTE ON DBMS_LOGMNR TO <user>;
-                    GRANT EXECUTE ON DBMS_LOGMNR_D TO <user>;
-                    GRANT SELECT ON V_$LOG TO <user>;
-                    GRANT SELECT ON V_$LOG_HISTORY TO <user>;
-                    GRANT SELECT ON V_$LOGMNR_LOGS TO <user>;
-                    GRANT SELECT ON V_$LOGMNR_CONTENTS TO <user>;
-                    GRANT SELECT ON V_$LOGMNR_PARAMETERS TO <user>;
-                    GRANT SELECT ON V_$LOGFILE TO <user>;
-                    GRANT SELECT ON V_$ARCHIVED_LOG TO <user>;
-                    GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO <user>;
-                    GRANT SELECT ON V_$TRANSACTION TO <user>;
+                  GRANT SET CONTAINER TO <user>;
+                  GRANT FLASHBACK ANY TABLE TO <user>;
+                  GRANT EXECUTE_CATALOG_ROLE TO <user>;
+                  GRANT SELECT ANY TRANSACTION TO <user>;
+                  GRANT LOGMINING TO <user>;
+                  GRANT CREATE TABLE TO <user>;
+                  GRANT LOCK ANY TABLE TO <user>;
+                  GRANT CREATE SEQUENCE TO <user>;
+                  GRANT SELECT ON DBA_TABLESPACES TO <user>; 
+                  GRANT EXECUTE ON DBMS_LOGMNR TO <user>;
+                  GRANT EXECUTE ON DBMS_LOGMNR_D TO <user>;
+                  GRANT SELECT ON V_$LOG TO <user>;
+                  GRANT SELECT ON V_$LOG_HISTORY TO <user>;
+                  GRANT SELECT ON V_$LOGMNR_LOGS TO <user>;
+                  GRANT SELECT ON V_$LOGMNR_CONTENTS TO <user>;
+                  GRANT SELECT ON V_$LOGMNR_PARAMETERS TO <user>;
+                  GRANT SELECT ON V_$LOGFILE TO <user>;
+                  GRANT SELECT ON V_$ARCHIVED_LOG TO <user>;
+                  GRANT SELECT ON V_$ARCHIVE_DEST_STATUS TO <user>;
+                  GRANT SELECT ON V_$TRANSACTION TO <user>;
 
          .. step:: Turn on ``LogMiner`` at the database level
             
-            In order to run continous jobs against Oracle, you must enable 
+            To run continous jobs against Oracle, you must enable 
             ``LogMiner`` at the database level. The following code-block
             is an example of automatically-generated code, which you 
             can run manually by substituting your database name:
