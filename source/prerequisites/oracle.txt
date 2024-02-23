@@ -143,5 +143,5 @@ Learn More
 - For details on enabling archive logging, see `how to toggle archive logging 
   <https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm>`__.
 - For additional troubleshooting and debugging information, see the 
-  `debezium oracle help blog post
+  `Debezium Oracle help blog post
   <https://debezium.io/blog/2022/09/30/debezium-oracle-series-part-1/#configure-oracle-users>`__.
