@@ -1,0 +1,75 @@
+.. _kafka-intro:
+
+======================================
+Relational Migrator with Kafka Connect
+======================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can use Relational Migrator to migrate data to and from Kafka. 
+Relational Migrator can be used as a Kafka Connect plug-in that improves 
+resilience and scalability of big data migration jobs.
+
+Use Cases
+---------
+
+Relational Migrator with Kafka is intended for large and long running jobs. 
+Relational Migrator with Kafka provides increased resilience for your large 
+and long running migration jobs.
+
+Behavior
+--------
+
+Relational Migrator works with Kafka as a Kafka Connect sink connector. A 
+`Debezium connector <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
+extracts data from a SQL database and is an event source. Relational Migrator 
+interprets and transforms events from the Debezium source and sends them to a 
+MongoDB cluster which acts as a data sink.
+
+Tasks
+-----
+
+You can use the following deployment methods to install Relational Migrator 
+with Kafka:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Deployment Method
+     - Description
+
+   * - :ref:`Install with Existing Kafka Cluster <install-kafka-cluster>`
+
+     - This deployment method is ideal if you are already running Kafka or 
+       have your own approach to installing and configuring Kafka.
+
+   * - :ref:`Install with a Containerized Cluster using Docker <install-docker>`
+
+     - This deployment method is ideal for educational purposes. Use this if you 
+       are looking to learn and understand how to configure your own multi-server Kafka
+       environment.
+
+   * - :ref:`Install with Confluent Cloud <install-confluent-kafka>`
+     - This deployment method is ideal if you want the reliability of Kafka without 
+       having to manage your own cluster. 
+
+Learn More
+----------
+
+- `Kafka and Kafka Connect <https://www.mongodb.com/docs/kafka-connector/current/introduction/kafka-connect/>`__
+
+- `Debezium <https://debezium.io/documentation/reference/stable/install.html>`__
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   /installation/kafka-deployments/install-kafka-cluster
+   /installation/kafka-deployments/install-docker
+   /installation/kafka-deployments/install-confluent-kafka
