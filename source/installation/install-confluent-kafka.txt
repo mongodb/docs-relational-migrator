@@ -1,0 +1,66 @@
+.. _install-confluent-kafka:
+
+============================
+Install with Confluent Cloud
+============================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can install Relational Migrator with Kafka using Confluent Cloud. This 
+deployment method provides the reliability of Kafka without having you manage 
+your own Kafka cluster. 
+
+Before you Begin
+----------------
+
+Due to restrictions by Confluent, you are only able to use basic, standard, and 
+dedicated cluster. For most use case, the basic and standard cluster are enough 
+to handle moving large volumes of data.
+
+Steps
+-----
+
+.. procedure::
+   :style: normal 
+
+   .. step:: Create a Confluent Cloud environment
+
+      Go to `Confluent Cloud <https://www.confluent.io/>`__ and create a new environment. 
+
+   .. step:: Enable schema registry
+
+      Enable schema registry and select a region.
+
+      If you have more than 1000 tables being migrated, use the Advanced schema registry tier.
+      Otherwise, the Essentials tier is adequate. 
+
+   .. step:: Create a cluster
+
+      For most use cases, the Basic and Standard tier clusters are enough. If you are moving large 
+      volumes of data, consider the Dedicated cluster tier.
+
+   .. step:: Configure permissions and API keys
+
+      You must configure the following:
+
+      .. step:: Configure Confluent Cloud API keys 
+
+      .. step:: Configure Kafka cluster API keys 
+
+      .. step:: Configure the environment ID 
+
+      .. step:: Configure the cluster ID
+
+      .. step:: Configure the Bootstrap Servers
+
+      .. step:: Configure the Kafka cluster Rest API
+
+Next Steps
+----------
+
+Learn More
+----------
