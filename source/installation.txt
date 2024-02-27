@@ -56,5 +56,6 @@ For instructions on installing Relational Migrator, see the following pages:
 
    /installation/install-on-a-single-machine/install-on-a-single-machine
    /installation/install-on-an-unattended-server/install-on-an-unattended-server
+   /installation/kafka-deployments/migrator-with-kafka
    /installation/install-with-docker
    /installation/file-location
