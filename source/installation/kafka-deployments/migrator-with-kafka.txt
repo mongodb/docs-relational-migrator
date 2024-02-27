@@ -26,7 +26,7 @@ Behavior
 
 Relational Migrator works with Kafka as a Kafka Connect sink connector. A 
 `Debezium connector <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
-extracts data from a SQL database and is an event source. Relational Migrator 
+captures data events from your source database, while Relational Migrator 
 interprets and transforms events from the Debezium source and sends them to a 
 MongoDB cluster which acts as a data sink.
 
