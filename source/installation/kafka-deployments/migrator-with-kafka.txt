@@ -20,7 +20,6 @@ Use Cases
 ---------
 
 Relational Migrator with Kafka is intended for large and long running jobs. 
-It provides increased resilience and scalability for your long running migration jobs.
 
 Behavior
 --------
