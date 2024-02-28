@@ -143,10 +143,10 @@ Next Steps
 Learn More
 ----------
 
+- `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__
+
 - :ref:`kafka-intro`
 
 - :ref:`install-kafka-cluster`
 
 - :ref:`install-docker`
-
-- `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__
