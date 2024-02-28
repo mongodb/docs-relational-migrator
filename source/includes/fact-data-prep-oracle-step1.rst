@@ -32,7 +32,6 @@ a. Create a service account:
 
       GRANT CREATE SESSION TO <user>;
       GRANT SELECT ON V_$DATABASE TO <user>;
-      GRANT FLASHBACK ON <table> TO user;
 
    If the service account *is not* the table owner:
 

@@ -68,12 +68,11 @@ Steps
                   :copyable: true
 
                   GRANT SET CONTAINER TO <user>;
-                  GRANT FLASHBACK ANY TABLE TO <user>;
                   GRANT EXECUTE_CATALOG_ROLE TO <user>;
                   GRANT SELECT ANY TRANSACTION TO <user>;
                   GRANT LOGMINING TO <user>;
                   GRANT CREATE TABLE TO <user>;
-                  GRANT LOCK ANY TABLE TO <user>;
+                  GRANT LOCK <table> TO <user>;
                   GRANT CREATE SEQUENCE TO <user>;
                   GRANT SELECT ON DBA_TABLESPACES TO <user>; 
                   GRANT EXECUTE ON DBMS_LOGMNR TO <user>;
