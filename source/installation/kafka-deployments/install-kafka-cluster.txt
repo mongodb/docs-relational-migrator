@@ -6,6 +6,10 @@ Install with an Existing Kafka Cluster
 
 .. default-domain:: mongodb
 
+.. facet::
+   :name: genre
+   :values: tutorial
+
 .. contents:: On this page
    :local:
    :backlinks: none
