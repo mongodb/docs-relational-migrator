@@ -25,7 +25,7 @@ Before you Begin
 ----------------
 
 Due to restrictions by Confluent, you are only able to use Basic, Standard, and 
-Dedicated cluster. For most use cases, the basic and standard cluster are enough 
+Dedicated clusters. For most use cases, the basic and standard cluster are enough 
 to handle migrating large volumes of data.
 
 Steps
