@@ -43,12 +43,24 @@ For instructions on installing Relational Migrator, see the following pages:
 
    * - Kafka
 
-     - Suitable for larger production jobs. Integrates with your own Kafka 
-       infrastructure to provide enhanced resiliency.
+     - The Kafka deployment method is recommended for long-running CDC syncs and 
+       large data migrations of more than 20GB. pache Kafka is an open-source platform 
+       for distributed workloads, offering high availability and automatic recovery. 
+       This option is the most advanced, and is intended for users who require 
+       long-running or large production data syncs.
 
-     - The Kafka deployment model is not yet generally available, but you can 
-       reach out to your MongoDB account team to discuss private preview 
-       opportunities.
+     - :ref:`kafka-intro`
+
+   * - Kafka with Confluent Cloud
+
+     - The Kafka with Confluent Cloud deployment is an option for users who want 
+       the reliability of Kafka without having to manage their own cluster. 
+       Confluent is a fully-managed Kafka hosting provider run by the founders of 
+       Kafka. This mode is similar to Kafka mode except that it uses APIs to upload 
+       the latest Relational Migrator sink connectors in the Confluent Cloud to be 
+       used as a managed connector.
+
+     - :ref:`install-confluent-kafka`
 
 .. toctree::
    :hidden:
