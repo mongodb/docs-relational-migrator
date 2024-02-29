@@ -20,19 +20,15 @@ For instructions on installing Relational Migrator, see the following pages:
 
      - Description
 
-     - Reference
-
    * - Local
 
-     - Suitable for evaluation and proof of concept jobs.
-
-     - :ref:`Install on a Single Machine <single-machine-install>`
+     - Suitable for evaluation and proof of concept jobs. For more information, 
+       see :ref:`Install on a Single Machine <single-machine-install>`. 
 
    * - Unattended server
 
-     - Suitable for smaller production jobs.
-
-     - :ref:`Install on an Unattended Server <unattended-server>`
+     - Suitable for smaller production jobs. For more information, see 
+       :ref:`Install on an Unattended Server <unattended-server>`
 
    * - Kafka
 
@@ -40,9 +36,8 @@ For instructions on installing Relational Migrator, see the following pages:
        large data migrations of more than 20GB. pache Kafka is an open-source platform 
        for distributed workloads, offering high availability and automatic recovery. 
        This option is the most advanced, and is intended for users who require 
-       long-running or large production data syncs.
-
-     - :ref:`kafka-intro`
+       long-running or large production data syncs. For more information, see 
+       :ref:`kafka-intro`.
 
    * - Kafka with Confluent Cloud
 
@@ -51,9 +46,7 @@ For instructions on installing Relational Migrator, see the following pages:
        Confluent is a fully-managed Kafka hosting provider run by the founders of 
        Kafka. This mode is similar to Kafka mode except that it uses APIs to upload 
        the latest Relational Migrator sink connectors in the Confluent Cloud to be 
-       used as a managed connector.
-
-     - :ref:`install-confluent-kafka`
+       used as a managed connector. For more information, see :ref:`install-confluent-kafka`.
 
 .. toctree::
    :hidden:
