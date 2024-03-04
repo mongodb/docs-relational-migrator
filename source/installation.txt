@@ -36,11 +36,11 @@ For instructions on installing Relational Migrator, see the following pages:
 
    * - Kafka
 
-     - The Kafka deployment method is recommended for long-running CDC syncs and 
-       large data migrations of more than 20GB. Apache Kafka is an open-source platform 
-       for distributed workloads, that offers high availability and automatic recovery. 
-       This option is the most advanced, and is intended for users who require 
-       long-running or large production data syncs. 
+     - The Kafka deployment method is recommended for long-running Change Data 
+       Capture (CDC) syncs and large data migrations of more than 20GB. Apache Kafka 
+       is an open-source platform for distributed workloads that offers high 
+       availability and automatic recovery. This option is the most advanced, and is 
+       intended for users who require long-running or large production data syncs. 
        
        For more information, see :ref:`kafka-intro`.
 
