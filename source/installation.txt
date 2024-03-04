@@ -44,10 +44,11 @@ For instructions on installing Relational Migrator, see the following pages:
    * - Kafka
 
      - The Kafka deployment method is recommended for long-running Change Data 
-       Capture (CDC) syncs and large data migrations of more than 20GB. Apache Kafka 
-       is an open-source platform for distributed workloads that offers high 
-       availability and automatic recovery. This option is the most advanced, and is 
-       intended for users who require long-running or large production data syncs. 
+       Capture (CDC) syncs and large data migrations of more than 20GB. `Apache Kafka 
+       <https://kafka.apache.org/>`__ is an open-source platform for distributed 
+       workloads that offers high availability and automatic recovery. This option 
+       is the most advanced, and is intended for users who require long-running or 
+       large production data syncs. 
        
        For more information, see :ref:`kafka-intro`.
 
@@ -55,9 +56,10 @@ For instructions on installing Relational Migrator, see the following pages:
 
      - The Kafka with Confluent Cloud deployment method is an option for users who 
        want the reliability of Kafka without having to manage their own cluster. 
-       Confluent is a fully-managed Kafka hosting provider run by the founders of 
-       Kafka. This deployment method uses APIs to add the newest Relational Migrator 
-       sink connectors to Confluent Cloud as managed connectors.
+       `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
+       provider run by the founders of Kafka. This deployment method uses APIs to 
+       add the newest Relational Migrator sink connectors to Confluent Cloud as 
+       managed connectors.
 
        For more information, see :ref:`install-confluent-kafka`.
 
