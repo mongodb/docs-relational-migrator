@@ -23,8 +23,7 @@ resilience and scalability of big data migration jobs.
 Use Cases
 ---------
 
-Relational Migrator with Kafka is intended for large and long running jobs as 
-it is able to improve resilience and scalability for these migration jobs. 
+Relational Migrator with Kafka is intended for large and long running jobs.
 
 Behavior
 --------
