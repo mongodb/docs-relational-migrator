@@ -18,7 +18,7 @@ Install with Confluent Cloud
 
 You can install Relational Migrator with Kafka using 
 `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__. 
-This deployment method provides the reliability of Kafka without having you 
+This deployment method provides the reliability of Kafka without having to 
 manage your own Kafka cluster. 
 
 Before you Begin
@@ -42,15 +42,15 @@ Steps
 
       Enable schema registry and select a region.
 
-      If you have more than 1000 tables being migrated, use the Advanced schema registry tier.
-      Otherwise, the Essentials tier is adequate. 
+      If you have more than 1000 tables to migrate, use the Advanced schema registry tier.
+      Otherwise, the Essentials tier is enough. 
 
    .. step:: Create a cluster
 
       Navigate to your cluster page to create a new cluster.
 
       For most use cases, the Basic and Standard tier clusters are enough. If you 
-      are moving large volumes of data, consider the Dedicated cluster tier.
+      are migrating large volumes of data, consider the Dedicated cluster tier.
 
    .. step:: Configure and gather permissions and API keys
 
@@ -82,12 +82,12 @@ Steps
             Navigate to your :guilabel:`Cluster Overview` to create your Kafka cluster API 
             keys.
 
-            Save these configurations to add to your ``user.properties`` file
+            Save these configurations to add to your ``user.properties`` file.
 
             For more information, see `Use API Keys to Control Access in Confluent Cloud 
             <https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html>`__.
 
-   .. step:: Gather additional configuration information
+   .. step:: Gather more configuration information
 
       .. procedure::
 
@@ -133,20 +133,18 @@ Steps
 
    .. step:: Restart Relational Migrator 
 
+      Exit Relational Migrator and relaunch it. 
+
 Next Steps
 ----------
 
 - :ref:`rm-projects`
-
 - :ref:`rm-create-jobs` 
 
 Learn More
 ----------
 
 - `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__
-
 - :ref:`kafka-intro`
-
 - :ref:`install-kafka-cluster`
-
 - :ref:`install-docker`
