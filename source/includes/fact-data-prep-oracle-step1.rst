@@ -40,6 +40,6 @@ a. Create a service account:
 
       GRANT CREATE SESSION TO <user>;
       GRANT SELECT_CATALOG_ROLE TO <user>;
-      GRANT SELECT ANY TABLE TO <user>;
+      GRANT SELECT <table> TO <user>;
       GRANT SELECT ON V_$DATABASE TO <user>;
       GRANT FLASHBACK ON <table> TO user;
