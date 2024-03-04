@@ -41,7 +41,7 @@ For instructions on installing Relational Migrator, see the following pages:
        Kafka <https://kafka.apache.org/>`__ is an open-source platform for distributed 
        workloads that offers high availability and automatic recovery. This is the most 
        advanced option that is intended for users who require long-running or large 
-       production data syncs. 
+       production data migrations. 
        
        For more information, see :ref:`kafka-intro`.
 
