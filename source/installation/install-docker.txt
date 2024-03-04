@@ -1,0 +1,48 @@
+.. _install-docker:
+
+=================================================
+Install with a Containerized Cluster Using Docker
+=================================================
+
+.. default-domain:: mongodb
+
+.. facet::
+   :name: genre
+   :values: tutorial
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can install Relational Migrator with Kafka in a containerized environment 
+using Docker. This method configures Kafka and Zookeeper to store data locally 
+in Docker containers. Mounted volumes can be used for persisting data when 
+necessary in the event that a container stops running or is restarted. This 
+installation method is not recommended for production workloads.
+
+Before you Begin
+----------------
+
+You must have Docker installed on your computer. For more information, see the 
+`Docker Documentation <https://docs.docker.com/engine/install/>`__. 
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Install a Kafka cluster
+
+   .. step:: Install a Kafka Connect cluster
+
+   .. step:: Install Relational Migrator
+
+   .. step:: If your source database is MySQL or Oracle, add their related drivers
+
+Learn More
+----------
+
+
