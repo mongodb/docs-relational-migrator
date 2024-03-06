@@ -17,10 +17,10 @@ Install with a Containerized Cluster Using Docker
    :class: singlecol
 
 You can install Relational Migrator with Kafka in a containerized environment 
-using `Docker <https://docs.docker.com/engine/>`__. This method configures 
-Kafka and Zookeeper to store data locally in Docker containers. This deployment 
-method is ideal for educational purposes. Use this if you are looking to learn 
-and understand how to configure your own multi-server Kafka environment. 
+using `Docker <https://docs.docker.com/engine/>`__. This method configures Kafka 
+to store data locally in Docker containers. This deployment method is ideal for 
+educational purposes. Use this if you are looking to learn and understand how to 
+configure your own multi-server Kafka environment. 
 
 .. note::
 
@@ -82,7 +82,7 @@ Steps
 
       1. From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
          select the appropriate Relational Migrator installer.
-      #. Create a docker image using a suitable Migrator installer.
+      #. Create a docker image using a Relational Migrator installer.
 
          For a complete example, you can download the following docker-compose: 
          `Containerised kafka-connect cluster with Relational Migrator 
@@ -92,8 +92,7 @@ Steps
 
       Relational Migrator uses the JDBC driver of the respective source database to read 
       database schema. It bundles SQL Server and PostgreSQL JDBC drivers. For MySQL and 
-      Oracle, you must add their drivers at 
-      ``<path-to-installation>/mongodb-relational-migrator/lib/app/lib``
+      Oracle, you must add their drivers at ``<path-to-installation>/mongodb-relational-migrator/lib/app/lib``
       
       - Oracle: `21.6.0.0 of odjbc11.jar from the Oracle 21c
         <https://www.oracle.com/database/technologies/appdev/jdbc-drivers-archive.html>`__
