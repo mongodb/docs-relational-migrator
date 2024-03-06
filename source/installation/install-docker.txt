@@ -24,7 +24,7 @@ configure your own multi-server Kafka environment.
 
 .. note::
 
-   This is deployment method is not recommended for production workloads. 
+   This deployment method is not recommended for production workloads. 
 
 About this Task
 ---------------
@@ -47,9 +47,10 @@ Steps
 
    .. step:: Install a Kafka cluster
 
-      You can use an existing cluster and provide configuration details to connect 
-      your existing cluster or you can follow the following ``docker-compose`` example 
-      to install a Kafka cluster:
+      Use the following ``docker-compose`` example to install a Kafka cluster.
+      
+      You can also use an existing cluster and provide configuration details to connect 
+      your existing cluster.
 
       .. code-block::
 
@@ -82,17 +83,20 @@ Steps
 
       1. From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
          select the appropriate Relational Migrator installer.
+
       #. Create a docker image using a Relational Migrator installer.
 
          For a complete example, you can download the following docker-compose: 
          `Containerised kafka-connect cluster with Relational Migrator 
          <https://migrator-installer-repository.s3-ap-southeast-2.amazonaws.com/1.4.3/docker-compose-migrator-single-kafka.yml>`__.
 
-   .. step:: If your source database is MySQL and/or Oracle, add their related drivers
+   .. step:: If your source database is MySQL or Oracle, add their related drivers
 
       Relational Migrator uses the JDBC driver of the respective source database to read 
       database schema. It bundles SQL Server and PostgreSQL JDBC drivers. For MySQL and 
-      Oracle, you must add their drivers at ``<path-to-installation>/mongodb-relational-migrator/lib/app/lib``
+      Oracle, you must add their drivers to the following path: 
+
+      ``<path-to-installation>/mongodb-relational-migrator/lib/app/lib``
       
       - Oracle: `21.6.0.0 of odjbc11.jar from the Oracle 21c
         <https://www.oracle.com/database/technologies/appdev/jdbc-drivers-archive.html>`__
