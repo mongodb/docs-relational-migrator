@@ -1,8 +1,8 @@
 .. _kafka-intro:
 
-======================================
-Relational Migrator with Kafka Connect
-======================================
+==========================================
+Integrating Relational Migrator with Kafka
+==========================================
 
 .. default-domain:: mongodb
 
@@ -16,14 +16,18 @@ Relational Migrator with Kafka Connect
    :depth: 1
    :class: singlecol
 
-You can use Relational Migrator to migrate data to and from Kafka. 
-Relational Migrator can be used as a Kafka Connect plug-in that improves 
-resilience and scalability of big data migration jobs.
+Relational Migrator uses `Apache Kafka 
+<https://www.mongodb.com/docs/kafka-connector/current/introduction/kafka-connect/#apache-kafka>`__ 
+as a robust transport layer to migrate data from a source relational database 
+to MongoDB. Relational Migrator can be used as a Kafka Connect plug-in that 
+improves resilience and scalability of big data migration jobs.
 
 Use Cases
 ---------
 
 Relational Migrator with Kafka is intended for large and long running jobs.
+Kafka's built-in resilience ensures the sync job can recover and continue 
+running if any component becomes temporarily unavailable. 
 
 Behavior
 --------
