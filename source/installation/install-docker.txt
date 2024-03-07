@@ -86,7 +86,7 @@ Steps
 
       #. Create a docker image using a Relational Migrator installer.
 
-         For a complete example, you can download the following docker-compose: 
+         For a complete example, you can download the following ``docker-compose``: 
          `Containerised kafka-connect cluster with Relational Migrator 
          <https://migrator-installer-repository.s3-ap-southeast-2.amazonaws.com/1.4.3/docker-compose-migrator-single-kafka.yml>`__.
 
