@@ -42,8 +42,8 @@ About this Task
      docker run -p 8080:8080 -e MIGRATOR_APP_TELEMETRY_ENABLE=false public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
 - `Docker volumes <https://docs.docker.com/storage/volumes/>`__ can be used for 
-  persisting data and/or drivers in the event that a container stops running 
-  or is restarted. You can create volumes to the paths:
+  persisting data and/or drivers if a container stops running or is restarted. 
+  You can create volumes to the paths:
 
   - For data and logs: ``/root/Migrator``
   - For drivers: ``/opt/mongodb-relational-migrator/lib/app/lib``
