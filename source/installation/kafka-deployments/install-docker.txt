@@ -108,6 +108,6 @@ Learn More
 ----------
 
 - :ref:`kafka-intro`
-- :ref:`install-confluent-kafka`
+- :ref:`install-confluent-kafka` 
 - :ref:`install-kafka-cluster`
 - `Docker Engine Overview <https://docs.docker.com/engine/>`__
