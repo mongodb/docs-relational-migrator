@@ -29,9 +29,32 @@ configure your own multi-server Kafka environment.
 About this Task
 ---------------
 
-Docker volumes can be used for persisting data when necessary in the event 
-that a container stops running or is restarted. For more information, see 
-`Volumes <https://docs.docker.com/storage/volumes/>`__.
+- Relational Migrator is accessible on port 8080.
+
+- In the Docker container, Relational Migrator is installed to 
+  ``/opt/mongodb-relational-migrator/``.
+
+- When running in Docker, the ``user.properties`` file is ignored. Define any 
+  property overrides using environment variables. For example: 
+
+  .. code-block::
+
+     docker run -p 8080:8080 -e MIGRATOR_APP_TELEMETRY_ENABLE=false public.ecr.aws/v4d7k6c9/relational-migrator:latest
+
+- `Docker volumes <https://docs.docker.com/storage/volumes/>`__ can be used for 
+  persisting data and/or drivers in the event that a container stops running 
+  or is restarted. You can create volumes to the paths:
+
+  - For data and logs: ``/root/Migrator``
+  - For drivers: ``/opt/mongodb-relational-migrator/lib/app/lib``
+
+  The following example runs Relational Migrator with persistent volumes for drivers 
+  and data:
+
+  .. code-block::
+
+     docker run -p 8080:8080 -v /migrator/drivers:/opt/mongodb-relational-migrator/lib/app/lib -v\
+     /migrator/data:/root/Migrator  public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
 Before you Begin
 ----------------
