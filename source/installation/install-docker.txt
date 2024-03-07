@@ -29,7 +29,7 @@ configure your own multi-server Kafka environment.
 About this Task
 ---------------
 
-- Relational Migrator is accessible on port 8080.
+- Relational Migrator is available port 8080.
 
 - In the Docker container, Relational Migrator is installed to 
   ``/opt/mongodb-relational-migrator/``.
