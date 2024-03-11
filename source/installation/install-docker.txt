@@ -73,7 +73,7 @@ Steps
    .. step:: Install a Kafka Connect cluster
 
       Install a Kafka Connect cluster with the ``relational-migrator-connect`` image 
-      from the public Amazon ECR: ``<public.ecr.aws/v4d7k6c9/relational-migrator:latest>``__.
+      from the public Amazon ECR: ``public.ecr.aws/v4d7k6c9/relational-migrator:latest``.
 
       See the following ``docker-compose`` example:
 
