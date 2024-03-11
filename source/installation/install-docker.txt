@@ -18,9 +18,8 @@ Install with a Containerized Cluster Using Docker
 
 You can install Relational Migrator with Kafka in a containerized environment 
 using `Docker <https://docs.docker.com/engine/>`__. This method configures Kafka 
-to store data locally in Docker containers. This deployment method is ideal for 
-educational purposes. Use this if you want to learn how to configure your own 
-multi-server Kafka environment. 
+to store data locally in Docker containers. Use this if you want to learn how 
+to configure your own multi-server Kafka environment. 
 
 .. warning::
 
@@ -29,32 +28,8 @@ multi-server Kafka environment.
 About this Task
 ---------------
 
-- Relational Migrator is available on port 8080.
-
-- In the Docker container, Relational Migrator is installed to 
-  ``/opt/mongodb-relational-migrator/``.
-
-- When running in Docker, the ``user.properties`` file is ignored. Define any 
-  property overrides using environment variables. For example: 
-
-  .. code-block::
-
-     docker run -p 8080:8080 -e MIGRATOR_APP_TELEMETRY_ENABLE=false public.ecr.aws/v4d7k6c9/relational-migrator:latest
-
-- `Docker volumes <https://docs.docker.com/storage/volumes/>`__ can be used for 
-  persisting data and/or drivers if a container stops running or is restarted. 
-  You can create volumes to the paths:
-
-  - For data and logs: ``/root/Migrator``
-  - For drivers: ``/opt/mongodb-relational-migrator/lib/app/lib``
-
-  The following example runs Relational Migrator with persistent volumes for drivers 
-  and data:
-
-  .. code-block::
-
-     docker run -p 8080:8080 -v /migrator/drivers:/opt/mongodb-relational-migrator/lib/app/lib -v\
-     /migrator/data:/root/Migrator  public.ecr.aws/v4d7k6c9/relational-migrator:latest
+`Docker volumes <https://docs.docker.com/storage/volumes/>`__ can be used for 
+persisting data if a container stops running or is restarted. 
 
 Before you Begin
 ----------------
@@ -96,7 +71,45 @@ Steps
    .. step:: Install a Kafka Connect cluster
 
       Install a Kafka Connect cluster with the ``relational-migrator-connect`` image 
-      from the `public Amazon ECR <public.ecr.aws/v4d7k6c9/relational-migrator:latest>`__.
+      from the public Amazon ECR: ``public.ecr.aws/v4d7k6c9/relational-migrator:latest``.
+
+      See the following ``docker-compose`` example:
+
+      .. code-block::
+
+         version: '3'
+         services:
+         …
+            connect:
+            image: quay.io/debezium/connect:2.3.0.Final
+            ports:
+              - 8083:8083
+              - 9876:9876
+            depends_on:
+            kafka-1:
+               condition: service_healthy
+            deploy:
+               resources:
+                 reservations:
+                   memory: 2G
+            environment:
+               BOOTSTRAP_SERVERS: kafka-1:9092
+               GROUP_ID: 1
+               CONFIG_STORAGE_TOPIC: my_connect_configs
+               OFFSET_STORAGE_TOPIC: my_connect_offsets
+               STATUS_STORAGE_TOPIC: my_connect_statuses
+               CONNECT_METADATA_MAX_AGE_MS: 5000
+               CONNECT_AUTO_OFFSET_RESET: earliest
+               JMX_PORT: 9876
+               KAFKA_JMX_OPTS: "-Dcom.sun.management.jmxremote=true
+               -Dcom.sun.management.jmxremote.authenticate=false
+               -Dcom.sun.management.jmxremote.ssl=false
+               -Djava.rmi.server.hostname=connect
+               -Dcom.sun.management.jmxremote.port=9876"
+            volumes:
+               -${MIGRATOR_PATH_DRIVER}/ojdbc11.jar:/kafka/connect/
+         debezium-connector-oracle/ojdbc11.jar
+               - ${MIGRATOR_CONNECT_PATH}:/kafka/connect/kafka-connect-migrator
 
    .. step:: Install Relational Migrator
 
@@ -106,6 +119,28 @@ Steps
          select the appropriate Relational Migrator installer.
 
       #. Create a docker image using a Relational Migrator installer.
+       
+         See the following ``docker-compose`` example:
+
+         .. code-block::
+
+            version: '3'
+            services:
+            migrator:
+               image: public.ecr.aws/v4d7k6c9/relational-migrator:latest
+               container_name: migrator
+               ports:
+                  - "8080:8080"
+               environment:
+                  SPRING_PROFILES_ACTIVE: kafka
+                  MIGRATOR_KAFKA_BOOTSTRAP_SERVERS:kafka-1:9092
+                  MIGRATOR_KAFKA_CONNECT_URL:kafka-connect:8083
+                  MIGRATOR_KAFKA_ENABLE_TOPIC_CLEANUP: "true"
+                  MIGRATOR_KAFKA_CONNECT_METRICS_JMX_SERVICE_URL:    
+                     "service:jmx:rmi:///jndi/rmi://connect:9876/jmxrmi"
+               volumes:
+                  - ${MIGRATOR_PATH_DRIVER}:/opt/mongodb-relational-migrator/lib/app/lib
+                  - ${MIGRATOR_PATH_DATA}:/root/Migrator
 
          For a complete example, you can download the following ``docker-compose``: 
          `Containerised kafka-connect cluster with Relational Migrator 
