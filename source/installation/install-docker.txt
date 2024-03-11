@@ -18,7 +18,7 @@ Install with a Containerized Cluster Using Docker
 
 You can install Relational Migrator with Kafka in a containerized environment 
 using `Docker <https://docs.docker.com/engine/>`__. This method configures Kafka 
-to store data locally in Docker containers. Use method this if you want to learn 
+to store data locally in Docker containers. Use this method if you want to learn 
 how to configure your own multi-server Kafka environment. 
 
 .. warning::
@@ -73,7 +73,7 @@ Steps
    .. step:: Install a Kafka Connect cluster
 
       Install a Kafka Connect cluster with the ``relational-migrator-connect`` image 
-      from the public Amazon ECR: ``public.ecr.aws/v4d7k6c9/relational-migrator:latest``.
+      from the public Amazon ECR: ``<public.ecr.aws/v4d7k6c9/relational-migrator:latest>``__.
 
       See the following ``docker-compose`` example:
 
