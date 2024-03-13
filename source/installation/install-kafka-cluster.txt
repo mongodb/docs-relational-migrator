@@ -1,0 +1,70 @@
+.. _install-kafka-cluster:
+
+======================================
+Install with an Existing Kafka Cluster
+======================================
+
+.. default-domain:: mongodb
+
+.. facet::
+   :name: genre
+   :values: tutorial
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Before you Begin 
+----------------
+
+You must have Kafka and a Kafka Connect cluster accessible to the computer 
+running Relational Migrator.
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Install Debezium Source Connect Plugin
+
+      1. Download the source connector archive for your source database
+
+         - `MySQL Connector plugin archive 
+           <https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/2.4.1.Final/debezium-connector-mysql-2.4.1.Final-plugin.tar.gz>`__
+         - `Postgres Connector plugin archive 
+           <https://repo1.maven.org/maven2/io/debezium/debezium-connector-postgres/2.4.1.Final/debezium-connector-postgres-2.4.1.Final-plugin.tar.gz>`__
+         - `SQL Server Connector plugin archive 
+           <https://repo1.maven.org/maven2/io/debezium/debezium-connector-sqlserver/2.4.1.Final/debezium-connector-sqlserver-2.4.1.Final-plugin.tar.gz>`__ 
+         - `Oracle Connector plugin archive 
+           <https://repo1.maven.org/maven2/io/debezium/debezium-connector-oracle/2.4.1.Final/debezium-connector-oracle-2.4.1.Final-plugin.tar.gz>`__  
+         - `Db2 Connector plugin archive 
+           <https://repo1.maven.org/maven2/io/debezium/debezium-connector-db2/2.4.1.Final/debezium-connector-db2-2.4.1.Final-plugin.tar.gz>`__
+
+      #. Unzip the archive
+      
+         Locate the ``.jar`` file.
+
+      #. Copy the ``debezium-connector.jar`` file to the ``debezium-connector`` directory
+
+         From the downloaded archive, copy the ``debezium-connector.jar`` file to the
+         ``debezium-connector-xxx`` directory at Kafka Connect’s
+
+      #. Restart you Kafka Connect cluster
+       
+         To know if your plugin is successfully registered, you must see the following 
+         log statement in the kafka-connect start up logs:
+
+         
+
+   .. step:: Install Relational Migrator Sink Connect Plugin
+
+   .. step:: Install Relational Migrator
+
+   .. step:: Run Relational Migrator in Kafka-integrated model
+    
+
+Learn More
+----------
