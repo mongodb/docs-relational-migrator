@@ -55,16 +55,84 @@ Steps
       #. Restart you Kafka Connect cluster
        
          To know if your plugin is successfully registered, you must see the following 
-         log statement in the kafka-connect start up logs:
+         log statement in the ``kafka-connect`` start up logs:
 
-         
+         .. code-block::
+            :copyable: false
+
+            INFO || Added plugin 'io.debezium.connector.sqlserver.SqlServerConnector'
 
    .. step:: Install Relational Migrator Sink Connect Plugin
 
+      1. Download the latest version of the kafka-connect ``.jar`` file.
+      #. Copy the 
+      #. Restart your Kafka Connect cluster 
+
+         To know if your plugin is successfully registered, you must see the following 
+         log statement in the ``kafka-connect`` start up logs:
+
+         .. code-block::
+            :copyable: false
+
+            INFO || Added plugin 'com.mongodb.migrator.kafka.connect.MigratorSinkConnector'
+
    .. step:: Install Relational Migrator
 
-   .. step:: Run Relational Migrator in Kafka-integrated model
+      From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
+      select the appropriate Relational Migrator installer.
+
+   .. step:: Run Relational Migrator in ``kafka-integrated`` model
     
+      To run in ``kafka-integrated`` mode, update the following configurations in your 
+      ``user.properties``.
+
+      Your ``user.properties`` file is located in an OS specific location. For more 
+      information, see :ref:`Relational Migrator File Locations <file-location>`.
+
+      .. list-table:: 
+         :header-rows: 1
+
+         * - Property Name
+           - Default 
+           - Description 
+
+         * - ``spring.profiles.active``
+           - local
+           - Relational Migrator can be run in the following profile: 
+             
+             - ``kafka``: Remote server using embedded server deployment.
+             - ``confluent``: Remote server using Confluent Cloud for managed Kafka
+
+             Set the profile value to kafka. 
+
+         * - ``server.port``
+           - 8278
+           - The port at which the Relation Migrator UI is available.
+
+         * - ``migrator.kafka.bootstrap.servers``
+           - No default
+           - This is a list of ``host:port`` pairs of your pre-existing kafka cluster. 
+             
+             For example: ``kafka-1:9092``, ``kafka-2:9093``.
+             
+             For more information, see `Worker Configuration Properties 
+             <https://docs.confluent.io/platform/current/connect/userguide.html#worker-configuration-properties-file>`__. 
+
+         * - ``migrator.kafka.connect.url``
+           - No default 
+           - The Kafka Connect host url using the ``{host}:{port}`` format. 
+             
+             For example: ``localhost:8083``. 
+
+         * - ``migrator.kafka.connect.metrics.jmx.service.url``
+           - No default
+           - Kafka connect ``jmx`` url. 
+            
+             For example:``service:jmx:rmi:///jndi/rmi://localhost:9876/jmxrmi``. 
 
 Learn More
 ----------
+
+- :ref:`kafka-intro`
+- :ref:`install-docker`
+- :ref:`install-confluent-kafka`
