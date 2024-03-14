@@ -48,13 +48,12 @@ Steps
            <https://repo1.maven.org/maven2/io/debezium/debezium-connector-db2/2.4.1.Final/debezium-connector-db2-2.4.1.Final-plugin.tar.gz>`__
 
       #. Unzip the archive.
-      
-         Locate the ``.jar`` file.
 
       #. Copy the ``debezium-connector.jar`` file to the ``debezium-connector`` directory.
 
          From the downloaded archive, copy the ``debezium-connector.jar`` file to the
-         ``debezium-connector-xxx`` directory at Kafka Connect’s
+         ``debezium-connector-xxx`` directory at Kafka Connect’s plugin path on the 
+         Kafka Connect cluster.
 
       #. Restart you Kafka Connect cluster.
        
@@ -69,8 +68,10 @@ Steps
    .. step:: Install Relational Migrator Sink Connect Plugin
 
       1. Download the latest version of the kafka-connect ``.jar`` file.
+
       #. Copy the ``kafka-connect-migrator.jar`` file to the ``kafka-connect-migrator`` 
          directory.
+
       #. Restart your Kafka Connect cluster. 
 
          To know if your plugin is successfully registered, you must see the following 
@@ -86,10 +87,10 @@ Steps
       From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
       select the appropriate Relational Migrator installer.
 
-   .. step:: Run Relational Migrator in ``kafka-integrated`` model
-    
+   .. step:: Run Relational Migrator in ``kafka-integrated`` mode
+
       To run in ``kafka-integrated`` mode, update the following configurations in your 
-      ``user.properties``.
+      ``user.properties`` file.
 
       Your ``user.properties`` file is located in an OS specific location. For more 
       information, see :ref:`Relational Migrator File Locations <file-location>`.
