@@ -105,11 +105,10 @@ Steps
          * - ``spring.profiles.active``
            - local
            - Relational Migrator can be run in the following profile: 
-             
              - ``kafka``: Remote server using embedded server deployment.
              - ``confluent``: Remote server using Confluent Cloud for managed Kafka
 
-             Set the profile value to kafka. 
+             Set the profile value to ``kafka``. 
 
          * - ``server.port``
            - 8278
@@ -118,7 +117,6 @@ Steps
          * - ``migrator.kafka.bootstrap.servers``
            - No default
            - This is a list of ``host:port`` pairs of your pre-existing kafka cluster. 
-             
              For example: ``kafka-1:9092``, ``kafka-2:9093``.
              
              For more information, see `Worker Configuration Properties 
@@ -127,14 +125,13 @@ Steps
          * - ``migrator.kafka.connect.url``
            - No default 
            - The Kafka Connect host url using the ``{host}:{port}`` format. 
-             
              For example: ``localhost:8083``. 
 
          * - ``migrator.kafka.connect.metrics.jmx.service.url``
            - No default
-           - Kafka connect ``jmx`` url. 
-            
-             For example:``service:jmx:rmi:///jndi/rmi://localhost:9876/jmxrmi``. 
+           - The Kafka Connect ``jmx`` url. 
+             For example:
+             ``service:jmx:rmi:///jndi/rmi://localhost:9876/jmxrmi``. 
 
 Learn More
 ----------
