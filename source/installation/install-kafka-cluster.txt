@@ -67,9 +67,12 @@ Steps
 
    .. step:: Install Relational Migrator Sink Connect Plugin
 
-      1. Download the latest version of the kafka-connect ``.jar`` file.
+      1. Download the latest version of the Kafka Connect ``.jar`` file.
 
-      #. Copy the ``kafka-connect-migrator.jar`` file to the ``kafka-connect-migrator`` 
+         To download the Kafka Connect ``.jar`` file, see `Download a Connector JAR file 
+         <https://www.mongodb.com/docs/kafka-connector/current/introduction/install/#download-a-connector-jar-file>`__.
+
+      #. Copy the Kafka Connect ``.jar`` file to the ``kafka-connect-migrator`` 
          directory.
 
       #. Restart your Kafka Connect cluster. 
@@ -132,8 +135,6 @@ Steps
          * - ``migrator.kafka.connect.metrics.jmx.service.url``
            - No default
            - The Kafka Connect ``jmx`` url. 
-             For example:
-             ``service:jmx:rmi:///jndi/rmi://localhost:9876/jmxrmi``. 
 
 Learn More
 ----------
