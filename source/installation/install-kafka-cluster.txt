@@ -52,8 +52,9 @@ Steps
       #. Copy the ``debezium-connector.jar`` file to the ``debezium-connector`` directory.
 
          From the downloaded archive, copy the ``debezium-connector.jar`` file to the
-         ``debezium-connector-xxx`` directory at Kafka Connect’s plugin path on the 
-         Kafka Connect cluster.
+         ``debezium-connector-xxx`` directory at Kafka Connect’s `plugin.path 
+         <https://kafka.apache.org/documentation/#connectconfigs_plugin.path>`__ on your 
+         Kafka Connect cluster. For example: ``/kafka/connect/debezium-connector-sqlserver``.
 
       #. Restart you Kafka Connect cluster.
        
