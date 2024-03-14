@@ -67,13 +67,16 @@ Steps
 
    .. step:: Install Relational Migrator Sink Connect Plugin
 
-      1. Download the latest version of the Kafka Connect ``.jar`` file.
+      1. Download the latest version of the ``kafka-connect.jar`` file.
 
-         To download the Kafka Connect ``.jar`` file, see `Download a Connector JAR file 
-         <https://www.mongodb.com/docs/kafka-connector/current/introduction/install/#download-a-connector-jar-file>`__.
+         To download the latest ``kafka-connect.jar`` file, see the `Migrator Installer 
+         Repository <https://migrator-installer-repository.s3.ap-southeast-2.amazonaws.com/index.html>`__.
 
-      #. Copy the Kafka Connect ``.jar`` file to the ``kafka-connect-migrator`` 
-         directory.
+      #. Copy the ``.jar`` file to the ``kafka-connect-migrator`` directory.
+
+         The new ``kafka-connect-migrator`` directory is found at Kafka Connect’s `plugin.path 
+         <https://kafka.apache.org/documentation/#connectconfigs_plugin.path>`__. For example: 
+         ``/kafka/connect/kafka-connect-migrator``. 
 
       #. Restart your Kafka Connect cluster. 
 
