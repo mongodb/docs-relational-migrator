@@ -16,6 +16,10 @@ Install with an Existing Kafka Cluster
    :depth: 1
    :class: singlecol
 
+You can install Relational Migrator on an existing Kafka cluster including 
+Kafka Connect. This installation method is ideal if you are already running 
+Kafka or you have your own approach to installing and configuring Kafka.
+
 Before you Begin 
 ----------------
 
