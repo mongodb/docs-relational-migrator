@@ -90,17 +90,15 @@ Steps
        :guilabel:`Connect SourceDB` form. For details, see 
        :ref:`rm-relational-database-connection-strings`.
 
-    .. step:: Click :guilabel:`Connect`. 
+.. step:: Click :guilabel:`Connect`. 
 
-    .. step:: Click :guilabel:`Connect`. 
-    
-    On the :guilabel:`Connect Destination DB` form, input your 
-    :guilabel:`MongoDB connection string (URI)`.
+  On the :guilabel:`Connect Destination DB` form, input your 
+  :guilabel:`MongoDB connection string (URI)`.
 
-    If you leave any of the form fields for :guilabel:`Database`, :guilabel:`Username`, 
-    or :guilabel:`Password` blank, the values specified in the URI are used.
+  If you leave any of the form fields for :guilabel:`Database`, :guilabel:`Username`, 
+  or :guilabel:`Password` blank, the values specified in the URI are used.
 
-    Click :guilabel:`Connect`.
+  Click :guilabel:`Connect`.
 
 .. step:: Select your migration options
 
