@@ -147,4 +147,4 @@ Learn More
 - `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__
 - :ref:`kafka-intro`
 - :ref:`install-kafka-cluster`
-- :ref:`install-docker` 
+- :ref:`install-docker`
