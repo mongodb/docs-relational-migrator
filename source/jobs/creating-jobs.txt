@@ -134,16 +134,16 @@ Steps
 
    .. warning:: 
 
-      Before proceeding with starting a sync job:
+    Before proceeding with starting a sync job:
 
-      1. Download the script. 
-      2. Carefully review its contents.
-      3. Execute the statements.
-      4. Follow any commented manual steps.
+    1. Download the script. 
+    2. Carefully review its contents.
+    3. Execute the statements.
+    4. Follow any commented manual steps.
 
-.. step:: Start your job
+    .. step:: Start your job
 
-   Click :guilabel:`Start`.
+       Click :guilabel:`Start`.
 
 Next Steps
 ----------
