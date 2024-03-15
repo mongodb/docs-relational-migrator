@@ -41,6 +41,12 @@ MongoDB cluster that acts as a data sink.
 .. image:: /img/kafka/kafka-behavior.png
    :alt: Relational Migrator with Kafka
 
+Architecturally, Relational Migrator is deployed within Kafka as a Kafka 
+Connect sink connector. Database events are captured using the open-source 
+`Debezium tool <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
+for database change data capture. A Debezium Connector captures these events 
+from your source database. 
+
 Tasks
 -----
 
