@@ -112,6 +112,11 @@ Steps
       Your ``log`` file is located in an OS specific location. For more 
       information, see :ref:`Relational Migrator File Locations <file-location>`.
 
+Next Steps
+----------
+
+- :ref:`rm-projects`
+- :ref:`rm-create-jobs` 
 
 Learn More
 ----------
