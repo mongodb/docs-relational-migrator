@@ -106,7 +106,7 @@ Steps
 
    .. step:: Confirm successful installation
 
-      Start Relational Migrator and check logs. Cconfirm that the Kafka profile is 
+      Start Relational Migrator and check logs. Confirm that the Kafka profile is 
       active and that there are no errors.
 
       Your ``log`` file is located in an OS specific location. For more 
