@@ -155,9 +155,16 @@ Steps
         to view sync job errors.
 
      #. Review the debugging information in the :guilabel:`Error detail` 
-        column. If your sync job uses Kafka or Confluent Cloud support, any 
-        Kafka configuration errors are visible at the sync job level.
+        column. 
 
+     #. If your sync job uses Kafka or Confluent Cloud support, any 
+        Kafka configuration or connections errors are visible at the 
+        sync job level:
+
+        .. figure:: /img/jobs/jobs-kafka-confluent-connection-error.png
+           :alt: Confluent connection error
+           :figwidth: 760px
+          
         .. image:: /img/jobs/jobs-kafka-confluent-connection-error.png
            :alt: Confluent connection error
 
