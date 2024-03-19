@@ -92,7 +92,7 @@ Steps
    .. step:: Install Relational Migrator
 
       From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
-      select the appropriate Relational Migrator installer.
+      select the latest version of the Relational Migrator installer.
 
    .. step:: Run Relational Migrator in ``kafka-integrated`` mode
 
@@ -106,8 +106,8 @@ Steps
 
    .. step:: Confirm successful installation
 
-      Start Relational Migrator and check logs. Confirm that the Kafka profile is 
-      active and that there are no errors.
+      Start Relational Migrator and check the logs. Confirm that the Kafka profile 
+      is active and that there are no errors.
 
       Your ``log`` file is located in an OS specific location. For more 
       information, see :ref:`Relational Migrator File Locations <file-location>`.
