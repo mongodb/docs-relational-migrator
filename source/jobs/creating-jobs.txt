@@ -80,7 +80,7 @@ Steps
 
        2h. Click the :guilabel:`SSL` toggle switch to enable or disable SSL and select an SSL mode.
 
-       2i. Click :guilabel:`Connect`.
+       2i. Click :guilabel:`Connect`
 
        .. note::
 
@@ -94,7 +94,7 @@ Steps
        :guilabel:`Connect SourceDB` form. For details, see 
        :ref:`rm-relational-database-connection-strings`.
 
-    .. step:: Click :guilabel:`Connect`. 
+    .. step:: Click :guilabel:`Connect`
 
        On the :guilabel:`Connect Destination DB` form, input your 
        :guilabel:`MongoDB connection string (URI)`.
@@ -145,9 +145,18 @@ Steps
     3. Execute the statements.
     4. Follow any commented manual steps.
 
-    .. step:: Start your job
+  .. step:: Start your job
 
-       Click :guilabel:`Start`.
+      Click :guilabel:`Start`. 
+
+      .. note :: 
+
+         If your sync job uses Kafka support, you can view the 
+         deployment specific details by clicking a sync job from the 
+         :guilabel:`History` pane on the :guilabel:`Data Migration` 
+         screen and hovering over the icon next to 
+         :guilabel:`Create Migration Job`.
+
 
 Next Steps
 ----------
