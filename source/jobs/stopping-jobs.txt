@@ -48,9 +48,9 @@ To stop your sync job, follow the instructions below based on the current stage 
               .. procedure::
                 :style:  connected
 
-                .. step:: Open the :guilabel:`Data Migration` tab.
+                .. step:: Open the :guilabel:`Data Migration` tab
 
-                .. step:: Click on the sync job in the :guilabel:`History` pane.
+                .. step:: Click on the sync job in the :guilabel:`History` pane
 
                 .. step:: Stop the sync job 
 
@@ -66,9 +66,9 @@ To stop your sync job, follow the instructions below based on the current stage 
               .. procedure::
                 :style: connected
 
-                .. step:: Open the :guilabel:`Data Migration` tab.
+                .. step:: Open the :guilabel:`Data Migration` tab
 
-                .. step:: Click on the sync job in the :guilabel:`History` pane.
+                .. step:: Click on the sync job in the :guilabel:`History` pane
 
                 .. step:: Complete the sync job 
 
