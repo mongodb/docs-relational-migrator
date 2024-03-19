@@ -12,7 +12,7 @@ Pause and Resume Kafka Sync Jobs
 
 You can run a sync job with Kafka support, when your sync job is using 
 Kafka you have the ability to pause and resume. The amount of 
-time that a job can be paused depends on the log retention rate of 
+time that a job can be paused depends on the log retention period of
 your source relational database.
 
 About this Task
@@ -28,7 +28,7 @@ About this Task
 Before you Begin
 ----------------
 
-Enable relational migrator for Kafka support, for details see the Kafka
+Enable Kafka support for relational migrator, for details see the Kafka
 or Confluent Cloud Kafka install docs. **Todo** add links to the appropriate 
 installation reference pages.
 
@@ -46,10 +46,10 @@ Steps
    .. step:: Pause the sync job
      
       a. Wait for the sync job to enter the CDC stage. Once the sync job 
-         enters the CDC stage click the :icon-lg:`Pause` :guilabel:`Pause` 
+         enters the CDC stage click the :icon-fa5:`pause` :guilabel:`Pause` 
          button on the :guilabel:`Job Overview` 
          pane. 
-      
+
       #. Click :guilabel:`Pause CDC` on the pop-up modal to confirm
          you would like to pause the job. The status of the 
          :guilabel:`CDC Stage` updates to :guilabel:`Paused`.
