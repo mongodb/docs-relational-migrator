@@ -1,0 +1,79 @@
+.. _rm-pause-resume-kafka-jobs:
+
+================================
+Pause and Resume Kafka Sync Jobs
+================================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can run a sync job with Kafka support, when your sync job is using 
+Kafka you have the ability to pause and resume. The amount of 
+time that a job can be paused depends on the log retention rate of 
+your source relational database.
+
+About this Task
+---------------
+
+- This task outlines the pause and resume process for **Kafka** or 
+  **Confluent Cloud Kafka** supported sync jobs only. If you are running 
+  Relational Migrator without Kafka support you are not able to pause or 
+  resume sync jobs.
+
+- Sync jobs using Confluent Cloud Kafka may take additional time to 
+  The source connectors must be deployed to faciitate the sync job 
+  process. This process typically takes between two to five minutes.
+
+Before you Begin
+----------------
+
+- Enable relational migrator for Kafka support, for details see the Kafka
+  or Confluent Cloud Kafka install docs. **Todo** add links to the appropriate 
+  installation reference pages.
+
+Steps
+-----
+
+.. procedure::
+   :style:  connected
+
+   .. step:: Create a continous sync job
+     
+      Create a continuous sync job, for details see the 
+      :ref:`create a sync job page <rm-create-jobs>`.
+
+   .. step:: Pause the sync job
+     
+      Wait for the sync job to enter the CDC stage. Once the sync job 
+      enters the CDC stage, a :icon-lg:`Pause` :guilabel:`Pause` 
+      button displays on the :guilabel:`Job Overview` 
+      pane. Click :guilabel:`Pause CDC` on the pop-up modal to confirm.
+
+      The status of the :guilabel:`CDC Stage` updates to 
+      :guilabel:`Paused`.
+
+      .. warning::
+
+         You must resume the sync job within your source 
+         database's CDC retention period to ensure no events are lost.
+
+   .. step:: Resume the sync job
+
+      To resume a job, click the :icon-lg:`Play` :guilabel:`Resume` 
+      button. The status of the CDC stage updates to :guilabel:`Running`
+      indicating that Relational Migrator is actively capturing data 
+      from the source database.
+
+
+Next Steps
+----------
+
+- :ref:`rm-stop-jobs`
+
+Learn More
+----------
+
+- :ref:`rm-monitor-jobs`
