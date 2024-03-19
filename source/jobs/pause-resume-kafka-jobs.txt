@@ -23,10 +23,7 @@ About this Task
   Relational Migrator without Kafka support you are not able to pause or 
   resume sync jobs.
 
-- Sync jobs using Confluent Cloud Kafka may take additional time due to
-  the provisioning of backend resources on Confluent Cloud.
-  This process typically takes an additional two to five 
-  minutes the first time a CDC job runs.
+.. include:: /includes/fact-kafka-additional-time.rst
 
 Before you Begin
 ----------------

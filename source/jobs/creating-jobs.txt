@@ -20,8 +20,10 @@ sync job from the :guilabel:`Data Migration` tab.
 About this Task
 ---------------
 
-The URI credentials you provide when creating a sync job do not 
-need to be the same as the credentials used when creating your project.
+- The URI credentials you provide when creating a sync job do not 
+  need to be the same as the credentials used when creating your project.
+
+.. include:: /includes/fact-kafka-additional-time.rst
 
 Before you Begin
 ----------------
