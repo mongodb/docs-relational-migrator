@@ -47,18 +47,19 @@ Steps
 
    .. step:: Pause the sync job
      
-      Wait for the sync job to enter the CDC stage. Once the sync job 
-      enters the CDC stage, a :icon-lg:`Pause` :guilabel:`Pause` 
-      button displays on the :guilabel:`Job Overview` 
-      pane. Click :guilabel:`Pause CDC` on the pop-up modal to confirm.
+      a. Wait for the sync job to enter the CDC stage. Once the sync job 
+         enters the CDC stage click the a :icon-lg:`Pause` :guilabel:`Pause` 
+         button on the :guilabel:`Job Overview` 
+         pane. 
+      
+      #. Click :guilabel:`Pause CDC` on the pop-up modal to confirm
+         you would like to pause the job. The status of the 
+         :guilabel:`CDC Stage` updates to :guilabel:`Paused`.
 
-      The status of the :guilabel:`CDC Stage` updates to 
-      :guilabel:`Paused`.
+         .. warning::
 
-      .. warning::
-
-         You must resume the sync job within your source 
-         database's CDC retention period to ensure no events are lost.
+            You must resume the sync job within your source 
+            database's CDC retention period to ensure no events are lost.
 
    .. step:: Resume the sync job
 
@@ -66,7 +67,6 @@ Steps
       button. The status of the CDC stage updates to :guilabel:`Running`
       indicating that Relational Migrator is actively capturing data 
       from the source database.
-
 
 Next Steps
 ----------
