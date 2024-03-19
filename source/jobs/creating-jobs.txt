@@ -16,7 +16,6 @@ sync job from the :guilabel:`Data Migration` tab.
 
 .. include:: /includes/fact-kafka-supported-task.rst
 
-
 About this Task
 ---------------
 
