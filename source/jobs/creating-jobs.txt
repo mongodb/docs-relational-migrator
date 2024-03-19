@@ -43,7 +43,7 @@ Steps
     Relational Migrator only runs one sync job at a time. If a sync job is in 
     progress, this button is disabled.
 
-  .. step:: Enter your relational database details
+  .. step:: Enter the relational database connection details
 
       On the :guilabel:`Connect Source DB` form, enter the connection details 
       to create the JDBC URI for your relational database. 
@@ -94,7 +94,7 @@ Steps
         :guilabel:`Connect SourceDB` form. For details, see 
         :ref:`rm-relational-database-connection-strings`.
 
-  .. step:: Click :guilabel:`Connect`
+  .. step:: Enter the source MongoDB connection details 
 
       On the :guilabel:`Connect Destination DB` form, input your 
       :guilabel:`MongoDB connection string (URI)`.
