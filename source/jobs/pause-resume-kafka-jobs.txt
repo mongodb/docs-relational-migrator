@@ -65,9 +65,9 @@ Steps
    .. step:: Resume the sync job
 
       To resume a job, click the :icon-lg:`Play` :guilabel:`Resume` 
-      button. The status of the CDC stage updates to :guilabel:`Running`
-      indicating that Relational Migrator is actively capturing data 
-      from the source database.
+      button. The status of the CDC stage updates to :guilabel:`Running`.
+      This status indicates Relational Migrator is actively capturing 
+      data from the source database.
 
 Next Steps
 ----------
