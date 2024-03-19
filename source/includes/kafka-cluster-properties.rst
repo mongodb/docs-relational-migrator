@@ -1,6 +1,6 @@
 .. list-table:: 
    :header-rows: 1
-   :width: 35 15 50
+   :width: 40 15 45
 
    * - Property Name
      - Default 
