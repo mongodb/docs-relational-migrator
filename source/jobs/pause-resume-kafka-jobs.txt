@@ -23,9 +23,11 @@ About this Task
   Relational Migrator without Kafka support you are not able to pause or 
   resume sync jobs.
 
-- Sync jobs using Confluent Cloud Kafka may take additional time to 
-  The source connectors must be deployed to faciitate the sync job 
-  process. This process typically takes between two to five minutes.
+- Sync jobs using Confluent Cloud Kafka may take additional time due to
+  the provisioning of backend resources on Confluent Cloud.
+  The source connectors must be deployed to facilitate the sync job 
+  process. This process typically takes an additional two to five 
+  minutes the first time a CDC job runs.
 
 Before you Begin
 ----------------
@@ -48,7 +50,7 @@ Steps
    .. step:: Pause the sync job
      
       a. Wait for the sync job to enter the CDC stage. Once the sync job 
-         enters the CDC stage click the a :icon-lg:`Pause` :guilabel:`Pause` 
+         enters the CDC stage click the :icon-lg:`Pause` :guilabel:`Pause` 
          button on the :guilabel:`Job Overview` 
          pane. 
       
