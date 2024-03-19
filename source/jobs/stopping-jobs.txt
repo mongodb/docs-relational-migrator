@@ -11,7 +11,9 @@ Stop a Sync Job
    :class: singlecol
 
 You can stop a sync job from the :guilabel:`Job Overview` pane on the 
-:guilabel:`Data Migration` tab.
+:guilabel:`Data Migration` tab. 
+
+.. include:: /includes/fact-kafka-supported-task.rst
 
 About this Task
 ---------------

@@ -12,7 +12,11 @@ Create a Sync Job
 
 Sync jobs are the worker processes responsible for transferring your 
 data and schemas from a relational database to MongoDB. Create a new 
-sync job from the :guilabel:`Data Migration` tab.
+sync job from the :guilabel:`Data Migration` tab. This task also applies 
+to Kafka supported continuous sync jobs. There is no procedural 
+difference when stopping sync jobs with Kafka, other than 
+configuring the Relational Migrator ``user.properties`` file.
+
 
 About this Task
 ---------------
