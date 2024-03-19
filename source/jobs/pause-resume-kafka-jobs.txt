@@ -28,9 +28,9 @@ About this Task
 Before you Begin
 ----------------
 
-- Enable relational migrator for Kafka support, for details see the Kafka
-  or Confluent Cloud Kafka install docs. **Todo** add links to the appropriate 
-  installation reference pages.
+Enable relational migrator for Kafka support, for details see the Kafka
+or Confluent Cloud Kafka install docs. **Todo** add links to the appropriate 
+installation reference pages.
 
 Steps
 -----
