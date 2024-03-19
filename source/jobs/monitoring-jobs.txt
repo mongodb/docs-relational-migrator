@@ -156,7 +156,8 @@ Steps
      column. If your sync job uses Kafka or Confluent Cloud support, any 
      Kafka configuration errors are visible at the sync job level.
 
-
+     .. image:: /img/jobs/jobs-kafka-confluent-connection-error.png
+        :alt: Confluent connection error
 
 Next Steps
 ----------
