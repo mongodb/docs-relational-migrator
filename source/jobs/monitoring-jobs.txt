@@ -159,7 +159,7 @@ Steps
 
   .. step:: (Optional) View Kafka connection errors
 
-     If your sync job uses Kafka or Confluent Cloud support, any 
+     If your sync job uses Apache Kafka or Confluent Cloud support, any 
      Kafka configuration or connections errors are visible at the 
      sync job level:
 
