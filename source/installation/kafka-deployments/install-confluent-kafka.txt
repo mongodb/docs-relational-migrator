@@ -57,6 +57,9 @@ Steps
       To configure Relational Migrator, you must configure and gather the following 
       permissions and API keys to include them in your ``user.properties`` file:
 
+      The following API keys are found in the Confluent Cloud console. For more 
+      information see, `Use API Keys <https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html>`__.
+
       .. procedure::
 
          .. step:: Configure Confluent Cloud API keys
@@ -89,25 +92,57 @@ Steps
 
    .. step:: Gather more configuration information
 
+      The following information is found in the Confluent Cloud console. For more 
+      information see, `Confluent Cloud Documentation 
+      <https://docs.confluent.io/cloud/current/overview.html>`__.
+
       .. procedure::
 
          .. step:: Find and save your environment ID 
 
-            Navigate to your :guilabel:`Environment` page to find your environment ID.
+            Select :guilabel:`Environments` from the left-side navigation, choose your 
+            cloud environment, and find your environment ID below the environment name 
+            in the right-side panel. 
+
+            General environment ID form:
+
+            .. code-block::
+
+               env-ab1cde
 
          .. step:: Find and save your cluster ID
 
-            Navigate to your :guilabel:`Cluster Settings` page to find your cluster ID.
+            Navigate to your :guilabel:`Cluster Overview` page and find your cluster ID 
+            on the right-side information panel. 
 
-         .. step:: Find and save your cluster Bootstrap server
+            General cluster ID form:
 
-            In your :guilabel:`Cluster Settings` page, find your cluster Bootstrap 
-            server.
+            .. code-block::
+
+               abc-1test2
+
+         .. step:: Find and save your cluster's Bootstrap server
+
+            From your :guilabel:`Cluster Overview` page, use the left-side navigation and 
+            click :guilabel:`Cluster Settings`. On the :guilabel:`Cluster Settings` page, 
+            locate your cluster's Bootstrap server.
+
+            General Bootstrap server form:
+
+            .. code-block::
+
+               xx.region.provider.confluent.cloud:9092
 
          .. step:: Find and save your cluster REST endpoint
 
-            In your :guilabel:`Cluster Settings` page, find your cluster REST 
+            On your :guilabel:`Cluster Settings` page, find your cluster's REST 
             endpoint.
+
+            General REST endpoint:
+
+            .. code-block::
+
+               https://xxx.region.provider.confluent.cloud:443
 
    .. step:: Add the configuration properties to your ``user.properties`` file
 
@@ -134,6 +169,18 @@ Steps
    .. step:: Restart Relational Migrator 
 
       Exit Relational Migrator and relaunch it. 
+
+   .. step:: Confirm successful installation
+
+      Start Relational Migrator and in your project, navigate to the :guilabel:`Data 
+      Migration` tab. If the installation is successful, on the top right corner, a 
+      :guilabel:`Confluent Deployment model` symbol is present. 
+
+      If errors appear, check your ``log`` file. Your ``log`` file is located in an 
+      OS specific location. For more information, see :ref:`Relational Migrator File 
+      Locations <file-location>`.
+
+      .. /img/confluent-install.png
 
 Next Steps
 ----------
