@@ -20,7 +20,7 @@ About this Task
 ---------------
 
 This task outlines the pause and resume process for **Kafka** or 
-**Confluent Cloud Kafka** continuous supported sync jobs only. If you 
+**Confluent Cloud Kafka** supported continuous sync jobs only. If you 
 are running Relational Migrator without Kafka support you are not able 
 to pause or resume sync jobs.
 
