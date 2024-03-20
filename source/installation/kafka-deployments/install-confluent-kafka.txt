@@ -180,7 +180,8 @@ Steps
       OS specific location. For more information, see :ref:`Relational Migrator File 
       Locations <file-location>`.
 
-      .. /img/confluent-install.png
+      .. image:: /img/confluent-install.png
+         :alt: Successful Confluent Install 
 
 Next Steps
 ----------
