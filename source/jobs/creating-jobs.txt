@@ -154,8 +154,8 @@ Steps
          If your sync job uses Kafka support, you can view the 
          deployment specific details by clicking a sync job from the 
          :guilabel:`History` pane on the :guilabel:`Data Migration` 
-         screen and hovering over the icon next to 
-         :guilabel:`Create Migration Job`.
+         screen and hovering over the icon next to the
+         :guilabel:`Create Migration Job` button.
 
 Next Steps
 ----------

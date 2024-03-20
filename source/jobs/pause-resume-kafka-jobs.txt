@@ -10,10 +10,11 @@ Pause and Resume Kafka Sync Jobs
    :depth: 1
    :class: singlecol
 
-You can run a sync job with Kafka support, when your sync job is using 
-Kafka you have the ability to pause and resume. The amount of 
-time that a job can be paused depends on the log retention period of
-your source relational database.
+You can run a sync job with Apache Kafka support, when your sync job is 
+using Kafka you have the ability to pause and resume the sync job. You 
+may want to pause a sync job for maintenance windows or planned outages 
+on your source database. The amount of time that a job can be paused 
+depends on the log retention period of your source relational database.
 
 About this Task
 ---------------
@@ -28,9 +29,9 @@ About this Task
 Before you Begin
 ----------------
 
-Enable Kafka support for relational migrator, for details see the Kafka
-or Confluent Cloud Kafka install docs. **Todo** add links to the appropriate 
-installation reference pages.
+You must enable Kafka support for relational migrator, for details see 
+the Kafka or Confluent Cloud Kafka install docs. **Todo** add links to 
+the appropriate installation reference pages.
 
 Steps
 -----
@@ -40,8 +41,8 @@ Steps
 
    .. step:: Create a continous sync job
      
-      Create a continuous sync job, for details see the 
-      :ref:`create a sync job page <rm-create-jobs>`.
+      Create a continuous sync job, for details see 
+      :ref:`create a sync job <rm-create-jobs>`.
 
    .. step:: Pause the sync job
      
@@ -51,7 +52,7 @@ Steps
          pane. 
 
       #. Click :guilabel:`Pause CDC` on the pop-up modal to confirm
-         you would like to pause the job. The status of the 
+         you would like to pause the sync job. The status of the 
          :guilabel:`CDC Stage` updates to :guilabel:`Paused`.
 
          .. warning::
