@@ -47,7 +47,7 @@ Steps
 
    .. step:: Create a cluster
 
-      Navigate to your cluster page to create a new cluster.
+      Navigate to your :guilabel:`Environment` page to click :guilabel:`Add Cluster`. 
 
       For most use cases, the Basic and Standard tier clusters are enough. If you 
       are migrating large volumes of data, consider the Dedicated cluster tier.
