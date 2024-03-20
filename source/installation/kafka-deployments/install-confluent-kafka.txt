@@ -180,7 +180,7 @@ Steps
       OS specific location. For more information, see :ref:`Relational Migrator File 
       Locations <file-location>`.
 
-      .. image:: /img/confluent-install.png
+      .. image:: /img/kafka/confluent-install.png
          :alt: Successful Confluent Install 
 
 Next Steps
