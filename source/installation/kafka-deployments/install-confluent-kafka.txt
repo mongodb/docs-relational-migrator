@@ -141,7 +141,7 @@ Steps
             On your :guilabel:`Cluster Settings` page, find your cluster's REST 
             endpoint.
 
-            General REST endpoint:
+            General REST endpoint form:
 
             .. code-block::
 
@@ -185,12 +185,13 @@ Steps
 
       .. figure:: /img/kafka/confluent-install.png
          :alt: Successful Confluent Install
-         :figwidth: 400px
+         :figwidth: 250px
 
 Next Steps
 ----------
 
-After verifying a successful installation, you can :ref:`create a new project <rm-projects>`. 
+After you verify a successful installation, you can :ref:`create a new project 
+<rm-projects>`. 
 
 Learn More
 ----------
