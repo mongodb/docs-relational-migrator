@@ -64,6 +64,9 @@ Steps
 
          .. step:: Configure Confluent Cloud API keys
 
+            Click the :icon-fa5:`bars` icon on the top right corner, then under 
+            :guilabel:`Administration`, select :guilabel:`Cloud API Keys`.
+
             Create Confluent Cloud API keys and configure permissions for them. You 
             have two permission options:
 
@@ -82,8 +85,8 @@ Steps
          .. step:: Configure Kafka cluster API keys
 
             To access your Kafka cluster, you must configure your Kafka cluster API keys. 
-            Navigate to your :guilabel:`Cluster Overview` to create your Kafka cluster API 
-            keys.
+            Navigate to your :guilabel:`Cluster Overview` and on the left-side navigation 
+            click :guilabel:`API Keys` to create your Kafka cluster API keys.
 
             Save these configurations to add to your ``user.properties`` file.
 
@@ -100,9 +103,9 @@ Steps
 
          .. step:: Find and save your environment ID 
 
-            Select :guilabel:`Environments` from the left-side navigation, choose your 
+            From your :guilabel:`Environments` overview page, choose your 
             cloud environment, and find your environment ID below the environment name 
-            in the right-side panel. 
+            on the right-side panel. 
 
             General environment ID form:
 
@@ -180,14 +183,14 @@ Steps
       OS specific location. For more information, see :ref:`Relational Migrator File 
       Locations <file-location>`.
 
-      .. image:: /img/kafka/confluent-install.png
-         :alt: Successful Confluent Install 
+      .. figure:: /img/kafka/confluent-install.png
+         :alt: Successful Confluent Install
+         :figwidth: 400px
 
 Next Steps
 ----------
 
-- :ref:`rm-projects`
-- :ref:`rm-create-jobs` 
+After verifying a successful installation, you can :ref:`create a new project <rm-projects>`. 
 
 Learn More
 ----------
