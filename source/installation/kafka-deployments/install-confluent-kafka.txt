@@ -107,7 +107,7 @@ Steps
             cloud environment, and find your environment ID below the environment name 
             on the right-side panel. 
 
-            General environment ID form:
+            The general environment ID form is:
 
             .. code-block::
 
@@ -118,7 +118,7 @@ Steps
             Navigate to your :guilabel:`Cluster Overview` page and find your cluster ID 
             on the right-side information panel. 
 
-            General cluster ID form:
+            The general cluster ID form is:
 
             .. code-block::
 
@@ -130,7 +130,7 @@ Steps
             click :guilabel:`Cluster Settings`. On the :guilabel:`Cluster Settings` page, 
             locate your cluster's Bootstrap server.
 
-            General Bootstrap server form:
+            The general Bootstrap server form is:
 
             .. code-block::
 
@@ -141,7 +141,7 @@ Steps
             On your :guilabel:`Cluster Settings` page, find your cluster's REST 
             endpoint.
 
-            General REST endpoint form:
+            The general REST endpoint form is:
 
             .. code-block::
 
