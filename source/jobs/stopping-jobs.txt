@@ -74,7 +74,10 @@ To stop your sync job, follow the instructions below based on the current stage 
 
                    a. Click the :guilabel:`Complete CDC` button in the upper-right corner of the screen.
                    #. Click the green :guilabel:`Complete CDC` button on the pop-up modal.
-                      Once the sync job completes, a checkmark icon displays in the :guilabel:`History` pane, all stages display a status of :guilabel:`COMPLETED`, and the status of the sync job updates to :guilabel:`CDC completed`.
+                      After completing, the sync job shows a checkmark 
+                      in the :guilabel:`History` pane, marks all stages
+                      as :guilabel:`COMPLETED`, and updates its status 
+                      to CDC completed.
 
 Learn More
 ----------
