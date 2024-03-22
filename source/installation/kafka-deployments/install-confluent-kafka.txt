@@ -1,8 +1,8 @@
 .. _install-confluent-kafka:
 
-============================
-Install with Confluent Cloud
-============================
+======================================
+Configure a Confluent Cloud Deployment
+======================================
 
 .. default-domain:: mongodb
 
@@ -16,7 +16,7 @@ Install with Confluent Cloud
    :depth: 1
    :class: singlecol
 
-You can install Relational Migrator with Kafka using 
+You can configure Relational Migrator with Kafka using 
 `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__. 
 This deployment method provides the reliability of Kafka without having to 
 manage your own Kafka cluster. 
@@ -24,9 +24,13 @@ manage your own Kafka cluster.
 Before you Begin
 ----------------
 
-Due to restrictions by Confluent, you are only able to use Basic, Standard, and 
-Dedicated clusters. For most use cases, the basic and standard cluster are enough 
-to handle migrating large volumes of data.
+- You must have Relational Migrator installed on your machine. To download 
+  Relational Migrator, see the `Download Center 
+  <https://www.mongodb.com/try/download/relational-migrator>`__.
+
+- Due to restrictions by Confluent, you are only able to use Basic, Standard, and 
+  Dedicated clusters. For most use cases, the basic and standard cluster are enough 
+  to handle migrating large volumes of data.
 
 Steps
 -----
