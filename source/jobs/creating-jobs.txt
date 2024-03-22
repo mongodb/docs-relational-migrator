@@ -86,7 +86,7 @@ Steps
 
         Connection and SSL details depend on the database type you are connecting to. 
         In addition to the generic connection properties listed above, you may also need
-        to select a :guilabel:`Identifier` for Oracle and :guilabel:`Authentication`
+        to select an :guilabel:`Identifier` for Oracle and :guilabel:`Authentication`
         for SQL Server.
 
         If you want to specify the JDBC URI manually, click the 

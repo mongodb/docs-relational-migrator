@@ -38,7 +38,7 @@ Steps
 
    .. step:: Create a continous sync job
      
-      Create a continuous sync job, for details see 
+      For details on creating a continuous sync job, see 
       :ref:`create a sync job <rm-create-jobs>`.
 
    .. step:: Pause the sync job
