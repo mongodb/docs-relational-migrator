@@ -56,7 +56,7 @@ Steps
       For most use cases, the Basic and Standard tier clusters are enough. If you 
       are migrating large volumes of data, consider the Dedicated cluster tier.
 
-   .. step:: Configure and gather permissions and API keys
+   .. step:: Configure permissions and gather API keys
 
       To configure Relational Migrator, you must configure and gather the following 
       permissions and API keys to include them in your ``user.properties`` file.
@@ -76,9 +76,9 @@ Steps
             Create Confluent Cloud API keys and configure permissions for them. You 
             have two permission options:
 
-            1. Create global access.
+            1. Grant global access.
          
-            2. Create a service account with granular access.
+            2. Create a service account and grant granular access.
 
                If you create a service account, you must add the ``Operator`` role for the 
                environment and the ``CloudClusterAdmin`` role to the cluster. 
