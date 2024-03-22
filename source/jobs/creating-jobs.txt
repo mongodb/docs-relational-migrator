@@ -131,7 +131,7 @@ Steps
       conducts various checks to ensure that the database is configured 
       correctly. If any configuration is missing, a banner appears indicating
       that the database is not properly configured, with a 
-      :guilabel:`GENERATE SCRIPT` button to download a SQL script. 
+      :guilabel:`Generate Script` button to download a SQL script. 
 
       This script includes the required configuration statements 
       and additional instructions in the form of comments. 

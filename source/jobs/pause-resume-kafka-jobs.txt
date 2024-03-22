@@ -17,7 +17,7 @@ windows or planned outages on your source database.
 About this Task
 ---------------
 
-- You can only pause and resume **Kafka** or **Confluent Cloud Kafka** 
+- You can **only** pause and resume Kafka or Confluent Cloud Kafka
   supported continuous sync jobs.
 
 - The amount of time that a job can be paused depends on the log 
@@ -26,7 +26,7 @@ About this Task
 Before you Begin
 ----------------
 
-You must enable Kafka support for relational migrator. For details see 
+You must enable Kafka support for relational migrator. For details, see 
 the Kafka or Confluent Cloud Kafka install docs. **Todo** add links to 
 the appropriate installation reference pages.
 
