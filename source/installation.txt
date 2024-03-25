@@ -39,7 +39,7 @@ For instructions on installing Relational Migrator, see the following pages:
      - Suitable if your familiar with Docker and dont want to run 
        Relational Migrator directly on a server or machine.
 
-     - :ref:`Install on an Unattended Server <unattended-server>`
+     - :ref:`Install on with Docker <rm-install-docker>`
 
    * - Kafka
 

@@ -1,4 +1,4 @@
-.. _meta-task-prototype:
+.. _rm-install-docker:
 
 ===================
 Install with Docker
