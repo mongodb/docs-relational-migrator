@@ -81,8 +81,8 @@ Procedure
 
    .. step:: Connect to application
 
-      To view the application, naviagate to the following url:
-      `<localhost:8080>`__.
+      To view the application, navigate to the following url:
+      `<http://localhost:8080>`__.
 
       .. note::
 
