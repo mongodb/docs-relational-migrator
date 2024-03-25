@@ -18,7 +18,7 @@ Advanced Kafka Settings
 
 
 User Properties
-~~~~~~~~~~~~~~~
+---------------
 
 .. glossary::
 
@@ -88,7 +88,7 @@ User Properties
     The maximum delay in milliseconds between retries after a retriable failures.
 
 Schema Registry Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 .. glossary::
 
@@ -111,6 +111,12 @@ Schema Registry Properties
     ``https://{host}:{port}`` if SSL is enabled. 
 
 Source Connector Properties
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+---------------------------
 
+Relational Migrator sets default Debezium source connector properties 
+for each supported source database, which can be overridden by adding them 
+in ``user.properties`` with the prefix ``migrator.connector.source.common``.  
+
+For example, ``migrator.connector.source.common.errors.max.retries`` <-1|0|>0>, 
+-1 means no limit, 0 means no retry and > 0 is number of retries, default is 5. 
 
