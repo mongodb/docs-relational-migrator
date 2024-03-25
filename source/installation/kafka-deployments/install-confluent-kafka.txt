@@ -28,7 +28,7 @@ Before you Begin
   Relational Migrator, see the `Download Center 
   <https://www.mongodb.com/try/download/relational-migrator>`__.
 
-- Due to restrictions by Confluent, you are only able to use Basic, Standard, and 
+- Because of Confluent's restrictions, you can only use Basic, Standard, and 
   Dedicated clusters. For most use cases, the basic and standard cluster are enough 
   to handle migrating large volumes of data.
 
@@ -51,9 +51,9 @@ Steps
 
    .. step:: Create a cluster
 
-      Navigate to your :guilabel:`Environment` page to click :guilabel:`Add Cluster`. 
+      Navigate to your :guilabel:`Environment` page. Click :guilabel:`Add Cluster`. 
 
-      For most use cases, the Basic and Standard tier clusters are enough. If you 
+      The Basic and Standard tier clusters are enough for most use cases. If you 
       are migrating large volumes of data, consider the Dedicated cluster tier.
 
    .. step:: Configure permissions and gather API keys
@@ -64,7 +64,7 @@ Steps
       system. For more information, see :ref:`file-location`. 
 
       The following API keys are found in the Confluent Cloud console. For more 
-      information see, `Use API Keys <https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html>`__.
+      information, see `Use API Keys <https://docs.confluent.io/cloud/current/access-management/authenticate/api-keys/api-keys.html>`__.
 
       .. procedure::
 
@@ -83,7 +83,7 @@ Steps
                If you create a service account, you must add the ``Operator`` role for the 
                environment and the ``CloudClusterAdmin`` role to the cluster. 
 
-            Once created, save the API key and secret. These values will be added to your 
+            Once created, save the API key and secret. These values are added to your 
             ``user.properties`` file as ``migrator.confluent.cloud-credentials.api-key`` 
             and ``migrator.confluent.cloud-credentials.api-secret``.
 
@@ -93,10 +93,10 @@ Steps
          .. step:: Configure Kafka cluster API keys
 
             To access your Kafka cluster, you must configure your Kafka cluster API keys. 
-            Navigate to your :guilabel:`Cluster Overview` and on the left-side navigation 
+            Navigate to your :guilabel:`Cluster Overview`. In the left-side panel,
             click :guilabel:`API Keys` to create your Kafka cluster API keys.
 
-            Once created, save the API key and secret. These values will be added to your 
+            Save the API key and secret. These values are added to your 
             ``user.properties`` file as ``migrator.confluent.kafka-credentials.api-key`` 
             and ``migrator.confluent.kafka-credentials.api-secret``.
 
@@ -105,17 +105,17 @@ Steps
 
    .. step:: Gather more configuration information
 
-      The following information is found in the Confluent Cloud console. For more 
-      information see, `Confluent Cloud Documentation 
-      <https://docs.confluent.io/cloud/current/overview.html>`__.
+      You'll find your environment ID, cluster ID, Bootstrap server, and cluster REST 
+      endpoint in the Confluent Cloud console. For more information, see 
+      `Confluent Cloud Documentation <https://docs.confluent.io/cloud/current/overview.html>`__.
 
       .. procedure::
 
          .. step:: Find and save your environment ID 
 
             From your :guilabel:`Environments` overview page, choose your 
-            cloud environment, and find your environment ID below the environment name 
-            on the right-side pane. 
+            cloud environment. Your environment ID is below the environment name 
+            in the right-side panel. 
 
             The general environment ID form is:
 
@@ -126,7 +126,7 @@ Steps
          .. step:: Find and save your cluster ID
 
             Navigate to your :guilabel:`Cluster Overview` page and find your cluster ID 
-            on the right-side information pane. 
+            in the right-side information panel. 
 
             The general cluster ID form is:
 
@@ -148,7 +148,7 @@ Steps
 
          .. step:: Find and save your cluster REST endpoint
 
-            On your :guilabel:`Cluster Settings` page, find your cluster's REST 
+            On the :guilabel:`Cluster Settings` page, find your cluster's REST 
             endpoint.
 
             The general REST endpoint form is:
@@ -185,7 +185,7 @@ Steps
 
    .. step:: Confirm successful installation
 
-      Start Relational Migrator and in your project, navigate to the :guilabel:`Data 
+      Start Relational Migrator. In your project, navigate to the :guilabel:`Data 
       Migration` tab. If the installation is successful, on the top right corner, a 
       :guilabel:`Confluent Deployment model` symbol is present. 
 
