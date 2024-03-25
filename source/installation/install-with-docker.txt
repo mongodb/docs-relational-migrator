@@ -1,0 +1,103 @@
+.. _meta-task-prototype:
+
+===================
+Install with Docker
+===================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can install and run Relational Migrator as a Docker container. By 
+running Relational Migrator with Docker you can have an operating 
+system agnostic and easy reproducible installation experience. 
+
+Before you Begin
+----------------
+
+Install `Docker <https://docs.docker.com/install/>`__
+
+Procedure
+---------
+
+.. procedure::
+   :style: normal
+
+   .. step:: Pull the MongoDB Docker Image
+      
+      .. code-block:: sh
+
+         docker pull public.ecr.aws/v4d7k6c9/relational-migrator:latest
+
+   .. step:: Run the Image as a Container
+
+      .. code-block:: sh
+
+         docker run -p 8080:8080 -v /migrator/drivers:/opt/mongodb-relational-migrator/lib/app/lib -v /migrator/data:/root/
+
+      The ``-p 8080:8080`` in this command maps the container port to the host port.
+      This allows you to connect to Relational Migrator by browsing to a 
+      ``localhost:8080``.
+
+      .. note:: Override a Config Setting
+
+         You can override a configuration setting by specifying the 
+         configuration setting in the Docker command.
+
+         For example, consider the disabling telemetry with the 
+         following command:
+
+         .. code-block:: bash
+
+            docker run -p 8080:8080 -e MIGRATOR_APP_TELEMETRY_ENABLE=false public.ecr.aws/v4d7k6c9/relational-migrator:latest
+
+   .. step:: Check that the Container is Running
+
+      To check the status of your Docker container, run the following 
+      command:
+
+      .. code-block:: sh
+
+         docker container ls
+
+      The output from the ``ls`` command lists the following fields that 
+      describe the running container:
+
+      - ``Container ID``
+      - ``Image``
+      - ``Command``
+      - ``Created``
+      - ``Status``
+      - ``Port``
+      - ``Names`` 
+
+      .. code-block:: sh
+         :copyable: false
+
+         CONTAINER ID   IMAGE                                       COMMAND                  CREATED         STATUS         PORTS       NAMES
+         c29db5687290   mongodb/mongodb-community-server:5.0-ubi8   "docker-entrypoint.s…"   4 seconds ago   Up 3 seconds   27017/tcp   mongo
+   
+   .. step:: Connect to application
+
+      To view the application, naviagate to the following url:
+      `<https://localhost:8080>`__.
+
+      .. note::
+
+         If you changed the port number in the previous step, change the
+         port in the url above.
+
+Next Steps
+----------
+
+- :ref:`rm-connection-strings`
+- :ref:`rm-create-project-live`
+- :ref:`rm-mapping-rules`
+
+Learn More
+----------
+
+- :ref:`rm-projects`
+- :ref:`rm-manage-relational-model`
