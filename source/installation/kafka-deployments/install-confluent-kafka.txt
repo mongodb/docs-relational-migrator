@@ -189,11 +189,8 @@ Steps
       Migration` tab. If the installation is successful, on the top right corner, a 
       :guilabel:`Confluent Deployment model` symbol is present. 
 
-      #TODO Link to monitor sync job
-
-      If errors appear, check your ``log`` file. Your ``log`` file is located in an 
-      OS specific location. For more information, see :ref:`Relational Migrator File 
-      Locations <file-location>`.
+      If errors appear, check your ``log`` file. Your ``log`` file location varies by OS.
+      For details, see :ref:`Relational Migrator File Locations <file-location>`.
 
       .. figure:: /img/kafka/confluent-install.png
          :alt: Successful Confluent Install
