@@ -18,8 +18,9 @@ Configure a Confluent Cloud Deployment
 
 You can configure Relational Migrator with Kafka using 
 `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__. 
-This deployment method provides the reliability of Kafka without having to 
-manage your own Kafka cluster. 
+Configuring Relational Migrator with Confluent Cloud gives your deployment 
+the reliability of Kafka without requiring that you manage your own Kafka 
+cluster. 
 
 Before you Begin
 ----------------
