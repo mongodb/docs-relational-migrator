@@ -87,7 +87,7 @@ Procedure
       .. note::
 
          If you changed the port number in the ``docker run`` command, 
-         change the port in the url above.
+         you also need to change the port in the url above.
 
 Next Steps
 ----------
