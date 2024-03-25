@@ -58,8 +58,8 @@ Steps
 
    .. step:: Configure permissions and gather API keys
 
-      To configure Relational Migrator, you must configure and gather the following 
-      permissions and API keys to include them in your ``user.properties`` file.
+      To configure Relational Migrator, you must configure and gather the Cloud API key 
+      and Kafka Cluster API key. You'll need to include them in your ``user.properties`` file.
       The location of your ``user.properties`` file varies according to your operating
       system. For more information, see :ref:`file-location`. 
 
@@ -70,8 +70,8 @@ Steps
 
          .. step:: Configure Confluent Cloud API keys
 
-            Click the :icon-fa5:`bars` icon on the top right corner, then under 
-            :guilabel:`Administration`, select :guilabel:`Cloud API Keys`.
+            In the top right corner of the Confluent Console, click the :icon-fa5:`bars` icon. 
+            Under :guilabel:`Administration`, select :guilabel:`Cloud API Keys`.
 
             Create Confluent Cloud API keys and configure permissions for them. You 
             have two permission options:
