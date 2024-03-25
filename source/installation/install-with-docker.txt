@@ -10,9 +10,10 @@ Install with Docker
    :depth: 1
    :class: singlecol
 
-You can install and run Relational Migrator as a Docker container. By 
-running Relational Migrator with Docker you can have an operating 
-system agnostic and easy reproducible installation experience. 
+You can install and run Relational Migrator as a Docker container. 
+Running Relational Migrator with Docker ensures an installation process 
+that is both independent of the operating system and straightforward 
+to replicate.
 
 Before you Begin
 ----------------
@@ -46,7 +47,7 @@ Procedure
          You can override a configuration setting by specifying the 
          configuration setting in the Docker command.
 
-         For example, consider the disabling telemetry with the 
+         For example, consider disabling telemetry with the 
          following command:
 
          .. code-block:: bash
