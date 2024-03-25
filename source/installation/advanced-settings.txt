@@ -22,7 +22,6 @@ User Properties
 
 .. glossary::
 
-
    ``spring.profiles.active``
     Default: local
 
@@ -39,20 +38,14 @@ User Properties
     The port the Relation Migrator application runs on.
 
    ``migrator.kafka.bootstrap.servers``
-    No default
-    
     This is a list of ``host:port`` pairs of your pre-existing kafka cluster. For 
     more information, see `Worker Configuration Properties 
     <https://docs.confluent.io/platform/current/connect/userguide.html#worker-configuration-properties-file>`__. 
 
    ``migrator.kafka.connect.url``
-    No default 
-
     The Kafka Connect host url using the ``{host}:{port}`` format. 
 
    ``migrator.kafka.connect.metrics.jmx.service.url``
-    No default
-    
     The Kafka Connect Java Management Extensions (JMX) url. 
     For example: ``service:jmx:rmi:///jndi/rmi://localhost:9876/jmxrmi``
 
@@ -97,31 +90,25 @@ User Properties
 Schema Registry Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. list-table::
-   :header-rows: 1
-   :width: 40 15 45
+.. glossary::
 
-   * - Property
-     - Default
-     - Description
+   ``migrator.connector.properties.common.key.converter``
+    Default: ``migrator.connector.properties.common.key.converter``
+    
+    The convertor class for the message key.
 
-   * - ``migrator.connector.properties.common.key.converter``
-     - ``migrator.connector.properties.common.key.converter``
-     - The convertor class for the message key.
+   ``migrator.connector.properties.common.value.converter``
+    Default: ``org.apache.kafka.connect.json.JsonConverter``
+    
+    The convertor class for the message value.
 
-   * - ``migrator.connector.properties.common.value.converter``
-     - ``org.apache.kafka.connect.json.JsonConverter``
-     - The convertor class for the message value.
+   ``migrator.connector.properties.common.key.converter.apicurio.registry.url``
+    Apicurio registry endpoint for key in format ``http://{host}:{port}`` or 
+    ``https://{host}:{port}`` if SSL is enabled.
 
-   * - ``migrator.connector.properties.common.key.converter.apicurio.registry.url``
-     - No default
-     - Apicurio registry endpoint for key in format ``http://{host}:{port}`` or 
-       ``https://{host}:{port}`` if SSL is enabled.
-
-   * - ``migrator.connector.properties.common.value.converter.apicurio.registry.url``
-     - No default
-     - Apicurio registry endpoint for key in format ``http://{host}:{port}`` or 
-       ``https://{host}:{port}`` if SSL is enabled. 
+   ``migrator.connector.properties.common.value.converter.apicurio.registry.url``
+    Apicurio registry endpoint for key in format ``http://{host}:{port}`` or 
+    ``https://{host}:{port}`` if SSL is enabled. 
 
 Source Connector Properties
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
