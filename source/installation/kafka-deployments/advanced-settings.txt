@@ -75,8 +75,6 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     .. note::
 
        There are only a few exceptions that are marked ``RetriableException``. 
-       For example, ``IOException`` or ``SocketException`` can result in connectivity 
-       issues with target databases.
 
    ``migrator.connector.source.common.errors.retry.initial.max.ms``
     Default: 30000 ms
@@ -101,8 +99,6 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     .. note::
 
        There are only a few exceptions that are marked ``RetriableException``. 
-       For example, ``IOException`` or ``SocketException`` can result in connectivity 
-       issues with target databases.
 
    ``migrator.connector.sink.common.errors.retry.initial.max.ms``
     Default: 30000 ms
