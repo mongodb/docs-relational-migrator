@@ -39,7 +39,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
    ``server.port``
     Default: ``8278``
 
-    The port the Relation Migrator application runs on.
+    The port the Relational Migrator application runs on.
 
    ``migrator.kafka.bootstrap.servers``
     This is a list of ``host:port`` pairs of your pre-existing kafka cluster. For 
@@ -51,7 +51,6 @@ Provide optional configuration settings by updating your ``user.properties`` fil
 
    ``migrator.kafka.connect.metrics.jmx.service.url``
     The Kafka Connect Java Management Extensions (JMX) url. 
-    For example: ``service:jmx:rmi:///jndi/rmi://localhost:9876/jmxrmi``
 
    ``migrator.kafka.connect.metrics.jmx.ssl``
     Default: false
@@ -157,7 +156,7 @@ overridden by adding them in the ``user.properties`` file with the prefix
 
    migrator.connector.source.common.errors.max.retries: 0
 
-In this example, the default is five but it has now been set to zero. This means
+In this example, the default value is five but it has now been set to zero. This means
 there is no retries after a ``RetriableException``.
 
 Sink Connector Properties
@@ -173,5 +172,5 @@ overridden by adding them in the ``user.properties`` file with the prefix
 
    migrator.connector.sink.common.errors.max.retries: 0
 
-In this example, the default is five but it has now been set to zero. This means
+In this example, the default value is five but it has now been set to zero. This means
 there is no retries after a ``RetriableException``.
