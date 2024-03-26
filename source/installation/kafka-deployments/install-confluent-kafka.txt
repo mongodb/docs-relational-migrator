@@ -210,3 +210,4 @@ Learn More
 - :ref:`kafka-intro`
 - :ref:`install-kafka-cluster`
 - :ref:`install-docker`
+- :ref:`advanced-settings`

@@ -124,3 +124,4 @@ Learn More
 - :ref:`kafka-intro`
 - :ref:`install-docker`
 - :ref:`install-confluent-kafka`
+- :ref:`advanced-settings`
