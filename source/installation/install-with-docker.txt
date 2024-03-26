@@ -15,6 +15,16 @@ Running Relational Migrator with Docker ensures an installation process
 that is both independent of the operating system and straightforward 
 to replicate.
 
+About this Task
+---------------
+
+You can also use `Docker Compose <https://docs.docker.com/compose/>`__ 
+to run Relational Migrator. You can find a Docker Compose example file
+in the 
+`download center <https://www.mongodb.com/try/download/relational-migrator>`__.
+.. #TODO# Update the link, when the compose file is added. 
+
+
 Before you Begin
 ----------------
 
