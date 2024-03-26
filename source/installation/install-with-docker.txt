@@ -34,13 +34,14 @@ Procedure
 
    .. step:: Run the Image as a Container
       
-      xx
-      
+      The tabs below show various docker commands that are useful for 
+      running Relational Migrator:
+
       .. tabs::
 
          .. tab:: Run
             :tabid: basic-run
-            
+
             The ``-p 8080:8080`` in this command maps the container port to the host port.
             This allows you to connect to Relational Migrator by browsing to 
             `<http://localhost:8080>`__.
