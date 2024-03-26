@@ -89,3 +89,4 @@ Learn More
    /installation/kafka-deployments/install-kafka-cluster
    /installation/kafka-deployments/install-docker
    /installation/kafka-deployments/install-confluent-kafka
+   /installation/kafka-deployments/advanced-settings
