@@ -29,7 +29,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
 .. glossary::
 
    ``spring.profiles.active``
-    Default: local
+    *Default*: local
 
     Relational Migrator can be run in the following profile: 
 
@@ -37,7 +37,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     - ``confluent``: Remote server using Confluent Cloud for managed Kafka.
 
    ``server.port``
-    Default: ``8278``
+    *Default*: 8278
 
     The port the Relational Migrator application runs on.
 
@@ -53,7 +53,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     The Kafka Connect Java Management Extensions (JMX) url. 
 
    ``migrator.kafka.connect.metrics.jmx.ssl``
-    Default: false
+    *Default*: false
     
     Set to ``true`` if SSL is enabled.
 
@@ -61,46 +61,46 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     configuration by prefixing them with ``migrator.kafka.connect.metrics.jmx.properties``.
 
    ``migrator.kafka.enable.topic.cleanup``
-    Default: false
+    *Default*: false
     
     Cleans up the topics created during the last migration job.
 
    ``migrator.connector.source.common.errors.max.retries``
-    Default: 5
+    *Default*: 5
 
     For the source connector, this specifies the maximum number of retries on a 
     ``RetriableException``. Relational Migrator attempts recovery from source database 
     retriable exceptions up to a set limit before the job fails.
 
    ``migrator.connector.source.common.errors.retry.initial.max.ms``
-    Default: 30000 ms
+    *Default*: 30000 ms
 
     For the source connector, this specifies the delay in milliseconds to start 
     again after a retriable failure. The value is doubled after every retry but 
     does not exceed ``migrator.connector.source.common.errors.retry.delay.max.ms``.
 
    ``migrator.connector.source.common.errors.retry.delay.max.ms``
-    Default: 60000 ms
+    *Default*: 60000 ms
 
     For the source connector, this specifies the maximum delay in milliseconds 
     between retries after a retriable failure.
 
    ``migrator.connector.sink.common.errors.max.retries``
-    Default: 5
+    *Default*: 5
     
     For the sink connector, this specifies the maximum number of retries on a 
     ``RetriableException``. Relational Migrator attempts recovery from source database 
     retriable exceptions up to a set limit before the job fails.
 
    ``migrator.connector.sink.common.errors.retry.initial.max.ms``
-    Default: 30000 ms
+    *Default*: 30000 ms
 
     For the sink connector, this specifies the delay in milliseconds to start again 
     after a retriable failure. The value is doubled after every retry but does not exceed 
     ``migrator.connector.sink.common.errors.retry.delay.max.ms``.
 
    ``migrator.connector.sink.common.errors.retry.delay.max.ms``
-    Default: 60000 ms
+    *Default*: 60000 ms
 
     For the sink connector, this specifies the maximum delay in milliseconds 
     between retries after a retriable failure.
