@@ -33,37 +33,39 @@ Procedure
          docker pull public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
    .. step:: Run the Image as a Container
+      
+      xx
+      
+      .. tabs::
 
-   .. tabs::
+         .. tab:: Run
+            :tabid: basic-run
+            
+            .. code-block:: sh
 
-      .. tab:: Run
-         :tabid: basic-run
-         
-         .. code-block:: sh
+               docker run -p 8080:8080 public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
-            docker run -p 8080:8080 public.ecr.aws/v4d7k6c9/relational-migrator:latest
+         .. tab:: Map local folder to the logging directory
+            :tabid: logging-run
 
-      .. tab:: Map local folder to the logging directory
-         :tabid: logging-run
-         
-         The following command makes the project files and logs 
-         persistent even if the container is stopped.
+            The following command makes the project files and logs 
+            persistent even if the container is stopped.
 
-         .. code-block:: sh
+            .. code-block:: sh
 
-            docker run -p 8080:8080 -v /migrator/drivers/opt/mongodb-relational-migrator/lib/app/lib -v /migrator/data/root/Migrator  public.ecr.aws/v4d7k6c9/relational-migrator:latest
+               docker run -p 8080:8080 -v /migrator/drivers/opt/mongodb-relational-migrator/lib/app/lib -v /migrator/data/root/Migrator  public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
-      .. tab:: Map local folder with JDBC drivers
-         :tabid: logging-run
+         .. tab:: Map local jar file
+            :tabid: logging-run
 
-         The following command maps a single jar file that contains a
-         JDBC driver to the container. This is useful for Oracle and 
-         MySQL migration projects because those drivers are not included
-         with Relational Migrator by default.
+            The following command maps a single jar file that contains a
+            JDBC driver to the container. This is useful for Oracle and 
+            MySQL migration projects because those drivers are not included
+            with Relational Migrator by default.
 
-         .. code-block:: sh
+            .. code-block:: sh
 
-            docker run -p 8080:8080 -v /opt/mongodb-relational-migrator/lib/app/lib/driver.jar -v /migrator/data/root/Migrator public.ecr.aws/v4d7k6c9/relational-migrator:latest
+               docker run -p 8080:8080 -v /opt/mongodb-relational-migrator/lib/app/lib/driver.jar -v /migrator/data/root/Migrator public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
 
       The ``-p 8080:8080`` in this command maps the container port to the host port.
