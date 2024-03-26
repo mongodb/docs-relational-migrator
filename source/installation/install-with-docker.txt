@@ -34,9 +34,37 @@ Procedure
 
    .. step:: Run the Image as a Container
 
-      .. code-block:: sh
+   .. tabs::
 
-         docker run -p 8080:8080 public.ecr.aws/v4d7k6c9/relational-migrator:latest
+      .. tab:: Run
+         :tabid: basic-run
+         
+         .. code-block:: sh
+
+            docker run -p 8080:8080 public.ecr.aws/v4d7k6c9/relational-migrator:latest
+
+      .. tab:: Map local folder to the logging directory
+         :tabid: logging-run
+         
+         The following command makes the project files and logs 
+         persistent even if the container is stopped.
+
+         .. code-block:: sh
+
+            docker run -p 8080:8080 -v /migrator/drivers/opt/mongodb-relational-migrator/lib/app/lib -v /migrator/data/root/Migrator  public.ecr.aws/v4d7k6c9/relational-migrator:latest
+
+      .. tab:: Map local folder with JDBC drivers
+         :tabid: logging-run
+
+         The following command maps a single jar file that contains a
+         JDBC driver to the container. This is useful for Oracle and 
+         MySQL migration projects because those drivers are not included
+         with Relational Migrator by default.
+
+         .. code-block:: sh
+
+            docker run -p 8080:8080 -v /opt/mongodb-relational-migrator/lib/app/lib/driver.jar -v /migrator/data/root/Migrator public.ecr.aws/v4d7k6c9/relational-migrator:latest
+
 
       The ``-p 8080:8080`` in this command maps the container port to the host port.
       This allows you to connect to Relational Migrator by browsing to 
@@ -44,11 +72,9 @@ Procedure
 
       .. note:: Override a Config Setting
 
-         You can override a configuration setting by specifying the 
-         configuration setting in the Docker command.
-
-         For example, consider disabling telemetry with the 
-         following command:
+         You can specify a configuration setting to override in the 
+         Docker command. For example, consider disabling telemetry with
+         the following command:
 
          .. code-block:: bash
 

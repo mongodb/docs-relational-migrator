@@ -36,7 +36,7 @@ For instructions on installing Relational Migrator, see the following pages:
 
    * - Docker
 
-     - Suitable if your familiar with Docker and dont want to run 
+     - Suitable if your familiar with Docker and don't want to run 
        Relational Migrator directly on a server or machine.
 
      - :ref:`Install with Docker <rm-install-docker>`
