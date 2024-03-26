@@ -72,10 +72,6 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     ``RetriableException``. Relational Migrator attempts recovery from source database 
     retriable exceptions up to a set limit before the job fails.
 
-    .. note::
-
-       There are only a few exceptions that are marked ``RetriableException``. 
-
    ``migrator.connector.source.common.errors.retry.initial.max.ms``
     Default: 30000 ms
 
@@ -95,10 +91,6 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     For the sink connector, this specifies the maximum number of retries on a 
     ``RetriableException``. Relational Migrator attempts recovery from source database 
     retriable exceptions up to a set limit before the job fails.
-
-    .. note::
-
-       There are only a few exceptions that are marked ``RetriableException``. 
 
    ``migrator.connector.sink.common.errors.retry.initial.max.ms``
     Default: 30000 ms
