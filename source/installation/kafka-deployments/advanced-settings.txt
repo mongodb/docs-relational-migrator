@@ -17,14 +17,14 @@ Advanced Kafka Settings
    :class: singlecol
 
 When you integrate Relational Migrator with Kafka, you can configure 
-additional advanced settings. 
+additional advanced settings by updating your ``user.properties`` file.
+Your ``user.properties`` file is located in an OS specific location. For more 
+information, see :ref:`Relational Migrator File Locations <file-location>`.
 
 User Properties
 ---------------
 
 Provide optional configuration settings by updating your ``user.properties`` file. 
-Your ``user.properties`` file is located in an OS specific location. For more 
-information, see :ref:`Relational Migrator File Locations <file-location>`.
 
 .. glossary::
 
@@ -137,12 +137,12 @@ file with the prefix ``migrator.connector.properties.common``.
     The convertor class for the message value.
 
    ``migrator.connector.properties.common.key.converter.apicurio.registry.url``
-    Apicurio registry endpoint for key in format ``http://{host}:{port}`` or 
-    ``https://{host}:{port}`` if SSL is enabled.
+    This specifies the URL of the Apicurio Registry for the key converter.
+    It use the ``http://{host}:{port}`` or ``https://{host}:{port}`` format.
 
    ``migrator.connector.properties.common.value.converter.apicurio.registry.url``
-    Apicurio registry endpoint for key in format ``http://{host}:{port}`` or 
-    ``https://{host}:{port}`` if SSL is enabled. 
+    This specifies the URL of the Apicurio Registry for the value converter.
+    It use the ``http://{host}:{port}`` or ``https://{host}:{port}`` format.
 
 Source Connector Properties
 ---------------------------
@@ -150,7 +150,7 @@ Source Connector Properties
 Relational Migrator sets default `Debezium source connector properties 
 <https://debezium.io/documentation/reference/stable/connectors/mysql.html#mysql-connector-properties>`__
 for each supported source database. The connector properties can be 
-overridden by adding them in the ``user.properties` file with the prefix 
+overridden by adding them in the ``user.properties`` file with the prefix 
 ``migrator.connector.source.common``. For example: 
 
 .. code-block::
@@ -166,7 +166,7 @@ Sink Connector Properties
 Relational Migrator sets default Migrator `sink connector properties 
 <https://docs.confluent.io/platform/current/installation/configuration/connect/sink-connect-configs.html>`__
 for each supported source database. The connector properties can be 
-overridden by adding them in the ``user.properties` file with the prefix 
+overridden by adding them in the ``user.properties`` file with the prefix 
 ``migrator.connector.source.common``. For example:
 
 .. code-block::
