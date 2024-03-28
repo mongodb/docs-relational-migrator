@@ -91,7 +91,7 @@ Procedure
 
          .. code-block:: bash
 
-            docker run -p 8080:8080 -e MIGRATOR_APP_TELEMETRY_ENABLE=false public.ecr.aws/v4d7k6c9/relational-migrator:latest
+            docker run --name mongodb-relational-migrator -p 8080:8080 -e MIGRATOR_APP_TELEMETRY_ENABLE=false public.ecr.aws/v4d7k6c9/relational-migrator:latest
 
    .. step:: Check that the Container is Running
 
