@@ -25,7 +25,7 @@ in the
 If you use Docker Compose, you must set environment variables
 for ``MIGRATOR_PATH_DATA`` to the local path for the data volume mount 
 and ``MIGRATOR_PATH_DRIVER`` to the path of the JAR file with the 
-JDBC driver.
+JDBC drivers.
 
 Before you Begin
 ----------------
