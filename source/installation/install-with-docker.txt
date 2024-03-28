@@ -22,9 +22,10 @@ You can also use `Docker Compose <https://docs.docker.com/compose/>`__
 to run Relational Migrator. You can find a Docker Compose example file
 in the 
 `download center <https://www.mongodb.com/try/download/relational-migrator>`__.
-If you use Docker Compose, you must set environemnt variables
-for ``MIGRATOR_PATH_DATA`` and ``MIGRATOR_PATH_DRIVER`` to the path of 
-the JAR file with the JDBC driver.
+If you use Docker Compose, you must set environment variables
+for ``MIGRATOR_PATH_DATA`` to the local path for the data volume mount 
+and ``MIGRATOR_PATH_DRIVER`` to the path of the JAR file with the 
+JDBC driver.
 
 Before you Begin
 ----------------
