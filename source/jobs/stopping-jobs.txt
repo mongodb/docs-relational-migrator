@@ -78,7 +78,7 @@ To stop your sync job, follow the instructions below based on the current stage 
                       :icon-lg:`Checkmark` in the :guilabel:`History` 
                       pane and marks all stages as 
                       :guilabel:`Completed`. The status is 
-                      updated to :guilablel:`CDC Completed`.
+                      updated to :guilabel:`CDC Completed`.
 
 Learn More
 ----------
