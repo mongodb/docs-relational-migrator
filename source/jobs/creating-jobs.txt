@@ -126,12 +126,12 @@ Steps
           - Boolean. If true, the sync engine checks the migrated data 
             against the source database. Only supported for snapshot mode.
 
-      Once you have established the database connection and specified the 
-      job type on the :guilabel:`Migration Options` form, Relational Migrator
-      conducts various checks to ensure that the database is configured 
-      correctly. If any configuration is missing, a banner appears indicating
-      that the database is not properly configured, with a 
-      :guilabel:`Generate Script` button to download a SQL script. 
+      After you specify the job type on :guilabel:`Migration Options` 
+      form, Relational Migrator conducts various checks to ensure that 
+      the database is configured correctly. If a configuration is 
+      missing, a banner displays indicating improper 
+      database setup and provides a :guilabel:`Generate Script` button 
+      for SQL script download.
 
       This script includes the required configuration statements 
       and additional instructions in the form of comments. 
@@ -150,11 +150,12 @@ Steps
       Click :guilabel:`Start`. 
 
       .. note :: 
-
-         If your sync job utilizes Kafka, view deployment details by 
-         selecting your sync job in the :guilabel:`History` pane of the 
-         :guilabel:`Data Migration` screen and hovering over the icon 
-         next to the :guilabel:`Create Migration Job` button.
+         
+         For Kafka sync jobs, view deployment details by selecting the 
+         job in the :guilabel:`History` pane on the 
+         :guilabel:`Data Migration` screen and hovering
+         over the icon next to the :guilabel:`Create Migration Job`
+         button.
 
 Next Steps
 ----------
@@ -165,8 +166,8 @@ Next Steps
 Learn More
 ----------
 
-For detailed information regarding the configuration requirements for each database, 
-see the follow Debezium reference links, which are internally utilized by Relational Migrator:
+For detailed information regarding the configuration requirements for 
+each database, see the following:
 
 * `MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html#setting-up-mysql>`__
 * `Oracle <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_database>`__
