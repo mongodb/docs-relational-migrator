@@ -37,8 +37,9 @@ Before you Begin
 - You must have Docker installed on your computer. For more information, see  
   `Install Docker Engine <https://docs.docker.com/engine/install/>`__. 
 
-- Download the following example ``docker-compose`` to modify as you follow along 
-  with the installation steps: Kafka Docker Compose. 
+- Download the following example ``docker-compose`` that configures a Kafka 
+  cluster and Kafka Connect cluster to run Relational Migator locally: Kafka 
+  Docker Compose. 
 
 Steps
 -----
