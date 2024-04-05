@@ -28,18 +28,14 @@ how to configure your own multi-server Kafka environment.
 About this Task
 ---------------
 
-`Docker volumes <https://docs.docker.com/storage/volumes/>`__ can be used for 
-persisting data if a container stops running or is restarted. 
+This deployment method uses a ``docker-compose`` file to set up a Kafka node, 
+a Kafka Connect node, and a Relational Migrator node. 
 
 Before you Begin
 ----------------
 
-- You must have Docker installed on your computer. For more information, see  
-  `Install Docker Engine <https://docs.docker.com/engine/install/>`__. 
-
-- Download the following example ``docker-compose`` that configures a Kafka 
-  cluster and Kafka Connect cluster to run Relational Migator locally: Kafka 
-  Docker Compose. 
+You must have Docker installed on your computer. For more information, see  
+`Install Docker Engine <https://docs.docker.com/engine/install/>`__. 
 
 Steps
 -----
@@ -47,40 +43,43 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: Install a Kafka cluster
+   .. step:: Download the ``docker-compose`` file
 
-      Use the example ``docker-compose`` to set up a Kafka cluster or provide 
-      configuration details to connect an existing Kafka cluster.
-   
-   .. step:: Install a Kafka Connect cluster
+      In the `Download Center <https://www.mongodb.com/try/download/relational-migrator>`__, 
+      select :guilabel:`Docker` as the platform and then select the :guilabel:`Kafka 
+      reference implementation` file.
 
-      Use the example ``docker-compose`` to install a Kafka Connect cluster with 
-      the ``relational-migrator-connect`` image from the public Amazon ECR: 
-      ``public.ecr.aws/v4d7k6c9/relational-migrator:latest``.
+   .. step:: Configure environment variables
 
-   .. step:: Install Relational Migrator
+      a. Configure ``MIGRATOR_DATA_PATH``
 
-      You have two options for installing Relational Migrator:
+         In your ``docker-compose`` file, configure the ``MIGRATOR_DATA_PATH`` variable to a 
+         path where Relational Migrator saves data for persistence.
 
-      1. From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
-         select the appropriate Relational Migrator installer.
+      b. (Optional) If your source database is MySQL or Oracle, configure ``MIGRATOR_PATH_DRIVE``
 
-      #. Create a docker image using a Relational Migrator installer.
+         Relational Migrator uses the JDBC driver of the respective source database to read 
+         database schema. It bundles SQL Server and PostgreSQL JDBC drivers. For MySQL and 
+         Oracle, you must add their drivers.
 
-         Use the example ``docker-compose`` to install Relational Migrator. 
+         In your ``docker-compose`` file, configure the ``MIGRATOR_PATH_DRIVE`` variable to 
+         the location of the ``.jar`` file for the additional JDBC drivers. 
 
-   .. step:: If your source database is MySQL or Oracle, add their related drivers
+   .. step:: Download the Docker images
 
-      Relational Migrator uses the JDBC driver of the respective source database to read 
-      database schema. It bundles SQL Server and PostgreSQL JDBC drivers. For MySQL and 
-      Oracle, you must add their drivers to the following path:
+      Run the following command to download the Docker images for your setup:
 
-      ``<path-to-installation>/mongodb-relational-migrator/lib/app/lib``
-      
-      - Oracle: `21.6.0.0 of odjbc11.jar from the Oracle 21c
-        <https://www.oracle.com/database/technologies/appdev/jdbc-drivers-archive.html>`__
-      - MySQL: `latest 8.0.x version, Platform Independent Version 
-        <https://dev.mysql.com/downloads/connector/j/>`__
+      .. code-block::
+
+         docker-compose -f docker-compose-migrator-kafka.yml pull
+
+   .. step:: Launch Relational Migrator with Docker
+
+      Run the following command to start Relational Migrator with Docker:
+
+      .. code-block::
+
+         docker-compose -f docker-compose-migrator-kafka.yml up
 
 Learn More
 ----------
