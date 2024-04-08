@@ -27,8 +27,7 @@ Before you Begin
 ----------------
 
 You must enable Kafka support for relational migrator. For details, see 
-the Kafka or Confluent Cloud Kafka install docs. **Todo** add links to 
-the appropriate installation reference pages.
+:ref:`kafka-intro`.
 
 Steps
 -----
