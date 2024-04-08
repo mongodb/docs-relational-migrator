@@ -56,13 +56,13 @@ Steps
          In your ``docker-compose`` file, configure the ``MIGRATOR_DATA_PATH`` variable to a 
          path where Relational Migrator saves data for persistence.
 
-      b. (Optional) If your source database is MySQL or Oracle, configure ``MIGRATOR_PATH_DRIVE``
+      b. (Optional) If your source database is MySQL or Oracle, configure ``MIGRATOR_PATH_DRIVER``
 
          Relational Migrator uses the JDBC driver of the respective source database to read 
          database schema. It bundles SQL Server and PostgreSQL JDBC drivers. For MySQL and 
          Oracle, you must add their drivers.
 
-         In your ``docker-compose`` file, configure the ``MIGRATOR_PATH_DRIVE`` variable to 
+         In your ``docker-compose`` file, configure the ``MIGRATOR_PATH_DRIVER`` variable to 
          the location of the ``.jar`` file for the additional JDBC drivers. 
 
    .. step:: Download the Docker images
