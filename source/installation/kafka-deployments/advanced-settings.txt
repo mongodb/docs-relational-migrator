@@ -130,10 +130,12 @@ file with the prefix ``migrator.connector.properties.common``.
 
    ``migrator.connector.properties.common.key.converter.apicurio.registry.url``
     This specifies the URL of the Apicurio Registry for the key converter.
+
     It use the ``http://{host}:{port}`` or ``https://{host}:{port}`` format.
 
    ``migrator.connector.properties.common.value.converter.apicurio.registry.url``
     This specifies the URL of the Apicurio Registry for the value converter.
+
     It use the ``http://{host}:{port}`` or ``https://{host}:{port}`` format.
 
 Source Connector Properties
