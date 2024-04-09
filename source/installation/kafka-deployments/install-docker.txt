@@ -43,10 +43,10 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: Download the ``docker-compose`` file
+   .. step:: Download the docker-compose file
 
       In the `Download Center <https://www.mongodb.com/try/download/relational-migrator>`__, 
-      select :guilabel:`Docker` as the platform and then select the :guilabel:`Kafka 
+      select :guilabel:`Docker` as the platform. Then select the :guilabel:`Kafka 
       reference implementation` file.
 
    .. step:: Configure environment variables
