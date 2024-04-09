@@ -17,7 +17,7 @@ Advanced Kafka Settings
    :class: singlecol
 
 When you integrate Relational Migrator with Kafka, you can configure 
-additional advanced settings by updating your ``user.properties`` file.
+more advanced settings by updating your ``user.properties`` file.
 Your ``user.properties`` file is located in an OS specific location. For more 
 information, see :ref:`Relational Migrator File Locations <file-location>`.
 
@@ -31,7 +31,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
    ``spring.profiles.active``
     *Default*: local
 
-    Relational Migrator can be run in the following profile: 
+    Relational Migrator can be run in the following profiles: 
 
     - ``kafka``: Remote server using embedded server deployment.
     - ``confluent``: Remote server using Confluent Cloud for managed Kafka.
@@ -42,7 +42,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     The port the Relational Migrator application runs on.
 
    ``migrator.kafka.bootstrap.servers``
-    This is a list of ``host:port`` pairs of your pre-existing kafka cluster.
+    A list of ``host:port`` pairs of your pre-existing kafka cluster.
 
     For example: ``kafka-1:9092, kafka-2:9093``. 
 
@@ -50,9 +50,9 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     <https://docs.confluent.io/platform/current/connect/userguide.html#worker-configuration-properties-file>`__. 
 
    ``migrator.kafka.connect.url``
-    The Kafka Connect host url using the ``{host}:{port}`` format.
+    The Kafka Connect host url using the ``host:port`` format.
 
-    For example: ``localhost:8083``. 
+    For example: ``http://localhost:8083``. 
 
    ``migrator.kafka.connect.metrics.jmx.service.url``
     The Kafka Connect Java Management Extensions (JMX) url. 
@@ -63,7 +63,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     Set to ``true`` if SSL is enabled.
 
     You can add additonal remote Java Management Extensions (JMX) for SSL 
-    configuration by prefixing them with ``migrator.kafka.connect.metrics.jmx.properties``.
+    configurations by prefixing them with ``migrator.kafka.connect.metrics.jmx.properties``.
 
    ``migrator.kafka.enable.topic.cleanup``
     *Default*: false
@@ -73,41 +73,41 @@ Provide optional configuration settings by updating your ``user.properties`` fil
    ``migrator.connector.source.common.errors.max.retries``
     *Default*: 5
 
-    For the source connector, this specifies the maximum number of retries on a 
-    ``RetriableException``. Relational Migrator attempts recovery from source database 
-    retriable exceptions up to a set limit before the job fails.
+    For the source connector, it specifies the maximum number of retries on a 
+    retriable failure. Relational Migrator attempts recovery from source database 
+    retriable failures up to a set limit before the job fails.
 
    ``migrator.connector.source.common.errors.retry.initial.max.ms``
     *Default*: 30000 ms
 
-    For the source connector, this specifies the delay in milliseconds to start 
+    For the source connector, it specifies the delay in milliseconds to start 
     again after a retriable failure. The value is doubled after every retry but 
     does not exceed ``migrator.connector.source.common.errors.retry.delay.max.ms``.
 
    ``migrator.connector.source.common.errors.retry.delay.max.ms``
     *Default*: 60000 ms
 
-    For the source connector, this specifies the maximum delay in milliseconds 
+    For the source connector, it specifies the maximum delay in milliseconds 
     between retries after a retriable failure.
 
    ``migrator.connector.sink.common.errors.max.retries``
     *Default*: 5
     
-    For the sink connector, this specifies the maximum number of retries on a 
-    ``RetriableException``. Relational Migrator attempts recovery from source database 
-    retriable exceptions up to a set limit before the job fails.
+    For the sink connector, it specifies the maximum number of retries on a 
+    retriable failure. Relational Migrator attempts recovery from source database 
+    retriable failures up to a set limit before the job fails.
 
    ``migrator.connector.sink.common.errors.retry.initial.max.ms``
     *Default*: 30000 ms
 
-    For the sink connector, this specifies the delay in milliseconds to start again 
+    For the sink connector, it specifies the delay in milliseconds to start again 
     after a retriable failure. The value is doubled after every retry but does not exceed 
     ``migrator.connector.sink.common.errors.retry.delay.max.ms``.
 
    ``migrator.connector.sink.common.errors.retry.delay.max.ms``
     *Default*: 60000 ms
 
-    For the sink connector, this specifies the maximum delay in milliseconds 
+    For the sink connector, it specifies the maximum delay in milliseconds 
     between retries after a retriable failure.
 
 Schema Registry Properties
