@@ -119,12 +119,12 @@ file with the prefix ``migrator.connector.properties.common``.
 .. glossary::
 
    ``migrator.connector.properties.common.key.converter``
-    Default: ``migrator.connector.properties.common.key.converter``
+    *Default*: ``migrator.connector.properties.common.key.converter``
     
     The convertor class for the message key.
 
    ``migrator.connector.properties.common.value.converter``
-    Default: ``org.apache.kafka.connect.json.JsonConverter``
+    *Default*: ``org.apache.kafka.connect.json.JsonConverter``
     
     The convertor class for the message value.
 
@@ -150,7 +150,7 @@ overridden by adding them in the ``user.properties`` file with the prefix
    migrator.connector.source.common.errors.max.retries: 0
 
 In this example, the default value is five but it has now been set to zero. This means
-there is no retries after a ``RetriableException``.
+there is no retries after a retriable failure.
 
 Sink Connector Properties
 -------------------------
@@ -166,4 +166,4 @@ overridden by adding them in the ``user.properties`` file with the prefix
    migrator.connector.sink.common.errors.max.retries: 0
 
 In this example, the default value is five but it has now been set to zero. This means
-there is no retries after a ``RetriableException``.
+there is no retries after a retriable failure.
