@@ -44,8 +44,6 @@ Steps
            <https://repo1.maven.org/maven2/io/debezium/debezium-connector-sqlserver/2.4.1.Final/debezium-connector-sqlserver-2.4.1.Final-plugin.tar.gz>`__ 
          - `Oracle Connector plugin archive 
            <https://repo1.maven.org/maven2/io/debezium/debezium-connector-oracle/2.4.1.Final/debezium-connector-oracle-2.4.1.Final-plugin.tar.gz>`__  
-         - `Db2 Connector plugin archive 
-           <https://repo1.maven.org/maven2/io/debezium/debezium-connector-db2/2.4.1.Final/debezium-connector-db2-2.4.1.Final-plugin.tar.gz>`__
 
       b. Unzip the archive.
 
