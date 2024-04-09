@@ -39,7 +39,7 @@ For instructions on installing Relational Migrator, see the following pages:
      - Suitable if your familiar with Docker and don't want to run 
        Relational Migrator directly on a server or machine.
 
-     - :ref:`Install with Docker <rm-install-docker>`
+       For more information, see :ref:`Install with Docker <rm-install-docker>`.
 
    * - Kafka
 
