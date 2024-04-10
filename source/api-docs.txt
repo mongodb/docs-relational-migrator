@@ -3,6 +3,10 @@
 :template: openapi
 :title: MongoDB Relational Migrator Administration API Specification
 
+=============
+Open API Docs
+=============
+
 .. facet::
    :name: programming_language
    :values: json
@@ -10,6 +14,6 @@
 .. meta:: 
    :keywords: code example
 
-.. openapi:: source/open-api/Atlas-spec.json
+.. openapi:: Migrator-spec.json
    :uses-realm:
    :api-version: 1.0
