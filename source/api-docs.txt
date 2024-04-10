@@ -10,4 +10,4 @@
 .. meta:: 
    :keywords: code example
 
-.. openapi:: openapi.yaml
+.. openapi:: Atlas-spec.json
