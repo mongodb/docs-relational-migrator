@@ -1,0 +1,15 @@
+.. _rm-api-resources-spec:
+
+:template: openapi
+:title: MongoDB Relational Migrator Administration API Specification
+
+.. facet::
+   :name: programming_language
+   :values: json
+
+.. meta:: 
+   :keywords: code example
+
+.. openapi:: source/open-api/Migrator-spec.json
+   :uses-realm:
+   :api-version: 1.0
