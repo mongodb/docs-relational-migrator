@@ -59,6 +59,8 @@ Relational Migrator supports the following source databases:
      - 15 and higher (Sybase IQ not supported)
      - Self hosted
 
+.. [1] `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`__ are supported. 
+
 MongoDB Databases and Versions
 ------------------------------
 
@@ -74,8 +76,6 @@ Relational Migrator supports the following MongoDB databases:
    * - MongoDB 
      - 4.4 and higher
      - Self hosted, MongoDB Atlas
-
-.. [1] `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`__ are supported. 
 
 Learn More
 ----------
