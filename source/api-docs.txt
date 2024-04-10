@@ -3,10 +3,6 @@
 :template: openapi
 :title: MongoDB Relational Migrator Administration API Specification
 
-=============
-Open API Docs
-=============
-
 .. facet::
    :name: programming_language
    :values: json
