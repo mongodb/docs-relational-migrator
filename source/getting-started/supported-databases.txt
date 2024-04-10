@@ -75,11 +75,11 @@ Relational Migrator supports the following MongoDB databases:
      - 4.4 and higher
      - Self hosted, MongoDB Atlas
 
+.. [1] `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`__ are supported. 
+
 Learn More
 ----------
 
 - :ref:`Create a Project <rm-create-project-live>`
 
 - :ref:`Migration Scenarios and Use Cases <rm-migration-scenarios>`
-
-.. [1] `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`__ are supported. 
