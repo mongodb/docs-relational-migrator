@@ -10,6 +10,6 @@
 .. meta:: 
    :keywords: code example
 
-.. openapi:: /source/open-api/Migrator-spec.json
+.. openapi:: source/open-api/Atlas-spec.json
    :uses-realm:
    :api-version: 1.0
