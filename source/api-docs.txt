@@ -10,6 +10,4 @@
 .. meta:: 
    :keywords: code example
 
-.. openapi:: /openapi.yaml
-   :uses-realm:
-   :api-version: 1.0
+.. openapi:: openapi.yaml
