@@ -10,4 +10,4 @@
 .. meta:: 
    :keywords: code example
 
-.. openapi:: /Atlas-spec.json
+.. openapi:: /Migrator-spec.json
