@@ -14,6 +14,5 @@ Open API Docs
 .. meta:: 
    :keywords: code example
 
-.. openapi:: Atlas-spec.json
-   :uses-realm:
+.. openapi:: /openapi-data-api-v1.yaml
    :api-version: 1.0
