@@ -82,6 +82,12 @@ Steps
 
          docker-compose -f docker-compose-migrator-kafka.yml up
 
+Next Steps
+----------
+
+- :ref:`rm-projects`
+- :ref:`rm-create-jobs` 
+
 Learn More
 ----------
 
