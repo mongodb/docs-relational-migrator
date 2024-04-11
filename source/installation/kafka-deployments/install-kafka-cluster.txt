@@ -54,7 +54,7 @@ Steps
          <https://kafka.apache.org/documentation/#connectconfigs_plugin.path>`__ on your 
          Kafka Connect cluster. For example: ``/kafka/connect/debezium-connector-sqlserver``.
 
-      d. Restart you Kafka Connect cluster.
+      d. Restart your Kafka Connect cluster.
 
          When the  plugin is successfully registered, the following log statement 
          appears in the ``kafka-connect`` start up logs:
@@ -92,7 +92,7 @@ Steps
       From the `download center <https://www.mongodb.com/try/download/relational-migrator>`__, 
       select the latest version of the Relational Migrator installer.
 
-   .. step:: Run Relational Migrator in ``kafka-integrated`` mode
+   .. step:: Run Relational Migrator in kafka-integrated mode
 
       To run in ``kafka-integrated`` mode, update the following configurations in your 
       ``user.properties`` file.
