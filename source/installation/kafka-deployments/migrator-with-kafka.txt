@@ -79,7 +79,7 @@ Learn More
 ----------
 
 - `Kafka and Kafka Connect <https://www.mongodb.com/docs/kafka-connector/current/introduction/kafka-connect/>`__
-
+- :ref:`advanced-settings`
 - `Debezium <https://debezium.io/documentation/reference/stable/install.html>`__
 
 .. toctree::

@@ -23,7 +23,8 @@ how to configure your own multi-server Kafka environment.
 
 .. warning::
 
-   This deployment method is not recommended for production workloads. 
+   This deployment method is ideal for quick evaluation. It is not recommended for 
+   production workloads as it may not provide a resilient production environment.
 
 About this Task
 ---------------
@@ -87,4 +88,5 @@ Learn More
 - :ref:`kafka-intro`
 - :ref:`install-confluent-kafka` 
 - :ref:`install-kafka-cluster`
+- :ref:`advanced-settings`
 - `Docker Engine Overview <https://docs.docker.com/engine/>`__

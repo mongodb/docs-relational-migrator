@@ -52,7 +52,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
    ``migrator.kafka.connect.url``
     The Kafka Connect host url using the ``host:port`` format.
 
-    For example: ``http://localhost:8083``. 
+    For example: ``https://localhost:8083``. 
 
    ``migrator.kafka.connect.metrics.jmx.service.url``
     The Kafka Connect Java Management Extensions (JMX) url. 

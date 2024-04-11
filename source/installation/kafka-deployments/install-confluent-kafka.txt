@@ -1,8 +1,8 @@
 .. _install-confluent-kafka:
 
-======================================
-Configure a Confluent Cloud Deployment
-======================================
+============================
+Install with Confluent Cloud
+============================
 
 .. default-domain:: mongodb
 
