@@ -6,7 +6,7 @@
     },
     "description": "OpenAPI specification for MongoDB Relational Migrator tool",
     "title": "MongoDB Relational Migrator REST API",
-    "version": "1.0.0"
+    "version": "1.6.0"
   },
   "servers": [
     {
@@ -172,6 +172,16 @@
               "application/json": {
                 "schema": {
                   "$ref": "#/components/schemas/migration-job-status"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/error-response"
                 }
               }
             }
@@ -525,8 +535,8 @@
           "metadata": {
             "$ref": "#/components/schemas/migration_job_status_metadata"
           },
-          "tableFilterOverrides": {
-            "$ref": "#/components/schemas/table-filter-overrides"
+          "relationalTableFilters": {
+            "$ref": "#/components/schemas/relational-table-filters"
           }
         },
         "additionalProperties": false,
@@ -556,8 +566,8 @@
           "verification": {
             "$ref": "#/components/schemas/migration-verification"
           },
-          "tableFilterOverrides": {
-            "$ref": "#/components/schemas/table-filter-overrides"
+          "relationalTableFilters": {
+            "$ref": "#/components/schemas/relational-table-filters"
           }
         },
         "additionalProperties": false,
@@ -606,7 +616,8 @@
             "format": "int64"
           },
           "totalEventSize": {
-            "type": "number"
+            "type": "integer",
+            "format": "int64"
           }
         },
         "additionalProperties": false
@@ -826,7 +837,7 @@
           "ABORTED"
         ]
       },
-      "table-filter-overrides": {
+      "relational-table-filters": {
         "description": "Schema",
         "type": "object",
         "additionalProperties": {
