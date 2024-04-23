@@ -48,8 +48,8 @@ We recommend using the Relational Migrator REST API when:
 - You want to use a task scheduler such as 
   `CRON <https://en.wikipedia.org/wiki/Cron>`__ and define dynamic 
   :ref:`table filters <rm-table-filters>` within a project such as 
-  ``WHERE DATEDIFF(CURDATE(), last_modified) <= 1`` to batch load data 
-  on a cadence from your relational database to MongoDB. 
+  ``WHERE DATEDIFF(CURDATE(), last_modified) <= 1`` to batch migrate 
+  data on a cadence from your relational database to MongoDB. 
 
 - You want to programmatically create Relational Migrator sync jobs 
   quickly and dynamically. For example, using connection strings from 
