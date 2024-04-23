@@ -53,9 +53,9 @@ We recommend using the Relational Migrator REST API when:
 
 - You want to programmatically create Relational Migrator sync jobs 
   quickly and dynamically. For example, using connection strings from 
-  multiple databases without manually configuring them.
+  multiple databases without manually configuring them in the GUI.
 
-- You prefer to script your operations instead of using a GUI.
+- You generally prefer scripting your workflows instead of using a GUI.
 
 Constraints
 -----------
