@@ -12,13 +12,11 @@ Relational Migrator REST API
    :description: Learn about the MongoDB Relational Migrator REST API and when to use it.
    :keywords: data migration rest api
 
-.. toctree::
-   :titlesonly:
-   
-   {+migrator-api-endpoints+} </api-docs/rest-api-spec>
-
 .. contents:: On this page
+   :local:
+   :backlinks: none
    :depth: 1
+   :class: singlecol
 
 The Data API is a managed service that lets you securely work with data
 stored in Atlas using standard HTTPS requests. The Data API is not a
@@ -39,19 +37,6 @@ that supports HTTPS, including:
 You don't need to install any database drivers or opinionated libraries
 to work with the Data API. Instead, you send standard HTTPS requests
 like the following:
-
-Endpoints
----------
-
-The Data API supports two types of endpoints:
-
-- **Data API Endpoints** are automatically generated endpoints that each
-  represent a MongoDB operation. You can use the endpoints to create,
-  read, update, delete, and aggregate documents in a MongoDB data
-  source.
-
-  To learn more, including how to set up and call endpoints, see
-  :ref:`Data API Endpoints <data-api-endpoints>`.
 
 How the Data API Works
 ----------------------
@@ -119,7 +104,6 @@ We recommend using the Data API when:
   supported by an Atlas Device SDK and don't want to use a driver to connect
   over the :ref:`wire protocol <wire-protocol>`.
 
-
 Constraints
 -----------
 
@@ -128,3 +112,8 @@ The following constraints apply to Data API requests and responses:
 - Requests will time out after 300 seconds of runtime.
 
 - Data API response payloads are limited to 350 MB in size.
+
+.. toctree::
+   :titlesonly:
+   
+   {+migrator-api-endpoints+} </api-docs/rest-api-spec>
