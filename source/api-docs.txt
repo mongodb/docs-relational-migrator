@@ -18,15 +18,16 @@ Relational Migrator REST API
    :depth: 1
    :class: singlecol
 
-The Relational Migrator REST API provides you with programatic access to
-Relation Migrator with HTTPS endpoints. The REST API is a middleware 
+The Relational Migrator REST API provides you with programmatic access 
+to Relation Migrator with HTTPS endpoints. The REST API is a middleware 
 service that sits between your application and your source and destination 
 databases that you can send requests to facilitate and manage your sync 
 jobs.
 
 You don't need to install any additional extensions or packages to use 
 the Relation Migrator REST API. The functionality is built into the core 
-Relational Migrator product.
+Relational Migrator product and runs on the same port that you access 
+the application on (either ``8278``, ``8080``, or ``443``).
 
 How the Data API Works
 ----------------------
@@ -36,38 +37,26 @@ The Relational Migrator REST API:
 - Runs on the machine or server that the Relation Migrator application
   is installed on.
 - The Rest API is governed by the host adapter binding.
-- The Relational Migrator REST API *does not* currently support 
+- The Relational Migrator REST API **does not** currently support 
   authentication.
 
 When to Use the Data API
 ------------------------
 
-For server applications, and especially for high-load and latency
-sensitive use-cases, we recommend connecting directly to Atlas with a
-MongoDB driver. Operations called through a Data API endpoint take
-longer to complete than the corresponding MongoDB operations called
-through a driver. Additionally, the drivers provide more flexibility and
-control over how your operations are executed. To learn more, visit the
-:driver:`MongoDB Drivers </>` documentation.
+We recommend using the Relational Migrator REST API when:
 
-We recommend using the Data API when:
+- You want to use a task scheduler such as 
+  `CRON <https://en.wikipedia.org/wiki/Cron>`__ and define dynamic 
+  :ref:`table filters <rm-table-filters>` within a project such as 
+  ``WHERE DATEDIFF(CURDATE(), last_modified) <= 1`` to batch load data 
+  on a cadence from your relational database to MongoDB. 
 
-- You want to run MongoDB operations from a web application or other
-  client that you can't trust.
+- You want to programmatically create Relational Migrator sync jobs 
+  quickly and dynamically. For example, using connection strings from 
+  multiple databases without manually clicking through the Relational 
+  Migrator GUI.
 
-- You can't or don't want to manage a MongoDB driver in your server-side
-  environment. For example, some edge compute environments don't support
-  database drivers or connection pooling.
-
-- You want to develop a new feature and prefer a flexible solution for
-  working on the client side first before later creating and refining
-  the API layer.
-
-- You want to integrate Atlas data access into a federated API gateway.
-
-- You want to connect to App Services from an environment not currently
-  supported by an Atlas Device SDK and don't want to use a driver to connect
-  over the :ref:`wire protocol <wire-protocol>`.
+- You prefer to script your operations instead of using a GUI.
 
 Constraints
 -----------
