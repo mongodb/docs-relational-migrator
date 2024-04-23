@@ -64,7 +64,7 @@ The following constraints apply to Data API requests and responses:
 
 - Requests will time out after 300 seconds of runtime.
 
-- Data API response payloads are limited to 350 MB in size.
+- API response payloads are limited to 350 MB in size.
 
 .. toctree::
    :titlesonly:
