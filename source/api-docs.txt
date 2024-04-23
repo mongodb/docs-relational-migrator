@@ -29,7 +29,7 @@ the Relation Migrator REST API. The functionality is built into the core
 Relational Migrator product and runs on the same port that you access 
 the application on (either ``8278``, ``8080``, or ``443``).
 
-How the Data API Works
+How the REST API Works
 ----------------------
 
 The Relational Migrator REST API:
@@ -40,8 +40,8 @@ The Relational Migrator REST API:
 - The Relational Migrator REST API **does not** currently support 
   authentication.
 
-When to Use the Data API
-------------------------
+When to Use REST API
+--------------------
 
 We recommend using the Relational Migrator REST API when:
 
