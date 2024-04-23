@@ -15,7 +15,7 @@ Relational Migrator REST API
 .. toctree::
    :titlesonly:
    
-   {+migrator-api+} </api-docs/rest-api-spec>
+   {+migrator-api-endpoints+} </api-docs/rest-api-spec>
 
 .. contents:: On this page
    :depth: 1
