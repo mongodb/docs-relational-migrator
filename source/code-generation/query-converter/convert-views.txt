@@ -85,6 +85,8 @@ Steps
         to your clipboard.
      #. Test and validate the generated MongoDB code.
 
+        .. include:: /includes/fact-query-converter-failure-errors.rst
+
      .. tip::
 
         .. include:: /includes/fact-query-converter-filter.rst
