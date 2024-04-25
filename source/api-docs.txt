@@ -57,6 +57,11 @@ We recommend using the Relational Migrator REST API when:
 
 - You generally prefer scripting your workflows instead of using a GUI.
 
+Learn More
+----------
+
+To see the REST API endpoint documentation, see :ref:`rm-api-resources-spec`.
+
 .. toctree::
    :titlesonly:
    
