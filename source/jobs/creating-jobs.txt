@@ -96,10 +96,10 @@ Steps
 
   .. step:: Enter the source MongoDB connection details 
 
-      You can provide the MongoDB connection details by selecting an Atlas
-      cluster or providing a MongoDB connection string (URI). If you are :ref:`logged 
+      To provide the MongoDB connection details, select an Atlas
+      cluster or provide a MongoDB connection string (URI). If you're :ref:`logged 
       in with Atlas <rm-atlas-log-in>`, the default option is to :guilabel:`Select 
-      a cluster`. If you are not logged in with Atlas, the :guilabel:`Select a cluster` 
+      a cluster`. If you aren't logged in with Atlas, the :guilabel:`Select a cluster` 
       option is disabled.
 
       .. tabs::
