@@ -60,7 +60,8 @@ We recommend using the Relational Migrator REST API when:
 Learn More
 ----------
 
-To see the REST API endpoint documentation, see :ref:`rm-api-resources-spec`.
+To see the REST API endpoint documentation, see 
+:ref:`Endpoints <rm-api-resources-spec>`.
 
 .. toctree::
    :titlesonly:
