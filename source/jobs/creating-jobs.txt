@@ -98,9 +98,9 @@ Steps
 
       You can provide the MongoDB connection details by selecting an Atlas
       cluster or providing a MongoDB connection string (URI). If you are :ref:`logged 
-      in with Atlas <rm-atlas-log-in>`, the default option is to select a cluster.
-      If you ar not logged in with Atlas, the :guilabel:`Select a cluster` option is 
-      disabled.
+      in with Atlas <rm-atlas-log-in>`, the default option is to :guilabel:`Select 
+      a cluster`. If you are not logged in with Atlas, the :guilabel:`Select a cluster` 
+      option is disabled.
 
       .. tabs::
 
@@ -112,7 +112,7 @@ Steps
 
             If you leave any of the form fields for :guilabel:`Database`, :guilabel:`Username`, 
             or :guilabel:`Password` blank, the values from the Atlas cluster's metadata 
-            is used.
+            are used.
 
             Click :guilabel:`Connect`.
 
