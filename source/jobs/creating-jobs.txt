@@ -107,8 +107,11 @@ Steps
          .. tab:: Select a cluster
             :tabid: select-atlas-cluster
 
-            On the :guilabel:`Connect Destination DB` form, select an 
-            :guilabel:`Atlas Cluster` from the drop-down. 
+            On the :guilabel:`Connect Destination DB` form, select an :guilabel:`Atlas Cluster` 
+            from the drop-down. Clusters are displayed in a three-level hierarchy: 
+            :guilabel:`Organization` > :guilabel:`Project` > :guilabel:`Cluster`, 
+            organized alphabetically. Only the first 100 clusters you are authorized to 
+            access are shown.
 
             If you leave any of the form fields for :guilabel:`Database`, :guilabel:`Username`, 
             or :guilabel:`Password` blank, the values from the Atlas cluster's metadata 
