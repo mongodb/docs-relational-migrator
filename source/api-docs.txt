@@ -57,15 +57,6 @@ We recommend using the Relational Migrator REST API when:
 
 - You generally prefer scripting your workflows instead of using a GUI.
 
-Constraints
------------
-
-The following constraints apply to Data API requests and responses: 
-
-- Requests will time out after 300 seconds of runtime.
-
-- API response payloads are limited to 350 MB in size.
-
 .. toctree::
    :titlesonly:
    
