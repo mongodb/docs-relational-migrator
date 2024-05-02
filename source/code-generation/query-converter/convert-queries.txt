@@ -83,8 +83,8 @@ Steps
 
       Provide feedback on converted queries to help improve future query conversions.
       To provide feedback, click the :icon-fa5:`thumbs-up` or :icon-fa5:`thumbs-down`
-      icon on the bottom right corner of the converted query panel. Then, provide 
-      feedback details if necessary and click :guilabel:`Submit`. 
+      icon on the bottom right corner of the converted query panel. Then, you can 
+      provide feedback details and click :guilabel:`Submit`. 
 
 Examples
 --------
