@@ -40,12 +40,14 @@ Steps
 
       - `Oracle: 21.6.0.0 of ojdbc11.jar from the Oracle 21c <https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html>`_
 
-   b. Copy the driver files to ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``.
+   #. Copy the driver files to ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``.
 
    .. note::
 
       Relational Migrator installs the JDBC drivers for SQL Server and PostgreSQL by 
       default.
+
+   #. Restart the Relational Migrator application.
 
 Next Steps
 ----------
