@@ -176,10 +176,10 @@ Steps
 
   .. step:: Review and start your job
 
-      On the :guilabel:`Review Summary` you can see details about your 
-      sync job such as ``Mode``, ``Tables to migrate``, 
-      ``Rows to migrate``, and ``Data size``. To start your sync job 
-      click :guilabel:`Start`. 
+      On the :guilabel:`Review Summary` form you can see details about 
+      your sync job such as the sync job type, tables and rows in scope 
+      for the sync job and the estimate data size of the sync job. To 
+      start your sync job click :guilabel:`Start`. 
 
       .. note :: 
          
