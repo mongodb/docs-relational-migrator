@@ -149,9 +149,6 @@ Steps
     information display next to each respective section of the 
     :guilabel:`Job overview` pane.
 
-    .. image:: /img/jobs/jobs-monitoring-job-history.png
-       :alt: View Job History
-
   .. step:: View logging information
 
      a. Click the :guilabel:`>` icon under the :guilabel:`Issues` section 
