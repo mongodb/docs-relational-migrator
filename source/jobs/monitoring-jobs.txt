@@ -67,7 +67,7 @@ Snapshot stage information displays in the :guilabel:`Snapshot stage` section of
    * - Started
      - Date and time that the snapshot stage started. 
 
-   * - Elapsed time
+   * - Duration
      - Time taken for the snapshot stage to complete. 
 
    * - Tables migrated 
