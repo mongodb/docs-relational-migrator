@@ -177,7 +177,7 @@ Steps
   .. step:: Review and start your job
 
       On the :guilabel:`Review Summary` form you can see details about 
-      your sync job such as the sync job type, tables and rows in scope 
+      your sync job such as the sync job type, the tables and rows 
       and the estimate data size of the sync job. To 
       start your sync job click :guilabel:`Start`. 
 
