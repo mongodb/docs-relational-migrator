@@ -32,7 +32,7 @@ Steps
       - Click on a collection listed under the :guilabel:`MongoDB` header on the 
         :guilabel:`Schema Model` pane. 
 
-   .. step:: Enter the new name
+   .. step:: Enter and save the new name
       
       On the :guilabel:`Mappings` pane, click the :guilabel:`Name` text box and enter 
       the new name. 
