@@ -32,12 +32,10 @@ Steps
       - Click on a collection listed under the :guilabel:`MongoDB` header on the 
         :guilabel:`Schema Model` pane. 
 
-   .. step:: Enter new name
+   .. step:: Enter the new name
       
       On the :guilabel:`Mappings` pane, click the :guilabel:`Name` text box and enter 
       the new name. 
-
-   .. Save changes
 
       Click anywhere outside of the text box to save the changes. The name is updated on 
       the MongoDB diagram and the :guilabel:`Schema Model` pane.
