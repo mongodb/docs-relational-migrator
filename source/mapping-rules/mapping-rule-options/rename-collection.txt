@@ -15,9 +15,9 @@ You can rename a collection on the :guilabel:`Mapping` screen.
 About this Task
 ---------------
 
-You can't rename a collection with a name that is already in use and you can't 
-leave the :guilabel:`Name` text box blank because you will receive a validation 
-error. 
+You cannot rename a collection to a name that is already in use, nor can you 
+leave the :guilabel:`Name` text box blank, as both actions result in an 
+error.
 
 Steps
 -----
@@ -26,10 +26,11 @@ Steps
 
    .. step:: Select a collection
 
-      On the :guilabel:`Mapping` screen, you can either: 
+      To select a collection on the :guilabel:`Mapping` screen:
 
-      - Click on a collection on the MonoDB diagram, or
-      - On the :guilabel:`Schema Model` pane, click on a MongoDB collection name. 
+      - Click on a collection in the MongoDB diagram, or
+      - Click on a collection listed under the :guilabel:`MongoDB` header on the 
+        :guilabel:`Schema Model` pane. 
 
    .. step:: Enter new name
       
@@ -39,4 +40,10 @@ Steps
    .. Save changes
 
       Click anywhere outside of the text box to save the changes. The name is updated on 
-      the MongoDB diagram and the :guilabel:`Schema Model` pane. 
+      the MongoDB diagram and the :guilabel:`Schema Model` pane.
+
+Learn More
+----------
+
+- :ref:`rm-mapping-rule-options`
+- :ref:`rm-timeseries`
