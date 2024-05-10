@@ -176,9 +176,9 @@ Steps
 
   .. step:: Review and start your job
 
-      On the :guilabel:`Review Summary` form you can see details about 
+      On the :guilabel:`Review Summary` form, you can see details about 
       your sync job. These details include the type, the number of 
-      tables and rows affected as well as the estimate data size of the 
+      tables and rows affected, as well as the estimated data size of the 
       sync job. To start your sync job click :guilabel:`Start`. 
 
       .. note :: 
