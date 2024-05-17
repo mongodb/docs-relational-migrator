@@ -27,8 +27,8 @@ New features:
 
 Bug Fixes;
 
-- Fixed an issue where Atlas Sign In sessions would expire after 
-  Relational Migrator was idle for a short amount of time
+- Fixed an issue where :guilabel:`Atlas Sign In` sessions expired 
+  after Relational Migrator was idle for a short amount of time.
 - Fixed an issue where it was not possible to import queries from 
   Oracle databases where the schema or database name contained dots.
 - Fixed an issue where generated Java POJO classes used incorrect types 
