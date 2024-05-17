@@ -20,10 +20,10 @@ New features:
 - More detailed statistics while running a sync job, including viewing 
   percentage complete, estimated time to completion, and which table is 
   currently being processed.
-- Users can recover a Continuous sync job if the Relational Migrator 
+- Users can now recover a Continuous sync job if the Relational Migrator 
   application is restarted while a sync job is running.
 - :ref:`New Job Management REST API <rm-rest-api>`. The rest api allows 
-  users to start, stop and monitor migration jobs programmatically.
+  users to start, stop and monitor sync jobs programmatically.
 
 Bug Fixes;
 
