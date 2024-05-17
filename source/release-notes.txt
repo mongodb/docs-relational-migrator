@@ -20,10 +20,10 @@ New features:
 - More detailed statistics while running a sync job, including viewing 
   percentage complete, estimated time to completion, and which table is 
   currently being processed.
-- Ability to recover a Continuous sync job if the Relational Migrator 
+- Users can now recover a Continuous sync job if the Relational Migrator 
   application is restarted while the job is running.
-- New Job Management REST API, allowing users to start, stop and monitor
-  migration jobs programmatically.
+- :ref:`New Job Management REST API <rm-rest-api>`. The rest api allows 
+  users to start, stop and monitor migration jobs programmatically.
 
 Bug Fixes;
 
@@ -35,7 +35,7 @@ Bug Fixes;
   for date-typed fields. 
 - Fixed an issue where verification could be aborted for schemas with 
   composite keys when some key fields are excluded.
-- Fixed an issues where jobs would stall without progress if no tables 
+- Fixed an issue where jobs would stall without progress if no tables 
   for the schema were found in the source database. 
 
 
