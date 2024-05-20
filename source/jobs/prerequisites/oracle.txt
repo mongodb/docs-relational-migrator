@@ -54,6 +54,25 @@ Steps
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
+      .. tabs::
+
+      .. tab:: A
+         :tabid: a
+
+         .. procedure::
+            :style: normal
+
+            .. step:: Set up user permissions
+
+      .. tab:: B
+         :tabid: b
+
+         .. procedure::
+            :style: normal
+
+            .. step:: Set up user permissions
+
+
       .. procedure::
          :style: normal
 
