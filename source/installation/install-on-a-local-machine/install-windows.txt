@@ -49,7 +49,7 @@ Steps
 
    c. Start the Relational Migrator application.
 
-      .. include:: /includes/fact-restart-migrator-oracle-mysql-drivers.rst
+   .. include:: /includes/fact-restart-migrator-oracle-mysql-drivers.rst
 
 Next Steps
 ----------
