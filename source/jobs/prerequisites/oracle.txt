@@ -62,7 +62,9 @@ Steps
          .. procedure::
             :style: normal
 
-            .. step:: Set up user permissions
+            .. step:: AAA
+
+               123
 
       .. tab:: B
          :tabid: b
@@ -70,8 +72,9 @@ Steps
          .. procedure::
             :style: normal
 
-            .. step:: Set up user permissions
-
+            .. step:: BBB
+               
+               456
 
       .. procedure::
          :style: normal
