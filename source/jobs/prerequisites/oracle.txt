@@ -134,7 +134,7 @@ Steps
                   /* Additional ALTER TABLE STATEMENTS... */ 
 
    .. tab:: Continuous Jobs (Amazon RDS)
-      :tabid: enable-continuous-jobs
+      :tabid: enable-continuous-jobs-rds
 
       .. procedure::
          :style: normal
