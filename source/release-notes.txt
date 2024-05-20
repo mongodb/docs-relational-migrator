@@ -25,7 +25,7 @@ New features:
 - :ref:`New Job Management REST API <rm-rest-api>`. The rest api allows 
   users to start, stop and monitor sync jobs programmatically.
 
-Bug Fixes;
+Bug Fixes:
 
 - Fixed an issue where Atlas Sign In sessions expired 
   after Relational Migrator was idle for a short amount of time.
