@@ -51,30 +51,8 @@ Steps
 
             .. include:: /includes/fact-data-prep-oracle-step1.rst
 
-   .. tab:: Continuous Jobs
+   .. tab:: Continuous Jobs (Non-RDS)
       :tabid: enable-continuous-jobs
-
-      .. tabs::
-
-         .. tab:: A
-            :tabid: a
-
-            .. procedure::
-               :style: normal
-
-               .. step:: AAA
-
-                  123
-
-         .. tab:: B
-            :tabid: b
-
-            .. procedure::
-               :style: normal
-
-               .. step:: BBB
-                  
-                  456
 
       .. procedure::
          :style: normal
@@ -154,6 +132,16 @@ Steps
 
                   ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
                   /* Additional ALTER TABLE STATEMENTS... */ 
+
+   .. tab:: Continuous Jobs (RDS)
+      :tabid: enable-continuous-jobs
+
+      .. procedure::
+         :style: normal
+
+         .. step:: Set up user permissions
+
+            123
 
 Learn More
 ----------
