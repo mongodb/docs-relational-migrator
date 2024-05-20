@@ -47,7 +47,9 @@ Steps
       Relational Migrator installs the JDBC drivers for SQL Server and PostgreSQL by 
       default.
 
-   c. Restart the Relational Migrator application.
+   c. Start the Relational Migrator application.
+
+      .. include:: /includes/fact-restart-migrator-oracle-mysql-drivers.rst
 
 Next Steps
 ----------
