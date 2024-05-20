@@ -56,25 +56,25 @@ Steps
 
       .. tabs::
 
-      .. tab:: A
-         :tabid: a
+         .. tab:: A
+            :tabid: a
 
-         .. procedure::
-            :style: normal
+            .. procedure::
+               :style: normal
 
-            .. step:: AAA
+               .. step:: AAA
 
-               123
+                  123
 
-      .. tab:: B
-         :tabid: b
+         .. tab:: B
+            :tabid: b
 
-         .. procedure::
-            :style: normal
+            .. procedure::
+               :style: normal
 
-            .. step:: BBB
-               
-               456
+               .. step:: BBB
+                  
+                  456
 
       .. procedure::
          :style: normal
