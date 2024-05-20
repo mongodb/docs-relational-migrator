@@ -174,7 +174,7 @@ Steps
         3. Execute the statements.
         4. Follow any commented manual steps.
 
-  .. step:: Review and start your job
+  .. step:: Review and start your sync job
 
       On the :guilabel:`Review Summary` form, you can see details about 
       your sync job. These details include the type, the number of 
