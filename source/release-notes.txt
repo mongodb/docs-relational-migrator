@@ -38,7 +38,6 @@ Bug Fixes:
 - Fixed an issue where jobs would stall without progress if no tables 
   for the schema were found in the source database. 
 
-
 1.6.0 Changelog
 ---------------
 
