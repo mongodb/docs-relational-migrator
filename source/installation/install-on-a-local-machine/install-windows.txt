@@ -47,8 +47,8 @@ Steps
       Relational Migrator installs the JDBC drivers for SQL Server and PostgreSQL by 
       default.
 
-   #. Double-click the ``MongoDB Relational Migrator.exe`` to start the 
-      Relational Migrator application.
+#. Double-click the ``MongoDB Relational Migrator.exe`` to start the 
+   Relational Migrator application.
 
    .. include:: /includes/fact-restart-migrator-oracle-mysql-drivers.rst
 
