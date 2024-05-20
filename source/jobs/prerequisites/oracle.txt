@@ -57,6 +57,9 @@ Steps
       .. procedure::
          :style: normal
 
+         This procedure applies to Oracle instances which *are not 
+         hosted* in Amazon RDS.
+
          .. step:: Set up user permissions
 
             .. include:: /includes/fact-data-prep-oracle-step1.rst
@@ -141,7 +144,7 @@ Steps
 
          This procedure applies to Oracle instances hosted in Amazon 
          RDS.
-         
+
          .. step:: Set up user permissions
 
             123
