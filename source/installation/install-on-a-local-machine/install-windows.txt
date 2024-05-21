@@ -48,7 +48,7 @@ Steps
       default.
 
 #. Double-click the ``MongoDB Relational Migrator.exe`` to start the 
-   Relational Migrator application.
+   application.
 
    .. include:: /includes/fact-restart-migrator-oracle-mysql-drivers.rst
 
