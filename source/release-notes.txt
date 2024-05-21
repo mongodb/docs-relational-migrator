@@ -22,7 +22,7 @@ New features:
   currently being processed.
 - Users can now recover a continuous sync job if the Relational Migrator 
   application is restarted while a sync job is running.
-- :ref:`New Job Management REST API <rm-rest-api>`. The rest api allows 
+- :ref:`New Job Management REST API <rm-rest-api>`. The REST API allows 
   users to start, stop and monitor sync jobs programmatically.
 
 Bug Fixes:
