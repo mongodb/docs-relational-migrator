@@ -145,6 +145,7 @@ Explore libraries and tools for MongoDB.
    :hidden:
 
    /getting-started
+   /deployment-considerations
    /installation
    /projects/projects
    /mapping-rules/mapping-rules
