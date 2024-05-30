@@ -11,3 +11,11 @@ Deployment Considerations
    :class: singlecol
 
 Stub page.
+
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   /deployment-considerations/system-requirements
+   /deployment-considerations/colocation
