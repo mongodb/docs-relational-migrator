@@ -1,0 +1,13 @@
+.. _rm-system-requirements:
+
+===================
+System Requirements
+===================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+System-requirements.
