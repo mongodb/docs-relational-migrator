@@ -10,4 +10,12 @@ Colocation
    :depth: 1
    :class: singlecol
 
-Colocation.
+
+Where to run Relational Migrator
+--------------------------------
+
+General Network Considerations
+------------------------------
+
+Cloud Server Considerations
+---------------------------
