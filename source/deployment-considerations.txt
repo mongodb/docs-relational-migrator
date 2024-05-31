@@ -17,5 +17,4 @@ Stub page.
    :titlesonly:
    :hidden:
 
-   /deployment-considerations/system-requirements
    /deployment-considerations/colocation
