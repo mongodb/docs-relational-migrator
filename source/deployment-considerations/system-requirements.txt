@@ -10,35 +10,41 @@ System Requirements
    :depth: 1
    :class: singlecol
 
-System-requirements.
+The following page outlines the system requirements for using Relational 
+Migrator. For additional details on where to run Relation Migrator, see 
+:ref:`rm-colocation`.
 
 Hardware
 --------
-- Computer, VM or Docker container with at least 8GB of RAM (16GB or more recommended)
-- Can be a local desktop/laptop or remote server 
+- Computer, Virtual Machine or Docker Container with at least 8GB of RAM 
+  (16GB or more recommended).
+- Can be a local desktop/laptop or remote server.
 
 Network
 -------
-- Deploy Relational Migrator to a location close to the destination databases to maximise bandwidth and minimise latency 
+- Deploy Relational Migrator to a location close to the destination 
+  databases to maximise bandwidth and minimise latency.
 
 Operating System
 ----------------
 
-- Windows 10 or higher
-- Windows Server 2016 or higher
-- MacOS 11 or higher (Intel or ARM)
-- Linux (supported Debian or CentOS based distributions)
-- Docker, running on a host supporting the Docker client 
+- Windows 10 or higher.
+- Windows Server 2016 or higher.
+- MacOS 11 or higher (Intel or ARM).
+- Linux (supported Debian or CentOS based distributions).
+- Docker, running on a host supporting the Docker client.
 
 Web Browser
 -----------
 
-- Current supported versions of Chrome (or Chromium-based browsers), Edge, Firefox or Safari
+- Current supported versions of Chrome (or Chromium-based browsers), 
+  Edge, Firefox or Safari.
 
 Kafka Deployments
 -----------------
 
-- Optional component, recommended for long-running sync jobs (link to separate topic) 
+- Optional component, recommended for long-running sync jobs. For details
+  see :ref:`kafka-intro`.
 
 Supported Databases
 -------------------
