@@ -38,10 +38,10 @@ Where to run Relational Migrator
 --------------------------------
 
 For best performance, locate the machine or server running Relational 
-Migrator as geographically close to the source database as possible. 
+Migrator as geographically close to the source database as possible: 
 
 - If your using Relational Migrator for an on-premises migration, this 
-  means running Relational Migrator in the same datacenter as the source
+  means running Relational Migrator in the same data center as the source
   database.
 
 - If your using a cloud hosted database this means running Relational 
