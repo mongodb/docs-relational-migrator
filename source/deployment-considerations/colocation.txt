@@ -49,28 +49,36 @@ Network Considerations
 ----------------------
 
 When using Relational Migrator, the system firewall on the machine or 
-service must have inbound and outbound TPC traffic allowed to the source
+server must have inbound and outbound TPC traffic allowed to the source
 database. The source database connection must also allow TPC traffic 
 from the IPV4 address of the machine or server running Relational
-Migrator. 
+Migrator.
 
 VPC and Cloud Networking
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-When running Relational Migrator on a AWS EC2 instance, check the 
+When running Relational Migrator on an AWS EC2 instance, check the 
 security group configurations of the EC2 instance. Also check that the 
 router table allows traffic to the database. If your database is hosted 
 on a public IP address, this means that the EC2 instance needs a router
 table entry to an internet gateway within the VPC. For details on 
-specific cloud provider network configuration see:
+specific cloud provider network configuration instructions see:
 
 - Link AWS
 - Link Azure
 - Link GCP
 
-Private Link
-~~~~~~~~~~~~
+AWS Private Link
+~~~~~~~~~~~~~~~~
 
+AWS PrivateLink is a robust, scalable solution allowing you to 
+establish private connections between your VPC and various services, 
+making them feel as though they're located within your own VPC. This 
+eliminates the necessity for an internet gateway or public IP addresses.
+
+You can use Relational Migrator with AWS private link. You need to 
+configure an AWS private link endpoint. For details see 
+`<https://docs.aws.amazon.com/vpc/latest/privatelink/getting-started.html>`__.
 
 System Hardware
 ---------------
