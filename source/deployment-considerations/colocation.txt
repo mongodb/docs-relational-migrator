@@ -13,8 +13,63 @@ Colocation
 Where to run Relational Migrator
 --------------------------------
 
-General Network Considerations
-------------------------------
+.. list-table::
+   :header-rows: 1
+   
+   * - Recommended Environment 
+     - Description
 
-Cloud Server Considerations
----------------------------
+     - Laptop / Workstation / Docker
+     - For smaller scale jobs that run for less than 5 hours and general
+       debugging and testing.
+
+     - Remote server / EC2 / Azure VM
+     - For larger scale production jobs that, that run for more than 4 
+       hours.
+
+Best Practices
+--------------
+
+- For best performance, locate the machine or server running Relational 
+  Migrator as geographically close to the source database as possible. 
+
+  - If your using Relational Migrator for an on-premises migration, this 
+    means running Relational Migrator in the same datacenter as the source
+    database.
+
+  - If your using a cloud hosted database this means running Relational 
+    Migrator on an EC2 instance or VM in the same VPC as the source 
+    database.
+
+- If your running a sync job from a laptop or workstation, check the 
+  sleep timeout setting for your operating system. If your machine 
+  goes to sleep in the middle of a migration the sync job fails. 
+
+Network Considerations
+----------------------
+
+When using Relational Migrator, the system firewall on the machine or 
+service must have inbound and outbound TPC traffic allowed to the source
+database. The source database connection must also allow TPC traffic 
+from the IPV4 address of the machine or server running Relational
+Migrator. 
+
+VPC and Cloud Networking
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+When running Relational Migrator on a AWS EC2 instance, check the 
+security group configurations of the EC2 instance. Also check that the 
+router table allows traffic to the database. If your database is hosted 
+on a public IP address, this means that the EC2 instance needs a router
+table entry to an internet gateway within the VPC. For details on 
+specific cloud provider network configuration see:
+
+- Link AWS
+- Link Azure
+- Link GCP
+
+Private Link
+~~~~~~~~~~~~
+
+
+
