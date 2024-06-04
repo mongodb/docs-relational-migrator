@@ -50,9 +50,8 @@ Migrator as geographically close to the source database as possible.
 
 .. tip::
 
-   If your running a sync job from a labtop or workstation, check the 
-   sleep timeout setting for your operating system. If your machine 
-   goes to sleep in the middle of a migration the sync job fails. 
+   Check the sleep timeout setting for your operating system. If your 
+   machine goes to sleep in the middle of a migration the sync job fails. 
 
 Network Considerations
 ----------------------
