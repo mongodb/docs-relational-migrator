@@ -20,15 +20,17 @@ resilience and scalability and can be used with any of the
 deployment options.
 
 .. list-table::
-   
+   :header-rows: 1
+   :widths: 40 60
+
    * - Recommended Environment 
      - Description
 
-     - Laptop / Workstation / Docker
+   * - Laptop / Workstation / Docker
      - For smaller scale jobs that run for less than 4 hours and general
        debugging and testing.
 
-     - Remote server / EC2 / Azure VM
+   * - Remote server / EC2 / Azure VM
      - For larger scale production jobs that, that run for more than 4 
        hours.
 
