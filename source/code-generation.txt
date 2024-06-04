@@ -51,32 +51,32 @@ Get Started
 
 .. tabs-pillstrip::
 
-  .. tabs-drivers::
+.. tabs-drivers::
 
-      .. tab:: Java
-        :tabid: java-sync
+    .. tab:: Java
+      :tabid: java-sync
 
-        Java
+      Java
 
-      .. tab:: Node.js
-        :tabid: nodejs
+    .. tab:: Node.js
+      :tabid: nodejs
 
-        Node
+      Node
 
-      .. tab:: Python
-        :tabid: python
+    .. tab:: Python
+      :tabid: python
 
-        Python
+      Python
 
-      .. tab:: C#
-        :tabid: csharp
+    .. tab:: C#
+      :tabid: csharp
 
-        Csharp
+      Csharp
 
-      .. tab:: Go
-        :tabid: go
+    .. tab:: Go
+      :tabid: go
 
-        Go
+      Go
 
 .. toctree::
    :hidden:
