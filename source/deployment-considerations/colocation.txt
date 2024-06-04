@@ -97,4 +97,4 @@ For specific hardware recommendations, see :ref:`rm-system-requirements`.
 Get Started
 -----------
 
-:ref:`installation`
+For detailed installation instructions, see :ref:`installation`.
