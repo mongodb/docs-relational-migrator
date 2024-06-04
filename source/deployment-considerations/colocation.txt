@@ -72,4 +72,8 @@ Private Link
 ~~~~~~~~~~~~
 
 
+System Hardware
+---------------
+
+For specific hardware recommendations, see :ref:`rm-system-requirements`.
 
