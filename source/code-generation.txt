@@ -56,28 +56,28 @@ Get Started
       .. tab:: Java
         :tabid: java-sync
 
-        `Complete Java Application <{+sample-app-url-csfle+}/java/aws/reader/>`__
+        Java
 
       .. tab:: Node.js
         :tabid: nodejs
 
-        `Complete Node.js Application <{+sample-app-url-csfle+}/node/aws/reader/>`__
+        Node
 
       .. tab:: Python
         :tabid: python
 
-        `Complete Python Application <{+sample-app-url-csfle+}/python/aws/reader/>`__
+        Python
 
       .. tab:: C#
         :tabid: csharp
 
-        `Complete C# Application <{+sample-app-url-csfle+}/dotnet/aws/reader/CSFLE/>`__
+        Csharp
 
       .. tab:: Go
         :tabid: go
 
-        `Complete Go Application <{+sample-app-url-csfle+}/go/aws/reader/>`__
-
+        Go
+        
 .. toctree::
    :hidden:
    :titlesonly:
