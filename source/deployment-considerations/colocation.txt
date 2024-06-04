@@ -23,16 +23,16 @@ deployment options.
    :header-rows: 1
    :widths: 40 60
 
-   * - Recommended Environment 
-     - Description
+   * - Use case 
+     - Recommended environment
 
-   * - Labtop / Workstation / Docker
-     - For smaller scale jobs that run for less than 4 hours and general
+   * - Smaller scale jobs that run for less than 4 hours and general
        debugging and testing.
+     - Labtop / Workstation / Docker
 
-   * - Remote server / EC2 / Azure VM
-     - For larger scale production jobs that, that run for more than 4 
+   * - Larger scale production jobs that, that run for more than 4 
        hours.
+     - Remote server / EC2 / Azure VM
 
 Where to run Relational Migrator
 --------------------------------
