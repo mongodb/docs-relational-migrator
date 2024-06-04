@@ -73,9 +73,9 @@ on a public IP address, this means that the EC2 instance needs a router
 table entry to an internet gateway within the VPC. For details on 
 specific cloud provider network configuration instructions see:
 
-- Link AWS
-- Link Azure
-- Link GCP
+- `AWS Networking <https://docs.aws.amazon.com/vpc/>`__
+- `Azure Networking <https://azure.microsoft.com/en-us/products/category/networking>`__
+- `GCP Networking <https://cloud.google.com/vpc/docs>`__
 
 AWS Private Link
 ~~~~~~~~~~~~~~~~
@@ -87,7 +87,7 @@ eliminates the necessity for an internet gateway or public IP addresses.
 
 You can use Relational Migrator with AWS private link. You need to 
 configure an AWS private link endpoint. For details see 
-`<https://docs.aws.amazon.com/vpc/latest/privatelink/getting-started.html>`__.
+`<https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__.
 
 System Hardware
 ---------------
