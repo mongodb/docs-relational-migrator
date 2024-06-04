@@ -10,25 +10,24 @@ Colocation
    :depth: 1
    :class: singlecol
 
-Where to run Relational Migrator
---------------------------------
+How to run Relational Migrator
+------------------------------
 
 .. list-table::
-   :header-rows: 1
    
    * - Recommended Environment 
      - Description
 
      - Laptop / Workstation / Docker
-     - For smaller scale jobs that run for less than 5 hours and general
+     - For smaller scale jobs that run for less than 4 hours and general
        debugging and testing.
 
      - Remote server / EC2 / Azure VM
      - For larger scale production jobs that, that run for more than 4 
        hours.
 
-Best Practices
---------------
+Where to run Relational Migrator
+--------------------------------
 
 - For best performance, locate the machine or server running Relational 
   Migrator as geographically close to the source database as possible. 
@@ -41,9 +40,11 @@ Best Practices
     Migrator on an EC2 instance or VM in the same VPC as the source 
     database.
 
-- If your running a sync job from a laptop or workstation, check the 
-  sleep timeout setting for your operating system. If your machine 
-  goes to sleep in the middle of a migration the sync job fails. 
+.. tip::
+
+   If your running a sync job from a laptop or workstation, check the 
+   sleep timeout setting for your operating system. If your machine 
+   goes to sleep in the middle of a migration the sync job fails. 
 
 Network Considerations
 ----------------------
