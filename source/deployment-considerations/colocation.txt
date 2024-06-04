@@ -26,7 +26,7 @@ deployment options.
    * - Use case 
      - Recommended environment
 
-   * - Smaller scale jobs that run for less than 4 hours and general
+   * - Smaller scale jobs that run for less than 4 hours, general
        debugging and testing.
      - Labtop / Workstation / Docker
 
