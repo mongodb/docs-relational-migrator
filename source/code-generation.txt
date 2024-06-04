@@ -48,6 +48,36 @@ Get Started
 - :ref:`Convert your application code<rm-generate-app-code>`
 - :ref:`Convert your SQL code<rm-query-converter>`
 
+
+.. tabs-pillstrip:: languages
+
+  .. tabs-drivers::
+
+      .. tab:: Java
+        :tabid: java-sync
+
+        `Complete Java Application <{+sample-app-url-csfle+}/java/aws/reader/>`__
+
+      .. tab:: Node.js
+        :tabid: nodejs
+
+        `Complete Node.js Application <{+sample-app-url-csfle+}/node/aws/reader/>`__
+
+      .. tab:: Python
+        :tabid: python
+
+        `Complete Python Application <{+sample-app-url-csfle+}/python/aws/reader/>`__
+
+      .. tab:: C#
+        :tabid: csharp
+
+        `Complete C# Application <{+sample-app-url-csfle+}/dotnet/aws/reader/CSFLE/>`__
+
+      .. tab:: Go
+        :tabid: go
+
+        `Complete Go Application <{+sample-app-url-csfle+}/go/aws/reader/>`__
+
 .. toctree::
    :hidden:
    :titlesonly:
