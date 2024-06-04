@@ -86,7 +86,7 @@ eliminates the necessity for an internet gateway or public IP addresses.
 
 You can use Relational Migrator with AWS private link. You need to 
 configure an AWS private link endpoint. For details see 
-`<https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__.
+`AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__.
 
 System Hardware
 ---------------
