@@ -18,7 +18,7 @@ Hardware
 --------
 - Computer, Virtual Machine or Docker Container with at least 8GB of RAM 
   (16GB or more recommended).
-- Can be a local desktop/laptop or remote server.
+- Can be a local desktop/labtop or remote server.
 
 Network
 -------
