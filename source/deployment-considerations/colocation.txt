@@ -90,8 +90,7 @@ is a solution that allows you to establish private connections between
 your VPC and various services. AWS private link makes network traffic 
 behave as though the connected systems are located within your own VPC.
 
-You can configure a `AWS private link endpoint 
-<https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__, 
+You can configure a `AWS private link endpoint <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__, 
 for usage with Relational Migrator. This setup 
 eliminates the need for an internet gateway or public IP addresses.
 
