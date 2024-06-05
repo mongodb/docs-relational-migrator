@@ -43,7 +43,8 @@ UI Elements
 
    * - Diagrams
      - View relational and MongoDB diagrams, view field names, and data types. 
-       Control diagram zoom level and view the entity mini-map.
+       Control diagram zoom level and view the entity mini-map. Also 
+       contains undo and redo buttons.
 
    * - Right Pane 
      - View, edit, delete, and add mapping rules. Select and rename fields 
