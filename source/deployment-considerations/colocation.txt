@@ -31,9 +31,9 @@ deployment options.
    * - Use case 
      - Recommended environment
 
-   * - Smaller scale jobs that run for less than four hours, general
-       debugging and testing.
-     - Laptop / Workstation / Docker
+   * - Smaller scale or debugging and testing jobs that run for 
+       less than four hours. 
+     - Laptop / Desktop / Docker
 
    * - Larger scale production jobs that run for more than four 
        hours.
@@ -92,8 +92,8 @@ behave as though the connected systems are located within your own VPC.
 
 You can configure a `AWS private link endpoint 
 <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__, 
-for use with Relational Migrator, so you don't need an internet gateway 
-or public IP addresses.
+for usage with the Relational Migrator. This setup 
+eliminates the need for an internet gateway or public IP addresses.
 
 System Hardware
 ---------------
