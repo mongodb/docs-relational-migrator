@@ -27,9 +27,8 @@ You can run Relational Migrator in multiple ways:
 Memory
 ------
 
-- The machine running the Relational Migrator application 
-  requires a minimum of 8GB of RAM. 
-- We recomend 16GB or more of RAM.
+The machine running the Relational Migrator application requires a 
+minimum of 8GB of RAM. We recomend 16GB or more of RAM.
 
 Network
 -------
