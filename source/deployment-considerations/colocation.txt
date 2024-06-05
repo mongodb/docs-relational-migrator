@@ -76,7 +76,7 @@ Also check that the router table allows traffic to the database. If your
 database is hosted on a public IP address, the EC2 
 instance needs a router table entry to an internet gateway within the 
 :abbr:`VPC (Virtual Private Cloud)`. For details on specific cloud 
-provider network configurations see these pages:
+provider network configurations, see these pages:
 
 - `AWS Networking <https://docs.aws.amazon.com/vpc/>`__
 - `Azure Networking <https://azure.microsoft.com/en-us/products/category/networking>`__
