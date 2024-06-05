@@ -17,6 +17,7 @@ Migrator. For additional details on where to run Relation Migrator, see
 Hardware
 --------
 
+
 Computer (can be a local desktop/labtop or remote server), 
 Virtual Machine or Docker Container with at least 8GB of RAM 
 (16GB or more recommended).
@@ -31,6 +32,8 @@ details, see :ref:`rm-colocation`.
 Operating System
 ----------------
 
+You can run Relational Migrator on one of the following operating systems:
+
 - Windows 10 or higher
 - Windows Server 2016 or higher
 - MacOS 11 or higher (Intel or ARM)
@@ -40,13 +43,17 @@ Operating System
 Web Browser
 -----------
 
-Current supported versions of Chrome (or Chromium-based browsers), 
-Edge, Firefox or Safari.
+You can use Relational Migrator in any of the following web browsers:
+
+- Chrome (or Chromium-based browsers)
+- Edge
+- Firefox 
+- Safari
 
 Kafka Deployments
 -----------------
 
-Optional component, recommended for long-running sync jobs. For details
+You can optionally use Kafka for long-running sync jobs. For details.
 see :ref:`kafka-intro`.
 
 Supported Databases

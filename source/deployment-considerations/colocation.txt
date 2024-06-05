@@ -10,7 +10,8 @@ Colocation
    :depth: 1
    :class: singlecol
 
-How to run Relational Migrator
+
+How to Run Relational Migrator
 ------------------------------
 
 The following table outlines some high level recommendations for how to 
@@ -26,7 +27,7 @@ deployment options.
    * - Use case 
      - Recommended environment
 
-   * - Smaller scale jobs that run for less than 4 hours, general
+   * - Smaller scale jobs that run for less than four hours, general
        debugging and testing.
      - Laptop / Workstation / Docker
 
@@ -80,14 +81,14 @@ AWS Private Link
 ~~~~~~~~~~~~~~~~
 
 `AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__ 
-is a robust, scalable solution that allows you to 
-establish private connections between your VPC and various services, 
-making them feel as though they're located within your own VPC. This 
-eliminates the necessity for an internet gateway or public IP addresses.
+is a solution that allows you to establish private connections between 
+your VPC and various services. VPC private link make network traffic 
+behave as though they're located within your own VPC.
 
-You can use Relational Migrator with AWS private link. You need to 
-configure a
-`AWS private link endpoint <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__.
+You can configure a `AWS private link endpoint 
+<https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__, 
+for use with Relational Migrator, so you don't need an internet gateway 
+or public IP addresses.
 
 System Hardware
 ---------------
