@@ -30,7 +30,7 @@ deployment options.
        debugging and testing.
      - Labtop / Workstation / Docker
 
-   * - Larger scale production jobs that, that run for more than 4 
+   * - Larger scale production jobs that run for more than 4 
        hours.
      - Remote server / EC2 / Azure VM
 
@@ -45,8 +45,8 @@ Migrator as geographically close to the source database as possible:
   database.
 
 - If your using a cloud hosted database this means running Relational 
-  Migrator on an EC2 instance or VM in the same VPC as the source 
-  database.
+  Migrator on an EC2 instance or VM in the same 
+  :abbr:`VPC (Virtual Private Cloud)` as the source database.
 
 .. tip::
 
@@ -57,7 +57,7 @@ Network Considerations
 ----------------------
 
 When using Relational Migrator, the system firewall on the machine or 
-server must have inbound and outbound TPC traffic allowed to the source
+server must allow inbound and outbound TPC traffic to the source
 database. The source database connection must also allow TPC traffic 
 from the IPV4 address of the machine or server running Relational
 Migrator.
