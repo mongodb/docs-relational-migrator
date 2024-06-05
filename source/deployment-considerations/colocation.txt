@@ -10,10 +10,10 @@ Colocation
    :depth: 1
    :class: singlecol
 
-In the context of information technology and data centers, 
-colocation refers to where you are housing servers and 
-networking equipment in a third-party data center instead of having a 
-private data center.
+In the context of Relational Migrator, colocation refers to where the 
+servers, networking equipment, and databases are located. This page 
+outlines location specific details to consider when using Relational 
+Migrator.
 
 How to Run Relational Migrator
 ------------------------------
@@ -87,8 +87,8 @@ AWS Private Link
 
 `AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__ 
 is a solution that allows you to establish private connections between 
-your VPC and various services. VPC private link make network traffic 
-behave as though they're located within your own VPC.
+your VPC and various services. AWS private link makes network traffic 
+behave as though the connected systems are located within your own VPC.
 
 You can configure a `AWS private link endpoint 
 <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__, 

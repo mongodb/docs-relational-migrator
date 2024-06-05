@@ -17,10 +17,20 @@ Migrator. For additional details on where to run Relation Migrator, see
 Hardware
 --------
 
+You can run Relational Migrator in multiple ways:
 
-Computer (can be a local desktop/labtop or remote server), 
-Virtual Machine or Docker Container with at least 8GB of RAM 
-(16GB or more recommended).
+- Computer (can be a local desktop/labtop)
+- Remote server (EC2 instance, Azure VM, or Google compute engine 
+  instances)
+- Virtual Machine 
+- Docker Container 
+
+Memory
+------
+
+- The machine running the Relational Migrator application 
+  requires a minimum of 8GB of RAM. 
+- We recomend 16GB or more of RAM.
 
 Network
 -------
@@ -32,13 +42,15 @@ details, see :ref:`rm-colocation`.
 Operating System
 ----------------
 
-You can run Relational Migrator on one of the following operating systems:
+You can run Relational Migrator on any of the following operating 
+systems:
 
 - Windows 10 or higher
 - Windows Server 2016 or higher
 - MacOS 11 or higher (Intel or ARM)
-- Linux (supported Debian or CentOS based distributions)
-- Docker, running on a host supporting the Docker client
+- Linux - Debian / Ubuntu
+- Linux - Redhat / CentOS 
+- Docker
 
 Web Browser
 -----------
