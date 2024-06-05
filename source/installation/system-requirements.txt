@@ -25,7 +25,7 @@ Network
 -------
 
 Deploy Relational Migrator to a location close to the destination 
-databases to maximise bandwidth and minimise latency. For additional 
+databases to maximize bandwidth and minimize latency. For additional 
 details, see :ref:`rm-colocation`.
 
 Operating System
@@ -52,4 +52,4 @@ see :ref:`kafka-intro`.
 Supported Databases
 -------------------
 
-:ref:`supported-databases`
+See :ref:`supported-databases`.

@@ -11,7 +11,7 @@ Deployment Considerations
    :class: singlecol
 
 The pages in this section outline considerations that should be taken 
-into account as you prepare for the deployment of Relational Migrator. 
+into account as you prepare to deploy Relational Migrator. 
 
 .. toctree::
    :titlesonly:
