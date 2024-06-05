@@ -66,11 +66,12 @@ VPC and Cloud Networking
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 When running Relational Migrator on an AWS EC2 instance, check the 
-security group configurations of the EC2 instance. Also check that the 
-router table allows traffic to the database. If your database is hosted 
+security group configurations of the EC2 instance or VM. Also check that 
+the router table allows traffic to the database. If your database is hosted 
 on a public IP address, this means that the EC2 instance needs a router
-table entry to an internet gateway within the VPC. For details on 
-specific cloud provider network configuration instructions see:
+table entry to an internet gateway within the 
+:abbr:`VPC (Virtual Private Cloud)`. For details on specific cloud 
+provider network configurations see:
 
 - `AWS Networking <https://docs.aws.amazon.com/vpc/>`__
 - `Azure Networking <https://azure.microsoft.com/en-us/products/category/networking>`__
@@ -79,14 +80,15 @@ specific cloud provider network configuration instructions see:
 AWS Private Link
 ~~~~~~~~~~~~~~~~
 
-AWS PrivateLink is a robust, scalable solution allowing you to 
+`AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__ 
+is a robust, scalable solution allowing you to 
 establish private connections between your VPC and various services, 
 making them feel as though they're located within your own VPC. This 
 eliminates the necessity for an internet gateway or public IP addresses.
 
 You can use Relational Migrator with AWS private link. You need to 
-configure an AWS private link endpoint. For details see 
-`AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__.
+configure a
+`<AWS private link endpoint> https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html`__.
 
 System Hardware
 ---------------
