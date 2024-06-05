@@ -57,8 +57,8 @@ Network Considerations
 ----------------------
 
 When using Relational Migrator, the system firewall on the machine or 
-server must allow inbound and outbound TPC traffic to the source
-database. The source database connection must also allow TPC traffic 
+server must allow inbound and outbound TCP traffic to the source
+database. The source database connection must also allow TCP traffic 
 from the IPV4 address of the machine or server running Relational
 Migrator.
 
