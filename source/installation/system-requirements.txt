@@ -28,8 +28,8 @@ Memory
 ------
 
 The machine running the Relational Migrator application requires a 
-minimum of 8GB of RAM. For optimal performance, we recommend having 16GB
-or more of RAM.
+minimum of 8GB of RAM. For best performance, we recommend having 16GB 
+of RAM or more.
 
 Network
 -------
