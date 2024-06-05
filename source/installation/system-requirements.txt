@@ -20,8 +20,7 @@ Hardware
 You can run Relational Migrator in multiple ways:
 
 - Computer (can be a local desktop/labtop)
-- Remote server (EC2 instance, Azure VM, or Google compute engine 
-  instances)
+- Remote server (EC2, Azure VM, or Google compute engine instance)
 - Virtual Machine 
 - Docker Container 
 
