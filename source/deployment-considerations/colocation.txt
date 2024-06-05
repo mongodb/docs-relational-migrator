@@ -10,6 +10,10 @@ Colocation
    :depth: 1
    :class: singlecol
 
+In the context of information technology and data centers, 
+colocation refers to where you are housing servers and 
+networking equipment in a third-party data center instead of having a 
+private data center.
 
 How to Run Relational Migrator
 ------------------------------
@@ -41,10 +45,11 @@ Where to run Relational Migrator
 For best performance, locate the machine or server running Relational 
 Migrator as geographically close to the source database as possible: 
 
-- If your using Relational Migrator for an on-premises migration, run Relational Migrator in the same data center as the source
+- If you're using Relational Migrator for an on-premises migration, 
+  run Relational Migrator in the same data center as the source 
   database.
 
-- If your using a cloud hosted database this means running Relational 
+- If you're using a cloud hosted database this means running Relational 
   Migrator on an EC2 instance or VM in the same 
   :abbr:`VPC (Virtual Private Cloud)` as the source database.
 
