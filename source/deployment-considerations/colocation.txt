@@ -18,7 +18,7 @@ Migrator.
 How to Run Relational Migrator
 ------------------------------
 
-The following table outlines some high level recommendations for how to 
+The following table outlines high-level recommendations for how to 
 run Relational Migrator. Also note that the 
 :ref:`Kafka deployment model <kafka-intro>` provides greater 
 resilience and scalability and can be used with any of the 
@@ -39,7 +39,7 @@ deployment options.
        hours.
      - Remote server / EC2 / Azure VM
 
-Where to run Relational Migrator
+Where to Run Relational Migrator
 --------------------------------
 
 For best performance, locate the machine or server running Relational 
@@ -49,7 +49,7 @@ Migrator as geographically close to the source database as possible:
   run Relational Migrator in the same data center as the source 
   database.
 
-- If you're using a cloud hosted database this means running Relational 
+- If you're using a cloud hosted database, run Relational 
   Migrator on an EC2 instance or VM in the same 
   :abbr:`VPC (Virtual Private Cloud)` as the source database.
 
@@ -86,7 +86,7 @@ AWS Private Link
 ~~~~~~~~~~~~~~~~
 
 `AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__ 
-is a solution that allows you to establish private connections between 
+is a solution that lets you establish private connections between 
 your VPC and various services. AWS private link makes network traffic 
 behave as though the connected systems are located within your own VPC.
 
