@@ -82,4 +82,5 @@ see :ref:`kafka-intro`.
 Supported Databases
 -------------------
 
-See :ref:`supported-databases`.
+- :ref:`supported-databases`
+- :ref:`rm-prerequisites`
