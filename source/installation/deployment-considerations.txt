@@ -64,7 +64,7 @@ Network Considerations
 When using Relational Migrator, the system firewall on the machine or 
 server must allow inbound and outbound TCP traffic to the source
 database. The source database connection must also allow TCP traffic 
-from the IPV4 address of the machine or server running Relational
+from the IP address of the machine or server running Relational
 Migrator.
 
 VPC and Cloud Networking
@@ -98,6 +98,12 @@ System Hardware
 ---------------
 
 For specific hardware recommendations, see :ref:`rm-system-requirements`.
+
+
+.. note::
+
+  Scaling up the Atlas cluster size can significantly improve migration
+  speeds. For details, see :ref:``.
 
 Get Started
 -----------

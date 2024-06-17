@@ -24,6 +24,17 @@ You can run Relational Migrator in multiple ways:
 - Virtual Machine 
 - Docker Container 
 
+
+.. note:
+
+   To use Relational Migrator, you must access the application through a web
+   browser, this requires:
+
+   - Loading a browser on the machine running RM 
+     (locally or using Windows RDP or similar).
+   - Accessing remotely, which requires configuring RM in 
+     Unattended mode.
+
 Memory
 ------
 
@@ -54,7 +65,8 @@ systems:
 Web Browser
 -----------
 
-You can use Relational Migrator in any of the following web browsers:
+You can use Relational Migrator in any of the latest versions of 
+web browsers:
 
 - Chrome (or Chromium-based browsers)
 - Edge
