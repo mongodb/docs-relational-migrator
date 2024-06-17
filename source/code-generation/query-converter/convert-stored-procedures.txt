@@ -74,9 +74,9 @@ Steps
 
          .. tip::
 
-            You can toggle stored procedures for conversion by clicking
-            the :icon-fa5:`check-square` icon next to a stored procedure's
-            name. All stored procedures are selected by default.
+            Click the :icon-fa5:`check-square` icon next to a stored 
+            procedure's name to toggle it for conversion. All stored 
+            procedures are selected by default.
 
       #. Click :guilabel:`Save`.
 
