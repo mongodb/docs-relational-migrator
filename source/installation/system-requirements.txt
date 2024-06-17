@@ -12,7 +12,7 @@ System Requirements
 
 The following page outlines the system requirements for using Relational 
 Migrator. For additional details on where to run Relation Migrator, see 
-:ref:`rm-colocation`.
+:ref:`rm-deployment-considerations`.
 
 Hardware
 --------
@@ -36,7 +36,7 @@ Network
 
 Deploy Relational Migrator to a location close to the destination 
 databases to maximize bandwidth and minimize latency. For additional 
-details, see :ref:`rm-colocation`.
+details, see :ref:`rm-deployment-considerations`.
 
 Operating System
 ----------------

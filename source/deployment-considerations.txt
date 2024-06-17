@@ -17,4 +17,4 @@ Migrator.
    :titlesonly:
    :hidden:
 
-   /deployment-considerations/colocation
+   /installation/deployment-considerations

@@ -1,8 +1,8 @@
-.. _rm-colocation:
+.. _rm-deployment-considerations:
 
-==========
-Colocation
-==========
+=========================
+Deployment Considerations
+=========================
 
 .. contents:: On this page
    :local:
@@ -10,10 +10,10 @@ Colocation
    :depth: 1
    :class: singlecol
 
-In the context of Relational Migrator, colocation refers to where the 
-servers, networking equipment, and databases are located. This page 
-outlines location specific details to consider when using Relational 
-Migrator.
+In the context of Relational Migrator, deployment considerations refers 
+to where the servers, networking equipment, and databases are located. 
+This page outlines location specific details to consider when using 
+Relational Migrator.
 
 How to Run Relational Migrator
 ------------------------------
