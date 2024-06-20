@@ -43,7 +43,9 @@ Where to Run Relational Migrator
 --------------------------------
 
 For best performance, locate the machine or server running Relational 
-Migrator as geographically close to the source database as possible: 
+Migrator as geographically close to the source and target databases as 
+possible. Proximity to the target database influences performance
+the most: 
 
 - If you're using Relational Migrator for an on-premises migration, 
   run Relational Migrator in the same data center as the source 
@@ -62,10 +64,8 @@ Network Considerations
 ----------------------
 
 When using Relational Migrator, the system firewall on the machine or 
-server must allow inbound and outbound TCP traffic to the source
-database. The source database connection must also allow TCP traffic 
-from the IP address of the machine or server running Relational
-Migrator.
+server must allow outbound TCP traffic to both the source and 
+destination databases.
 
 VPC and Cloud Networking
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -90,7 +90,7 @@ For specific hardware recommendations, see :ref:`rm-system-requirements`.
 .. note::
 
   Scaling up the Atlas cluster size can significantly improve migration
-  speeds. For details, see :ref:`scale-cluster`.
+  speeds. For details, see :ref:`scale-cluster-instance`.
 
 Get Started
 -----------
