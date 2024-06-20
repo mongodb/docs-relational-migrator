@@ -67,15 +67,12 @@ When using Relational Migrator, the system firewall on the machine or
 server must allow outbound TCP traffic to both the source and 
 destination databases.
 
-VPC and Cloud Networking
-~~~~~~~~~~~~~~~~~~~~~~~~
+Cloud Networking
+~~~~~~~~~~~~~~~~
 
-When running Relational Migrator on an AWS EC2 instance, check the 
-security group and firewall configurations of the EC2 instance or VM. 
-Also check that the router table allows traffic to the database. If your 
-database is hosted on a public IP address, the EC2 
-instance needs a router table entry to an internet gateway within the 
-:abbr:`VPC (Virtual Private Cloud)`. For details on specific cloud 
+When running Relational Migrator in a cloud environment, check the 
+cloud specific firewall (VPC or VNet), router table, and 
+the server firewall configurations. For details on specific cloud 
 provider network configurations, see these pages:
 
 - `AWS Networking <https://docs.aws.amazon.com/vpc/>`__
