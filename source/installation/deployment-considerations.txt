@@ -68,7 +68,7 @@ server must allow outbound TCP traffic to both the source and
 destination databases.
 
 Cloud Networking
-----------------
+~~~~~~~~~~~~~~~~
 
 When running Relational Migrator in a cloud environment, check the 
 cloud specific firewall (security group), router table, and 
