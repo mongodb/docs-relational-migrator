@@ -71,7 +71,7 @@ Cloud Networking
 ~~~~~~~~~~~~~~~~
 
 When running Relational Migrator in a cloud environment, check the 
-cloud specific firewall (VPC or VNet), router table, and 
+cloud specific firewall (security group), router table, and 
 the server firewall configurations. For details on specific cloud 
 provider network configurations, see these pages:
 
