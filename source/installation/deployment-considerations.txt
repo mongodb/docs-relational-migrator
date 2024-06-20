@@ -82,28 +82,15 @@ provider network configurations, see these pages:
 - `Azure Networking <https://azure.microsoft.com/en-us/products/category/networking>`__
 - `GCP Networking <https://cloud.google.com/vpc/docs>`__
 
-AWS Private Link
-~~~~~~~~~~~~~~~~
-
-`AWS Private Link <https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html>`__ 
-is a solution that lets you establish private connections between 
-your VPC and various services. AWS private link makes network traffic 
-behave as though the connected systems are located within your own VPC.
-
-You can configure a `AWS private link endpoint <https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-vpcendpoint.html>`__ 
-for usage with Relational Migrator. This setup 
-eliminates the need for an internet gateway or public IP addresses.
-
 System Hardware
 ---------------
 
 For specific hardware recommendations, see :ref:`rm-system-requirements`.
 
-
 .. note::
 
   Scaling up the Atlas cluster size can significantly improve migration
-  speeds. For details, see :ref:``.
+  speeds. For details, see :ref:`scale-cluster`.
 
 Get Started
 -----------
