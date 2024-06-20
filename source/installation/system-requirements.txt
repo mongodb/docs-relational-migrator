@@ -46,8 +46,7 @@ Network
 -------
 
 Deploy Relational Migrator to a location close to the destination 
-databases to maximize bandwidth and minimize latency. For additional 
-details, see :ref:`rm-deployment-considerations`.
+databases to maximize bandwidth and minimize latency.
 
 Operating System
 ----------------
