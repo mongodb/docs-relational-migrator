@@ -42,9 +42,10 @@ UI Elements
        create additional diagram tabs.
 
    * - Diagrams
-     - View relational and MongoDB diagrams, view field names, and data types. 
-       Control diagram zoom level and view the entity mini-map. Also 
-       contains undo and redo buttons.
+     - View relational and MongoDB diagrams, view field names, and data 
+       types. Control diagram zoom level and view the entity mini-map. 
+       The diagram toolbar menu also contains :icon-lg:`Undo` and 
+       :icon-lg:`Redo` buttons.
 
    * - Right Pane 
      - View, edit, delete, and add mapping rules. Select and rename fields 
