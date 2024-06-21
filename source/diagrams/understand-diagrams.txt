@@ -55,7 +55,7 @@ Some fields have icons to indicate their role within the table:
 Choose View Mode
 ----------------
 
-The Relational Migrator provides different view modes for your diagrams:
+Relational Migrator provides different view modes for your diagrams:
 Horizontal Split, Vertical Split, Relational view, and MongoDB view.
 
 .. list-table::
