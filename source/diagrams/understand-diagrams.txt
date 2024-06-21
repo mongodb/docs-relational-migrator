@@ -112,9 +112,10 @@ features of relationships:
 Undo and Redo Functionality
 ---------------------------
 
-Relational Migrator diagrams support undo and redo. Using these 
-options with a diagram selected reverses or reapplies the previous 
-diagram action. You can use the diagram toolbar or keyboard shortcuts.
+Relational Migrator diagrams support undo and redo functions. Using 
+these options with a selected diagram reverses or reapplies the 
+previous diagram action. You can use either the diagram toolbar or 
+keyboard shortcuts to perform these actions.
 
 Toolbar
 ~~~~~~~
