@@ -38,14 +38,13 @@ UI Elements
        toggle visibility of your database entities.
 
    * - Diagram Toolbar
-     - Select diagram layout options, add synthetic foreign keys, and 
-       create additional diagram tabs.
+     - Select diagram layout options, add synthetic foreign keys, 
+       create additional diagram tabs, undo and redo previous 
+       diagram actions.
 
    * - Diagrams
      - View relational and MongoDB diagrams, view field names, and data 
        types. Control diagram zoom level and view the entity mini-map. 
-       The diagram toolbar menu also contains :icon-lg:`Undo` and 
-       :icon-lg:`Redo` buttons.
 
    * - Right Pane 
      - View, edit, delete, and add mapping rules. Select and rename fields 
