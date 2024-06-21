@@ -239,17 +239,14 @@ MongoDB's embedded data model:
   of objects inside the ``Order`` documents, using the foreign key
   relationship from the relational schema.
 
-
   .. image:: /img/diagrams/order-mapping-example.png
      :alt: Order Mapping Rule Example
-
 
 - The ``Customer`` collection contains a rule which maps ``Orders`` as
   an :ref:`Embedded array <rm-embedded-array>`. The ``Order``
   table from the relational schema is mapped as an array of objects
   inside the ``Customer`` documents, using the foreign key relationship
   from the relational schema.
-
 
   .. image:: /img/diagrams/customer-mapping-example.png
      :alt: Customer Mapping Rule Example
