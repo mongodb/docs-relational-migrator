@@ -39,7 +39,7 @@ UI Elements
 
    * - Diagram Toolbar
      - Select diagram layout options, add synthetic foreign keys, 
-       create additional diagram tabs, undo and redo previous 
+       create additional diagram tabs, undo, and redo previous 
        diagram actions.
 
    * - Diagrams
