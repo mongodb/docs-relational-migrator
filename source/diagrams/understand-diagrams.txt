@@ -109,8 +109,8 @@ features of relationships:
 
 - A prong (or "crow's feet") indicates "many" in the relationship.
 
-Undo and Redo
--------------
+Undo and Redo Functionality
+---------------------------
 
 Relational Migrator diagrams support undo and redo. Using these 
 options with a diagram selected reverses or reapplies the previous 
@@ -119,7 +119,7 @@ diagram action. You can use the diagram toolbar or keyboard shortcuts.
 Toolbar
 ~~~~~~~
 
-You can access the :icon-lg:`Undo` and :icon-lg:`Redo` buttons on the 
+You can use the :icon-lg:`Undo` and :icon-lg:`Redo` buttons on the 
 diagram toolbar:
 
 .. image:: /img/diagrams/undo-redo.png
@@ -128,7 +128,7 @@ diagram toolbar:
 Keyboard Shortcut
 ~~~~~~~~~~~~~~~~~
 
-Alternatively, you can use the keyboard shortcut to:
+Alternatively, you can use the keyboard shortcuts:
 
 .. list-table::
    :header-rows: 1
