@@ -129,7 +129,7 @@ diagram toolbar:
 Keyboard Shortcut
 ~~~~~~~~~~~~~~~~~
 
-Alternatively, you can use the keyboard shortcuts:
+Alternatively, you can use keyboard shortcuts:
 
 .. list-table::
    :header-rows: 1
