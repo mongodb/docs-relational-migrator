@@ -7,7 +7,7 @@ Understand Diagrams
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 2
+   :depth: 1
    :class: singlecol
 
 This page explains how to interpret diagrams created in the Relational
@@ -114,7 +114,7 @@ Undo and Redo
 
 Relational Migrator diagrams support undo and redo. Using these 
 options with a diagram selected reverses or reapplies the previous 
-diagram action. You can use the diagram tools bar or keyboard shortcuts.
+diagram action. You can use the diagram toolbar or keyboard shortcuts.
 
 Toolbar
 ~~~~~~~
@@ -153,8 +153,8 @@ Relational Migrator highlights the corresponding entity in the opposite
 view. This allows you to see how your relational tables and MongoDB
 collections are mapped to one another.
 
-Example
--------
+Examples
+--------
 
 The following example shows a sample diagram for a database that
 tracks orders at a store.
