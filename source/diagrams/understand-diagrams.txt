@@ -109,13 +109,13 @@ features of relationships:
 
 - A prong (or "crow's feet") indicates "many" in the relationship.
 
-Undo and Redo Functionality
----------------------------
+Undo or Redo Diagram Actions
+----------------------------
 
-Relational Migrator diagrams support undo and redo functions. Using 
-these options with a selected diagram reverses or reapplies the 
-previous diagram action. You can use either the diagram toolbar or 
-keyboard shortcuts to perform these actions.
+Relational Migrator diagrams support undo and redo functions. To reverse 
+or reapply the previous diagram action, use the undo or redo capability. 
+You can use either the diagram toolbar or keyboard shortcuts to perform 
+these actions.
 
 Toolbar
 ~~~~~~~
