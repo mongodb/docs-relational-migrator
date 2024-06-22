@@ -39,10 +39,10 @@ UI Elements
 
    * - Diagram Toolbar
      - Select diagram layout options, add synthetic foreign keys, 
-       create additional diagram tabs, undo, and redo diagram actions.
+       create additional diagram tabs, and undo or redo diagram actions.
 
    * - Diagrams
-     - View relational and MongoDB diagrams, view field names, and data 
+     - View relational and MongoDB diagrams, field names, and data 
        types. Control diagram zoom level and view the entity mini-map. 
 
    * - Right Pane 
