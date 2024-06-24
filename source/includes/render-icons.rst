@@ -8,4 +8,4 @@ Icon Roles
    :depth: 1
    :class: singlecol
 
-.. include:: /includes/rendered-icon-table.rst
+.. include:: /includes/rendered-icons.rst
