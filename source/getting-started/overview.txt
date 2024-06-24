@@ -51,4 +51,3 @@ UI Elements
 
    * - Get Help Menu / Atlas Login 
      -  .. include:: /includes/fact-get-help-menu.rst
-
