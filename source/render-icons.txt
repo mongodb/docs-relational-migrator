@@ -1,0 +1,11 @@
+==========
+Icon Roles
+==========
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+.. include:: /includes/render-icon-table.rst
