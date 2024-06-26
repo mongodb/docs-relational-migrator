@@ -156,5 +156,6 @@ Explore libraries and tools for MongoDB.
    {+migrator-api+} <api-docs>
    /release-notes
    /render-icons
+   /tender-directives
    /fakepage
   

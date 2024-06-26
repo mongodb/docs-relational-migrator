@@ -1,0 +1,104 @@
+===============
+Icon Directives
+===============
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Content.
+
+
+.. data:: ACCESS
+
+   Messages related to access control, such as authentication. To
+   specify the log level for :data:`ACCESS` components, use the
+   :setting:`systemLog.component.accessControl.verbosity` setting.
+
+.. glossary::
+   :sorted:
+
+   $cmd
+      A virtual :term:`collection` that exposes MongoDB's
+      :term:`database commands <database command>`.
+      To use database commands, see :ref:`issue-commands`.
+
+.. important::
+
+    Ensure ``security.clusterIpSourceAllowlist`` includes the 
+    IP address *or* CIDR ranges that include the IP address of each 
+    replica set member or ``mongos`` in the deployment to 
+    ensure healthy communication between cluster components.
+
+.. code-block:: yaml
+
+    net:
+        tls:
+        clusterAuthX509:
+            attributes: <string>
+            extensionValue: <string>
+
+.. versionadded:: 5.3
+
+.. setting:: systemLog.component.storage.recovery.verbosity
+
+   *Type*: integer
+
+   *Default*: 0
+
+   .. versionadded:: 4.0
+   
+   The log message verbosity level for components related to
+   recovery. See :data:`RECOVERY` components.
+
+   If :setting:`systemLog.component.storage.recovery.verbosity` is unset,
+   :setting:`systemLog.component.storage.verbosity` level also applies to
+   recovery components.
+
+.. code-block:: javascript
+
+    { "_id" : "shard0000", "host" : "localhost:30000", "state" : 1 }
+
+.. warning::
+
+    Providing a sort pattern with duplicate fields causes an error. 
+
+.. note::
+
+   Test note.
+
+.. versionadded:: 7.0
+
+.. seealso::
+
+   test 123
+
+.. list-table::
+   :header-rows: 1
+   :stub-columns: 1
+   :widths: 30 40 40 
+
+   * -  
+
+     - :dbcommand:`aggregate` / :method:`db.collection.aggregate()`
+
+     - :dbcommand:`mapReduce` / :method:`db.collection.mapReduce()`
+
+   * - Description
+
+     - 
+       Designed with specific goals of improving performance and
+       usability for aggregation tasks.
+       
+       Uses a "pipeline" approach where objects are transformed as they
+       pass through a series of pipeline operators such as
+       :pipeline:`$group`, :pipeline:`$match`, and :pipeline:`$sort`.
+       
+       See :doc:`/reference/operator/aggregation` for more information
+       on the pipeline operators.
+       
+
+     - Implements the Map-Reduce aggregation for processing large data sets.
+       
