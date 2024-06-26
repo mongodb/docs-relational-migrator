@@ -1,6 +1,6 @@
-===============
-Icon Directives
-===============
+==========
+Directives
+==========
 
 .. contents:: On this page
    :local:
