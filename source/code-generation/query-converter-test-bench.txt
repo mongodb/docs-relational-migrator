@@ -16,4 +16,4 @@ Stub page.
    :hidden:
    :titlesonly:
 
-   /code-generation/query-converter/comparse-converted-queries
+   /code-generation/query-converter/query-converter-test-bench/compare-converted-queries
