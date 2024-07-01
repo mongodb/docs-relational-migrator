@@ -57,6 +57,12 @@ mapping rule options and the mapping rules they apply to.
    * - Merge fields into the parent
      - Merges the table rows as fields at the parent collection level.
      - :guilabel:`Embedded documents` 
+   * - Mapping rule filter
+     - Explicitly include rows where an expression returns true.
+     - :guilabel:`Add mapping rule filter`
+   * - Array conditions
+     - Sort, limit, and order an embedded array.
+     - :guilabel:`Add array conditions`
 
 .. note::
 

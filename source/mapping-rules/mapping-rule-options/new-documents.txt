@@ -36,7 +36,6 @@ Steps
       a. Navigate to the :guilabel:`Mapping` screen.
       #. On the :guilabel:`Schema model` pane under the 
          :guilabel:`MongoDB` header, click on a collection.
-      # 
    
    .. step:: Create or edit a mapping rule
      
