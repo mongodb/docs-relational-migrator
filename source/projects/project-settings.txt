@@ -17,7 +17,7 @@ panel.
 Project Settings Location
 -------------------------
 
-To find the Relational Migrator global :guilabel:`Settings` 
+To find the Relational Migrator project :guilabel:`Settings` 
 panel, open Relational Migrator and select 
 :guilabel:`Settings`:
 
@@ -40,7 +40,8 @@ You can configure the following project settings:
    * - Query Converter
      - AI
      - When enabled, MongoDB will temporarily store the source and converted queries 
-       to improve the underlying Query Converter technology. Learn more
+       to improve the underlying Query Converter technology. For details, see 
+       `Gen AI FAQs <https://dochub.mongodb.org/core/faq-ai-features>`__.
 
    * - Theme
      - Apperance
