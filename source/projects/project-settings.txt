@@ -33,7 +33,7 @@ Settings Panel Location
 -----------------------
 
 To find the Relational Migrator global :guilabel:`Settings` 
-panel, open the Relational Migrator and select 
+panel, open Relational Migrator and select 
 :guilabel:`Settings`.
 
 .. figure:: /img/projects/settings-panel-location.png
