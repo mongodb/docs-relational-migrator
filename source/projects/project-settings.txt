@@ -51,6 +51,7 @@ You can configure the following project settings:
 
        .. list-table::
           :header-rows: 1
+          :widths: 50 50
           
           * - Option 
             - Description
