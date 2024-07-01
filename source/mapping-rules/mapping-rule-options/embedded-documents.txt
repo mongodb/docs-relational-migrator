@@ -10,21 +10,6 @@ Embedded Documents
    :depth: 1
    :class: singlecol
 
-The :guilabel:`Embedded Documents` mapping rule is an advanced mapping 
-rule option. It must be explicitly added to a mapping model.
-
-About this Task
----------------
-
-The :guilabel:`Embedded Documents` mapping rule is available if the relational
-table it is mapping from is on the one side of the foreign key relationship.
-
-The table containing the foreign key must also be mapped to a 
-collection in the MongoDB model.
-
-Behavior
---------
-
 Use the :guilabel:`Embedded Documents` mapping rule to denormalize
 a foreign key relationship. With :guilabel:`Embedded Documents` you can
 nest child foreign key fields in a parent collection.
@@ -37,6 +22,44 @@ with the :guilabel:`Embedded Documents` option:
 
 - You can merge into the parent, which represents the rows as 
   fields at the parent level.
+
+The :guilabel:`Embedded Documents` mapping rule is an advanced mapping 
+rule option. It must be explicitly added to a mapping model.
+
+About this Task
+---------------
+
+The :guilabel:`Embedded Documents` mapping rule is available if the relational
+table it is mapping from is on the one side of the foreign key relationship.
+
+The table containing the foreign key must also be mapped to a 
+collection in the MongoDB model.
+
+Steps
+-----
+
+.. procedure::
+   :style:  connected
+
+   .. step:: Select a collection
+
+      a. Navigate to the :guilabel:`Mapping` screen.
+      #. On the :guilabel:`Schema model` pane under the 
+         :guilabel:`MongoDB` header, click on a collection.
+   
+   .. step:: Create or edit a mapping rule
+     
+      a. From the :guilabel:`Mapping` screen, click :guilabel:`+ Add` 
+         to create a new mapping rule or click the 
+         :icon-fa5:`pencil-alt` icon to edit an existing rule.
+
+   .. step:: (Optional) Configure mapping rule filters
+      
+      .. include:: /includes/fact-mapping-options-rule-filter.rst
+
+   .. step:: Save and close
+
+      a. Click :guilabel:`Save And Close`.
 
 Examples
 --------
