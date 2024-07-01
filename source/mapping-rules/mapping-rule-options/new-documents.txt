@@ -31,19 +31,24 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Select a collection 
+   .. step:: Select a collection
 
       a. Navigate to the :guilabel:`Mapping` screen.
       #. On the :guilabel:`Schema model` pane under the 
          :guilabel:`MongoDB` header, click on a collection.
+      # 
+   
+   .. step:: Create or edit a mapping rule
+     
+      a. From the :guilabel:`Mapping` screen, click :guilabel:`+ Add` 
+         to create a new mapping rule or click the 
+         :icon-fa5:`pencil-alt` icon to edit an existing rule.
 
-   .. step:: (Optional) Configure mapping rule filters
+   .. include:: /includes/fact-mapping-options-rule-filter.rst
 
-      a. On the :guilabel:`Mappings` pane, click the :icon-fa5:`chevron-left` icon next to  
-         :guilabel:`Advanced settings`.
-      #. Select the :guilabel:`Add mapping rule filter` :icon-fa5:`check-square` icon.
-      #. Enter a filter :guilabel:`Value expression` text box.
-      #. Click :guilabel:`Save And Close`.
+   .. step:: Save and close
+
+      a. Click :guilabel:`Save And Close`.
 
 Example
 -------
