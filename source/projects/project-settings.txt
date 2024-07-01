@@ -52,15 +52,15 @@ You can configure the following project settings:
        .. list-table::
           :header-rows: 1
           
-          * - Setting 
+          * - Apperance mode 
             - Description
 
           * - ``Auto`` 
             - Automatically switch between light and dark 
               themes based on your OS settings.
-              
-          * - ``Light`` mode 
+
+          * - ``Light``  
             - Use a light theme.
 
-          * - ``Dark`` mode 
+          * - ``Dark`` 
             - Use a dark theme.
