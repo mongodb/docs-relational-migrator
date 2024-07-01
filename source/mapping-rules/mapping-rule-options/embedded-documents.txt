@@ -10,21 +10,6 @@ Embedded Documents
    :depth: 1
    :class: singlecol
 
-The :guilabel:`Embedded Documents` mapping rule is an advanced mapping 
-rule option. It must be explicitly added to a mapping model.
-
-About this Task
----------------
-
-The :guilabel:`Embedded Documents` mapping rule is available if the relational
-table it is mapping from is on the one side of the foreign key relationship.
-
-The table containing the foreign key must also be mapped to a 
-collection in the MongoDB model.
-
-Behavior
---------
-
 Use the :guilabel:`Embedded Documents` mapping rule to denormalize
 a foreign key relationship. With :guilabel:`Embedded Documents` you can
 nest child foreign key fields in a parent collection.
@@ -37,6 +22,22 @@ with the :guilabel:`Embedded Documents` option:
 
 - You can merge into the parent, which represents the rows as 
   fields at the parent level.
+
+The :guilabel:`Embedded Documents` mapping rule is an advanced mapping 
+rule option. It must be explicitly added to a mapping model.
+
+About this Task
+---------------
+
+The :guilabel:`Embedded Documents` mapping rule is available if the relational
+table it is mapping from is on the one side of the foreign key relationship.
+
+The table containing the foreign key must also be mapped to a 
+collection in the MongoDB model.
+
+Steps
+-----
+
 
 Examples
 --------

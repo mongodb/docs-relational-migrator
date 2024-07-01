@@ -10,6 +10,10 @@ Embedded Array
    :depth: 1
    :class: singlecol
 
+Use the :guilabel:`Embedded array` mapping rule to insert the 
+values of the child table as array elements under documents in
+the collection mapped to the parent table.
+
 The :guilabel:`Embedded array` mapping rule is an advanced mapping rule option. 
 It must be explicitly added to a mapping model.
 
@@ -22,12 +26,9 @@ table it is mapping from is on the many side of the foreign key relationship.
 The table containing the primary key must also be mapped to a 
 collection in the MongoDB model.
 
-Behavior
---------
+Steps
+-----
 
-Use the :guilabel:`Embedded array` mapping rule to insert the 
-values of the child table as array elements under documents in
-the collection mapped to the parent table.
 
 Example
 -------

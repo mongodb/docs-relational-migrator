@@ -10,6 +10,9 @@ New Documents
    :depth: 1
    :class: singlecol
 
+Use this mapping rule when you want data from a table to be 
+stored in a dedicated collection. Any database table can use a 
+:guilabel:`New Documents` mapping rule.
 
 The :guilabel:`New Documents` mapping rule is the most basic mapping rule option.
 It creates a document for each row of data in your relational database.
@@ -17,18 +20,30 @@ It creates a document for each row of data in your relational database.
 About this Task
 ---------------
 
-Any database table can use a :guilabel:`New Documents` mapping rule. 
-
-Behavior
---------
-
-Use this mapping rule when you want data from a table to be 
-stored in a dedicated collection. 
-
 You can have multiple :guilabel:`New Documents` mapping rules from
 different tables into the same collection. Relational Migrator treats
 these tables as isolated data and the destination documents are not 
-merged together in any way. 
+merged together in any way.  
+
+Steps
+-----
+
+.. procedure::
+   :style:  connected
+
+   .. step:: Select a collection 
+
+      a. Navigate to the :guilabel:`Mapping` screen.
+      #. On the :guilabel:`Schema model` pane under the 
+         :guilabel:`MongoDB` header, click on a collection.
+
+   .. step:: (Optional) Configure mapping rule filters
+
+      a. On the :guilabel:`Mappings` pane, click the :icon-fa5:`chevron-left` icon next to  
+         :guilabel:`Advanced settings`.
+      #. Select the :guilabel:`Add mapping rule filter` :icon-fa5:`check-square` icon.
+      #. Enter a filter :guilabel:`Value expression` text box.
+      #. Click :guilabel:`Save And Close`.
 
 Example
 -------
@@ -82,3 +97,6 @@ Click the tabs below to see the input and output for this example:
             "Address2": "Carregal",
             "Address3": "3800-854"
          }
+
+Learn More
+----------
