@@ -6,7 +6,7 @@
       icon next to :guilabel:`Advanced settings`.
    #. Select the :guilabel:`Add array conditions` :icon-fa5:`check-square` icon.
    #. Enter a filter in the :guilabel:`Value expression` text box.
-   #. In the :guilabel:`Sort by and order` heading, select the source field to sort on and toggle between :icon-fa5:`arrow-up-wide-short` for ascending and :icon-fa5:`arrow-down-wide-short` for descending order.
+   #. In the :guilabel:`Sort by and order` heading, select the source field to sort on and toggle between :icon-lg:`SortAscending` for ascending and :icon-lg:`SortDescending` for descending order.
    #. Select a :guilabel:`Limit` option: 
 
       - :guilabel:`No limit`: No limit
