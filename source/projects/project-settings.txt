@@ -1,29 +1,14 @@
 .. _rm-project-settings:
 
-================
-Project Settings
-================
-
-.. contents:: On this page
-   :local:
-   :backlinks: none
-   :depth: 2
-   :class: singlecol
-
-
-
-
-------------------
-Interface Settings
-------------------
-
-.. default-domain:: mongodb
-
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
+
+================
+Project Settings
+================
 
 You can customize Relational Migrator to meet your specific needs. 
 Some options are only available in the project :guilabel:`Settings` 
