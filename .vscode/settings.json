@@ -1,3 +1,10 @@
 {
-    "esbonio.sphinx.confDir": ""
-}
+    "esbonio.sphinx.confDir": "",
+    "editor.rulers": [
+    70
+    ],
+    "workbench.colorCustomizations": {
+    "editorRuler.foreground": "#40ff53"
+ }
+ }
+ 
