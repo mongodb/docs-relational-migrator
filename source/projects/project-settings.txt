@@ -47,7 +47,6 @@ You can configure the following project settings:
    * - Theme
      - Apperance
      - Change the appearance of Relational Migrator.
-       Options include:
 
        .. list-table::
           :header-rows: 1
