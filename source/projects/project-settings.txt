@@ -1,0 +1,65 @@
+.. _rm-project-settings:
+
+================
+Project Settings
+================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
+
+
+------------------
+Interface Settings
+------------------
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can customize Relational Migrator to meet your specific needs. 
+Some options are only available in the project :guilabel:`Settings` 
+panel.
+
+Settings Panel Location
+-----------------------
+
+To find the Relational Migrator global :guilabel:`Settings` 
+panel, open the Relational Migrator and select 
+:guilabel:`Settings`.
+
+.. figure:: /img/projects/settings-panel-location.png
+  :scale: 40%
+  :alt: Settings panel location for Relational Migrator
+
+Settings
+--------
+
+You can configure the following project settings:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 20 50
+
+   * - Setting 
+     - Category
+     - Definition
+
+   * - Query Converter
+     - AI
+     - When enabled, MongoDB will temporarily store the source and converted queries 
+       to improve the underlying Query Converter technology. Learn more
+
+   * - Theme
+     - Apperance
+     - Change the appearance of Relational Migrator.
+       Options include ``Auto`` (inherit from operating system), 
+       ``Light`` mode, and ``Dark`` mode.
