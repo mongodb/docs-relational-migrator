@@ -41,7 +41,7 @@ You can configure the following project settings:
      - AI
      - When enabled, MongoDB will temporarily store the source and converted queries 
        to improve the underlying Query Converter technology. For details, see 
-       `Gen AI FAQs <https://dochub.mongodb.org/core/faq-ai-features>`__.
+       `Generative AI FAQ <https://dochub.mongodb.org/core/faq-ai-features>`__ .
 
    * - Theme
      - Apperance
