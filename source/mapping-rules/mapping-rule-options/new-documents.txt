@@ -44,7 +44,9 @@ Steps
          to create a new mapping rule or click the 
          :icon-fa5:`pencil-alt` icon to edit an existing rule.
 
-   .. include:: /includes/fact-mapping-options-rule-filter.rst
+   .. step:: (Optional) Configure mapping rule filters
+      
+      .. include:: /includes/fact-mapping-options-rule-filter.rst
 
    .. step:: Save and close
 
