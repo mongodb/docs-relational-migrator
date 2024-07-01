@@ -52,7 +52,7 @@ You can configure the following project settings:
        .. list-table::
           :header-rows: 1
           
-          * - Apperance mode 
+          * - Option 
             - Description
 
           * - ``Auto`` 
