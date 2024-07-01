@@ -14,15 +14,14 @@ You can customize Relational Migrator to meet your specific needs.
 Some options are only available in the project :guilabel:`Settings` 
 panel.
 
-Settings Panel Location
------------------------
+Project Settings Location
+-------------------------
 
 To find the Relational Migrator global :guilabel:`Settings` 
 panel, open Relational Migrator and select 
-:guilabel:`Settings`.
+:guilabel:`Settings`:
 
 .. figure:: /img/projects/settings-panel-location.png
-  :scale: 40%
   :alt: Settings panel location for Relational Migrator
 
 Settings
