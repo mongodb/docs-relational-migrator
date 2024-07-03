@@ -1,7 +1,8 @@
 Allows you to sort an embedded array and limit the amount of entries 
-in that array. There is also the option to just sort, and not apply 
-a limit at all. When limiting to a single entry, there is the option 
-to embed as a document instead of a single-element array.
+in that array. You can apply only a sort, only a limit, or both. When 
+limiting to a single entry, there is the option to embed as a document 
+instead of a single-element array by selecting the 
+:guilabel:`Create an array of primitive values` :icon-fa5:`check-square`.
 
 a. On the :guilabel:`Mappings` pane, click the :icon-fa5:`chevron-left` 
    icon next to :guilabel:`Advanced settings`.
@@ -15,12 +16,12 @@ a. On the :guilabel:`Mappings` pane, click the :icon-fa5:`chevron-left`
 
    - :guilabel:`No limit`: No limit
    - :guilabel:`Limit number of rows`: Enter the maximum number of 
-      elements returned in the array. Default vaulue is ```10``.
+     elements returned in the array. Default vaulue is ``10``.
       
 .. note::
 
    - Excluded fields cannot be sorted on. If a previously selected 
      sorting field is excluded at a later point in time, the array 
      condition is removed.
-     
+
    - CDC updates and deletes will not be replaced.

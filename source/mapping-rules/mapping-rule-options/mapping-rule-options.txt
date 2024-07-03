@@ -78,6 +78,7 @@ Get Started
 - :ref:`New Documents <rm-new-documents>`
 - :ref:`Embedded Array <rm-embedded-array>`
 - :ref:`Embedded documents <rm-embedded-documents>`
+- :ref:`Mapping Rule Filters <rm-mapping-filters>`
 - :ref:`Time series <rm-timeseries>`
 
 Details
@@ -97,5 +98,6 @@ mapping rule option.
    /mapping-rules/mapping-rule-options/new-documents
    /mapping-rules/mapping-rule-options/embedded-array
    /mapping-rules/mapping-rule-options/embedded-documents
+   /mapping-rules/mapping-rule-options/mapping-rule-filters
    /mapping-rules/mapping-rule-options/time-series
    /mapping-rules/mapping-rule-options/rename-collection

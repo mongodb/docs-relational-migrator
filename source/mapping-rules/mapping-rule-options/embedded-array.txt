@@ -12,10 +12,9 @@ Embedded Array
 
 Use the :guilabel:`Embedded array` mapping rule to insert the 
 values of the child table as array elements under documents in
-the collection mapped to the parent table.
-
-The :guilabel:`Embedded array` mapping rule is an advanced mapping rule option. 
-It must be explicitly added to a mapping model.
+the collection mapped to the parent table. The 
+:guilabel:`Embedded array` mapping rule is an advanced mapping 
+rule option. It must be explicitly added to a mapping model.
 
 About this Task
 ---------------
@@ -34,10 +33,12 @@ Steps
 
    .. step:: Select a collection
 
-      a. Navigate to the :guilabel:`Mapping` screen.
-      #. On the :guilabel:`Schema model` pane under the 
-         :guilabel:`MongoDB` header, click on a collection.
+      a. In the left :guilabel:`Schema model` pane, click on a 
+         collection under the :guilabel:`MongoDB` or 
+         :guilabel:`Relational` header.
    
+         This prompts the :guilabel:`Mappings` pane to open on the right of the screen.
+
    .. step:: Create or edit a mapping rule
      
       a. From the :guilabel:`Mapping` screen, click :guilabel:`+ Add` 
