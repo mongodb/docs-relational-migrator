@@ -63,7 +63,7 @@ Steps
       #. Click the :icon-fa5:`chevron-right` icon next to
          :guilabel:`Triggers`.
 
-         .. tip:
+         .. tip::
 
             To toggle a trigger for conversion, click the 
             :icon-fa5:`check-square` icon next to the trigger's name.
