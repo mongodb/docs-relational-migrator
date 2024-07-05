@@ -65,9 +65,9 @@ Steps
 
          .. tip:
 
-            Click the :icon-fa5:`check-square` icon next to a trigger's 
-            name to toggle it for conversion. All triggers 
-            are selected by default.
+            To toggle a trigger for conversion, click the 
+            :icon-fa5:`check-square` icon next to the trigger's name.
+            All triggers are selected by default.
 
       #. Click :guilabel:`Save`.
 
