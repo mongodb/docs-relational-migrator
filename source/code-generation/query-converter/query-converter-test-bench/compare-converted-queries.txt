@@ -10,4 +10,62 @@ Compare Converted Queries
    :depth: 1
    :class: singlecol
 
-Task page.
+You can use the query converter test bench to compare SQL queries
+and converted MongoDB queries inside of Relational Migrator. 
+Query converter test bench can help you verify the accuracy 
+of each converted query.
+
+Before You Begin
+----------------
+
+- Before you can use the query converter test bench, you must 
+  sign in to your Atlas account in Relational Migrator. For 
+  details, see :ref:`rm-atlas-log-in`.
+
+- For details on how to turn on query converter,  see 
+  :ref:`rm-enable-query-converter`.
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Navigate to the query converter pane
+
+      From the :guilabel:`Code Generation` tab, click the 
+      :guilabel:`Query Converter` pane.
+
+   .. step:: Open the query test bench console
+
+      Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
+      pane.
+
+   .. step:: Run the source query
+
+      a. On the :guilabel:`Test Queries`
+      pane, click :guilabel:`Run Source Query` button.
+
+      #. Enter the connection details to your database.
+
+      #. Click :guilabel:`Run` on the 
+         :guilabel:`Connection Details` form.
+      
+   .. step:: Run the converted query
+
+      a. On the :guilabel:`Test Queries`
+      pane, click :guilabel:`Run Converted Query` button.
+
+      #. Enter the connection details to your database.
+
+      #. Click :guilabel:`Run` on the 
+         :guilabel:`Connection Details` form.
+
+   .. step:: TBD
+   
+Learn More
+----------
+
+- :ref:`rm-convert-queries`
+- :ref:`rm-convert-views`
+- :ref:`rm-convert-stored-procedures`
