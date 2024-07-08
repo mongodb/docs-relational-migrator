@@ -20,7 +20,7 @@ Mapping rule options allow you to:
 
 
 Examples
--------------
+--------
 
 You can apply one filter per mapping rule. Each filter can have a javascript expression that when evaluated to ``true`` filters documents for migration.
 
@@ -28,7 +28,7 @@ Below are examples of input documents and mapping rule javascript expressions th
 
 
 Filter Based on Field Value
-—---------------------------------
+—--------------------------
 
 The following example filters a document based on a flat field value.
 
@@ -96,7 +96,7 @@ Filter Expression:
 
 Result:
 
-.. code-block::
+.. code-block:: none
    :copyable: false
    {
      "_id": {
