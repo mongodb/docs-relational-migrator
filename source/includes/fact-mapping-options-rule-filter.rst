@@ -1,5 +1,5 @@
 Allows you to explicitly include rows where an expression returns 
-`true`. This differs from :ref:`Table Filters <rm-table-filters>`, 
+``true```. This differs from :ref:`Table Filters <rm-table-filters>`, 
 which filter based on an SQL query, and apply to all rows from a 
 particular table. Mapping rule filters only apply to a specific 
 mapping.

@@ -26,8 +26,8 @@ a. On the :guilabel:`Mappings` pane, click the :icon-fa5:`chevron-left`
 
    - If an array is modified during the CDC stage of a continuous 
      job, sorting and limiting considers only the newly modified row
-      and the pre-existing array elements, not the other values from 
-      the table which are not in the array. For example, if an array 
-      is limited to the top 10 items and one of those items is 
-      deleted, the element is from the array without being replaced 
-      with another value that now qualifies for the top 10.
+     and the pre-existing array elements, not the other values from 
+     the table which are not in the array. For example, if an array 
+     is limited to the top 10 items and one of those items is 
+     deleted, the element is from the array without being replaced 
+     with another value that now qualifies for the top 10.

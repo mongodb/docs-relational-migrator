@@ -98,7 +98,7 @@ Result:
 
 .. code-block:: none
    :copyable: false
-   
+
    {
      "_id": {
        "$oid": "661fed11aa6fa8b49e28ac03"
