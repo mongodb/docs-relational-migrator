@@ -19,8 +19,8 @@ Mapping rule options allow you to:
 - Access complex and nested document structure for filtering.
 
 
-Examples
---------
+Example
+-------
 
 You can apply one filter per mapping rule. Each filter can have a javascript expression that when evaluated to ``true`` filters documents for migration.
 
@@ -98,6 +98,7 @@ Result:
 
 .. code-block:: none
    :copyable: false
+   
    {
      "_id": {
        "$oid": "661fed11aa6fa8b49e28ac03"
