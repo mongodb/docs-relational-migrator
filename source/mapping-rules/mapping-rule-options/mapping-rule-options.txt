@@ -20,7 +20,7 @@ Mapping Rule Concepts
 ---------------------
 
 Every mapping rule joins a source table to a destination collection. 
-You can create mapping rules from either a table or an entity.
+You can create mapping rules from either a table or a collection.
 When creating a mapping rule you must select the other entity. For example:
 
 - If you select a table and choose to create a mapping rule you must choose the destination collection. 
@@ -57,12 +57,12 @@ mapping rule options and the mapping rules they apply to.
    * - Merge fields into the parent
      - Merges the table rows as fields at the parent collection level.
      - :guilabel:`Embedded documents` 
-   * - Mapping rule filter
+   * - :ref:`Mapping rule filter <rm-mapping-filters>`
      - Explicitly include rows where an expression returns true.
-     - :guilabel:`Add mapping rule filter`
+     - :guilabel:`New documents` :guilabel:`Embedded documents` :guilabel:`Embedded array`
    * - Array conditions
      - Sort, limit, and order an embedded array.
-     - :guilabel:`Add array conditions`
+     - :guilabel:`Embedded array`
 
 .. note::
 

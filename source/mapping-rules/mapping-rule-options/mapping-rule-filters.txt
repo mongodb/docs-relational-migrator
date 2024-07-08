@@ -37,54 +37,54 @@ Input:
 
 .. code-block:: none
 
-{
-  "_id": {
-	"$oid": "661fed11aa6fa8b49e28ac01"
-  },
-  "customerId": "ALFKI",
-  "address": "Obere Str. 57",
-  "city": "Berlin",
-  "companyName": "Alfreds Futterkiste",
-  "contactName": "Maria Anders",
-  "contactTitle": "Sales Representative",
-  "country": "Germany",
-  "fax": "030-0076545",
-  "phone": "030-0074321",
-  "postalCode": "12209",
-  "region": null
-},
-{
-  "_id": {
-	"$oid": "661fed11aa6fa8b49e28ac03"
-  },
-  "customerId": "ANATR",
-  "address": "Avda. de la Constitución 2222",
-  "city": "México D.F.",
-  "companyName": "Ana Trujillo Emparedados y helados",
-  "contactName": "Ana Trujillo",
-  "contactTitle": "Owner",
-  "country": "Mexico",
-  "fax": "(5) 555-3745",
-  "phone": "(5) 555-4729",
-  "postalCode": "05021",
-  "region": null
-},
-{
-  "_id": {
-	"$oid": "661fed11aa6fa8b49e28ac06"
-  },
-  "customerId": "ANTON",
-  "address": "Mataderos  2312",
-  "city": "México D.F.",
-  "companyName": "Antonio Moreno Taquería",
-  "contactName": "Antonio Moreno",
-  "contactTitle": "Owner",
-  "country": "Mexico",
-  "fax": null,
-  "phone": "(5) 555-3932",
-  "postalCode": "05023",
-  "region": null
-}
+   {
+     "_id": {
+	   "$oid": "661fed11aa6fa8b49e28ac01"
+     },
+     "customerId": "ALFKI",
+     "address": "Obere Str. 57",
+     "city": "Berlin",
+     "companyName": "Alfreds Futterkiste",
+     "contactName": "Maria Anders",
+     "contactTitle": "Sales Representative",
+     "country": "Germany",
+     "fax": "030-0076545",
+     "phone": "030-0074321",
+     "postalCode": "12209",
+     "region": null
+   },
+   {
+     "_id": {
+	   "$oid": "661fed11aa6fa8b49e28ac03"
+     },
+     "customerId": "ANATR",
+     "address": "Avda. de la Constitución 2222",
+     "city": "México D.F.",
+     "companyName": "Ana Trujillo Emparedados y helados",
+     "contactName": "Ana Trujillo",
+     "contactTitle": "Owner",
+     "country": "Mexico",
+     "fax": "(5) 555-3745",
+     "phone": "(5) 555-4729",
+     "postalCode": "05021",
+     "region": null
+   },
+   {
+     "_id": {
+	   "$oid": "661fed11aa6fa8b49e28ac06"
+     },
+     "customerId": "ANTON",
+     "address": "Mataderos  2312",
+     "city": "México D.F.",
+     "companyName": "Antonio Moreno Taquería",
+     "contactName": "Antonio Moreno",
+     "contactTitle": "Owner",
+     "country": "Mexico",
+     "fax": null,
+     "phone": "(5) 555-3932",
+     "postalCode": "05023",
+     "region": null
+   }
 
 
 Filter Expression:
