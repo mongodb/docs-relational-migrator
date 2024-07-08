@@ -96,7 +96,7 @@ Filter Expression:
 
 Result:
 
-.. code-block:: none
+.. code-block::
    :copyable: false
    {
      "_id": {
