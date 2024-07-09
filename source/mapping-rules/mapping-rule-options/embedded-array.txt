@@ -47,7 +47,7 @@ Steps
 
       b. Select :guilabel:`Embedded array` under :guilabel:`Migrate table as`.
 
-   .. step:: 
+   .. step:: Configure the root path
 
       a. Select the name of the :guilabel:`Source table` or 
          :guilabel:`Parent collection` from the drop-down.

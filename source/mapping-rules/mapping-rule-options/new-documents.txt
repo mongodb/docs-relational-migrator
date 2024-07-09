@@ -51,8 +51,6 @@ Steps
       
       .. include:: /includes/fact-mapping-options-rule-filter.rst
 
-4. Configure fields
-
    .. step:: Configure fields
 
       a. Define the options for the new mapping rule. When defining the 
@@ -67,8 +65,6 @@ Steps
 	     - Change field names.
 	     - Include or exclude a field from your sync job by clicking the
 	       :icon-fa5:`check-square` icon next to the field name.
-
-5. Save and close
 
    .. step:: Save and close
 
