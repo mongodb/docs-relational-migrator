@@ -56,7 +56,7 @@ Relational input:
       - Sales Representative
       - Obere Str. 57
       - Berlin
-      - `null`
+      - ``null``
       - 12209
       - Germany
       - 030-0074321
@@ -68,7 +68,7 @@ Relational input:
       - Owner
       - Avda. de la Constitución 2222
       - México D.F.
-      - `null`
+      - ``null``
       - 05021
       - Mexico
       - (5) 555-4729
@@ -80,11 +80,11 @@ Relational input:
       - Owner
       - Mataderos  2312
       - México D.F.
-      - `null`
+      - ``null``
       - 05023
       - Mexico
       - (5) 555-3932
-      - `null`
+      - ``null``
 
 
 Filter Expression:
