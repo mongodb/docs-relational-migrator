@@ -31,21 +31,44 @@ Steps
 .. procedure::
    :style:  connected
 
-   .. step:: Select a collection
+   .. step:: Select a table or collection
 
-      a. Navigate to the :guilabel:`Mapping` screen.
-      #. On the :guilabel:`Schema model` pane under the 
-         :guilabel:`MongoDB` header, click on a collection.
+      a. In the left :guilabel:`Schema model` pane, click on a 
+         collection under the :guilabel:`MongoDB` or 
+         :guilabel:`Relational` header.
    
-   .. step:: Create or edit a mapping rule
-     
+         This prompts the :guilabel:`Mappings` pane to open on the right of the screen.
+
+   .. step:: Create or edit a rule
+
       a. From the :guilabel:`Mapping` screen, click :guilabel:`+ Add` 
          to create a new mapping rule or click the 
          :icon-fa5:`pencil-alt` icon to edit an existing rule.
 
+      b. Select :guilabel:`New documents` under :guilabel:`Migrate table as`.
+
    .. step:: (Optional) Configure mapping rule filters
       
       .. include:: /includes/fact-mapping-options-rule-filter.rst
+
+4. Configure fields
+
+   .. step:: Configure fields
+
+      a. Define the options for the new mapping rule. When defining the 
+         mapping rule, you can:
+
+	     - Change the collection name. 
+	     
+	       To change the collection name, click the :guilabel:`Name` text box and enter 
+	       the new name. Click outside of the text box to save the change. If the name 
+	       is already in use, you receive a validation error. 
+
+	     - Change field names.
+	     - Include or exclude a field from your sync job by clicking the
+	       :icon-fa5:`check-square` icon next to the field name.
+
+5. Save and close
 
    .. step:: Save and close
 
