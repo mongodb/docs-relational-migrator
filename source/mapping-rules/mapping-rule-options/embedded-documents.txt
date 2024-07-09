@@ -72,6 +72,12 @@ Steps
       
       .. include:: /includes/fact-mapping-options-foreign-key-link.rst
 
+   .. step:: (Optional) Merge fields into the parent
+
+      a. Merge table rows as fields at the parent collection 
+         level by clicking the :icon-fa5:`check-square` icon next to 
+         the field name.
+
    .. step:: (Optional) Configure mapping rule filters
       
       .. include:: /includes/fact-mapping-options-rule-filter.rst
