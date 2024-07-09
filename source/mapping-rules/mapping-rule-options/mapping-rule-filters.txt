@@ -60,7 +60,7 @@ Relational input:
       - México D.F.
       - 05021
       - Mexico
-      - (5) 555-4729
+      - 5-555-4729
 
     * - ANTON
       - Antonio Moreno Taquería
@@ -68,7 +68,7 @@ Relational input:
       - México D.F.
       - 05023
       - Mexico
-      - (5) 555-3932
+      - 5-555-3932
 
 
 Filter Expression:
@@ -90,7 +90,7 @@ MongoDB output:
            "city": "México D.F.",
            "companyName": "Ana Trujillo Emparedados y helados",
            "country": "Mexico",
-           "phone": "(5) 555-4729",
+           "phone": "5-555-4729",
            "postalCode": "05021",
        },
        {
@@ -99,7 +99,7 @@ MongoDB output:
            "city": "México D.F.",
            "companyName": "Antonio Moreno Taquería",
            "country": "Mexico",
-           "phone": "(5) 555-3932",
+           "phone": "5-555-3932",
            "postalCode": "05023",
        }
    ]
