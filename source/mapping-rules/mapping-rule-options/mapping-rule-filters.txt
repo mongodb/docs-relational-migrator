@@ -90,7 +90,6 @@ MongoDB output:
            "city": "México D.F.",
            "companyName": "Ana Trujillo Emparedados y helados",
            "country": "Mexico",
-           "fax": "(5) 555-3745",
            "phone": "(5) 555-4729",
            "postalCode": "05021",
        },
@@ -100,7 +99,6 @@ MongoDB output:
            "city": "México D.F.",
            "companyName": "Antonio Moreno Taquería",
            "country": "Mexico",
-           "fax": null,
            "phone": "(5) 555-3932",
            "postalCode": "05023",
        }
