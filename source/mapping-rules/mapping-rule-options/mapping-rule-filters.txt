@@ -10,21 +10,21 @@ Mapping Rule Filters
    :depth: 1
    :class: singlecol
 
-In a migration project, you can use mapping rule javascript expressions to filter mapping rules based on document values. Mapping rule filters are available to all mapping rule types.
-
-Mapping rule options allow you to:
-
-- Filter mapping rules based on logical conditions.
-- Limit the number of documents written to a table.
-- Access complex and nested document structure for filtering.
-
+A mapping rule filter consists of a JavaScript 
+expression which evaluates each row of input data. The 
+column values from the row are available in the 
+``columns["<column_name>"]`` object. During a migration job, 
+Relational Migrator evaluates the expression for each row; if 
+the return value is ``true`` then the row is included in the migrated 
+data; if it is ``false`` then the row is excluded. If the expression 
+doesn't return either, the row is excluded and an error will 
+be logged during migration.
 
 Example
 -------
 
-You can apply one filter per mapping rule. Each filter can have a javascript expression that when evaluated to ``true`` filters documents for migration.
-
-Below are examples of input documents and mapping rule javascript expressions that filter the data.
+Below is an example of input documents and mapping rule javascript 
+expressions that filter the data.
 
 
 Filter Based on Field Value
@@ -39,11 +39,8 @@ Relational input:
 
     * - customer_id
       - company_name
-      - contact_name
-      - contact_title
       - address
       - city
-      - region
       - postal_code
       - country
       - phone
@@ -52,11 +49,8 @@ Relational input:
 
     * - ALFKI
       - Alfreds Futterkiste
-      - Maria Anders
-      - Sales Representative
       - Obere Str. 57
       - Berlin
-      - ``null``
       - 12209
       - Germany
       - 030-0074321
@@ -64,11 +58,8 @@ Relational input:
 
     * - ANATR
       - Ana Trujillo Emparedados y helados
-      - Ana Trujillo
-      - Owner
       - Avda. de la Constitución 2222
       - México D.F.
-      - ``null``
       - 05021
       - Mexico
       - (5) 555-4729
@@ -76,11 +67,8 @@ Relational input:
 
     * - ANTON
       - Antonio Moreno Taquería
-      - Antonio Moreno
-      - Owner
       - Mataderos  2312
       - México D.F.
-      - ``null``
       - 05023
       - Mexico
       - (5) 555-3932
@@ -101,35 +89,23 @@ MongoDB output:
 
    [
        {
-           "_id": {
-           "$oid": "661fed11aa6fa8b49e28ac03"
-           },
            "customerId": "ANATR",
            "address": "Avda. de la Constitución 2222",
            "city": "México D.F.",
            "companyName": "Ana Trujillo Emparedados y helados",
-           "contactName": "Ana Trujillo",
-           "contactTitle": "Owner",
            "country": "Mexico",
            "fax": "(5) 555-3745",
            "phone": "(5) 555-4729",
            "postalCode": "05021",
-           "region": null
        },
        {
-           "_id": {
-           "$oid": "661fed11aa6fa8b49e28ac06"
-           },
            "customerId": "ANTON",
            "address": "Mataderos  2312",
            "city": "México D.F.",
            "companyName": "Antonio Moreno Taquería",
-           "contactName": "Antonio Moreno",
-           "contactTitle": "Owner",
            "country": "Mexico",
            "fax": null,
            "phone": "(5) 555-3932",
            "postalCode": "05023",
-           "region": null
        }
    ]
