@@ -19,11 +19,12 @@ rule option. It must be explicitly added to a mapping model.
 About this Task
 ---------------
 
-The :guilabel:`Embedded array` mapping rule is available if the relational
-table it is mapping from is on the many side of the foreign key relationship. 
+- The :guilabel:`Embedded array` mapping rule is available if the 
+  relational table it is mapping from is on the many side of the 
+  foreign key relationship. 
 
-The table containing the primary key must also be mapped to a 
-collection in the MongoDB model.
+- The table containing the primary key must also be mapped to a 
+  collection in the MongoDB model.
 
 Steps
 -----

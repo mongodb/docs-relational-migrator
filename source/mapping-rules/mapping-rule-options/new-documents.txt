@@ -20,10 +20,11 @@ It creates a document for each row of data in your relational database.
 About this Task
 ---------------
 
-You can have multiple :guilabel:`New Documents` mapping rules from
-different tables into the same collection. Relational Migrator treats
-these tables as isolated data and the destination documents are not 
-merged together in any way.  
+- You can have multiple :guilabel:`New Documents` mapping rules from
+  different tables into the same collection.
+
+- Relational Migrator treats these tables as isolated data and the 
+  destination documents are not merged together in any way.  
 
 Steps
 -----

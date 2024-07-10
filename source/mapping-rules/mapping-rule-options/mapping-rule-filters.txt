@@ -13,17 +13,21 @@ Mapping Rule Filters
 A mapping rule filter consists of a JavaScript 
 expression which evaluates each row of input data. The 
 column values from the row are available in the 
-``columns["<column_name>"]`` object. During a migration job, 
-Relational Migrator evaluates the expression for each row; if 
-the return value is ``true`` then the row is included in the migrated 
-data; if it is ``false`` then the row is excluded. If the expression 
-doesn't return either, the row is excluded and an error will 
-be logged during migration.
+``columns["<column_name>"]`` object.
+
+During a sync job, Relational Migrator evaluates the expression for 
+each row: 
+
+- If the return value is ``true`` then the row is included in the 
+  migrated data.
+- If the return value is ``false`` then the row is excluded. 
+- If the return value is not either, the row is excluded and an error 
+  is logged during migration.
 
 Example
 -------
 
-Below is an example of input documents and mapping rule javascript 
+Below is an example of input documents and mapping rule JavaScript 
 expressions that filter the data.
 
 

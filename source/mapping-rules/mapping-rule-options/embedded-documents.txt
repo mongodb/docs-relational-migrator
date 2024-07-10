@@ -18,7 +18,7 @@ You have two main options when denormalizing your relational data
 with the :guilabel:`Embedded Documents` option:
 
 - You can embed the child documents into the parent and designate a 
-  :guilabel:`Prefix` and :guilabel:`Field name` to embed fields as sub documents.
+  :guilabel:`Prefix` and :guilabel:`Field name`.
 
 - You can merge into the parent, which represents the rows as 
   fields at the parent level.
@@ -29,11 +29,12 @@ rule option. It must be explicitly added to a mapping model.
 About this Task
 ---------------
 
-The :guilabel:`Embedded Documents` mapping rule is available if the relational
-table it is mapping from is on the one side of the foreign key relationship.
+- The :guilabel:`Embedded Documents` mapping rule is available if the 
+  relational table it is mapping from is on the one side of the 
+  foreign key relationship.
 
-The table containing the foreign key must also be mapped to a 
-collection in the MongoDB model.
+- The table containing the foreign key must also be mapped to a 
+  collection in the MongoDB model.
 
 Steps
 -----
