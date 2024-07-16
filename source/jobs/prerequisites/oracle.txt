@@ -59,6 +59,9 @@ Steps
 
          .. step:: Set up user permissions
 
+            This procedure applies to Oracle instances which **are not 
+            hosted** on Amazon RDS.
+
             .. include:: /includes/fact-data-prep-oracle-step1.rst
 
             c. Grant additional permissions to the service account 
@@ -133,6 +136,93 @@ Steps
                   ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
                   /* Additional ALTER TABLE STATEMENTS... */ 
 
+   .. tab:: Continuous Jobs (Amazon RDS)
+      :tabid: enable-continuous-jobs-rds
+
+      .. procedure::
+         :style: normal
+
+         .. step:: Set up user permissions
+
+            This procedure applies to Oracle instances which **are 
+            hosted** on Amazon RDS.
+
+            .. include:: /includes/fact-data-prep-oracle-step1.rst
+
+            c. Grant additional permissions to the service account 
+               to run continuous sync jobs:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  GRANT SET CONTAINER TO <user>;
+                  GRANT SET CONTAINER TO <user>;
+                  GRANT EXECUTE_CATALOG_ROLE TO <user>;
+                  GRANT SELECT ANY TRANSACTION TO <user>;
+                  GRANT LOGMINING TO <user>;
+                  GRANT CREATE TABLE TO <user>;
+                  GRANT LOCK ANY TABLE TO <user>; 
+                  GRANT CREATE SEQUENCE TO <user>;
+                  GRANT SELECT ON DBA_TABLESPACES TO <user>;
+                  GRANT CREATE SESSION TO <user>;
+                  GRANT SELECT_CATALOG_ROLE TO <user>;
+                  GRANT SELECT ANY TABLE TO <user>; 
+                  GRANT SELECT ON V$DATABASE TO <user>;
+                  GRANT FLASHBACK ANY TABLE TO <user>; 
+
+         .. step:: Turn on ``LogMiner`` at the database level
+            
+            To run continous jobs against Oracle, you must enable 
+            ``LogMiner`` at the database level. The following code-block
+            is an example of automatically-generated code, which you 
+            can run manually by substituting your database name:
+
+            .. code-block:: sql
+                :copyable: true
+
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('DBMS_LOGMNR', '<user>');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('DBMS_LOGMNR_D', '<user>');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOG', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOGFILE', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$ARCHIVED_LOG', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$TRANSACTION', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOGMNR_LOGS', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOG_HISTORY', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOGMNR_LOGS', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOGMNR_CONTENTS', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$LOGMNR_PARAMETERS', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$ARCHIVE_DEST_STATUS', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$MYSTAT', '<user>', 'SELECT');
+                EXEC RDSADMIN.RDSADMIN_UTIL.GRANT_SYS_OBJECT('V_$STATNAME', '<user>', 'SELECT'); 
+            
+            .. tip::
+
+                To check if ``LogMiner`` is already enabled, run the 
+                following query:
+
+                .. code-block:: sql
+                   :copyable: true
+
+                    SELECT LOG_MODE FROM V$DATABASE; 
+    
+         .. step:: Enable supplemental logging
+
+            a. To run continuous sync jobs against Oracle, you must 
+               enable supplemental logging at the database level:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
+
+            #. You must also enable supplemental logging for every 
+               table in the migration:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
+                  /* Additional ALTER TABLE STATEMENTS... */ 
 Learn More
 ----------
 
