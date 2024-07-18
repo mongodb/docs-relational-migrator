@@ -1,0 +1,6 @@
+# wildcard example https://docs.netlify.com/routing/redirects/redirect-options/
+# /en/* /en/404.html 404
+# /de/* /de/404.html 404
+/release-notes                /index
+/getting-started              https://www.petsofnetlify.com
+

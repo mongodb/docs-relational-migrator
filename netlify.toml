@@ -4,3 +4,19 @@ name = "snooty-cache-plugin"
 [build]
 publish = "snooty/public"
 command = ". ./build.sh"
+
+## [[redirects]]
+##  from = "/old-path"
+##  to = "/new-path"
+##  status = 301
+##  force = false
+##  query = {path = ":path"}
+##  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+[[redirects]]
+  from = "/code-generation"
+  to = "/projects"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
