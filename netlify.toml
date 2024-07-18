@@ -11,11 +11,11 @@ to = "/source/projects"
 status = 301
 
 [[redirects]]
-from = "/getting-started/  "
+from = "/getting-started/"
 to = "https://www.petsofnetlify.com"
 status = 301
 
 [[redirects]]
-from = "/release-notes/ "
+from = "/release-notes/"
 to = " /installation/"
 status = 301
