@@ -9,3 +9,13 @@ command = ". ./build.sh"
 from = "/code-generation"
 to = "/projects"
 status = 301
+
+[[redirects]]
+from = "/getting-started  "
+to = "https://www.petsofnetlify.com"
+status = 301
+
+[[redirects]]
+from = "/release-notes "
+to = " /installation"
+status = 301
