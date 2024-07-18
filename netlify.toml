@@ -6,6 +6,6 @@ publish = "snooty/public"
 command = ". ./build.sh"
 
 [[redirects]]
-from = "/source/code-generation"
-to = "/source/projects"
+from = "/code-generation"
+to = "/projects"
 status = 301
