@@ -9,13 +9,16 @@ command = ". ./build.sh"
 from = "/source/code-generation"
 to = "/source/projects"
 status = 301
+force = true
 
 [[redirects]]
 from = "/getting-started/"
 to = "https://www.petsofnetlify.com"
 status = 301
+force = true
 
 [[redirects]]
 from = "/release-notes/"
 to = " /installation/"
 status = 301
+force = true
