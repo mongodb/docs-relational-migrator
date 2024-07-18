@@ -4,3 +4,21 @@ name = "snooty-cache-plugin"
 [build]
 publish = "snooty/public"
 command = ". ./build.sh"
+
+[[redirects]]
+from = "/source/code-generation"
+to = "/projects"
+status = 301
+force = true
+
+[[redirects]]
+from = "/getting-started"
+to = "https://www.petsofnetlify.com"
+status = 301
+force = true
+
+[[redirects]]
+from = "/release-notes"
+to = " /installation"
+status = 301
+force = true
