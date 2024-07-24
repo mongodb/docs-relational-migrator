@@ -18,21 +18,21 @@ of each converted query.
 Before You Begin
 ----------------
 
+- `Install Docker <https://www.docker.com/>`.
+
+- Query Converter Test Bench requires the language converter 
+  runtime Docker container to be running on your system. 
+  The language convert runs serveral endpoints on 
+  port ``6080``. These endpoints contain the logic and 
+  dependencies required to convert and run source and 
+  destination queries. 
+
 - Before you can use the query converter test bench, you must 
   sign in to your Atlas account in Relational Migrator. For 
   details, see :ref:`rm-atlas-log-in`.
 
-- For details on how to turn on query converter,  see 
+- For details on how to turn on query converter, see 
   :ref:`rm-enable-query-converter`.
-
-- `Install Docker <https://www.docker.com/>`.
-
-- In order for Relational Migrator to convert your queries, 
-  you must be running the language converter runtime. The 
-  language converter runtime is a Docker container that runs
-  serveral endpoints for language conversion on port ``6080``. 
-  This process contains the logic and language runtimes to 
-  run source and destination queries. 
 
 Steps
 -----
@@ -43,7 +43,7 @@ Steps
    .. step:: Start the Relational Migrator Query Runner
 
       The Query Runner is a Docker container that runs custom REST endpoints.
-      These endpoints are used to convert and run queries.
+      These endpoints are used to convert and run source and destination queries.
    
       .. code-block::
 
@@ -57,29 +57,50 @@ Steps
    .. step:: Open the query test bench console
 
       Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
-      pane.
+      pane at the bottom-right of the screen.
 
    .. step:: Run the source query
 
       a. On the :guilabel:`Test Queries`
-         pane, click :guilabel:`Run Source Query` button.
+         pane, click the :guilabel:`Run Source Query` 
+         button.
 
-      #. Enter the connection details to your database.
+      #. Enter the connection details to your source database.
 
       #. Click :guilabel:`Run` on the 
          :guilabel:`Connection Details` form.
+
+         The data from the source database populates in 
+         :guilabel:`Results`.
+
+         .. note::
+
+            You can click the :guilabel:`Messages` pill to 
+            see execution statistics such as ``Execution Time``
+            and ``Row Count``.
       
    .. step:: Run the converted query
 
       a. On the :guilabel:`Test Queries`
-         pane, click :guilabel:`Run Converted Query` button.
+         pane, click :guilabel:`Run Converted Query` 
+         button.
 
       #. Enter the connection details to your database.
 
       #. Click :guilabel:`Run` on the 
          :guilabel:`Connection Details` form.
 
-   .. step:: Navigate to the query converter pane
+         The data from the destination database populates 
+         on the right-side of :guilabel:`Results`.
+
+         .. note::
+
+            You can click the :icon-lg:`Menu` and 
+            :icon-lg:`Apps` buttons to switch between 
+            the document and row view for the data. 
+
+   .. step:: Compare the results of the source and destination queries
+
 
 
    
