@@ -57,10 +57,10 @@ Steps
    .. step:: Open the query test bench console
 
       a. From the :guilabel:`Code Generation` tab, click the 
-      :guilabel:`Query Converter` pane.
+         :guilabel:`Query Converter` pane.
 
       #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
-      pane at the bottom-right of the screen.
+         pane at the bottom-right of the screen.
 
    .. step:: Run the source query
 
