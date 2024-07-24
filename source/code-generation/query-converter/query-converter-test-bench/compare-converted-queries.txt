@@ -49,10 +49,14 @@ Steps
 
          docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
-   .. step:: Navigate to the query converter pane
+   .. step:: Navigate to the query converter pane and choose a query
 
-      From the :guilabel:`Code Generation` tab, click the 
-      :guilabel:`Query Converter` pane.
+      a. From the :guilabel:`Code Generation` tab, click the 
+         :guilabel:`Query Converter` pane.
+
+      #. On the left-hand :guilabel:`Queries` pane, select a query.
+         This is the query that is used in the Query Converter 
+         Test Bench.
 
    .. step:: Open the query test bench console
 
@@ -104,9 +108,12 @@ Steps
 
    .. step:: Compare the results of the source and destination queries
 
+            a. You can use the :guilabel:`Results` pane to compare the 
+               source and destination data and types.
 
+            #. Click the :guilabel:`Messages` pill to compare source 
+               and destination query statistics.
 
-   
 Learn More
 ----------
 
