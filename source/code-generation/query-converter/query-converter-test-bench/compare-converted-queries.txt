@@ -10,10 +10,11 @@ Compare Converted Queries
    :depth: 1
    :class: singlecol
 
-You can use the query converter test bench to compare SQL queries
-and converted MongoDB queries inside of Relational Migrator. 
-Query converter test bench can help you verify the accuracy 
-of each converted query.
+You can use the Query Converter Test Bench to compare source 
+and destination queries and data inside Relational Migrator. 
+The Query Converter Test Bench can help you verify the 
+accuracy of converted queries and view source and 
+destination data after you run a sync job.
 
 Before You Begin
 ----------------
@@ -21,8 +22,8 @@ Before You Begin
 - `Install Docker <https://www.docker.com/>`__.
 
 - Query Converter Test Bench requires the language converter 
-  runtime Docker container to be running on your system. 
-  The language convert runs serveral endpoints on 
+  Docker container to be running on your system. 
+  The language converter runs serveral endpoints on 
   port ``6080``. These endpoints contain the logic and 
   dependencies required to convert and run source and 
   destination queries. 
