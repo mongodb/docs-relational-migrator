@@ -25,7 +25,7 @@ Before You Begin
 - For details on how to turn on query converter,  see 
   :ref:`rm-enable-query-converter`.
 
-- :ref:`Install Docker <rm-install-docker>`.
+- `Install Docker <https://www.docker.com/>`.
 
 - In order for Relational Migrator to convert your queries, 
   you must be running the language converter runtime. The 
