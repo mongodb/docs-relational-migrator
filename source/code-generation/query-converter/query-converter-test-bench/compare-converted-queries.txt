@@ -18,7 +18,7 @@ of each converted query.
 Before You Begin
 ----------------
 
-- `Install Docker <https://www.docker.com/>`.
+- `Install Docker <https://www.docker.com/>`__.
 
 - Query Converter Test Bench requires the language converter 
   runtime Docker container to be running on your system. 
@@ -56,7 +56,10 @@ Steps
 
    .. step:: Open the query test bench console
 
-      Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
+      a. From the :guilabel:`Code Generation` tab, click the 
+      :guilabel:`Query Converter` pane.
+
+      #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
       pane at the bottom-right of the screen.
 
    .. step:: Run the source query
