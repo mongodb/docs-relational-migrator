@@ -10,24 +10,25 @@ Query Converter Test Bench
    :depth: 1
    :class: singlecol
 
-Use Query Converter Test Bench to test converted SQL statements 
-and stored procedures. Relational Migrator uses the connections 
-defined for your source and destination databases and runs the 
-original and converted queries or stored procedures within 
-Relational Migrator. The results from each query are 
-displayed on the test bench.
+Use Query Converter Test Bench to test SQL statements 
+and stored procedures converted by :ref:`rm-query-converter`. 
+Relational Migrator uses the connections defined for your 
+source and destination databases and runs the original and 
+converted queries or stored procedures within Relational
+Migrator. The results from each query are displayed on the 
+test bench GUI.
 
 Use Cases
 ---------
 
-Query Converted Test Bench use cases include:
+Query Converted Test Bench allows you to:
 
-- Allowing you to compare your original and converted results 
+- Compare your original and converted results 
   conveniently in a single place.
-- Allowing you to quickly iterate on application modernization 
-  conversion efforts.
-- Increasing your confidence in assets automatically 
+- Increase your confidence in assets automatically 
   converted by the :ref:`rm-query-converter`.
+- See potential logic errors and edit the converted 
+  resource before moving them to production.
 
 Get Started
 -----------
