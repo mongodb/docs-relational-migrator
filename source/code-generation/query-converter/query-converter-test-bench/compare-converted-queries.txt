@@ -25,11 +25,29 @@ Before You Begin
 - For details on how to turn on query converter,  see 
   :ref:`rm-enable-query-converter`.
 
+- ref:`Install Docker <rm-install-docker>`.
+
+- In order for Relational Migrator to convert your queries, 
+  you must be running the language converter runtime. The 
+  language converter runtime is a Docker container that runs
+  serveral endpoints for language conversion on port ``6080``. 
+  This process contains the logic and language runtimes to 
+  run source and destination queries. 
+
 Steps
 -----
 
 .. procedure::
    :style: normal
+
+   .. step:: Start the Relational Migrator Query Runner
+
+      The Query Runner is a Docker container that runs custom REST endpoints.
+      These endpoints are used to convert and run queries.
+   
+      .. code-block::
+
+         docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
    .. step:: Navigate to the query converter pane
 
@@ -44,7 +62,7 @@ Steps
    .. step:: Run the source query
 
       a. On the :guilabel:`Test Queries`
-      pane, click :guilabel:`Run Source Query` button.
+         pane, click :guilabel:`Run Source Query` button.
 
       #. Enter the connection details to your database.
 
@@ -54,14 +72,16 @@ Steps
    .. step:: Run the converted query
 
       a. On the :guilabel:`Test Queries`
-      pane, click :guilabel:`Run Converted Query` button.
+         pane, click :guilabel:`Run Converted Query` button.
 
       #. Enter the connection details to your database.
 
       #. Click :guilabel:`Run` on the 
          :guilabel:`Connection Details` form.
 
-   .. step:: TBD
+   .. step:: Navigate to the query converter pane
+
+   
    
 Learn More
 ----------
