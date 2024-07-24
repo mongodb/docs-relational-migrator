@@ -26,14 +26,14 @@ Query Converted Test Bench allows you to:
 - Compare your original and converted results 
   conveniently in a single place.
 - Increase your confidence in assets automatically 
-  converted by the :ref:`rm-query-converter`.
+  converted by the Query Converter.
 - See potential logic errors and edit the converted 
   resource before moving them to production.
 
 Get Started
 -----------
 
-- :ref:`<rm-compare-converted-queries>`
+To get started, see :ref:`rm-compare-converted-queries`.
 
 .. toctree::
    :hidden:
