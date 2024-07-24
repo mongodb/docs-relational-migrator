@@ -15,7 +15,7 @@ and stored procedures converted by :ref:`rm-query-converter`.
 Relational Migrator uses the connections defined for your 
 source and destination databases and runs the original and 
 converted queries or stored procedures. The results from 
-each query are displayed on the test bench GUI.
+each are displayed on the Query Converted Test Bench.
 
 Use Cases
 ---------
@@ -27,7 +27,7 @@ Query Converted Test Bench allows you to:
 - Increase your confidence in resources automatically 
   converted by the Query Converter.
 - See potential logic errors and edit the converted 
-  code before moving the resource to production.
+  code before moving to production.
 
 Get Started
 -----------
