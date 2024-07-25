@@ -30,11 +30,18 @@ Query converted test bench allows you to:
 - See potential logic errors and edit the converted 
   code before moving it to production.
 
+Requirements
+------------
+
+To use query converter test bench, you must 
+run the Query Runner Docker container. For 
+details see :ref:`rm-install-query-runner`.
+
 Get Started
 -----------
 
 - :ref:`rm-install-query-runner` 
-- :ref:`rm-compare-converted-queries`.
+- :ref:`rm-compare-converted-queries`
 
 .. toctree::
    :hidden:
