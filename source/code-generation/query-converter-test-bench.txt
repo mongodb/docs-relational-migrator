@@ -35,7 +35,7 @@ Requirements
 
 To use query converter test bench, you must 
 run the Query Runner Docker container. This 
-container can be ran locally or hosted remotely. 
+container can be run locally or hosted remotely. 
 For details, see :ref:`rm-install-query-runner`.
 
 Get Started
