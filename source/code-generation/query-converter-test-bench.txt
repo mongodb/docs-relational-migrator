@@ -33,10 +33,12 @@ Query converted test bench allows you to:
 Get Started
 -----------
 
-To get started, see :ref:`rm-compare-converted-queries`.
+- :ref:`rm-install-query-runner` 
+- :ref:`rm-compare-converted-queries`.
 
 .. toctree::
    :hidden:
    :titlesonly:
 
+   /code-generation/query-converter/query-converter-test-bench/install-query-runner
    /code-generation/query-converter/query-converter-test-bench/compare-converted-queries
