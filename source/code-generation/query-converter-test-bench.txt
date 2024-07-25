@@ -33,7 +33,7 @@ Query converted test bench allows you to:
 Requirements
 ------------
 
-To use query converter test bench, you must 
+To use Query Converter Test Bench, you must 
 run the Query Runner Docker container. This 
 container can be run locally or hosted remotely. 
 For details, see :ref:`rm-install-query-runner`.
