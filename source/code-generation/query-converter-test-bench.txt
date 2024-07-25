@@ -10,7 +10,7 @@ Query Converter Test Bench
    :depth: 1
    :class: singlecol
 
-Use Query Converter Test Bench to test SQL statements 
+Use Query Converter Test Bench to test SQL queries 
 and stored procedures converted by :ref:`rm-query-converter`. 
 Query converter test bench uses the connections defined for your 
 source and destination databases and allows you to run 
@@ -23,12 +23,12 @@ Use Cases
 
 Query converted test bench allows you to:
 
-- Compare your original and converted results 
-  conveniently in a single place.
+- Compare your original and converted 
+  query results conveniently in a single place.
 - Increase your confidence in code automatically 
   converted by the query converter.
 - See potential logic errors and edit the converted 
-  code before moving to production.
+  code before moving it to production.
 
 Get Started
 -----------
