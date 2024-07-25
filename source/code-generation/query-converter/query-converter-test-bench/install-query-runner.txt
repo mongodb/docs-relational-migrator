@@ -1,0 +1,61 @@
+.. _rm-install-query-runner:
+
+====================
+Install Query Runner
+====================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+In order to use Query Converter Test Bench, Relational
+Migrator must have access to the Query Runner. The 
+query runner is a Docker container that contains 
+all the dependencies to test your converted queries.
+
+Before You Begin
+----------------
+
+Install `Docker <https://www.docker.com/get-started/>`__
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Pull the Query Runner Image
+      
+      .. code-block:: sh
+
+         docker pull public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+
+   .. step:: Run the Image as a Container
+
+      .. code-block:: sh
+
+         docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+
+    .. step:: (Optional) Run the image on a remote host
+      
+      You can optionally run query runner on a remote host. To 
+      do this edit the ``user.properties`` file and edit the 
+      ``migrator.language-runner.server.address`` configuration
+      and add the server address the service is running at.
+      For example:
+
+      .. code-block:: sh
+
+         migrator.language-runner.server.address: http://myserver:6080 
+    
+    .. tip::
+        
+        For details on where the ``user.properties`` file is located, 
+        see :ref:`file-location`. 
+
+Next Steps
+----------
+
+- :ref:`rm-compare-converted-queries`
