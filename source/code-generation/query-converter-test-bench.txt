@@ -4,6 +4,13 @@
 Query Converter Test Bench
 ==========================
 
+.. meta::
+   :keywords: relational migrator, query converter test bench
+
+.. facet::
+   :name: genre
+   :values: reference
+
 .. contents:: On this page
    :local:
    :backlinks: none
@@ -12,9 +19,9 @@ Query Converter Test Bench
 
 Use Query Converter Test Bench to test SQL queries 
 and stored procedures converted by :ref:`rm-query-converter`. 
-Query Converter Test Bench uses the connections defined for your 
-source and destination databases and allows you to run 
-the original and converted queries or stored procedures.
+Query Converter Test Bench uses the projects source 
+and destination databases connections and allows you to
+run the original SQL and converted MongoDB code.
 The results from each query are displayed on the Query Converter 
 Test Bench allowing for a side-by-side comparison.
 
