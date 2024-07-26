@@ -15,13 +15,13 @@ and stored procedures converted by :ref:`rm-query-converter`.
 Query Converter Test Bench uses the connections defined for your 
 source and destination databases and allows you to run 
 the original and converted queries or stored procedures.
-The results from each display on the Query Converter 
+The results from each query are displayed on the Query Converter 
 Test Bench allowing for a side-by-side comparison.
 
 Use Cases
 ---------
 
-Query converted test bench allows you to:
+Query Converted Test Bench allows you to:
 
 - Compare your original and converted 
   query results in a single place.
