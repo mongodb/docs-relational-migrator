@@ -23,7 +23,7 @@ Query Converter Test Bench uses the project's source
 and destination databases connections and allows you to
 run the original SQL and converted MongoDB code.
 The results from each query are displayed on the Query Converter 
-Test Bench allowing for a side-by-side comparison.
+Test Bench, allowing for a side-by-side comparison.
 
 Use Cases
 ---------
