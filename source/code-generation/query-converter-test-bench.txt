@@ -28,7 +28,7 @@ Test Bench, allowing for a side-by-side comparison.
 Use Cases
 ---------
 
-Query Converted Test Bench allows you to:
+Query Converter Test Bench allows you to:
 
 - Compare your original and converted 
   query results in a single place.
