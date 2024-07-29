@@ -40,11 +40,12 @@ Steps
 
     .. step:: (Optional) Run the image on a remote host
       
-      You can optionally run query runner on a remote host. To 
-      do this edit the ``user.properties`` file and edit the 
-      ``migrator.language-runner.server.address`` configuration
-      and add the server address the service is running at.
-      For example:
+       You can optionally run query runner on a remote host. To 
+       do this edit the ``user.properties`` file and edit the 
+       ``migrator.language-runner.server.address`` configuration
+       and add the server address the service is running at.
+
+       For example:
 
       .. code-block:: sh
 
@@ -54,6 +55,19 @@ Steps
         
         For details on where the ``user.properties`` file is located, 
         see :ref:`file-location`. 
+
+   .. step:: Confirm the Query Runner is running
+
+      In your web browser navigate to the host/port the Query Runner 
+      container is running. For example: 
+      `http://localhost:6080/test <http://localhost:6080/test>`__.
+
+      The results should be:
+
+      .. code-block:: 
+         :copyable: false
+
+         The query runner service is running successfully! 
 
 Next Steps
 ----------
