@@ -46,29 +46,29 @@ Steps
 
    .. step:: Run the Image as a Container
 
-      To run the container locally:
+      - To run the container locally:
 
-      .. code-block:: sh
+         .. code-block:: sh
 
-         docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+            docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
-      To run the container remotely:
+      - To run the container remotely:
       
-      You can optionally run Query Runner on a remote host. To 
-      do this edit the ``user.properties`` file and edit the 
-      ``migrator.language-runner.server.address`` configuration
-      and add the server address the service is running at.
+         You can optionally run Query Runner on a remote host. To 
+         do this edit the ``user.properties`` file and edit the 
+         ``migrator.language-runner.server.address`` configuration
+         and add the server address the service is running at.
 
-      For example:
+         For example:
 
-      .. code-block:: sh
+         .. code-block:: sh
 
-         migrator.language-runner.server.address: http://myserver:6080 
+            migrator.language-runner.server.address: http://myserver:6080 
     
-    .. tip::
-        
-        For details on where the ``user.properties`` file is located, 
-        see :ref:`file-location`. 
+         .. tip::
+            
+            For details on where the ``user.properties`` file is located, 
+            see :ref:`file-location`. 
 
    .. step:: Confirm the Query Runner container is running
 
