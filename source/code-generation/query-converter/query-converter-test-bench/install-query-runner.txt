@@ -11,9 +11,17 @@ Install Query Runner
    :class: singlecol
 
 In order to use Query Converter Test Bench, Relational
-Migrator must have access to the Query Runner. The 
-query runner is a Docker container that contains 
+Migrator must have access to the Query Runner. 
+Query Runner is a Docker container that contains 
 all the dependencies to test your converted queries.
+
+About this Task
+---------------
+
+Query Runner operates on the ``http`` protocol and 
+is not encrypted. All data is processed within the 
+container and no connection details or sensitive data 
+is exposed during the Query Runner connection process.
 
 Before You Begin
 ----------------
@@ -56,18 +64,24 @@ Steps
         For details on where the ``user.properties`` file is located, 
         see :ref:`file-location`. 
 
-   .. step:: Confirm the Query Runner is running
+   .. step:: Confirm the Query Runner container is running
 
       In your web browser navigate to the host/port the Query Runner 
       container is running. For example: 
-      `http://localhost:6080/test <http://localhost:6080/test>`__.
+      `http://localhost:6080/status <http://localhost:6080/status>`__.
 
-      The results should be:
+      Check the ``status`` field of the JSON data returned from the 
+      endpoint. A status of ``ok`` means the container is running:
 
       .. code-block:: 
          :copyable: false
 
-         The query runner service is running successfully! 
+         {
+         "status":"ok",
+         "server":"App Mod Language Runner",
+         "commitHash":"159119004c2bf8c534e15e5895acb9bc1bfb5b8d",
+         "version":"20240627"
+         }
 
 Next Steps
 ----------
