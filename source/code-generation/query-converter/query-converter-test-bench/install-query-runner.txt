@@ -14,6 +14,7 @@ In order to use Query Converter Test Bench, Relational
 Migrator must have access to the Query Runner. 
 Query Runner is a Docker container that contains 
 all the dependencies to test your converted queries.
+Query Runner can be hosted locally or remotely.
 
 About this Task
 ---------------
@@ -48,12 +49,12 @@ Steps
 
     .. step:: (Optional) Run the image on a remote host
       
-       You can optionally run query runner on a remote host. To 
-       do this edit the ``user.properties`` file and edit the 
-       ``migrator.language-runner.server.address`` configuration
-       and add the server address the service is running at.
+      You can optionally run Query Runner on a remote host. To 
+      do this edit the ``user.properties`` file and edit the 
+      ``migrator.language-runner.server.address`` configuration
+      and add the server address the service is running at.
 
-       For example:
+      For example:
 
       .. code-block:: sh
 
@@ -71,7 +72,8 @@ Steps
       `http://localhost:6080/status <http://localhost:6080/status>`__.
 
       Check the ``status`` field of the JSON data returned from the 
-      endpoint. A status of ``ok`` means the container is running:
+      ``status`` endpoint. A status of ``ok`` means the container is
+      running:
 
       .. code-block:: 
          :copyable: false
