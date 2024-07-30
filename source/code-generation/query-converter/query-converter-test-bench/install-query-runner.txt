@@ -10,24 +10,27 @@ Install Query Runner
    :depth: 1
    :class: singlecol
 
-In order to use Query Converter Test Bench, Relational
+To use Query Converter Test Bench, Relational
 Migrator must have access to the Query Runner. 
-Query Runner is a Docker container that contains 
-all the dependencies to test your converted queries.
-Query Runner can be hosted locally or remotely.
+Query Runner is a Docker container with 
+all the dependencies needed to test your converted 
+queries.
 
 About this Task
 ---------------
 
-Query Runner operates on the ``http`` protocol and 
-is not encrypted. All data is processed within the 
-container and no connection details or sensitive data 
-is exposed during the Query Runner connection process.
+- Query Runner operates on the ``http`` protocol and 
+  is not encrypted. All data is processed within the 
+  container and no connection details or sensitive data 
+  is exposed during the Query Runner connection process.
 
-Before You Begin
+- Query Runner either locally or remotely. This task contains
+  instructions for installing the container locally. 
+
+Before you Begin
 ----------------
 
-Install `Docker <https://www.docker.com/get-started/>`__
+Install `Docker <https://www.docker.com/get-started/>`__.
 
 Steps
 -----
