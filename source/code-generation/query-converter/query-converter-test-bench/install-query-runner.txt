@@ -24,8 +24,7 @@ About this Task
   container and no connection details or sensitive data 
   is exposed during the Query Runner connection process.
 
-- Query Runner either locally or remotely. This task contains
-  instructions for installing the container locally. 
+- Query Runner either locally or remotely.
 
 Before you Begin
 ----------------
