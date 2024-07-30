@@ -38,7 +38,7 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: Pull the Query Runner Image
+   .. step:: Get the Query Runner Image
       
       .. code-block:: sh
 
@@ -50,7 +50,7 @@ Steps
 
          docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
-    .. step:: (Optional) Run the image on a remote host
+   .. step:: (Optional) Run the image on a remote host
       
       You can optionally run Query Runner on a remote host. To 
       do this edit the ``user.properties`` file and edit the 
