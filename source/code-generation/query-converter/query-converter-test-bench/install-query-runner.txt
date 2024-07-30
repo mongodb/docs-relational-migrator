@@ -46,11 +46,13 @@ Steps
 
    .. step:: Run the Image as a Container
 
+      To run the container locally:
+
       .. code-block:: sh
 
          docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
-   .. step:: (Optional) Run the image on a remote host
+      To run the container remotely:
       
       You can optionally run Query Runner on a remote host. To 
       do this edit the ``user.properties`` file and edit the 
