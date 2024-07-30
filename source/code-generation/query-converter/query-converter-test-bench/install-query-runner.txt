@@ -71,7 +71,7 @@ Steps
 
    .. step:: Confirm the Query Runner container is running
 
-      In your web browser navigate to the host/port the Query Runner 
+      In your web browser navigate to the host and port the Query Runner 
       container is running. For example: 
       `http://localhost:6080/status <http://localhost:6080/status>`__.
 
