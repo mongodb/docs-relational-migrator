@@ -1,8 +1,8 @@
-.. _rm-query-converter-test-bench:
+.. _rm-query-converter-compare-queries:
 
-======================
-Test Converted Queries
-======================
+=====================
+Compare Query Results
+=====================
 
 .. meta::
    :keywords: relational migrator, test converted queries
