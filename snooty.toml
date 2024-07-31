@@ -39,7 +39,7 @@ toc_landing_pages = [
 "jobs/prerequisites",
 "api-docs",
 "deployment-considerations",
-"code-generation/test-converted-queries"
+"code-generation/query-converter-test-queries"
 ]
 
 [constants]
