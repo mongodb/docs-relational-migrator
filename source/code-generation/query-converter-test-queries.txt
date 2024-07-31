@@ -1,8 +1,8 @@
-.. _rm-query-converter-compare-queries:
+.. _rm-query-converter-test-bench:
 
-=====================
-Compare Query Results
-=====================
+======================
+Test Converted Queries
+======================
 
 .. meta::
    :keywords: relational migrator, test converted queries
@@ -50,7 +50,7 @@ Get Started
 -----------
 
 - :ref:`rm-install-query-runner` 
-- :ref:`rm-compare-converted-queries`
+- :ref:`rm-compare-query-results`
 
 .. toctree::
    :hidden:

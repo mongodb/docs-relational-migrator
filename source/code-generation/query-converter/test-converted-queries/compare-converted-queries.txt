@@ -1,8 +1,8 @@
-.. _rm-compare-converted-queries:
+.. _rm-compare-query-results:
 
-=========================
-Compare Converted Queries
-=========================
+=====================
+Compare Query Results
+=====================
 
 .. contents:: On this page
    :local:
