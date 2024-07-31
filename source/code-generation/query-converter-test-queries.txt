@@ -1,5 +1,6 @@
 .. _rm-query-converter-test-bench:
 
+<<<<<<< HEAD
 ============
 Test Queries
 ============
@@ -10,6 +11,11 @@ Test Queries
 .. facet::
    :name: genre
    :values: reference
+=======
+==========================
+Query Converter Test Bench
+==========================
+>>>>>>> d02222e (*)
 
 .. contents:: On this page
    :local:
@@ -17,6 +23,7 @@ Test Queries
    :depth: 1
    :class: singlecol
 
+<<<<<<< HEAD
 Use the :guilabel:`Test Queries` pane to test SQL queries,
 views, and stored procedures converted by :ref:`rm-query-converter`. 
 This feature uses the project's source 
@@ -51,10 +58,18 @@ Get Started
 
 - :ref:`rm-install-query-runner` 
 - :ref:`rm-compare-query-results`
+=======
+Stub page.
+>>>>>>> d02222e (*)
 
 .. toctree::
    :hidden:
    :titlesonly:
 
+<<<<<<< HEAD
    /code-generation/query-converter/test-converted-queries/install-query-runner
    /code-generation/query-converter/test-converted-queries/compare-converted-queries
+=======
+   /code-generation/query-converter/query-converter-test-bench/install-query-runner
+   /code-generation/query-converter/query-converter-test-bench/compare-converted-queries
+>>>>>>> d02222e (*)
