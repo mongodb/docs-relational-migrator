@@ -4,6 +4,7 @@
 Install Query Runner
 ====================
 
+<<<<<<< HEAD
 .. meta::
    :keywords: query runner, relational migrator, docker, prerequisite, query converter test bench
 
@@ -11,10 +12,97 @@ Install Query Runner
    :name: genre
    :values: tutorial
 
+=======
+>>>>>>> 8629f26 (*)
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
 
+<<<<<<< HEAD
 Task page.
+=======
+To use Query Converter Test Bench, Relational
+Migrator must have access to the Query Runner. 
+Query Runner is a Docker container with 
+all the dependencies needed to test your converted 
+queries.
+
+About this Task
+---------------
+
+- Query Runner operates on the ``http`` protocol and 
+  is not encrypted. All data is processed within the 
+  container and no connection details or sensitive data 
+  is exposed during the Query Runner connection process.
+
+- Query Runner either locally or remotely.
+
+Before you Begin
+----------------
+
+Install `Docker <https://www.docker.com/get-started/>`__.
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Get the Query Runner Image
+      
+      .. code-block:: sh
+
+         docker pull public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+
+   .. step:: Run the Image as a Container
+
+      - To run the container locally:
+
+         .. code-block:: sh
+
+            docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+
+      - To run the container remotely:
+      
+         Add the server address where the  
+         service is running to the ``migrator.language-runner.server.address`` in the 
+         ``user.properties``.
+
+         For example:
+
+         .. code-block:: sh
+
+            migrator.language-runner.server.address: http://myserver:6080 
+    
+         .. tip::
+            
+            For details on where the ``user.properties`` file is located, 
+            see :ref:`file-location`. 
+
+   .. step:: Confirm the Query Runner container is running
+
+      In your web browser navigate to the host and port the Query Runner 
+      container is running. For example: 
+      `http://localhost:6080/status <http://localhost:6080/status>`__.
+
+      Check the ``status`` field of the JSON data returned from the 
+      ``status`` endpoint. A status of ``ok`` means the container is
+      running:
+
+      .. code-block:: 
+         :copyable: false
+
+         {
+         "status":"ok",
+         "server":"App Mod Language Runner",
+         "commitHash":"159119004c2bf8c534e15e5895acb9bc1bfb5b8d",
+         "version":"20240627"
+         }
+
+Next Steps
+----------
+
+- :ref:`rm-compare-converted-queries`
+>>>>>>> 8629f26 (*)
