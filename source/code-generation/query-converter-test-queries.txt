@@ -67,9 +67,14 @@ Stub page.
    :titlesonly:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
    /code-generation/query-converter/test-converted-queries/install-query-runner
    /code-generation/query-converter/test-converted-queries/compare-converted-queries
 =======
    /code-generation/query-converter/query-converter-test-bench/install-query-runner
    /code-generation/query-converter/query-converter-test-bench/compare-converted-queries
 >>>>>>> d02222e (*)
+=======
+   /code-generation/query-converter/test-converted-queries/install-query-runner
+   /code-generation/query-converter/test-converted-queries/compare-converted-queries
+>>>>>>> 626cdf0 (*)
