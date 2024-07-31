@@ -1,11 +1,11 @@
 .. _rm-query-converter-test-bench:
 
-==========================
-Query Converter Test Bench
-==========================
+======================
+Test Converted Queries
+======================
 
 .. meta::
-   :keywords: relational migrator, query converter test bench
+   :keywords: relational migrator, test converted queries
 
 .. facet::
    :name: genre
@@ -17,31 +17,32 @@ Query Converter Test Bench
    :depth: 1
    :class: singlecol
 
-Use Query Converter Test Bench to test SQL queries 
-and stored procedures converted by :ref:`rm-query-converter`. 
-Query Converter Test Bench uses the project's source 
+Use the :guilabel:`Test Queries` pane to test SQL queries 
+views, and stored procedures converted by :ref:`rm-query-converter`. 
+This feature uses the project's source 
 and destination database connections and allows you to
 run the original SQL and converted MongoDB code.
-The results from each query are displayed on the Query Converter 
-Test Bench, allowing for a side-by-side comparison.
+The results from each query are displayed on the 
+:guilabel:`Test Queries` pane, allowing for a side-by-side 
+comparison.
 
 Use Cases
 ---------
 
-Query Converter Test Bench allows you to:
+The :guilabel:`Test Queries` pane allows you to:
 
 - Compare your original and converted 
   query results in a single place.
 - Increase your confidence in code automatically 
-  converted by the query converter.
+  converted by the Query Converter.
 - See potential logic errors and edit the converted 
   code before moving it to production.
 
 Requirements
 ------------
 
-To use Query Converter Test Bench, you must 
-run the Query Runner Docker container. This 
+To test converted queries in Relational Migrator, 
+you must run the Query Runner Docker container. This 
 container can be run locally or hosted remotely. 
 For details, see :ref:`rm-install-query-runner`.
 
