@@ -56,5 +56,5 @@ Get Started
    :hidden:
    :titlesonly:
 
-   /code-generation/query-converter/query-converter-test-bench/install-query-runner
-   /code-generation/query-converter/query-converter-test-bench/compare-converted-queries
+   /code-generation/query-converter/test-converted-queries/install-query-runner
+   /code-generation/query-converter/test-converted-queries/compare-converted-queries
