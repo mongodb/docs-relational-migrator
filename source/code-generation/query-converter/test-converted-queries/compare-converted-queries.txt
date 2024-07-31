@@ -1,4 +1,4 @@
-.. _rm-compare-query-results:
+.. _rm-compare-converted-queries:
 
 =====================
 Compare Query Results
