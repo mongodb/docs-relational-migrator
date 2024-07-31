@@ -1,6 +1,7 @@
 .. _rm-query-converter-test-bench:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ============
 Test Queries
 ============
@@ -16,6 +17,11 @@ Test Queries
 Query Converter Test Bench
 ==========================
 >>>>>>> d02222e (*)
+=======
+======================
+Test Converted Queries
+======================
+>>>>>>> 2061c48 (*)
 
 .. contents:: On this page
    :local:
