@@ -32,10 +32,13 @@ queries.
 About this Task
 ---------------
 
-- Query Runner operates on the ``http`` protocol and 
-  is not encrypted. All data is processed within the 
-  container and no connection details or sensitive data 
-  is exposed during the Query Runner connection process.
+- If the version of Query Runner is different than the 
+  version of Relational Migrator a warning banner displays.
+  To update the Query Runner to the latest version, run 
+  the docker pull command in step number one.
+
+- Query Runner operates using the ``http`` protocol, 
+  requests made from a remote machine are not encrypted.
 
 - Query Runner can run either locally or remotely.
 
@@ -62,24 +65,33 @@ Steps
          
             .. code-block:: sh
 
-               docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+               docker run --name relational-migrator-query-runner -p 127.0.0.1:6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
          - To run the container remotely:
          
-            Add the server address where the  
-            service is running to the ``migrator.language-runner.server.address`` in the 
-            ``user.properties``.
+            a. Add the server address where the  
+               service is running to the ``migrator.language-runner.server.address`` in the 
+               ``user.properties``.
 
-            For example:
+               For example:
 
-            .. code-block:: sh
+               .. code-block:: sh
 
-               migrator.language-runner.server.address: http://myserver:6080 
-    
-            .. tip::
-               
-               For details on where the ``user.properties`` file is located, 
-               see :ref:`file-location`. 
+                  migrator.language-runner.server.address: http://myserver:6080 
+
+               .. tip::
+                  
+                  For details on where the ``user.properties`` file is located, 
+                  see :ref:`file-location`. 
+
+            #. After changing the ``user.properties`` file restart Relational Migrator.
+
+            #. Then launch the container from your remote server or container hosting service.
+               The container on your remote server needs to be exposed on the network:
+
+               .. code-block:: sh
+
+                  docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
    .. step:: Confirm the Query Runner container is running
 
