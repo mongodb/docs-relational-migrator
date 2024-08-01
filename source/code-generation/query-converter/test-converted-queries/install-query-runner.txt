@@ -4,25 +4,12 @@
 Install Query Runner
 ====================
 
-<<<<<<< HEAD
-.. meta::
-   :keywords: query runner, relational migrator, docker, prerequisite, query converter test bench
-
-.. facet::
-   :name: genre
-   :values: tutorial
-
-=======
->>>>>>> 8629f26 (*)
 .. contents:: On this page
    :local:
    :backlinks: none
    :depth: 1
    :class: singlecol
 
-<<<<<<< HEAD
-Task page.
-=======
 To use Query Converter Test Bench, Relational
 Migrator must have access to the Query Runner. 
 Query Runner is a Docker container with 
@@ -120,4 +107,3 @@ Next Steps
 ----------
 
 - :ref:`rm-compare-converted-queries`
->>>>>>> 8629f26 (*)
