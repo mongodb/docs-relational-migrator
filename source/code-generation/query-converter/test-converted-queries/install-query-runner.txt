@@ -64,31 +64,31 @@ Steps
 
          - To run the container remotely:
                      
-             a. Add the server address where the  
-                service is running to the ``migrator.language-runner.server.address`` in the 
-                ``user.properties``.
+           a. Add the server address where the  
+              service is running to the ``migrator.language-runner.server.address`` in the 
+              ``user.properties``.
 
-                For example:
+              For example:
 
-                .. code-block:: sh
+              .. code-block:: sh
 
-                   migrator.language-runner.server.address: http://myserver:6080 
+                 migrator.language-runner.server.address: http://myserver:6080 
 
-                .. tip::
+              .. tip::
                   
-                   For details on where the ``user.properties`` file is located, 
-                   see :ref:`file-location`. 
+                 For details on where the ``user.properties`` file is located, 
+                 see :ref:`file-location`. 
 
-             #. After changing the ``user.properties`` file restart Relational Migrator.
+           #. After changing the ``user.properties`` file restart Relational Migrator.
 
-             #. Launch the container from your remote server or container hosting service.
+           #. Launch the container from your remote server or container hosting service.
 
-                To launch the container on your remote server expose port ``6080`` 
-                with the following docker command:
+              To launch the container on your remote server expose port ``6080`` 
+              with the following docker command:
 
-                .. code-block:: sh
+              .. code-block:: sh
 
-                   docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+                 docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
 
    .. step:: Confirm the Query Runner container is running
 
