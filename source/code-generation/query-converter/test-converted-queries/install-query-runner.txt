@@ -93,7 +93,7 @@ Steps
    .. step:: Confirm the Query Runner container is running
 
       In your web browser navigate to the host and port the Query Runner 
-      container is running. For example: 
+      container is running on. For example: 
       `http://localhost:6080/status <http://localhost:6080/status>`__.
 
       Check the ``status`` field of the JSON data returned from the 
