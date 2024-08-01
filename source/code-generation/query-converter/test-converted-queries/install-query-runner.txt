@@ -36,7 +36,7 @@ About this Task
   version of Relational Migrator a warning banner displays.
   
 - To update Query Runner to the latest version, run 
-  the docker pull command in step number one.
+  the ``docker pull`` command from step number one.
 
 - Query Runner operates using the ``http`` protocol, 
   requests made from a remote machine are not encrypted.
