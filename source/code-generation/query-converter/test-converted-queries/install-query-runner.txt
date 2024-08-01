@@ -86,8 +86,10 @@ Steps
 
             #. After changing the ``user.properties`` file restart Relational Migrator.
 
-            #. Then launch the container from your remote server or container hosting service.
-               The container on your remote server needs to be exposed on the network:
+            #. Launch the container from your remote server or container hosting service.
+
+               To launch the container on your remote server expose port ``6080`` 
+               with the following docker command:
 
                .. code-block:: sh
 
