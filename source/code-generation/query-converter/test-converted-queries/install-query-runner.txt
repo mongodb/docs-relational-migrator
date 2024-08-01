@@ -4,6 +4,13 @@
 Install Query Runner
 ====================
 
+.. meta::
+   :keywords: query runner, relational migrator, docker, prerequisite, query converter test bench
+
+.. facet::
+   :name: genre
+   :values: tutorial
+
 .. contents:: On this page
    :local:
    :backlinks: none
