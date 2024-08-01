@@ -37,7 +37,7 @@ About this Task
   container and no connection details or sensitive data 
   is exposed during the Query Runner connection process.
 
-- Query Runner either locally or remotely.
+- Query Runner can run either locally or remotely.
 
 Before you Begin
 ----------------
