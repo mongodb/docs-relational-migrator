@@ -17,7 +17,7 @@ Install Query Runner
    :depth: 1
    :class: singlecol
 
-To use the :guilabel:`Test Queries` pane , Relational
+To use the :guilabel:`Test Queries` pane, Relational
 Migrator must have access to the Query Runner. 
 Query Runner is a Docker container with 
 all the dependencies needed to test your converted 
@@ -27,13 +27,13 @@ About this Task
 ---------------
 
 - If the version of Query Runner is different than the 
-  version of Relational Migrator a warning banner displays.
+  version of Relational Migrator, a warning banner displays.
   
 - To update Query Runner to the latest version, run 
   the ``docker pull`` command from step number one.
 
-- Query Runner operates using the ``http`` protocol, 
-  requests made from a remote machine are not encrypted.
+- Query Runner operates using the ``http`` protocol. 
+  Requests made from a remote machine are not encrypted.
 
 - Query Runner can run either locally or remotely.
 
@@ -79,7 +79,7 @@ Steps
                  For details on where the ``user.properties`` file is located, 
                  see :ref:`file-location`. 
 
-           #. After changing the ``user.properties`` file restart Relational Migrator.
+           #. After changing the ``user.properties`` file, restart Relational Migrator.
 
            #. Launch the container from your remote server or container hosting service.
 
@@ -92,7 +92,7 @@ Steps
 
    .. step:: Confirm the Query Runner container is running
 
-      In your web browser navigate to the host and port the Query Runner 
+      In your web browser, navigate to the host and port the Query Runner 
       container is running on. For example: 
       `http://localhost:6080/status <http://localhost:6080/status>`__.
 
