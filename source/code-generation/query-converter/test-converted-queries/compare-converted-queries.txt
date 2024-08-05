@@ -123,27 +123,22 @@ Steps
          The data from the destination database populates 
          on the right-side of :guilabel:`Results`.
 
+      #. You can use the :guilabel:`Results` pane to compare the 
+         source and destination data and types.
+
          .. note::
 
             You can click the :icon-lg:`Menu` and 
             :icon-lg:`Apps` buttons to switch between 
             the document and row view for the data. 
 
-   .. step:: Compare the results of the source and destination queries
-
-            a. You can use the :guilabel:`Results` pane to compare the 
-               source and destination data and types.
-
-            #. Click the :guilabel:`Messages` pill to compare source 
-               and destination query statistics.
-
-   .. step:: (Optional) Edit the converted code
+   .. step:: (Optional) Edit the converted query
 
             If the destination query needs to be changed, you can make 
             code changes in the :guilabel:`Converted MongoDB Query`
             pane and run the updated query and view the results.
             
-            a. Click the :icon-lg:`Edit` on the :guilabel:`Converted MongoDB Query` pane
+            a. Click the :icon-lg:`Edit` button on the :guilabel:`Converted MongoDB Query` pane
             
             #. Edit the code
             
