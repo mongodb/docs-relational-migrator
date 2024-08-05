@@ -136,16 +136,13 @@ Steps
 
             If the destination query needs to be changed, you can make 
             code changes in the :guilabel:`Converted MongoDB Query`
-            pane and run the updated query and view the results.
+            pane and run the updated query.
             
             a. Click the :icon-lg:`Edit` button on the :guilabel:`Converted MongoDB Query` pane
             
-            #. Edit the code
-            
-            #. Click :guilabel:`Save`
+            #. Edit the code and click :guilabel:`Save`
             
             #. Click :guilabel:`Run Converted Query`
-
 
 Learn More
 ----------
