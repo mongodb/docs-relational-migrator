@@ -1,8 +1,8 @@
-.. _rm-compare-query-results:
+.. _rm-compare-converted-queries
 
-=====================
-Compare Query Results
-=====================
+=========================
+Compare Converted Queries
+=========================
 
 .. contents:: On this page
    :local:
@@ -10,4 +10,114 @@ Compare Query Results
    :depth: 1
    :class: singlecol
 
-Task page.
+You can use the Query Converter Test Bench to compare source 
+and destination queries and data inside Relational Migrator. 
+The Query Converter Test Bench can help you verify the 
+accuracy of converted queries and view source and 
+destination data after you run a sync job.
+
+Before You Begin
+----------------
+
+- `Install Docker <https://www.docker.com/>`__.
+
+- Query Converter Test Bench requires the language converter 
+  Docker container to be running on your system. 
+  The language converter runs serveral endpoints on 
+  port ``6080``. These endpoints contain the logic and 
+  dependencies required to convert and run source and 
+  destination queries. 
+
+- Before you can use the query converter test bench, you must 
+  sign in to your Atlas account in Relational Migrator. For 
+  details, see :ref:`rm-atlas-log-in`.
+
+- For details on how to turn on query converter, see 
+  :ref:`rm-enable-query-converter`.
+
+Steps
+-----
+
+.. procedure::
+   :style: normal
+
+   .. step:: Start the Relational Migrator Query Runner
+
+      The Query Runner is a Docker container that runs custom REST endpoints.
+      These endpoints are used to convert and run source and destination queries.
+   
+      .. code-block::
+
+         docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
+
+   .. step:: Navigate to the query converter pane and choose a query
+
+      a. From the :guilabel:`Code Generation` tab, click the 
+         :guilabel:`Query Converter` pane.
+
+      #. On the left-hand :guilabel:`Queries` pane, select a query.
+         This is the query that is used in the Query Converter 
+         Test Bench.
+
+   .. step:: Open the query test bench console
+
+      a. From the :guilabel:`Code Generation` tab, click the 
+         :guilabel:`Query Converter` pane.
+
+      #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
+         pane at the bottom-right of the screen.
+
+   .. step:: Run the source query
+
+      a. On the :guilabel:`Test Queries`
+         pane, click the :guilabel:`Run Source Query` 
+         button.
+
+      #. Enter the connection details to your source database.
+
+      #. Click :guilabel:`Run` on the 
+         :guilabel:`Connection Details` form.
+
+         The data from the source database populates in 
+         :guilabel:`Results`.
+
+         .. note::
+
+            You can click the :guilabel:`Messages` pill to 
+            see execution statistics such as ``Execution Time``
+            and ``Row Count``.
+      
+   .. step:: Run the converted query
+
+      a. On the :guilabel:`Test Queries`
+         pane, click :guilabel:`Run Converted Query` 
+         button.
+
+      #. Enter the connection details to your database.
+
+      #. Click :guilabel:`Run` on the 
+         :guilabel:`Connection Details` form.
+
+         The data from the destination database populates 
+         on the right-side of :guilabel:`Results`.
+
+         .. note::
+
+            You can click the :icon-lg:`Menu` and 
+            :icon-lg:`Apps` buttons to switch between 
+            the document and row view for the data. 
+
+   .. step:: Compare the results of the source and destination queries
+
+            a. You can use the :guilabel:`Results` pane to compare the 
+               source and destination data and types.
+
+            #. Click the :guilabel:`Messages` pill to compare source 
+               and destination query statistics.
+
+Learn More
+----------
+
+- :ref:`rm-convert-queries`
+- :ref:`rm-convert-views`
+- :ref:`rm-convert-stored-procedures`
