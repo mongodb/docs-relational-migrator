@@ -10,11 +10,11 @@ Compare Converted Queries
    :depth: 1
    :class: singlecol
 
-You can use the Query Converter Test Bench to compare source 
-and destination queries and data inside Relational Migrator. 
-The Query Converter Test Bench can help you verify the 
-accuracy of converted queries and view source and 
-destination data after you run a sync job.
+You can use the :guilabel:`Test Queries` pane to compare source 
+and destination queries, views, and stored procedure results 
+inside of Relational Migrator. The :guilabel:`Test Queries` can 
+help you verify the accuracy of converted code and
+show the source and destination data after you run a sync job.
 
 Before you Begin
 ----------------
@@ -22,12 +22,12 @@ Before you Begin
 - You must sign in to your Atlas account in Relational Migrator. 
   For details, see :ref:`rm-atlas-log-in`.
 
-- For details on how to turn on query converter, see 
+- For details on how to turn on Query Converter, see 
   :ref:`rm-enable-query-converter`.
 
 - To use the :guilabel:`Test Queries` pane, Relational
   Migrator must have access to the Query Runner. For details
-  on how to use Query Runner, see :ref:`rm-install-query-runner`.
+  on how to setup Query Runner, see :ref:`rm-install-query-runner`.
 
 Steps
 -----
