@@ -16,24 +16,18 @@ The Query Converter Test Bench can help you verify the
 accuracy of converted queries and view source and 
 destination data after you run a sync job.
 
-Before You Begin
+Before you Begin
 ----------------
 
-- `Install Docker <https://www.docker.com/>`__.
-
-- Query Converter Test Bench requires the language converter 
-  Docker container to be running on your system. 
-  The language converter runs serveral endpoints on 
-  port ``6080``. These endpoints contain the logic and 
-  dependencies required to convert and run source and 
-  destination queries. 
-
-- Before you can use the query converter test bench, you must 
-  sign in to your Atlas account in Relational Migrator. For 
-  details, see :ref:`rm-atlas-log-in`.
+- You must sign in to your Atlas account in Relational Migrator. 
+  For details, see :ref:`rm-atlas-log-in`.
 
 - For details on how to turn on query converter, see 
   :ref:`rm-enable-query-converter`.
+
+- To use the :guilabel:`Test Queries` pane, Relational
+  Migrator must have access to the Query Runner. For details
+  on how to use Query Runner, see :ref:`rm-install-query-runner`.
 
 Steps
 -----
@@ -41,25 +35,20 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: Start the Relational Migrator Query Runner
-
-      The Query Runner is a Docker container that runs custom REST endpoints.
-      These endpoints are used to convert and run source and destination queries.
-   
-      .. code-block::
-
-         docker run --name relational-migrator-query-runner -p 6080:6080 public.ecr.aws/v4d7k6c9/relational-migrator-query-runner
-
-   .. step:: Navigate to the query converter pane and choose a query
+   .. step:: Select a query on the :guilabel:`Query Converter` pane
 
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
 
-      #. On the left-hand :guilabel:`Queries` pane, select a query.
-         This is the query that is used in the Query Converter 
-         Test Bench.
+         .. note::
 
-   .. step:: Open the query test bench console
+           If you are not already logged into your Atlas account or have
+           an expired session, you must login to proceed.
+
+      #. On the left-hand :guilabel:`Queries` pane, select a query, view,
+         or stored procedure.
+
+   .. step:: Open the :guilabel:`Test Queries` pane
 
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
