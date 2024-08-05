@@ -78,8 +78,8 @@ Steps
       You need to specify ``CUST_ID`` in the :guilabel:`Source Script`
       text field as follows:
 
-      .. code-block:: javascript
-         :copyable: sql
+      .. code-block:: sql
+         :copyable: false
          :emphasize-lines: 9
 
          DO 
