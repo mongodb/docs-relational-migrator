@@ -56,6 +56,44 @@ Steps
       #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
          pane at the bottom-right of the screen.
 
+   .. step:: (Optional stored procedures only) Specify parameters
+
+      If your converting a stored procedure, specify the 
+      stored procedure's parameters in the 
+      :guilabel:`Source Script` text field.
+
+      For example, for the following PostGreSQL stored procedure:
+
+      .. code-block:: sql
+         :copyable: false
+
+         CREATE OR REPLACE PROCEDURE PUBLIC.CANCEL_CUSTOMER_ORDERS(IN CUST_ID INTEGER)
+         LANGUAGE PLPQSQL
+
+         AS $PROCEDURE$
+         BEGIN 
+            UPDATE ORDERS SET STATUS = 'CANCELLED' WHERE CUSTOMER_ID = CUST_ID;
+         END;$PROCEDURE$
+
+      You need to specify ``CUST_ID`` in the :guilabel:`Source Script`
+      text field as follows:
+
+      .. code-block:: javascript
+         :copyable: sql
+         :emphasize-lines: 9
+
+         DO 
+         $$
+            DECLARE
+               CUST_ID INTEGER;
+            BEGIN
+               --TODO: Set parameter values here
+               cust_id := <value>
+
+               CALL public.cancel_customer_orders(cust_id);
+            END;
+         $$  
+
    .. step:: Run the source query
 
       a. On the :guilabel:`Test Queries`
