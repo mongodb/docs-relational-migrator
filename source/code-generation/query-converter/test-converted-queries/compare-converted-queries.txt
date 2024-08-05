@@ -58,9 +58,8 @@ Steps
 
    .. step:: (Optional) Specify parameters
 
-      If your converting a stored procedure, specify the 
-      stored procedure's parameters in the 
-      :guilabel:`Source Script` text field.
+      If your converting a stored procedure with parameters, specify the 
+      stored procedure's parameters in the :guilabel:`Source Script` text field.
 
       For example, for the following PostGreSQL stored procedure:
 
