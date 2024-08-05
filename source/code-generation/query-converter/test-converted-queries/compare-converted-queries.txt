@@ -56,7 +56,7 @@ Steps
       #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
          pane at the bottom-right of the screen.
 
-   .. step:: (Optional stored procedures only) Specify parameters
+   .. step:: (Optional) Specify parameters
 
       If your converting a stored procedure, specify the 
       stored procedure's parameters in the 
