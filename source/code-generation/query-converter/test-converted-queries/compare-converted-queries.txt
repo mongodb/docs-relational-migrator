@@ -32,77 +32,157 @@ Before you Begin
 Steps
 -----
 
-.. procedure::
-   :style: normal
+.. tabs::
 
-   .. step:: Select a query on the :guilabel:`Query Converter` pane
+   .. tab:: Convert a query or view
+      :tabid: convert-query-view
+         
+      .. procedure::
+         :style: normal
 
-      a. From the :guilabel:`Code Generation` tab, click the 
-         :guilabel:`Query Converter` pane.
+         .. step:: Select a query on the :guilabel:`Query Converter` pane
 
-         .. note::
+            a. From the :guilabel:`Code Generation` tab, click the 
+               :guilabel:`Query Converter` pane.
 
-           If you are not already logged into your Atlas account or have
-           an expired session, you must login to proceed.
+               .. note::
 
-      #. On the left-hand :guilabel:`Queries` pane, select a query, view,
-         or stored procedure.
+               If you are not already logged into your Atlas account or have
+               an expired session, you must login to proceed.
 
-   .. step:: Open the :guilabel:`Test Queries` pane
+            #. On the left-hand :guilabel:`Queries` pane, select a query, view,
+               or stored procedure.
 
-      a. From the :guilabel:`Code Generation` tab, click the 
-         :guilabel:`Query Converter` pane.
+         .. step:: Open the :guilabel:`Test Queries` pane
 
-      #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
-         pane at the bottom-right of the screen.
+            a. From the :guilabel:`Code Generation` tab, click the 
+               :guilabel:`Query Converter` pane.
 
-   .. step:: Run the source query
+            #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
+               pane at the bottom-right of the screen.
 
-      a. On the :guilabel:`Test Queries`
-         pane, click the :guilabel:`Run Source Query` 
-         button.
+         .. step:: Run the source query
 
-      #. Enter the connection details to your source database.
+            a. On the :guilabel:`Test Queries`
+               pane, click the :guilabel:`Run Source Query` 
+               button.
 
-      #. Click :guilabel:`Run` on the 
-         :guilabel:`Connection Details` form.
+            #. Enter the connection details to your source database.
 
-         The data from the source database populates in 
-         :guilabel:`Results`.
+            #. Click :guilabel:`Run` on the 
+               :guilabel:`Connection Details` form.
 
-         .. note::
+               The data from the source database populates in 
+               :guilabel:`Results`.
 
-            You can click the :guilabel:`Messages` pill to 
-            see execution statistics such as ``Execution Time``
-            and ``Row Count``.
-      
-   .. step:: Run the converted query
+               .. note::
 
-      a. On the :guilabel:`Test Queries`
-         pane, click :guilabel:`Run Converted Query` 
-         button.
+                  You can click the :guilabel:`Messages` pill to 
+                  see execution statistics such as ``Execution Time``
+                  and ``Row Count``.
+            
+         .. step:: Run the converted query
 
-      #. Enter the connection details to your database.
+            a. On the :guilabel:`Test Queries`
+               pane, click :guilabel:`Run Converted Query` 
+               button.
 
-      #. Click :guilabel:`Run` on the 
-         :guilabel:`Connection Details` form.
+            #. Enter the connection details to your database.
 
-         The data from the destination database populates 
-         on the right-side of :guilabel:`Results`.
+            #. Click :guilabel:`Run` on the 
+               :guilabel:`Connection Details` form.
 
-         .. note::
+               The data from the destination database populates 
+               on the right-side of :guilabel:`Results`.
 
-            You can click the :icon-lg:`Menu` and 
-            :icon-lg:`Apps` buttons to switch between 
-            the document and row view for the data. 
+               .. note::
 
-   .. step:: Compare the results of the source and destination queries
+                  You can click the :icon-lg:`Menu` and 
+                  :icon-lg:`Apps` buttons to switch between 
+                  the document and row view for the data. 
 
-            a. You can use the :guilabel:`Results` pane to compare the 
-               source and destination data and types.
+         .. step:: Compare the results of the source and destination queries
 
-            #. Click the :guilabel:`Messages` pill to compare source 
-               and destination query statistics.
+                  a. You can use the :guilabel:`Results` pane to compare the 
+                     source and destination data and types.
+
+                  #. Click the :guilabel:`Messages` pill to compare source 
+                     and destination query statistics.
+
+ .. tab:: Convert a stored procedure
+      :tabid: convert-storedprocedure
+         
+      .. procedure::
+         :style: normal
+
+         .. step:: Select a query on the :guilabel:`Query Converter` pane
+
+            a. From the :guilabel:`Code Generation` tab, click the 
+               :guilabel:`Query Converter` pane.
+
+               .. note::
+
+               If you are not already logged into your Atlas account or have
+               an expired session, you must login to proceed.
+
+            #. On the left-hand :guilabel:`Queries` pane, select a query, view,
+               or stored procedure.
+
+         .. step:: Open the :guilabel:`Test Queries` pane
+
+            a. From the :guilabel:`Code Generation` tab, click the 
+               :guilabel:`Query Converter` pane.
+
+            #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
+               pane at the bottom-right of the screen.
+
+         .. step:: Run the source query
+
+            a. On the :guilabel:`Test Queries`
+               pane, click the :guilabel:`Run Source Query` 
+               button.
+
+            #. Enter the connection details to your source database.
+
+            #. Click :guilabel:`Run` on the 
+               :guilabel:`Connection Details` form.
+
+               The data from the source database populates in 
+               :guilabel:`Results`.
+
+               .. note::
+
+                  You can click the :guilabel:`Messages` pill to 
+                  see execution statistics such as ``Execution Time``
+                  and ``Row Count``.
+            
+         .. step:: Run the converted query
+
+            a. On the :guilabel:`Test Queries`
+               pane, click :guilabel:`Run Converted Query` 
+               button.
+
+            #. Enter the connection details to your database.
+
+            #. Click :guilabel:`Run` on the 
+               :guilabel:`Connection Details` form.
+
+               The data from the destination database populates 
+               on the right-side of :guilabel:`Results`.
+
+               .. note::
+
+                  You can click the :icon-lg:`Menu` and 
+                  :icon-lg:`Apps` buttons to switch between 
+                  the document and row view for the data. 
+
+         .. step:: Compare the results of the source and destination queries
+
+                  a. You can use the :guilabel:`Results` pane to compare the 
+                     source and destination data and types.
+
+                  #. Click the :guilabel:`Messages` pill to compare source 
+                     and destination query statistics.
 
 Learn More
 ----------
