@@ -47,8 +47,8 @@ Steps
 
                .. note::
 
-               If you are not already logged into your Atlas account or have
-               an expired session, you must login to proceed.
+                  If you are not already logged into your Atlas account or have
+                  an expired session, you must login to proceed.
 
             #. On the left-hand :guilabel:`Queries` pane, select a query, view,
                or stored procedure.
@@ -122,8 +122,8 @@ Steps
 
                .. note::
 
-               If you are not already logged into your Atlas account or have
-               an expired session, you must login to proceed.
+                  If you are not already logged into your Atlas account or have
+                  an expired session, you must login to proceed.
 
             #. On the left-hand :guilabel:`Queries` pane, select a query, view,
                or stored procedure.
