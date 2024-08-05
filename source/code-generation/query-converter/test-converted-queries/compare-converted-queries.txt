@@ -75,8 +75,8 @@ Steps
             UPDATE ORDERS SET STATUS = 'CANCELLED' WHERE CUSTOMER_ID = CUST_ID;
          END;$PROCEDURE$
 
-      You need to specify ``CUST_ID`` in the :guilabel:`Source Script` text field.
-      Replace ``<value>`` with the integer customer ID:
+      Specify the ``CUST_ID`` in the :guilabel:`Source Script` text field
+      by replacing ``<value>`` with the customer ID:
 
       .. code-block:: sql
          :copyable: false
