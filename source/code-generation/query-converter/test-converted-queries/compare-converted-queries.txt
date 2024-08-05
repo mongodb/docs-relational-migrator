@@ -138,6 +138,21 @@ Steps
             #. Click the :guilabel:`Messages` pill to compare source 
                and destination query statistics.
 
+   .. step:: (Optional) Edit the converted code
+
+            If the destination query needs to be changed, you can make 
+            code changes in the :guilabel:`Converted MongoDB Query`
+            pane and run the updated query and view the results.
+            
+            a. Click the :icon-lg:`Edit` on the :guilabel:`Converted MongoDB Query` pane
+            
+            #. Edit the code
+            
+            #. Click :guilabel:`Save`
+            
+            #. Click :guilabel:`Run Converted Query`
+
+
 Learn More
 ----------
 
