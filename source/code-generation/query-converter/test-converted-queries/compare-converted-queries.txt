@@ -80,7 +80,7 @@ Steps
 
       .. code-block:: sql
          :copyable: false
-         :emphasize-lines: 9
+         :emphasize-lines: 7
 
          DO 
          $$
