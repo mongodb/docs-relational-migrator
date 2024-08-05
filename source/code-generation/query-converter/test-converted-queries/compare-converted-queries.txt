@@ -106,13 +106,9 @@ Steps
          :guilabel:`Connection Details` form.
 
          The data from the source database populates in 
-         :guilabel:`Results`.
-
-         .. note::
-
-            You can click the :guilabel:`Messages` pill to 
-            see execution statistics such as ``Execution Time``
-            and ``Row Count``.
+         :guilabel:`Results`. You can click the :guilabel:`Messages` 
+         pill to see execution statistics such as ``Execution Time``
+         and ``Row Count``.
       
    .. step:: Run the converted query
 
