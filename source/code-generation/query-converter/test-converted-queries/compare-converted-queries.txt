@@ -80,6 +80,10 @@ Steps
       #. On the left-hand :guilabel:`Queries` pane, select a query, view,
          or stored procedure.
 
+      #. If your query has not been converted, select a 
+         :guilabel:`Target Language` and click :guilabel:`Convert`
+         :icon-lg:`Sparkle`.
+
    .. step:: Open the :guilabel:`Test Queries` pane
 
       a. From the :guilabel:`Code Generation` tab, click the 
