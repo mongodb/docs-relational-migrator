@@ -38,7 +38,9 @@ following table summarizes each user interface:
        :guilabel:`Source Script` text field.
    * - Results
      - This user interface is used to view the query results 
-       from the source and destination queries. 
+       from the source and destination queries. You must run 
+       a source or destination query to view the ``Results``
+       user interface. 
    * - Messages
      - This user interface is used to show messages from each 
        database connection. You can see error messages and 
