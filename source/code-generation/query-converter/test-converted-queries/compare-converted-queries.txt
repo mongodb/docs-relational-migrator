@@ -26,11 +26,12 @@ following table summarizes each user interface:
 
 .. list-table::
    :header-rows: 1
-   
+   :widths: 30 70
+
    * - User Interface 
      - Description
    * - Console
-     - This is the default user interface when using the 
+     - This is the default user interface of the 
        :guilabel:`Test Queries` pane. You can click 
        the :guilabel:`Run Source Query` button and specify 
        parameters for stored procedures in the 
