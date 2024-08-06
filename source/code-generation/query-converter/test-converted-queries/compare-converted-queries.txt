@@ -33,18 +33,20 @@ following table summarizes each user interface:
    * - Console
      - This is the default user interface of the 
        :guilabel:`Test Queries` pane. You can click 
-       the :guilabel:`Run Source Query` button and specify 
+       the :guilabel:`Run Source Query` button to 
+       run all converted queries. You can also specify 
        parameters for stored procedures in the 
        :guilabel:`Source Script` text field.
    * - Results
      - This user interface is used to view the query results 
        from the source and destination queries. You must run 
        a source or destination query to view the ``Results``
-       user interface. 
+       user interface.
    * - Messages
      - This user interface is used to show messages from each 
-       database connection. You can see error messages and 
-       execution stats from each query.
+       database connection. You can see error messages, 
+       execution stats, and any print statements 
+       a query.
 
 Before you Begin
 ----------------
@@ -138,7 +140,7 @@ Steps
          The data from the source database populates in 
          :guilabel:`Results`. You can click the :guilabel:`Messages` 
          pill to see execution statistics such as ``Execution Time``
-         and ``Row Count``.
+         and ``Row Count``, error messages, and print statements.
       
    .. step:: Run the converted query
 
@@ -169,11 +171,12 @@ Steps
             code changes in the :guilabel:`Converted MongoDB Query`
             pane and run the updated query.
             
-            a. Click the :icon-lg:`Edit` button on the :guilabel:`Converted MongoDB Query` pane
+            a. Click the :icon-lg:`Edit` button on the 
+               :guilabel:`Converted MongoDB Query` pane.
             
-            #. Edit the code and click :guilabel:`Save`
+            #. Edit the code and click :guilabel:`Save`.
             
-            #. Click :guilabel:`Run Converted Query`
+            #. Click :guilabel:`Run Converted Query`.
 
 Learn More
 ----------
