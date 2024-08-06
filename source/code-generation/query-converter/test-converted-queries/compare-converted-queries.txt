@@ -26,7 +26,7 @@ following table summarizes each user interface:
 
 .. list-table::
    :header-rows: 1
-   :widths: 30 70
+   :widths: 20 80
 
    * - User Interface 
      - Description
