@@ -1,4 +1,4 @@
-.. _rm-compare-converted-queries
+.. _rm-compare-converted-queries:
 
 =========================
 Compare Converted Queries
@@ -15,6 +15,26 @@ and destination queries, views, and stored procedure results
 inside of Relational Migrator. The :guilabel:`Test Queries` can 
 help you verify the accuracy of converted code and
 show the source and destination data after you run a sync job.
+
+About this Task
+---------------
+
+The :guilabel:`Test Queries` pane is split into 3 separate 
+user interfaces. Click the pill buttons next to 
+:guilabel:`Test Queries` to change the user interface. The 
+following table summarizes the user interface options:
+
+.. list-table::
+   :header-rows: 1
+   
+   * - User Interface 
+     - Description
+   * - Console
+     - X
+   * - Results
+     - Y
+   * - Messages
+     - Z
 
 Before you Begin
 ----------------
@@ -53,8 +73,9 @@ Steps
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
 
-      #. Click the :icon-lg:`ChevronUp` on the :guilabel:`Test Queries`
-         pane at the bottom-right of the screen.
+      #. Click the :icon-lg:`ChevronUp` button on the 
+         :guilabel:`Test Queries` pane at the bottom-right of 
+         the screen.
 
    .. step:: (Optional) Specify parameters
 
