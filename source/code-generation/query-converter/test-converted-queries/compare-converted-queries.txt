@@ -20,9 +20,10 @@ About this Task
 ---------------
 
 The :guilabel:`Test Queries` pane is split into three separate 
-user interfaces. Click the pill buttons next to 
-:guilabel:`Test Queries` to change the user interface. The 
-following table summarizes each user interface:
+user interfaces: ``Console``, ``Results``, and ``Messages``. 
+Click the pill buttons next to :guilabel:`Test Queries` to 
+change the user interface. The following table summarizes 
+each user interface:
 
 .. list-table::
    :header-rows: 1
@@ -88,9 +89,8 @@ Steps
       a. From the :guilabel:`Code Generation` tab, click the 
          :guilabel:`Query Converter` pane.
 
-      #. Click the :icon-lg:`ChevronUp` button on the 
-         :guilabel:`Test Queries` pane at the bottom-right of 
-         the screen.
+      #. On the bottom-right of the screen, click the :icon-lg:`ChevronUp` 
+         button.
 
    .. step:: (Optional) Specify parameters
 
@@ -158,7 +158,8 @@ Steps
          :guilabel:`Connection Details` form.
 
          The data from the destination database populates 
-         on the right-side of :guilabel:`Results`.
+         on the right-side of the :guilabel:`Results` user 
+         interface.
 
       #. You can use the :guilabel:`Results` pane to compare the 
          source and destination data and types.
