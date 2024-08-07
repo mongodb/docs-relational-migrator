@@ -12,7 +12,7 @@ Compare Converted Queries
 
 You can use the :guilabel:`Test Queries` pane to compare source 
 and destination queries, views, and stored procedure results 
-inside of Relational Migrator. The :guilabel:`Test Queries` can 
+in Relational Migrator. The :guilabel:`Test Queries` can 
 help you verify the accuracy of converted code and
 show the source and destination data after you run a sync job.
 
@@ -94,7 +94,7 @@ Steps
 
    .. step:: (Optional) Specify parameters
 
-      If your converting a stored procedure with parameters, specify the 
+      If you're converting a stored procedure with parameters, specify the 
       stored procedure's parameters in the :guilabel:`Source Script` text field.
 
       For example, for the following PostGreSQL stored procedure:
@@ -140,11 +140,11 @@ Steps
       #. Click :guilabel:`Run` on the 
          :guilabel:`Connection Details` form.
 
-         The data from the source database populates in 
+         The data from the source database populates in the
          :guilabel:`Results` user interface. You can click 
          the :guilabel:`Messages` pill to see execution 
          statistics such as ``Execution Time``, ``Row Count``, 
-         error messages, and any print statements.
+         error messages, and print statements.
       
    .. step:: Run the converted query
 
