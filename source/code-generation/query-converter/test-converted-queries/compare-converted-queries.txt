@@ -45,8 +45,7 @@ following table summarizes each user interface:
    * - Messages
      - This user interface is used to show messages from each 
        database connection. You can see error messages, 
-       execution stats, and any print statements 
-       a query.
+       execution stats, and any print statements.
 
 Before you Begin
 ----------------
@@ -145,7 +144,7 @@ Steps
          :guilabel:`Results` user interface. You can click 
          the :guilabel:`Messages` pill to see execution 
          statistics such as ``Execution Time``, ``Row Count``, 
-         error messages, and any SQL print statements.
+         error messages, and any print statements.
       
    .. step:: Run the converted query
 
