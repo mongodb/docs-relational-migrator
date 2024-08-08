@@ -45,6 +45,10 @@ first sync job:
      - :icon-lg:`Checkmark`
      - 
 
+   * - :ref:`DB2 <rm-prereq-db2>`
+     - :icon-lg:`Checkmark`
+     - 
+
 .. toctree::
    :titlesonly:
    :hidden:
