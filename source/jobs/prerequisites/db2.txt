@@ -10,13 +10,7 @@ Configure Migration Prerequisites for DB2
    :depth: 1
    :class: singlecol
 
-JDBC driver: available via the DB2 website (as well as some other websites) - the driver is not legally redistributable by us so it has to be downloaded and placed in the appropriate JDBC driver folder as per the documentation.
-CDC tracking schemas: regardless of whether CDC is requested, Debezium requires the ASNCDC schema to be present in the database, as well as a specific table IBMSNAP_REGISTER with two columns.
-The following statements create the required structure:
-CREATE SCHEMA "ASNCDC";
-CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
-The schema/tables can be left empty to satisfy the Debezium requirement. There is no negative impact in creating this empty table if it doesn’t already exist.
-This requirement is reflected in the product via the “pre migration” script - that is, the existence of the table will be checked automatically and if needed Relational Migrator will generate a .sql script for a DBA to run. 
+TBD.
 
 Steps
 -----
@@ -29,9 +23,18 @@ Steps
       .. procedure::
          :style: normal
 
-        .. step:: Download 
+        .. step:: Download and install the JDBC driver
 
-        .. step:: (Optional) Manually verify Binlog is enabled
+        .. step:: Create the ``ASNCDC`` schema
+
+           CDC tracking schemas: regardless of whether CDC is requested, Debezium requires the ASNCDC schema to 
+           be present in the database, as well as a specific table IBMSNAP_REGISTER with two columns.
+
+           The following statements create the required structure:
+           CREATE SCHEMA "ASNCDC";
+           CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
+           The schema/tables can be left empty to satisfy the Debezium requirement. There is no negative impact in creating this empty table if it doesn’t already exist.
+           This requirement is reflected in the product via the “pre migration” script - that is, the existence of the table will be checked automatically and if needed Relational Migrator will generate a .sql script for a DBA to run. 
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
