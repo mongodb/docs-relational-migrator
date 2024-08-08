@@ -138,7 +138,6 @@ Steps
       #. Enter the connection details to your source database.
 
       #. On the :guilabel:`Connection Details` form, click :guilabel:`Run`.
-         :guilabel:`Connection Details` form.
 
          The data from the source database populates in the
          :guilabel:`Results` user interface. You can click 
