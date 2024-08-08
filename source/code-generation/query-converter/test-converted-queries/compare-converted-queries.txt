@@ -175,8 +175,8 @@ Steps
             code changes in the :guilabel:`Converted MongoDB Query`
             pane and run the updated query.
             
-            a. On the :guilabel:`Converted MongoDB Query` pane, click the :icon-lg:`Edit` button 
-               :guilabel:`Converted MongoDB Query` pane.
+            a. On the :guilabel:`Converted MongoDB Query` pane, 
+               click the :icon-lg:`Edit` button.
             
             #. Edit the code and click :guilabel:`Save`.
             
