@@ -92,7 +92,7 @@ Steps
       #. On the bottom-right of the screen, click the :icon-lg:`ChevronUp` 
          button.
 
-   .. step:: (Optional) Specify parameters
+   .. step:: **(Optional)** Specify parameters
 
       If you're converting a stored procedure with parameters, specify the 
       stored procedure's parameters in the :guilabel:`Source Script` text field.
@@ -137,7 +137,7 @@ Steps
 
       #. Enter the connection details to your source database.
 
-      #. Click :guilabel:`Run` on the 
+      #. On the :guilabel:`Connection Details` form, click :guilabel:`Run`.
          :guilabel:`Connection Details` form.
 
          The data from the source database populates in the
@@ -154,7 +154,7 @@ Steps
 
       #. Enter the connection details to your database.
 
-      #. Click :guilabel:`Run` on the 
+      #. On the :guilabel:`Connection Details` form, click :guilabel:`Run`.
          :guilabel:`Connection Details` form.
 
          The data from the destination database populates 
@@ -170,13 +170,13 @@ Steps
             :icon-lg:`Apps` buttons to switch between 
             the document and row view for the data. 
 
-   .. step:: (Optional) Edit the converted query
+   .. step:: **(Optional)** Edit the converted query
 
             If the destination query needs to be changed, you can make 
             code changes in the :guilabel:`Converted MongoDB Query`
             pane and run the updated query.
             
-            a. Click the :icon-lg:`Edit` button on the 
+            a. On the :guilabel:`Converted MongoDB Query` pane, click the :icon-lg:`Edit` button 
                :guilabel:`Converted MongoDB Query` pane.
             
             #. Edit the code and click :guilabel:`Save`.
