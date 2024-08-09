@@ -50,7 +50,7 @@ Get Started
 -----------
 
 - :ref:`rm-install-query-runner` 
-- :ref:`rm-compare-query-results`
+- :ref:`rm-compare-converted-queries`
 
 .. toctree::
    :hidden:
