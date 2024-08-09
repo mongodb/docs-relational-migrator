@@ -154,7 +154,7 @@ Steps
       #. Enter the connection details to your database.
 
       #. On the :guilabel:`Connection Details` form, click :guilabel:`Run`.
-         :guilabel:`Connection Details` form.
+         
 
          The data from the destination database populates 
          on the right-side of the :guilabel:`Results` user 
