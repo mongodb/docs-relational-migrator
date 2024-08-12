@@ -46,7 +46,7 @@ If you are migrating from an Oracle database:
 
 If you are migrating from an DB2 database:
 
-- Download `4.X or 3.X of odbc jar for DB2 <https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads>`_. 
+- Download `db2jcc.jar for DB2 <https://www.ibm.com/support/pages/db2-jdbc-driver-versions-and-downloads>`_. 
 
 Get Started
 -----------
