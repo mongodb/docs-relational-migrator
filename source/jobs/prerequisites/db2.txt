@@ -41,27 +41,25 @@ About this Task
 Steps
 -----
 
-.. tabs::
+.. procedure::
+   :style: normal
 
-   .. tab:: Snapshot Jobs
-      :tabid: enable-snapshot-jobs
+   .. step:: Create the ``ASNCDC`` schema
 
-      .. procedure::
-         :style: normal
+      Use the following statements to create the schema: 
 
-        .. step:: Create the ``ASNCDC`` schema
+      .. code-block:: sql
+         :copyable: true
 
-           The ``ASNCDC`` schema and table can be left empty. 
-           There is no negative impact in creating this empty table if it doesn't exist.
-           Use the following statements to create the required structure:
+         CREATE SCHEMA "ASNCDC";
 
-           .. code-block:: sql
-              :copyable: false
+   .. step:: Create the ``IBMSNAP_REGISTER`` table in the ``ASNCDC`` schema
 
-              CREATE SCHEMA "ASNCDC";
-              CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
+      There is no negative impact creating this empty table.
+      Use the following statements to create the table:
 
-   .. tab:: Continuous Jobs
-      :tabid: enable-continuous-jobs
+      .. code-block:: sql
+         :copyable: true
 
-      Continuous jobs are not currently supported on DB2 connections.
+         CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" 
+         (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
