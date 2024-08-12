@@ -36,7 +36,7 @@ Steps
 
    a. To download and install MySQL, Oracle or DB2 drivers, see the following:
 
-      .. include:: /includes/fact-driver-download-location.rst
+      .. include:: /includes/fact-driver-download-locations.rst
 
    b. Copy the driver files to ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``.
 
