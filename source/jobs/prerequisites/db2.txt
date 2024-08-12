@@ -38,6 +38,8 @@ About this Task
   facilitate sync jobs. The create index creation permission is not 
   required.
 
+- Creating the required schema and table have no impact on database performance.
+
 Steps
 -----
 
@@ -62,9 +64,4 @@ Steps
 
          CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" 
          (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
-
-      .. note::
-
-         There is no negative impact creating this empty table.
-
    
