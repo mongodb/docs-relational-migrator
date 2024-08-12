@@ -55,7 +55,6 @@ Steps
 
    .. step:: Create the ``IBMSNAP_REGISTER`` table in the ``ASNCDC`` schema
 
-      There is no negative impact creating this empty table.
       Use the following statements to create the table:
 
       .. code-block:: sql
@@ -63,3 +62,9 @@ Steps
 
          CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" 
          (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
+
+      .. note::
+
+         There is no negative impact creating this empty table.
+
+   
