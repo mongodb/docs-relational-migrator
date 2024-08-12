@@ -58,3 +58,4 @@ first sync job:
    /jobs/prerequisites/postgres
    /jobs/prerequisites/sql-server
    /jobs/prerequisites/sybase
+   /jobs/prerequisites/db2
