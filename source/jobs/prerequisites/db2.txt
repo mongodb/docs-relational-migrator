@@ -44,6 +44,10 @@ About this Task
   of DB2 tables. If this feature is important to you, create or upvote the 
   feature request on `feedback.mongodb.com <https://feedback.mongodb.com/forums/952450-relational-migrator>`__.
 
+..important::
+  
+  Relation Migrator only supports snapshot sync jobs for DB2 connections.
+
 Steps
 -----
 
