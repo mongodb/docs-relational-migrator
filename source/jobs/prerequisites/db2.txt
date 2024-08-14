@@ -10,7 +10,7 @@ Configure Migration Prerequisites for DB2
    :depth: 1
    :class: singlecol
 
-To run sync jobs from a DB2 source database, the database requires
+To run sync jobs from a DB2 source database, the target database requires
 creating a specific schema and a specific table within the schema in the 
 database you are migrating. If Relational Migrator determines the database 
 needs configuration changes, it automatically generates a SQL script with 
