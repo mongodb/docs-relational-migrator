@@ -145,11 +145,11 @@ Relational Migrator sets default `Debezium source connector properties
 <https://debezium.io/documentation/reference/stable/connectors/mysql.html#mysql-connector-properties>`__
 for each supported source database. The connector properties can be 
 overridden by adding them in the ``user.properties`` file with the prefix 
-``migrator.connector.source.common``. For example: 
+``migrator.connector.sink.common``. For example: 
 
 .. code-block::
 
-   migrator.connector.source.common.errors.max.retries: 0
+   migrator.connector.sink.common.errors.max.retries: 0
 
 In this example, the default value is five but it has now been set to zero. This means
 there is no retries after a retriable failure.
