@@ -70,7 +70,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     
     Cleans up the topics created during the last migration job.
 
-   ``migrator.connector.sink.common.errors.max.retries``
+   ``migrator.connector.source.common.errors.max.retries``
     *Default*: 5
 
     For the source connector, it specifies the maximum number of retries on a 
@@ -90,7 +90,7 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     For the source connector, it specifies the maximum delay in milliseconds 
     between retries after a retriable failure.
 
-   ``migrator.connector.sink.common.errors.max.retries``
+   ``migrator.connector.source.common.errors.max.retries``
     *Default*: 5
     
     For the sink connector, it specifies the maximum number of retries on a 
@@ -149,7 +149,7 @@ overridden by adding them in the ``user.properties`` file with the prefix
 
 .. code-block::
 
-   migrator.connector.sink.common.errors.max.retries: 0
+   migrator.connector.source.common.errors.max.retries: 0
 
 In this example, the default value is five but it has now been set to zero. This means
 there is no retries after a retriable failure.
@@ -165,7 +165,7 @@ overridden by adding them in the ``user.properties`` file with the prefix
 
 .. code-block::
 
-   migrator.connector.sink.common.errors.max.retries: 0
+   migrator.connector.source.common.errors.max.retries: 0
 
 In this example, the default value is five but it has now been set to zero. This means
 there is no retries after a retriable failure.
