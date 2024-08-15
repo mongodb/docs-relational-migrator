@@ -77,20 +77,20 @@ Provide optional configuration settings by updating your ``user.properties`` fil
     retriable failure. Relational Migrator attempts recovery from source database 
     retriable failures up to a set limit before the job fails.
 
-   ``migrator.connector.sink.common.errors.retry.initial.max.ms``
+   ``migrator.connector.source.common.errors.retry.initial.max.ms``
     *Default*: 30000 ms
 
     For the source connector, it specifies the delay in milliseconds to start 
     again after a retriable failure. The value is doubled after every retry but 
-    does not exceed ``migrator.connector.sink.common.errors.retry.delay.max.ms``.
+    does not exceed ``migrator.connector.source.common.errors.retry.delay.max.ms``.
 
-   ``migrator.connector.sink.common.errors.retry.delay.max.ms``
+   ``migrator.connector.source.common.errors.retry.delay.max.ms``
     *Default*: 60000 ms
 
     For the source connector, it specifies the maximum delay in milliseconds 
     between retries after a retriable failure.
 
-   ``migrator.connector.source.common.errors.max.retries``
+   ``migrator.connector.sink.common.errors.max.retries``
     *Default*: 5
     
     For the sink connector, it specifies the maximum number of retries on a 
@@ -145,7 +145,7 @@ Relational Migrator sets default `Debezium source connector properties
 <https://debezium.io/documentation/reference/stable/connectors/mysql.html#mysql-connector-properties>`__
 for each supported source database. The connector properties can be 
 overridden by adding them in the ``user.properties`` file with the prefix 
-``migrator.connector.sink.common``. For example: 
+``migrator.connector.source.common``. For example: 
 
 .. code-block::
 
@@ -161,11 +161,11 @@ Relational Migrator sets default Migrator `sink connector properties
 <https://docs.confluent.io/platform/current/installation/configuration/connect/sink-connect-configs.html>`__
 for each supported source database. The connector properties can be 
 overridden by adding them in the ``user.properties`` file with the prefix 
-``migrator.connector.sink.common``. For example:
+``migrator.connector.source.common``. For example:
 
 .. code-block::
 
-   migrator.connector.source.common.errors.max.retries: 0
+   migrator.connector.sink.common.errors.max.retries: 0
 
 In this example, the default value is five but it has now been set to zero. This means
 there is no retries after a retriable failure.
