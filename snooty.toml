@@ -49,12 +49,19 @@ migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
 
 [[banners]]
-# Warning for non-genuine deployment usage with tool binaries.
 targets = [
-        "jobs/prerequisites/sybase.txt",
+        "jobs/prerequisites/sybase.txt"
+        ]
+variant = "warning"
+value = """\
+        DB2 connections are currently in public preview. Users looking to fast track a production-grade migration, please contact your account representative to engage in a guided evaluation. 
+        """
+
+targets = [
         "jobs/prerequisites/db2.txt"
         ]
 variant = "warning"
 value = """\
-        This connection type is in public preview and is still under active development and testing. Functionality, performance, and user experience may change before the official release. 
+        Sybase connections are currently in public preview. Users looking to fast track a production-grade migration, please contact your account representative to engage in a guided evaluation. 
         """
+
