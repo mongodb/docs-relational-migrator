@@ -50,18 +50,11 @@ migrator-api-endpoints = "Endpoints"
 
 [[banners]]
 targets = [
-        "jobs/prerequisites/db2.txt"
-        ]
-variant = "warning"
-value = """\
-        DB2 connections are currently in public preview. Users looking to fast track a production-grade migration, please contact your account representative to engage in a guided evaluation. 
-        """
-
-targets = [
+        "jobs/prerequisites/db2.txt",
         "jobs/prerequisites/sybase.txt"
         ]
 variant = "warning"
 value = """\
-        Sybase connections are currently in public preview. Users looking to fast track a production-grade migration, please contact your account representative to engage in a guided evaluation. 
+        DB2 and Sybase database support are currently in public preview. Users looking for production-grade migration assistance, please contact your account representative to engage in a guided evaluation. 
         """
 
