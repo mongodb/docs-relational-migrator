@@ -50,7 +50,7 @@ migrator-api-endpoints = "Endpoints"
 
 [[banners]]
 targets = [
-        "jobs/prerequisites/sybase.txt"
+        "jobs/prerequisites/db2.txt"
         ]
 variant = "warning"
 value = """\
@@ -58,7 +58,7 @@ value = """\
         """
 
 targets = [
-        "jobs/prerequisites/db2.txt"
+        "jobs/prerequisites/sybase.txt"
         ]
 variant = "warning"
 value = """\
