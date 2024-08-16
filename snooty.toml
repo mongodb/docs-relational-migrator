@@ -47,3 +47,14 @@ job = "sync job" #this will be updated to migration job in the near future.
 job_plural = "sync jobs" #this will be updated to migration jobs in the near future.
 migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
+
+[[banners]]
+# Warning for non-genuine deployment usage with tool binaries.
+targets = [
+        "jobs/prerequisites/sybase.txt",
+        "jobs/prerequisites/db2.txt"
+        ]
+variant = "warning"
+value = """\
+        This connection type is in public preview and is still under active development and testing. Functionality, performance, and user experience may change before the official release. 
+        """
