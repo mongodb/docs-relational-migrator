@@ -20,18 +20,18 @@ New features:
 
 - Query Converter now allows you to test your relational and converted 
   queries and compare their results. 
-- Db2 LUW database support is now in Public Preview. Users interested in 
+- DB2 LUW database support is now in Public Preview. Users interested in 
   DB2 LUW and mainframe (DB2 for i) support, please contact your MongoDB account 
   representative for full details or a guided evaluation.
 - SQL Server connections now default to ``trust server certificate``. This setting 
-  can be unchecked in the SSL tab if desired.
+  can be unchecked in the SSL tab.
 
 Fixes:
 
-- Fixed an issue where the connectors failed to upload when starting migration 
+- Fixed an issue where connectors failed to upload when starting migration 
   jobs using Confluent Cloud.
 - Fixed an issue where migration jobs failed to start for Postgres databases 
-  when the credentials were supplied via query string parameters.
+  when the credentials were supplied with query string parameters.
 - Fixed an issue where multiple synthetic foreign keys between the same tables 
   were not treated as a composite key.
 - Fixed an issue where the migration job dialog indicated that the database 
