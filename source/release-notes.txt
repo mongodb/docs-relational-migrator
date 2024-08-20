@@ -19,7 +19,7 @@ Release Notes
 New features:
 
 - Query Converter now allows you to test your relational and converted 
-  queries and compare the results in the . 
+  queries and compare the results in the :guilabel:`Test Queries` pane. 
 - DB2 LUW database support is now in Public Preview. Users interested in 
   DB2 LUW and mainframe (DB2 for i) support, please contact your MongoDB 
   account representative for full details or a guided evaluation.
