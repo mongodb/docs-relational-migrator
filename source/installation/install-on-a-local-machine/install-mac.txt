@@ -30,7 +30,7 @@ Steps
    
       .. include:: /includes/fact-driver-download-locations.rst
 
-   b. Copy the driver files to ``/Library/Application Support/MongoDB/Relational Migrator/Drivers``.
+   b. Copy the driver files to ``~/Library/Application Support/MongoDB/Relational Migrator/Drivers``.
 
       .. note::
 
