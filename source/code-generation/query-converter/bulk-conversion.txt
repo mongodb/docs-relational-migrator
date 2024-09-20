@@ -88,6 +88,6 @@ Learn More
 ----------
 
 - :ref:`rm-convert-queries`
+- :ref:`rm-convert-stored-procedures`
 - :ref:`rm-convert-triggers`
 - :ref:`rm-convert-views`
-- :ref:`rm-convert-stored-procedures`
