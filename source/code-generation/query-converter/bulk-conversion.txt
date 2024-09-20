@@ -10,15 +10,20 @@ Bulk Conversion
    :depth: 1
    :class: singlecol
 
-You can bulk convert one or more queries, stored procedures, triggers, 
-and views in bulk by enabling the multi-select toggle. Copy and paste 
-your queries into the query converter individually and then bulk convert
-a selection to update them to work with MongoDB and your migrated schema.
+You can select and convert one or more queries, stored procedures, triggers, 
+and views in bulk by enabling the multi-select toggle. Bulk conversion creates 
+a job that executes each query conversion individually from a single request.
+
+Copy and paste your queries into the query converter individually and 
+then bulk convert a selection to update them to work with MongoDB and
+your migrated schema.
 
 About this Task
 ---------------
 
 .. include:: /includes/fact-query-converter-generic.rst
+
+- .. include:: /includes/fact-query-converter-disclaimer.rst
 
 - .. include:: /includes/fact-view-query-conversion-history.rst
 
@@ -43,21 +48,21 @@ Steps
 
    .. step:: Enable multi-selection
 
-      a. Click the :guilabel:`Enable multi-selection` toggle to show the query 
-         selection pane.
+      Click the :guilabel:`Enable multi-selection` toggle to show the query 
+      selection pane.
 
    .. step:: Select your conversions
 
-      a. To include or exclude a query from your bulk conversion job,
-         click the :icon-fa5:`check-square` icon next to the field name.
+      To include or exclude a query from your bulk conversion job,
+      click the :icon-fa5:`check-square` icon next to the field name.
 
-         Optionally, you can select entire categories.
+      Optionally, you can select entire categories.
    
    .. step:: Convert and test syntax
 
-      a. Click the :guilabel:`Convert` button. Wait for your SQL code to 
-         converted. The converted MongoDB syntax code displays 
-         in the :guilabel:`Converted MongoDB Query` pane.
+      a. Click the :guilabel:`Convert` button. The converted MongoDB 
+         syntax code displays in the 
+         :guilabel:`Converted MongoDB Query` pane.
 
          .. include:: /includes/fact-query-converter-failure-errors.rst
 
