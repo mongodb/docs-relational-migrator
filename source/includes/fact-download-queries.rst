@@ -26,8 +26,8 @@ Individual Query
 
    .. step:: Download the converted query
 
-      a. Click the :icon-fa5:`download` icon to download the selected 
-         query conversion.
+      Click the :icon-fa5:`download` icon to download the selected 
+      query conversion.
 
 Multiple Queries
 ~~~~~~~~~~~~~~~~
@@ -37,18 +37,18 @@ Multiple Queries
 
    .. step:: Enable multi-selection
 
-      a. Click the :guilabel:`Enable multi-selection` toggle to show the query 
-         selection pane.
+      Click the :guilabel:`Enable multi-selection` toggle to show the query 
+      selection pane.
 
    .. step:: Select your queries
 
-      a. To include or exclude a query from your download,
-         click the :icon-fa5:`check-square` icon next to the field name.
+      To include or exclude a query from your download,
+      click the :icon-fa5:`check-square` icon next to the field name.
 
-         Optionally, you can select entire categories.
+      Optionally, you can select entire categories.
 
 
    .. step:: Download selected query conversions
 
-      a. Click the :icon-fa5:`download` icon to download the selected 
-         query conversions.
+      Click the :icon-fa5:`download` icon to download the selected 
+      query conversions.
