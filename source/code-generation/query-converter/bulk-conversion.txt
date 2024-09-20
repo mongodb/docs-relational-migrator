@@ -10,9 +10,10 @@ Bulk Conversion
    :depth: 1
    :class: singlecol
 
-You can select and convert one or more queries, stored procedures, triggers, 
-and views in bulk by enabling the multi-select toggle. Bulk conversion creates 
-a job that executes each query conversion individually from a single request.
+You can select and convert one or more queries, stored procedures, 
+triggers, and views in bulk by enabling the multi-select toggle. 
+Bulk conversion creates a job that queues and executes each query 
+conversion individually from a single request.
 
 Copy and paste your queries into the query converter individually and 
 then bulk convert a selection to update them to work with MongoDB and
