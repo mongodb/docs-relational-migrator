@@ -1,0 +1,36 @@
+.. _rm-manage-queries:
+
+==============
+Manage Queries
+==============
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Description.
+
+Filter
+------
+
+.. include:: /includes/fact-filter-queries.rst
+
+Rename
+------
+
+
+
+Delete
+------
+
+
+
+Import
+------
+
+
+
+Download
+--------
