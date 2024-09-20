@@ -87,8 +87,6 @@ Steps
 Learn More
 ----------
 
-- :ref:`sql-to-mongodb-mapping`
-- :manual:`SQL to Aggregation Mapping Chart </reference/sql-aggregation-comparison>`
 - :ref:`rm-convert-queries`
 - :ref:`rm-convert-triggers`
 - :ref:`rm-convert-views`
