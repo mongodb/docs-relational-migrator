@@ -5,6 +5,6 @@ a. Enter a text string to match against the object name and SQL
    syntax in the :guilabel:`Filter` text box or click the 
    :icon-fa5:`ellipsis-v` icon and select from the following options:
 
-   - Successful conversions
-   - Incomplete conversions
-   - Failed conversions
+   - :guilabel:`Successful conversions`
+   - :guilabel:`Incomplete conversions`
+   - :guilabel:`Failed conversions`

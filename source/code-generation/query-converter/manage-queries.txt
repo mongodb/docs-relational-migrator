@@ -34,3 +34,5 @@ Import
 
 Download
 --------
+
+.. include:: /includes/fact-download-queries.rst
