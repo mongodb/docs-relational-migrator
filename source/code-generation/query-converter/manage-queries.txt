@@ -11,8 +11,9 @@ Manage Queries
    :class: singlecol
 
 Relational Migrator provides various methods for managing your 
-queries while converting and testing. The following actions are 
-available:
+queries while converting and testing.
+
+The following actions are available:
 
 Filter
 ------
