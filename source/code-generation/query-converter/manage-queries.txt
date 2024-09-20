@@ -10,10 +10,10 @@ Manage Queries
    :depth: 1
    :class: singlecol
 
-Relational Migrator provides various methods for managing your 
+Relational Migrator provides various options for managing your 
 queries while converting and testing.
 
-The following actions are available:
+The following actions are available for Query Converter:
 
 Filter
 ------
