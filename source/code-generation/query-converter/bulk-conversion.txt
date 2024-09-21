@@ -54,10 +54,11 @@ Steps
 
    .. step:: Select your conversions
 
-      To include or exclude a query from your bulk conversion job,
-      click the :icon-fa5:`check-square` icon next to the field name.
+      - To include or exclude a query from your bulk conversion job,
+        click the :icon-fa5:`check-square` icon next to the field name.
 
-      Optionally, you can select entire categories.
+      - To include or exclude entire categories from your download,
+        click :icon-fa5:`check-square` next to the category name.
    
    .. step:: Convert and test syntax
 
