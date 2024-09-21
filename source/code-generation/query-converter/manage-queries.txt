@@ -11,7 +11,7 @@ Query Management
    :class: singlecol
 
 Relational Migrator provides various options for managing your 
-queries while converting and testing.
+queries.
 
 The following actions are available for Query Converter:
 
