@@ -1,8 +1,8 @@
 .. _rm-manage-queries:
 
-==============
-Manage Queries
-==============
+================
+Query Management
+================
 
 .. contents:: On this page
    :local:
