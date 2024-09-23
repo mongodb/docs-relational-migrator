@@ -6,6 +6,9 @@ the :guilabel:`Query Converter` pane.
    :style: normal
 
    .. step:: Select your query
-      Enter a text string to match against the object name and SQL 
-      syntax in the :guilabel:`Filter` text box or click  
-      :icon-fa5:`ellipsis-v` and select from the supplied filters.
+      Enter a text string to match against the query name in the 
+      :guilabel:`Filter` text box or click :icon-fa5:`ellipsis-v` 
+      to filter queries by their conversion status.
+
+      Manually input queries default to the full query syntax for 
+      the name field unless renamed at a later point.
