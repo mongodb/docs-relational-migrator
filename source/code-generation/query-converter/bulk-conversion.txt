@@ -22,7 +22,7 @@ About this Task
 
 - .. include:: /includes/fact-query-converter-disclaimer.rst
 
-- .. include:: /includes/fact-view-query-conversion-history.rst
+- .. include:: /includes/fact-view-query-conversion-bulk-status.rst
 
 Steps
 -----
@@ -55,6 +55,9 @@ Steps
 
       - To include or exclude entire categories from your download,
         click :icon-fa5:`check-square` next to the category name.
+
+      - To include or exclude queries by their current status, use 
+        the :ref:`Filter<filter-queries>` to select a status.
    
    .. step:: Convert and test syntax
 
