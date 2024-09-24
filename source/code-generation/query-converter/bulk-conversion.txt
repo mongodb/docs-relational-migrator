@@ -51,36 +51,40 @@ Steps
       - To include or exclude queries by their current status, use 
         the :ref:`Filter<filter-queries>` to select a status.
    
-   .. step:: Convert and test syntax
+   .. step:: Convert Queries
 
-      a. Click the :guilabel:`Convert` button. The converted MongoDB 
-         syntax code displays in the 
-         :guilabel:`Converted MongoDB Query` pane.
+      a. Click the :guilabel:`Convert` button. Selected queries are 
+         queued for conversion and execute in batches. Total progress
+         of the conversion displays at the bottom-left of the page.
+         
+         Individual query conversion status are displayed next to 
+         the query name.
+         
+         The converted MongoDB syntax code can be viewed in the 
+         :guilabel:`Converted MongoDB Query` pane. 
 
          .. include:: /includes/fact-query-converter-failure-errors.rst
 
-         .. tip:: 
+   .. step:: (Optional) Stop the bulk conversion
 
-            To rename or delete queries from your project, click the 
-            :icon-fa4:`ellipsis-h` button on the :guilabel:`SQL Query` 
-            pane and select the :icon-fa5:`pencil-alt` or 
-            :icon-fa4:`trash` icon.
+      a. Click the red :guilabel:`Terminate` button in the 
+         lower-left corner of the screen.
 
-      #. Click the :icon-fa5:`copy` icon to copy the MongoDB syntax 
-         to your clipboard.
+      #. Click the red :guilabel:`Terminate` button on the pop-up 
+         modal. Once a bulk job cancels, the bulk conversion status
+         updates to ``Bulk convert job terminated.``.
 
-      #. Test and validate the generated MongoDB syntax.
-
-         .. tip:: 
-
-            .. include:: /includes/fact-query-converter-filter.rst
-
-   .. step:: (Optional) Provide feedback on the converted query
+   .. step:: (Optional) Provide feedback on the converted queries
 
       Provide feedback on converted queries to help improve future query conversions.
       To provide feedback, click the :icon-fa5:`thumbs-up` or :icon-fa5:`thumbs-down`
       icon on the bottom right corner of the converted query panel. Then, you can 
       provide feedback details and click :guilabel:`Submit`. 
+
+Next Steps
+----------
+
+- :ref:`rm-query-converter-test-bench`
 
 Learn More
 ----------
