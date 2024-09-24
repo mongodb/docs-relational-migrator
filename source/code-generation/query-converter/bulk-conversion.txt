@@ -84,7 +84,7 @@ Steps
 Next Steps
 ----------
 
-- :ref:`rm-query-converter-test-bench`
+- Review and test converted queries: :ref:`rm-query-converter-test-bench`
 
 Learn More
 ----------
