@@ -10,10 +10,10 @@ Bulk Conversion
    :depth: 1
    :class: singlecol
 
-You can select and convert one or more queries, stored procedures, 
-triggers, and views in bulk by enabling the multi-select toggle. 
 Bulk conversion creates a job that queues and executes each query 
-conversion from a single request.
+conversion from a single request. You can select and convert one 
+or more queries, stored procedures, triggers, and views in bulk 
+by enabling the multi-select toggle. 
 
 About this Task
 ---------------
@@ -51,19 +51,28 @@ Steps
       - To include or exclude queries by their current status, use 
         the :ref:`Filter<filter-queries>` to select a status.
    
-   .. step:: Convert Queries
+   .. step:: Convert queries
 
-      a. Click the :guilabel:`Convert` button. Selected queries are 
-         queued for conversion and execute in batches. Total progress
-         of the conversion displays at the bottom-left of the page.
+      Click the :guilabel:`Convert` button. Selected queries are 
+      queued for conversion and execute in batches. Total progress
+      of the conversion displays at the bottom-left of the page.
          
-         Individual query conversion status are displayed next to 
-         the query name.
+      - Individual query conversion status are displayed next to 
+        the query name.
          
-         The converted MongoDB syntax code can be viewed in the 
-         :guilabel:`Converted MongoDB Query` pane. 
+      - The converted MongoDB syntax code can be viewed in the 
+        :guilabel:`Converted MongoDB Query` pane. 
 
-         .. include:: /includes/fact-query-converter-failure-errors.rst
+      - .. include:: /includes/fact-query-converter-failure-errors.rst
+
+      .. tip::
+
+         To stop a bulk conversion, click the red :guilabel:`Terminate` 
+         button in the lower-left corner of the screen and click the 
+         red :guilabel:`Terminate` button on the pop-up modal. Once a 
+         bulk job cancels, the bulk conversion status updates to 
+         ``Bulk convert job terminated``.
+
 
    .. step:: (Optional) Stop the bulk conversion
 
@@ -72,7 +81,7 @@ Steps
 
       #. Click the red :guilabel:`Terminate` button on the pop-up 
          modal. Once a bulk job cancels, the bulk conversion status
-         updates to ``Bulk convert job terminated.``.
+         updates to ``Bulk convert job terminated``.
 
    .. step:: (Optional) Provide feedback on the converted queries
 
