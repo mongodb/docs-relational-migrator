@@ -127,7 +127,7 @@ Bug Fixes:
   for date-typed fields. 
 - Fixed an issue where verification could be aborted for schemas with 
   composite keys when some key fields are excluded.
-- Fixed an issue where jobs would stall without progress if no tables 
+- Fixed an issue where jobs stall without progress if no tables 
   for the schema were found in the source database. 
 
 1.6.0 Changelog
