@@ -22,5 +22,5 @@ The following actions are available in Query Converter:
    :hidden:
    :titlesonly:
 
-   Filter </code-generation/query-converter/query-management/filter>
-   Download </code-generation/query-converter/query-management/download>
+   Filter </code-generation/query-converter/query-management/filter-queries>
+   Download </code-generation/query-converter/query-management/download-queries>
