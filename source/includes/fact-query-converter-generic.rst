@@ -12,4 +12,4 @@
 - Converted queries, triggers, views, and stored procedures are saved in 
   your project and persist through project import and exports.
 
-- SQL queries are limited to 10,000 text characters.
+- SQL queries are limited to 40,000 text characters.

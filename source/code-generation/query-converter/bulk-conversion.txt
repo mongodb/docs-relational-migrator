@@ -10,10 +10,16 @@ Bulk Conversion
    :depth: 1
    :class: singlecol
 
-Bulk conversion creates a job that queues and executes each query 
-conversion from a single request. You can select and convert one 
+Bulk query conversion allows you to convert a large number of 
+queries from a single UI action, avoiding the need to convert 
+each query individually. You can select and convert one 
 or more queries, stored procedures, triggers, and views in bulk 
-by enabling the multi-select toggle. 
+by enabling the multi-select toggle.
+
+Bulk conversions create a job that queues and executes each query 
+conversion in batches. You can view the status of an in-progress 
+bulk conversion or for individual queries in the 
+:guilabel:`Query Converter` pane.
 
 About this Task
 ---------------
@@ -73,16 +79,6 @@ Steps
          bulk job cancels, the bulk conversion status updates to 
          ``Bulk convert job terminated``.
 
-
-   .. step:: (Optional) Stop the bulk conversion
-
-      a. Click the red :guilabel:`Terminate` button in the 
-         lower-left corner of the screen.
-
-      #. Click the red :guilabel:`Terminate` button on the pop-up 
-         modal. Once a bulk job cancels, the bulk conversion status
-         updates to ``Bulk convert job terminated``.
-
    .. step:: (Optional) Provide feedback on the converted queries
 
       Provide feedback on converted queries to help improve future query conversions.
@@ -93,7 +89,10 @@ Steps
 Next Steps
 ----------
 
-- Review and test converted queries: :ref:`rm-query-converter-test-bench`
+After the queries have been converted, you should review them for 
+correctness before incorporating them into production code. You 
+can use the :ref:`Test Queries<rm-query-converter-test-bench>` 
+feature to help with validation.
 
 Learn More
 ----------
