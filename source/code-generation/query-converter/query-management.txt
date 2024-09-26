@@ -13,7 +13,7 @@ Query Management
 Relational Migrator provides various options for managing your 
 queries.
 
-The following actions are available for Query Converter:
+The following actions are available in Query Converter:
 
 - :ref:`rm-filter-queries`
 - :ref:`rm-download-queries`
