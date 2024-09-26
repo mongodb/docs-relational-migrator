@@ -1,3 +1,15 @@
+.. _rm-filter-queries:
+
+==============
+Filter Queries
+==============
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Allows you to filter and limit the amount of entries displayed in 
 the :guilabel:`Query Converter` pane.
 

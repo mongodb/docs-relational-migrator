@@ -1,3 +1,15 @@
+.. _rm-download-queries:
+
+================
+Download Queries
+================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
 Allows you to download completed conversions in the 
 :guilabel:`Query Converter` pane.
 

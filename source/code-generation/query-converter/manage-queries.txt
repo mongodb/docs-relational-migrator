@@ -15,27 +15,12 @@ queries.
 
 The following actions are available for Query Converter:
 
-Filter
-------
+- :ref:`rm-filter-queries`
+- :ref:`rm-download-queries`
 
-.. include:: /includes/fact-filter-queries.rst
+.. toctree::
+   :hidden:
+   :titlesonly:
 
-Rename
-------
-
-
-
-Delete
-------
-
-
-
-Import
-------
-
-
-
-Download
---------
-
-.. include:: /includes/fact-download-queries.rst
+   Filter </code-generation/query-converter/query-management/filter>
+   Download </code-generation/query-converter/query-management/download>
