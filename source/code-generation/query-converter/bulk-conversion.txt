@@ -10,7 +10,7 @@ Bulk Conversion
    :depth: 1
    :class: singlecol
 
-Bulk query conversion allows you to convert a large number of 
+Bulk query conversion allows you to convert many
 queries from a single UI action, avoiding the need to convert 
 each query individually. You can select and convert one 
 or more queries, stored procedures, triggers, and views in bulk 
@@ -89,7 +89,7 @@ Steps
 Next Steps
 ----------
 
-After the queries have been converted, you should review them for 
+After the queries have been converted, review them for 
 correctness before incorporating them into production code. You 
 can use the :ref:`Test Queries<rm-query-converter-test-bench>` 
 feature to help with validation.

@@ -13,7 +13,7 @@ an icon next to it, it was not queued for bulk conversion:
      - The conversion is pending.
 
    * - Spinner
-     - The conversion is currently being executed.
+     - The conversion is now being executed.
 
    * - Green check mark
      - The conversion was successful.

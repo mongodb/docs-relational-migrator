@@ -10,7 +10,7 @@ an icon next to it, a conversion has not been attempted yet:
      - Description
 
    * - Spinner
-     - The conversion is currently being executed.
+     - The conversion is now being executed.
 
    * - Green check mark
      - The conversion was successful.
