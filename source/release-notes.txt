@@ -19,28 +19,37 @@ Release Notes
 New features:
 
 - New bulk conversion UI and API for Query Converter to automatically 
-  convert large numbers of SQL queries, views and stored procedures.
+  convert large numbers of SQL queries, views and stored procedures. 
+  See :ref:`rm-bulk-conversion`.
 - Major performance improvements with up to 5x faster new document 
   creation. By default, snapshot jobs now create top-level documents 
   using an improved, non-idempotent bulk insert method.
 - Added explicit control over idempotency behaviour through the 
   ``migrator.engine.transform.idempotency: true`` setting in the 
   ``user.properties`` file.
-- Updated SQL Server JDBC driver to the latest version
-- Added support for Basic Authentication for Kafka
+- Updated SQL Server JDBC driver to the latest version.
+- Added Basic Authentication support for Kafka.
 - Added more detailed logging in the application's log file in the 
-  event of migration errors
-- Simplified the structure of Java POJO classes in Code Generation
+  event of migration errors.
+- Simplified the structure of Java POJO classes in Code Generation.
 
 Bug fixes:
 
-- Fixed an issue where tables would be deselected for import into a project after filtering the table list.
-- Fixed a UI issue with the Migration Job Log which prevented it from being resized when it contained a large number of entries.
-- Fixed an issue where remote API calls such as query conversions were not routed through the system proxy
-- Fixed an issue where individual rows exceeding the 16MB document limit caused the job to stop immediately, instead of continuing up to the error threshold. 
-- Fixed an issue where data verification was unable to detect some issues caused by precision differences between source and target data types.
+- Fixed an issue where tables would be deselected for import into a 
+  project after filtering the table list.
+- Fixed a UI issue with the Migration Job Log which prevented it 
+  from being resized when it contained a large number of entries.
+- Fixed an issue where remote API calls such as query conversions 
+  were not routed through the system proxy.
+- Fixed an issue where individual rows exceeding the 16MB document 
+  limit caused the job to stop immediately, instead of continuing 
+  up to the error threshold. 
+- Fixed an issue where data verification was unable to detect some 
+  issues caused by precision differences between source and target 
+  data types.
 - Fixed an issue where each query could be imported twice.
-- Fixed an issue where converted queries sometimes used incorrect paths for embedded mappings.
+- Fixed an issue where converted queries sometimes used incorrect 
+  paths for embedded mappings.
 
 1.9.0 Changelog
 ---------------
