@@ -12,19 +12,18 @@ Release Notes
 
 
 1.10.0 Changelog
----------------
+----------------
 
 *Released October 1, 2024*
 
 New features:
 
 - New bulk conversion UI and API for Query Converter to automatically 
-  convert large numbers of SQL queries, views and stored procedures. 
+  convert large numbers of SQL queries, views, and stored procedures. 
   See :ref:`rm-bulk-conversion`.
-- Major performance improvements with up to 5x faster new document 
-  creation. By default, snapshot jobs now create top-level documents 
-  using an improved, non-idempotent bulk insert method.
-- Added explicit control over idempotency behaviour through the 
+- Snapshot jobs now create top-level documents using a non-idempotent 
+  bulk insert method. This improves performance.
+- Added explicit control over idempotent behavior through the 
   ``migrator.engine.transform.idempotency: true`` setting in the 
   ``user.properties`` file.
 - Updated SQL Server JDBC driver to the latest version.
@@ -35,7 +34,7 @@ New features:
 
 Bug fixes:
 
-- Fixed an issue where tables would be deselected for import into a 
+- Fixed an issue where tables were deselected for import into a 
   project after filtering the table list.
 - Fixed a UI issue with the Migration Job Log which prevented it 
   from being resized when it contained a large number of entries.
