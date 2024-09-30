@@ -26,7 +26,7 @@ New features:
 - Added explicit control over idempotent behavior through the 
   ``migrator.engine.transform.idempotency: true`` setting in the 
   ``user.properties`` file.
-- Internal indexes used for migration are now delete automatically  
+- Internal indexes used for migration are automatically deleted
   after job completion. This improves performance.
 - Updated SQL Server JDBC driver to the latest version.
 - Added Basic Authentication support for Kafka.
