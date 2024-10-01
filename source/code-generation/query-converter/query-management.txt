@@ -11,7 +11,17 @@ Query Management
    :class: singlecol
 
 Relational Migrator provides various options for managing your 
-queries in Query Converter:
+queries in Query Converter.
+
+Use Cases
+---------
+
+- Filter queries by name or status.
+- Download converted queries individually or in bulk.
+
+
+Get Started
+-----------
 
 - :ref:`rm-filter-queries`
 - :ref:`rm-download-queries`
