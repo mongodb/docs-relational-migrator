@@ -16,8 +16,8 @@ and avoid copying each result by hand.
 About this Task
 ---------------
 
-- Individual queries are saved in a `txt` file.
-- Multiple queries are saved in a `zip` archive.
+- Individual queries are saved in a ``txt`` file.
+- Multiple queries are saved in a ``zip`` archive.
 
 Steps
 -----
