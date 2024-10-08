@@ -43,14 +43,15 @@ Recoverability
 Behavior
 --------
 
-Sync jobs are non-impodent by default. Sync jobs insert new documents each 
-time they are run, with the option to delete each collection at 
-the start of the dialogue.
+Sync jobs are non-impodent by default. Relational Migrator inserts new 
+documents and embeded arrays each time a job is run, with the option to 
+delete each existing collection at the start of the sync dialogue.
 
-You can enable impodent inserts for documents and arrays by setting 
-``migrator.engine.transform.idempotency: true`` in the ``user.properties`` file 
-to automatically delete document inserts from the previous sync job. Enabling 
-impodency may have substantial performance impact on large jobs.
+You can enable impodent inserts for documents and embedded arrays to 
+delete document inserts from the previous sync job automatically by 
+setting ``migrator.engine.transform.idempotency: true`` in the 
+``user.properties`` file. Enabling impodency may have substantial 
+performance impact on large jobs.
 
 Get Started
 -----------
