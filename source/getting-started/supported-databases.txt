@@ -51,7 +51,7 @@ Relational Migrator supports the following source databases:
      - 10 and higher
      - Self hosted, AWS RDS/Aurora, Azure Database
 
-   * - `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`
+   * - `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`__
      - 10 and higher
      - Self hosted, AWS RDS/Aurora, Azure Database
 
@@ -65,9 +65,7 @@ Relational Migrator supports the following source databases:
 
    * - :ref:`DB2 <rm-prereq-db2>` (Public Preview)
      - [TBD]
-     - Self hosted, AWS RDS
-
-.. [1] `TimescaleDB hypertables <https://docs.timescale.com/use-timescale/latest/hypertables/>`__ are supported for PostgreSQL. 
+     - Self hosted, AWS RDS 
 
 MongoDB Databases and Versions
 ------------------------------
