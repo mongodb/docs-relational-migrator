@@ -92,6 +92,7 @@ You can disable telemetry by editing the application's
 Relational Migrator:
 
 .. code-block::
+
    migrator.app.telemetry.enable: false 
 
 System Hardware
