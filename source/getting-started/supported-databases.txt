@@ -64,7 +64,7 @@ Relational Migrator supports the following source databases:
      - Self hosted
 
    * - :ref:`DB2 <rm-prereq-db2>` (Public Preview)
-     - [11.5 and higher
+     - 11.5 and higher
      - Self hosted, AWS RDS 
 
 MongoDB Databases and Versions
