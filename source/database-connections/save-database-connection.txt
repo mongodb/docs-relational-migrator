@@ -1,0 +1,53 @@
+.. _rm-save-database-connection
+
+============================================
+Save a Database Connection
+============================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can save a new relational database or MongoDB connection when entering the
+information for a job or other procedure, or you can do so from the Relational 
+Migrator :guilabel:`Connections` page.
+
+Save a MongoDB Connection
+-------------------------
+
+.. procedure::
+
+   .. step:: Add a new connection.
+      
+      Under :guilabel:`MongoDB`, click :guilabel:`Add Connection`.
+
+Save a Relational Database Connection
+-------------------------------------
+
+.. tabs::
+
+   .. tab:: Oracle
+      :tabid: db-oracle
+
+      .. procedure::
+
+         .. step:: Add a new connection.
+      
+            Under :guilabel:`Relational` click :guilabel:`Add Connection`.
+
+         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Oracle`.
+
+         .. step:: Test
+
+   .. tab:: SQL Server
+      :tabid: db-sql
+
+   .. tab:: MySQL
+      :tabid: db-mysql
+
+   .. tab:: PostgreSQL
+      :tabid: db-postgresql

@@ -32,12 +32,17 @@ Creating a project with a live connection is the recommended process for startin
 Steps
 -----
 
-1. Click :guilabel:`New Project` at the top-right of the Relational Migrator home screen.
+1. Click :guilabel:`New Project` at the top-right of the Relational Migrator
+   home screen. 
 
 #. Click the :guilabel:`Connect database` button.
 
-#. Select a database type. Relational Migrator supports migrating from the following 
-   database types: 
+#. :guilabel:`Add a new connection` is selected by default. If you already have
+   a :ref:`saved connection <rm-database-connections>` for your database, click
+   :guilabel:`Use a saved connection` to use it.
+
+#. Select a database type. Relational Migrator supports migrating from the 
+   following database types: 
 
    - MySQL
    - Oracle
