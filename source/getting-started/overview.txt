@@ -32,6 +32,10 @@ UI Elements
        :guilabel:`Code Generation`, and :guilabel:`Data Migration` views. 
        You can also navigate back to the project home screen, 
        configure project settings, and access the help menu.
+
+   * - Database Connections Bar
+     - View, change, or add your active MongoDB and relational database 
+       :ref:`connections <rm-database-connections>`.
   
    * - Left Pane
      - :guilabel:`Manage` your relational connections. Filter and 
