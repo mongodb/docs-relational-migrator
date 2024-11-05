@@ -34,7 +34,7 @@ UI Elements
        configure project settings, and access the help menu.
 
    * - Database Connections Bar
-     - View, change, or add your active MongoDB and relational database 
+     - View, change, or add MongoDB and relational database 
        :ref:`connections <rm-database-connections>`.
   
    * - Left Pane
