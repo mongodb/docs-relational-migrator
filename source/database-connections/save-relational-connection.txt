@@ -28,9 +28,13 @@ Steps
       .. procedure::
          :style:  normal
 
-         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Add a connection.
+            
+            Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Oracle`.
+         .. step:: Select the database type.
+            
+            In the :guilabel:`Database type` drop-down, select :guilabel:`Oracle`.
             
          .. step:: To use a saved connection string or input one directly:
    
@@ -72,9 +76,13 @@ Steps
       .. procedure::
          :style:  normal
 
-         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Add a connection.
+            
+            Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`SQL Server`.
+         .. step:: Select the database type.
+            
+            In the :guilabel:`Database type` drop-down, select :guilabel:`SQL Server`.
             
          .. step:: To use a saved connection string or input one directly:
    
@@ -121,9 +129,13 @@ Steps
       .. procedure::
          :style:  normal
 
-         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Add a connection.
+            
+            Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`MySQL`.
+         .. step:: Select the database type.
+            
+            In the :guilabel:`Database type` drop-down, select :guilabel:`MySQL`.
             
          .. step:: To use a saved connection string or input one directly:
    
@@ -170,9 +182,13 @@ Steps
       .. procedure::
          :style:  normal
 
-         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Add a connection.
+            
+            Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`PostgreSQL`.
+         .. step:: Select the database type.
+            
+            In the :guilabel:`Database type` drop-down, select :guilabel:`PostgreSQL`.
             
          .. step:: To use a saved connection string or input one directly:
    
@@ -219,9 +235,13 @@ Steps
       .. procedure::
          :style:  normal
 
-         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Add a connection.
+            
+            Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Db2`.
+         .. step:: Select the database type.
+            
+            In the :guilabel:`Database type` drop-down, select :guilabel:`Db2`.
             
          .. step:: To use a saved connection string or input one directly:
    
@@ -262,9 +282,13 @@ Steps
       .. procedure::
          :style:  normal
 
-         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Add a connection.
+            
+            Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-         .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Sybase ASE`.
+         .. step:: Select the database type.
+            
+            In the :guilabel:`Database type` drop-down, select :guilabel:`Sybase ASE`.
             
          .. step:: To use a saved connection string or input one directly:
    
