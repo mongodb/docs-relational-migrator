@@ -13,7 +13,8 @@ Save a Relational Database Connection
    :depth: 1
    :class: singlecol
 
-You can save a new relational database connection from the Relational Migrator :guilabel:`Connections` page, or when creating or modifying a sync job.
+You can save a new relational database connection from the Relational Migrator
+:guilabel:`Connections` page, or when creating or modifying a sync job.
 
 
 Steps
@@ -25,19 +26,21 @@ Steps
       :tabid: db-oracle
 
       .. procedure::
+         :style:  normal
 
-         .. step:: Add a new connection.
-      
-            Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
          .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Oracle`.
             
-         .. step:: If you have a saved :ref:`connection string <rm-connection-strings>`:
+         .. step:: To use a saved connection string or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
+            
+            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
          .. step:: If you don't have a saved connection string, create it by 
             entering the following information:
@@ -47,7 +50,7 @@ Steps
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
             use for authentication.
                
-            Checking :guilabel:`Save password` saves your password securely on 
+            Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
@@ -67,19 +70,21 @@ Steps
       :tabid: db-sql
 
       .. procedure::
+         :style:  normal
 
-         .. step:: Add a new connection.
-      
-            Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
          .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`SQL Server`.
             
-         .. step:: To use a saved :ref:`connection string <rm-connection-strings>`:
+         .. step:: To use a saved connection string or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
+            
+            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
          .. step:: If you don't have a saved connection string, create it by 
             entering the following information:
@@ -89,7 +94,7 @@ Steps
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
             use for authentication.
                
-            Checking :guilabel:`Save password` saves your password securely on 
+            Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
@@ -114,19 +119,21 @@ Steps
       :tabid: db-mysql
 
       .. procedure::
+         :style:  normal
 
-         .. step:: Add a new connection.
-      
-            Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
          .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`MySQL`.
             
-         .. step:: To use a saved :ref:`connection string <rm-connection-strings>`:
+         .. step:: To use a saved connection string or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
+            
+            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
          .. step:: If you don't have a saved connection string, create it by 
             entering the following information:
@@ -136,7 +143,7 @@ Steps
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
             use for authentication.
                
-            Checking :guilabel:`Save password` saves your password securely on 
+            Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
@@ -161,19 +168,21 @@ Steps
       :tabid: db-postgresql
 
       .. procedure::
+         :style:  normal
 
-         .. step:: Add a new connection.
-      
-            Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
          .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`PostgreSQL`.
             
-         .. step:: To use a saved :ref:`connection string <rm-connection-strings>`:
+         .. step:: To use a saved connection string or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
+            
+            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
          .. step:: If you don't have a saved connection string, create it by 
             entering the following information:
@@ -183,7 +192,7 @@ Steps
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
             use for authentication.
                
-            Checking :guilabel:`Save password` saves your password securely on 
+            Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
@@ -208,19 +217,21 @@ Steps
       :tabid: db-db2
 
       .. procedure::
+         :style:  normal
 
-         .. step:: Add a new connection.
-      
-            Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
          .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Db2`.
             
-         .. step:: To use a saved :ref:`connection string <rm-connection-strings>`:
+         .. step:: To use a saved connection string or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
+            
+            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
          .. step:: If you don't have a saved connection string, create it by 
             entering the following information:
@@ -230,7 +241,7 @@ Steps
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
             use for authentication.
                
-            Checking :guilabel:`Save password` saves your password securely on 
+            Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
@@ -249,19 +260,21 @@ Steps
       :tabid: db-sybase
 
       .. procedure::
+         :style:  normal
 
-         .. step:: Add a new connection.
-      
-            Under :guilabel:`Relational` click :guilabel:`Add connection`.
+         .. step:: Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
          .. step:: In the :guilabel:`Database type` drop-down, select :guilabel:`Sybase ASE`.
             
-         .. step:: To use a saved :ref:`connection string <rm-connection-strings>`:
+         .. step:: To use a saved connection string or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
+            
+            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
          .. step:: If you don't have a saved connection string, create it by 
             entering the following information:
@@ -271,7 +284,7 @@ Steps
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
             use for authentication.
                
-            Checking :guilabel:`Save password` saves your password securely on 
+            Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
