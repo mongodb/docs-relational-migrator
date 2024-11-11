@@ -36,28 +36,28 @@ Steps
             
             In the :guilabel:`Database type` drop-down, select :guilabel:`Oracle`.
             
-         .. step:: To use a saved :ref:`connection strings <rm-connection-strings>` or input one directly:
+         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
+               a. Above the :guilabel:`JDBC URI` field, enable the
+                  :guilabel:`Enter URI manually` toggle.
 
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
+               #. Paste your connection string into the :guilabel:`JDBC URI`
+                  field.
 
          .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+                   entering the following information:
 
             .. include:: /includes/table-oracle-connection-fields.rst
 
          .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication.
+                   use for authentication.
                
             Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
          .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+                   :guilabel:`Environment tag`.
                
             Environment tags color code and organize connections for 
             convenience. Leaving the drop-down empty is the same as selecting 
