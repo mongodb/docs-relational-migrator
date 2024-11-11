@@ -38,11 +38,11 @@ Steps
             
          .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
-               a. Above the :guilabel:`JDBC URI` field, enable the
-                  :guilabel:`Enter URI manually` toggle.
+            a. Above the :guilabel:`JDBC URI` field, enable the
+               :guilabel:`Enter URI manually` toggle.
 
-               #. Paste your connection string into the :guilabel:`JDBC URI`
-                  field.
+            #. Paste your connection string into the :guilabel:`JDBC URI`
+               field.
 
          .. step:: If you don't have a saved connection string, create it by entering the following information:
 
