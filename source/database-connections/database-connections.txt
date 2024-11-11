@@ -12,19 +12,15 @@ Database Connections
    :depth: 1
    :class: singlecol
 
-You can save connection settings for both relational and MongoDB databases on
-the Relational Migrator :guilabel:`Connections` page. You can use saved
-connection information for any task that requires connecting to a relational or
-MongoDB database. Saving a Database Connection lets you maintain an "active"
-connection as the default while working in your project.
-
-You can also save connection information as a :ref:`connection string
-<rm-connection-strings>`, but doing this doesn't add it to the
-:ref:`Database Connections Bar <rm-project-overview>`.
+You can save connection settings for both relational and MongoDB databases as
+"Database Connections" on the Relational Migrator :guilabel:`Connections` page.
+You can use a saved database connection for any task that requires connecting
+to a relational or MongoDB database.
 
 .. toctree::
    :titlesonly:
    :hidden:
 
-   Save </database-connections/save-database-connection>
+   Save MongoDB Connection </database-connections/save-mongodb-connection>
+   Save Relational Connection </database-connections/save-relational-connection>
    Connection Strings </connection-strings/connection-strings>
