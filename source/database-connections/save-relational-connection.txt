@@ -79,23 +79,19 @@ Steps
             
             In the :guilabel:`Database type` drop-down, select :guilabel:`SQL Server`.
             
-         .. step:: To use a saved connection string or input one directly:
+         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
-            
-            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-sql-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication.
+         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
                
             Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
@@ -107,8 +103,7 @@ Steps
             
             #. Select an SSL mode.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
             Environment tags color code and organize connections for 
             convenience. Leaving the drop-down empty is the same as selecting 
@@ -132,23 +127,19 @@ Steps
             
             In the :guilabel:`Database type` drop-down, select :guilabel:`MySQL`.
             
-         .. step:: To use a saved connection string or input one directly:
+         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
-            
-            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-mysql-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication.
+         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
                
             Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
@@ -160,8 +151,7 @@ Steps
             
             #. Select an SSL mode.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
             Environment tags color code and organize connections for 
             convenience. Leaving the drop-down empty is the same as selecting 
@@ -185,23 +175,19 @@ Steps
             
             In the :guilabel:`Database type` drop-down, select :guilabel:`PostgreSQL`.
             
-         .. step:: To use a saved connection string or input one directly:
+         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
-            
-            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-postgresql-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication.
+         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
                
             Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
@@ -213,8 +199,7 @@ Steps
             
             #. Select an SSL mode.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
             Environment tags color code and organize connections for 
             convenience. Leaving the drop-down empty is the same as selecting 
@@ -238,30 +223,25 @@ Steps
             
             In the :guilabel:`Database type` drop-down, select :guilabel:`Db2`.
             
-         .. step:: To use a saved connection string or input one directly:
+         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
 
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
-            
-            For more information, see :ref:`connection strings <rm-connection-strings>`.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-db2-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication.
+         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
                
             Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
             Environment tags color code and organize connections for 
             convenience. Leaving the drop-down empty is the same as selecting 
@@ -285,7 +265,7 @@ Steps
             
             In the :guilabel:`Database type` drop-down, select :guilabel:`Sybase ASE`.
             
-         .. step:: To use a saved :ref:`connection strings <rm-connection-strings>` or input one directly:
+         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
    
             a. Above the :guilabel:`JDBC URI` field, enable the
                :guilabel:`Enter URI manually` toggle.
@@ -293,20 +273,17 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication.
+         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
                
             Checking :guilabel:`Save password` saves the password securely on 
             your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field for the current project.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
             Environment tags color code and organize connections for 
             convenience. Leaving the drop-down empty is the same as selecting 

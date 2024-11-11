@@ -14,16 +14,16 @@
 
             #. Paste your connection string into the ``JDBC URI`` field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-oracle-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication, and optionally check :guilabel:`Save password`.
+         .. step:: Enter credentials.
+            
+            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
+            authentication, and optionally check :guilabel:`Save password`.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
          .. step:: Click :guilabel:`Save`.
 
@@ -35,13 +35,14 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-sql-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication, and optionally check :guilabel:`Save password`.
+         .. step:: Enter credentials.
+            
+            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
+            authentication, and optionally check :guilabel:`Save password`.
 
          .. step:: To connect using SSL:
             
@@ -49,8 +50,7 @@
             
             #. Select an SSL mode.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
          .. step:: Click :guilabel:`Save`.
 
@@ -61,13 +61,14 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-mysql-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication, and optionally check :guilabel:`Save password`.
+         .. step:: Enter credentials.
+            
+            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
+            authentication, and optionally check :guilabel:`Save password`.
 
          .. step:: To connect using SSL:
             
@@ -75,8 +76,7 @@
             
             #. Select an SSL mode.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
          .. step:: Click :guilabel:`Save`.
 
@@ -87,13 +87,14 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-postgresql-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication, and optionally check :guilabel:`Save password`.
+         .. step:: Enter credentials.
+            
+            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
+            authentication, and optionally check :guilabel:`Save password`.
 
          .. step:: To connect using SSL:
             
@@ -101,8 +102,7 @@
             
             #. Select an SSL mode.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
          .. step:: Click :guilabel:`Save`.
 
@@ -113,16 +113,16 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-db2-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication, and optionally check :guilabel:`Save password`.
+         .. step:: Enter credentials.
+            
+            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
+            authentication, and optionally check :guilabel:`Save password`.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
          .. step:: Click :guilabel:`Save`.
 
@@ -133,15 +133,15 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by 
-            entering the following information:
+         .. step:: If you don't have a saved connection string, create it by entering the following information:
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
-         .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to 
-            use for authentication, and optionally check :guilabel:`Save password`.
+         .. step:: Enter credentials.
+            
+            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
+            authentication, and optionally check :guilabel:`Save password`.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an 
-            :guilabel:`Environment tag`.
+         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
                
          .. step:: Click :guilabel:`Save`.
