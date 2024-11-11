@@ -46,8 +46,6 @@ toc_landing_pages = [
 [constants]
 connector-version = "2.7.0"
 ddl = ":abbr:`DDL (Data Definition Language)`"
-job = "migration job"
-job_plural = "migration jobs"
 migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
 
