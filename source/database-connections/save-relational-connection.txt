@@ -44,7 +44,7 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-oracle-connection-fields.rst
 
@@ -87,7 +87,7 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-sql-connection-fields.rst
 
@@ -135,7 +135,7 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-mysql-connection-fields.rst
 
@@ -183,7 +183,7 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-postgresql-connection-fields.rst
 
@@ -231,7 +231,7 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-db2-connection-fields.rst
 
@@ -273,7 +273,7 @@ Steps
             #. Paste your connection string into the :guilabel:`JDBC URI`
                field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-sybase-connection-fields.rst
 

@@ -14,11 +14,11 @@
 
             #. Paste your connection string into the ``JDBC URI`` field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-oracle-connection-fields.rst
 
-         .. step:: Enter credentials.
+         .. step:: Enter connection credentials.
             
             Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
             authentication, and optionally check :guilabel:`Save password`.
@@ -35,11 +35,11 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-sql-connection-fields.rst
 
-         .. step:: Enter credentials.
+         .. step:: Enter connection credentials.
             
             Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
             authentication, and optionally check :guilabel:`Save password`.
@@ -61,11 +61,11 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-mysql-connection-fields.rst
 
-         .. step:: Enter credentials.
+         .. step:: Enter connection credentials.
             
             Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
             authentication, and optionally check :guilabel:`Save password`.
@@ -87,11 +87,11 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-postgresql-connection-fields.rst
 
-         .. step:: Enter credentials.
+         .. step:: Enter connection credentials.
             
             Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
             authentication, and optionally check :guilabel:`Save password`.
@@ -113,11 +113,11 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-db2-connection-fields.rst
 
-         .. step:: Enter credentials.
+         .. step:: Enter connection credentials.
             
             Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
             authentication, and optionally check :guilabel:`Save password`.
@@ -133,11 +133,11 @@
 
          .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
 
-         .. step:: If you don't have a saved connection string, create it by entering the following information:
+         .. step:: If you don't have a connection string, create it by entering the following information:
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
-         .. step:: Enter credentials.
+         .. step:: Enter connection credentials.
             
             Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
             authentication, and optionally check :guilabel:`Save password`.
