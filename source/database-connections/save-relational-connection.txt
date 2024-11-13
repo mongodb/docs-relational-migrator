@@ -73,27 +73,27 @@ Steps
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
-.. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
-      
-   Checking :guilabel:`Save password` saves the password securely on 
-   your machine. Relational Migrator automatically fills in the 
-   :guilabel:`Password` field for the current project.
+   .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
+         
+      Checking :guilabel:`Save password` saves the password securely on 
+      your machine. Relational Migrator automatically fills in the 
+      :guilabel:`Password` field for the current project.
 
-.. step:: Optionally, if you are connecting to a SQL, MySQL, or PostgreSQL server, you can connect using SSL:
-                     
-   a. Toggle from :guilabel:`General` to :guilabel:`SSL`.
-                     
-   #. Select an SSL mode.
+   .. step:: Optionally, if you are connecting to a SQL, MySQL, or PostgreSQL server, you can connect using SSL:
+                        
+      a. Toggle from :guilabel:`General` to :guilabel:`SSL`.
+                        
+      #. Select an SSL mode.
 
-.. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-      
-   Environment tags color code and organize connections for 
-   convenience. Leaving the drop-down empty is the same as selecting 
-   the "None" tag.
+   .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
+         
+      Environment tags color code and organize connections for 
+      convenience. Leaving the drop-down empty is the same as selecting 
+      the "None" tag.
 
-.. step:: Optionally, click :guilabel:`Test connection`.
+   .. step:: Optionally, click :guilabel:`Test connection`.
 
-   Relational Migrator attempts to authenticates and connects to the
-   database.
-      
-.. step:: Click :guilabel:`Save`.
+      Relational Migrator attempts to authenticates and connects to the
+      database.
+         
+   .. step:: Click :guilabel:`Save`.
