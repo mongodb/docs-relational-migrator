@@ -27,97 +27,49 @@ Steps
       
       Under :guilabel:`Relational` click :guilabel:`Add connection`.
 
-   .. step:: In the :guilabel:`Database type` drop-down, select the database type and input its information.
+   .. step:: Select the database type.
+      
+      In the :guilabel:`Database type` drop-down, select the database.
+
+   .. step:: To input a :ref:`connection string <rm-connection-strings>` directly:
+
+      a. Above the :guilabel:`JDBC URI` field, enable the :guilabel:`Enter URI manually` toggle.
+
+      #. Paste your connection string into the :guilabel:`JDBC URI` field.
+
+   .. step:: To create a connection string by entering database information:
+
+      Enter the following:
 
       .. tabs::
 
          .. tab:: Oracle
             :tabid: db-oracle
 
-            To input a :ref:`connection string <rm-connection-strings>` directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
-
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
-
-            Or, create a connection string by entering the following:
-
             .. include:: /includes/table-oracle-connection-fields.rst
 
          .. tab:: SQL Server
             :tabid: db-sql
-
-            To input a :ref:`connection string <rm-connection-strings>` directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
-
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
-
-            Or, create a connection string by entering the following:
 
             .. include:: /includes/table-sql-connection-fields.rst
 
          .. tab:: MySQL
             :tabid: db-mysql
 
-            To input a :ref:`connection string <rm-connection-strings>` directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
-
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
-
-            Or, create a connection string by entering the following:
-
             .. include:: /includes/table-mysql-connection-fields.rst
             
          .. tab:: PostgreSQL
             :tabid: db-postgresql
-
-            To input a :ref:`connection string <rm-connection-strings>` directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
-
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
-
-            Or, create a connection string by entering the following:
 
             .. include:: /includes/table-postgresql-connection-fields.rst
 
          .. tab:: Db2
             :tabid: db-db2
 
-            To input a :ref:`connection string <rm-connection-strings>` directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
-
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
-
-            Or, create a connection string by entering the following:
-
             .. include:: /includes/table-db2-connection-fields.rst
 
          .. tab:: Sybase
             :tabid: db-sybase
-
-            To input a :ref:`connection string <rm-connection-strings>` directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
-
-            #. Paste your connection string into the :guilabel:`JDBC URI`
-               field.
-
-            Or, create a connection string by entering the following:
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
