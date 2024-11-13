@@ -55,5 +55,8 @@ Steps
       Leaving the drop-down empty is the same as selecting the "None" tag.
 
    .. step:: Optionally, click :guilabel:`Test connection`.
+
+      Relational Migrator attempts to authenticates and connects to the
+      database.
          
    .. step:: Click :guilabel:`Save`.
