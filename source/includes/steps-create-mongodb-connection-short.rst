@@ -29,16 +29,19 @@ a. Enter your connection information.
       .. tab:: Enter MongoDB URI
          :tabid: enter-mongodb-uri
 
-         In the :guilabel:`MongoDB connection string (URI)` field, input
-         your :ref:`MongoDB URI <rm-mongodb-database-connection-strings>`.
+         a. In the :guilabel:`MongoDB connection string (URI)` field, input
+            your :manual:`MongoDB URI <mongodb-uri>`.
 
-         If you leave the form :guilabel:`Database`, :guilabel:`Username`, 
-         or :guilabel:`Password` fields blank, Relational Migrator uses the
-         values from the URI.
-
-#. (Optional) In the :guilabel:`Database` field, enter the name of the database to connect to.
-
-#. Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
+         #. (Optional) In the :guilabel:`Database` field, enter the name of
+            the database to connect to.
+         
+         #. If they aren't included in the connection string, enter the 
+            :guilabel:`Username` and :guilabel:`Password` to use for
+            authentication.
+            
+            Checking :guilabel:`Save password` saves your password securely
+            on your machine. Relational Migrator automatically fills in the 
+            :guilabel:`Password` field on future uses.
 
 #. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 

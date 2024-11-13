@@ -1,8 +1,12 @@
 .. short version of the steps under source/database-connections/save-relational-connection.txt, used within other procedures like migration job creation.
 
-a. To input a :ref:`connection string <rm-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
+a. In the :guilabel:`Database type` drop-down, select the database type.
 
-#. To create a connection string by entering database information, input the following:
+#. To input a :ref:`connection string <rm-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
+
+#. To create a connection string by entering database information: 
+
+   a. Input the following:
 
    .. tabs::
 
@@ -36,7 +40,7 @@ a. To input a :ref:`connection string <rm-connection-strings>` directly, enable 
 
          .. include:: /includes/table-sybase-connection-fields.rst
 
-#. Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
+   #. Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
 
 #. (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
 

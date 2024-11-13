@@ -25,11 +25,11 @@ Steps
 
    .. step:: Add a connection
       
-      Under :guilabel:`Relational` click :guilabel:`Add connection`.
+      In the list of :guilabel:`Relational` connections, click :guilabel:`+ Add connection`.
 
    .. step:: Select the database type
       
-      In the :guilabel:`Database type` drop-down, select the database.
+      In the :guilabel:`Database type` drop-down, select the database type.
 
    .. step:: To input a :ref:`connection string <rm-connection-strings>` directly:
 
@@ -39,7 +39,7 @@ Steps
 
    .. step:: To create a connection string by entering database information:
 
-      Enter the following:
+      a. Enter the following:
 
       .. tabs::
 
@@ -73,11 +73,12 @@ Steps
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
-   .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication
+      #. Enter the :guilabel:`Username` and :guilabel:`Password` to use for  
+         authentication
          
-      Checking :guilabel:`Save password` saves the password securely on 
-      your machine. Relational Migrator automatically fills in the 
-      :guilabel:`Password` field for the current project.
+         Checking :guilabel:`Save password` saves the password securely on 
+         your machine. Relational Migrator automatically fills in the 
+         :guilabel:`Password` field for the current project.
 
    .. step:: (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can connect using SSL:
                         
