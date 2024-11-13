@@ -56,7 +56,7 @@ Steps
 
    .. step:: Optionally, click :guilabel:`Test connection`.
 
-      Relational Migrator attempts to authenticates and connects to the
+      Relational Migrator attempts to authenticate and connect to the
       database.
          
    .. step:: Click :guilabel:`Save`.

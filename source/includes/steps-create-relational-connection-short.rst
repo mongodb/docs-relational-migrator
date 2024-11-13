@@ -1,147 +1,47 @@
-.. This is a streamlined version of the content in database-connections/save-relational-connection.txt, for use as an include in larger procedures.
+.. short version of the steps under source/database-connections/save-relational-connection.txt, used within other procedures.
 
-.. tabs::
+.. step:: To input a :ref:`connection string <rm-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
 
-   .. tab:: Oracle
-      :tabid: db-oracle
+.. step:: To create a connection string by entering database information, input the following:
 
-      .. procedure::
+   .. tabs::
 
-         .. step:: To use a saved :ref:`connection string <rm-connection-strings>` or input one directly:
-   
-            a. Above the :guilabel:`JDBC URI` field, enable the
-               :guilabel:`Enter URI manually` toggle.
+      .. tab:: Oracle
+         :tabid: db-oracle
 
-            #. Paste your connection string into the ``JDBC URI`` field.
+         .. include:: /includes/table-oracle-connection-fields.rst
 
-         .. step:: If you don't have a connection string, create it by entering the following information:
+      .. tab:: SQL Server
+         :tabid: db-sql
 
-            .. include:: /includes/table-oracle-connection-fields.rst
+         .. include:: /includes/table-sql-connection-fields.rst
 
-         .. step:: Enter connection credentials.
-            
-            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
-            authentication, and optionally check :guilabel:`Save password`.
+      .. tab:: MySQL
+         :tabid: db-mysql
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-               
-         .. step:: Click :guilabel:`Save`.
+         .. include:: /includes/table-mysql-connection-fields.rst
+         
+      .. tab:: PostgreSQL
+         :tabid: db-postgresql
 
+         .. include:: /includes/table-postgresql-connection-fields.rst
 
-   .. tab:: SQL Server
-      :tabid: db-sql
+      .. tab:: Db2
+         :tabid: db-db2
 
-      .. procedure::
+         .. include:: /includes/table-db2-connection-fields.rst
 
-         .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
+      .. tab:: Sybase
+         :tabid: db-sybase
 
-         .. step:: If you don't have a connection string, create it by entering the following information:
+         .. include:: /includes/table-sybase-connection-fields.rst
 
-            .. include:: /includes/table-sql-connection-fields.rst
+.. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
 
-         .. step:: Enter connection credentials.
-            
-            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
-            authentication, and optionally check :guilabel:`Save password`.
+.. step:: Optionally, if you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
 
-         .. step:: To connect using SSL:
-            
-            a. Toggle from :guilabel:`General` to :guilabel:`SSL`.
-            
-            #. Select an SSL mode.
+.. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
 
-         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-               
-         .. step:: Click :guilabel:`Save`.
-
-   .. tab:: MySQL
-      :tabid: db-mysql
-
-      .. procedure::
-
-         .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
-
-         .. step:: If you don't have a connection string, create it by entering the following information:
-
-            .. include:: /includes/table-mysql-connection-fields.rst
-
-         .. step:: Enter connection credentials.
-            
-            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
-            authentication, and optionally check :guilabel:`Save password`.
-
-         .. step:: To connect using SSL:
-            
-            a. Toggle from :guilabel:`General` to :guilabel:`SSL`.
-            
-            #. Select an SSL mode.
-
-         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-               
-         .. step:: Click :guilabel:`Save`.
-
-   .. tab:: PostgreSQL
-      :tabid: db-postgresql
-
-      .. procedure::
-
-         .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
-
-         .. step:: If you don't have a connection string, create it by entering the following information:
-
-            .. include:: /includes/table-postgresql-connection-fields.rst
-
-         .. step:: Enter connection credentials.
-            
-            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
-            authentication, and optionally check :guilabel:`Save password`.
-
-         .. step:: To connect using SSL:
-            
-            a. Toggle from :guilabel:`General` to :guilabel:`SSL`.
-            
-            #. Select an SSL mode.
-
-         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-               
-         .. step:: Click :guilabel:`Save`.
-
-   .. tab:: Db2
-      :tabid: db-db2
-
-      .. procedure::
-
-         .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
-
-         .. step:: If you don't have a connection string, create it by entering the following information:
-
-            .. include:: /includes/table-db2-connection-fields.rst
-
-         .. step:: Enter connection credentials.
-            
-            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
-            authentication, and optionally check :guilabel:`Save password`.
-
-         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-               
-         .. step:: Click :guilabel:`Save`.
-
-   .. tab:: Sybase
-      :tabid: db-sybase
-
-      .. procedure::
-
-         .. step:: To use a saved connection string, enable the :guilabel:`Enter URI manually` toggle and paste the string into the :guilabel:`JDBC URI` field.
-
-         .. step:: If you don't have a connection string, create it by entering the following information:
-
-            .. include:: /includes/table-sybase-connection-fields.rst
-
-         .. step:: Enter connection credentials.
-            
-            Enter the :guilabel:`Username` and :guilabel:`Password` to use for 
-            authentication, and optionally check :guilabel:`Save password`.
-
-         .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
-               
-         .. step:: Click :guilabel:`Save`.
+.. step:: Optionally, click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
+      
+.. step:: Click :guilabel:`Save`.
