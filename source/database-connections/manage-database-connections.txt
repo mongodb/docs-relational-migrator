@@ -1,0 +1,15 @@
+.. _rm-manage-connections:
+
+===========================
+Manage Database Connections
+===========================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can modify or remove Database Connections from the Relational Migrator :guilabel:`Connections` page.
