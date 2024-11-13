@@ -14,7 +14,7 @@ Save a MongoDB Connection
    :class: singlecol
 
 You can save a new MongoDB connection from the Relational Migrator
-:guilabel:`Connections` page, or when creating or modifying a sync job.
+:guilabel:`Connections` page, or when creating or modifying a data migration job.
 
 Before you Begin
 ----------------

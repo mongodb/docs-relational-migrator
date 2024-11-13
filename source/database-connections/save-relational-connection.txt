@@ -14,7 +14,7 @@ Save a Relational Database Connection
    :class: singlecol
 
 You can save a new relational database connection from the Relational Migrator
-:guilabel:`Connections` page, or when creating or modifying a sync job.
+:guilabel:`Connections` page, or when creating or modifying a data migration job.
 
 
 Steps

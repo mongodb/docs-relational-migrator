@@ -43,7 +43,7 @@ Steps
 
 .. procedure::
 
-  .. step:: On the :guilabel:`Data Migration` tab, click :guilabel:`Create Migration Job`.
+  .. step:: On the :guilabel:`Data Migration` tab, click :guilabel:`Create Migration Job`
  
     Relational Migrator only runs one migration job at a time. If a job is in 
     progress, this button is disabled.
@@ -61,9 +61,9 @@ Steps
 
      .. include:: /includes/steps-create-relational-connection-short.rst
 
-     #. Click :guilabel:`Connect`
+  .. step:: Click :guilabel:`Connect`
 
-  .. step:: Enter the source MongoDB connection details 
+  .. step:: Enter MongoDB connection details 
 
      To use a saved :ref:`MongoDB connection <rm-save-mongodb-connection>`,
      select :guilabel:`Use a saved connection`.
@@ -72,7 +72,7 @@ Steps
 
      .. include:: /includes/steps-create-mongodb-connection-short.rst
 
-     #. Click :guilabel:`Connect`
+  .. step:: Click :guilabel:`Connect`
 
   .. step:: On the :guilabel:`Migration Options` form, select :guilabel:`Migration Options`:
 
