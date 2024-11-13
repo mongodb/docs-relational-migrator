@@ -1,12 +1,12 @@
 .. short version of the steps under source/database-connections/save-mongodb-connection.txt, used within other procedures like migration job creation.
 
-#. Enter your connection information.
+a. Enter your connection information.
 
    If you are using MongoDB Atlas, you can select your Atlas cluster 
    from the :guilabel:`Select a cluster` list, or you can enter the
    :ref:`MongoDB connection string <rm-mongodb-database-connection-strings>`.
 
-   If you are using a self-hosted deployment, you must use the MongoDB
+   If you are using an on-premises deployment, you must use the MongoDB
    connection string.
 
    .. tabs::
@@ -36,12 +36,12 @@
          or :guilabel:`Password` fields blank, Relational Migrator uses the
          values from the URI.
 
-#. Optionally, in the :guilabel:`Database` field, enter the name of the database to connect to.
+#. (Optional) In the :guilabel:`Database` field, enter the name of the database to connect to.
 
 #. Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
 
-#. Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
+#. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
-#. Optionally, click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
+#. (Optional) Click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
       
 #. Click :guilabel:`Save`.

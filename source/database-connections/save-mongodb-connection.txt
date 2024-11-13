@@ -26,26 +26,23 @@ Steps
 
 .. procedure::
 
-   .. step:: Add a new connection.
+   .. step:: Add a new connection
       
       Under :guilabel:`MongoDB`, click :guilabel:`Add connection`.
 
-   .. step:: Enter your connection information.
+   .. step:: Enter your connection information
 
       If you are using MongoDB Atlas, you can select your Atlas cluster 
       from the :guilabel:`Select a cluster` list, or you can enter the
-      :ref:`MongoDB connection string <rm-mongodb-database-connection-strings>`.
+      :manual:`connection string <mongodb-uri>`.
 
-      If you are using a self-hosted deployment, you must use the MongoDB
+      If you are using an on-premises deployment, you must use the MongoDB
       connection string.
 
       .. tabs::
 
          .. tab:: Select a cluster
             :tabid: select-atlas-cluster
-
-            On the :guilabel:`Connect Destination DB` form, select an
-            :guilabel:`Atlas Cluster` from the drop-down. 
             
             Clusters are displayed in a three-level hierarchy: 
             :guilabel:`Organization` > :guilabel:`Project` >
@@ -60,31 +57,29 @@ Steps
             :tabid: enter-mongodb-uri
 
             In the :guilabel:`MongoDB connection string (URI)` field, input
-            your :ref:`MongoDB URI <rm-mongodb-database-connection-strings>`.
+            your :manual:`MongoDB URI <mongodb-uri>`.
 
             If you leave the form :guilabel:`Database`, :guilabel:`Username`, 
             or :guilabel:`Password` fields blank, Relational Migrator uses the
             values from the URI.
 
-   .. step:: Optionally, in the :guilabel:`Database` field, enter the name of 
-      the database to connect to.
+   .. step:: (Optional) In the :guilabel:`Database` field, enter the name of the database to connect to
 
-   .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use 
-      for authentication.
+   .. step:: Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication
          
       Checking :guilabel:`Save password` saves your password securely on your 
       machine. Relational Migrator automatically fills in the 
       :guilabel:`Password` field on future uses.
 
-   .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
+   .. step:: Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`
          
       Environment tags color code and organize connections for 
       convenience. Leaving the drop-down empty is the same as selecting 
       the "None" tag.
 
-   .. step:: Optionally, click :guilabel:`Test connection`.
+   .. step:: (Optional) Click :guilabel:`Test connection`
 
       Relational Migrator attempts to authenticate and connect to the
       database.
          
-   .. step:: Click :guilabel:`Save`.
+   .. step:: Click :guilabel:`Save`

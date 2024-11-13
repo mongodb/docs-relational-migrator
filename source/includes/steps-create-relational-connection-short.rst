@@ -1,6 +1,6 @@
 .. short version of the steps under source/database-connections/save-relational-connection.txt, used within other procedures like migration job creation.
 
-#. To input a :ref:`connection string <rm-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
+a. To input a :ref:`connection string <rm-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
 
 #. To create a connection string by entering database information, input the following:
 
@@ -38,10 +38,10 @@
 
 #. Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
 
-#. Optionally, if you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
+#. (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
 
-#. Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
+#. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
-#. Optionally, click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
+#. (Optional) Click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
       
 #. Click :guilabel:`Save`.
