@@ -20,4 +20,4 @@
 
    * - :guilabel:`Authentication`
 
-     - One of :guilabel:`SQL Serer` or :guilabel:`Windows`.
+     - One of :guilabel:`SQL Server` or :guilabel:`Windows`.
