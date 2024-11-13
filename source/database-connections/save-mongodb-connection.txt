@@ -34,9 +34,37 @@ Steps
 
       If you are using MongoDB Atlas, you can select your Atlas cluster 
       from the :guilabel:`Select a cluster` list, or you can enter the
-      :manual:`MongoDB connection string <mongodb-uri>`.
+      :ref:`MongoDB connection string <rm-mongodb-database-connection-strings>`.
 
-      If you are using a self-hosted deployment, you must enter the MongoDB connection string.
+      If you are using a self-hosted deployment, you must use the MongoDB
+      connection string.
+
+      .. tabs::
+
+         .. tab:: Select a cluster
+            :tabid: select-atlas-cluster
+
+            On the :guilabel:`Connect Destination DB` form, select an
+            :guilabel:`Atlas Cluster` from the drop-down. 
+            
+            Clusters are displayed in a three-level hierarchy: 
+            :guilabel:`Organization` > :guilabel:`Project` >
+            :guilabel:`Cluster`, organized alphabetically. Only the first 100
+            clusters you are authorized to access are shown.
+
+            If you leave any of the form fields for :guilabel:`Database`,
+            :guilabel:`Username`, or :guilabel:`Password` blank, Relational
+            Migrator uses the values from the Atlas cluster metadata.
+
+         .. tab:: Enter MongoDB URI
+            :tabid: enter-mongodb-uri
+
+            In the :guilabel:`MongoDB connection string (URI)` field, input
+            your :ref:`MongoDB URI <rm-mongodb-database-connection-strings>`.
+
+            If you leave the form :guilabel:`Database`, :guilabel:`Username`, 
+            or :guilabel:`Password` fields blank, Relational Migrator uses the
+            values from the URI.
 
    .. step:: Optionally, in the :guilabel:`Database` field, enter the name of 
       the database to connect to.
@@ -48,11 +76,11 @@ Steps
       machine. Relational Migrator automatically fills in the 
       :guilabel:`Password` field on future uses.
 
-   .. step:: Specify a :guilabel:`Connection name` and optionally an 
-      :guilabel:`Environment tag`.
+   .. step:: Specify a :guilabel:`Connection name` and optionally an :guilabel:`Environment tag`.
          
-      Environment tags color code and organize connections for convenience.
-      Leaving the drop-down empty is the same as selecting the "None" tag.
+      Environment tags color code and organize connections for 
+      convenience. Leaving the drop-down empty is the same as selecting 
+      the "None" tag.
 
    .. step:: Optionally, click :guilabel:`Test connection`.
 
