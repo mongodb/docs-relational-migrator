@@ -1,8 +1,8 @@
 .. _rm-mongodb-service-user:
 
-================================
-Create a Service User in MongoDB
-================================
+============================================
+Create a Relational Migrator User in MongoDB
+============================================
 
 .. contents:: On this page
    :local:
@@ -11,9 +11,8 @@ Create a Service User in MongoDB
    :class: singlecol
 
 To run a data migration job, Relational Migrator requires MongoDB account 
-credentials with the ``readWrite`` :manual:`built-in role <built-in-roles>` on
-the target database. This page describes the procedure to make a service user
-account in your MongoDB database.
+credentials with the ``readWrite`` :manual:`role <database-user-roles>` on
+the target database. This page describes the procedure to make a user in your MongoDB database.
 
 Steps
 -----

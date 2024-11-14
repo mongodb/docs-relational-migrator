@@ -1,0 +1,17 @@
+
+.. _rm-change-project-connections:
+
+=======================================
+Change Active Connections for a Project
+=======================================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+You can change the relational and MongoDB :ref:`database connections <rm-database-connections>` for an existing
+project, in order to migrate from or to different databases.
