@@ -65,7 +65,7 @@ deployment. Select the tab corresponding to your deployment type.
 
          .. step:: Connect to your deployment using ``mongosh``
             
-            You must use an account that can run `createRole <https://www.mongodb.com/docs/manual/reference/method/db.createRole/>`__ 
+            You must use an account that can run `createUser <https://www.mongodb.com/docs/manual/reference/method/db.createUser/>`__ 
             on the admin and ``MongoEnterprises`` databases.
 
             .. code-block::

@@ -13,13 +13,19 @@ Save a MongoDB Connection
    :depth: 1
    :class: singlecol
 
-You can save a new MongoDB connection from the Relational Migrator
-:guilabel:`Connections` page, or when creating or modifying a data migration job.
+To start a migration job, Relational Migrator must connect to your MongoDB
+database using an account with :authrole:`readWrite` access. You can save a new
+MongoDB connection from the Relational Migrator :guilabel:`Connections` page,
+or when creating or modifying a data migration job.
 
 Before you Begin
 ----------------
 
-To save a connection to a MongoDB Atlas cluster, you must be :ref:`logged in <rm-atlas-log-in>` with Atlas.
+- To save a connection to a MongoDB Atlas cluster, you must be :ref:`logged in
+  <rm-atlas-log-in>` with Atlas.
+
+- For both Atlas and on-premises deployments, we recommend creating a
+  :ref:`service user account <rm-mongodb-service-user>` 
 
 Steps
 -----
