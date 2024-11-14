@@ -6,7 +6,7 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
 
 #. To create a connection string by entering database information: 
 
-   a. Input the following:
+   i. Input the following:
 
       .. tabs::
 
@@ -39,8 +39,6 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
             :tabid: db-sybase
 
             .. include:: /includes/table-sybase-connection-fields.rst
-
-   #. Enter the :guilabel:`Username` and :guilabel:`Password` to use for authentication.
 
 #. (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
 

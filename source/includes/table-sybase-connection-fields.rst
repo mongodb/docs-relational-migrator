@@ -17,3 +17,11 @@
    * - :guilabel:`Database`
 
      - The database name. Leave blank to connect to the default database.
+
+   * - :guilabel:`Username` and :guilabel:`Password`  
+     
+     - The credentials to use for authentication.
+     
+       Checking :guilabel:`Save password` saves the password securely on 
+       your machine. Relational Migrator automatically fills in the 
+       :guilabel:`Password` field for the current project.
