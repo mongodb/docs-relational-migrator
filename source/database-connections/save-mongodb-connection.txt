@@ -25,7 +25,8 @@ Before you Begin
   <rm-atlas-log-in>` with Atlas.
 
 - For both Atlas and on-premises deployments, we recommend creating a
-  :ref:`service user account <rm-mongodb-service-user>` 
+  :ref:`service user account <rm-mongodb-service-user>` specifically for use
+  with Relational Migrator.
 
 Steps
 -----

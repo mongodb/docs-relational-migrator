@@ -23,16 +23,17 @@ deployment. For details on MongoDB connection string options, see
 MongoDB Service User
 --------------------
 
-As part of creating a MongoDB connection URI, you must first provision a
-:ref:`service account <rm-mongodb-service-user>` with :authrole:`readWrite`
-access to the database you're migrating to.
+For both Atlas and on-premises deployments, we recommend creating a 
+:ref:`service user account <rm-mongodb-service-user>` specifically for use
+with Relational Migrator. It must have :authrole:`readWrite` access to the 
+database you're migrating to.
 
 Atlas Connection URI
 --------------------
 
 .. code-block::
 
-   mongodb+srv://username:password@sandbox.xxxxx.mongodb.net/MongoEnterprises
+   mongodb+srv://username:password@clusterurl.mongodb.net/database
 
 For example, to use an account named ``migrator-service`` to connect to the
 ``MongoEnterprises`` database:
@@ -46,7 +47,11 @@ On-Premises Connection URI
 
 .. code-block::
 
-   mongodb://migrator-service:password@localhost:27017/MongoEnterprises
+   mongodb://username:password@host:port/database
 
 For example, to use an account named ``migrator-service`` to connect to the
 ``MongoEnterprises`` database:
+
+.. code-block::
+
+   mongodb://migrator-service:password@localhost:27017/MongoEnterprises
