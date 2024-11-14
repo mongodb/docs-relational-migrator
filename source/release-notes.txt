@@ -254,7 +254,7 @@ Improvements:
 
 Improvements:
 
-- Performance improvements for {+job_plural+} that create large arrays.
+- Performance improvements for migration jobs that create large arrays.
 - Fixed an issue where schema discovery failed on schema names 
   that contain the dash character.
 
