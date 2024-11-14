@@ -10,9 +10,9 @@ Migration Jobs
    :depth: 1
    :class: singlecol
 
-Migration jobs transfer data from your relational database to MongoDB. Sync 
-jobs use project-level :ref:`rm-mapping-rules` to distribute data to 
-your MongoDB database.
+Migration jobs transfer data from your relational database to MongoDB.
+Migration jobs use project-level :ref:`rm-mapping-rules` to distribute
+data to your MongoDB database.
 
 Types of Migration Jobs
 -----------------------
