@@ -51,7 +51,7 @@ deployment. Select the tab corresponding to your deployment type.
    .. tab:: On-Premises
       :tabid: service-user-onprem
 
-      Use :binary:`~bin.mongosh` to provision a user account that has
+      Use ``mongosh`` to provision a user account that has
       :authrole:`readWrite` access to your data migration target database.
 
       The example commands assume your deployment is running on ``localhost``
@@ -70,16 +70,16 @@ deployment. Select the tab corresponding to your deployment type.
 
             .. code-block::
 
-               mongosh
-               "mongodb://myadminuser:myadminpassword@localhost:27017/admin"
+               mongosh "mongodb://myadminuser:myadminpassword@localhost:27017/admin"
 
-         .. step:: Create the service user in the admin database for authentication
+         .. step:: Create the service user in the ``admin`` database for authentication
 
             Run the following command to create a 
             ``migrator-service`` user with a password of your choice and 
             ``readWrite`` access to the ``MongoEnterprises`` database:
 
             .. code-block::
+
                use admin
                db.createUser(
                   { user: "migrator-service",
@@ -91,6 +91,7 @@ deployment. Select the tab corresponding to your deployment type.
          .. step:: Create the same user in the ``MongoEnterprises`` database
 
             .. code-block::
+               
                use MongoEnterprises
                db.createUser(
                   { user: "migrator-service",

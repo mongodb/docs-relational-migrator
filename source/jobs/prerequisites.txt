@@ -16,9 +16,9 @@ databases for use with Relational Migrator.
 MongoDB
 -------
 
-To migrate data into MongoDB, create a :ref:`service user account
-<rm-mongodb-service-user>` with :authrole:`readWrite` access to your MongoDB 
-database.
+To migrate data into MongoDB, we recommend creating a :ref:`service
+user account <rm-mongodb-service-user>` with :authrole:`readWrite` access to
+your MongoDB database.
 
 Relational Databases
 --------------------

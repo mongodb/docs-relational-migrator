@@ -32,14 +32,14 @@ a. Enter your connection information.
          a. In the :guilabel:`MongoDB connection string (URI)` field, input
             your :manual:`MongoDB URI <mongodb-uri>`.
 
-         #. (Optional) In the :guilabel:`Database` field, enter the name of
-            the database to connect to.
+         #. If it isn't included in the connection string, enter the
+            :guilabel:`Database` to connect to.
          
          #. If they aren't included in the connection string, enter the 
-            :guilabel:`Username` and :guilabel:`Password` to use for
-            authentication.
+            :guilabel:`Username` and :guilabel:`Password` of your :ref:`MongoDB
+            service account <rm-mongodb-service-user>`.
             
-            Checking :guilabel:`Save password` saves your password securely
+            Checking :guilabel:`Save password` saves the password securely
             on your machine. Relational Migrator automatically fills in the 
             :guilabel:`Password` field on future uses.
 
