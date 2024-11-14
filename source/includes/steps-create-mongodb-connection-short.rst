@@ -14,17 +14,14 @@ a. Enter your connection information.
       .. tab:: Select a cluster
          :tabid: select-atlas-cluster
 
-         On the :guilabel:`Connect Destination DB` form, select an
-         :guilabel:`Atlas Cluster` from the drop-down. 
-         
-         Clusters are displayed in a three-level hierarchy: 
-         :guilabel:`Organization` > :guilabel:`Project` >
-         :guilabel:`Cluster`, organized alphabetically. Only the first 100
-         clusters you are authorized to access are shown.
+         a. Select the cluster.
 
-         If you leave any of the form fields for :guilabel:`Database`,
-         :guilabel:`Username`, or :guilabel:`Password` blank, Relational
-         Migrator uses the values from the Atlas cluster metadata.
+         #. If it isn't included in the connection string, enter the
+            :guilabel:`Database` to connect to.
+         
+         #. If they aren't included in the connection string, enter the 
+            :guilabel:`Username` and :guilabel:`Password` of your
+            :ref:`Relational Migrator MongoDB user <rm-mongodb-service-user>`.
 
       .. tab:: Enter MongoDB URI
          :tabid: enter-mongodb-uri
@@ -36,12 +33,8 @@ a. Enter your connection information.
             :guilabel:`Database` to connect to.
          
          #. If they aren't included in the connection string, enter the 
-            :guilabel:`Username` and :guilabel:`Password` of your :ref:`MongoDB
-            service account <rm-mongodb-service-user>`.
-            
-            Checking :guilabel:`Save password` saves the password securely
-            on your machine. Relational Migrator automatically fills in the 
-            :guilabel:`Password` field on future uses.
+            :guilabel:`Username` and :guilabel:`Password` of your
+            :ref:`Relational Migrator MongoDB user <rm-mongodb-service-user>`.
 
 #. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
