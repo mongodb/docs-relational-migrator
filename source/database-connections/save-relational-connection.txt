@@ -37,9 +37,7 @@ Steps
 
       #. Paste your connection string into the :guilabel:`JDBC URI` field.
 
-   .. step:: To create a connection string by entering database information:
-
-      a. Enter the following:
+   .. step:: To create a connection string by entering database information, enter the following:
 
       .. tabs::
 

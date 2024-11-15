@@ -4,41 +4,39 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
 
 #. To input a :ref:`connection string <rm-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
 
-#. To create a connection string by entering database information: 
+#. To create a connection string by entering database information, input the following:
 
-   i. Input the following:
+   .. tabs::
 
-      .. tabs::
+      .. tab:: Oracle
+         :tabid: db-oracle
 
-         .. tab:: Oracle
-            :tabid: db-oracle
+         .. include:: /includes/table-oracle-connection-fields.rst
 
-            .. include:: /includes/table-oracle-connection-fields.rst
+      .. tab:: SQL Server
+         :tabid: db-sql
 
-         .. tab:: SQL Server
-            :tabid: db-sql
+         .. include:: /includes/table-sql-connection-fields.rst
 
-            .. include:: /includes/table-sql-connection-fields.rst
+      .. tab:: MySQL
+         :tabid: db-mysql
 
-         .. tab:: MySQL
-            :tabid: db-mysql
+         .. include:: /includes/table-mysql-connection-fields.rst
+         
+      .. tab:: PostgreSQL
+         :tabid: db-postgresql
 
-            .. include:: /includes/table-mysql-connection-fields.rst
-            
-         .. tab:: PostgreSQL
-            :tabid: db-postgresql
+         .. include:: /includes/table-postgresql-connection-fields.rst
 
-            .. include:: /includes/table-postgresql-connection-fields.rst
+      .. tab:: Db2
+         :tabid: db-db2
 
-         .. tab:: Db2
-            :tabid: db-db2
+         .. include:: /includes/table-db2-connection-fields.rst
 
-            .. include:: /includes/table-db2-connection-fields.rst
+      .. tab:: Sybase
+         :tabid: db-sybase
 
-         .. tab:: Sybase
-            :tabid: db-sybase
-
-            .. include:: /includes/table-sybase-connection-fields.rst
+         .. include:: /includes/table-sybase-connection-fields.rst
 
 #. (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
 
