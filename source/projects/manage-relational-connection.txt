@@ -12,10 +12,12 @@ Manage the Relational Model
    :depth: 2
    :class: singlecol
 
-You can use the :guilabel:`Manage` button on the :guilabel:`Schema model` 
-pane to make changes to the schemas or tables you want to include in 
-your migration project. You can also connect to the source database 
-or use a {+ddl+} file to refresh the list of available tables.
+You can change the schemas or tables you want to include in 
+your migration project by connecting to the source database 
+or using a {+ddl+} file to refresh the list of available tables.
+
+You can also change the relational and MongoDB :ref:`database connections
+<rm-database-connections>` to migrate from or to a different database.
 
 Add or Remove Tables from a Project
 -----------------------------------
@@ -47,38 +49,33 @@ If your relational database table structure changes, use the
 1. From the :guilabel:`Mapping` screen, click the :guilabel:`Manage` 
    button on the :guilabel:`Schema model` pane.
 
-#. Click the :guilabel:`Refresh schema` button on the Manage 
-   relational model modal.
+#. To refresh the schema for the active :ref:`Relational DB connection 
+   <rm-database-connections>`, click the :guilabel:`Refresh schema` button on the Manage relational model modal.
 
-#. Select either :ref:`Connect to database <connect-to-db>` or 
-   :ref:`Import DDL File  <import-ddl-file>`.
+#. To refresh the schema for a file, click :ref:`Import DDL File  <import-ddl-file>`
 
 .. _connect-to-db:
 
-Connect to database
-~~~~~~~~~~~~~~~~~~~
+Connect to a Database
+~~~~~~~~~~~~~~~~~~~~~
 
-:guilabel:`Connect to database` rescans the schema. Changes in foreign key 
-relations or data types for the underlying tables are read into Migrator.
+Changing the selected :guilabel:`Relational DB` in the Database Connections bar
+rescans the schema. Changes in foreign key relations or data types for the 
+underlying tables are read into Migrator.
 
-1. Input the :guilabel:`JDBC URI`, :guilabel:`Username` and 
-   :guilabel:`Password` for the database instance you are connecting to. 
+1. Click the :guilabel:`Relational DB` drop-down.
 
-   The account used can be different from the credentials you used when 
-   creating the project.
+   To use a saved :ref:`relational database connection <rm-save-relational-connection>`, select it from the drop-down.
+     
+   To create a new connection, click :guilabel:`+ Add Connection`:
 
-   .. note::
+   .. include:: /includes/steps-create-relational-connection-short.rst
+
+#. Click :guilabel:`Connect`.
    
-      Relational Migrator remembers the MongoDB URI and the username but not 
-      the password. When you refresh the schema, re-enter the password.
-
-#. Click :guilabel:`Connect`. 
-
-#. Click :guilabel:`Save`. 
-   
-   Any changes from your relational database are reflected in 
-   the main Relational Migrator diagram and included in future 
-   sync jobs.
+Any changes from your relational database are reflected in 
+the main Relational Migrator diagram and included in future 
+sync jobs.
 
 .. _import-ddl-file:
 
@@ -105,5 +102,5 @@ data types for the underlying tables are read into Migrator.
 
 #. Click :guilabel:`Save`. 
 
-   Any changes from your relational database are reflected in the main 
-   Relational Migrator diagram and included in future sync jobs.
+Any changes from your relational database are reflected in the main 
+Relational Migrator diagram and included in future sync jobs.
