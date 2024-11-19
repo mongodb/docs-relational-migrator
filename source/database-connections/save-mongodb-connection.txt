@@ -24,9 +24,8 @@ Before you Begin
 - To save a connection to a MongoDB Atlas cluster, you must be :ref:`logged in
   <rm-atlas-log-in>` with Atlas.
 
-- For both Atlas and on-premises deployments, we recommend creating a
-  :ref:`service user account <rm-mongodb-service-user>` specifically for use
-  with Relational Migrator.
+- For both Atlas and on-premises deployments, we recommend creating a separate
+  :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator.
 
 Steps
 -----

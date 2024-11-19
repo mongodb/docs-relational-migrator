@@ -20,13 +20,12 @@ Relational Migrator supports all connection string options except
 deployment. For details on MongoDB connection string options, see 
 :manual:`Connection Strings <mongodb-uri>`.
 
-MongoDB Service User
---------------------
+MongoDB User
+------------
 
-For both Atlas and on-premises deployments, we recommend creating a 
-:ref:`service user account <rm-mongodb-service-user>` specifically for use
-with Relational Migrator. It must have :authrole:`readWrite` access to the 
-database you're migrating to.
+For both Atlas and on-premises deployments, we recommend creating a separate
+:ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator. It must
+have :authrole:`readWrite` access to the database you're migrating to.
 
 Atlas Connection URI
 --------------------
