@@ -52,4 +52,6 @@
        
    * - SSL: :guilabel:`Trust server certificate`
    
-     - With SSL enabled, check this to trust the stored certificate.
+     - With SSL enabled, check this to trust the stored certificate. Leave
+       unchecked to verify the server certificate against a trusted
+       Certificate Authority.
