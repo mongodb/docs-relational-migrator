@@ -34,13 +34,14 @@
      
        Checking :guilabel:`Save password` saves the password securely on 
        your machine. Relational Migrator automatically fills in the 
-       :guilabel:`Password` field for the current project.
+       :guilabel:`Password` field when updating connection information.
 
    * - :guilabel:`General / SSL` toggle
 
-     - View SSL settings for the connection. To use SSL, you must first
-       uncomment and update the ``server.ssl`` configuration properties in your
-       ``user.properties`` :ref:`file <file-location>`.
+     - View SSL settings for the connection. 
+     
+       To use SSL, you must first uncomment and update the ``server.ssl``
+       configuration properties in your ``user.properties`` :ref:`file <file-location>`.
      
    * - SSL: :guilabel:`Use SSL`
    

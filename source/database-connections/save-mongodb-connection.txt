@@ -65,7 +65,7 @@ Steps
                
                Checking :guilabel:`Save password` saves the password securely
                on your machine. Relational Migrator automatically fills in the 
-               :guilabel:`Password` field on future uses.
+               :guilabel:`Password` field when updating connection information.
 
             If you leave any of the form fields for :guilabel:`Database`,
             :guilabel:`Username`, or :guilabel:`Password` blank, Relational
@@ -86,7 +86,7 @@ Steps
                
                Checking :guilabel:`Save password` saves the password securely
                on your machine. Relational Migrator automatically fills in the 
-               :guilabel:`Password` field on future uses.
+               :guilabel:`Password` field when updating connection information.
             
             If you leave the form :guilabel:`Database`, :guilabel:`Username`, 
             or :guilabel:`Password` fields blank, Relational Migrator uses the

@@ -28,4 +28,4 @@
      
        Checking :guilabel:`Save password` saves the password securely on 
        your machine. Relational Migrator automatically fills in the 
-       :guilabel:`Password` field for the current project.
+       :guilabel:`Password` field when updating connection information.
