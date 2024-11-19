@@ -39,9 +39,10 @@ Steps
 
    .. step:: Click the :guilabel:`Connect database` button.
 
-      :guilabel:`Add a new connection` is selected by default. If you already have
-      a :ref:`saved connection <rm-database-connections>` for your database, click
-      :guilabel:`Use a saved connection` and select it from the drop-down.
+      :guilabel:`Add a new connection` is selected by default. If you already
+      have a :ref:`saved connection <rm-save-relational-connection>` for your
+      database, click :guilabel:`Use a saved connection` and select it from 
+      the drop-down.
         
       To create a new connection, click :guilabel:`Add a new connection`:
 

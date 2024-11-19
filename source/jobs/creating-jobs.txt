@@ -34,8 +34,8 @@ Before you Begin
 
 - :ref:`Create one or more mapping rules <create-rule-relational>` in your 
   Relational Migrator project.
-- Create a :ref:`MongoDB service user account <rm-mongodb-service-user>` with
-  read/write permissions on your destination database.
+- For both Atlas and on-premises deployments, we recommend creating a separate
+  :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator.
 
 Steps
 -----
