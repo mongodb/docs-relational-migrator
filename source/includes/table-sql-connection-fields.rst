@@ -35,3 +35,21 @@
        Checking :guilabel:`Save password` saves the password securely on 
        your machine. Relational Migrator automatically fills in the 
        :guilabel:`Password` field for the current project.
+
+   * - :guilabel:`General / SSL` toggle
+
+     - SSL settings for the connection. Use the :guilabel:`Use SSL` to enable
+       or disable SSL. With SSL enabled, check :guilabel:`Trust server
+       certificate` to trust the stored certificate.
+
+   * - :guilabel:`General / SSL` toggle
+
+     - View SSL settings for the connection. 
+     
+   * - SSL: :guilabel:`Use SSL`
+   
+     - Enable or disable SSL.
+       
+   * - SSL: :guilabel:`Trust server certificate`
+   
+     - With SSL enabled, check this to trust the stored certificate.

@@ -38,8 +38,6 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
 
          .. include:: /includes/table-sybase-connection-fields.rst
 
-#. (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can toggle from :guilabel:`General` to :guilabel:`SSL` to connect using SSL.
-
 #. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
 #. (Optional) Click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.

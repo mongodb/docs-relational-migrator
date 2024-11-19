@@ -71,12 +71,6 @@ Steps
 
             .. include:: /includes/table-sybase-connection-fields.rst
 
-   .. step:: (Optional) If you are connecting to a SQL, MySQL, or PostgreSQL server, you can connect using SSL:
-                        
-      a. Toggle from :guilabel:`General` to :guilabel:`SSL`.
-                        
-      #. Select an SSL mode.
-
    .. step:: Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`
          
       Environment tags color code and organize connections for 
