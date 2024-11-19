@@ -21,7 +21,7 @@ to a relational or MongoDB database.
    :titlesonly:
    :hidden:
 
-   Save MongoDB Connection </database-connections/save-mongodb-connection>
-   Save Relational Connection </database-connections/save-relational-connection>
-   Manage Connection </database-connections/manage-database-connections>
+   Save a MongoDB Connection </database-connections/save-mongodb-connection>
+   Save a Relational Connection </database-connections/save-relational-connection>
+   Manage Connections </database-connections/manage-database-connections>
    Connection Strings </connection-strings/connection-strings>
