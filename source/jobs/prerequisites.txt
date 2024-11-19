@@ -64,7 +64,7 @@ create your first sync job.
    :titlesonly:
    :hidden:
 
-   MongoDB </jobs/prerequisites/mongodb-service-user>
+   MongoDB </jobs/prerequisites/create-mongodb-user>
    MySQL </jobs/prerequisites/my-sql>
    Oracle </jobs/prerequisites/oracle>
    PostgreSQL </jobs/prerequisites/postgres>
