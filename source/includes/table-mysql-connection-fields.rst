@@ -28,7 +28,9 @@
 
    * - :guilabel:`General / SSL` toggle
 
-     - View SSL settings for the connection. 
+     - View SSL settings for the connection. To use SSL, you must first
+       uncomment and update the ``server.ssl`` configuration properties in your
+       ``user.properties`` :ref:`file <file-location>`.
      
    * - SSL: :guilabel:`Use SSL`
    
