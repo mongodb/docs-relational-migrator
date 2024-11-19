@@ -39,5 +39,3 @@ a. Enter your connection information.
 #. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
 #. (Optional) Click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
-      
-#. Click :guilabel:`Save`.
