@@ -31,7 +31,7 @@ Steps
       
       In the :guilabel:`Database type` drop-down, select the database type.
 
-   .. step:: To input a :ref:`connection string <rm-connection-strings>` directly:
+   .. step:: To input a :ref:`connection string <rm-relational-database-connection-strings>` directly:
 
       a. Above the :guilabel:`JDBC URI` field, enable the :guilabel:`Enter URI manually` toggle.
 
