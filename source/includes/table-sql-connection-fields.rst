@@ -38,12 +38,6 @@
 
    * - :guilabel:`General / SSL` toggle
 
-     - SSL settings for the connection. Use the :guilabel:`Use SSL` to enable
-       or disable SSL. With SSL enabled, check :guilabel:`Trust server
-       certificate` to trust the stored certificate.
-
-   * - :guilabel:`General / SSL` toggle
-
      - View SSL settings for the connection. 
      
    * - SSL: :guilabel:`Use SSL`
