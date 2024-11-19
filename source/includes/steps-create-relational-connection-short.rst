@@ -28,12 +28,12 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
 
          .. include:: /includes/table-postgresql-connection-fields.rst
 
-      .. tab:: Db2
+      .. tab:: DB2
          :tabid: db-db2
 
          .. include:: /includes/table-db2-connection-fields.rst
 
-      .. tab:: Sybase
+      .. tab:: Sybase ASE
          :tabid: db-sybase
 
          .. include:: /includes/table-sybase-connection-fields.rst
