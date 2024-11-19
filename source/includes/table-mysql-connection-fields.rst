@@ -34,14 +34,17 @@
    
      - Enable or disable SSL.
        
-   * - SSL: :guilabel:`SSL Mode`
+   * - SSL: :guilabel:`SSL mode`
    
      - With SSL enabled, choose from:
 
-       - :guilabel:`Preferred` (default)
+       - :guilabel:`Preferred` (default): Make an encrypted connection if 
+         possible, otherwise fall back to an unencrypted connection.
        
-       - :guilabel:`Required`
+       - :guilabel:`Required`: Require an encrypted connection.
 
-       - :guilabel:`Verify CA`
+       - :guilabel:`Verify CA`: Verify the server certificate against a trusted
+         Certificate Authority.
 
-       - :guilabel:`Verify identity`
+       - :guilabel:`Verify identity`: Verify the database connection
+         information against the certificate contents.
