@@ -17,7 +17,9 @@ your migration project by connecting to the source database
 or using a {+ddl+} file to refresh the list of available tables.
 
 You can also change the relational and MongoDB :ref:`database connections
-<rm-database-connections>` to migrate from or to a different database.
+<rm-database-connections>` to migrate from or to a different database, such as
+switching from a staging environment to production.
+
 
 Add or Remove Tables from a Project
 -----------------------------------
@@ -40,6 +42,7 @@ the :guilabel:`Manage` button.
    Changes from your relational database are reflected in the main 
    Relational Migrator diagram and included in future sync jobs.
 
+
 Refresh Schema Changes
 ----------------------
 
@@ -54,14 +57,16 @@ If your relational database table structure changes, use the
 
 #. To refresh the schema for a file, click :ref:`Import DDL File  <import-ddl-file>`
 
+
 .. _connect-to-db:
 
-Connect to a Database
-~~~~~~~~~~~~~~~~~~~~~
+Change Databases
+----------------
 
-Changing the selected :guilabel:`Relational DB` in the Database Connections bar
-rescans the schema. Changes in foreign key relations or data types for the 
-underlying tables are read into Migrator.
+You can change the active :guilabel:`Relational DB` in the Database Connections
+bar, such as switching the connection from a staging database to one in
+production. This re-scans the schema. Migrator reads in any changes in foreign
+key relations or data types for underlying tables.
 
 .. note::
 
@@ -81,6 +86,7 @@ underlying tables are read into Migrator.
 Any changes from your relational database are reflected in 
 the main Relational Migrator diagram and included in future 
 sync jobs.
+
 
 .. _import-ddl-file:
 

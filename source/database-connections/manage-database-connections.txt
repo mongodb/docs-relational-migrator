@@ -21,7 +21,9 @@ Copy a Connection
 -----------------
 
 You can copy an existing connection. This can be useful if you want multiple
-connections to the same server that each connect to different databases.
+connections to the same server that each connect to different databases, or if
+you have similar connection information for a staging database and a 
+production database.
 
 Copying a connection creates a duplicate with ``-Copy`` appended to the
 connection name.
