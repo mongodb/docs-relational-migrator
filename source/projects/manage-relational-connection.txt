@@ -63,6 +63,11 @@ Changing the selected :guilabel:`Relational DB` in the Database Connections bar
 rescans the schema. Changes in foreign key relations or data types for the 
 underlying tables are read into Migrator.
 
+.. note::
+
+   You can only use saved connections or create new connections of the
+   same database type originally used in the project.
+
 1. Click the :guilabel:`Relational DB` drop-down.
 
    To use a saved :ref:`relational database connection <rm-save-relational-connection>`, 
