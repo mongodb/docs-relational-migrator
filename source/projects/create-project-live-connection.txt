@@ -39,9 +39,9 @@ Steps
 
    .. step:: Click the :guilabel:`Connect database` button.
 
-      To use a saved :ref:`relational database connection
-     <rm-save-relational-connection>`, click :guilabel:`Use a saved connection`
-     and select it from the drop-down, then enter credentials if required.
+      To use a saved :ref:`relational database connection <rm-save-relational-connection>`, 
+      click :guilabel:`Use a saved connection` and select it from the 
+      drop-down, then enter credentials if required.
         
       To create a new connection, click :guilabel:`Add a new connection`:
 
