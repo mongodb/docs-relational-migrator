@@ -1,6 +1,6 @@
 .. We've removed the ability to select an Atlas cluster from a dropdown. Saving
-the steps here because the commit doesn't exist in the main repo history, so
-that we can pull this back in if it becomes relevant again.
+   the steps here because the commit doesn't exist in the main repo history, so
+   that we can pull this back in if it becomes relevant again.
 
 If you are using MongoDB Atlas, you can select your Atlas cluster 
 from the :guilabel:`Select a cluster` list, or you can enter the
