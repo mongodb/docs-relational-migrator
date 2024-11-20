@@ -53,8 +53,8 @@ Steps
      connection details to create the JDBC URI for your relational database. 
       
      To use a saved :ref:`relational database connection
-     <rm-save-relational-connection>`, select :guilabel:`Use a saved
-     connection`.
+     <rm-save-relational-connection>`, click :guilabel:`Use a saved connection`
+     and select it from the drop-down, then enter credentials if required.
       
      To create a new connection:
 
