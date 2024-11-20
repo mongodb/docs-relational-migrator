@@ -83,3 +83,5 @@ Steps
       database.
          
    .. step:: Click :guilabel:`Save`
+
+      The saved connection becomes available for use in all jobs and projects.
