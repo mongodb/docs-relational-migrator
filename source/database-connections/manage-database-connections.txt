@@ -72,8 +72,10 @@ To edit a connection:
 Delete a Connection
 -------------------
 
-You can delete a connection that you no longer need.
-
+You can delete a connection that you no longer need. Deleting a relational
+database connection causes any projects using that connection to fall back to
+Relational Migrator's last copy of the database contents. Mapping rules remain
+in place.
 
 Steps
 ~~~~~
