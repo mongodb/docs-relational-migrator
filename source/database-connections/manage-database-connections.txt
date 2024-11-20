@@ -17,6 +17,29 @@ You can copy, edit, or delete database connections from the Relational Migrator
 tag. You can mouse over the :icon-fa5:`info-circle` icon for a connection to
 see a list of projects that use that connection.
 
+Copy a Connection
+-----------------
+
+You can copy an existing connection. This can be useful if you want multiple
+connections to the same server that each connect to different databases.
+
+Copying a connection creates a duplicate with ``-Copy`` appended to the
+connection name.
+
+
+Steps
+~~~~~
+
+To copy a connection:
+
+#. Click the :icon-fa4:`copy` button.
+
+#. Make any desired changes.
+
+#. Click :guilabel:`Save`.
+
+
+
 Edit a Connection
 -----------------
 
@@ -49,17 +72,7 @@ To edit a connection:
 Delete a Connection
 -------------------
 
-You can delete a connection that's not in use.
-
-.. warning::
-
-   Deleting a connection that's active in a project has the following impact:
-   - (consequences for mapping rules)
-   - (consequences for jobs)
-
-.. warning on how to tell if it's in use
-.. what happens if it's in use and you delete it? Can you?
-.. what happens to mapping rules?
+You can delete a connection that you no longer need.
 
 
 Steps
@@ -69,27 +82,6 @@ To delete a connection:
 
 #. Click the :icon-fa5:`trash` button.
 
+   A warning dialog appears and lists any projects that use the connection.
+
 #. Click :guilabel:`Delete` to confirm.
-
-
-
-Copy a Connection
------------------
-
-You can copy an existing connection. This can be useful if you want multiple
-connections to the same server that each connect to different databases.
-
-Copying a connection creates a duplicate with ``-Copy`` appended to the
-connection name.
-
-
-Steps
-~~~~~
-
-To copy a connection:
-
-#. Click the :icon-fa4:`copy` button.
-
-#. Make any desired changes.
-
-#. Click :guilabel:`Save`.
