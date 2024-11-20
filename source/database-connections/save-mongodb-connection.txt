@@ -15,6 +15,14 @@ Save a MongoDB Connection
 
 To start a migration job, Relational Migrator must connect to your MongoDB
 database using an account with :authrole:`readWrite` access. You can save a new
+MongoDB Connection:
+
+- When creating or modifying a data migration job
+- From the Database Connections bar in a project
+- From the Relational Migrator :guilabel:`Connections` page
+
+
+You can save a new
 MongoDB connection from the Relational Migrator :guilabel:`Connections` page,
 or when creating or modifying a data migration job.
 

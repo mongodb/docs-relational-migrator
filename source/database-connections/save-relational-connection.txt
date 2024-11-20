@@ -13,8 +13,12 @@ Save a Relational Database Connection
    :depth: 1
    :class: singlecol
 
-You can save a new relational database connection from the Relational Migrator
-:guilabel:`Connections` page, or when creating or modifying a data migration job.
+You can save a new relational database connection:
+
+- When creating a new project from a live database connection
+- When creating or modifying a data migration job
+- From the Database Connections bar in a project
+- From the Relational Migrator :guilabel:`Connections` page
 
 
 Steps
