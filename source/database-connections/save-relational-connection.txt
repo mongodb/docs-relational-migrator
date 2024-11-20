@@ -15,14 +15,16 @@ Save a Relational Database Connection
 
 You can save a new relational database connection:
 
-- When creating a new project from a live database connection
-- When creating or modifying a data migration job
+- When :ref:`creating a new project from a live database connection <rm-create-project-live>`
+- When creating or modifying a :ref:`data migration job <rm-create-jobs>`
 - From the Database Connections bar in a project
 - From the Relational Migrator :guilabel:`Connections` page
 
 
 Steps
 -----
+
+To save a new connection from the :guilabel:`Connections` page:
 
 .. procedure::
    :style:  normal
