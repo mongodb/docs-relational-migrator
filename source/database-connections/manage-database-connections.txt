@@ -50,11 +50,6 @@ database type. This can be useful for:
 - Adding changing, or removing the :guilabel:`Environment tag`
 - Changing authentication credentials or SSL settings
 
-If the connection is active in a project, this has the following impact:
-
-- (effects on mapping rules)
-- (effects on data migration jobs)
-
 
 Steps
 ~~~~~
