@@ -65,7 +65,8 @@ Steps
   .. step:: Enter MongoDB connection details 
 
      To use a saved :ref:`MongoDB connection <rm-save-mongodb-connection>`,
-     select :guilabel:`Use a saved connection`.
+     click :guilabel:`Use a saved connection` and select it from the 
+     drop-down, then enter credentials if required.
       
      To create a new connection:
 

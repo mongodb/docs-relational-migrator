@@ -23,8 +23,8 @@
      - The credentials to use for authentication.
      
        Checking :guilabel:`Save password` saves the password securely on 
-       your machine. Relational Migrator automatically fills in the 
-       :guilabel:`Password` field when updating connection information.
+       your machine, so you don't have to enter the :guilabel:`Username` and
+       :guilabel:`Password` again when using the saved connection.
 
    * - :guilabel:`General / SSL` toggle
 
