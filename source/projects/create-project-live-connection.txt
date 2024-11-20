@@ -47,8 +47,6 @@ Steps
 
       .. include:: /includes/steps-create-relational-connection-short.rst
 
-.. step:: Click :guilabel:`Connect`.
-
 .. step:: From the :guilabel:`Select tables` screen, indicate the tables you want to migrate and click :guilabel:`Next`.
 
    The following table explains the different ways you can select tables to migrate: 

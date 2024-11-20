@@ -60,8 +60,6 @@ Steps
 
      .. include:: /includes/steps-create-relational-connection-short.rst
 
-  .. step:: Click :guilabel:`Connect`
-
   .. step:: Enter MongoDB connection details 
 
      To use a saved :ref:`MongoDB connection <rm-save-mongodb-connection>`,
@@ -71,8 +69,6 @@ Steps
      To create a new connection:
 
      .. include:: /includes/steps-create-mongodb-connection-short.rst
-
-  .. step:: Click :guilabel:`Connect`
 
   .. step:: On the :guilabel:`Migration Options` form, select :guilabel:`Migration Options`:
 

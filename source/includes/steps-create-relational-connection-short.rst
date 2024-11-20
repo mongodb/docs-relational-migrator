@@ -40,4 +40,9 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
 
 #. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
-#. (Optional) Click :guilabel:`Test connection` to confirm that Relational Migrator can establish a connection.
+#. (Optional) Click :guilabel:`Test connection` to confirm that Relational
+   Migrator can establish a connection.
+
+#. Click :guilabel:`Connect`.
+      
+   The saved connection becomes available for use in all jobs and projects.

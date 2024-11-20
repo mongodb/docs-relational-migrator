@@ -72,8 +72,6 @@ underlying tables are read into Migrator.
    To create a new connection, click :guilabel:`+ Add Connection`:
 
    .. include:: /includes/steps-create-relational-connection-short.rst
-
-#. Click :guilabel:`Connect`.
    
 Any changes from your relational database are reflected in 
 the main Relational Migrator diagram and included in future 
