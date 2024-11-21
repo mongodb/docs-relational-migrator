@@ -56,7 +56,14 @@ Steps
 
       #. Under the :guilabel:`SQL Query` header, paste your SQL query
          into the text box.
-   
+
+   .. step:: Select a target language
+
+      Use :guilabel:`Target Language` to select a language for
+      the query converter to render.
+
+      .. include:: /includes/fact-domain-object
+
    .. step:: Convert and test syntax
 
       a. Click the :guilabel:`Convert` button. Wait for your SQL code to 
