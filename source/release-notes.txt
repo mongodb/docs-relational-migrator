@@ -11,6 +11,30 @@ Release Notes
    :class: twocols
 
 
+1.11.0 Changelog
+----------------
+
+.. TODO - confirm release date before merge/publish
+   *Released October 27, 2024*
+
+New features:
+
+- New database connection management feature allows you to save 
+  relational and MongoDB connections and select active connections for 
+  a project.
+- Improved query conversion by adding the option to use strongly-typed 
+  Java entities in the signatures of converted queries.
+- Added support for converting Oracle packages and SQL Server functions 
+  in query converter.
+- Added support for the latest Postgres 17 and MySQL 8.4/9.0 database 
+  versions.
+- Improved support for connecting to Oracle pluggable databases (PDBs).
+- Added support to ``Bring Your Own LLM`` using a customer-managed LLM 
+  service for AI code generation instead of the default MongoDB-hosted 
+  service.
+- Temporarily disabled the ability to select Atlas clusters from a list 
+  when signed in with an Atlas account
+
 1.10.0 Changelog
 ----------------
 
