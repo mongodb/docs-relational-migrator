@@ -11,5 +11,3 @@
    :keywords: code example
 
 .. openapi:: /rm-openapi-latest.json
-
-.. test
