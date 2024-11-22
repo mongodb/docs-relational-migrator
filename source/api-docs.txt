@@ -21,7 +21,7 @@ Relational Migrator REST API
 The Relational Migrator REST API provides you with programmatic access 
 to Relation Migrator with HTTPS endpoints. The REST API is a 
 Relational Migrator service between your application and your source and 
-destination databases that you can send requests to manage your sync jobs.
+destination databases that you can send requests to manage your migration jobs.
 
 You don't need to install any additional extensions or packages to use 
 the Relational Migrator REST API. The functionality is part of the 
@@ -31,13 +31,21 @@ you access the application on (either ``8278``, ``8080``, or ``443``).
 How the REST API Works
 ----------------------
 
-The Relational Migrator REST API:
+The Relational Migrator REST API runs on the client computer or server
+that has Relational Migrator installed. By default, Relational Migrator
+does not expose the API to any remote computers. If you use the default
+security settings, you must make all calls to the API on the same
+computer that you are running Relational Migrator on. 
 
-- Runs on the client computer or server that the Relation Migrator 
-  application is installed on.
-- The Rest API is controlled by the host adapter binding.
-- The Relational Migrator REST API **does not** currently support 
-  authentication.
+If you want to remotely access the REST API, configure the
+``unattended`` profile by :ref:`installing Relational Migrator on an
+unattended server <unattended-server>`. 
+
+.. warning::
+
+   The REST API does not support authentication. If you enable remote
+   access, users do not need to authenticate to call the API which may
+   cause security vulnerabilities.
 
 When to Use REST API
 --------------------
@@ -51,7 +59,7 @@ Use the Relational Migrator REST API when:
   ``WHERE DATEDIFF(CURDATE(), last_modified) <= 1`` to batch migrate 
   data on a cadence from your relational database to MongoDB. 
 
-- You want to programmatically create Relational Migrator sync jobs 
+- You want to programmatically create Relational Migrator migration jobs 
   dynamically. For example, using connection strings from 
   multiple databases without manually configuring them in the GUI.
 

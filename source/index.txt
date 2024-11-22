@@ -151,7 +151,7 @@ Explore libraries and tools for MongoDB.
    Mapping Rules </mapping-rules/mapping-rules>
    Table Filters </table-filters/table-filters>
    Diagrams </diagrams/diagrams>
-   Sync Jobs </jobs/sync-jobs>
+   Migration Jobs </jobs/sync-jobs>
    Code Generation </code-generation>
    {+migrator-api+} <api-docs>
    Release Notes </release-notes>

@@ -40,7 +40,7 @@ the :guilabel:`Manage` button.
 #. Click :guilabel:`Save`. 
 
    Changes from your relational database are reflected in the main 
-   Relational Migrator diagram and included in future sync jobs.
+   Relational Migrator diagram and included in future migration jobs.
 
 
 Refresh Schema Changes
@@ -83,10 +83,10 @@ key relations or data types for underlying tables.
 
    .. include:: /includes/steps-create-relational-connection-short.rst
    
+ 
 Any changes from your relational database are reflected in 
 the main Relational Migrator diagram and included in future 
-sync jobs.
-
+migration jobs.
 
 .. _import-ddl-file:
 
@@ -113,5 +113,6 @@ data types for the underlying tables are read into Migrator.
 
 #. Click :guilabel:`Save`. 
 
+
 Any changes from your relational database are reflected in the main 
-Relational Migrator diagram and included in future sync jobs.
+Relational Migrator diagram and included in future migration jobs.
