@@ -60,7 +60,7 @@ To edit a connection:
 
 #. Click the :icon-lg:`Edit` button.
 
-#. Make any desired changes.
+#. Make any desired changes, such as renaming the connection or changing the database.
 
 #. Click :guilabel:`Save`.
 

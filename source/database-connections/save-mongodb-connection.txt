@@ -78,4 +78,4 @@ To save a new connection from the :guilabel:`Connections` page:
          
    .. step:: Click :guilabel:`Save`
       
-      The saved connection becomes available for use in all jobs and projects.
+      The saved connection is available for use in all jobs and projects.

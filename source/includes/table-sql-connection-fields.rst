@@ -16,7 +16,7 @@
 
    * - :guilabel:`Database`
 
-     - The database name. If blank, you will only see objects in the default
+     - The database name. If blank, you only see objects in the default
        ``dbo`` schema in all databases.
 
    * - :guilabel:`Authentication`
