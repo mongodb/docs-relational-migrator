@@ -34,7 +34,8 @@ UI Elements
        configure project settings, and access the help menu.
 
    * - Database Connections Bar
-     - View or select the active MongoDB and relational database 
+     - The :guilabel:`Relational DB` and :guilabel:`MongoDB` dropdowns let you
+       view or select the active relational database and MongoDB 
        :ref:`connections <rm-database-connections>` for the project.
   
    * - Left Pane
