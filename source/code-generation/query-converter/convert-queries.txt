@@ -27,7 +27,6 @@ About this Task
 Steps
 -----
 
-
 .. procedure::
    :style:  normal
 
@@ -49,7 +48,7 @@ Steps
       a. Copy your SQL query to your clipboard.
 
          .. note::
-            
+
             Queries copied into the :guilabel:`SQL Query` text field 
             must be a SELECT query. For example: 
             ``SELECT ID,ITEMNAME,PRICE FROM inventory``.
