@@ -60,7 +60,7 @@ To edit a connection:
 
 #. Click the :icon-lg:`Edit` button.
 
-#. Make desired changes.
+#. Make any desired changes.
 
 #. Click :guilabel:`Save`.
 
@@ -81,6 +81,6 @@ To delete a connection:
 
 #. Click the :icon-fa5:`trash` button.
 
-   A warning dialog appears and lists any projects that use the connection.
+   A warning dialog displays and lists any projects that use the connection.
 
 #. Click :guilabel:`Delete` to confirm.

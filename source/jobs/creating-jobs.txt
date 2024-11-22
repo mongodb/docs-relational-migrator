@@ -34,8 +34,9 @@ Before you Begin
 
 - :ref:`Create one or more mapping rules <create-rule-relational>` in your 
   Relational Migrator project.
-- For both Atlas and on-premises deployments, we recommend creating a separate
-  :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator.
+- For both Atlas and on-premises deployments, create a separate
+  :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
+  :authrole:`readWrite` access to your MongoDB database.
 
 Steps
 -----

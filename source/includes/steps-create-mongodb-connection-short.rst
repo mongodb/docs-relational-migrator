@@ -2,7 +2,7 @@
 
 a. Enter the MongoDB connection string.
 
-   a. In the :guilabel:`MongoDB connection string (URI)` field, input
+   a. In :guilabel:`MongoDB connection string (URI)`, enter
       your :manual:`MongoDB URI <mongodb-uri>`.
 
    #. If it isn't included in the connection string, enter the
@@ -12,11 +12,8 @@ a. Enter the MongoDB connection string.
       :guilabel:`Username` and :guilabel:`Password` of your
       :ref:`Relational Migrator MongoDB user <rm-mongodb-service-user>`.
 
-#. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
-
-#. (Optional) Click :guilabel:`Test connection` to confirm that Relational
-   Migrator can establish a connection.
+#. Enter a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
 #. Click :guilabel:`Connect`.
       
-   The saved connection becomes available for use in all jobs and projects.
+   The saved connection is available for use in all jobs and projects.

@@ -23,9 +23,9 @@ deployment. For details on MongoDB connection string options, see
 MongoDB User
 ------------
 
-For both Atlas and on-premises deployments, we recommend creating a separate
-:ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator. It must
-have :authrole:`readWrite` access to the database you're migrating to.
+For both Atlas and on-premises deployments, create a separate
+:ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
+:authrole:`readWrite` access to your MongoDB database.
 
 Atlas Connection URI
 --------------------

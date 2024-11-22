@@ -16,8 +16,8 @@ databases for use with Relational Migrator.
 MongoDB
 -------
 
-For both Atlas and on-premises deployments, we recommend creating a separate
-:ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator. with
+For both Atlas and on-premises deployments, create a separate
+:ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
 :authrole:`readWrite` access to your MongoDB database.
 
 Relational Databases

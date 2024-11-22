@@ -2,9 +2,9 @@
 
 a. In the :guilabel:`Database type` drop-down, select the database type.
 
-#. To input a :ref:`connection string <rm-relational-database-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI` field.
+#. To enter a :ref:`connection string <rm-relational-database-connection-strings>` directly, enable the :guilabel:`Enter URI manually` toggle and paste your connection string into the :guilabel:`JDBC URI`.
 
-#. To create a connection string by entering database information, input the following:
+#. To create a connection string by entering database information, enter the following:
 
    .. tabs::
 
@@ -38,11 +38,8 @@ a. In the :guilabel:`Database type` drop-down, select the database type.
 
          .. include:: /includes/table-sybase-connection-fields.rst
 
-#. Specify a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
-
-#. (Optional) Click :guilabel:`Test connection` to confirm that Relational
-   Migrator can establish a connection.
+#. Enter a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
 
 #. Click :guilabel:`Connect`.
       
-   The saved connection becomes available for use in all jobs and projects.
+   The saved connection is available for use in all jobs and projects.
