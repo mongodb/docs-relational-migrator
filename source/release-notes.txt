@@ -14,8 +14,7 @@ Release Notes
 1.11.0 Changelog
 ----------------
 
-.. TODO - confirm release date before merge/publish
-   *Released October 27, 2024*
+*Released November 25, 2024*
 
 New features:
 
