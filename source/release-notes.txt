@@ -35,6 +35,11 @@ New features:
 - Temporarily disabled the ability to select Atlas clusters from a list 
   when signed in with an Atlas account
 
+Bug Fixes:
+
+- Fixed an issue where a "No foreign key found" error could occur in some 
+  cases with multiple foreign key embeddings.
+
 1.10.0 Changelog
 ----------------
 
