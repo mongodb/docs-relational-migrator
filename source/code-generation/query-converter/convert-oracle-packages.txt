@@ -47,12 +47,9 @@ Steps
 
    .. step:: Open the query converter view
 
-      -  If it is your first time using the query converter in your
-         project, click :guilabel:`Import From Database`.
-
-      -  If your project already has converted SQL code, click the
-         :guilabel:`Manage Database Objects` button on the left-hand
-         pane.
+      -  Click the :guilabel:`+ Add` button on the left-hand pane.
+      
+      -  Click :guilabel:`Import From Database`.
 
    .. step:: Connect to your relational database
 
@@ -80,7 +77,7 @@ Steps
 
       #. Click :guilabel:`Save`.
 
-         The code for each stored procedure in your database 
+         The code for each package in your database 
          schema is imported into your project and is visible in the 
          :guilabel:`Query Converter` pane under 
          :guilabel:`Packages`.
