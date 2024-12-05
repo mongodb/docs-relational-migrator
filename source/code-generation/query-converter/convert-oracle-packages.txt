@@ -73,7 +73,7 @@ Steps
 
             To toggle Oracle packages for conversion, click 
             the :icon-fa5:`check-square` icon next to the 
-            stored procedure's name.
+            package's name.
 
       #. Click :guilabel:`Save`.
 
