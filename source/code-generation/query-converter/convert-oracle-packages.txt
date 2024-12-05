@@ -28,7 +28,7 @@ Before you Begin
 - MongoDB does not have an official synonym object type for Oracle 
   packages. Instead, MongoDB supports custom JavaScript and 
   driver code that hosts the database logic. Part of your application 
-  modernization journey is to choose the programming language and hosting 
+  modernization journey is choosing the programming language and hosting 
   option that best serves your application needs. You can host your
   converted Oracle package code in your application or with 
   :ref:`<atlas-functions>`.
@@ -53,12 +53,12 @@ Steps
 
    .. step:: Connect to your relational database
 
-      a. Specify the connection details to your source database. 
+      a. If you are not already connected to your source database, specify the 
+         connection details to your source database and click :guilabel:`Connect`.
+
+         For more information on database connections in Relational
+         Migrator, see :ref:`rm-database-connections`.
          
-         For details, see :ref:`rm-relational-database-connection-strings`.
-
-      #. Click :guilabel:`Connect`.
-
    .. step:: Select Oracle packages
 
       a. On the :guilabel:`Import from database` modal, click
