@@ -22,8 +22,8 @@ Table filters allow you to:
 
 .. note:: 
 
-   Table filters apply to all snapshot migration jobs in a migration project. 
-   Continuous migration jobs always update all database objects, ignoring project-level table filters. 
+   Table filters apply to all snapshot migration jobs in a project. 
+   Continuous migration jobs ignore project-level table filters, always updating all database objects. 
    To learn more about types of migration jobs, see :ref:`rm-sync-jobs`. 
 
 Table Filter Types
