@@ -20,11 +20,9 @@ Table filters allow you to:
 - Limit the read operations on your source database.
 - Create test environments before migrating your entire database.
 
-.. note:: 
-
-   Table filters apply to all snapshot migration jobs in a project. 
-   Continuous migration jobs ignore project-level table filters, always updating all database objects. 
-   To learn more about types of migration jobs, see :ref:`rm-sync-jobs`. 
+Table filters apply to any snapshot migration job that you create in your Relational Migrator project. 
+Continuous migration jobs ignore project-level table filters, and always update all database objects. 
+To learn more about types of migration jobs, see :ref:`rm-sync-jobs`. 
 
 Table Filter Types
 ------------------
