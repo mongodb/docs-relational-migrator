@@ -20,11 +20,13 @@ Types of Migration Jobs
 Relational Migrator offers two different migration job types:
 
 **Snapshot**: Snapshot migration jobs run once, typically for a point in time 
-migration strategy.
+migration strategy. You can apply :ref:`table filters <rm-table-filters>` to control the 
+volume of data migrated from each table in a snapshot migration job.
 
 **Continuous**: Continuous migration jobs cover new incoming data for a zero-downtime 
 Change Data Capture (CDC) migration strategy. Continuous jobs run a snapshot stage first,
-followed by a CDC stage that captures database updates in near-real time. 
+followed by a CDC stage that captures database updates in near-real time. The CDC stage 
+updates all database objects, ignoring any :ref:`rm-table-filters` set in project-level mapping rules. 
 When you run a continuous migration job, your source and destination database 
 data remain in sync.
 
