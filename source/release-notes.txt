@@ -11,7 +11,7 @@ Release Notes
    :class: twocols
 
 Download the latest Relational Migrator binary from the `release page <https://www.mongodb.com/try/download/relational-migrator>`__. 
-For instructions on installing Relational Migrator, see the :ref:`Installation <installation>` page. 
+For installation instructions, see the :ref:`Installation <installation>` page. 
 
 1.11.0 Changelog
 ----------------
