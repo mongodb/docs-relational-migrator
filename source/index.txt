@@ -147,9 +147,8 @@ Explore libraries and tools for MongoDB.
 
    Get Started </getting-started>
    Installation </installation>
-   Database Connections </database-connections/database-connections>
-
-   Projects </projects>
+   Database Connections </database-connections>
+   Projects </projects/projects>
    Mapping Rules </mapping-rules/mapping-rules>
    Table Filters </table-filters>
    Diagrams </diagrams/diagrams>
