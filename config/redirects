@@ -24,5 +24,5 @@ define: versions master
 # DOCS-16498 Getting Started Page End
 
 # Repetitive paths
-[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/relational-migrator/data-verification/
+[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/relational-migrator/jobs/data-verification/
 [*]: ${prefix}/mapping-rules/fields/calculated-fields/calculated-fields/ -> ${base}/relational-migrator/mapping-rules/fields/calculated-fields/
