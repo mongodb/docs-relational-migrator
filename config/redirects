@@ -24,5 +24,5 @@ define: versions master
 # DOCS-16498 Getting Started Page End
 
 # DOCSP-46663 repetitive paths
-[*]: ${prefix}/installation/install-on-an-unattended-server/rhel-centos-server-installation/rhel-centos-server-installation/  -> ${base}/relational-migrator/nstallation/install-on-an-unattended-server/rhel-centos-server-installation/
+[*]: ${prefix}/installation/install-on-an-unattended-server/rhel-centos-server-installation/rhel-centos-server-installation/  -> ${base}/relational-migrator/installation/install-on-an-unattended-server/rhel-centos-server-installation/
 [*]: ${prefix}/installation/install-on-an-unattended-server/windows-server-installation/windows-server-installation/  -> ${base}/relational-migrator/installation/install-on-an-unattended-server/windows-server-installation/
