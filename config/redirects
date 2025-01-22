@@ -45,6 +45,6 @@ define: versions master
 
 
 #DOCSP-46660 repetitive paths redirect
-[*]: ${prefix}/diagrams/diagrams/ -> ${base}/diagrams/
-[*]: ${prefix}/diagrams/navigate-diagrams/navigate-diagrams/ -> ${base}/diagrams/navigate-diagrams/
-[*]: ${prefix}/connection-strings/connection-strings/ -> ${base}/connection-strings/
+[*]: ${prefix}/diagrams/diagrams/ -> ${base}/relational-migrator/diagrams/
+[*]: ${prefix}/diagrams/navigate-diagrams/navigate-diagrams/ -> ${base}/relational-migrator/diagrams/navigate-diagrams/
+[*]: ${prefix}/connection-strings/connection-strings/ -> ${base}/relational-migrator/connection-strings/
