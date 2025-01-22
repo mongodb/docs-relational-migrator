@@ -19,6 +19,9 @@ define: versions master
 # Prep Code Generation end
 
 # DOCS-16498 Getting Started Page Start
-[*]: ${prefix}/migration-scenarios/ -> ${base}/getting-started/migration-scenarios/
-[*]: ${prefix}/supported-databases/ -> ${base}/getting-started/supported-databases/
+[*]: ${prefix}/migration-scenarios/ -> ${base}/relational-migrator/getting-started/migration-scenarios/
+[*]: ${prefix}/supported-databases/ -> ${base}/relational-migrator/getting-started/supported-databases/
 # DOCS-16498 Getting Started Page End
+
+# Repetitive paths
+[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/relational-migrator/data-verification/
