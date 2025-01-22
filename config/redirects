@@ -26,9 +26,12 @@ define: versions master
 # DOCSP-46661 Repetitive File Paths Start
 [*]: ${prefix}/diagrams/navigate-diagrams/working-with-entities/working-with-entities/ -> ${base}/diagrams/navigate-diagrams/working-with-entities/
 [*]: ${prefix}/installation/install-on-a-local-machine/install-on-a-local-machine/ -> ${base}/installation/install-on-a-local-machine/
-[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/relational-migrator/jobs/data-verification/
-[*]: ${prefix}/mapping-rules/fields/calculated-fields/calculated-fields/ -> ${base}/relational-migrator/mapping-rules/fields/calculated-fields/
 # DOCSP-46661 Repetitive File Paths End
+
 # DOCSP-46665 repetitive file paths
 [*]: ${prefix}/mapping-rules/mapping-rule-options/mapping-rule-options/ -> ${base}/relational-migrator/mapping-rules/mapping-rule-options/introduction/
 [*]: ${prefix}/mapping-rules/mapping-rules/ -> ${base}/relational-migrator/mapping-rules/introduction/
+
+# DOCSP-46664 repetitive file paths
+[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/relational-migrator/jobs/data-verification/
+[*]: ${prefix}/mapping-rules/fields/calculated-fields/calculated-fields/ -> ${base}/relational-migrator/mapping-rules/fields/calculated-fields/
