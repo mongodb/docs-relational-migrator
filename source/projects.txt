@@ -50,4 +50,3 @@ There are multiple options for you to create a project:
    Export </projects/export-project>
    Delete </projects/deleting-projects>
    Rename </projects/renaming-projects>
-   Projects </projects/>

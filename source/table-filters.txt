@@ -62,4 +62,3 @@ Get Started
    Apply </table-filters/apply-table-filters>
    Edit </table-filters/edit-table-filters>
    Delete </table-filters/delete-table-filters>
-   Table Filters </table-filters>
