@@ -28,6 +28,6 @@ Get Started
    :titlesonly:
    :hidden:
 
-   Install </installation/install-on-an-unattended-server/windows-server-installation/install-windows-server>
+   Install </installation/install-on-an-unattended-server/install-windows-server>
    Run as System Service </installation/install-on-an-unattended-server/windows-server-installation/windows-system-service>
    Enable External Access </installation/install-on-an-unattended-server/windows-server-installation/windows-external-access>
