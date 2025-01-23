@@ -152,7 +152,7 @@ Explore libraries and tools for MongoDB.
    Projects </projects>
    Mapping Rules </mapping-rules/mapping-rules>
    Table Filters </table-filters>
-   Diagrams </diagrams/diagrams>
+   Diagrams </diagrams>
    Migration Jobs </jobs/sync-jobs>
    Code Generation </code-generation>
    {+migrator-api+} <api-docs>
