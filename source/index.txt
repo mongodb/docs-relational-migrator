@@ -150,7 +150,7 @@ Explore libraries and tools for MongoDB.
    Database Connections </database-connections/database-connections>
 
    Projects </projects>
-   Mapping Rules </mapping-rules>
+   Mapping Rules </mapping-rules/introduction>
    Table Filters </table-filters>
    Diagrams </diagrams>
    Migration Jobs </jobs/sync-jobs>
