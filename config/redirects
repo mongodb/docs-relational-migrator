@@ -36,12 +36,12 @@ define: versions master
 [*]: ${prefix}/installation/install-on-an-unattended-server/install-on-an-unattended-server/  -> ${base}/installation/install-on-an-unattended-server/
 
 # DOCSP-46665 repetitive file paths
-[*]: ${prefix}/mapping-rules/mapping-rule-options/mapping-rule-options/ -> ${base}/relational-migrator/mapping-rules/mapping-rule-options/introduction/
-[*]: ${prefix}/mapping-rules/mapping-rules/ -> ${base}/relational-migrator/mapping-rules/introduction/
+[*]: ${prefix}/mapping-rules/mapping-rule-options/mapping-rule-options/ -> ${base}/mapping-rules/mapping-rule-options/introduction/
+[*]: ${prefix}/mapping-rules/mapping-rules/ -> ${base}/mapping-rules/introduction/
 
 # DOCSP-46664 repetitive file paths
-[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/relational-migrator/jobs/data-verification/
-[*]: ${prefix}/mapping-rules/fields/calculated-fields/calculated-fields/ -> ${base}/relational-migrator/mapping-rules/fields/calculated-fields/
+[*]: ${prefix}/jobs/data-verification/data-verification/ -> ${base}/jobs/data-verification/
+[*]: ${prefix}/mapping-rules/fields/calculated-fields/calculated-fields/ -> ${base}/mapping-rules/fields/calculated-fields/
 
 #DOCSP-46660 repetitive paths redirect
 [*]: ${prefix}/diagrams/diagrams/ -> ${base}/diagrams/
