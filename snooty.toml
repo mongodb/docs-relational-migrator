@@ -41,7 +41,14 @@ toc_landing_pages = [
 "api-docs",
 "deployment-considerations",
 "code-generation/query-converter-test-queries",
-"code-generation/query-converter/query-management"
+"code-generation/query-converter/query-management",
+
+# ToC Uplift Mockup
+"connect-to-db",
+"connect-to-db/creating-projects",
+"projects/project-settings",
+"migration-planning-guide",
+"faq"
 ]
 
 [constants]

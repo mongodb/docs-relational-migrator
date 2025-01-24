@@ -1,0 +1,9 @@
+==============================
+Creating and Managing Projects
+==============================
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   Project Settings </connect-to-db/project-settings>

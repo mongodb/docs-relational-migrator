@@ -1,8 +1,8 @@
 .. _local-machine-install:
 
-===============================
-Installation on a Local Machine
-===============================
+============================
+Developer Installation Guide
+============================
 
 .. default-domain:: mongodb
 
@@ -73,5 +73,5 @@ Learn More
 
    Windows </installation/install-on-a-local-machine/install-windows>
    macOS </installation/install-on-a-local-machine/install-mac>
-   Ubuntu </installation/install-on-a-local-machine/install-ubuntu>
-   RHEL </installation/install-on-a-local-machine/install-rhel>
+   Linux </installation/install-on-a-local-machine/linux>
+   Docker <installation/install-with-docker>

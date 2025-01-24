@@ -145,15 +145,16 @@ Explore libraries and tools for MongoDB.
    :titlesonly:
    :hidden:
 
-   Get Started </getting-started>
+   Overview </getting-started>
    Installation </installation>
-   Database Connections </database-connections/database-connections>
-
-   Projects </projects>
-   Mapping Rules </mapping-rules/introduction>
-   Table Filters </table-filters>
-   Diagrams </diagrams>
-   Migration Jobs </jobs/sync-jobs>
+   Connect to a Database </connect-to-db>
+   Application Settings </projects/project-settings>
+   Migration Planning Guide </migration-planning-guide>
+   Application Analysis </app-analysis>
+   Data Modeling </mapping-rules/introduction>
+   Data Migration </jobs/sync-jobs>
    Code Generation </code-generation>
+   API & Developer Reference </api-dev-ref>
    {+migrator-api+} <api-docs>
+   FAQ </faq>
    Release Notes </release-notes>

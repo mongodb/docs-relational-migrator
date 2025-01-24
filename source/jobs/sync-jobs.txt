@@ -97,7 +97,6 @@ You can perform the following tasks from the **Data Migration** tab.
    :titlesonly:
    :hidden:
 
-   Configure Prerequisites </jobs/prerequisites>
    Create </jobs/creating-jobs>
    Monitor </jobs/monitoring-jobs>
    Stop </jobs/stopping-jobs>
