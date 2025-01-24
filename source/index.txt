@@ -155,6 +155,5 @@ Explore libraries and tools for MongoDB.
    Data Migration </jobs/sync-jobs>
    Code Generation </code-generation>
    API & Developer Reference </api-dev-ref>
-   {+migrator-api+} <api-docs>
    FAQ </faq>
    Release Notes </release-notes>
