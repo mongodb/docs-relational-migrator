@@ -20,6 +20,11 @@ You can install Relational Migrator on an existing Kafka cluster including
 Kafka Connect. This installation method is ideal if you are already running 
 Kafka or you have your own approach to installing and configuring Kafka.
 
+.. note::
+
+   This tutorial assumes prior knowledge of Kafka and does not cover the 
+   setup, configuration, or operational management of a Kafka cluster.
+
 Before you Begin 
 ----------------
 
