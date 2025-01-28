@@ -45,6 +45,7 @@ toc_landing_pages = [
 
 # ToC Uplift Mockup
 "connect-to-db",
+"connect-to-db/mysql",
 "connect-to-db/creating-projects",
 "projects/project-settings",
 "migration-planning-guide",
