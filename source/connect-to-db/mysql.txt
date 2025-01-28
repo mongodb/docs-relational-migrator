@@ -1,3 +1,18 @@
-=====
-MySQL
-=====
+================
+Connect to MySQL
+================
+
+Combines content from :ref:`rm-save-relational-connection` and :ref:`rm-create-project-live`.
+
+2 tabs containing procedures.
+- 1 procedure for creating a project by connecting to live DB
+- 1 procedure for saving a db connection
+
+Adds additional content to explain when to use each.
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   Create a Service Account </connect-to-db/mysql/create-service-account>
+   Connection Strings </connect-to-db/mysql/connection-strings>
