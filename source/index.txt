@@ -145,15 +145,13 @@ Explore libraries and tools for MongoDB.
    :titlesonly:
    :hidden:
 
-   Overview </getting-started>
+   Introduction </getting-started>
    Installation </installation>
-   Connect to a Database </connect-to-db>
-   Application Settings </projects/project-settings>
+   Connect to Databases </connect-to-db>
    Migration Planning Guide </migration-planning-guide>
    Application Analysis </app-analysis>
    Data Modeling </mapping-rules/introduction>
    Data Migration </jobs/sync-jobs>
    Code Generation </code-generation>
    API & Developer Reference </api-dev-ref>
-   FAQ </faq>
    Release Notes </release-notes>

@@ -80,6 +80,5 @@ Steps
    :titlesonly:
    :hidden:
 
-   Supported Databases & Versions </getting-started/supported-databases>
-   Quickstart </getting-started/quickstart>
    Security </getting-started/security>
+   User Interface </getting-started/overview>

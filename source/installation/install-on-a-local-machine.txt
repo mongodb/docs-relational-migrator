@@ -72,6 +72,6 @@ Learn More
    :titlesonly:
 
    Windows </installation/install-on-a-local-machine/install-windows>
-   macOS </installation/install-on-a-local-machine/install-mac>
+   MacOS </installation/install-on-a-local-machine/install-mac>
    Linux </installation/install-on-a-local-machine/linux>
    Docker <installation/install-with-docker>
