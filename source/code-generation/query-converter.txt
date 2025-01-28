@@ -19,6 +19,7 @@ your SQL code.
    :hidden:
    :titlesonly:
 
+   Log in with Atlas </getting-started/atlas-log-in>
    AI & Data Usage </code-generation/query-converter/ai-and-data-usage-information>
    Enable Query Converter </code-generation/query-converter/enable-query-converter>
    Convert Queries </code-generation/query-converter/convert-queries>
