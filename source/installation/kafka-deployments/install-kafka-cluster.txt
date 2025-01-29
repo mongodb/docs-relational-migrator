@@ -22,9 +22,10 @@ Kafka or you have your own approach to installing and configuring Kafka.
 
 .. important::
 
-   This guide assumes familiarity with Kafka. Support for setting up, 
-   configuring, or managing a Kafka cluster is outside the scope of 
-   this documentation and MongoDB Support. 
+   This guide assumes familiarity with Kafka. This documentation and MongoDB 
+   Support does not provide support for setting up, configuring, or managing 
+   a Kafka cluster.
+
 
 Before you Begin 
 ----------------
