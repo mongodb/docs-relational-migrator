@@ -46,6 +46,7 @@ New features:
 - Increased the maximum file size of supported DDL schemas file from 4MB to 20MB.
 
 Bug Fixes:
+
 - Fixed an issue where Postgres created a duplicate replication slot in certain 
   scenarios. 
 
