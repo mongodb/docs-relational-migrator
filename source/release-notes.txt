@@ -20,7 +20,7 @@ For installation instructions, see the :ref:`Installation <installation>` page.
 
 New features:
 
-- Added support for four additional source databases, using JDBC connectivity to
+- Added support for four source databases, using JDBC connectivity to
   enable snapshot-based data migration and database object conversion from:
 
   - YugabyteDB
@@ -28,14 +28,15 @@ New features:
   - SAP Sybase IQ (SAP IQ)
   - SAP SQL Anywhere
   
-  Note that JDBC connection support for these databases is currently in Public Preview.
-  Users can now also add their own custom relational database support by creating
-  a custom JDBC connector.
+  .. note:: 
+    Note that JDBC connection support for these databases is currently in Public Preview.
+    Users can also add custom relational database support by creating
+    a custom JDBC connector.
 
 - Added support for X.509 certificate authentication for client authentication on
   MongoDB target databases.
-- Informed MongoDB Atlas users if they attempt a large data migration into a 
-  low-end Atlas cluster which might result in an extended migration time. For 
+- Added information for MongoDB Atlas users attempting large data migrations on
+  lower-tier Atlas clusters which may result in extended migration time. For 
   large jobs where migration performance is a consideration, users may be able 
   to reduce total migration time by up to 54% by upgrading to a faster Atlas tier. 
 - Added optional news section to inform users of new migrator tool capabilities,
