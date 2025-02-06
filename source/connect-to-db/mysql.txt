@@ -1,18 +1,273 @@
+.. _rm-connect-mysql:
+
 ================
 Connect to MySQL
 ================
 
-Combines content from :ref:`rm-save-relational-connection` and :ref:`rm-create-project-live`.
+.. default-domain:: mongodb
 
-2 tabs containing procedures.
-- 1 procedure for creating a project by connecting to live DB
-- 1 procedure for saving a db connection
 
-Adds additional content to explain when to use each.
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
-.. toctree::
-   :hidden:
-   :titlesonly:
+**MOCKUP**
 
-   Create a Service Account </connect-to-db/mysql/create-service-account>
-   Connection Strings </connect-to-db/mysql/connection-strings>
+You can use a saved connection for any task that requires connecting
+to a database. You can save a new relational database connection:
+
+- When :ref:`creating a new project from a live database connection <rm-create-project-live>`
+- When creating or modifying a :ref:`data migration job <rm-create-jobs>`
+- From the Database Connections bar in a project
+- From the Relational Migrator :guilabel:`Connections` page
+
+
+Create Service Account
+----------------------
+To run migration jobs from a MySQL source database, the database may require 
+some configuration changes. If Relational Migrator determines the 
+database needs configuration changes, it automatically generates a 
+SQL script with the required changes. It is recommended to have a 
+Database Administrator (DBA) review the commands in this script and 
+perform their execution on the database server. The 
+MySQL Server configurations depend on the type of migration job:
+
+.. include:: /includes/fact-short-sync-job-desc.rst
+
+For details on supported versions of MySQL, see 
+:ref:`supported-databases`.
+
+.. tabs::
+
+   .. tab:: Snapshot Jobs
+      :tabid: enable-snapshot-jobs
+
+      .. procedure::
+         :style: normal
+
+         .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
+
+   .. tab:: Continuous Jobs
+      :tabid: enable-continuous-jobs
+
+      Running continuous jobs on Relational Migrator 
+      requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
+      to be enabled on your MySQL instance. The binary log (Binlog) 
+      records all operations in the order they are committed to the 
+      database. 
+
+      .. procedure::
+         :style: normal
+
+         .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
+
+         .. step:: (Optional) Manually verify Binlog is enabled
+
+               Relational Migrator automatically checks this setting for 
+               you. To manually check the if the ``Binlog`` option is 
+               enabled, use the queries below for your version of MySQL:
+
+               .. note:: 
+
+                  ``Binlog`` is automatically enabled by default 
+                  on MySQL ``8.x`` versions.
+
+               .. tabs::
+
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                        FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+
+                        FROM information_schema.global_variables WHERE variable_name='log_bin';
+
+         .. step:: Locate and update the MySQL configuration file
+
+            a. Run the following SQL query to get the ``server_id`` 
+               value for your MySQL instance:
+
+               .. tabs::
+
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value 
+                        FROM 
+                        performance_schema.global_variables 
+                        WHERE variable_name='server_id';
+
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: sql
+                        :copyable: true
+
+                        SELECT variable_value 
+                        FROM 
+                        information_schema.global_variables 
+                        WHERE variable_name='server_id';
+
+            #. Locate the config file for your MySQL instance by running 
+               the following ``mysqld`` command in your terminal:
+
+               .. tabs::
+
+                  .. tab:: Windows
+                     :tabid: windows
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        mysql --help | findstr cnf
+
+                  .. tab:: MacOS / Linux
+                     :tabid: macos-linux
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        mysql --help | grep cnf
+
+            #. Under the ``[mysqld]`` section of your MySQL 
+               configuration file add the following lines. Replace 
+               the ``XXXXX`` value with the ``server_id`` from the 
+               previous query:
+
+               .. tabs::
+
+                  .. tab:: MySql 8.x
+                     :tabid: mysql-8x
+
+                     .. code-block::
+                        :copyable: true
+
+                        server-id = XXXXX
+                        log_bin = mysql-bin
+                        binlog_format = ROW
+                        binlog_row_image = FULL
+                        binlog_expire_logs_seconds = 864000
+
+                  .. tab:: MySql 5.x
+                     :tabid: mysql-5x
+
+                     .. code-block:: 
+                        :copyable: true
+
+                        server-id = XXXXX
+                        log_bin = mysql-bin
+                        binlog_format = ROW
+                        binlog_row_image = FULL
+                        expire_log_days = 10 
+
+               .. note::
+
+                  If you're running MySQL on AWS RDS and `automated backups 
+                  <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html>`__
+                  are not enabled, ``Binlog`` will be disabled, even if 
+                  the values are set in the configuration file. 
+
+Learn More
+----------
+
+Relational Migrator relies on the open-source Debezium connector to 
+capture row-level changes. For more details, see
+`Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
+
+Identify Connection String
+--------------------------
+
+The general form for a MySQL connection string is:
+
+.. code-block::
+
+   jdbc:mysql://<host:port>/<database>?<properties>
+
+For example, consider the following connection string:
+
+.. code-block::
+
+   jdbc:mysql://host1:3306/test
+
+The preceding connection string specifies these connection
+details:
+
+.. list-table::
+   :header-rows: 1
+
+   * - Property
+     - Value
+   * - Host
+     - ``host1``
+   * - Port
+     - ``3306``
+   * - Database
+     - ``test``
+
+.. note::
+
+   To learn more about MySQL connection strings, see:
+
+   - `MySQL Connection URL Syntax <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-jdbc-url-format.html>`__
+   - `Connection Configuration Properties <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html>`__
+
+
+Save Connection
+---------------
+
+To save a new connection from the :guilabel:`Connections` page:
+
+.. procedure::
+   :style:  normal
+
+   .. step:: Add a connection
+      
+      In the list of :guilabel:`Relational` connections, click :guilabel:`+ Add connection`.
+
+   .. step:: Select the database type
+      
+      In the :guilabel:`Database type` drop-down, select the database type.
+
+   .. step:: To enter a :ref:`connection string <rm-relational-database-connection-strings>` directly:
+
+      a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
+
+      #. Paste your connection string into the :guilabel:`JDBC URI`.
+
+   .. step:: To create a connection string by entering database information, enter the following:
+
+      .. include:: /includes/table-mysql-connection-fields.rst
+         
+   .. step:: Identify the connection
+
+      Enter a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
+         
+      Environment tags color code and organize connections for 
+      convenience. Leaving the drop-down empty is the same as selecting 
+      the "None" tag.
+
+   .. step:: (Optional) Click :guilabel:`Test connection`
+
+      Relational Migrator attempts to authenticate and connect to the
+      database.
+         
+   .. step:: Click :guilabel:`Save`
+
+      The saved connection is available for use in all jobs and projects.
