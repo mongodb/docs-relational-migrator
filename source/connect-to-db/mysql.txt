@@ -184,9 +184,6 @@ For details on supported versions of MySQL, see
                   are not enabled, ``Binlog`` will be disabled, even if 
                   the values are set in the configuration file. 
 
-Learn More
-----------
-
 Relational Migrator relies on the open-source Debezium connector to 
 capture row-level changes. For more details, see
 `Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
