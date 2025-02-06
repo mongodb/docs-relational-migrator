@@ -68,7 +68,6 @@ For instructions on installing Relational Migrator, see the following pages:
    :hidden:
    :titlesonly:
 
-   Quickstart </getting-started/quickstart>
    Developer Installation Guide </installation/install-on-a-local-machine>
    Production Instalation Guide </installation/install-on-an-unattended-server>
    Kafka Deployment Guide </installation/kafka-deployments/migrator-with-kafka>

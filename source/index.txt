@@ -145,6 +145,7 @@ Explore libraries and tools for MongoDB.
    :titlesonly:
    :hidden:
 
+   Quickstart </getting-started/quickstart>
    Introduction </getting-started>
    Installation </installation>
    Connect to Databases </connect-to-db>
