@@ -12,19 +12,10 @@ RHEL/CentOS Systems Installation
    :depth: 1
    :class: singlecol
 
-Install Relational Migrator on an unattended server in a Linux systems. For instructions 
-on installation and configuration, see the installation tasks. 
+**MOCKUP**
 
-Get Started
------------
+This page will be refactored to conatin the following on a single page:
 
 - :ref:`Install on RHEL/CentOS <install-rhel-server>`
 
 - :ref:`Run Relational Migrator as a System Service on RHEL/CentOS <rhel-system-service>`
-
-.. toctree::
-   :titlesonly:
-   :hidden:
-
-   Install </installation/install-on-an-unattended-server/rhel-centos-server-installation/install-rhel-server>
-   Run as System Service </installation/install-on-an-unattended-server/rhel-centos-server-installation/rhel-system-service>

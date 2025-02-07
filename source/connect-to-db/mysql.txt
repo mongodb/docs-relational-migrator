@@ -188,43 +188,6 @@ Relational Migrator relies on the open-source Debezium connector to
 capture row-level changes. For more details, see
 `Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
 
-Identify Connection String
---------------------------
-
-The general form for a MySQL connection string is:
-
-.. code-block::
-
-   jdbc:mysql://<host:port>/<database>?<properties>
-
-For example, consider the following connection string:
-
-.. code-block::
-
-   jdbc:mysql://host1:3306/test
-
-The preceding connection string specifies these connection
-details:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Property
-     - Value
-   * - Host
-     - ``host1``
-   * - Port
-     - ``3306``
-   * - Database
-     - ``test``
-
-.. note::
-
-   To learn more about MySQL connection strings, see:
-
-   - `MySQL Connection URL Syntax <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-jdbc-url-format.html>`__
-   - `Connection Configuration Properties <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html>`__
-
 
 Save Connection
 ---------------
@@ -250,8 +213,40 @@ To save a new connection from the :guilabel:`Connections` page:
 
    .. step:: To create a connection string by entering database information, enter the following:
 
-      .. include:: /includes/table-mysql-connection-fields.rst
-         
+      The general form for a MySQL connection string is:
+
+      .. code-block::
+      
+         jdbc:mysql://<host:port>/<database>?<properties>
+      
+      For example, consider the following connection string:
+      
+      .. code-block::
+      
+         jdbc:mysql://host1:3306/test
+      
+      The preceding connection string specifies these connection
+      details:
+      
+      .. list-table::
+         :header-rows: 1
+      
+         * - Property
+           - Value
+         * - Host
+           - ``host1``
+         * - Port
+           - ``3306``
+         * - Database
+           - ``test``
+      
+      .. note::
+      
+         To learn more about MySQL connection strings, see:
+      
+         - `MySQL Connection URL Syntax <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-jdbc-url-format.html>`__
+         - `Connection Configuration Properties <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html>`__
+            
    .. step:: Identify the connection
 
       Enter a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.

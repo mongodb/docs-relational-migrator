@@ -12,22 +12,12 @@ Windows Server Installation
    :depth: 1
    :class: singlecol
 
-Install Relational Migrator on an unattended server in a Windows systems. For 
-instructions on installation and configuration, see the installation tasks. 
+**MOCKUP**
 
-Get Started
------------
+This page will be refactored to conatin the following on a single page:
 
 - :ref:`Install on Windows <install-windows-server>` 
 
 - :ref:`Run Relational Migrator as a System Service on Windows <windows-system-service>`
 
 - :ref:`Enable External Access to Relational Migrator on Windows <windows-external-access>`
-
-.. toctree::
-   :titlesonly:
-   :hidden:
-
-   Install </installation/install-on-an-unattended-server/windows-server-installation/install-windows-server>
-   Run as System Service </installation/install-on-an-unattended-server/windows-server-installation/windows-system-service>
-   Enable External Access </installation/install-on-an-unattended-server/windows-server-installation/windows-external-access>
