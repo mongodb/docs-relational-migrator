@@ -88,4 +88,3 @@ Learn More
 
    Self-Managed Kafka </installation/kafka-deployments/install-kafka-cluster>
    Confluent Cloud </installation/kafka-deployments/install-confluent-kafka>
-   Advanced Kafka Settings </installation/kafka-deployments/advanced-settings>

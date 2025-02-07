@@ -14,7 +14,7 @@ Windows Server Installation
 
 **MOCKUP**
 
-This page will be refactored to conatin the following on a single page:
+This page will be refactored to contain the following on a single page:
 
 - :ref:`Install on Windows <install-windows-server>` 
 
