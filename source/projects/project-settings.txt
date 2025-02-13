@@ -6,9 +6,9 @@
    :depth: 1
    :class: singlecol
 
-================
-Project Settings
-================
+====================
+Application Settings
+====================
 
 You can customize Relational Migrator to meet your specific needs. 
 Some options are only available in the project :guilabel:`Settings` 
