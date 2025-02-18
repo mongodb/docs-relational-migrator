@@ -22,10 +22,3 @@ Get Started
 
 - :ref:`Run Relational Migrator as a System Service on Debian <debian-system-service>`
 
-
-.. toctree::
-   :hidden:
-   :titlesonly:
-
-   Install </installation/install-on-an-unattended-server/debian-server-installation/install-debian-server>
-   Run as System Service </installation/install-on-an-unattended-server/debian-server-installation/debian-system-service>

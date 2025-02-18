@@ -23,11 +23,3 @@ Get Started
 - :ref:`Run Relational Migrator as a System Service on Windows <windows-system-service>`
 
 - :ref:`Enable External Access to Relational Migrator on Windows <windows-external-access>`
-
-.. toctree::
-   :titlesonly:
-   :hidden:
-
-   Install </installation/install-on-an-unattended-server/windows-server-installation/install-windows-server>
-   Run as System Service </installation/install-on-an-unattended-server/windows-server-installation/windows-system-service>
-   Enable External Access </installation/install-on-an-unattended-server/windows-server-installation/windows-external-access>
