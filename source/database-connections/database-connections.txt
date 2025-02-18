@@ -47,6 +47,6 @@ Migrator :guilabel:`Connections` page.
    Sybase </database-connections/sybase>
    DB2 </database-connections/db2>
    MongoDB </database-connections/mongodb>
-   Additional Connection Options </database-connections/additional-connections>
+   Additional Connection Options </database-connections/additional-options>
    Manage Connections </database-connections/manage-database-connections>
-   Create and Manage Projects </projects>
+   Create & Manage Projects </projects>
