@@ -47,6 +47,7 @@ Get Started
    :hidden:
    :titlesonly:
 
-   Interpret </diagrams/understand-diagrams>
-   Manage </diagrams/manage-diagrams>
-   Navigate </diagrams/navigate-diagrams>
+   Interpret Diagrams </diagrams/understand-diagrams>
+   Manage Diagrams </diagrams/manage-diagrams>
+   Navigate Diagrams </diagrams/navigate-diagrams>
+   Manage Entities </diagrams/navigate-diagrams/working-with-entities>

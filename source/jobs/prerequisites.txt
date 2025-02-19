@@ -59,15 +59,3 @@ create your first migration job.
    * - :ref:`DB2 <rm-prereq-db2>`
      - :icon-lg:`Checkmark`
      - 
-
-.. toctree::
-   :titlesonly:
-   :hidden:
-
-   MongoDB </jobs/prerequisites/create-mongodb-user>
-   MySQL </jobs/prerequisites/my-sql>
-   Oracle </jobs/prerequisites/oracle>
-   PostgreSQL </jobs/prerequisites/postgres>
-   SQL Server </jobs/prerequisites/sql-server>
-   Sybase </jobs/prerequisites/sybase>
-   DB2 </jobs/prerequisites/db2>

@@ -1,7 +1,7 @@
 .. _rm-database-connections:
 
 ====================
-Database Connections
+Connect to Databases
 ====================
 
 .. default-domain:: mongodb
@@ -40,7 +40,13 @@ Migrator :guilabel:`Connections` page.
    :titlesonly:
    :hidden:
 
-   Save a MongoDB Connection </database-connections/save-mongodb-connection>
-   Save a Relational Connection </database-connections/save-relational-connection>
+   MySQL </database-connections/mysql>
+   Oracle </database-connections/oracle>
+   PostgreSQL </database-connections/postgres>
+   SQL Server </database-connections/sql-server>
+   Sybase </database-connections/sybase>
+   DB2 </database-connections/db2>
+   MongoDB </database-connections/mongodb>
+   Additional Connection Options </database-connections/additional-options>
    Manage Connections </database-connections/manage-database-connections>
-   Connection Strings </connection-strings>
+   Create & Manage Projects </projects>
