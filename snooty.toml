@@ -33,7 +33,6 @@ toc_landing_pages = [
 "code-generation/query-converter",
 "diagrams/manage-diagrams",
 "getting-started",
-"jobs/prerequisites",
 "api-docs",
 "deployment-considerations",
 "code-generation/query-converter-test-queries",
