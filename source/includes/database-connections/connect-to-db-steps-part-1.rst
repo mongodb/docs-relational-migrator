@@ -7,7 +7,7 @@
 
    .. step:: Select the database type
       
-      In the :guilabel:`Database type` drop-down, select **|db-type|**.
+      In the :guilabel:`Database type` drop-down, select |db-type|.
 
    .. step:: To enter a connection string directly:
 
