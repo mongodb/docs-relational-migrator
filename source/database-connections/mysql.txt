@@ -195,9 +195,11 @@ uses the following connection string:
 
 Connect to |db-type|
 ~~~~~~~~~~~~~~~~~~~~
+.. procedure::
+   :style:  normal
 
-.. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
+   .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
 
-   .. include:: /includes/table-mysql-connection-fields.rst
+      .. include:: /includes/table-mysql-connection-fields.rst
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
