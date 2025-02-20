@@ -9,29 +9,33 @@ Connect to MySQL
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 1
+   :depth: 2
    :class: singlecol
 
 .. |db-type| replace:: MySQL
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
-.. _rm-connect-to-mysql-prereq:
+.. _rm-mysql-connection-string:
 
-Before you Begin
-----------------
+Steps
+-----
 
-Before connecting to MySQL, you will need to:
+To add a MySQL connection to Relational Migrator, you must:
 
 - Identify your :ref:`database connection string <rm-mysql-connection-string>`
   or database information. 
 
 - :ref:`Create a service account. <rm-create-service-account-mysql>`
 
-.. _rm-mysql-connection-string:
+- :ref:`Save a MySQL connection. <rm-connect-to-mysql-steps>`
 
 Database Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Relational Migrator requires a connection string in order to connect to your MySQL instance.
+You can provide the connection string directly, or provide information about your database
+which Relational Migrator uses to construct a connection string.
 
 The general form for a MySQL connection string is:
 
@@ -73,9 +77,13 @@ details:
 Create a Service Account
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
+In order to perform a migration with Relational Migrator, you must have connect 
+using a service account with the appropriate permissions. The required permissions
+depend on the migration type: snapshot, or continuous.
+
 .. tabs::
 
-   .. tab:: Snapshot Jobs
+   .. tab:: Snapshot
       :tabid: enable-snapshot-jobs
 
       .. procedure::
@@ -83,7 +91,7 @@ Create a Service Account
 
          .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
 
-   .. tab:: Continuous Jobs
+   .. tab:: Continuous
       :tabid: enable-continuous-jobs
 
       Running continuous jobs on Relational Migrator 
@@ -221,8 +229,8 @@ Create a Service Account
 
 .. _rm-connect-to-mysql-steps:
 
-Steps
------
+Connect to MySQL
+~~~~~~~~~~~~~~~~
 
 To save a new connection from the :guilabel:`Connections` page:
 
