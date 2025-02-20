@@ -13,6 +13,7 @@ Connect to MySQL
    :class: singlecol
 
 .. |db-type| replace:: MySQL
+.. |db-label| replace:: :guilabel:`MySQL`
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
@@ -205,7 +206,7 @@ Connect to |db-type|
 
    .. step:: Select the database type
       
-      In the :guilabel:`Database type` drop-down, select :guilabel:`|db-type|`.
+      In the :guilabel:`Database type` drop-down, select |db-label|.
 
    .. step:: To enter a connection string directly:
 
@@ -227,8 +228,7 @@ Connect to |db-type|
 
    .. step:: (Optional) Click :guilabel:`Test connection`
 
-      Relational Migrator attempts to authenticate and connect to the
-      database.
+      Relational Migrator attempts to authenticate and connect to the database.
          
    .. step:: Click :guilabel:`Save`
 

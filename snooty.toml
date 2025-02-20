@@ -44,7 +44,6 @@ connector-version = "2.7.0"
 ddl = ":abbr:`DDL (Data Definition Language)`"
 migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
-rm-name = "Relational Migrator"
 
 [[banners]]
 targets = [

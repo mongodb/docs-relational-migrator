@@ -1,5 +1,5 @@
-In order to perform a migration with {+rm-name+}, you must connect 
-using a service account with the appropriate permissions. The required permissions
+To perform a migration with Relational Migrator, you must connect using a service 
+account with the appropriate permissions. The required permissions
 depend on the migration type:
 
 - Snapshot migration jobs migrate all data once, and then stop.
