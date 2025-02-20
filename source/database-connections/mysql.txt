@@ -16,70 +16,35 @@ Connect to MySQL
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
-.. _rm-mysql-connection-string:
+About this task
+---------------
+
+To add a MySQL connection to Relational Migrator, you must:
+
+- :ref:`Prepare the MySQL database <rm-prepare-db-mysql>`
+
+- Identify your :ref:`database connection string <rm-mysql-connection-string>`
+  or database information.
+
+- :ref:`Save a MySQL connection <rm-save-mysql-connection>`
 
 Steps
 -----
 
-To add a MySQL connection to Relational Migrator, you must:
+.. _rm-prepare-db-mysql:
 
-- Identify your :ref:`database connection string <rm-mysql-connection-string>`
-  or database information. 
-
-- :ref:`Create a service account. <rm-create-service-account-mysql>`
-
-- :ref:`Save a MySQL connection. <rm-connect-to-mysql-steps>`
-
-Database Connection String
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Relational Migrator requires a connection string in order to connect to your MySQL instance.
-You can provide the connection string directly, or provide information about your database
-which Relational Migrator uses to construct a connection string.
-
-The general form for a MySQL connection string is:
-
-.. code-block::
-
-   jdbc:mysql://<host:port>/<database>?<properties>
-
-For example, consider the following connection string:
-
-.. code-block::
-
-   jdbc:mysql://host1:3306/test
-
-The preceding connection string specifies these connection
-details:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Property
-     - Value
-   * - Host
-     - ``host1``
-   * - Port
-     - ``3306``
-   * - Database
-     - ``test``
-
-.. note::
-
-   To learn more about MySQL connection strings, see:
-
-   - `MySQL Connection URL Syntax <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-jdbc-url-format.html>`__
-   - `Connection Configuration Properties <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html>`__
-
-
-.. _rm-create-service-account-mysql:
-
-Create a Service Account
-~~~~~~~~~~~~~~~~~~~~~~~~
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
 
 In order to perform a migration with Relational Migrator, you must connect 
 using a service account with the appropriate permissions. The required permissions
-depend on the migration type: snapshot, or continuous.
+depend on the migration type:
+
+- Snapshot migration jobs migrate all data once, and then stop.
+- Continuous migration jobs run a snapshot migration and then enter a CDC stage, 
+  which continuously replicates data changes.
+
+For more information on supported migration types for MySQL, see :ref:`<rm-db-migration-compatibility>`.
 
 .. tabs::
 
@@ -226,42 +191,40 @@ depend on the migration type: snapshot, or continuous.
                   are not enabled, ``Binlog`` will be disabled, even if 
                   the values are set in the configuration file. 
 
+.. _rm-mysql-connection-string:
 
-.. _rm-connect-to-mysql-steps:
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Relational Migrator requires a connection string to connect to your MySQL instance.
+
+The general form for a MySQL connection string is:
+
+.. code-block::
+
+   jdbc:mysql://<host:port>/<database>?<properties>
+
+For example, the ``test`` MySQL database running on ``host1`` at port ``3306`` 
+uses the following connection string:
+
+.. code-block::
+
+   jdbc:mysql://host1:3306/test
+
+.. _rm-save-mysql-connection:
 
 Connect to MySQL
 ~~~~~~~~~~~~~~~~
+
+This procedure describes adding a new database when creating a project with the 
+:guilabel:`Connect to live database` option.
 
 .. procedure::
    :style:  normal
 
    .. step:: Add a connection
 
-      .. tabs::
-
-         .. tab:: New Project
-            :tabid: new-project
-
-            After selecting :guilabel:`Connect to live database` from the :guilabel:`New Project` 
-            page, select the :guilabel:`Add a new connection` option.
-      
-         .. tab:: Connections Tab
-            :tabid: connections-page
-
-            In the home screen :guilabel:`Connections` tab, click :guilabel:`+ Add connection`.
-         
-         .. tab:: Database Connections Bar
-            :tabid: db-connection-bar
-
-            In a project's :guilabel:`Database connections bar`, 
-            open the list of :guilabel:`Relational` connections and 
-            click :guilabel:`+ Add connection`.
-
-         .. tab:: Migration Job
-            :tabid: migration-job
-            
-            In a project's :guilabel:`Data Migration` tab, click :guilabel:`Create migration job`
-            and select :guilabel:`Add a new connection`
+      Select the :guilabel:`Add a new connection` option.
 
    .. step:: Select the database type
       
