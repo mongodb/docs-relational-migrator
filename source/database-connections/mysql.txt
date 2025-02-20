@@ -13,7 +13,6 @@ Connect to MySQL
    :class: singlecol
 
 .. |db-type| replace:: MySQL
-.. |db-label| replace:: :guilabel:`MySQL`
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
@@ -197,39 +196,8 @@ uses the following connection string:
 Connect to |db-type|
 ~~~~~~~~~~~~~~~~~~~~
 
-.. procedure::
-   :style:  normal
-
-   .. step:: Add a connection
-
-      Select the :guilabel:`Add a new connection` option.
-
-   .. step:: Select the database type
-      
-      In the :guilabel:`Database type` drop-down, select |db-label|.
-
-   .. step:: To enter a connection string directly:
-
-      a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
-
-      #. Paste your connection string into the :guilabel:`JDBC URI`.
-
-   .. step:: To create a connection string by entering database information, enter the following:
+.. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
 
       .. include:: /includes/table-mysql-connection-fields.rst
 
-   .. step:: Identify the connection
-
-      Enter a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
-         
-      Environment tags color code and organize connections for 
-      convenience. Leaving the drop-down empty is the same as selecting 
-      the "None" tag.
-
-   .. step:: (Optional) Click :guilabel:`Test connection`
-
-      Relational Migrator attempts to authenticate and connect to the database.
-         
-   .. step:: Click :guilabel:`Save`
-
-      The saved connection is available for use in all jobs and projects.
+.. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
