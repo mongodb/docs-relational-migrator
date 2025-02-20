@@ -16,18 +16,6 @@ Connect to MySQL
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
-About this task
----------------
-
-To add a MySQL connection to Relational Migrator, you must:
-
-- :ref:`Prepare the MySQL database <rm-prepare-db-mysql>`
-
-- Identify your :ref:`database connection string <rm-mysql-connection-string>`
-  or database information.
-
-- :ref:`Save a MySQL connection <rm-save-mysql-connection>`
-
 Steps
 -----
 
@@ -36,15 +24,7 @@ Steps
 Prepare the Database
 ~~~~~~~~~~~~~~~~~~~~
 
-In order to perform a migration with Relational Migrator, you must connect 
-using a service account with the appropriate permissions. The required permissions
-depend on the migration type:
-
-- Snapshot migration jobs migrate all data once, and then stop.
-- Continuous migration jobs run a snapshot migration and then enter a CDC stage, 
-  which continuously replicates data changes.
-
-For more information on supported migration types for MySQL, see :ref:`<rm-db-migration-compatibility>`.
+.. include:: /includes/database-connections/prepare-the-database-intro.rst
 
 .. tabs::
 
@@ -213,11 +193,8 @@ uses the following connection string:
 
 .. _rm-save-mysql-connection:
 
-Connect to MySQL
-~~~~~~~~~~~~~~~~
-
-This procedure describes adding a new database when creating a project with the 
-:guilabel:`Connect to live database` option.
+Connect to |db-type|
+~~~~~~~~~~~~~~~~~~~~
 
 .. procedure::
    :style:  normal
@@ -228,7 +205,7 @@ This procedure describes adding a new database when creating a project with the
 
    .. step:: Select the database type
       
-      In the :guilabel:`Database type` drop-down, select the database type.
+      In the :guilabel:`Database type` drop-down, select :guilabel:`|db-type|`.
 
    .. step:: To enter a connection string directly:
 
