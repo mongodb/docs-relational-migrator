@@ -1,0 +1,57 @@
+.. _rm-connect-to-postgres:
+
+=====================
+Connect to PostgreSQL
+=====================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. |db-type| replace:: PostgreSQL
+
+.. include:: /includes/database-connections/connect-to-db-intro.rst
+
+Steps
+-----
+
+.. _rm-prepare-db-postgres:
+
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /includes/database-connections/prepare-the-database-intro.rst
+
+
+
+.. _rm-postgres-connection-string:
+
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+.. _rm-save-postgres-connection:
+
+Connect to |db-type|
+~~~~~~~~~~~~~~~~~~~~
+.. procedure::
+   :style:  normal
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
+
+   .. step:: To create a connection string by entering database information, enter the following:
+      
+      .. include:: /includes/table-postgresql-connection-fields.rst
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
+
+Learn More
+----------
+
+
+.. include:: /includes/database-connections/connect-to-db-learn-more.rst

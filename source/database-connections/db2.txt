@@ -1,0 +1,57 @@
+.. _rm-connect-to-db2:
+
+==============
+Connect to DB2
+==============
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. |db-type| replace:: DB2
+
+.. include:: /includes/database-connections/connect-to-db-intro.rst
+
+Steps
+-----
+
+.. _rm-prepare-db-db2:
+
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /includes/database-connections/prepare-the-database-intro.rst
+
+
+
+.. _rm-db2-connection-string:
+
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+.. _rm-save-db2-connection:
+
+Connect to |db-type|
+~~~~~~~~~~~~~~~~~~~~
+.. procedure::
+   :style:  normal
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
+
+   .. step:: To create a connection string by entering database information, enter the following:
+      
+      .. include:: /includes/table-db2-connection-fields.rst
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
+
+Learn More
+----------
+
+
+.. include:: /includes/database-connections/connect-to-db-learn-more.rst

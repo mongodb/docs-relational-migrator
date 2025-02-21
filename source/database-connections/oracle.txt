@@ -1,0 +1,201 @@
+.. _rm-connect-to-oracle:
+
+=================
+Connect to Oracle
+=================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. |db-type| replace:: Oracle
+
+.. include:: /includes/database-connections/connect-to-db-intro.rst
+
+Steps
+-----
+
+.. _rm-prepare-db-oracle:
+
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /includes/database-connections/prepare-the-database-intro.rst
+
+.. important::
+   
+   - If you're migrating from an Oracle 12c instance, you must run commands as 
+     the SYSDBA role.
+  
+  - Oracle 12c introduced the concept of a pluggable database (PDB). Some
+    commands can be run on a PDB, while commands like enabling ``ARCHIVELOG``
+    must be run on the container/master database (CDB). For details on each
+    architecture, see `Overview of Container Databases and Pluggable Databases <https://oracle-base.com/articles/12c/multitenant-overview-container-database-cdb-12cr1>`__.
+  
+  - Some commands differ based on whether the database is single or
+    multi-tenant. In a multi-tenant database, permissions must
+    include the suffix ``CONTAINER=ALL``.
+  
+  - You can't run a continuous migration job against Oracle Database Express 
+    Edition (XE), because XE doesn't support the necessary logs.
+
+
+.. tabs::
+
+   .. tab:: Snapshot Jobs
+      :tabid: enable-snapshot-jobs
+
+      .. procedure::
+         :style: normal
+
+         .. step:: Set up user permissions
+
+            .. include:: /includes/fact-data-prep-oracle-step1.rst
+
+   .. tab:: Continuous Jobs
+      :tabid: enable-continuous-jobs
+
+      .. procedure::
+         :style: normal
+
+         .. step:: Set up user permissions
+
+            .. include:: /includes/fact-data-prep-oracle-step1.rst
+
+            d. Grant additional permissions to the service account 
+               to run continuous migration jobs. 
+               
+               Append ``CONTAINER=ALL`` if you're migrating a multi-tenant container database.
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  GRANT SET CONTAINER TO <user>;
+                  GRANT EXECUTE_CATALOG_ROLE TO <user>;
+                  GRANT SELECT ANY TRANSACTION TO <user>;
+                  GRANT LOGMINING TO <user>;
+                  GRANT CREATE TABLE TO <user>;
+                  GRANT LOCK ANY TABLE TO <user>;
+                  GRANT CREATE SEQUENCE TO <user>;
+                  GRANT SELECT ON DBA_TABLESPACES TO <user>; 
+                  GRANT EXECUTE ON DBMS_LOGMNR TO <user>;
+                  GRANT EXECUTE ON DBMS_LOGMNR_D TO <user>;
+                  GRANT SELECT ON V$LOG TO <user>;
+                  GRANT SELECT ON V$LOG_HISTORY TO <user>;
+                  GRANT SELECT ON V$LOGMNR_LOGS TO <user>;
+                  GRANT SELECT ON V$LOGMNR_CONTENTS TO <user>;
+                  GRANT SELECT ON V$LOGMNR_PARAMETERS TO <user>;
+                  GRANT SELECT ON V$LOGFILE TO <user>;
+                  GRANT SELECT ON V$ARCHIVED_LOG TO <user>;
+                  GRANT SELECT ON V$ARCHIVE_DEST_STATUS TO <user>;
+                  GRANT SELECT ON V$TRANSACTION TO <user>;
+                  GRANT SELECT ON V_$MYSTAT TO <user>;
+                  GRANT SELECT ON V_$STATNAME TO <user>; 
+
+         .. step:: Turn on archive logging
+            
+            a. To see if archive logging is already enabled, run the following query:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  SELECT LOG_MODE FROM V$DATABASE;
+
+               This outputs ``ARCHIVELOG`` if logging is enabled, or
+               ``NOARCHIVELOG`` if it isn't.
+            
+            #. If archive logging isn't already enabled,  enable it. 
+            
+               Relational Migrator can automatically generate code to enable
+               logging. The following code is an example. If you're migrating a
+               multi-tenant database, run these commands on the container/
+               master database.
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  ALTER SYSTEM SET db_recovery_file_dest_size = 10G;
+                  ALTER SYSTEM SET db_recovery_file_dest = '/opt/oracle/oradata/recovery_area' scope=spfile;
+                  SHUTDOWN IMMEDIATE;
+                  STARTUP MOUNT
+                  ALTER DATABASE ARCHIVELOG;
+                  ALTER DATABASE OPEN;
+    
+         .. step:: Enable supplemental logging
+
+            a. Enable supplemental logging on the database:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  ALTER DATABASE ADD SUPPLEMENTAL LOG DATA; 
+
+            #. Enable supplemental logging for every table in the migration:
+
+               .. code-block:: sql
+                  :copyable: true
+
+                  ALTER TABLE schemaName.tableName ADD SUPPLEMENTAL LOG DATA (ALL) COLUMNS;
+                  /* Additional ALTER TABLE STATEMENTS... */ 
+
+.. _rm-oracle-connection-string:
+
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The general form for an Oracle connection string is:
+
+.. code-block::
+
+   jdbc:oracle:thin:@<host:port>:SID
+
+For example, the Oracle database running on ``prodHost`` at port ``1521`` 
+with the ``ORCL`` :abbr:`SID (System Identifier)` uses the following 
+connection string:
+
+.. code-block::
+
+   jdbc:oracle:thin:@prodHost:1521:ORCL
+
+Alternatively, Relational Migrator can create the appropriate connection string 
+based on user-provided database information.
+
+.. note::
+
+   To learn more about Oracle connection strings, see:
+
+   - `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/en/database/oracle/oracle-database/23/jjdbc/JDBC-Thin-features.html>`__
+   - `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
+
+.. _rm-save-oracle-connection:
+
+Connect to |db-type|
+~~~~~~~~~~~~~~~~~~~~
+.. procedure::
+   :style:  normal
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
+
+   .. step:: To create a connection string by entering database information, enter the following:
+      
+      .. include:: /includes/table-oracle-connection-fields.rst
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
+
+Learn More
+----------
+
+- Relational Migrator relies on the open-source Debezium connector to 
+  capture row-level changes. For more details, see `Debezium Oracle 
+  <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_databas>`__
+- For details on enabling archive logging, see `Managing Archived Redo Logs 
+  <https://docs.oracle.com/cd/B19306_01/server.102/b14231/archredo.htm>`__.
+- For additional troubleshooting and debugging information, see the 
+  `Debezium Oracle help blog post
+  <https://debezium.io/blog/2022/09/30/debezium-oracle-series-part-1/#configure-oracle-users>`__.
+
+.. include:: /includes/database-connections/connect-to-db-learn-more.rst

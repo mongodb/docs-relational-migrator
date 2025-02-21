@@ -192,7 +192,7 @@ uses the following connection string:
    jdbc:mysql://host1:3306/test
 
 Alternatively, Relational Migrator can create the appropriate connection string 
-based on user provided database information.
+based on user-provided database information.
 
 .. _rm-save-mysql-connection:
 
