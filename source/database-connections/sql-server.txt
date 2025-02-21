@@ -13,6 +13,7 @@ Connect to SQL Server
    :class: singlecol
 
 .. |db-type| replace:: SQL Server
+.. |a-db| replace:: an SQL Server
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 

@@ -13,6 +13,7 @@ Connect to MySQL
    :class: singlecol
 
 .. |db-type| replace:: MySQL
+.. |a-db| replace:: a MySQL
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
@@ -28,7 +29,7 @@ Prepare the Database
 
 .. tabs::
 
-   .. tab:: Snapshot
+   .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
       .. procedure::
@@ -36,7 +37,7 @@ Prepare the Database
 
          .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
 
-   .. tab:: Continuous
+   .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
       Running continuous jobs on Relational Migrator 

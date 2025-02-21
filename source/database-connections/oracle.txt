@@ -13,6 +13,7 @@ Connect to Oracle
    :class: singlecol
 
 .. |db-type| replace:: Oracle
+.. |a-db| replace:: an Oracle
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 

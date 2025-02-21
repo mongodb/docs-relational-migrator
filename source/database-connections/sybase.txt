@@ -13,6 +13,7 @@ Connect to Sybase ASE
    :class: singlecol
 
 .. |db-type| replace:: Sybase ASE
+.. |a-db| replace:: a Sybase ASE
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 

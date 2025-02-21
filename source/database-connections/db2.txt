@@ -13,6 +13,7 @@ Connect to DB2
    :class: singlecol
 
 .. |db-type| replace:: DB2
+.. |a-db| replace:: a DB2
 
 .. include:: /includes/database-connections/connect-to-db-intro.rst
 
