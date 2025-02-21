@@ -1,0 +1,70 @@
+.. _rm-connect-to-sybase:
+
+=====================
+Connect to Sybase ASE
+=====================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. |db-type| replace:: Sybase ASE
+.. |a-db| replace:: a Sybase ASE
+
+.. include:: /includes/database-connections/connect-to-db-intro.rst
+
+Steps
+-----
+
+.. _rm-prepare-db-sybase:
+.. _rm-prereq-sybase:
+
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
+
+There are no prerequisite requirements to use Relational Migrator with
+Sybase ASE. Sybase ASE only supports snapshot migration jobs.
+
+.. _rm-sybase-connection-string:
+
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The general form for a Sybase ASE connection string is:
+
+.. code-block::
+
+   jdbc:jtds:sybase://[host]:[port]/[databaseName]
+
+.. note::
+
+   To learn more about Sybase ASE connection strings, see:
+
+   - `Sybase ASE Connection String Docs <https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc01776.1601/doc/html/san1357754914053.html>`__
+   - `ConnectionStrings.com <https://www.connectionstrings.com/sybase-adaptive/>`__
+
+
+.. _rm-save-sybase-connection:
+
+Connect to |db-type|
+~~~~~~~~~~~~~~~~~~~~
+.. procedure::
+   :style:  normal
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
+
+   .. step:: To create a connection string by entering database information, enter the following:
+      
+      .. include:: /includes/table-sybase-connection-fields.rst
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
+
+Learn More
+----------
+
+
+.. include:: /includes/database-connections/connect-to-db-learn-more.rst

@@ -26,6 +26,8 @@ versions for both source and MongoDB databases.
    You might be able to use other versions or deployments, but they have not been tested 
    with Relational Migrator. 
 
+.. _rm-supported-dbs-and-versions:
+
 Source Databases and Versions
 -----------------------------
 

@@ -1,0 +1,176 @@
+.. _rm-connect-to-sql-server:
+
+=====================
+Connect to SQL Server
+=====================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+.. |db-type| replace:: SQL Server
+.. |a-db| replace:: a SQL Server
+
+.. include:: /includes/database-connections/connect-to-db-intro.rst
+
+Steps
+-----
+
+.. _rm-prepare-db-sql-server:
+.. _rm-prereq-sqlserver:
+
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /includes/database-connections/prepare-the-database-intro.rst
+
+.. tabs::
+
+   .. tab:: Snapshot Jobs
+      :tabid: enable-snapshot-jobs
+
+      For snapshot jobs against SQL Server, you must enable 
+      CDC at the database level. 
+
+      .. procedure::
+         :style: normal
+
+         .. step:: Configure CDC at the Database Level
+
+          Enabling CDC at the database-level CDC generates a small 
+          number of system tables in the database, leaving user tables 
+          unchanged, and does not add any performance overhead. Enabling
+          CDC alone does not result in changes being captured.
+
+         .. include:: /includes/fact-enable-cdc-database.rst
+
+   .. tab:: Continuous Jobs
+      :tabid: enable-continuous-jobs
+
+      For continuous jobs against SQL Server, you must enable 
+      CDC at both the database level and at the table level for 
+      each table.
+
+      .. procedure::
+         :style: normal
+
+         .. step:: Configure CDC at the database level
+
+            .. include:: /includes/fact-enable-cdc-database.rst
+
+         .. step:: Enable the SQL Server agent and check database permissions
+
+            To enable the CDC option at the table level:
+
+            a. You must have the server level ``sysadmin`` role. 
+            #. You must have the database level ``db_owner`` role.
+            #. The `SQL Server agent <https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver16>`__
+               must be running.
+            #. The service account used to connect to SQL Server 
+               must have Select permission against all required tables.
+
+         .. step:: Configure CDC at the table level
+
+            To enable CDC at the table level
+            use the ``sys.sp_cdc_enable_table`` stored procedure. 
+
+            You can check the SQL Server CDC settings when viewing the ``is_tracked_by_cdc`` 
+            column in the `sys.tables catalog view <https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-tables-transact-sql?view=sql-server-ver16>`__. 
+            A value of ``1`` for ``is_tracked_by_cdc`` indicates the table 
+            is enabled for change data capture.
+
+            The code block below is a sample of the 
+            automatically generated code.You can run the code manually 
+            to enable table CDC:
+
+            .. code-block:: sql
+               :copyable: true
+
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_table
+               @source_schema = N'dbo',
+               @source_name   = N'MyTable',
+               @role_name     = N'MyRole',
+               @filegroup_name = N'MyDB_CT',
+               @supports_net_changes = 1
+               GO
+
+.. _rm-sql-connection-string:
+
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The general form for a SQL Server connection string is:
+
+.. code-block::
+
+   jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]
+
+For example, the ``test`` SQL Server database running on ``localhost`` at
+port ``1433`` uses the following connection string:
+
+.. code-block::
+
+   jdbc:sqlserver://localhost:1433;databaseName=test
+
+**Using Windows Integrated Authentication**
+
+To enable Windows Integrated Authentication, add ``integratedSecurity=true;`` to the URI options.
+Leave the :guilabel:`Username` and :guilabel:`Password` fields blank. Windows Integrated Authentication connects 
+to the database using the credentials of the user who launched the Relational Migrator executable.
+
+**Using TLS**
+
+JDBC connections to SQL Server use Transport Layer Security (TLS) by default.
+The encrypt property controls TLS. To disable it, set ``encrypt=false;``.
+When TLS is enabled, the driver tries to validate the server's certificate by default.
+To implicitly trust the server certificate, set ``trustServerCertificate=true;``.
+
+.. note::
+
+   To learn more about SQL Server connection strings, see:
+
+   - `Setting Connection Properties <https://learn.microsoft.com/en-us/sql/connect/jdbc/setting-the-connection-properties>`__
+   - `SQL Docs: Building the Connection URL <https://docs.microsoft.com/en-us/sql/connect/jdbc/building-the-connection-url?view=sql-server-ver15>`__.
+   - `Connecting to SQL Server with the JDBC Driver <https://docs.microsoft.com/en-us/sql/connect/jdbc/connecting-to-sql-server-with-the-jdbc-driver?view=sql-server-ver15>`__
+
+databaseName Property Behavior
+''''''''''''''''''''''''''''''
+
+In a SQL Server connection string, use the ``databaseName`` property to
+specify the database to connect to. If you omit the ``databaseName``
+property, the connection still succeeds but you can only see objects in
+the default ``dbo`` schema in all databases.
+
+If you specify the ``databaseName`` property, you can see tables from
+all schemas within the specified database.
+
+
+.. _rm-save-sql-server--connection:
+
+Connect to |db-type|
+~~~~~~~~~~~~~~~~~~~~
+.. procedure::
+   :style:  normal
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
+
+   .. step:: To create a connection string by entering database information, enter the following:
+      
+      .. include:: /includes/table-sql-connection-fields.rst
+
+   .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
+
+Learn More
+----------
+
+- Relational Migrator relies on the open-source Debezium connector to 
+  capture row-level changes. For more details, see
+  `Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
+
+.. include:: /includes/database-connections/connect-to-db-learn-more.rst

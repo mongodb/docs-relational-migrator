@@ -20,6 +20,8 @@ For both Atlas and on-premises deployments, create a separate
 :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
 :authrole:`readWrite` access to your MongoDB database.
 
+.. _rm-db-migration-compatibility:
+
 Relational Databases
 --------------------
 
