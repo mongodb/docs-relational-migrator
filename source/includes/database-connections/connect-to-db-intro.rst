@@ -2,10 +2,10 @@ This procedure describes adding a |db-type| database when creating a project wit
 :guilabel:`Connect to live database` option. After saving a database connection, 
 you can use the saved connection for any task that requires connecting to a database.
 
-To add a connection to Relational Migrator, you must:
+To save a |db-type| connection in Relational Migrator, you must:
 
 - Prepare the |db-type| database
 
 - Identify your database connection string or database information.
 
-- Save the |db-type| connection
+- Connect to |db-type|
