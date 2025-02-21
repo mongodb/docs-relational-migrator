@@ -1,0 +1,271 @@
+.. _rm-connect-to-mongo:
+
+=====================
+Connect to MongoDB
+=====================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+This procedure describes adding a MongoDB database from the  :guilabel:`Connections` 
+tab. After saving a database connection, you can use the saved connection for any 
+task that requires connecting to a database.
+
+To save a MongoDB connection in Relational Migrator, you must:
+
+- Prepare the MongoDB database.
+
+- Identify your database connection string or database information.
+
+- Connect to MongoDB.
+
+.. important::
+
+   To save a connection to a MongoDB Atlas cluster, you must be :ref:`logged in <rm-atlas-log-in>` with Atlas.
+
+Steps
+-----
+
+.. _rm-prepare-db-mongo:
+.. _rm-mongodb-service-user:
+
+Prepare the Database
+~~~~~~~~~~~~~~~~~~~~
+
+Relational Migrator can connect to an Atlas cluster or an on-premises
+deployment. Select the tab corresponding to your deployment type.
+
+.. tabs::
+
+   .. tab:: Atlas
+      :tabid: service-user-atlas
+
+      .. procedure::
+
+         .. step:: Connect to your deployment
+
+            Log in to `the Atlas GUI <https://cloud.mongodb.com/v2/>`__.
+            
+         .. step:: In the :guilabel:`Security` section of the left navigation, click :guilabel:`Database Access`.
+         
+         .. step:: Click :guilabel:`Add New Database User`.
+
+         .. step:: In the :guilabel:`Authentication Method` section of the :guilabel:`Add New Database User` modal window, select the box labeled :guilabel:`Password`.
+            
+         .. step:: Under :guilabel:`Password Authentication`, enter the username ``migrator-service`` for the new user in the top text field.
+         
+         .. step:: Enter the password ``password`` for the new user in the lower text field.
+         
+         .. step:: Under :guilabel:`Database User Privileges`, click :guilabel:`Built-in Role`.
+         
+         .. step:: Select :guilabel:`Read and write to any database`.
+         
+         .. step:: Click :guilabel:`Add User`.
+
+   .. tab:: On-Premises
+      :tabid: service-user-onprem
+
+      Use ``mongosh`` to provision a user account that has
+      :authrole:`readWrite` access to your data migration target database.
+
+      The example commands assume your deployment is running on ``localhost``
+      on the default port of ``27017``, and that you're creating a user to
+      access the ``MongoEnterprises`` database.
+
+      For more information on connecting to MongoDB using ``mongosh``, see
+      `Connecting to your MongoDB Deployment <https://www.mongodb.com/docs/mongodb-shell/connect/>`__.
+
+      .. procedure::
+
+         .. step:: Connect to your deployment using ``mongosh``
+            
+            You must use an account that can run `createUser <https://www.mongodb.com/docs/manual/reference/method/db.createUser/>`__ 
+            on the admin and ``MongoEnterprises`` databases.
+
+            .. code-block::
+
+               mongosh "mongodb://myadminuser:myadminpassword@localhost:27017/admin"
+
+         .. step:: Create the service user in the ``admin`` database for authentication
+
+            Run the following command to create a 
+            ``migrator-service`` user with a password of your choice and 
+            ``readWrite`` access to the ``MongoEnterprises`` database:
+
+            .. code-block::
+
+               use admin
+               db.createUser(
+                  { user: "migrator-service",
+                     pwd: "password",
+                     roles:[{role: "readWrite" , db:"MongoEnterprises"}]
+                  }
+               )       
+         
+         .. step:: Create the same user in the ``MongoEnterprises`` database
+
+            .. code-block::
+               
+               use MongoEnterprises
+               db.createUser(
+                  { user: "migrator-service",
+                     pwd: "password",
+                     roles:[{role: "readWrite" , db:"MongoEnterprises"}]
+                  }
+               )
+
+.. _rm-mongo-connection-string:
+.. _rm-mongodb-database-connection-strings:
+
+
+Database Connection String
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Relational Migrator supports all :manual:`MongoDB connection string options
+</reference/connection-string-options/>` except :urioption:`appName`. It
+overrides ``appName`` when connecting to your MongoDB deployment.
+
+Atlas Connection URI
+''''''''''''''''''''
+
+.. code-block::
+
+   mongodb+srv://username:password@clusterurl.mongodb.net/database
+
+For example, to use an account named ``migrator-service`` with password
+``hunter2`` to connect to the ``MongoEnterprises`` database:
+
+.. code-block::
+
+   mongodb+srv://migrator-service:hunter2@cluster1.abc123.mongodb.net/MongoEnterprises
+
+On-Premises Connection URI
+''''''''''''''''''''''''''
+
+.. code-block::
+
+   mongodb://username:password@host:port/database
+
+For example, to use an account named ``migrator-service`` with password
+``hunter2`` to connect to the ``MongoEnterprises`` database:
+
+.. code-block::
+
+   mongodb://migrator-service:hunter2@localhost:27017/MongoEnterprises
+
+.. _rm-x509-auth:
+
+Using X.509 Authentication
+''''''''''''''''''''''''''
+
+To connect to MongoDB using X.509 authentication, omit a username and password.
+Instead, specify the on-premises host and port or the Atlas cluster URL and set 
+the following options:
+
+.. code-block::
+
+   <on-premises host:port or clusterurl.mongodb.net>?authSource=$external&authMechanism=MONGODB-X509&tlsCertificateKeyFile=/path/to/cert/client.p12&tlsCertificateKeyFilePassword=certpassword
+
+
+.. list-table::
+   :header-rows: 1
+
+   * - Option
+     - Value
+
+   * - :urioption:`authSource`
+     - ``$external``
+
+   * - :urioption:`authMechanism`
+     - ``MONGODB-X509``
+
+   * - :urioption:`tlsCertificateKeyFile`
+     - The path to the ``.p12`` file that contains the certificate and key to 
+       present to the mongod or mongos instance.
+
+       :gold:`IMPORTANT:` Unlike other MongoDB products, Relational Migrator
+       requires a path to a ``.p12`` file, not a ``.pem`` file. If your 
+       certificate is saved as a ``.pem`` file, you can convert it using a tool 
+       like OpenSSL's `PKCS12 command <https://docs.openssl.org/master/man1/openssl-pkcs12/>`__:
+
+       .. code-block:: bash
+          :copyable: true
+
+          openssl pkcs12 -export -inkey cert_key_pem.txt -in cert_key.pem -out
+          cert_key.p12
+
+   * - :urioption:`tlsCertificateKeyFilePassword`
+     - The password to de-crypt the ``.p12`` file. 
+
+   * - :urioption:`tlsCAFile`
+     - Required only if the MongoDB instance has a TLS/SSL setup with its own public
+       key infrastructure. The path to the local ``.pem`` file that contains 
+       the root certificate chain from the Certificate Authority.
+
+For example, to connect to the ``MongoEnterprises`` database on 
+``cluster1.abc123.mongodb.net``, using the certificate file 
+``/etc/ssl/caToValidateServerCertificates.p12`` with the password ``verysecure``:
+
+.. code-block::
+
+   mongodb+srv://cluster1.abc123.mongodb.net/MongoEnterprises?authSource=$external&authMechanism=MONGODB-X509&tlsCertificateKeyFile=/etc/ssl/caToValidateServerCertificates.p12&tlsCertificateKeyFilePassword=verysecure
+
+.. _rm-save-mongodb-connection:
+
+Connect to MongoDB
+~~~~~~~~~~~~~~~~~~
+
+To save a new connection from the :guilabel:`Connections` page:
+
+.. procedure::
+
+   .. step:: Add a new connection
+      
+      In the list of :guilabel:`MongoDB` connections, click :guilabel:`+ Add connection`.
+
+   .. step:: Enter the MongoDB connection string
+
+      a. In :guilabel:`MongoDB connection string (URI)`, enter
+         your :manual:`MongoDB URI </reference/connection-string>`.
+
+         If you're using :ref:`X.509 authentication <rm-x509-auth>`, Relational
+         Migrator verifies the connection string syntax and the certificate file format.
+
+      #. If it isn't included in the connection string, enter the
+         :guilabel:`Database` to connect to.
+      
+      #. If they aren't included in the connection string and you aren't using
+         X.509 authentication, enter the :guilabel:`Username` and
+         :guilabel:`Password` of your :ref:`Relational Migrator MongoDB user
+         <rm-mongodb-service-user>`.
+         
+         Checking :guilabel:`Save password` saves the password securely
+         on your machine, so you don't have to enter the :guilabel:`Username`
+         and :guilabel:`Password` again when using the saved connection.
+      
+      If you leave the :guilabel:`Database`, :guilabel:`Username`, 
+      or :guilabel:`Password` blank, Relational Migrator uses the
+      values from the URI.
+
+   .. step: Identify the connection
+
+      Enter a :guilabel:`Connection name` and optional :guilabel:`Environment tag`.
+         
+      Environment tags color code and organize connections for 
+      convenience. Leaving the drop-down empty is the same as selecting 
+      the "None" tag.
+
+   .. step:: (Optional) Click :guilabel:`Test connection`
+
+      Relational Migrator attempts to authenticate and connect to the
+      database.
+         
+   .. step:: Click :guilabel:`Save`
+      
+      The saved connection is available for use in all jobs and projects.
+
