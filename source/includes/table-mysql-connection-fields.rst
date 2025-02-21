@@ -31,9 +31,7 @@
      - View SSL settings for the connection. 
      
        To use SSL, you must first uncomment and update the ``server.ssl``
-       configuration properties in your ``user.properties`` file. For information
-       on file locations, see your operating system 
-       :ref:`installation instructions <installation>`.
+       configuration properties in your ``user.properties`` :ref:`file <file-location>`.
      
    * - SSL: :guilabel:`Use SSL`
    

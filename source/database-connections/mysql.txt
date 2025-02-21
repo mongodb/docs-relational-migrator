@@ -207,3 +207,12 @@ Connect to |db-type|
       .. include:: /includes/table-mysql-connection-fields.rst
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
+
+Learn More
+----------
+
+- Relational Migrator relies on the open-source Debezium connector to capture 
+  row-level changes. For more details, see
+  `Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
+
+.. include:: /includes/database-connections/connect-to-db-learn-more.rst
