@@ -111,25 +111,12 @@ The general form for a SQL Server connection string is:
 
    jdbc:sqlserver://[serverName[\instanceName][:portNumber]][;property=value[;property=value]]
 
-For example, consider the following connection string:
+For example, the ``test`` SQL Server database running on ``localhost`` at
+port ``1433`` uses the following connection string:
 
 .. code-block::
 
    jdbc:sqlserver://localhost:1433;databaseName=test
-
-The preceding connection string specifies these connection details:
-
-.. list-table::
-   :header-rows: 1
-
-   * - Property
-     - Value
-   * - Host
-     - ``localhost``
-   * - Port
-     - ``1433``
-   * - databaseName
-     - ``test``
 
 **Using Windows Integrated Authentication**
 

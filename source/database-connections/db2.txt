@@ -21,19 +21,69 @@ Steps
 -----
 
 .. _rm-prepare-db-db2:
+.. _rm-prereq-db2:
 
 Prepare the Database
 ~~~~~~~~~~~~~~~~~~~~
 
-.. include:: /includes/database-connections/prepare-the-database-intro.rst
+To perform a migration with Relational Migrator, you must connect using a service 
+account with the appropriate permissions.
 
+For more information on supported migration types for |db-type|, see :ref:`<rm-db-migration-compatibility>`.
 
+.. important::
+   
+   - Relational Migrator does not support ``BLOB``, ``CBLOB`` or ``DBCLOB`` columns 
+     of DB2 tables. If this feature is important to you, create or upvote the 
+     feature request on `feedback.mongodb.com <https://feedback.mongodb.com/forums/952450-relational-migrator>`__.
+  
+   - Relation Migrator only supports snapshot migration jobs for DB2 connections.
+
+.. procedure::
+   :style: normal
+
+   .. step:: Create the ``ASNCDC`` schema
+
+      Use the following statements to create the schema: 
+
+      .. code-block:: sql
+         :copyable: true
+
+         CREATE SCHEMA "ASNCDC";
+
+   .. step:: Create the ``IBMSNAP_REGISTER`` table in the ``ASNCDC`` schema
+
+      Use the following statements to create the table:
+
+      .. code-block:: sql
+         :copyable: true
+
+         CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" 
+         (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
 
 .. _rm-db2-connection-string:
 
 Database Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+The general form for a DB2 connection string is:
 
+.. code-block::
+
+   jdbc:db2://<hostname>:<port>/<database>;
+
+For example, the ``mydb2database`` DB2 database running on ``localhost`` at
+port ``50000`` uses the following connection string:
+
+.. code-block::
+
+   jdbc:db2://localhost:50000/mydb2database;
+
+.. note::
+
+   To learn more about DB2 connection strings, see:
+
+   - `DB2 Connection URL Syntax <https://www.ibm.com/docs/en/db2woc?topic=programmatically-jdbc>`__
+   - `Connection Configuration Properties <https://www.ibm.com/docs/en/db2/11.5?topic=SSEPGG_11.5.0/com.ibm.db2.luw.apdv.java.doc/src/tpc/imjcc_r0052342.htm>`__
 
 
 .. _rm-save-db2-connection:
