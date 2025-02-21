@@ -21,6 +21,7 @@ Steps
 -----
 
 .. _rm-prepare-db-mysql:
+.. _rm-prereq-mysql:
 
 Prepare the Database
 ~~~~~~~~~~~~~~~~~~~~
