@@ -21,7 +21,7 @@ Steps
 -----
 
 .. _rm-prepare-db-sql-server:
-.. _rm-prereq-mysql:
+.. _rm-prereq-sqlserver:
 
 Prepare the Database
 ~~~~~~~~~~~~~~~~~~~~
@@ -33,146 +33,72 @@ Prepare the Database
    .. tab:: Snapshot Jobs
       :tabid: enable-snapshot-jobs
 
+      For snapshot jobs against SQL Server, you must enable 
+      CDC at the database level. 
+
       .. procedure::
          :style: normal
 
-         .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
+         .. step:: Configure CDC at the Database Level
+
+          Enabling CDC at the database-level CDC generates a small 
+          number of system tables in the database, leaving user tables 
+          unchanged, and does not add any performance overhead. Enabling
+          CDC alone does not result in changes being captured.
+
+         .. include:: /includes/fact-enable-cdc-database.rst
 
    .. tab:: Continuous Jobs
       :tabid: enable-continuous-jobs
 
-      Running continuous jobs on Relational Migrator 
-      requires the `binary log <https://dev.mysql.com/doc/refman/8.0/en/binary-log.html>`__ 
-      to be enabled on your MySQL instance. The binary log (Binlog) 
-      records all operations in the order they are committed to the 
-      database. 
+      For continuous jobs against SQL Server, you must enable 
+      CDC at both the database level and at the table level for 
+      each table.
 
       .. procedure::
          :style: normal
 
-         .. include:: /includes/fact-my-sql-setup-user-permission-step.rst
+         .. step:: Configure CDC at the database level
 
-         .. step:: (Optional) Manually verify Binlog is enabled
+            .. include:: /includes/fact-enable-cdc-database.rst
 
-               Relational Migrator automatically checks this setting for 
-               you. To manually check the if the ``Binlog`` option is 
-               enabled, use the queries below for your version of MySQL:
+         .. step:: Enable the SQL Server agent and check database permissions
 
-               .. note:: 
+            To enable the CDC option at the table level:
 
-                  ``Binlog`` is automatically enabled by default 
-                  on MySQL ``8.x`` versions.
+            a. You must have the server level ``sysadmin`` role. 
+            #. You must have the database level ``db_owner`` role.
+            #. The `SQL Server agent <https://learn.microsoft.com/en-us/sql/ssms/agent/sql-server-agent?view=sql-server-ver16>`__
+               must be running.
+            #. The service account used to connect to SQL Server 
+               must have Select permission against all required tables.
 
-               .. tabs::
+         .. step:: Configure CDC at the table level
 
-                  .. tab:: MySql 8.x
-                     :tabid: mysql-8x
+            To enable CDC at the table level
+            use the ``sys.sp_cdc_enable_table`` stored procedure. 
 
-                     .. code-block:: sql
-                        :copyable: true
+            You can check the SQL Server CDC settings when viewing the ``is_tracked_by_cdc`` 
+            column in the `sys.tables catalog view <https://learn.microsoft.com/en-us/sql/relational-databases/system-catalog-views/sys-tables-transact-sql?view=sql-server-ver16>`__. 
+            A value of ``1`` for ``is_tracked_by_cdc`` indicates the table 
+            is enabled for change data capture.
 
-                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
+            The code block below is a sample of the 
+            automatically generated code.You can run the code manually 
+            to enable table CDC:
 
-                        FROM performance_schema.global_variables WHERE variable_name='log_bin'; 
+            .. code-block:: sql
+               :copyable: true
 
-                  .. tab:: MySql 5.x
-                     :tabid: mysql-5x
-
-                     .. code-block:: sql
-                        :copyable: true
-
-                        SELECT variable_value as "BINARY LOGGING STATUS (log-bin) ::"
-
-                        FROM information_schema.global_variables WHERE variable_name='log_bin';
-
-         .. step:: Locate and update the MySQL configuration file
-
-            a. Run the following SQL query to get the ``server_id`` 
-               value for your MySQL instance:
-
-               .. tabs::
-
-                  .. tab:: MySql 8.x
-                     :tabid: mysql-8x
-
-                     .. code-block:: sql
-                        :copyable: true
-
-                        SELECT variable_value 
-                        FROM 
-                        performance_schema.global_variables 
-                        WHERE variable_name='server_id';
-
-                  .. tab:: MySql 5.x
-                     :tabid: mysql-5x
-
-                     .. code-block:: sql
-                        :copyable: true
-
-                        SELECT variable_value 
-                        FROM 
-                        information_schema.global_variables 
-                        WHERE variable_name='server_id';
-
-            #. Locate the config file for your MySQL instance by running 
-               the following ``mysqld`` command in your terminal:
-
-               .. tabs::
-
-                  .. tab:: Windows
-                     :tabid: windows
-
-                     .. code-block:: 
-                        :copyable: true
-
-                        mysql --help | findstr cnf
-
-                  .. tab:: MacOS / Linux
-                     :tabid: macos-linux
-
-                     .. code-block:: 
-                        :copyable: true
-
-                        mysql --help | grep cnf
-
-            #. Under the ``[mysqld]`` section of your MySQL 
-               configuration file add the following lines. Replace 
-               the ``XXXXX`` value with the ``server_id`` from the 
-               previous query:
-
-               .. tabs::
-
-                  .. tab:: MySql 8.x
-                     :tabid: mysql-8x
-
-                     .. code-block::
-                        :copyable: true
-
-                        server-id = XXXXX
-                        log_bin = mysql-bin
-                        binlog_format = ROW
-                        binlog_row_image = FULL
-                        binlog_expire_logs_seconds = 864000
-
-                  .. tab:: MySql 5.x
-                     :tabid: mysql-5x
-
-                     .. code-block:: 
-                        :copyable: true
-
-                        server-id = XXXXX
-                        log_bin = mysql-bin
-                        binlog_format = ROW
-                        binlog_row_image = FULL
-                        expire_log_days = 10 
-
-               .. note::
-
-                  If you're running MySQL on AWS RDS and `automated backups 
-                  <https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_WorkingWithAutomatedBackups.html>`__
-                  are not enabled, ``Binlog`` will be disabled, even if 
-                  the values are set in the configuration file. 
-
+               USE MyDB
+               GO
+               EXEC sys.sp_cdc_enable_table
+               @source_schema = N'dbo',
+               @source_name   = N'MyTable',
+               @role_name     = N'MyRole',
+               @filegroup_name = N'MyDB_CT',
+               @supports_net_changes = 1
+               GO
 
 .. _rm-sql-connection-string:
 
