@@ -16,17 +16,39 @@ Relational Migrator uses JDBC connection strings and associated user
 credentials to access your relational database and MongoDB deployment.
 You can save this information as a database connection.
 
-Relational Migrator can also use Data Definition Language (DDL) files 
-exported from your relational database, and provides a sample relational 
-database schema. For more information, see :ref:`rm-database-connections`.
-
 Use Cases
 ---------
 
-You can save connection settings for relational and MongoDB databases
-when creating :ref:`projects <rm-projects>`` and :ref:`migration jobs <rm-sync-jobs>`. 
-You can use these saved database connections for any task that requires 
-connecting to a relational or MongoDB database.
+You can save a new database connection:
+
+- When creating a project from a live database connection
+
+- When creating or modifying a data migration job
+
+- From the :guilabel:`Database Connections Bar`` in a project
+
+- From the Relational Migrator :guilabel:`Connections` page
+
+After saving a database connection, you can use ot for any 
+task that requires connecting to a database.
+
+Supported Alternatives
+----------------------
+
+Relational Migrator can use Data Definition Language (DDL) files 
+exported from your relational database to create a project when 
+network connectivity or permissions to your relational database 
+are a consideration.
+
+Relational Migrator also provides a pre-defined relational database schema.
+The sample schema allows you to try Relational Migrator even if you aren't
+able to connect to a relational database.
+
+These options allow you to create projects and map schemas without live 
+database connections. However, Relational Migrator requires live connections
+to perform data migrations.
+
+For more information, see :ref:`<TODO>`
 
 Get Started
 -----------
