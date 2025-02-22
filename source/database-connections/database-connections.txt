@@ -29,7 +29,7 @@ You can save a new database connection:
 
 - From the Relational Migrator :guilabel:`Connections` page
 
-After saving a database connection, you can use ot for any 
+After saving a database connection, you can use it for any 
 task that requires connecting to a database.
 
 Supported Alternatives
