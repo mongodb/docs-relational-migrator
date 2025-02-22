@@ -36,8 +36,7 @@ Migrate to MongoDB
 
 Relational Migrator helps you migrate data from 
 :ref:`supported relational databases <supported-databases>` to MongoDB Atlas or 
-a self-managed MongoDB deployment. For information about supported migration scenarios, 
-see :ref:`<rm-migration-scenarios>`
+a self-managed MongoDB deployment.
 
 
 Generate Application Code
