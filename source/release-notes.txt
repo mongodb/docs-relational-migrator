@@ -238,7 +238,7 @@ New features:
   account. When you sign into Atlas, the process for
   selecting Atlas clusters in a migration job is dynamically populated.
 - Query converter now supports conversion of relational database DML 
-  triggers to :ref:`Atlas Triggers <triggers>`.
+  triggers to :atlas:`MongoDB Atlas Triggers <atlas-triggers>`.
 
 Improvements:
 
