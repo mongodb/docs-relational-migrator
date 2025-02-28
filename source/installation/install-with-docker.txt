@@ -15,6 +15,11 @@ Running Relational Migrator with Docker ensures an installation process
 that is both independent of the operating system and straightforward 
 to replicate.
 
+.. warning::
+
+   This deployment method is ideal for quick evaluation. It is not recommended for 
+   production workloads as it may not provide a resilient production environment.
+
 About this Task
 ---------------
 
@@ -132,12 +137,4 @@ Procedure
 Next Steps
 ----------
 
-- :ref:`rm-connection-strings`
-- :ref:`rm-create-project-live`
-- :ref:`rm-mapping-rules`
-
-Learn More
-----------
-
-- :ref:`rm-projects`
-- :ref:`rm-manage-relational-model`
+- :ref:`rm-database-connections`
