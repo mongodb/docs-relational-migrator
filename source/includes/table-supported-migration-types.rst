@@ -15,7 +15,7 @@
      - :icon-lg:`Checkmark`
      - :icon-lg:`Checkmark`
 
-   * - :ref:`PostGreSQL <rm-prereq-postgres>`
+   * - :ref:`PostgreSQL <rm-prereq-postgres>`
      - :icon-lg:`Checkmark`
      - :icon-lg:`Checkmark`
 

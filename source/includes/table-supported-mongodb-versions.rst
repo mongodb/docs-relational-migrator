@@ -7,4 +7,4 @@
 
    * - MongoDB 
      - 4.4 and higher
-     - Self hosted, MongoDB Atlas
+     - Self-managed, MongoDB Atlas
