@@ -16,10 +16,15 @@ Introduction to Relational Migrator
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 2
+   :depth: 1
    :class: singlecol
 
 Relational Migrator is a tool to help migrate your relational data to MongoDB.
+This page provides an overview of Relational Migrator's :ref:`key features <rm-key-features>`, 
+:ref:`use cases <rm-use-cases>`, :ref:`migration scenarios <rm-migration-scenarios>`, 
+and :ref:`supported databases and versions<supported-databases>`.
+
+.. _rm-key-features:
 
 Key Features
 ------------
@@ -57,6 +62,8 @@ views, and stored procedures into MongoDB-compatible code for C#, Java, or JavaS
 
 You can test queries within Relational Migrator to validate converted SQL and 
 ensure compatibility with MongoDB.
+
+.. _rm-use-cases:
 
 Use Cases
 ---------
