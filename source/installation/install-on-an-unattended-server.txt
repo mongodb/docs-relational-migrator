@@ -61,3 +61,4 @@ Learn More
    Windows Server </installation/install-on-an-unattended-server/windows-server-installation>
    RHEL/CentOS Linux </installation/install-on-an-unattended-server/rhel-centos-server-installation>
    Debian Linux </installation/install-on-an-unattended-server/debian-server-installation>
+   Kafka Deployment Guide </installation/kafka-deployments/migrator-with-kafka>

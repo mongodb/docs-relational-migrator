@@ -71,5 +71,4 @@ For instructions on installing Relational Migrator, see the following pages:
    System Requirements </installation/system-requirements>
    Developer Installation Guide </installation/install-on-a-local-machine>
    Production Installation Guide </installation/install-on-an-unattended-server>
-   Kafka Deployment Guide </installation/kafka-deployments/migrator-with-kafka>
    Application Settings </installation/application-settings>
