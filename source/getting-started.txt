@@ -111,15 +111,15 @@ Migrate Without Downtime
 
 If your application must remain online to support reads and writes
 during the migration process, you can use Change Data Capture (CDC) to
-migrate data without downtime. This process is called a **Continuous**
+migrate data without downtime. This process is called a **continuous**
 migration.
 
-When you start a Continuous migration, Relational Migrator takes a
+When you start a continuous migration job, Relational Migrator takes a
 snapshot of the data on the legacy application and tracks database
 updates in near real time. During the migration process, your source and
 destination databases remain in sync.
 
-After the continuous sync migration completes, you can transfer users to
+After the continuous migration job completes, you can transfer users to
 the new application and shut down the legacy application.
 
 To learn more about migration jobs, see :ref:`rm-sync-jobs`.
