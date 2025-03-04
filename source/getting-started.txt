@@ -51,7 +51,7 @@ Relational Migrator generates MongoDB-compatible C#, Java, and JavaScript applic
 for entity classes, persistence layers, and APIs. 
 
 Code generation templates support JSON output and common application frameworks like 
-Spring Data, Node,and Mongoose. For more information, see :ref:`<rm-code-generation-templates>`.
+Spring Data, Node, and Mongoose. For more information, see :ref:`<rm-code-generation-templates>`.
 
 
 Convert and Validate SQL Objects
