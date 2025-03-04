@@ -25,7 +25,7 @@ You can save a new database connection:
 
 - When creating or modifying a data migration job
 
-- From the :guilabel:`Database Connections Bar`` in a project
+- From the :guilabel:`Database Connections Bar` in a project
 
 - From the Relational Migrator :guilabel:`Connections` page
 
