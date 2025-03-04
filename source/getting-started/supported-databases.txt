@@ -1,4 +1,4 @@
-.. _supported-databases:
+
 
 ================================
 Supported Databases and Versions
