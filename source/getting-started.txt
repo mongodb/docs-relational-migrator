@@ -161,6 +161,7 @@ Learn More
 ----------
 
 - `Relational Migrator Learning Byte <https://learn.mongodb.com/courses/mongodb-relational-migrator>`__
+- :ref:`User Interface Overview <rm-project-overview>`
 
 
 
