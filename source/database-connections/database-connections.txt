@@ -41,7 +41,8 @@ use the following options to create projects and map schemas.
 - Relational Migrator can use Data Definition Language (DDL) files exported from 
   your relational database to create a project.
 
-- Relational Migrator provides a pre-defined relational database schema to create 
+- Relational Migrator provides a pre-defined relational database schema you can use 
+  to create a project.
 
 .. note::
 
