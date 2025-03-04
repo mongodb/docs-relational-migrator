@@ -1,8 +1,8 @@
 .. _kafka-intro:
 
-==========================================
-Integrating Relational Migrator with Kafka
-==========================================
+======================
+Kafka Deployment Guide
+======================
 
 .. default-domain:: mongodb
 
@@ -86,7 +86,5 @@ Learn More
    :hidden:
    :titlesonly:
 
-   Use Existing Kafka Cluster </installation/kafka-deployments/install-kafka-cluster>
-   Use Containerized Cluster with Docker </installation/kafka-deployments/install-docker>
-   Use Confluent Cloud </installation/kafka-deployments/install-confluent-kafka>
-   Advanced Kafka Settings </installation/kafka-deployments/advanced-settings>
+   Self-Managed Kafka Setup Guide </installation/kafka-deployments/install-kafka-cluster>
+   Confluent Cloud Setup Guide </installation/kafka-deployments/install-confluent-kafka>

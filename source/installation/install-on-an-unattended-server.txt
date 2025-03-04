@@ -1,8 +1,8 @@
 .. _unattended-server:
 
-====================================
-Installation on an Unattended Server
-====================================
+=============================
+Production Installation Guide
+=============================
 
 .. default-domain:: mongodb
 
@@ -58,6 +58,7 @@ Learn More
    :titlesonly:
    :hidden:
 
-   Windowless Server </installation/install-on-an-unattended-server/windows-server-installation>
-   RHEL/CentOS Systems </installation/install-on-an-unattended-server/rhel-centos-server-installation>
-   Debian Systems </installation/install-on-an-unattended-server/debian-server-installation>
+   Windows Server </installation/install-on-an-unattended-server/windows-server-installation>
+   RHEL/CentOS Linux </installation/install-on-an-unattended-server/rhel-centos-server-installation>
+   Debian Linux </installation/install-on-an-unattended-server/debian-server-installation>
+   Kafka Deployment Guide </installation/kafka-deployments/migrator-with-kafka>

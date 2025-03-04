@@ -1,7 +1,7 @@
 .. _rm-mapping-rules:
 
 =============
-Mapping Rules
+Data Modeling
 =============
 
 .. default-domain:: mongodb
@@ -109,13 +109,13 @@ Mapping rules can be defined with the following ``Migrate as`` options:
    :titlesonly:
    :hidden:
 
+   Manage the Relational Model </projects/manage-relational-connection>
    Schema Mapping </mapping-rules/schema-mapping>
-   Create Rules from Relational </mapping-rules/new-rules-from-relational>
-   Create Rules to MongoDB </mapping-rules/new-rules-to-mongodb>
+   Create Rules </mapping-rules/create-rules>
    Use Suggested Mappings </mapping-rules/new-rules-suggested-mappings>
-   View Rules </mapping-rules/view-rules>
-   Edit Rules </mapping-rules/edit-rules>
-   Delete Rules </mapping-rules/delete-rules>
+   Table Filters </table-filters>
    Rule Options </mapping-rules/mapping-rule-options/introduction>
-   Fields </mapping-rules/fields/field-customizations>
+   Custom Fields </mapping-rules/fields/field-customizations>
+   Manage Rules </mapping-rules/manage-rules>
    Synthetic Foreign Keys </mapping-rules/synthetic-foreign-key/synthetic-foreign-keys>
+   Diagrams & Entities </diagrams>

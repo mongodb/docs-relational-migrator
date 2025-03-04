@@ -22,9 +22,3 @@ Get Started
 
 - :ref:`Run Relational Migrator as a System Service on RHEL/CentOS <rhel-system-service>`
 
-.. toctree::
-   :titlesonly:
-   :hidden:
-
-   Install </installation/install-on-an-unattended-server/rhel-centos-server-installation/install-rhel-server>
-   Run as System Service </installation/install-on-an-unattended-server/rhel-centos-server-installation/rhel-system-service>

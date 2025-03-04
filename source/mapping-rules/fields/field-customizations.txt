@@ -108,3 +108,4 @@ Learn More
 
    Data Type Conversion </mapping-rules/fields/data-type-conversion-guide>
    Calculated Fields </mapping-rules/fields/calculated-fields>
+   Customize ID Fields </mapping-rules/fields/calculated-fields/customized-id-fields>

@@ -1,8 +1,8 @@
 .. _relational-migrator-get-started:
 
-====================================
-Get Started with Relational Migrator
-====================================
+===================================
+Introduction to Relational Migrator
+===================================
 
 .. facet::
    :name: genre
@@ -80,7 +80,4 @@ Steps
    :titlesonly:
    :hidden:
 
-   Supported Databases & Versions </getting-started/supported-databases>
-   Migration Scenarios </getting-started/migration-scenarios>
-   User Interface </getting-started/overview>
-   Log In with Atlas </getting-started/atlas-log-in>
+   UI Overview </getting-started/overview>
