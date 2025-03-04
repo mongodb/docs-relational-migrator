@@ -48,7 +48,7 @@ These options allow you to create projects and map schemas without live
 database connections. However, Relational Migrator requires live connections
 to perform data migrations.
 
-For more information, see :ref:`<TODO>`
+For more information, see :ref:`Additional Connection Options <rm-additional-connection-options>`.
 
 Get Started
 -----------
