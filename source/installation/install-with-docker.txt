@@ -17,8 +17,9 @@ to replicate.
 
 .. warning::
 
-   This deployment method is ideal for quick evaluation. It is not recommended for 
-   production workloads as it may not provide a resilient production environment.
+   This deployment method is intended for evaluating Relational Migrator. 
+   It is not recommended for production workloads, and may not provide a 
+   resilient production environment.
 
 About this Task
 ---------------
