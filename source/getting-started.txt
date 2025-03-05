@@ -149,6 +149,21 @@ Relational Migrator supports the following source databases:
 .. include:: /includes/table-supported-dbs-and-versions.rst
 
 
+.. _jdbc-databases:
+
+Databases Supported with a JDBC Driver
+''''''''''''''''''''''''''''''''''''''
+
+.. important::
+
+   This feature is in public preview.
+
+Some databases are supported for snapshot data migration through a JDBC
+connection. You can run snapshot migration jobs against these databases, but
+not continuous CDC sync jobs.
+
+.. include:: /includes/table-supported-jdbc-driver-dbs.rst
+
 Destination Databases and Versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

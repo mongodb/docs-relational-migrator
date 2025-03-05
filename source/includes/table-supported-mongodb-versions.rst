@@ -1,10 +1,11 @@
 .. list-table::
    :header-rows: 1
    
-   * - Database 
+   * - Deployment Type
      - Supported Versions 
-     - Deployments 
 
-   * - MongoDB 
-     - 4.4 and higher
-     - Self-managed, MongoDB Atlas
+   * - MongoDB Server (Self-Managed)
+     - 5.0 and higher
+
+   * - MongoDB Atlas
+     - 5.0 and higher
