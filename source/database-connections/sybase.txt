@@ -20,15 +20,6 @@ Connect to Sybase ASE
 Steps
 -----
 
-.. _rm-prepare-db-sybase:
-.. _rm-prereq-sybase:
-
-Prepare the Database
-~~~~~~~~~~~~~~~~~~~~
-
-There are no prerequisite requirements to use Relational Migrator with
-Sybase ASE. Sybase ASE only supports snapshot migration jobs.
-
 .. _rm-sybase-connection-string:
 
 Database Connection String
@@ -68,3 +59,9 @@ Learn More
 
 
 .. include:: /includes/database-connections/connect-to-db-learn-more.rst
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   Configure Sybase </jobs/prerequisites/sybase>

@@ -20,47 +20,6 @@ Connect to DB2
 Steps
 -----
 
-.. _rm-prepare-db-db2:
-.. _rm-prereq-db2:
-
-Prepare the Database
-~~~~~~~~~~~~~~~~~~~~
-
-To perform a migration with Relational Migrator, you must connect using a service 
-account with the appropriate permissions.
-
-For more information on supported migration types for |db-type|, see :ref:`<rm-db-migration-compatibility>`.
-
-.. important::
-   
-   - Relational Migrator does not support ``BLOB``, ``CBLOB`` or ``DBCLOB`` columns 
-     of DB2 tables. If this feature is important to you, create or upvote the 
-     feature request on `feedback.mongodb.com <https://feedback.mongodb.com/forums/952450-relational-migrator>`__.
-  
-   - Relation Migrator only supports snapshot migration jobs for DB2 connections.
-
-.. procedure::
-   :style: normal
-
-   .. step:: Create the ``ASNCDC`` schema
-
-      Use the following statements to create the schema: 
-
-      .. code-block:: sql
-         :copyable: true
-
-         CREATE SCHEMA "ASNCDC";
-
-   .. step:: Create the ``IBMSNAP_REGISTER`` table in the ``ASNCDC`` schema
-
-      Use the following statements to create the table:
-
-      .. code-block:: sql
-         :copyable: true
-
-         CREATE TABLE "ASNCDC"."IBMSNAP_REGISTER" 
-         (SYNCHPOINT INTEGER, CD_NEW_SYNCHPOINT INTEGER);
-
 .. _rm-db2-connection-string:
 
 Database Connection String
@@ -104,5 +63,11 @@ Connect to |db-type|
 Learn More
 ----------
 
-
 .. include:: /includes/database-connections/connect-to-db-learn-more.rst
+
+
+.. toctree::
+   :titlesonly:
+   :hidden:
+
+   Configure DB2 </jobs/prerequisites/db2>
