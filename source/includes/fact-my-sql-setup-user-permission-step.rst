@@ -1,4 +1,4 @@
-.. step:: Set up user permissions
+.. step:: (Optional) Set up user permissions
 
    The following code creates a new MySQL service account 
    for Relational Migrator to connect to the MySQL 
