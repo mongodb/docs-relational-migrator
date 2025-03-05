@@ -31,7 +31,7 @@ About this Task
    service account with the required permissions.
 
    For information on database configuration and required permissions, see
-   :ref:`Configure Sybase <rm-prereq-sybase>`
+   :ref:`Configure Sybase <rm-prereq-sybase>`.
 
 Steps
 -----

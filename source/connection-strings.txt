@@ -21,8 +21,6 @@ the relational and MongoDB databases. You can create connection strings:
 Get Started
 -----------
 
-- :ref:`rm-relational-database-connection-strings`
-- :ref:`rm-mongodb-database-connection-strings`
 
 .. toctree::
    :titlesonly:

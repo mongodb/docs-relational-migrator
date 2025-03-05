@@ -36,7 +36,7 @@ About this Task
    service account with the required permissions.
 
    For information on database configuration and required permissions, see
-   :ref:`Configure PostgreSQL <rm-prereq-postgres>`
+   :ref:`Configure PostgreSQL <rm-prereq-postgres>`.
 
 Steps
 -----
