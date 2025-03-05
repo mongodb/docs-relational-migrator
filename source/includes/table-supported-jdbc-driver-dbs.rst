@@ -9,7 +9,7 @@
      - 24.3.0 and higher
      - Self hosted
 
-   * - :ref:`DB2 <rm-prereq-db2>`
+   * - DB2
      - 11.5 and higher
      - Self hosted, AWS RDS
 
