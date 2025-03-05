@@ -63,6 +63,10 @@ based on user-provided database information.
 
 Connect to |db-type|
 ~~~~~~~~~~~~~~~~~~~~
+
+To save a new connection from the :guilabel:`Connections` page, perform 
+the following actions:
+
 .. procedure::
    :style:  normal
 

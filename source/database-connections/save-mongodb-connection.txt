@@ -1,5 +1,5 @@
 
-.. _rm-save-mongodb-connection:
+
 
 ============================================
 Save a MongoDB Connection

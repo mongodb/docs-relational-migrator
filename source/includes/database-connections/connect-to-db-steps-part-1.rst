@@ -1,6 +1,6 @@
 .. step:: Add a connection
 
-   Select the :guilabel:`Add a new connection` option.
+   In the list of :guilabel:`Relational` connections, click :guilabel:`+ Add connection`.
 
 .. step:: Select the database type
       
