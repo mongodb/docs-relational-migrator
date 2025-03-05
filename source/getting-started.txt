@@ -19,7 +19,7 @@ Introduction to Relational Migrator
    :depth: 1
    :class: singlecol
 
-Relational Migrator is a tool to help migrate your relational data to MongoDB.
+Relational Migrator is a free tool to help you migrate from a relational database to MongoDB.
 This page provides an overview of Relational Migrator's :ref:`key features <rm-key-features>`, 
 :ref:`use cases <rm-use-cases>`, :ref:`migration scenarios <rm-migration-scenarios>`, 
 and :ref:`supported databases and versions<supported-databases>`.
@@ -32,16 +32,10 @@ Key Features
 Map and Model Data
 ~~~~~~~~~~~~~~~~~~
 
-Relational Migrator uses entity-relationship diagrams to map your relational schema 
-to a MongoDB schema, and can generate a recommended mapping to use as a starting 
-point for your migration. For more information, see :ref:`<rm-mapping-rules>`.
-
-Migrate to MongoDB
-~~~~~~~~~~~~~~~~~~
-
-Relational Migrator helps you migrate data from 
-:ref:`supported relational databases <supported-databases>` to MongoDB Atlas or 
-a self-managed MongoDB deployment.
+Relational Migrator provides an entity-relationship diagram builder to map your 
+relational schema to a MongoDB schema. You can start with a recommended schema,
+a 1:1 mapping, or create a new schema from scratch. For more information, 
+see :ref:`<rm-mapping-rules>`.
 
 
 Generate Application Code
@@ -62,6 +56,17 @@ views, and stored procedures into MongoDB-compatible code for C#, Java, or JavaS
 
 You can test queries within Relational Migrator to validate converted SQL and 
 ensure that your queries are compatible with MongoDB.
+
+Migrate to MongoDB
+~~~~~~~~~~~~~~~~~~
+
+Use Relational Migrator to migrate data from :ref:`supported relational databases <supported-databases>` 
+to MongoDB Atlas or a self-managed MongoDB deployment. You can choose either a 
+snapshot migration, or continuous synchronization with Change Data Capture (CDC).
+For more information, see :ref:`<rm-use-cases>`.
+
+Relational Migrator integrates with Apache Kafka and Confluent Cloud for large scale 
+migrations. For more information, see :ref:`<kafka-intro>`.
 
 .. _rm-use-cases:
 
