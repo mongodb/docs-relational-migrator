@@ -23,10 +23,7 @@
      - :icon-lg:`Checkmark`
      - :icon-lg:`Checkmark`
 
-   * - :ref:`Sybase ASE <rm-prereq-sybase>`
+   * - Databases supported with a :ref:`JDBC driver <jdbc-databases>`
      - :icon-lg:`Checkmark`
      - 
 
-   * - :ref:`DB2 <rm-prereq-db2>`
-     - :icon-lg:`Checkmark`
-     - 
