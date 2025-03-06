@@ -67,6 +67,15 @@ for each source table. This initial rule produces a MongoDB schema that
 is identical to the relational database. You can edit the initial rule 
 before running any data migration jobs.
 
+Data Type Detection
+~~~~~~~~~~~~~~~~~~~
+
+Relational Migrator automatically selects the best MongoDB data type for each 
+source column.
+
+For example, SQL Server source data of types ``text``, ``varchar``,
+``nvarchar`` or ``char``  will become the MongoDB ``string`` data type. 
+
 Mapping Direction Preference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -77,19 +86,6 @@ The source relational model is static and unchanging while the target MongoDB mo
 is dynamic and customizable. If your relational database schema changes, Relational Migrator 
 can refresh the relational model. For more information, 
 see :ref:`<rm-manage-relational-model>`.
-
-Data Type Detection
-~~~~~~~~~~~~~~~~~~~
-
-Relational Migrator automatically selects the best MongoDB data type for each 
-source column.
-
-For example, SQL Server source data of types ``text``, ``varchar``,
-``nvarchar`` or ``char``  will become the MongoDB ``string`` data type. 
-
-Custom Mapping Rules
---------------------
-
 
 ``Migrate as`` Options
 ~~~~~~~~~~~~~~~~~~~~~~
