@@ -1,3 +1,5 @@
+.. _rm-synthetic-foreign-keys:
+
 ======================
 Synthetic Foreign Keys
 ======================

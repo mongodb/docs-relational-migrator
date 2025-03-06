@@ -12,10 +12,11 @@ Data Modeling
    :depth: 2
    :class: singlecol
 
-A mapping rule specifies where data from each relational table should be
-migrated to and how the columns should be mapped to fields in 
-MongoDB documents. Mapping rules are created inside a project after you have provided a 
-valid :ref:`relational database connection string and credentials <rm-relational-database-connection-strings>`.
+You can model your data in Relational Migrator by creating **mapping rules**. A mapping rule 
+specifies where data from each relational table should be migrated to and how the 
+columns should be mapped to fields in MongoDB documents. You can create mapping rules 
+in a project after you have provided a valid relational database connection 
+string and credentials.
 
 MongoDB Schema Design Patterns
 ------------------------------
@@ -104,6 +105,30 @@ Mapping rules can be defined with the following ``Migrate as`` options:
 
    * - :ref:`Migrate rows as Embedded documents <rm-embedded-documents>`
      - Translates each row as a set of fields or an embedded object in a child document identified by a foreign key relationship.
+
+Advanced Mapping Rules
+----------------------
+
+You can create mapping rules with :ref:`custom fields <rm-field-customizations>`. 
+Relational Migrator also supports :ref:`table filters <rm-table-filters>` to limit 
+data migrated from relational tables.
+
+Synthetic Foreign Keys
+----------------------
+
+Relational Migrator can create synthetic foreign keys to define a logical 
+relationship between your relational database tables. For more information,
+see :ref:`<rm-synthetic-foreign-keys>`.
+
+
+Learn More
+----------
+
+- For more information on mapping your relational schema to a MongoDB 
+  schema, see :ref:`<rm-schema-mapping>`.
+- For information about mapping rule options, see :ref:`<rm-mapping-rule-options>`.
+- For information about the diagram that displays your relational and 
+  MongoDB schemas, see :ref:`rm-diagrams`.
 
 .. toctree::
    :titlesonly:
