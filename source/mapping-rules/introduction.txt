@@ -74,7 +74,9 @@ You can create a mapping rule based on a source :ref:`relational model <create-r
 or based on a destination :ref:`MongoDB model <create-rule-mongodb>`.
 
 The source relational model is static and unchanging while the target MongoDB model
-is dynamic and customizable.
+is dynamic and customizable. If your relational database schema changes, Relational Migrator 
+can refresh the relational model. For more information, 
+see :ref:`<rm-manage-relational-model>`.
 
 Data Type Detection
 ~~~~~~~~~~~~~~~~~~~
