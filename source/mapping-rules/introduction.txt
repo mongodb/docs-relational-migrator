@@ -40,10 +40,9 @@ documentation:
 Mapping Rules
 -------------
 
-A mapping rule specifies where data from each relational table should be migrated to and how the 
-columns should be mapped to fields in MongoDB documents. You can create mapping rules 
-in a project after you have provided a valid relational database connection 
-string and credentials.
+Mapping rules specify how relational table columns are mapped to MongoDB documents. 
+You can create mapping rules in a project after you have provided a valid relational 
+database connection string and credentials.
 
 Relationships
 ~~~~~~~~~~~~~
@@ -74,7 +73,7 @@ Relational Migrator automatically selects the best MongoDB data type for each
 source column.
 
 For example, SQL Server source data of types ``text``, ``varchar``,
-``nvarchar`` or ``char``  will become the MongoDB ``string`` data type. 
+``nvarchar`` or ``char`` become the MongoDB ``string`` data type. 
 
 Mapping Direction Preference
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,15 +81,15 @@ Mapping Direction Preference
 You can create a mapping rule based on a source :ref:`relational model <create-rule-relational>`
 or based on a destination :ref:`MongoDB model <create-rule-mongodb>`.
 
-The source relational model is static and unchanging while the target MongoDB model
-is dynamic and customizable. If your relational database schema changes, Relational Migrator 
-can refresh the relational model. For more information, 
-see :ref:`<rm-manage-relational-model>`.
+You can modify your MongoDB model as you create mapping rules, but 
+Relational Migrator treats your relational model as static and unchanging. If 
+your relational database schema changes, you must refresh the relational model. 
+For more information, see :ref:`<rm-manage-relational-model>`.
 
-``Migrate as`` Options
-~~~~~~~~~~~~~~~~~~~~~~
+Row Mapping Options
+~~~~~~~~~~~~~~~~~~~
 
-Mapping rules can be defined with the following ``Migrate as`` options:
+You can define mapping rules with the following ``Migrate as`` options:
 
 .. list-table::
    :header-rows: 1
@@ -116,11 +115,10 @@ Relational Migrator also supports :ref:`table filters <rm-table-filters>` to lim
 data migrated from relational tables.
 
 Synthetic Foreign Keys
-----------------------
+~~~~~~~~~~~~~~~~~~~~~~
 
-You can create synthetic foreign keys in Relational Migrator to define a logical 
-relationship between your relational database tables. For more information,
-see :ref:`<rm-synthetic-foreign-keys>`.
+To define a logical relationship between your relational database tables, you can 
+create synthetic foreign keys. For more information, see :ref:`<rm-synthetic-foreign-keys>`.
 
 Preview Mapping Rules
 ---------------------
@@ -130,11 +128,9 @@ Preview Mapping Rules
 Learn More
 ----------
 
-- For information on mapping your relational schema to a MongoDB schema, 
-  see :ref:`<rm-schema-mapping>`.
-- For information about mapping rule options, see :ref:`<rm-mapping-rule-options>`.
-- For information about the diagram that displays your relational and 
-  MongoDB schemas, see :ref:`rm-diagrams`.
+- :ref:`<rm-schema-mapping>`
+- :ref:`<rm-mapping-rule-options>`
+- :ref:`rm-diagrams`
 
 .. toctree::
    :titlesonly:
