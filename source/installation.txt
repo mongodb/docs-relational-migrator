@@ -10,8 +10,12 @@ Installation
    :depth: 1
    :class: singlecol
 
-{+rel-mig+} supports local deployment and unattended server deployment models.
-For instructions on installing {+rel-mig+}, see the following pages:
+This page provides an overview of Relational Migrator's supported 
+deployment models, recommended deployment models for specific use cases,
+and deployment considerations.
+
+Supported Deployment Models
+---------------------------
 
 .. list-table::
    :header-rows: 1
@@ -33,13 +37,6 @@ For instructions on installing {+rel-mig+}, see the following pages:
        
        For more information, see :ref:`Install on an Unattended Server 
        <unattended-server>`. 
-
-   * - Docker
-
-     - Suitable if your familiar with Docker and don't want to run 
-       {+rel-mig+} directly on a server or machine.
-
-       For more information, see :ref:`Install with Docker <rm-install-docker>`.
 
    * - Kafka
 
@@ -63,6 +60,115 @@ For instructions on installing {+rel-mig+}, see the following pages:
        managed connectors.
 
        For more information, see :ref:`install-confluent-kafka`.
+
+.. _rm-deployment-considerations:
+
+Recommendations
+---------------
+
+The following table outlines high-level recommendations for how to 
+run Relational Migrator.
+
+.. note:: 
+   
+   The :ref:`Kafka deployment model <kafka-intro>` provides greater 
+   resilience and scalability and can be used together with any of the 
+   listed deployment models.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 20 50
+
+   * - Use case 
+     - Migration runtime 
+     - Recommended deployment
+
+   * - Small scale migration jobs, or debugging and testing jobs
+     - Less than four hours
+     - Laptop / Desktop / Docker
+
+   * - Large scale production migration jobs that run for more than four 
+       hours.
+     - More than 4 hours.
+     - Remote server / EC2 / Azure VM
+
+
+Deployment Considerations
+-------------------------
+
+Where to Run Relational Migrator
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+For best performance, locate the machine or server running Relational 
+Migrator as geographically close to the source and target databases as 
+possible. Proximity to the target database influences performance
+the most: 
+
+- If you're using Relational Migrator for an on-premises migration, 
+  run Relational Migrator in the same data center as the source 
+  database.
+
+- If you're using a cloud hosted database, run Relational 
+  Migrator on an EC2 instance or VM in the same 
+  :abbr:`VPC (Virtual Private Cloud)` as the source database.
+
+.. tip::
+
+   Check the sleep timeout setting for your operating system. If your 
+   machine goes to sleep during a migration, the migration job fails.
+
+Network Considerations
+~~~~~~~~~~~~~~~~~~~~~~
+
+When using Relational Migrator, the system firewall on the machine or 
+server must allow outbound TCP traffic to both the source and 
+destination databases.
+
+Cloud Networking
+''''''''''''''''
+
+When running Relational Migrator in a cloud environment, check the 
+cloud specific firewall (security group), router table, and 
+the server firewall configurations. For details on specific cloud 
+provider network configurations, see these pages:
+
+- `AWS Networking <https://docs.aws.amazon.com/vpc/>`__
+- `Azure Networking <https://azure.microsoft.com/en-us/products/category/networking>`__
+- `GCP Networking <https://cloud.google.com/vpc/docs>`__
+
+Telemetry
+'''''''''
+
+By default, Relational Migrator includes telemetry that reports usage 
+information and errors back to MongoDB to help improve the product. 
+This telemetry does not include any sensitive details such as database 
+connection strings, schema information or customer data. 
+
+You can disable telemetry by editing the application's
+``user.properties`` file, adding the following line, and restarting 
+Relational Migrator:
+
+.. code-block::
+
+   migrator.app.telemetry.enable: false 
+
+System Hardware
+~~~~~~~~~~~~~~~
+
+For specific hardware recommendations, see :ref:`rm-system-requirements`.
+
+.. note::
+
+  Scaling up the Atlas cluster size can significantly improve migration
+  speeds. For details, see :ref:`scale-cluster-instance`.
+
+Get Started
+-----------
+
+- :ref:`Install on a Local Machine<local-machine-install>`
+- :ref:`Install with Docker <rm-install-docker>`
+- :ref:`Install on an Unattended Server <unattended-server>`
+- :ref:`Integrate with Kafka <kafka-intro>`
 
 .. toctree::
    :hidden:
