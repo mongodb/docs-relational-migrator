@@ -36,8 +36,7 @@ and the recommended migration scenario for each deployment model:
      - Install Relational Migrator to a single machine that cannot 
        be externally accessed.
 
-       For more information, see :ref:`Install on a Local Machine 
-       <local-machine-install>`
+       For more information, see :ref:`<local-machine-install>`.
 
      - Evaluation and proof of concept jobs that run for less than four hours.
     
@@ -46,11 +45,10 @@ and the recommended migration scenario for each deployment model:
      - Install Relational Migrator in a way that is simple to replicate
        and independent of the operating system.
 
-       For more information, see :ref:`Install with Docker <rm-install-docker>`.
+       For more information, see :ref:`<rm-install-docker>`.
 
-     - 
-       * You are familiar with Docker and don't want to run Relational Migrator directly on a server or machine.
-       * Your migration job runs for less than four hours.
+     - Proof of concept and evaluation jobs that run for less than four hours,
+       and do not run directly on a server or machine.
        
 
    * - Unattended server
@@ -58,12 +56,10 @@ and the recommended migration scenario for each deployment model:
      - Install Relational Migrator on an unattended server that binds Relational 
        Migrator to an IP address and exposes it as a web application.
        
-       For more information, see :ref:`Install on an Unattended Server 
-       <unattended-server>`.
+       For more information, see :ref:`<unattended-server>`.
 
-     - 
-       * Small production jobs that run for more than four hours, but less than four weeks.
-       * Your database is smaller than 20GB.
+     - Small production jobs with runtimes between four hours and four weeks
+       that involve a database smaller than 20GB.
       
 
    * - Kafka
@@ -90,7 +86,7 @@ and the recommended migration scenario for each deployment model:
 
        For more information, see :ref:`install-confluent-kafka`.
 
-     - Suitable for users who want the reliability of Kafka without having to manage their own cluster.
+     - Production jobs with the reliability of Kafka without having to manage your own cluster.
 
 
 Deployment Considerations
