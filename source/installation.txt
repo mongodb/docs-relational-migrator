@@ -54,8 +54,8 @@ and the recommended migration scenario for each deployment model:
        
        For more information, see :ref:`<unattended-server>`.
 
-     - Small production jobs with runtimes between four hours and four weeks
-       that involve a database smaller than 20GB.
+     - Small production jobs with runtimes between four hours and four weeks,
+       or involve a database smaller than 20GB.
       
 
    * - Kafka
