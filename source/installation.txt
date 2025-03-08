@@ -10,9 +10,6 @@ Installation
    :depth: 1
    :class: singlecol
 
-This page provides an overview of Relational Migrator's supported 
-deployment models, high-level recommendations, and deployment considerations.
-
 .. _rm-deployment-considerations:
 
 Supported Deployment Models
