@@ -87,9 +87,8 @@ run Relational Migrator.
      - Less than four hours
      - Laptop / Desktop / Docker
 
-   * - Large scale production migration jobs that run for more than four 
-       hours.
-     - More than 4 hours.
+   * - Large scale production migration jobs
+     - More than 4 hours
      - Remote server / EC2 / Azure VM
 
 
