@@ -11,8 +11,7 @@ Installation
    :class: singlecol
 
 This page provides an overview of Relational Migrator's supported 
-deployment models, recommended deployment models for specific use cases,
-and deployment considerations.
+deployment models, high-level recommendations, and deployment considerations.
 
 .. _rm-deployment-considerations:
 
