@@ -164,10 +164,9 @@ For specific hardware recommendations, see :ref:`rm-system-requirements`.
 Get Started
 -----------
 
-- :ref:`Install on a Local Machine<local-machine-install>`
-- :ref:`Install with Docker <rm-install-docker>`
-- :ref:`Install on an Unattended Server <unattended-server>`
-- :ref:`Integrate with Kafka <kafka-intro>`
+- For local and Docker deployment installation instructions, see :ref:`<local-machine-install>`
+- For unattended server and Kafka deployment installation instructions, see
+  :ref:`Install on an Unattended Server <unattended-server>`
 
 .. toctree::
    :hidden:
