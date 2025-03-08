@@ -13,7 +13,10 @@ Data Modeling
    :class: singlecol
 
 To model your data in Relational Migrator, design a MongoDB schema
-and create **mapping rules**.
+and create **mapping rules**. Mapping rules specify how relational 
+table columns are mapped to MongoDB documents. You can create mapping rules 
+in a project after you have provided a valid relational 
+database connection string and credentials.
 
 MongoDB Schema Design Patterns
 ------------------------------
@@ -37,12 +40,9 @@ documentation:
 - `Summary of Schema Design Anti-Patterns and How to Spot Them
   <https://www.mongodb.com/developer/products/mongodb/schema-design-anti-pattern-summary/>`__.
 
-Mapping Rules
--------------
 
-Mapping rules specify how relational table columns are mapped to MongoDB documents. 
-You can create mapping rules in a project after you have provided a valid relational 
-database connection string and credentials.
+Details
+-------
 
 Relationships
 ~~~~~~~~~~~~~
