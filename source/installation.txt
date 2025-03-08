@@ -47,7 +47,7 @@ and the recommended migration scenario for each deployment model:
 
        For more information, see :ref:`<rm-install-docker>`.
 
-     - Proof of concept and evaluation jobs that run for less than four hours,
+     - Evaluation and proof of concept jobs that run for less than four hours,
        and do not run directly on a server or machine.
        
 
