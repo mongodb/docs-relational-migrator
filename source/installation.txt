@@ -14,8 +14,13 @@ This page provides an overview of Relational Migrator's supported
 deployment models, recommended deployment models for specific use cases,
 and deployment considerations.
 
+.. _rm-deployment-considerations:
+
 Supported Deployment Models
 ---------------------------
+
+The following table describes Relational Migrator's supported deployment models, 
+and the recommended migration scenario for each deployment model:
 
 .. list-table::
    :header-rows: 1
@@ -24,72 +29,68 @@ Supported Deployment Models
 
      - Description
 
+     - Recommended scenario
+
    * - Local
 
-     - Suitable for evaluation and proof of concept jobs. 
+     - Install Relational Migrator to a single machine that cannot 
+       be externally accessed.
 
        For more information, see :ref:`Install on a Local Machine 
-       <local-machine-install>`. 
+       <local-machine-install>`
+
+     - Evaluation and proof of concept jobs that run for less than four hours.
+    
+   * - Docker
+
+     - Install Relational Migrator in a way that is simple to replicate
+       and independent of the operating system.
+
+       For more information, see :ref:`Install with Docker <rm-install-docker>`.
+
+     - 
+       * You are familiar with Docker and don't want to run Relational Migrator directly on a server or machine.
+       * Your migration job runs for less than four hours.
+       
 
    * - Unattended server
 
-     - Suitable for smaller production jobs. 
+     - Install Relational Migrator on an unattended server that binds Relational 
+       Migrator to an IP address and exposes it as a web application.
        
        For more information, see :ref:`Install on an Unattended Server 
-       <unattended-server>`. 
+       <unattended-server>`.
+
+     - 
+       * Small production jobs that run for more than four hours, but less than four weeks.
+       * Your database is smaller than 20GB.
+      
 
    * - Kafka
 
-     - The Kafka deployment method is suitable for long-running Change Data 
-       Capture (CDC) migration jobs and large data migrations that exceed 4 weeks in 
-       duration or involve databases larger than 20GB. `Apache Kafka 
-       <https://kafka.apache.org/>`__ is an open-source platform for distributed 
-       workloads that offers high availability and automatic recovery. This is the 
-       most advanced option that is intended for users who require long-running or 
-       large production data migrations.
+     - `Apache Kafka <https://kafka.apache.org/>`__ is an open-source platform for distributed 
+       workloads.
+
+       Use Relational Migrator as a Kafka Connect plugin to improve resilience and scalibility
+       of big data migration jobs.
 
        For more information, see :ref:`kafka-intro`.
 
+     - Production data migrations that run longer than four weeks, or involve databases larger than 20GB.
+
+       
+
    * - Kafka with Confluent Cloud
 
-     - The Kafka with Confluent Cloud deployment method is an option for users who 
-       want the reliability of Kafka without having to manage their own cluster. 
-       `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
-       provider run by the founders of Kafka. This deployment method uses APIs to 
-       add the newest {+rel-mig+} sink connectors to Confluent Cloud as 
-       managed connectors.
+     - `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
+       provider run by the founders of Kafka. 
+
+       Use APIs to add the newest Relational Migrator sink connectors to Confluent Cloud
+       as managed connectors.
 
        For more information, see :ref:`install-confluent-kafka`.
 
-.. _rm-deployment-considerations:
-
-Recommendations
----------------
-
-The following table outlines high-level recommendations for how to 
-run Relational Migrator.
-
-.. note:: 
-   
-   The :ref:`Kafka deployment model <kafka-intro>` provides greater 
-   resilience and scalability and can be used together with any of the 
-   listed deployment models.
-
-.. list-table::
-   :header-rows: 1
-   :widths: 30 20 50
-
-   * - Use case 
-     - Migration runtime 
-     - Recommended deployment
-
-   * - Small scale migration jobs, or debugging and testing jobs
-     - Less than four hours
-     - Laptop / Desktop / Docker
-
-   * - Large scale production migration jobs
-     - More than 4 hours
-     - Remote server / EC2 / Azure VM
+     - Suitable for users who want the reliability of Kafka without having to manage their own cluster.
 
 
 Deployment Considerations
