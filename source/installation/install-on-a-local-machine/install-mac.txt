@@ -17,7 +17,7 @@ IP and port.
 About This Task
 ---------------
 
-Relational Migrator uses the following file locations on Mac OS:
+Relational Migrator uses the following file locations on MacOS:
 
 .. include:: /includes/fact-file-location-mac.rst
 
@@ -27,7 +27,7 @@ Steps
 1. Download the latest MacOS Relational Migrator binary from the 
    `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
 
-#. Double-click the ``MongoDB.Relational.Migrator-X.X.X.dmg`` file.
+#. Double-click the ``MongoDB.Relational.Migrator-<version_number>.dmg`` file.
 
 #. Drag the ``MongoDB Relational Migrator.app`` icon into the ``/Applications`` folder.
 

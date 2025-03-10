@@ -27,7 +27,7 @@ Steps
 1. Download the latest Windows Relational Migrator binary from the 
    `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
 
-#. Double-click the ``MongoDB Relational Migrator-X.X.X.msi`` file.
+#. Double-click the ``MongoDB Relational Migrator-<version_number>.msi`` file.
 
 #. When you are prompted with the MongoDB :guilabel:`Relational Migrator Setup Wizard`, 
    click :guilabel:`Next`.

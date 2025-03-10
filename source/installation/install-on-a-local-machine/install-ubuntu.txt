@@ -31,7 +31,7 @@ Steps
 
    .. code-block:: bash
 
-      sudo apt install ./mongodb-relational-migrator_X.X.X-1_amd64.deb
+      sudo apt install ./mongodb-relational-migrator_<version_number>-1_amd64.deb
 
 #. Change the directory to the Relational Migrator ``app/lib`` location.
 
