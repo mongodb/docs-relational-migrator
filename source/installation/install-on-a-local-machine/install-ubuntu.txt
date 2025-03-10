@@ -14,6 +14,13 @@ You can install Relational Migrator on a single Ubuntu or Debian machine. This
 installation method uses default settings and binds Relational Migrator to a single 
 IP and port. 
 
+About This Task
+---------------
+
+Relational Migrator uses the following file locations on Ubuntu and Debian Linux:
+
+.. include:: /includes/fact-file-location-linux.rst
+
 Steps
 -----
 
