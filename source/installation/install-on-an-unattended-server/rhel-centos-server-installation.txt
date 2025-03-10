@@ -112,6 +112,10 @@ Install Relational Migrator
 Run as a System Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
+When you install Relational Migrator on a RHEL/CentOS server, you can also 
+set up Relational Migrator to run as a system service. By running Relational Migrator as 
+a system service, Relational Migrator automatically starts when the server starts.
+
 1. Create a ``/etc/systemd/system/migrator.service`` file. 
 
    Copy the text below into the ``/etc/systemd/system/migrator.service`` file. 
@@ -149,4 +153,4 @@ Run as a System Service
 Next Steps
 ----------
 
-- :ref:`<rm-projects>`
+- :ref:`Create and Manage Projects <rm-projects>`

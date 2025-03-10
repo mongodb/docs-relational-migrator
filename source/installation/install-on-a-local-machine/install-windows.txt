@@ -60,17 +60,4 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Create a Project <rm-create-project-live>`
-
-- :ref:`Import a Project <import-project>`
-
-Learn More
-----------
-
-- :ref:`Relational Migrator File Locations <file-location>` 
-
-- :ref:`Install on Mac <single-mac>`
-
-- :ref:`Install on RHEL/CentOS <single-rhel>`
-
-- :ref:`Install on Ubuntu/Debian <single-ubuntu>`
+- :ref:`Create and Manage Projects <rm-projects>`

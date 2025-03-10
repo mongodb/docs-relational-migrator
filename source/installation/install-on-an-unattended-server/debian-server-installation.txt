@@ -171,4 +171,4 @@ If your installation fails with an error, use the following command to see error
 Next Steps
 ----------
 
-- :ref:`<rm-projects>`
+- :ref:`Create and Manage Projects <rm-projects>`
