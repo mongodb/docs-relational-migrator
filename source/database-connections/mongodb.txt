@@ -16,9 +16,10 @@ This page shows how to save a new MongoDB connection from the :guilabel:`Connect
 tab. You can use a saved connection for any task that requires connecting 
 to a database.
 
-.. important::
+.. note::
 
-   To save a connection to a MongoDB Atlas cluster, you must be :ref:`logged in <rm-atlas-log-in>` with Atlas.
+   Relational Migrator does not support MongoDB to MongoDB migrations. For information 
+   on supported databases, see :ref:`<supported-databases>`.
 
 About this Task
 ---------------
@@ -38,6 +39,12 @@ To save a MongoDB connection in Relational Migrator, you must:
    To migrate data, you must connect to MongoDB using a service account with 
    the ``readWrite`` role. For information about creating a MongoDB user with 
    the required permisions, see :ref:`<rm-mongodb-service-user>`.
+
+Before you Begin
+----------------
+
+To save a connection to a MongoDB Atlas cluster, you must be 
+:ref:`logged in <rm-atlas-log-in>` with MongoDB Atlas.
 
 Steps
 -----
