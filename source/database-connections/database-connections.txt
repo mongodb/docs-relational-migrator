@@ -16,24 +16,26 @@ Relational Migrator uses JDBC connection strings and associated user
 credentials to access your relational database and MongoDB deployment.
 You can save this information as a database connection.
 
-Get Started
------------
-
-To save a new database connection, perform one of these actions:
-
-- Create a project from a live database connection.
-
-- Create or modify a data migration job.
-
-- Navigate to the :guilabel:`Database Connections Bar` in a project.
-
-- Navigate to the Relational Migrator :guilabel:`Connections` page.
-
 After you save a database connection, you can use it for any 
 task that requires connecting to a database.
 
-Supported Alternatives
-----------------------
+Get Started
+-----------
+
+To connect to a source relational database, see the following procedures:
+
+- :ref:`Connect to MySQL <rm-connect-to-mysql>`
+- :ref:`Connect to Oracle <rm-connect-to-oracle>`
+- :ref:`Connect to PostgreSQL <rm-connect-to-postgres>`
+- :ref:`Connect to SQL Server <rm-connect-to-sql-server>`
+- :ref:`Connect to Sybase <rm-connect-to-sybase>`
+- :ref:`Connect to DB2 <rm-connect-to-db2>`
+
+To connect to a MongoDB instance, see :ref:`Connect to MongoDB <rm-connect-to-mongo>`.
+
+
+Use Relational Migrator Without a Live Database Connection
+----------------------------------------------------------
 
 If you don't have a live connection to your relational database, you can 
 use the following options to create projects and map schemas:
@@ -48,7 +50,7 @@ use the following options to create projects and map schemas:
 
    Relational Migrator requires live database connections to perform data migrations.
 
-For more information, see :ref:`Additional Connection Options <rm-additional-connection-options>`.
+For more information, see :ref:`<migrator-without-live-connection>`.
 
 
 .. toctree::
@@ -62,6 +64,6 @@ For more information, see :ref:`Additional Connection Options <rm-additional-con
    Sybase </database-connections/sybase>
    DB2 </database-connections/db2>
    MongoDB </database-connections/mongodb>
-   Additional Connection Options </database-connections/additional-options>
+   Use Migrator without Live Connection </database-connections/migrator-without-live-connection>
    Manage Connections </database-connections/manage-database-connections>
    Create & Manage Projects </projects>
