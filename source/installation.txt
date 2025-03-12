@@ -115,7 +115,7 @@ Get Started
 
 - For local and Docker deployment installation instructions, see :ref:`<local-machine-install>`
 - For unattended server and Kafka deployment installation instructions, see
-  :ref:`Install on an Unattended Server <unattended-server>`
+  :ref:`<unattended-server>`
 
 .. toctree::
    :hidden:
