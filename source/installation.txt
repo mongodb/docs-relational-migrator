@@ -15,7 +15,7 @@ Installation
 Supported Deployment Models
 ---------------------------
 
-The following table describes Relational Migrator's supported deployment models, 
+The following table describes Relational Migrator's supported deployment models  
 and the recommended migration scenario for each deployment model:
 
 .. list-table::
@@ -25,7 +25,7 @@ and the recommended migration scenario for each deployment model:
 
      - Description
 
-     - Recommended scenario
+     - Recommended Scenario
 
    * - Local
 
@@ -50,7 +50,7 @@ and the recommended migration scenario for each deployment model:
    * - Unattended server
 
      - Install Relational Migrator on an unattended server that binds Relational 
-       Migrator to an IP address and exposes it as a web application.
+       Migrator to an IP address and port and exposes it as a web application.
        
        For more information, see :ref:`<unattended-server>`.
 
@@ -70,8 +70,6 @@ and the recommended migration scenario for each deployment model:
 
      - Production data migrations that run longer than four weeks, or involve databases larger than 20GB.
 
-       
-
    * - Kafka with Confluent Cloud
 
      - `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
@@ -84,75 +82,33 @@ and the recommended migration scenario for each deployment model:
 
      - Production jobs with the reliability of Kafka without having to manage your own cluster.
 
-
 Deployment Considerations
 -------------------------
 
 Where to Run Relational Migrator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-For best performance, locate the machine or server running Relational 
-Migrator as geographically close to the source and target databases as 
-possible. Proximity to the target database influences performance
-the most: 
-
-- If you're using Relational Migrator for an on-premises migration, 
-  run Relational Migrator in the same data center as the source 
-  database.
-
-- If you're using a cloud hosted database, run Relational 
-  Migrator on an EC2 instance or VM in the same 
-  :abbr:`VPC (Virtual Private Cloud)` as the source database.
-
-.. tip::
-
-   Check the sleep timeout setting for your operating system. If your 
-   machine goes to sleep during a migration, the migration job fails.
+.. include:: /includes/fact-location-considerations.rst
 
 Network Considerations
 ~~~~~~~~~~~~~~~~~~~~~~
 
-When using Relational Migrator, the system firewall on the machine or 
-server must allow outbound TCP traffic to both the source and 
-destination databases.
+.. include:: /includes/fact-general-firewall-considerations.rst
 
 Cloud Networking
 ''''''''''''''''
 
-When running Relational Migrator in a cloud environment, check the 
-cloud specific firewall (security group), router table, and 
-the server firewall configurations. For details on specific cloud 
-provider network configurations, see these pages:
-
-- `AWS Networking <https://docs.aws.amazon.com/vpc/>`__
-- `Azure Networking <https://azure.microsoft.com/en-us/products/category/networking>`__
-- `GCP Networking <https://cloud.google.com/vpc/docs>`__
+.. include:: /includes/fact-cloud-networking-considerations.rst
 
 Telemetry
 '''''''''
 
-By default, Relational Migrator includes telemetry that reports usage 
-information and errors back to MongoDB to help improve the product. 
-This telemetry does not include any sensitive details such as database 
-connection strings, schema information or customer data. 
-
-You can disable telemetry by editing the application's
-``user.properties`` file, adding the following line, and restarting 
-Relational Migrator:
-
-.. code-block::
-
-   migrator.app.telemetry.enable: false 
+.. include:: /includes/fact-telemetry.rst
 
 System Hardware
 ~~~~~~~~~~~~~~~
 
-For specific hardware recommendations, see :ref:`rm-system-requirements`.
-
-.. note::
-
-  Scaling up the Atlas cluster size can significantly improve migration
-  speeds. For details, see :ref:`scale-cluster-instance`.
+.. include:: /includes/fact-hardware-considerations.rst
 
 Get Started
 -----------
