@@ -21,7 +21,8 @@ to a database.
    Relational Migrator does not support MongoDB to MongoDB migrations. For information 
    on supported databases, see :ref:`<supported-databases>`.
 
-   For information on migrating between MongoDB clusters, see :ref:`<c2c-index>`.
+   For information on migrating between MongoDB clusters, see 
+   `MongoDB Cluster-to-Cluster Sync <https://www.mongodb.com/docs/cluster-to-cluster-sync/>`_.
 
 About this Task
 ---------------
