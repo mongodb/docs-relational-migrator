@@ -21,6 +21,8 @@ to a database.
    Relational Migrator does not support MongoDB to MongoDB migrations. For information 
    on supported databases, see :ref:`<supported-databases>`.
 
+   For information on migrating between MongoDB clusters, see :ref:`<c2c-index>`.
+
 About this Task
 ---------------
 
@@ -33,7 +35,7 @@ To save a MongoDB connection in Relational Migrator, you must:
 .. important::
 
    To plan your migration and map your relational schema to a 
-   MongoDB schema, you must connect using an account with the relevant 
+   MongoDB schema, you must connect using an account with the correct 
    ``read`` permissions.
    
    To migrate data, you must connect to MongoDB using a service account with 
@@ -98,11 +100,12 @@ the following options:
 
 .. code-block::
 
-   <on-premises host:port or clusterurl.mongodb.net>?authSource=$external&authMechanism=MONGODB-X509&tlsCertificateKeyFile=/path/to/cert/client.p12&tlsCertificateKeyFilePassword=certpassword
+   <on-premises host:port or clusterurl.mongodb.net>?authSource=$external&authMechanism=MONGODB-X509&tlsCertificateKeyFile=</path/to/cert/client.p12>&tlsCertificateKeyFilePassword=<certpassword>
 
 
 .. list-table::
    :header-rows: 1
+   :widths: 30 70
 
    * - Option
      - Value
@@ -114,8 +117,8 @@ the following options:
      - ``MONGODB-X509``
 
    * - :urioption:`tlsCertificateKeyFile`
-     - The path to the ``.p12`` file that contains the certificate and key to 
-       present to the mongod or mongos instance.
+     - Path to the ``.p12`` file that contains the certificate and key to 
+       present to the ``mongod`` or ``mongos`` instance.
 
        :gold:`IMPORTANT:` Unlike other MongoDB products, Relational Migrator
        requires a path to a ``.p12`` file, not a ``.pem`` file. If your 
@@ -129,12 +132,12 @@ the following options:
           cert_key.p12
 
    * - :urioption:`tlsCertificateKeyFilePassword`
-     - The password to de-crypt the ``.p12`` file. 
+     - Password to decrypt the ``.p12`` file. 
 
    * - :urioption:`tlsCAFile`
-     - Required only if the MongoDB instance has a TLS/SSL setup with its own public
-       key infrastructure. The path to the local ``.pem`` file that contains 
-       the root certificate chain from the Certificate Authority.
+     - Path to the local ``.pem`` file that contains the root certificate chain from the Certificate Authority.
+       Required only if the MongoDB instance has a TLS/SSL setup with its own public
+       key infrastructure. 
 
 For example, to connect to the ``MongoEnterprises`` database on 
 ``cluster1.abc123.mongodb.net``, using the certificate file 

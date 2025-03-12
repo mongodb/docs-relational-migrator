@@ -24,7 +24,7 @@ About this Task
 .. important::
 
    To plan your migration and map your |db-type| schema to a 
-   MongoDB schema, you must connect using an account with the relevant 
+   MongoDB schema, you must connect using an account with the correct 
    ``read`` permissions.
    
    To migrate data, you must connect to your |db-type| database using a 
@@ -41,7 +41,7 @@ Steps
 Database Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The general form for an Oracle connection string is:
+The Oracle connection string looks like:
 
 .. code-block::
 
@@ -74,7 +74,7 @@ Connect to |db-type|
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
 
-   .. step:: To create a connection string by entering database information, enter the following:
+   .. step:: To create a connection string, enter the following:
       
       .. include:: /includes/table-oracle-connection-fields.rst
 

@@ -24,7 +24,7 @@ About this Task
 .. important::
 
    To plan your migration and map your |db-type| schema to a 
-   MongoDB schema, you must connect using an account with the relevant 
+   MongoDB schema, you must connect using an account with the correct 
    ``read`` permissions.
    
    To migrate data, you must connect to your |db-type| database using a 
@@ -41,7 +41,7 @@ Steps
 Database Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The general form for a SQL Server connection string is:
+The SQL Server connection string looks like:
 
 .. code-block::
 
@@ -54,13 +54,15 @@ port ``1433`` uses the following connection string:
 
    jdbc:sqlserver://localhost:1433;databaseName=test
 
-**Using Windows Integrated Authentication**
+Windows Integrated Authentication
+'''''''''''''''''''''''''''''''''
 
 To enable Windows Integrated Authentication, add ``integratedSecurity=true;`` to the URI options.
 Leave the :guilabel:`Username` and :guilabel:`Password` fields blank. Windows Integrated Authentication connects 
 to the database using the credentials of the user who launched the Relational Migrator executable.
 
-**Using TLS**
+TLS
+'''
 
 JDBC connections to SQL Server use Transport Layer Security (TLS) by default.
 The encrypt property controls TLS. To disable it, set ``encrypt=false;``.
@@ -96,7 +98,7 @@ Connect to |db-type|
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
 
-   .. step:: To create a connection string by entering database information, enter the following:
+   .. step:: To create a connection string, enter the following:
       
       .. include:: /includes/table-sql-connection-fields.rst
 

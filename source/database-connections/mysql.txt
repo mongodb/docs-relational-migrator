@@ -24,7 +24,7 @@ About this Task
 .. important::
 
    To plan your migration and map your |db-type| schema to a 
-   MongoDB schema, you must connect using an account with the relevant 
+   MongoDB schema, you must connect using an account with the correct 
    ``read`` permissions.
    
    To migrate data, you must connect to your |db-type| database using a 
@@ -43,7 +43,7 @@ Database Connection String
 
 Relational Migrator requires a connection string to connect to your MySQL instance.
 
-The general form for a MySQL connection string is:
+The MySQL connection string looks like:
 
 .. code-block::
 
@@ -72,7 +72,7 @@ the following actions:
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
 
-   .. step:: To create a connection string by entering database information, enter the following:
+   .. step:: To create a connection string, enter the following:
       
       .. include:: /includes/table-mysql-connection-fields.rst
 
