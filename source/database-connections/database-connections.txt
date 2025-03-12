@@ -64,6 +64,6 @@ For more information, see :ref:`<migrator-without-live-connection>`.
    Sybase </database-connections/sybase>
    DB2 </database-connections/db2>
    MongoDB </database-connections/mongodb>
-   Use Migrator without Live Connection </database-connections/migrator-without-live-connection>
+   Use Without DB Connection </database-connections/migrator-without-live-connection>
    Manage Connections </database-connections/manage-database-connections>
    Create & Manage Projects </projects>
