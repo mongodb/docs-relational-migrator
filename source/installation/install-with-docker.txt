@@ -15,6 +15,14 @@ Running Relational Migrator with Docker ensures an installation process
 that is both independent of the operating system and straightforward 
 to replicate.
 
+.. note::
+
+   This deployment method is intended as an easy way to evaluate Relational Migrator and
+   is not recommended for production workloads.
+   
+   For information about deploying Relational Migrator in production, see the 
+   :ref:`Production Installation Guide <unattended-server>`.
+
 About this Task
 ---------------
 
@@ -132,12 +140,4 @@ Procedure
 Next Steps
 ----------
 
-- :ref:`rm-connection-strings`
-- :ref:`rm-create-project-live`
-- :ref:`rm-mapping-rules`
-
-Learn More
-----------
-
-- :ref:`rm-projects`
-- :ref:`rm-manage-relational-model`
+- :ref:`rm-database-connections`
