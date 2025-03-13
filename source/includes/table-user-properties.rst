@@ -1,6 +1,6 @@
 .. list-table:: 
    :header-rows: 1
-   :width: 40 45 15
+   :width: 60 30 10
 
    * - Property Name
      - Description 
