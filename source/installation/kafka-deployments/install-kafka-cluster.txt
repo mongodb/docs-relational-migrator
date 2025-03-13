@@ -1,8 +1,8 @@
 .. _install-kafka-cluster:
 
-======================================
-Install with an Existing Kafka Cluster
-======================================
+==============================
+Self-Managed Kafka Setup Guide
+==============================
 
 .. default-domain:: mongodb
 
@@ -16,9 +16,9 @@ Install with an Existing Kafka Cluster
    :depth: 1
    :class: singlecol
 
-You can install {+rel-mig+} on an existing Kafka cluster including 
-Kafka Connect. This installation method is ideal if you are already running 
-Kafka or you have your own approach to installing and configuring Kafka.
+You can install {+rel-mig+} on an existing self-managed Kafka cluster 
+including Kafka Connect. This installation method is ideal if you are already 
+running Kafka or you have your own approach to installing and configuring Kafka.
 
 .. important::
 
@@ -120,13 +120,12 @@ Steps
 Next Steps
 ----------
 
-- :ref:`rm-projects`
-- :ref:`rm-create-jobs` 
+After you verify a successful installation, you can :ref:`create a new project 
+<rm-projects>`.
 
 Learn More
 ----------
 
 - :ref:`kafka-intro`
-- :ref:`install-docker`
 - :ref:`install-confluent-kafka`
 - :ref:`advanced-settings`
