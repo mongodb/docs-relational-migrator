@@ -89,7 +89,7 @@ Install Relational Migrator
 
 #. Run Relational Migrator using the binary.
 
-   The ``bin`` directory can typically be found at ``/opt/mongodb-relational-migrator/bin``.
+   The path to the ``bin`` directory is ``/opt/mongodb-relational-migrator/bin``.
 
    To run Relational Migrator using the binary, run the following:
 
