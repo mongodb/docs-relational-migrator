@@ -12,7 +12,7 @@ Windows Server Installation
    :depth: 2
    :class: singlecol
 
-Install Relational Migrator to run as an unattended server on Windows. By running 
+Install Relational Migrator to run as an unattended server on Windows. When running 
 as an unattended server, Relational Migrator binds to any IP and port on the server 
 and exposes it as a web application.
 
@@ -61,7 +61,7 @@ Install Relational Migrator
 
 #. (Optional) Update the port that Relational Migrator runs on.
 
-   By default, Relational Migrator is configured to run on port 8278.
+   By default, Relational Migrator is configured to run on port ``8278``.
    To change the port Relational Migrator runs on, update the ``server.port`` line 
    in your ``user.properties`` file to specify your preferred port.
 
@@ -82,7 +82,7 @@ Run as a System Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 When you install Relational Migrator on a Windows server, you can set up Relational 
-Migrator to run as a system service. By running Relational Migrator as a system 
+Migrator to run as a system service. When running Relational Migrator as a system 
 service, Relational Migrator automatically starts when the server starts.
 
 1. Launch the Service Manager of your choice.
@@ -104,7 +104,7 @@ service, Relational Migrator automatically starts when the server starts.
 
 #. Launch ``services.msc``. 
 
-   Find the newly installed MongoDB Relational Migrator service and click 
+   Find the newly-installed MongoDB Relational Migrator service and click 
    :guilabel:`Start Service`. 
 
    .. note::

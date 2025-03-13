@@ -13,7 +13,7 @@ RHEL/CentOS Systems Installation
    :class: singlecol
 
 You can install Relational Migrator on a RHEL/CentOS server. This installation 
-method allows Relational Migrator to run on an unattended server. By running on an 
+method allows Relational Migrator to run on an unattended server. When running on an 
 unattended server, Relational Migrator binds to any IP and port on the server 
 and exposes it as a web application.
 
@@ -77,13 +77,13 @@ Install Relational Migrator
    In your ``user.properties`` file, uncomment and update TLS/SSL configuration 
    properties.
 
-   It is recommended that the unattended server installation is supplemented with 
-   TLS/SSL configuration because Relational Migrator can be bound to any IP and port on 
-   the server. For additional information, see `SSL Configuration Properties <https://docs.spring.io/spring-cloud-skipper/docs/2.8.4/reference/htmlsingle/#configuration-security-enabling-https>`__.
+   It is recommended that you configure TLS/SSL for Relational Migrator on your 
+   unattended server. You can bind Relational Migrator to any IP and port on the 
+   server. For additional information, see `SSL Configuration Properties <https://docs.spring.io/spring-cloud-skipper/docs/2.8.4/reference/htmlsingle/#configuration-security-enabling-https>`__.
 
 #. (Optional) Update the port that Relational Migrator runs on.
 
-   By default, Relational Migrator is configured to run on port 8278.
+   By default, Relational Migrator is configured to run on port ``8278``.
    To change the port Relational Migrator runs on, update the ``server.port`` line 
    in your ``user.properties`` file to specify your preferred port.
 
@@ -113,7 +113,7 @@ Run as a System Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 When you install Relational Migrator on a RHEL/CentOS server, you can also 
-set up Relational Migrator to run as a system service. By running Relational Migrator as 
+set up Relational Migrator to run as a system service. When running Relational Migrator as 
 a system service, Relational Migrator automatically starts when the server starts.
 
 1. Create a ``/etc/systemd/system/migrator.service`` file. 
@@ -132,7 +132,7 @@ a system service, Relational Migrator automatically starts when the server start
       [Install]
       WantedBy=multi-user.target
 
-#. Reload ``systemd`` to read the newly created service:
+#. Reload ``systemd`` to read the newly-created service:
 
    .. code-block::
       
