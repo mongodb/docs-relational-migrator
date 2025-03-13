@@ -178,6 +178,8 @@ Steps
 
          migrator.confluent.kafka-credentials.api-key: <Cluster API key>
          migrator.confluent.kafka-credentials.api-secret: <Cluster API Secret>
+      
+      For more information about the ``user.properties`` file, see :ref:`<rm-user-properties>`.
 
    .. step:: Restart {+rel-mig+} 
 

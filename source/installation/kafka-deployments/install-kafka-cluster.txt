@@ -108,6 +108,8 @@ Steps
       information, see :ref:`{+rel-mig+} File Locations <file-location>`.
 
       .. include:: /includes/kafka-cluster-properties.rst
+      
+      For more information about the ``user.properties`` file, see :ref:`<rm-user-properties>`.
 
    .. step:: Confirm successful installation
 
