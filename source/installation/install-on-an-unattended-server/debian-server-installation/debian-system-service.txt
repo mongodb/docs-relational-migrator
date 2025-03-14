@@ -1,4 +1,4 @@
-.. _debian-system-service:
+
 
 =====================================================
 Run Relational Migrator as a System Service on Debian

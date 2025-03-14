@@ -10,9 +10,16 @@ Install on RHEL
    :depth: 1
    :class: singlecol
 
-You can install Relational Migrator on a single RHEL/CentOS machine. This 
-installation method uses default settings and binds Relational Migrator to a single 
-IP and port.
+You can install Relational Migrator on a single Red Hat Enterprise Linux (RHEL)/CentOS 
+machine. This installation method uses default settings and binds Relational Migrator 
+to a single IP and port.
+
+About This Task
+---------------
+
+Relational Migrator uses the following file locations on RHEL/CentOS:
+
+.. include:: /includes/fact-file-location-linux.rst
 
 Steps
 -----
@@ -24,7 +31,7 @@ Steps
 
    .. code-block:: bash
 
-      sudo yum install mongodb-relational-migrator-X.X.X-1.x86_64.rpm
+      sudo yum install mongodb-relational-migrator-<version_number>-1.x86_64.rpm
 
 #. Change the directory to the Relational Migrator ``app/lib`` location.
 
@@ -60,17 +67,4 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Create a Project <rm-create-project-live>`
-
-- :ref:`Import a Project <import-project>`
-
-Learn More
-----------
-
-- :ref:`Relational Migrator File Locations <file-location>` 
-
-- :ref:`Install on Mac <single-mac>`
-
-- :ref:`Install on Ubuntu/Debian <single-ubuntu>`
-
-- :ref:`Install on Windows <single-windows>`
+- :ref:`Create and Manage Projects <rm-projects>`

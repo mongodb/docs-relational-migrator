@@ -14,13 +14,20 @@ You can install Relational Migrator on a single Windows machine. This installati
 method uses default settings and binds Relational Migrator to a single 
 IP and port. 
 
+About This Task
+---------------
+
+Relational Migrator uses the following file locations on Windows:
+
+.. include:: /includes/fact-file-location-windows.rst
+
 Steps
 -----
 
 1. Download the latest Windows Relational Migrator binary from the 
    `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
 
-#. Double-click the ``MongoDB Relational Migrator-X.X.X.msi`` file.
+#. Double-click the ``MongoDB Relational Migrator-<version_number>.msi`` file.
 
 #. When you are prompted with the MongoDB :guilabel:`Relational Migrator Setup Wizard`, 
    click :guilabel:`Next`.
@@ -53,17 +60,4 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Create a Project <rm-create-project-live>`
-
-- :ref:`Import a Project <import-project>`
-
-Learn More
-----------
-
-- :ref:`Relational Migrator File Locations <file-location>` 
-
-- :ref:`Install on Mac <single-mac>`
-
-- :ref:`Install on RHEL/CentOS <single-rhel>`
-
-- :ref:`Install on Ubuntu/Debian <single-ubuntu>`
+- :ref:`Create and Manage Projects <rm-projects>`

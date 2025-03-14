@@ -14,6 +14,13 @@ You can install Relational Migrator on a single Ubuntu or Debian machine. This
 installation method uses default settings and binds Relational Migrator to a single 
 IP and port. 
 
+About This Task
+---------------
+
+Relational Migrator uses the following file locations on Ubuntu and Debian Linux:
+
+.. include:: /includes/fact-file-location-linux.rst
+
 Steps
 -----
 
@@ -24,7 +31,7 @@ Steps
 
    .. code-block:: bash
 
-      sudo apt install ./mongodb-relational-migrator_X.X.X-1_amd64.deb
+      sudo apt install ./mongodb-relational-migrator_<version_number>-1_amd64.deb
 
 #. Change the directory to the Relational Migrator ``app/lib`` location.
 
@@ -60,18 +67,4 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Create a Project <rm-create-project-live>`
-
-- :ref:`Import a Project <import-project>`
-
-Learn More
-----------
-
-- :ref:`Relational Migrator File Locations <file-location>` 
-
-- :ref:`Install on Mac <single-mac>`
-
-- :ref:`Install on RHEL/CentOS <single-rhel>`
-
-- :ref:`Install on Windows <single-windows>`
-
+- :ref:`Create and Manage Projects <rm-projects>`
