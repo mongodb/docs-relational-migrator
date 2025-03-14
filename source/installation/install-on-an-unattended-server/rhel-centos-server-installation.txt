@@ -12,10 +12,10 @@ RHEL/CentOS Systems Installation
    :depth: 2
    :class: singlecol
 
-You can install Relational Migrator on a RHEL/CentOS server. This installation 
-method allows Relational Migrator to run on an unattended server. When running on an 
-unattended server, Relational Migrator binds to any IP and port on the server 
-and exposes it as a web application.
+You can install Relational Migrator on a Red Hat Enterprise Linux (RHEL)/CentOS server. 
+This installation method allows Relational Migrator to run on an unattended server. 
+When running on an unattended server, Relational Migrator binds to any IP and port 
+on the server and exposes it as a web application.
 
 About this Task
 ---------------
