@@ -48,29 +48,6 @@ Migrate Your Relational Workloads to MongoDB
       .. image:: /img/tab1img.png
          :alt: An entity-relationship diagram in Relational Migrator
 
-
-   .. tab:: Migrate to MongoDB
-      :tabid: migrate-data
-
-      .. procedure::
-
-         .. step:: Migrate From Your Relational Database
-
-            Migrate data from relational databases like Oracle, SQL
-            Server, MySQL, PostgreSQL, :ref:`and others <supported-databases>`
-            to MongoDB Atlas or a self-managed deployment.
-
-         .. step:: Migrate Once, or Synchronize
-
-            Choose between a snapshot migration, or continuous synchronization
-            with Change Data Capture (CDC). Verify data integrity within
-            Relational Migrator and integrate with Apache Kafka or Confluent
-            Cloud for large-scale migrations.
-
-      .. image:: /img/new-migration-job.png
-         :alt: The data migration UI in Relational Migrator
-
-
    .. tab:: Get Application Code
       :tabid: convert-application-code
 
@@ -106,6 +83,27 @@ Migrate Your Relational Workloads to MongoDB
 
       .. image:: /img/convert-sql.png
          :alt: A query converted from SQL to MQL
+   
+   .. tab:: Migrate to MongoDB
+      :tabid: migrate-data
+
+      .. procedure::
+
+         .. step:: Migrate From Your Relational Database
+
+            Migrate data from relational databases like Oracle, SQL
+            Server, MySQL, PostgreSQL, :ref:`and others <supported-databases>`
+            to MongoDB Atlas or a self-managed deployment.
+
+         .. step:: Migrate Once, or Synchronize
+
+            Choose between a snapshot migration, or continuous synchronization
+            with Change Data Capture (CDC). Verify data integrity within
+            Relational Migrator and integrate with Apache Kafka or Confluent
+            Cloud for large-scale migrations.
+
+      .. image:: /img/new-migration-job.png
+         :alt: The data migration UI in Relational Migrator
 
 
 
