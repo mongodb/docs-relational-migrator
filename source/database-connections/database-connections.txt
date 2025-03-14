@@ -38,7 +38,7 @@ Use Relational Migrator Without a Live Database Connection
 ----------------------------------------------------------
 
 If you don't have a live connection to your relational database, you can 
-use the following options to create projects and map schemas:
+use the following options to visualize and model your data:
 
 - Relational Migrator can use Data Definition Language (DDL) files exported from 
   your relational database to create a project.
