@@ -169,10 +169,10 @@ not continuous CDC sync jobs.
 
 .. include:: /includes/table-supported-jdbc-driver-dbs.rst
 
-Destination Databases and Versions
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Target Databases and Versions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator supports the following destination databases:
+Relational Migrator supports the following target databases:
 
 .. include:: /includes/table-supported-mongodb-versions.rst
 
