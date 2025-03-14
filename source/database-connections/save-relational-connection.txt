@@ -38,7 +38,7 @@ To save a new connection from the :guilabel:`Connections` page:
       
       In the :guilabel:`Database type` drop-down, select the database type.
 
-   .. step:: To enter a :ref:`connection string <rm-relational-database-connection-strings>` directly:
+   .. step:: To enter a connection string directly:
 
       a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
 

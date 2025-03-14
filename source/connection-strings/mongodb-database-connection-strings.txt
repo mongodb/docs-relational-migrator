@@ -1,4 +1,4 @@
-.. _rm-mongodb-database-connection-strings:
+
 
 ===================================
 MongoDB Database Connection Strings
@@ -53,7 +53,7 @@ For example, to use an account named ``migrator-service`` with password
 
    mongodb://migrator-service:hunter2@localhost:27017/MongoEnterprises
 
-.. _rm-x509-auth:
+
 
 Using X.509 Authentication
 ---------------------------

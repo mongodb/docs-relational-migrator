@@ -15,7 +15,7 @@ Data Modeling
 A mapping rule specifies where data from each relational table should be
 migrated to and how the columns should be mapped to fields in 
 MongoDB documents. Mapping rules are created inside a project after you have provided a 
-valid :ref:`relational database connection string and credentials <rm-relational-database-connection-strings>`.
+valid relational database connection string and credentials.
 
 MongoDB Schema Design Patterns
 ------------------------------
