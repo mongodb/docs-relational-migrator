@@ -20,7 +20,16 @@ Use Case
 --------
 
 Installing {+rel-mig+} on an unattended server is ideal for larger 
-production-scale migration projects.
+production-scale migration projects. If your production job is expected to 
+run for more than one week, configuring production monitoring and alerting 
+on your server is recommended.
+
+High Availability
+~~~~~~~~~~~~~~~~~
+
+For critical production workloads and/or long-running CDC syncs, Kafka is recommended.
+Kafka allows users to configure the underlying cluster for high availability and 
+automatic failure recovery. For more information, see :ref:`<kafka-intro>`.
 
 Behavior
 --------
@@ -45,10 +54,14 @@ Get Started
 
 - :ref:`Debian Server Installation <debian-install>`
 
+- :ref:`<kafka-intro>`
+
 Learn More
 ----------
 
-- :ref:`Install on a Local Machine <local-machine-install>`
+- :ref:`<rm-system-requirements>`
+
+- :ref:`<local-machine-install>`
 
 - :ref:`{+rel-mig+} File Locations <file-location>` 
 
