@@ -119,7 +119,7 @@ Manually Add Synthetic Foreign Keys
 
 If your database does not have foreign key constraints, you can manually add foreign keys 
 as :ref:`synthetic foreign keys <rm-synthetic-foreign-keys>`. All foreign keys are translated 
-to MongoDB :ref:`document references <data-modeling-publisher-and-books>` when Relational 
+to MongoDB :ref:`document references <data-modeling-referencing>` when Relational 
 Migrator transforms your source relational data into MongoDB collections. For more information, 
 see :ref:`<rm-synthetic-foreign-keys>`.
 
