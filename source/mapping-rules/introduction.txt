@@ -114,11 +114,14 @@ You can create mapping rules with :ref:`custom fields <rm-field-customizations>`
 Relational Migrator also supports :ref:`table filters <rm-table-filters>` to limit 
 data migrated from relational tables.
 
-Synthetic Foreign Keys
-~~~~~~~~~~~~~~~~~~~~~~
+Manually Add Synthetic Foreign Keys
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To define a logical relationship between your relational database tables, you can 
-create synthetic foreign keys. For more information, see :ref:`<rm-synthetic-foreign-keys>`.
+If your database does not have foreign key constraints, you can manually add foreign keys 
+as :ref:`synthetic foreign keys <rm-synthetic-foreign-keys>`. All foreign keys are translated 
+to MongoDB :ref:`document references <data-modeling-example-one-to-many>` when Relational 
+Migrator transforms your source relational data into MongoDB collections. For more information, 
+see :ref:`<rm-synthetic-foreign-keys>`.
 
 Preview Mapping Rules
 ---------------------
