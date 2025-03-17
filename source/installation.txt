@@ -54,8 +54,9 @@ and the recommended migration scenario for each deployment model:
        
        For more information, see :ref:`<unattended-server>`.
 
-     - Small production jobs with runtimes between four hours and four weeks,
-       or involve a database smaller than 20GB.
+     - Manually monitored production jobs expected to run for one week or less.
+       When used for production jobs running longer than one week, production 
+       monitoring and alerting is recommended.
       
 
    * - Kafka
@@ -68,7 +69,9 @@ and the recommended migration scenario for each deployment model:
 
        For more information, see :ref:`kafka-intro`.
 
-     - Production data migrations that run longer than four weeks, or involve databases larger than 20GB.
+     - Critical production workloads and/or long-running :abbr:`CDC (Change Data Capture)` syncs.
+       Using Relational Migrator with Kafka enables high availability and automatic failure 
+       recovery where supported by the underlying cluster configuration.
 
    * - Kafka with Confluent Cloud
 
@@ -80,7 +83,7 @@ and the recommended migration scenario for each deployment model:
 
        For more information, see :ref:`install-confluent-kafka`.
 
-     - Production jobs with the reliability of Kafka without having to manage your own cluster.
+     - Ideal for users that prefer a fully-managed cloud-based solution.
 
 Deployment Considerations
 -------------------------
