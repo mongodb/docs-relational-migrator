@@ -1,4 +1,4 @@
-.. _application-settings:
+.. _rm-application-settings:
 
 ====================
 Application Settings

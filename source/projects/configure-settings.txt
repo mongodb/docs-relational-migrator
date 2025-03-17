@@ -19,7 +19,7 @@ project.
 
    To learn how to create a Relational Migrator project, see
    :ref:`Creating a Project <rm-create-project-live>`. To learn how to
-   configure application settings, see :ref:`application-settings`.
+   configure application settings, see :ref:`rm-application-settings`.
 
 Open Project Settings Dialog
 ----------------------------
