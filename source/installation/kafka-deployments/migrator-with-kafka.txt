@@ -32,12 +32,6 @@ running if any component becomes temporarily unavailable.
 Behavior
 --------
 
-{+rel-mig+} works with Kafka as a Kafka Connect sink connector. A 
-`Debezium connector <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
-captures data events from your source database, while {+rel-mig+} 
-interprets and transforms events from the Debezium source and sends them to a 
-MongoDB cluster that acts as a data sink.
-
 Architecturally, {+rel-mig+} is deployed within Kafka as a Kafka 
 Connect sink connector. Database events are captured using the open-source 
 `Debezium tool <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
