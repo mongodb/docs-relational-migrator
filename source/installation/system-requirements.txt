@@ -82,4 +82,4 @@ Supported Databases
 -------------------
 
 - :ref:`supported-databases`
-- :ref:`rm-prerequisites`
+- :ref:`rm-database-connections`
