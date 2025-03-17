@@ -25,9 +25,8 @@ production-scale migration projects.
 Behavior
 --------
 
-- It is recommended that the unattended server installation is supplemented with 
-  TLS/SSL configuration because {+rel-mig+} can be bound to any IP and port on 
-  the server.
+- It is recommended that you configure TLS/SSL on your unattended server.
+  You can bind {+rel-mig+} to any IP and port on the server.
 
 - When you install {+rel-mig+} on an unattended server, you can set up 
   {+rel-mig+} to run as a system service. As a system service, Relational 
