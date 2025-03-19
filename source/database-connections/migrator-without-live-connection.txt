@@ -12,23 +12,23 @@ Use {+rel-mig+} Without a Live Database Connection
    :depth: 1
    :class: singlecol
 
-If you don't have a live connection to a relational database, you can 
-load a schema from a :abbr:`DDL (Data Definition Language)` file or use 
-Relational Migrator's pre-defined sample schema.
+You can create a project without a live relational database connection 
+to visualize and model your data, or to evaluate Relational Migrator. However,
+Relational Migrator requires a live database connection to migrate data.
 
 Use Cases
 ---------
 
-You can create a project without a live connection to a relational database 
-to visualize and model your data, or to evaluate Relational Migrator. However,
-Relational Migrator requires a live database connection to migrate data.
+If you don't have a live relational database connection, you can 
+load a schema from a :abbr:`DDL (Data Definition Language)` file or use 
+Relational Migrator's pre-defined sample schema.
 
 Load a Schema From a DDL File
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 You can visualize and model your data by loading a schema from a DDL file.
-When you are ready to migrate data, you can use the data model you created 
-by :ref:`exporting your project file <export-project>`. 
+When you are ready to migrate, you can use the data model you created 
+by :ref:`exporting your project file <export-project>`.
 
 Use a Sample Schema
 ~~~~~~~~~~~~~~~~~~~
