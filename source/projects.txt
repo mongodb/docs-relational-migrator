@@ -16,7 +16,7 @@ configuration settings, mapping rules, and migration-specific details.
 Use Cases
 ---------
 
-You can create projects with or without live connections to your relational 
+You can create projects with or without a live connection to your relational 
 database. Relational Migrator requires a live database connection to migrate 
 data. However, you can create a project without a live database connection to 
 visualize and model your data.
