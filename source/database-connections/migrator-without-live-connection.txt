@@ -13,7 +13,7 @@ Use {+rel-mig+} Without a Live Database Connection
    :class: singlecol
 
 You can create a project without a live relational database connection 
-to visualize and model your data, or to evaluate Relational Migrator. However,
+to visualize and model your data or to evaluate Relational Migrator. However,
 Relational Migrator requires a live database connection to migrate data.
 
 Use Cases
