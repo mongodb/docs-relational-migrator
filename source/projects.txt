@@ -12,15 +12,25 @@ Create and Manage Projects
 
 To interact with {+rel-mig+}, you use a project. A project holds
 configuration settings, mapping rules, and migration-specific details.
-{+rel-mig+} allows you to :ref:`import<import-project>`, 
-:ref:`export <export-project>`, and :ref:`delete <delete-project>` projects.
+
+Use Cases
+---------
+
+You can create projects with or without live connections to your relational 
+database. Relational Migrator requires a live database connection to migrate 
+data. However, you can create a project without a live database connection to 
+visualize and model your data.
+
+If you already created a Relational Migrator project, you can :ref:`import<import-project>`, 
+:ref:`export <export-project>`, :ref:`delete <delete-project>`, and 
+:ref:`rename <rename-project>` your project.
 
 Get Started
 -----------
 
 - :ref:`rm-create-project-live`
-- :ref:`<rm-manage-projects>`
 - :ref:`<migrator-without-live-connection>`
+- :ref:`<rm-manage-projects>`
 
 .. toctree::
    :hidden:
