@@ -41,7 +41,7 @@ Steps
 Database Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator requires a connection string to connect to your MySQL instance.
+{+rel-mig+} requires a connection string to connect to your MySQL instance.
 
 The MySQL connection string looks like:
 
@@ -56,7 +56,7 @@ uses the following connection string:
 
    jdbc:mysql://host1:3306/test
 
-Alternatively, Relational Migrator can create the appropriate connection string 
+Alternatively, {+rel-mig+} can create the appropriate connection string 
 based on user-provided database information.
 
 .. _rm-save-mysql-connection:
@@ -81,7 +81,7 @@ the following actions:
 Learn More
 ----------
 
-- Relational Migrator relies on the open-source Debezium connector to capture 
+- {+rel-mig+} relies on the open-source Debezium connector to capture 
   row-level changes. For more details, see
   `Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
 

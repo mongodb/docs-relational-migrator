@@ -11,9 +11,9 @@ Install On Debian
    :depth: 1
    :class: singlecol
 
-You can install Relational Migrator on a Debian server. This installation method 
-allows Relational Migrator to run on an unattended server. By running on an 
-unattended server, Relational Migrator binds to any IP and port on the server 
+You can install {+rel-mig+} on a Debian server. This installation method 
+allows {+rel-mig+} to run on an unattended server. By running on an 
+unattended server, {+rel-mig+} binds to any IP and port on the server 
 and is exposes it as a web application.
 
 Steps
@@ -33,14 +33,14 @@ Steps
 
       sudo mkdir /usr/share/desktop-directories/
 
-#. Install Relational Migrator.
+#. Install {+rel-mig+}.
 
    .. code-block:: bash
 
       sudo apt install ./mongodb-relational-migrator_<version_number>-1_amd64.deb
 
 #. (Optional) To connect to Oracle or MySQL drivers, download and place the drivers 
-   into your Relational Migrator directory.
+   into your {+rel-mig+} directory.
 
    a. To download and install MySQL or Oracle drivers, see the following:
 
@@ -58,7 +58,7 @@ Steps
 
    For more information, see :ref:`Install on a Local Machine <local-machine-install>`.
 
-#. Change the directory to the Relational Migrator ``/bin`` location and start the application.
+#. Change the directory to the {+rel-mig+} ``/bin`` location and start the application.
 
    .. code-block:: bash
 
@@ -66,7 +66,7 @@ Steps
 
       ./mongodb-relational-migrator
 
-#. Enable Relational Migrator to run as an unattended standalone server.
+#. Enable {+rel-mig+} to run as an unattended standalone server.
 
    In your ``user.properties`` file, uncomment ``spring.profiles.active: unattended``. 
 
@@ -76,20 +76,20 @@ Steps
    properties.
 
    It is recommended that the unattended server installation is supplemented with 
-   TLS/SSL configuration because Relational Migrator can be bound to any IP and port on 
+   TLS/SSL configuration because {+rel-mig+} can be bound to any IP and port on 
    the server. For additional information, see `TLS/SSL Configuration Properties <https://docs.spring.io/spring-cloud-skipper/docs/2.8.4/reference/htmlsingle/#configuration-security-enabling-https>`__.
 
-#. (Optional) Update the port that Relational Migrator runs on.
+#. (Optional) Update the port that {+rel-mig+} runs on.
 
-   By default, Relational Migrator is configured to run on port 8278. To change 
-   the port Relational Migrator runs on (for example to port 80 for HTTP or port 443 for 
+   By default, {+rel-mig+} is configured to run on port 8278. To change 
+   the port {+rel-mig+} runs on (for example to port 80 for HTTP or port 443 for 
    HTTPS), update the ``server.port`` line in your ``user.properties`` file to specify 
    your preferred port.
 
-#. Run Relational Migrator using the binary.
+#. Run {+rel-mig+} using the binary.
 
    The ``bin`` directory can typically be found at ``/opt/mongodb-relational-migrator/bin``.
-   To run Relational Migrator using the binary, run the following:
+   To run {+rel-mig+} using the binary, run the following:
 
    .. code-block:: bash
 
@@ -101,7 +101,7 @@ Steps
 
    - The logs are located in ``~/Migrator/Logs/migrator.log``.
 
-   - When running Relational Migrator as a system service, the path is under 
+   - When running {+rel-mig+} as a system service, the path is under 
      the service user’s home directory.
 
 Troubleshooting
@@ -116,7 +116,7 @@ If your installation fails with an error, use the following command to see error
 Next Steps
 ----------
 
-- :ref:`Run Relational Migrator as a System Service on Debian <debian-system-service>`
+- :ref:`Run {+rel-mig+} as a System Service on Debian <debian-system-service>`
 
 - :ref:`Create a Project <rm-create-project-live>`
 
@@ -125,7 +125,7 @@ Next Steps
 Learn More
 ----------
 
-- :ref:`Relational Migrator File Locations <file-location>` 
+- :ref:`{+rel-mig+} File Locations <file-location>` 
 
 - :ref:`RHEL/CentOS Systems Installation <rhel-install>`
 

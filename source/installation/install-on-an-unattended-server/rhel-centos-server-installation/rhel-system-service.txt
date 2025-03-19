@@ -1,7 +1,7 @@
 
-==========================================================
-Run Relational Migrator as a System Service on RHEL/CentOS
-==========================================================
+==================================================
+Run {+rel-mig+} as a System Service on RHEL/CentOS
+==================================================
 
 .. default-domain:: mongodb
 
@@ -11,9 +11,9 @@ Run Relational Migrator as a System Service on RHEL/CentOS
    :depth: 1
    :class: singlecol
 
-When you install Relational Migrator on a RHEL/CentOS server, you can also 
-set up Relational Migrator to run as a system service. By running Relational Migrator as 
-a system service, Relational Migrator automatically starts when the server starts.
+When you install {+rel-mig+} on a RHEL/CentOS server, you can also 
+set up {+rel-mig+} to run as a system service. By running {+rel-mig+} as 
+a system service, {+rel-mig+} automatically starts when the server starts.
 
 Steps
 -----
@@ -26,10 +26,10 @@ Steps
    .. code-block::
 
       [Unit]
-      Description=MongoDB Relational Migrator
+      Description=MongoDB {+rel-mig+}
 
       [Service]
-      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB Relational Migrator"
+      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB {+rel-mig+}"
 
       [Install]
       WantedBy=multi-user.target
@@ -40,7 +40,7 @@ Steps
       
       systemctl daemon-reload
 
-#. Enable the Relational Migrator service to run on startup and start for the current session.
+#. Enable the {+rel-mig+} service to run on startup and start for the current session.
 
    You can manage the service with ``systemctl`` commands. To run on startup and 
    start the current session, run the following:

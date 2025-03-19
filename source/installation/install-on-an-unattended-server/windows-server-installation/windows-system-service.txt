@@ -1,7 +1,7 @@
 
-======================================================
-Run Relational Migrator as a System Service on Windows
-======================================================
+==============================================
+Run {+rel-mig+} as a System Service on Windows
+==============================================
 
 .. default-domain:: mongodb
 
@@ -11,9 +11,9 @@ Run Relational Migrator as a System Service on Windows
    :depth: 1
    :class: singlecol
 
-When you install Relational Migrator on a Windows server, you can set up Relational 
-Migrator to run as a system service. By running Relational Migrator as a system 
-service, Relational Migrator automatically starts when the server starts.
+When you install {+rel-mig+} on a Windows server, you can set up Relational 
+Migrator to run as a system service. By running {+rel-mig+} as a system 
+service, {+rel-mig+} automatically starts when the server starts.
 
 Steps
 -----
@@ -25,9 +25,9 @@ Steps
 #. From a command prompt, run ``.\nssm install RelationalMigrator``.
 
 #. From the :guilabel:`Application` tab, choose the path and startup directory 
-   of the installed ``MongoDB Relational Migrator.exe``.
+   of the installed ``{+mdb-rel-mig+}.exe``.
 
-#. From the :guilabel:`Details` tab, enter :guilabel:`MongoDB Relational Migrator` 
+#. From the :guilabel:`Details` tab, enter :guilabel:`MongoDB {+rel-mig+}` 
    as the service’s display name.
 
 #. From the :guilabel:`Log on` tab, keep the default local system account or 
@@ -37,7 +37,7 @@ Steps
 
 #. Launch ``services.msc``. 
 
-   Find the newly installed MongoDB Relational Migrator service and click 
+   Find the newly installed {+mdb-rel-mig+} service and click 
    :guilabel:`Start Service`. 
 
    .. note::
@@ -48,7 +48,7 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Enable External Access to Relational Migrator on Windows <windows-external-access>`
+- :ref:`Enable External Access to {+rel-mig+} on Windows <windows-external-access>`
 
 - :ref:`Create a Project <rm-create-project-live>`
 

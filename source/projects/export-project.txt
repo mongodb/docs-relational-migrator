@@ -12,13 +12,13 @@ Export a Project
    :depth: 1
    :class: singlecol
 
-Export Relational Migrator projects to share a project with other users, duplicate
+Export {+rel-mig+} projects to share a project with other users, duplicate
 a project, or back up a project. 
 
 About this Task
 ---------------
 
-- Relational Migrator can only export ``.relmig`` files.
+- {+rel-mig+} can only export ``.relmig`` files.
 
 - Exported project files do not include the migration job history or passwords.
 

@@ -55,7 +55,7 @@ connection string:
 
    jdbc:oracle:thin:@prodHost:1521:ORCL
 
-Alternatively, Relational Migrator can create the appropriate connection string 
+Alternatively, {+rel-mig+} can create the appropriate connection string 
 based on user-provided database information.
 
 .. note::
@@ -83,7 +83,7 @@ Connect to |db-type|
 Learn More
 ----------
 
-- Relational Migrator relies on the open-source Debezium connector to 
+- {+rel-mig+} relies on the open-source Debezium connector to 
   capture row-level changes. For more details, see `Debezium Oracle 
   <https://debezium.io/documentation/reference/stable/connectors/oracle.html#_preparing_the_databas>`__
 - For details on enabling archive logging, see `Managing Archived Redo Logs 

@@ -12,14 +12,14 @@ Windows Server Installation
    :depth: 2
    :class: singlecol
 
-Install Relational Migrator to run as an unattended server on Windows. When running 
-as an unattended server, Relational Migrator binds to any IP and port on the server 
+Install {+rel-mig+} to run as an unattended server on Windows. When running 
+as an unattended server, {+rel-mig+} binds to any IP and port on the server 
 and exposes it as a web application.
 
 About this Task
 ---------------
 
-Relational Migrator uses the following file locations on Windows:
+{+rel-mig+} uses the following file locations on Windows:
 
 .. include:: /includes/fact-file-location-windows.rst
 
@@ -28,8 +28,8 @@ Steps
 
 .. _install-windows-server:
 
-Install Relational Migrator
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Install {+rel-mig+}
+~~~~~~~~~~~~~~~~~~~
 
 1. Log in to the server.
 
@@ -37,42 +37,42 @@ Install Relational Migrator
    For more information on logging into the server using Remote Desktop Protocol (RDP),
    see `Connect to your Windows Instances using RDP <https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html#connect-rdp>`__. 
 
-#. Download the Relational Migrator ``.msi`` installer. 
+#. Download the {+rel-mig+} ``.msi`` installer. 
 
-   Download the Relational Migrator ``.msi`` installer to the target machine or 
-   remotely copy it over to the instance. Find the latest Relational Migrator 
+   Download the {+rel-mig+} ``.msi`` installer to the target machine or 
+   remotely copy it over to the instance. Find the latest {+rel-mig+} 
    installer on the `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
 
 #. Launch the installer and follow the local machine :ref:`install instructions <local-machine-install>`. 
 
-#. Enable Relational Migrator to run as an unattended server.
+#. Enable {+rel-mig+} to run as an unattended server.
 
    In your ``user.properties`` file, uncomment ``spring.profiles.active: unattended``. 
    Your ``user.properties`` file is located in 
-   ``C:\Users\<Username>\AppData\Local\mongodb\Relational Migrator\Data``.
+   ``C:\Users\<Username>\AppData\Local\mongodb\{+rel-mig+}\Data``.
 
 #. (Optional) Update TLS/SSL configuration properties.
 
    In your ``user.properties`` file, uncomment and update TLS/SSL configuration properties.
 
    It is recommended that the unattended server installation is supplemented with 
-   TLS/SSL configuration because Relational Migrator can be bound to any IP and port on 
+   TLS/SSL configuration because {+rel-mig+} can be bound to any IP and port on 
    the server. For additional information, see `TLS/SSL Configuration Properties <https://docs.spring.io/spring-cloud-skipper/docs/2.8.4/reference/htmlsingle/#configuration-security-enabling-https>`__.
 
-#. (Optional) Update the port that Relational Migrator runs on.
+#. (Optional) Update the port that {+rel-mig+} runs on.
 
-   By default, Relational Migrator is configured to run on port ``8278``.
-   To change the port Relational Migrator runs on, update the ``server.port`` line 
+   By default, {+rel-mig+} is configured to run on port ``8278``.
+   To change the port {+rel-mig+} runs on, update the ``server.port`` line 
    in your ``user.properties`` file to specify your preferred port.
 
-#. Run Relational Migrator from its installed location or any shortcuts that were 
+#. Run {+rel-mig+} from its installed location or any shortcuts that were 
    created during the installation process. 
 
 #. (Optional) Check logs for errors or other information. 
 
-   - The logs are located in ``C:\Users\<Username>\AppData\Local\mongodb\Relational Migrator\Data\Logs``.
+   - The logs are located in ``C:\Users\<Username>\AppData\Local\mongodb\{+rel-mig+}\Data\Logs``.
  
-   - When running Relational Migrator as a system service, the path is under the 
+   - When running {+rel-mig+} as a system service, the path is under the 
      service user’s home directory. The local system user’s profile is located 
      at ``C:\Windows\System32\config\systemprofile``.
 
@@ -81,9 +81,9 @@ Install Relational Migrator
 Run as a System Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-When you install Relational Migrator on a Windows server, you can set up Relational 
-Migrator to run as a system service. When running Relational Migrator as a system 
-service, Relational Migrator automatically starts when the server starts.
+When you install {+rel-mig+} on a Windows server, you can set up Relational 
+Migrator to run as a system service. When running {+rel-mig+} as a system 
+service, {+rel-mig+} automatically starts when the server starts.
 
 1. Launch the Service Manager of your choice.
 
@@ -92,9 +92,9 @@ service, Relational Migrator automatically starts when the server starts.
 #. From a command prompt, run ``.\nssm install RelationalMigrator``.
 
 #. From the :guilabel:`Application` tab, choose the path and startup directory 
-   of the installed ``MongoDB Relational Migrator.exe``.
+   of the installed ``{+mdb-rel-mig+}.exe``.
 
-#. From the :guilabel:`Details` tab, enter :guilabel:`MongoDB Relational Migrator` 
+#. From the :guilabel:`Details` tab, enter :guilabel:`{+mdb-rel-mig+}` 
    as the service’s display name.
 
 #. From the :guilabel:`Log on` tab, keep the default local system account or 
@@ -104,7 +104,7 @@ service, Relational Migrator automatically starts when the server starts.
 
 #. Launch ``services.msc``. 
 
-   Find the newly-installed MongoDB Relational Migrator service and click 
+   Find the newly-installed {+mdb-rel-mig+} service and click 
    :guilabel:`Start Service`. 
 
    .. note::
@@ -117,7 +117,7 @@ service, Relational Migrator automatically starts when the server starts.
 Enable External Access
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To allow incoming connections on the same port as Relational Migrator, 
+To allow incoming connections on the same port as {+rel-mig+}, 
 enable external access with Windows Defender Firewall.
 
 1. Open Windows Defender Firewall with Advanced Security.

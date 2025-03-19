@@ -65,7 +65,7 @@ You can define mapping rules for the following configurations:
 Default Rules
 -------------
 
-Relational Migrator automatically creates a :ref:`New Documents mapping rule <rm-new-documents>`
+{+rel-mig+} automatically creates a :ref:`New Documents mapping rule <rm-new-documents>`
 for each source table. This initial rule produces a MongoDB schema that
 is identical to the relational database. You can edit the initial rule 
 before running any data migration jobs.
@@ -73,7 +73,7 @@ before running any data migration jobs.
 Data Type Detection
 -------------------
 
-Relational Migrator automatically selects the best MongoDB data type for each 
+{+rel-mig+} automatically selects the best MongoDB data type for each 
 source column.
 
 For example, SQL Server source data of types ``text``, ``varchar``,

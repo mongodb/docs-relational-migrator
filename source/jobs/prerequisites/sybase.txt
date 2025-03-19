@@ -10,5 +10,5 @@ Configure Migration Prerequisites for Sybase
    :depth: 1
    :class: singlecol
 
-There are no prerequisite requirements to use Relational Migrator with
+There are no prerequisite requirements to use {+rel-mig+} with
 Sybase ASE. Sybase ASE only supports snapshot migration jobs.

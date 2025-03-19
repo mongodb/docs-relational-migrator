@@ -2,9 +2,9 @@
 :hidefeedback: header
 :noprevnext:
 
-===========================
-What is Relational Migrator
-===========================
+===================
+What is {+rel-mig+}
+===================
 
 .. introduction::
 
@@ -12,7 +12,7 @@ What is Relational Migrator
 
    |
 
-   .. button:: Download Relational Migrator
+   .. button:: Download {+rel-mig+}
       :uri: https://www.mongodb.com/try/download/relational-migrator
 
 .. image:: /img/hero.png
@@ -46,7 +46,7 @@ Migrate Your Relational Workloads to MongoDB
             single MongoDB collection for improved data access and query performance.
 
       .. image:: /img/tab1img.png
-         :alt: An entity-relationship diagram in Relational Migrator
+         :alt: An entity-relationship diagram in {+rel-mig+}
 
    .. tab:: Get Application Code
       :tabid: convert-application-code
@@ -79,7 +79,7 @@ Migrate Your Relational Workloads to MongoDB
 
          .. step:: Validate Converted Code
             
-            Test queries within Relational Migrator to validate converted SQL and ensure compatibility with MongoDB.
+            Test queries within {+rel-mig+} to validate converted SQL and ensure compatibility with MongoDB.
 
       .. image:: /img/convert-sql.png
          :alt: A query converted from SQL to MQL
@@ -99,11 +99,11 @@ Migrate Your Relational Workloads to MongoDB
 
             Choose between a snapshot migration, or continuous synchronization
             with Change Data Capture (CDC). Verify data integrity within
-            Relational Migrator and integrate with Apache Kafka or Confluent
+            {+rel-mig+} and integrate with Apache Kafka or Confluent
             Cloud for large-scale migrations.
 
       .. image:: /img/new-migration-job.png
-         :alt: The data migration UI in Relational Migrator
+         :alt: The data migration UI in {+rel-mig+}
 
 
 

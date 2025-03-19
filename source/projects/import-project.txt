@@ -12,7 +12,7 @@ Import a Project
    :depth: 1
    :class: singlecol
 
-You can use Relational Migrator to import projects. Import a project when you 
+You can use {+rel-mig+} to import projects. Import a project when you 
 want to collaborate on a shared project. You can also duplicate a project by 
 :ref:`exporting <export-project>` the project and then importing it. 
 
@@ -21,15 +21,15 @@ About this Task
 
 Be aware of the following information when you import projects:
 
-- When you import projects, Relational Migrator only uses ``.relmig`` files.
+- When you import projects, {+rel-mig+} only uses ``.relmig`` files.
 
-- Relational Migrator rejects files for import and returns an error message in 
+- {+rel-mig+} rejects files for import and returns an error message in 
   the following conditions:
   
   - The format of the file cannot be determined or if critical information is 
     missing.
   
-  - The file was exported from an unsupported version of Relational Migrator
+  - The file was exported from an unsupported version of {+rel-mig+}
 
   - The version number of the file is older than a well-defined minimum version. 
 

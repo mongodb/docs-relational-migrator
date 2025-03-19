@@ -8,7 +8,7 @@
 
 .. step:: (Optional) Click :guilabel:`Test connection`
 
-   Relational Migrator attempts to authenticate and connect to the database.
+   {+rel-mig+} attempts to authenticate and connect to the database.
          
 .. step:: Click :guilabel:`Save`
 

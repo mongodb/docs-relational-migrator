@@ -5,7 +5,7 @@
 
 - **Downloaded JDBC Drivers**
 
-  ``c:\Users\<username>\AppData\Local\MongoDB\Relational Migrator\Data\Drivers``
+  ``c:\Users\<username>\AppData\Local\MongoDB\{+rel-mig+}\Data\Drivers``
 
 - **Log files**
 

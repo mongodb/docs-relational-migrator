@@ -18,7 +18,7 @@ to a database.
 
 .. note::
 
-   Relational Migrator does not support MongoDB to MongoDB migrations. For information 
+   {+rel-mig+} does not support MongoDB to MongoDB migrations. For information 
    on supported databases, see :ref:`<supported-databases>`.
 
    For information on migrating between MongoDB clusters, see 
@@ -27,7 +27,7 @@ to a database.
 About this Task
 ---------------
 
-To save a MongoDB connection in Relational Migrator, you must:
+To save a MongoDB connection in {+rel-mig+}, you must:
 
 - Identify your database connection string or database information.
 
@@ -58,7 +58,7 @@ Steps
 Database Connection String
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator supports all :manual:`MongoDB connection string options
+{+rel-mig+} supports all :manual:`MongoDB connection string options
 </reference/connection-string-options/>` except :urioption:`appName`. It
 overrides ``appName`` when connecting to your MongoDB deployment.
 
@@ -121,7 +121,7 @@ the following options:
      - Path to the ``.p12`` file that contains the certificate and key to 
        present to the ``mongod`` or ``mongos`` instance.
 
-       :gold:`IMPORTANT:` Unlike other MongoDB products, Relational Migrator
+       :gold:`IMPORTANT:` Unlike other MongoDB products, {+rel-mig+}
        requires a path to a ``.p12`` file, not a ``.pem`` file. If your 
        certificate is saved as a ``.pem`` file, you can convert it using a tool 
        like OpenSSL's `PKCS12 command <https://docs.openssl.org/master/man1/openssl-pkcs12/>`__:
@@ -174,7 +174,7 @@ To save a new connection from the :guilabel:`Connections` page:
       
       #. If they aren't included in the connection string and you aren't using
          X.509 authentication, enter the :guilabel:`Username` and
-         :guilabel:`Password` of your :ref:`Relational Migrator MongoDB user
+         :guilabel:`Password` of your :ref:`{+rel-mig+} MongoDB user
          <rm-mongodb-service-user>`.
          
          Checking :guilabel:`Save password` saves the password securely
@@ -182,7 +182,7 @@ To save a new connection from the :guilabel:`Connections` page:
          and :guilabel:`Password` again when using the saved connection.
       
       If you leave the :guilabel:`Database`, :guilabel:`Username`, 
-      or :guilabel:`Password` blank, Relational Migrator uses the
+      or :guilabel:`Password` blank, {+rel-mig+} uses the
       values from the URI.
 
    .. step: Identify the connection
@@ -195,7 +195,7 @@ To save a new connection from the :guilabel:`Connections` page:
 
    .. step:: (Optional) Click :guilabel:`Test connection`
 
-      Relational Migrator attempts to authenticate and connect to the
+      {+rel-mig+} attempts to authenticate and connect to the
       database.
          
    .. step:: Click :guilabel:`Save`

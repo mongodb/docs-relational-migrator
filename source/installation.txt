@@ -10,8 +10,8 @@ Installation
    :depth: 1
    :class: singlecol
 
-Relational Migrator supports local deployment and unattended server deployment models.
-For instructions on installing Relational Migrator, see the following pages:
+{+rel-mig+} supports local deployment and unattended server deployment models.
+For instructions on installing {+rel-mig+}, see the following pages:
 
 .. list-table::
    :header-rows: 1
@@ -37,7 +37,7 @@ For instructions on installing Relational Migrator, see the following pages:
    * - Docker
 
      - Suitable if your familiar with Docker and don't want to run 
-       Relational Migrator directly on a server or machine.
+       {+rel-mig+} directly on a server or machine.
 
        For more information, see :ref:`Install with Docker <rm-install-docker>`.
 
@@ -59,7 +59,7 @@ For instructions on installing Relational Migrator, see the following pages:
        want the reliability of Kafka without having to manage their own cluster. 
        `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
        provider run by the founders of Kafka. This deployment method uses APIs to 
-       add the newest Relational Migrator sink connectors to Confluent Cloud as 
+       add the newest {+rel-mig+} sink connectors to Confluent Cloud as 
        managed connectors.
 
        For more information, see :ref:`install-confluent-kafka`.

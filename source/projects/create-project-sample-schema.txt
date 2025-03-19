@@ -13,7 +13,7 @@ Create a Project by Using a Sample Schema
    :class: singlecol
 
 You can create a project using a pre-defined sample schema. The sample schema allows 
-you to try Relational Migrator even if you don't have a relational database to
+you to try {+rel-mig+} even if you don't have a relational database to
 connect to. If you want to run a migration job for your sample project you can deploy 
 a Docker image containing the schema and data.
 
@@ -27,7 +27,7 @@ About this Task
 ---------------
 
 Creating a project with a sample schema is the quickest and easiest way 
-to test drive Relational Migrator.
+to test drive {+rel-mig+}.
 
 .. include:: /includes/project-initial-mappings-att.rst
 
@@ -38,7 +38,7 @@ Before you can run migration jobs from the sample schema you must either:
 
 1. Download `Docker <https://www.docker.com/>`__ to pull and host a provided 
    PostgreSQL database container. This container comes preloaded with the sample 
-   schema presented in Relational Migrator.
+   schema presented in {+rel-mig+}.
 
 2. Download and execute the 
    `Northwind.sql <https://github.com/pthom/northwind_psql/blob/master/northwind.sql>`__ 
@@ -73,8 +73,8 @@ skip step one.
      The PostgreSQL database is for demo uses only and should not be used for 
      production purposes.
 
-#. In Relational Migrator, click :guilabel:`New Project` at the top-right of the 
-   Relational Migrator home screen.
+#. In {+rel-mig+}, click :guilabel:`New Project` at the top-right of the 
+   {+rel-mig+} home screen.
 
 #. Click the :guilabel:`Create sample` button.
 

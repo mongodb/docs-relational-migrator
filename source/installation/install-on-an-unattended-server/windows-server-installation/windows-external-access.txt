@@ -1,7 +1,7 @@
 
-========================================================
-Enable External Access to Relational Migrator on Windows
-========================================================
+================================================
+Enable External Access to {+rel-mig+} on Windows
+================================================
 
 .. default-domain:: mongodb
 
@@ -11,7 +11,7 @@ Enable External Access to Relational Migrator on Windows
    :depth: 1
    :class: singlecol
 
-To allow incoming connections on the same port as Relational Migrator, 
+To allow incoming connections on the same port as {+rel-mig+}, 
 enable external access with Windows Defender Firewall.
 
 Steps
@@ -35,7 +35,7 @@ Steps
 Next Steps
 ----------
 
-- :ref:`Run Relational Migrator as a System Service on Windows <windows-system-service>`
+- :ref:`Run {+rel-mig+} as a System Service on Windows <windows-system-service>`
 
 - :ref:`Create a Project <rm-create-project-live>`
 

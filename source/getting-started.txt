@@ -1,9 +1,9 @@
 .. _rm-introduction:
 .. _relational-migrator-get-started:
 
-===================================
-Introduction to Relational Migrator
-===================================
+=================================
+Introduction to {+rel-mig+}
+=================================
 
 .. facet::
    :name: genre
@@ -19,8 +19,8 @@ Introduction to Relational Migrator
    :depth: 1
    :class: singlecol
 
-Relational Migrator is a free tool to help you migrate from a relational database to MongoDB.
-This page provides an overview of Relational Migrator's :ref:`key features <rm-key-features>`, 
+{+rel-mig+} is a free tool to help you migrate from a relational database to MongoDB.
+This page provides an overview of {+rel-mig+}'s :ref:`key features <rm-key-features>`, 
 :ref:`use cases <rm-use-cases>`, :ref:`migration scenarios <rm-migration-scenarios>`, 
 and :ref:`supported databases and versions<supported-databases>`.
 
@@ -32,7 +32,7 @@ Key Features
 Map and Model Data
 ~~~~~~~~~~~~~~~~~~
 
-Relational Migrator provides an entity-relationship diagram builder to map your 
+{+rel-mig+} provides an entity-relationship diagram builder to map your 
 relational schema to a MongoDB schema. You can start with a recommended schema,
 a 1:1 mapping, or create a new schema from scratch. For more information, 
 see :ref:`<rm-mapping-rules>`.
@@ -41,7 +41,7 @@ see :ref:`<rm-mapping-rules>`.
 Generate Application Code
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator generates MongoDB-compatible C#, Java, and JavaScript application code
+{+rel-mig+} generates MongoDB-compatible C#, Java, and JavaScript application code
 for entity classes, persistence layers, and APIs. 
 
 Code generation templates support JSON output and common application frameworks like 
@@ -51,21 +51,21 @@ Spring Data, Node, and Mongoose. For more information, see :ref:`<rm-code-genera
 Convert and Validate SQL Objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator uses generative AI to :ref:`convert <rm-query-converter>` SQL queries, 
+{+rel-mig+} uses generative AI to :ref:`convert <rm-query-converter>` SQL queries, 
 views, and stored procedures into MongoDB-compatible code for C#, Java, or JavaScript.
 
-You can test queries within Relational Migrator to validate converted SQL and 
+You can test queries within {+rel-mig+} to validate converted SQL and 
 ensure that your queries are compatible with MongoDB.
 
 Migrate to MongoDB
 ~~~~~~~~~~~~~~~~~~
 
-Use Relational Migrator to migrate data from :ref:`supported relational databases <supported-databases>` 
+Use {+rel-mig+} to migrate data from :ref:`supported relational databases <supported-databases>` 
 to MongoDB Atlas or a self-managed MongoDB deployment. You can choose either a 
 snapshot migration, or continuous synchronization with Change Data Capture (CDC).
 For more information, see :ref:`<rm-use-cases>`.
 
-Relational Migrator integrates with Apache Kafka and Confluent Cloud for large scale 
+{+rel-mig+} integrates with Apache Kafka and Confluent Cloud for large scale 
 migrations. For more information, see :ref:`<kafka-intro>`.
 
 .. _rm-use-cases:
@@ -73,7 +73,7 @@ migrations. For more information, see :ref:`<kafka-intro>`.
 Use Cases
 ---------
 
-Relational Migrator supports both Snapshot and Continuous migration jobs.
+{+rel-mig+} supports both Snapshot and Continuous migration jobs.
 
 .. include:: /includes/fact-short-sync-job-desc.rst
 
@@ -87,7 +87,7 @@ For more information, see the following table:
 Migration Scenarios
 -------------------
 
-You can use Relational Migrator to migrate one legacy application at a
+You can use {+rel-mig+} to migrate one legacy application at a
 time to MongoDB. Depending on your application's needs, you can migrate
 either with or without downtime.
 
@@ -99,7 +99,7 @@ case of an internal application, you can have the migration occur during
 scheduled downtime. Migrating during downtime is the easiest way to
 configure and complete the migration process.
 
-When you start the migration process, Relational Migrator takes a
+When you start the migration process, {+rel-mig+} takes a
 snapshot of the data on the legacy application and migrates the data
 from that point in time. During the migration process, your legacy
 application can remain online to support incoming reads, but cannot
@@ -119,7 +119,7 @@ during the migration process, you can use Change Data Capture (CDC) to
 migrate data without downtime. This process is called a **continuous**
 migration.
 
-When you start a continuous migration job, Relational Migrator takes a
+When you start a continuous migration job, {+rel-mig+} takes a
 snapshot of the data on the legacy application and tracks database
 updates in near real time. During the migration process, your source and
 destination databases remain in sync.
@@ -133,12 +133,12 @@ To learn more about migration jobs, see :ref:`rm-sync-jobs`.
 Unsupported Scenarios
 ~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator currently does not support migrating an operational
+{+rel-mig+} currently does not support migrating an operational
 data store. Depending on your workload, migrating a data store could
 cause :abbr:`CDC (Change Data Capture)` to run indefinitely without
-completing, which is not recommended with Relational Migrator.
+completing, which is not recommended with {+rel-mig+}.
 
-Relational Migrator will support more migration scenarios and use cases
+{+rel-mig+} will support more migration scenarios and use cases
 in future releases.
 
 .. _supported-databases:
@@ -149,7 +149,7 @@ Supported Databases and Versions
 Source Databases and Versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator supports the following source databases:
+{+rel-mig+} supports the following source databases:
 
 .. include:: /includes/table-supported-dbs-and-versions.rst
 
@@ -172,7 +172,7 @@ not continuous CDC sync jobs.
 Target Databases and Versions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Relational Migrator supports the following target databases:
+{+rel-mig+} supports the following target databases:
 
 .. include:: /includes/table-supported-mongodb-versions.rst
 
@@ -180,7 +180,7 @@ Relational Migrator supports the following target databases:
 Learn More
 ----------
 
-- `Relational Migrator Introductory Video Series <https://learn.mongodb.com/courses/mongodb-relational-migrator>`__
+- `{+rel-mig+} Introductory Video Series <https://learn.mongodb.com/courses/mongodb-relational-migrator>`__
 - :ref:`User Interface Overview <rm-project-overview>`
 
 
