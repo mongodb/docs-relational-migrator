@@ -1,4 +1,4 @@
-.. _rm-project-settings:
+
 
 .. contents:: On this page
    :local:

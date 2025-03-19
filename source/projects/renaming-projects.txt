@@ -1,4 +1,3 @@
-.. _rename-project:
 
 ================
 Rename a Project
