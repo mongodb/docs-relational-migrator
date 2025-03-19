@@ -43,7 +43,8 @@ toc_landing_pages = [
 "database-connections/oracle",
 "database-connections/postgres",
 "database-connections/sql-server",
-"database-connections/sybase"
+"database-connections/sybase",
+"database-connections/migrator-without-live-connection"
 ]
 
 [constants]
