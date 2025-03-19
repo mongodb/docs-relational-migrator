@@ -1,8 +1,8 @@
 .. _create-project-schema-file:
 
-===============================================
-Use Relational Migrator by a Loading a DDL File
-===============================================
+====================================
+Load a Data Definition Language File
+====================================
 
 .. default-domain:: mongodb
 
