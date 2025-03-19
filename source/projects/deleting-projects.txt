@@ -1,4 +1,3 @@
-.. _delete-project:
 
 ================
 Delete a Project

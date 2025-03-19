@@ -65,4 +65,3 @@ For more information, see :ref:`<migrator-without-live-connection>`.
    MongoDB </database-connections/mongodb>
    Use Without DB Connection </database-connections/migrator-without-live-connection>
    Manage Connections </database-connections/manage-database-connections>
-   Create & Manage Projects </projects>
