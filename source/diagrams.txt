@@ -11,7 +11,7 @@ Diagrams
    :class: singlecol
 
 **Diagrams** in Relational Migrator are entity-relationship diagrams (ERDs). 
-The term "entity" refers to either a table in the relational model, 
+The term "entity" refers to either a table in the relational model
 or a collection in the MongoDB model.
 A project's :guilabel:`Mapping` screen maintains entity-relationship diagrams
 that show tables, foreign key relationships, and data types. This helps you
