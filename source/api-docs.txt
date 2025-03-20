@@ -4,7 +4,6 @@
 {+rel-mig+} REST API
 ============================
 
-{+rel-mig+}
 .. facet::
    :name: genre 
    :values: tutorial
