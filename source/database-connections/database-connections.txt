@@ -35,7 +35,7 @@ To connect to a MongoDB instance, see :ref:`Connect to MongoDB <rm-connect-to-mo
 
 
 Use {+rel-mig+} Without a Live Database Connection
---------------------------------------------------
+----------------------------------------------------------
 
 If you don't have a live connection to your relational database, you can 
 use the following options to visualize and model your data:

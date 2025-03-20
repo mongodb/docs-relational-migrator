@@ -31,7 +31,7 @@ Steps
 .. _install-rhel-server:
 
 Install {+rel-mig+}
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Download the latest ``.rpm`` binary from the `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
 

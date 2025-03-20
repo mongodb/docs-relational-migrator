@@ -40,7 +40,7 @@ deployment options.
      - Remote server / EC2 / Azure VM
 
 Where to Run {+rel-mig+}
-------------------------
+--------------------------------
 
 For best performance, locate the machine or server running Relational 
 Migrator as geographically close to the source and target databases as 

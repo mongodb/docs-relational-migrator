@@ -30,7 +30,7 @@ Steps
 .. _install-debian-server:
 
 Install {+rel-mig+}
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Download the latest ``.deb`` binary from the `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
 

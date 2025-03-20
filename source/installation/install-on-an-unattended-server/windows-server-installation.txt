@@ -29,7 +29,7 @@ Steps
 .. _install-windows-server:
 
 Install {+rel-mig+}
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Log in to the server.
 
