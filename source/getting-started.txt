@@ -1,9 +1,9 @@
 .. _rm-introduction:
 .. _relational-migrator-get-started:
 
-=================================
+===========================
 Introduction to {+rel-mig+}
-=================================
+===========================
 
 .. facet::
    :name: genre
