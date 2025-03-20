@@ -12,13 +12,13 @@ Relational Database Connection Strings
 
 .. include:: /includes/uri-usage-disclaimer.rst
 
-To analyze a schema or start a migration job, Relational Migrator must connect
+To analyze a schema or start a migration job, {+rel-mig+} must connect
 to your relational database. To connect to your source database,
-Relational Migrator requires a JDBC-formatted connection string. This document
+{+rel-mig+} requires a JDBC-formatted connection string. This document
 describes the URI formats for defining connections to relational
 database systems.
 
-Relational Migrator can connect to the following relational database systems:
+{+rel-mig+} can connect to the following relational database systems:
 
 - `MySQL <#mysql>`__
 - `Oracle <#oracle>`__
@@ -27,7 +27,7 @@ Relational Migrator can connect to the following relational database systems:
 - `Sybase ASE <#sybase-ase>`__
 - `DB2 <#db2>`__
 
-Relational Migrator's connection form contains fields where you can specify a
+{+rel-mig+}'s connection form contains fields where you can specify a
 username and password for the connection. The form obscures passwords
 and is more secure than specifying plaintext credentials in the URI.
 
@@ -181,7 +181,7 @@ The preceding connection string specifies these connection details:
 
 To enable Windows Integrated Authentication, add ``integratedSecurity=true;`` to the URI options.
 Leave the :guilabel:`Username` and :guilabel:`Password` fields blank. Windows Integrated Authentication connects 
-to the database using the credentials of the user who launched the Relational Migrator executable.
+to the database using the credentials of the user who launched the {+rel-mig+} executable.
 
 **Using TLS**
 

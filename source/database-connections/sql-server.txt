@@ -59,7 +59,7 @@ Windows Integrated Authentication
 
 To enable Windows Integrated Authentication, add ``integratedSecurity=true;`` to the URI options.
 Leave the :guilabel:`Username` and :guilabel:`Password` fields blank. Windows Integrated Authentication connects 
-to the database using the credentials of the user who launched the Relational Migrator executable.
+to the database using the credentials of the user who launched the {+rel-mig+} executable.
 
 TLS
 '''
@@ -107,7 +107,7 @@ Connect to |db-type|
 Learn More
 ----------
 
-- Relational Migrator relies on the open-source Debezium connector to 
+- {+rel-mig+} relies on the open-source Debezium connector to 
   capture row-level changes. For more details, see
   `Debezium MySQL <https://debezium.io/documentation/reference/stable/connectors/mysql.html>`__.
 

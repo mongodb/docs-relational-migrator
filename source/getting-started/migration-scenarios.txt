@@ -10,7 +10,7 @@ Migration Scenarios and Use Cases
    :depth: 1
    :class: singlecol
 
-You can use Relational Migrator to migrate one legacy application at a
+You can use {+rel-mig+} to migrate one legacy application at a
 time to MongoDB. Depending on your application's needs, you can migrate
 either with or without downtime.
 
@@ -22,7 +22,7 @@ case of an internal application, you can have the migration occur during
 scheduled downtime. Migrating during downtime is the easiest way to
 configure and complete the migration process.
 
-When you start the migration process, Relational Migrator takes a
+When you start the migration process, {+rel-mig+} takes a
 snapshot of the data on the legacy application and migrates the data
 from that point in time. During the migration process, your legacy
 application can remain online to support incoming reads, but cannot
@@ -41,7 +41,7 @@ during the migration process, you can use Change Data Capture (CDC) to
 migrate data without downtime. This process is called a **continuous
 sync migration**.
 
-When you start a continuous sync migration, Relational Migrator takes a
+When you start a continuous sync migration, {+rel-mig+} takes a
 snapshot of the data on the legacy application and tracks database
 updates in near real time. During the migration process, your source and
 destination databases remain in sync.
@@ -54,10 +54,10 @@ To learn more about migration jobs, see :ref:`rm-sync-jobs`.
 Unsupported Migration Scenarios
 -------------------------------
 
-Relational Migrator currently does not support migrating an operational
+{+rel-mig+} currently does not support migrating an operational
 data store. Depending on your workload, migrating a data store could
 cause :abbr:`CDC (Change Data Capture)` to run indefinitely without
-completing, which is not recommended with Relational Migrator.
+completing, which is not recommended with {+rel-mig+}.
 
-Relational Migrator will support more migration scenarios and use cases
+{+rel-mig+} will support more migration scenarios and use cases
 in future releases.

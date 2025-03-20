@@ -18,7 +18,7 @@ Connect to PostgreSQL
 
 .. important::
 
-   If PostgreSQL is configured as a cluster, Relational Migrator must connect 
+   If PostgreSQL is configured as a cluster, {+rel-mig+} must connect 
    to the master server.
 
 About this Task
@@ -85,7 +85,7 @@ Connect to |db-type|
 Learn More
 ----------
 
-- Relational Migrator relies on the open-source Debezium connector to 
+- {+rel-mig+} relies on the open-source Debezium connector to 
   capture row-level changes. For more details, see
   `Debezium PostgreSQL <https://debezium.io/documentation/reference/stable/connectors/postgresql.html>`__.
 

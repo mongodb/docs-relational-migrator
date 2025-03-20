@@ -17,7 +17,7 @@ data to your MongoDB database.
 Types of Migration Jobs
 -----------------------
 
-Relational Migrator offers two different migration job types:
+{+rel-mig+} offers two different migration job types:
 
 **Snapshot**: Snapshot migration jobs run once, typically for a point in time 
 migration strategy.
@@ -31,7 +31,7 @@ data remain in sync.
 
 .. note:: Kafka Deployment Model
 
-   The Kafka deployment model of Relational Migrator allows you to run 
+   The Kafka deployment model of {+rel-mig+} allows you to run 
    longer-running snapshot or continuous migration jobs with improved resiliency. 
    For more details about the Kafka deployment model, see 
    :ref:`kafka-intro`.
@@ -44,7 +44,7 @@ Recoverability
 Behavior
 --------
 
-Migration jobs are non-idempotent by default. Relational Migrator inserts new 
+Migration jobs are non-idempotent by default. {+rel-mig+} inserts new 
 documents and embeded arrays each time a job is run, with the option to 
 delete each existing collection at the start of the sync dialogue. You 
 can enable idempotency to delete inserts from the previous migration job 
@@ -58,14 +58,14 @@ performance impact on large jobs.
 Indexes
 ~~~~~~~
 
-Relational Migrator creates new `indexes
+{+rel-mig+} creates new `indexes
 <https://www.mongodb.com/docs/manual/indexes/>`_ in your MongoDB
 collections to supplement the migration process. For best performance,
 review the indexes in your collection after migration to ensure that
 they best fit your application usage patterns. 
 
-Relational Migrator does not create new indexes in the relational
-database. Relational Migrator has read-only access to your source
+{+rel-mig+} does not create new indexes in the relational
+database. {+rel-mig+} has read-only access to your source
 database. 
 
 See the following pages for more information on revewing your collection

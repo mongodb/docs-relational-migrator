@@ -12,15 +12,15 @@ Debian Systems Installation
    :depth: 2
    :class: singlecol
 
-You can install Relational Migrator on a Debian server. This installation method 
-allows Relational Migrator to run on an unattended server. When running on an 
-unattended server, Relational Migrator binds to any IP and port on the server 
+You can install {+rel-mig+} on a Debian server. This installation method 
+allows {+rel-mig+} to run on an unattended server. When running on an 
+unattended server, {+rel-mig+} binds to any IP and port on the server 
 and exposes it as a web application.
 
 About this Task
 ---------------
 
-Relational Migrator uses the following file locations on Debian Linux:
+{+rel-mig+} uses the following file locations on Debian Linux:
 
 .. include:: /includes/fact-file-location-linux.rst
 
@@ -29,7 +29,7 @@ Steps
 
 .. _install-debian-server:
 
-Install Relational Migrator
+Install {+rel-mig+}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Download the latest ``.deb`` binary from the `release page <https://www.mongodb.com/try/download/relational-migrator>`__.
@@ -46,14 +46,14 @@ Install Relational Migrator
 
       sudo mkdir /usr/share/desktop-directories/
 
-#. Install Relational Migrator.
+#. Install {+rel-mig+}.
 
    .. code-block:: bash
 
       sudo apt install ./mongodb-relational-migrator_<version_number>-1_amd64.deb
 
 #. (Optional) To connect to Oracle or MySQL drivers, download and place the drivers 
-   into your Relational Migrator directory.
+   into your {+rel-mig+} directory.
 
    a. To download and install MySQL or Oracle drivers, see the following:
 
@@ -71,7 +71,7 @@ Install Relational Migrator
 
    For more information, see :ref:`Install on a Local Machine <local-machine-install>`.
 
-#. Change the directory to the Relational Migrator ``/bin`` location and start the application.
+#. Change the directory to the {+rel-mig+} ``/bin`` location and start the application.
 
    .. code-block:: bash
 
@@ -79,7 +79,7 @@ Install Relational Migrator
 
       ./mongodb-relational-migrator
 
-#. Enable Relational Migrator to run as an unattended standalone server.
+#. Enable {+rel-mig+} to run as an unattended standalone server.
 
    In your ``user.properties`` file, uncomment ``spring.profiles.active: unattended``. 
 
@@ -88,21 +88,21 @@ Install Relational Migrator
    In your ``user.properties`` file, uncomment and update TLS/SSL configuration 
    properties.
 
-   It is recommended that you configure TLS/SSL for Relational Migrator on your unattended
-   server. You can bind Relational Migrator to any IP and port on the server. For additional 
+   It is recommended that you configure TLS/SSL for {+rel-mig+} on your unattended
+   server. You can bind {+rel-mig+} to any IP and port on the server. For additional 
    information, see `TLS/SSL Configuration Properties <https://docs.spring.io/spring-cloud-skipper/docs/2.8.4/reference/htmlsingle/#configuration-security-enabling-https>`__.
 
-#. (Optional) Update the port that Relational Migrator runs on.
+#. (Optional) Update the port that {+rel-mig+} runs on.
 
-   By default, Relational Migrator is configured to run on port ``8278``. To change 
-   the port Relational Migrator runs on, update the ``server.port`` line in your
+   By default, {+rel-mig+} is configured to run on port ``8278``. To change 
+   the port {+rel-mig+} runs on, update the ``server.port`` line in your
    ``user.properties`` file to specify your preferred port. For example, you may
    wish to use port ``80`` for HTTP or port ``443`` for HTTPS.
 
-#. Run Relational Migrator using the binary.
+#. Run {+rel-mig+} using the binary.
 
    The ``bin`` directory path is ``/opt/mongodb-relational-migrator/bin``.
-   To run Relational Migrator using the binary, run the following:
+   To run {+rel-mig+} using the binary, run the following:
 
    .. code-block:: bash
 
@@ -114,7 +114,7 @@ Install Relational Migrator
 
    - The logs are located in ``~/Migrator/Logs/migrator.log``.
 
-   - When running Relational Migrator as a system service, the path is under 
+   - When running {+rel-mig+} as a system service, the path is under 
      the service user’s home directory.
 
 .. _debian-system-service:
@@ -122,9 +122,9 @@ Install Relational Migrator
 Run as a System Service
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-When you install Relational Migrator on a Debian server, you can also set up 
-Relational Migrator to run as a system service. When running Relational Migrator 
-as a system service, Relational Migrator automatically starts when the server starts.
+When you install {+rel-mig+} on a Debian server, you can also set up 
+{+rel-mig+} to run as a system service. When running {+rel-mig+} 
+as a system service, {+rel-mig+} automatically starts when the server starts.
 
 1. Create a ``/etc/systemd/system/migrator.service`` file. 
 
@@ -134,10 +134,10 @@ as a system service, Relational Migrator automatically starts when the server st
    .. code-block::
 
       [Unit]
-      Description=MongoDB Relational Migrator
+      Description=MongoDB {+rel-mig+}
 
       [Service]
-      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB Relational Migrator"
+      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB {+rel-mig+}"
 
       [Install]
       WantedBy=multi-user.target
@@ -148,7 +148,7 @@ as a system service, Relational Migrator automatically starts when the server st
 
       systemctl daemon-reload
 
-#. Enable the Relational Migrator service to automatically start when the server starts. 
+#. Enable the {+rel-mig+} service to automatically start when the server starts. 
 
    You can manage the service with the following ``systemctl`` commands: 
 

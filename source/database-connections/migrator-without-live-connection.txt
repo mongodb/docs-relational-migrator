@@ -1,5 +1,5 @@
 .. _migrator-without-live-connection:
 
 ==========================================================
-Use Relational Migrator Without a Live Database Connection
+Use {+rel-mig+} Without a Live Database Connection
 ==========================================================

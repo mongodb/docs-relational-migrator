@@ -12,30 +12,30 @@ Production Installation Guide
    :depth: 1
    :class: singlecol
 
-You can install Relational Migrator on an unattended server on both Linux 
+You can install {+rel-mig+} on an unattended server on both Linux 
 and Windows systems. The unattended server installation binds Relational 
 Migrator to any IP and port on the server and exposes it as a web application.
 
 Use Case
 --------
 
-Installing Relational Migrator on an unattended server is ideal for larger 
+Installing {+rel-mig+} on an unattended server is ideal for larger 
 production-scale migration projects.
 
 Behavior
 --------
 
 - It is recommended that the unattended server installation is supplemented with 
-  TLS/SSL configuration because Relational Migrator can be bound to any IP and port on 
+  TLS/SSL configuration because {+rel-mig+} can be bound to any IP and port on 
   the server.
 
-- When you install Relational Migrator on an unattended server, you can set up 
-  Relational Migrator to run as a system service. As a system service, Relational 
+- When you install {+rel-mig+} on an unattended server, you can set up 
+  {+rel-mig+} to run as a system service. As a system service, Relational 
   Migrator automatically starts when the server starts.
 
-- When you install Relational Migrator on an unattended server, you can enable 
-  external access to Relational Migrator on Windows. By enabling external access, 
-  incoming connections are allowed on the same port as Relational Migrator.
+- When you install {+rel-mig+} on an unattended server, you can enable 
+  external access to {+rel-mig+} on Windows. By enabling external access, 
+  incoming connections are allowed on the same port as {+rel-mig+}.
 
 Get Started
 -----------
@@ -51,7 +51,7 @@ Learn More
 
 - :ref:`Install on a Local Machine <local-machine-install>`
 
-- :ref:`Relational Migrator File Locations <file-location>` 
+- :ref:`{+rel-mig+} File Locations <file-location>` 
 
 
 .. toctree::

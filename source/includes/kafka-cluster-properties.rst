@@ -8,7 +8,7 @@
 
    * - ``spring.profiles.active``
      - local
-     - Relational Migrator can be run in the following profile: 
+     - {+rel-mig+} can be run in the following profile: 
 
        - ``kafka``: Remote server using embedded server deployment.
        - ``confluent``: Remote server using Confluent Cloud for managed Kafka

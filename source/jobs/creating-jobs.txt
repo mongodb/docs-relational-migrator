@@ -33,9 +33,9 @@ Before you Begin
 ----------------
 
 - :ref:`Create one or more mapping rules <create-rule-relational>` in your 
-  Relational Migrator project.
+  {+rel-mig+} project.
 - For both Atlas and on-premises deployments, create a separate
-  :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
+  :ref:`MongoDB user <rm-mongodb-service-user>` for {+rel-mig+} with
   :authrole:`readWrite` access to your MongoDB database.
 
 Steps
@@ -45,7 +45,7 @@ Steps
 
   .. step:: On the :guilabel:`Data Migration` tab, click :guilabel:`Create Migration Job`
  
-    Relational Migrator only runs one migration job at a time. If a job is in 
+    {+rel-mig+} only runs one migration job at a time. If a job is in 
     progress, this button is disabled.
 
   .. step:: Enter the relational database connection details
@@ -81,7 +81,7 @@ Steps
         * - Mode 
           - Defines the type of migration job.
         * - Drop destination collections before migration
-          - Boolean. Indicates whether Relational Migrator drops a 
+          - Boolean. Indicates whether {+rel-mig+} drops a 
             destination collection before transferring data. 
         * - Stop after errors 
           - Integer. Indicates the number of errors after which Relational 
@@ -90,7 +90,7 @@ Steps
           - Boolean. If true, the sync engine verifies migrated data 
             against the source database. Only supported for snapshot mode.
 
-      When you set the :guilabel:`Mode`, Relational Migrator checks if 
+      When you set the :guilabel:`Mode`, {+rel-mig+} checks if 
       the database is configured correctly. If it finds issues, it displays a 
       warning banner and a :guilabel:`Generate Script` button to download an 
       SQL script. This script includes the required configuration statements, 

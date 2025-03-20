@@ -3,4 +3,4 @@
 
 - For information on managing saved connections, see :ref:`Manage Database Connections <rm-manage-connections>`.
 
-- For information on Relational Migrator projects, see :ref:`Create and Manage Projects <rm-projects>`.
+- For information on {+rel-mig+} projects, see :ref:`Create and Manage Projects <rm-projects>`.

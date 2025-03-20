@@ -49,6 +49,8 @@ toc_landing_pages = [
 [constants]
 connector-version = "2.7.0"
 ddl = ":abbr:`DDL (Data Definition Language)`"
+mdb-rel-mig = "MongoDB Relational Migrator"
+rel-mig = "Relational Migrator"
 migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
 
