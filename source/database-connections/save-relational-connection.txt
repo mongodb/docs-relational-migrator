@@ -19,7 +19,7 @@ to a database. You can save a new relational database connection:
 - When :ref:`creating a new project from a live database connection <rm-create-project-live>`
 - When creating or modifying a :ref:`data migration job <rm-create-jobs>`
 - From the Database Connections bar in a project
-- From the Relational Migrator :guilabel:`Connections` page
+- From the {+rel-mig+} :guilabel:`Connections` page
 
 
 Steps
@@ -38,7 +38,7 @@ To save a new connection from the :guilabel:`Connections` page:
       
       In the :guilabel:`Database type` drop-down, select the database type.
 
-   .. step:: To enter a :ref:`connection string <rm-relational-database-connection-strings>` directly:
+   .. step:: To enter a connection string directly:
 
       a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
 
@@ -88,7 +88,7 @@ To save a new connection from the :guilabel:`Connections` page:
 
    .. step:: (Optional) Click :guilabel:`Test connection`
 
-      Relational Migrator attempts to authenticate and connect to the
+      {+rel-mig+} attempts to authenticate and connect to the
       database.
          
    .. step:: Click :guilabel:`Save`

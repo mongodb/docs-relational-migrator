@@ -36,12 +36,21 @@ toc_landing_pages = [
 "api-docs",
 "deployment-considerations",
 "code-generation/query-converter-test-queries",
-"code-generation/query-converter/query-management"
+"code-generation/query-converter/query-management",
+"database-connections/db2",
+"database-connections/mongodb",
+"database-connections/mysql",
+"database-connections/oracle",
+"database-connections/postgres",
+"database-connections/sql-server",
+"database-connections/sybase"
 ]
 
 [constants]
 connector-version = "2.7.0"
 ddl = ":abbr:`DDL (Data Definition Language)`"
+mdb-rel-mig = "MongoDB Relational Migrator"
+rel-mig = "Relational Migrator"
 migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
 

@@ -1,5 +1,5 @@
 
-.. _rm-save-mongodb-connection:
+
 
 ============================================
 Save a MongoDB Connection
@@ -18,9 +18,9 @@ to a database. You can save a new MongoDB connection:
 
 - When creating or modifying a :ref:`data migration job <rm-create-jobs>`
 - From the Database Connections bar in a project
-- From the Relational Migrator :guilabel:`Connections` page
+- From the {+rel-mig+} :guilabel:`Connections` page
 
-To start a migration job, Relational Migrator must connect to your MongoDB
+To start a migration job, {+rel-mig+} must connect to your MongoDB
 database using an account with :authrole:`readWrite` access. 
 
 Before you Begin
@@ -29,7 +29,7 @@ Before you Begin
 - To save a connection to a MongoDB Atlas cluster, you must be :ref:`logged in <rm-atlas-log-in>` with Atlas.
 
 - For both Atlas and on-premises deployments, create a separate
-  :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
+  :ref:`MongoDB user <rm-mongodb-service-user>` for {+rel-mig+} with
   :authrole:`readWrite` access to your MongoDB database.
 
 Steps
@@ -56,7 +56,7 @@ To save a new connection from the :guilabel:`Connections` page:
       
       #. If they aren't included in the connection string and you aren't using
          X.509 authentication, enter the :guilabel:`Username` and
-         :guilabel:`Password` of your :ref:`Relational Migrator MongoDB user
+         :guilabel:`Password` of your :ref:`{+rel-mig+} MongoDB user
          <rm-mongodb-service-user>`.
          
          Checking :guilabel:`Save password` saves the password securely
@@ -64,7 +64,7 @@ To save a new connection from the :guilabel:`Connections` page:
          and :guilabel:`Password` again when using the saved connection.
       
       If you leave the :guilabel:`Database`, :guilabel:`Username`, 
-      or :guilabel:`Password` blank, Relational Migrator uses the
+      or :guilabel:`Password` blank, {+rel-mig+} uses the
       values from the URI.
 
    .. step: Identify the connection
@@ -77,7 +77,7 @@ To save a new connection from the :guilabel:`Connections` page:
 
    .. step:: (Optional) Click :guilabel:`Test connection`
 
-      Relational Migrator attempts to authenticate and connect to the
+      {+rel-mig+} attempts to authenticate and connect to the
       database.
          
    .. step:: Click :guilabel:`Save`

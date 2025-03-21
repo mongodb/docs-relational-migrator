@@ -1,4 +1,4 @@
-.. _rm-mongodb-database-connection-strings:
+
 
 ===================================
 MongoDB Database Connection Strings
@@ -15,14 +15,14 @@ MongoDB Database Connection Strings
 This page describes the Uniform Resource Identifier (URI) formats for defining
 connections to your MongoDB database. 
 
-Relational Migrator supports all :manual:`MongoDB connection string options
+{+rel-mig+} supports all :manual:`MongoDB connection string options
 </reference/connection-string-options/>` except :urioption:`appName`. It
 overrides ``appName`` when connecting to your MongoDB deployment.
 
 .. important::
 
    For both Atlas and on-premises deployments, create a separate
-   :ref:`MongoDB user <rm-mongodb-service-user>` for Relational Migrator with
+   :ref:`MongoDB user <rm-mongodb-service-user>` for {+rel-mig+} with
    :authrole:`readWrite` access to your MongoDB database.
 
 Atlas Connection URI
@@ -53,7 +53,7 @@ For example, to use an account named ``migrator-service`` with password
 
    mongodb://migrator-service:hunter2@localhost:27017/MongoEnterprises
 
-.. _rm-x509-auth:
+
 
 Using X.509 Authentication
 ---------------------------
@@ -83,7 +83,7 @@ the following options:
      - The path to the ``.p12`` file that contains the certificate and key to 
        present to the mongod or mongos instance.
 
-       :gold:`IMPORTANT:` Unlike other MongoDB products, Relational Migrator
+       :gold:`IMPORTANT:` Unlike other MongoDB products, {+rel-mig+}
        requires a path to a ``.p12`` file, not a ``.pem`` file. If your 
        certificate is saved as a ``.pem`` file, you can convert it using a tool 
        like OpenSSL's `PKCS12 command <https://docs.openssl.org/master/man1/openssl-pkcs12/>`__:

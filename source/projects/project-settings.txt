@@ -10,19 +10,19 @@
 Project Settings
 ================
 
-You can customize Relational Migrator to meet your specific needs. 
+You can customize {+rel-mig+} to meet your specific needs. 
 Some options are only available in the project :guilabel:`Settings` 
 panel.
 
 Project Settings Location
 -------------------------
 
-To find the Relational Migrator project :guilabel:`Settings` 
-panel, open Relational Migrator and select 
+To find the {+rel-mig+} project :guilabel:`Settings` 
+panel, open {+rel-mig+} and select 
 :guilabel:`Settings`:
 
 .. figure:: /img/projects/settings-panel-location.png 
-  :alt: Settings panel location for Relational Migrator
+  :alt: Settings panel location for {+rel-mig+}
 
 Settings
 --------
@@ -45,8 +45,8 @@ You can configure the following project settings:
        `Generative AI FAQ <https://dochub.mongodb.org/core/faq-ai-features>`__ .
 
    * - Theme
-     - Apperance
-     - Change the appearance of Relational Migrator.
+     - Appearance
+     - Change the appearance of {+rel-mig+}.
 
        .. list-table::
           :header-rows: 1

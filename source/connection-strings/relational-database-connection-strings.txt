@@ -1,4 +1,4 @@
-.. _rm-relational-database-connection-strings:
+
 
 ======================================
 Relational Database Connection Strings
@@ -12,13 +12,13 @@ Relational Database Connection Strings
 
 .. include:: /includes/uri-usage-disclaimer.rst
 
-To analyze a schema or start a migration job, Relational Migrator must connect
+To analyze a schema or start a migration job, {+rel-mig+} must connect
 to your relational database. To connect to your source database,
-Relational Migrator requires a JDBC-formatted connection string. This document
+{+rel-mig+} requires a JDBC-formatted connection string. This document
 describes the URI formats for defining connections to relational
 database systems.
 
-Relational Migrator can connect to the following relational database systems:
+{+rel-mig+} can connect to the following relational database systems:
 
 - `MySQL <#mysql>`__
 - `Oracle <#oracle>`__
@@ -27,11 +27,11 @@ Relational Migrator can connect to the following relational database systems:
 - `Sybase ASE <#sybase-ase>`__
 - `DB2 <#db2>`__
 
-Relational Migrator's connection form contains fields where you can specify a
+{+rel-mig+}'s connection form contains fields where you can specify a
 username and password for the connection. The form obscures passwords
 and is more secure than specifying plaintext credentials in the URI.
 
-.. _rm-mysql-connection-string:
+
 
 MySQL
 -----
@@ -70,7 +70,7 @@ details:
    - `MySQL Connection URL Syntax <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-jdbc-url-format.html>`__
    - `Connection Configuration Properties <https://dev.mysql.com/doc/connector-j/en/connector-j-reference-configuration-properties.html>`__
 
-.. _rm-oracle-connection-string:
+
 
 Oracle
 ------
@@ -109,7 +109,7 @@ details:
    - `Oracle JDBC Developer's Guide and Reference <https://docs.oracle.com/en/database/oracle/oracle-database/23/jjdbc/JDBC-Thin-features.html>`__
    - `Connection String Attributes <https://docs.oracle.com/cd/E85694_01/ODPNT/ConnectionConnectionString.htm#GUID-DF4ED9A3-1AAF-445D-AEEF-016E6CD5A0C0__BABBAGJJ>`__
    
-.. _rm-postgresql-connection-string:
+
 
 PostgreSQL
 ----------
@@ -146,7 +146,7 @@ The preceding connection string specifies these connection details:
 
    - `PostgreSQL Connection Configuration Properties <https://jdbc.postgresql.org/documentation/use/>`__
 
-.. _rm-sql-connection-string:
+
 
 SQL Server
 ----------
@@ -181,7 +181,7 @@ The preceding connection string specifies these connection details:
 
 To enable Windows Integrated Authentication, add ``integratedSecurity=true;`` to the URI options.
 Leave the :guilabel:`Username` and :guilabel:`Password` fields blank. Windows Integrated Authentication connects 
-to the database using the credentials of the user who launched the Relational Migrator executable.
+to the database using the credentials of the user who launched the {+rel-mig+} executable.
 
 **Using TLS**
 
@@ -209,7 +209,7 @@ the default ``dbo`` schema in all databases.
 If you specify the ``databaseName`` property, you can see tables from
 all schemas within the specified database.
 
-.. _rm-sybase-connection-string:
+
 
 Sybase ASE
 ----------
@@ -227,7 +227,7 @@ The general form for a Sybase ASE connection string is:
    - `Sybase ASE Connection String Docs <https://infocenter.sybase.com/help/index.jsp?topic=/com.sybase.infocenter.dc01776.1601/doc/html/san1357754914053.html>`__
    - `ConnectionStrings.com <https://www.connectionstrings.com/sybase-adaptive/>`__
 
-.. _rm-db2-connection-string:
+
 
 DB2
 ---

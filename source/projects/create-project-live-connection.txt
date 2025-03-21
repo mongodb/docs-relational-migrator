@@ -25,7 +25,7 @@ When creating a project with a live connection you:
 About this Task
 ---------------
 
-Creating a project with a live connection is the recommended process for starting a new Relational Migrator project. 
+Creating a project with a live connection is the recommended process for starting a new {+rel-mig+} project. 
 
 .. include:: /includes/project-initial-mappings-att.rst
 
@@ -35,7 +35,7 @@ Steps
 .. procedure::
    :style:  normal
 
-   .. step:: Click :guilabel:`New Project` at the top-right of the Relational Migrator home screen. 
+   .. step:: Click :guilabel:`New Project` at the top-right of the {+rel-mig+} home screen. 
 
    .. step:: Click the :guilabel:`Connect database` button.
 
