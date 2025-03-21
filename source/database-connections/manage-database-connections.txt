@@ -71,7 +71,7 @@ To copy a connection:
 .. procedure::
    :style: normal
 
-   .. step:: Click the :icon-lg:`Copy` button.
+   .. step:: Click the :icon-lg:`Copy` icon.
 
    .. step:: Make any desired changes.
 
