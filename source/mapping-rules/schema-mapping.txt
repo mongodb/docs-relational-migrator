@@ -1,3 +1,5 @@
+.. _rm-schema-mapping:
+
 ==============
 Schema Mapping
 ==============
