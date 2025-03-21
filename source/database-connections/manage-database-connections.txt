@@ -68,11 +68,14 @@ Steps
 
 To copy a connection:
 
-#. Click the :icon-fa4:`copy` button.
+.. procedure::
+   :style: normal
 
-#. Make any desired changes.
+   .. step:: Click the :icon-lg:`Copy` button.
 
-#. Click :guilabel:`Save`.
+   .. step:: Make any desired changes.
+
+   .. step:: Click :guilabel:`Save`.
 
 
 
@@ -92,11 +95,14 @@ Steps
 
 To edit a connection:
 
-#. Click the :icon-lg:`Edit` button.
+.. procedure::
+   :style: normal
 
-#. Make any desired changes, such as renaming the connection or changing the database.
+   .. step:: Click the :icon-lg:`Edit` icon.
 
-#. Click :guilabel:`Save`.
+   .. step:: Make any desired changes, such as renaming the connection or changing the database.
+
+   .. step:: Click :guilabel:`Save`.
 
 
 
@@ -113,8 +119,11 @@ Steps
 
 To delete a connection:
 
-#. Click the :icon-fa5:`trash` button.
+.. procedure::
+   :style: normal
 
-   A warning dialog displays and lists any projects that use the connection.
+   .. step:: Click the :icon-lg:`Trash` icon.
 
-#. Click :guilabel:`Delete` to confirm.
+      A warning dialog displays and lists any projects that use the connection.
+
+   .. step:: Click :guilabel:`Delete` to confirm.
