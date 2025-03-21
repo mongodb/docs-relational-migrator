@@ -1,8 +1,8 @@
 .. _install-confluent-kafka:
 
-============================
-Install with Confluent Cloud
-============================
+===========================
+Confluent Cloud Setup Guide
+===========================
 
 .. default-domain:: mongodb
 
@@ -178,6 +178,8 @@ Steps
 
          migrator.confluent.kafka-credentials.api-key: <Cluster API key>
          migrator.confluent.kafka-credentials.api-secret: <Cluster API Secret>
+      
+      For more information about the ``user.properties`` file, see :ref:`<rm-user-properties>`.
 
    .. step:: Restart {+rel-mig+} 
 
@@ -200,7 +202,7 @@ Next Steps
 ----------
 
 After you verify a successful installation, you can :ref:`create a new project 
-<rm-projects>`. 
+<rm-projects>`.
 
 Learn More
 ----------
@@ -208,5 +210,4 @@ Learn More
 - `Confluent Cloud <https://docs.confluent.io/cloud/current/get-started/confluent-cloud-basics.html#ccloud>`__
 - :ref:`kafka-intro`
 - :ref:`install-kafka-cluster`
-- :ref:`install-docker`
 - :ref:`advanced-settings`

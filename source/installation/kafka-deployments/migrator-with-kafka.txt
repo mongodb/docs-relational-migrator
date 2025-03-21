@@ -32,12 +32,6 @@ running if any component becomes temporarily unavailable.
 Behavior
 --------
 
-{+rel-mig+} works with Kafka as a Kafka Connect sink connector. A 
-`Debezium connector <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
-captures data events from your source database, while {+rel-mig+} 
-interprets and transforms events from the Debezium source and sends them to a 
-MongoDB cluster that acts as a data sink.
-
 Architecturally, {+rel-mig+} is deployed within Kafka as a Kafka 
 Connect sink connector. Database events are captured using the open-source 
 `Debezium tool <https://debezium.io/documentation/reference/stable/connectors/index.html>`__ 
@@ -59,32 +53,28 @@ with Kafka:
    * - Deployment Method
      - Description
 
-   * - :ref:`Install with an Existing Kafka Cluster <install-kafka-cluster>`
+   * - :ref:`<install-kafka-cluster>`
 
      - This deployment method is ideal if you are already running Kafka or 
        have your own approach to installing and configuring Kafka.
 
-   * - :ref:`Install with a Containerized Cluster using Docker <install-docker>`
+   * - :ref:`<install-confluent-kafka>` 
 
-     - This deployment method is ideal for educational purposes. Use this if you 
-       are looking to learn and understand how to configure your own multi-server Kafka
-       environment.
-
-   * - :ref:`Install with Confluent Cloud <install-confluent-kafka>` 
-
-     - This deployment method is ideal if you want the reliability of Kafka without 
-       having to manage your own cluster. 
+     - Confluent Cloud is an official MongoDB partner providing a fully-managed 
+       cloud-based Kafka solution. This deployment method is ideal if you want the 
+       reliability of Kafka without having to manage your own cluster.
 
 Learn More
 ----------
 
 - `Kafka and Kafka Connect <https://www.mongodb.com/docs/kafka-connector/current/introduction/kafka-connect/>`__
-- :ref:`advanced-settings`
+- :ref:`<advanced-settings>`
 - `Debezium <https://debezium.io/documentation/reference/stable/install.html>`__
 
 .. toctree::
    :hidden:
    :titlesonly:
 
-   Self-Managed Kafka Setup Guide </installation/kafka-deployments/install-kafka-cluster>
-   Confluent Cloud Setup Guide </installation/kafka-deployments/install-confluent-kafka>
+   Self-Managed Kafka </installation/kafka-deployments/install-kafka-cluster>
+   Confluent Cloud </installation/kafka-deployments/install-confluent-kafka>
+   Advanced Kafka Settings </installation/kafka-deployments/advanced-settings.txt>

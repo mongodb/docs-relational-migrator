@@ -21,6 +21,8 @@ more advanced settings by updating your ``user.properties`` file.
 Your ``user.properties`` file is located in an OS specific location. For more 
 information, see :ref:`{+rel-mig+} File Locations <file-location>`.
 
+.. _rm-user-properties:
+
 User Properties
 ---------------
 
