@@ -38,7 +38,7 @@ You can configure the following settings:
 
    * - Query Converter
      - AI
-     - When enabled, MongoDB will temporarily store the source and 
+     - When enabled, MongoDB temporarily stores the source and 
        converted queries to improve the underlying Query Converter 
        technology. For details, see 
        `Generative AI FAQ <https://dochub.mongodb.org/core/faq-ai-features>`__ .
@@ -46,20 +46,7 @@ You can configure the following settings:
    * - Theme
      - Apperance
      - Change the appearance of Relational Migrator.
-
-       .. list-table::
-          :header-rows: 1
-          :widths: 30 70
-
-          * - Option 
-            - Description
-
-          * - ``Auto`` 
-            - Automatically switch between light and dark 
-              themes based on your OS settings.
-
-          * - ``Light``  
-            - Use a light theme.
-
-          * - ``Dark`` 
-            - Use a dark theme.
+        - ``Auto``: Automatically switch between light and dark themes based 
+          on your OS settings.
+        - ``Light``: Use a light theme.
+        - ``Dark``: Use a dark theme.
