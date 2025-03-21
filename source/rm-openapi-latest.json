@@ -143,7 +143,7 @@
             }
           },
           "498": {
-            "description": "Analysis Task could not be cancelled.",
+            "description": "Analysis task could not be cancelled",
             "content": {
               "application/json": {
                 "schema": {
@@ -1930,7 +1930,7 @@
         ]
       },
       "database-type": {
-        "description": "Database type (MYSQL, ORACLE, POSTGRESQL, SQL_SERVER, COCKROACHDB, DB2, SQLANYWHERE, SYBASE, SYBASEIQ, YUGABYTE) or a custom database type.",
+        "description": "Database type or a custom database type. For example, `MYSQL`, `ORACLE`, `POSTGRESQL`, `SQL_SERVER`, `COCKROACHDB`, `DB2`, `SQLANYWHERE`, `SYBASE`, `SYBASEIQ`, or `YUGABYTE`.",
         "type": "string",
         "example": "ORACLE"
       },
@@ -2112,7 +2112,7 @@
         ]
       },
       "relational-table-filters": {
-        "description": "An object where each key represents a schema name. Each schema contains tables we can apply table filters on.",
+        "description": "An object where each key represents a schema name. Each schema contains tables that you can apply table filters on.",
         "type": "object",
         "example": {
           "schema_1_name": {
@@ -2820,7 +2820,7 @@
   },
   "tags": [
     {
-      "description": "Generates an analysis report for an app to be migrated",
+      "description": "Generates an analysis report for an application before migration",
       "name": "Analysis"
     },
     {
