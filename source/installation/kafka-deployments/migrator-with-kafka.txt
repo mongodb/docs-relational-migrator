@@ -60,8 +60,9 @@ with Kafka:
 
    * - :ref:`<install-confluent-kafka>` 
 
-     - This deployment method is ideal if you want the reliability of Kafka without 
-       having to manage your own cluster. 
+     - Confluent Cloud is an official MongoDB partner providing a fully-managed 
+       cloud-based Kafka solution. This deployment method is ideal if you want the 
+       reliability of Kafka without having to manage your own cluster.
 
 Learn More
 ----------
