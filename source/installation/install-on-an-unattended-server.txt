@@ -20,14 +20,22 @@ Use Case
 --------
 
 Installing {+rel-mig+} on an unattended server is ideal for larger 
-production-scale migration projects.
+production-scale migration projects. If you expect your production job to 
+run for more than a few days, it is recommended to configure production monitoring 
+and alerting.
+
+High Availability
+~~~~~~~~~~~~~~~~~
+
+For critical production workloads and/or long-running CDC syncs, Kafka is recommended.
+Kafka allows users to configure the underlying cluster for high availability and 
+automatic failure recovery. For more information, see :ref:`<kafka-intro>`.
 
 Behavior
 --------
 
-- It is recommended that the unattended server installation is supplemented with 
-  TLS/SSL configuration because {+rel-mig+} can be bound to any IP and port on 
-  the server.
+- It is recommended that you configure TLS/SSL on your unattended server.
+  You can bind {+rel-mig+} to any IP and port on the server.
 
 - When you install {+rel-mig+} on an unattended server, you can set up 
   {+rel-mig+} to run as a system service. As a system service, Relational 
@@ -46,10 +54,14 @@ Get Started
 
 - :ref:`Debian Server Installation <debian-install>`
 
+- :ref:`<kafka-intro>`
+
 Learn More
 ----------
 
-- :ref:`Install on a Local Machine <local-machine-install>`
+- :ref:`<rm-system-requirements>`
+
+- :ref:`<local-machine-install>`
 
 - :ref:`{+rel-mig+} File Locations <file-location>` 
 
