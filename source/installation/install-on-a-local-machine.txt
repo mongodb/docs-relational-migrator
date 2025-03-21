@@ -23,6 +23,14 @@ Use Cases
 Installing Migrator on a single machine is ideal for small developmental projects 
 that do not require not external access. 
 
+Docker
+~~~~~~
+
+If you want to install Relational Migrator with a method that is both indepedent of 
+operating system and straightforward to replicate, use Docker. Docker installation 
+is intended as an easy way to evaluate Relational Migrator and is not recommended 
+for production workloads. For more information, see :ref:`<rm-install-docker>`.
+
 Behavior
 --------
 
@@ -59,10 +67,14 @@ Get Started
 
 - :ref:`Install on RHEL <single-rhel>`
 
+- :ref:`<rm-install-docker>`
+
 Learn More
 ----------
 
-- :ref:`Install on an Unattended Server <unattended-server>`
+- :ref:`<rm-system-requirements>`
+
+- :ref:`<unattended-server>`
 
 - :ref:`{+rel-mig+} File Locations <file-location>` 
 
