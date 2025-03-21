@@ -100,7 +100,7 @@ Steps
 .. procedure::
    :style: normal
 
-   .. step:: From the :guilabel:`project view`, click the :guilabel:`Home` icon in the top-left corner.
+   .. step:: From the :guilabel:`project view`, click the :icon-lg:`Home` icon in the top-left corner.
 
    .. step:: Click the :icon-lg:`Ellipsis` icon next to your project of choice. Select :guilabel:`Delete`.
 
