@@ -21,7 +21,7 @@ Use Case
 
 Installing {+rel-mig+} on an unattended server is ideal for larger 
 production-scale migration projects. If you expect your production job to 
-run for more than one week, it is recommended to configure production monitoring 
+run for more than a few days, it is recommended to configure production monitoring 
 and alerting.
 
 High Availability
