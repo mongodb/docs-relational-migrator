@@ -1,8 +1,8 @@
 .. _create-project-schema-file:
 
-================================================
-Create a Project by Loading a Schema From a File
-================================================
+====================================
+Load a Data Definition Language File
+====================================
 
 .. default-domain:: mongodb
 

@@ -1,8 +1,8 @@
 .. _create-project-sample-schema:
 
-=========================================
-Create a Project by Using a Sample Schema
-=========================================
+============================================
+Use Relational Migrator With a Sample Schema
+============================================
 
 .. default-domain:: mongodb
 
