@@ -88,7 +88,7 @@ Complete the following steps to create a mapping rule.
 
       .. note::
 
-         For additional details on field customization and data type conversions,
+         For more details on field customization and data type conversions,
          see :ref:`field customizations <rm-field-customizations>`.
 
    .. step:: Click :guilabel:`Save and close`.
