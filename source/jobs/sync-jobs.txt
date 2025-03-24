@@ -1,7 +1,7 @@
 .. _rm-sync-jobs:
 
 ==============
-Migration Jobs
+Data Migration
 ==============
 
 .. contents:: On this page
@@ -40,6 +40,26 @@ Recoverability
 --------------
 
 .. include:: /includes/fact-cdc-recoverable.rst
+
+Compatibility
+-------------
+
+Some relational databases are only compatible with Snapshot jobs.
+For more compatibility information, see the following table:
+
+.. include:: /includes/table-supported-migration-types.rst
+
+Some databases might have specific requirements, and Relational
+Migrator generates a script to modify source databases as necessary.
+See the following pages to learn more about
+configuration prerequisites for each type of relational database:
+
+- :ref:`Configure MySQL <rm-prereq-mysql>`
+- :ref:`Configure Oracle <rm-prereq-oracle>`
+- :ref:`Configure PostgreSQL <rm-prereq-postgres>`
+- :ref:`Configure SQL Server <rm-prereq-sqlserver>`
+- :ref:`Configure Sybase <rm-prereq-sybase>`
+- :ref:`Configure DB2 <rm-prereq-db2>`
 
 Behavior
 --------
