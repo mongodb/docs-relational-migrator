@@ -41,11 +41,11 @@ Complete the following steps to create a mapping rule.
       mapping rule you are adding. For a full overview of each mapping rule 
       option see:
 
-      - :ref:`New Documents <rm-new-documents>`
+      - :ref:`rm-new-documents`
 
-      - :ref:`Embedded Array <rm-embedded-array>`
+      - :ref:`rm-embedded-array`
 
-      - :ref:`Embedded documents <rm-embedded-documents>`
+      - :ref:`rm-embedded-documents`
 
    .. step:: Select the name of the source table or target collection.
 
@@ -72,7 +72,7 @@ Complete the following steps to create a mapping rule.
              rules for your mapping rule.
 
       a. Click the :icon-fa5:`chevron-left` icon next to the field 
-      you want to customize.
+         you want to customize.
 
       b. Select a :guilabel:`BSON type`.
 
