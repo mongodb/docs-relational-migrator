@@ -20,26 +20,27 @@ and the recommended migration scenario for each deployment model:
 
 .. list-table::
    :header-rows: 1
+   :widths: 20 30 20 30
 
    * - Deployment Model
 
-     - Use Cases
-
      - Description
 
-     - Recommended Scenario
+     - Use Cases
+
+     - Details
 
    * - Local
-
-     - 
-       - Evaluation
-       - Data Modeling
-       - Testing
 
      - Install Relational Migrator to a single machine that cannot 
        be externally accessed.
 
        For more information, see :ref:`<local-machine-install>`.
+      
+     - 
+       - Evaluation
+       - Data Modeling
+       - Testing
 
      - Evaluation and small production jobs expected to run for less than a day. Note 
        that larger migrations can be broken down into separate jobs using 
@@ -47,13 +48,13 @@ and the recommended migration scenario for each deployment model:
     
    * - Docker
 
-     - 
-       - Evaluation
-
      - Install Relational Migrator in a way that is simple to replicate
        and independent of the operating system.
 
        For more information, see :ref:`<rm-install-docker>`.
+      
+     - 
+       - Evaluation
 
      - Intended for quick evaluation. Docker installation is not recommended
        for production workloads as it may not provide a resilient production 
@@ -62,14 +63,14 @@ and the recommended migration scenario for each deployment model:
 
    * - Unattended server
 
-     - 
-       - Testing
-       - Smaller (<100GB) Migrations
-
      - Install Relational Migrator on an unattended server that binds Relational 
        Migrator to an IP address and port and exposes it as a web application.
        
        For more information, see :ref:`<unattended-server>`.
+
+     - 
+       - Testing
+       - Smaller (<100GB) Migrations
 
      - Suitable for the majority of use cases, including tests and small production migrations. 
        Note that installing as an unattended server is not a highly-availably solution, and 
@@ -78,10 +79,6 @@ and the recommended migration scenario for each deployment model:
 
    * - Kafka
 
-     - 
-       - Mission Critical Migrations
-       - Long Running Migrations
-
      - `Apache Kafka <https://kafka.apache.org/>`__ is an open-source platform for distributed 
        workloads.
 
@@ -89,6 +86,10 @@ and the recommended migration scenario for each deployment model:
        of big data migration jobs.
 
        For more information, see :ref:`kafka-intro`.
+    
+     - 
+       - Mission Critical Migrations
+       - Long Running Migrations
 
      - Critical production workloads and/or long-running :abbr:`CDC (Change Data Capture)` syncs.
        Using Relational Migrator with Kafka enables high availability and automatic failure 
