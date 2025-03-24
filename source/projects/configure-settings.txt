@@ -1,8 +1,8 @@
 .. _rm-configure-settings:
 
-============================
-Configuring Project Settings
-============================
+================
+Project Settings
+================
 
 .. default-domain:: mongodb
 
@@ -18,7 +18,8 @@ project.
 .. note::
 
    To learn how to create a {+rel-mig+} project, see
-   :ref:`Creating a Project <rm-create-project-live>`.
+   :ref:`Creating a Project <rm-create-project-live>`. To learn how to
+   configure application settings, see :ref:`rm-application-settings`.
 
 Open Project Settings Dialog
 ----------------------------

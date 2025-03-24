@@ -1,0 +1,5 @@
+.. _rm-application-settings:
+
+====================
+Application Settings
+====================
