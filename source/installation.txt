@@ -20,7 +20,7 @@ and the recommended migration scenario for each deployment model:
 
 .. list-table::
    :header-rows: 1
-   :widths: 20 30 20 30
+   :widths: 15 35 20 30
 
    * - Deployment Model
 
@@ -97,10 +97,6 @@ and the recommended migration scenario for each deployment model:
 
    * - Kafka with Confluent Cloud
 
-     - 
-       - Mission Critical Migrations
-       - Long Running Migrations
-
      - `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
        provider run by the founders of Kafka. 
 
@@ -108,6 +104,10 @@ and the recommended migration scenario for each deployment model:
        as managed connectors.
 
        For more information, see :ref:`install-confluent-kafka`.
+    
+     - 
+       - Mission Critical Migrations
+       - Long Running Migrations
 
      - Ideal for users that prefer a fully-managed cloud-based solution.
 
