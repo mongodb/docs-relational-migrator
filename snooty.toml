@@ -18,7 +18,7 @@ toc_landing_pages = [
 "projects",
 "mapping-rules/introduction",
 "mapping-rules/mapping-rule-options/introduction",
-"mapping-rules/fields/calculated-fields/calculated-fields",
+"mapping-rules/fields/calculated-fields",
 "mapping-rules/fields/field-customizations",
 "mapping-rules/synthetic-foreign-key/synthetic-foreign-keys",
 "table-filters",
