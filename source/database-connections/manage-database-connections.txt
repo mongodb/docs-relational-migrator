@@ -17,6 +17,40 @@ You can copy, edit, or delete database connections from the {+rel-mig+}
 tag. You can mouse over the :icon-fa5:`info-circle` icon for a connection to
 see a list of projects that use that connection.
 
+Create a Connection
+-------------------
+
+You can create a connection by using one of the following places in the
+:ref:`Relational Migrator UI <rm-project-overview>`.
+
+Creating a New Project
+~~~~~~~~~~~~~~~~~~~~~~
+
+You can create a connection when you create a new project. After selecting
+:guilabel:`Connect to live database` from the :guilabel:`New Project`
+page, select the :guilabel:`Add a new connection` option. See :ref:`rm-projects`
+for more information.
+
+Connections Page
+~~~~~~~~~~~~~~~~
+
+In the :guilabel:`Connections` tab on the home screen, click
+:guilabel:`+ Add connection`.
+
+Database Connections Bar
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+In a project's :guilabel:`Database Connections Bar`, open the
+of :guilabel:`Relational` connections and click :guilabel:`+ Add connection`.
+
+Creating or Modifying a Data Migration Job
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In a project's :guilabel:`Data Migration` tab, 
+click :guilabel:`Create migration job` 
+and select :guilabel:`Add a new connection`. See :ref:`rm-create-jobs`
+for more information.
+
 Copy a Connection
 -----------------
 
