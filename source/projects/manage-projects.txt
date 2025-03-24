@@ -55,7 +55,8 @@ Import a Project
 
 Import a project when you want to collaborate on a shared project. You 
 can also duplicate a project by :ref:`exporting <export-project>` the 
-project and then importing it.
+project and then importing it. Before you import a project, consider 
+the following:
 
 - When you import projects, Relational Migrator only uses ``.relmig`` files.
 
@@ -90,9 +91,8 @@ Delete a Project
 ----------------
 
 Delete a project to remove migration workloads that are no longer needed.
-
-- If the last project on the :guilabel:`Recent Projects` page is deleted, the 
-  :guilabel:`New Project` page is displayed.
+If the last project on the :guilabel:`Recent Projects` page is deleted, the 
+:guilabel:`New Project` page is displayed.
 
 Steps
 ~~~~~
