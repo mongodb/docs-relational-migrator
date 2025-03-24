@@ -21,7 +21,7 @@ Create a Connection
 -------------------
 
 You can create a connection by using one of the following places in the
-Relational Migrator UI.
+:ref:`Relational Migrator UI <rm-project-overview>`.
 
 Creating a New Project
 ~~~~~~~~~~~~~~~~~~~~~~
