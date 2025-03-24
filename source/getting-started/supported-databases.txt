@@ -12,33 +12,33 @@ Supported Databases and Versions
    :depth: 1
    :class: singlecol
 
-Relational Migrator supports migration from source databases to MongoDB. 
+{+rel-mig+} supports migration from source databases to MongoDB. 
 
 Definition
 ----------
 
-To create a Relational Migrator project, you can connect to a source 
+To create a {+rel-mig+} project, you can connect to a source 
 database to migrate to MongoDB. This page provides details on supported 
 versions for both source and MongoDB databases.
 
 .. warning::
 
    You might be able to use other versions or deployments, but they have not been tested 
-   with Relational Migrator. 
+   with {+rel-mig+}. 
 
 .. _rm-supported-dbs-and-versions:
 
 Source Databases and Versions
 -----------------------------
 
-Relational Migrator supports the following source databases: 
+{+rel-mig+} supports the following source databases: 
 
 .. include:: /includes/table-supported-dbs-and-versions.rst
 
 MongoDB Databases and Versions
 ------------------------------
 
-Relational Migrator supports the following MongoDB databases: 
+{+rel-mig+} supports the following MongoDB databases: 
 
 .. include:: /includes/table-supported-mongodb-versions.rst
 

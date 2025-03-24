@@ -1,7 +1,7 @@
 
 
 =====================================================
-Run Relational Migrator as a System Service on Debian
+Run {+rel-mig+} as a System Service on Debian
 =====================================================
 
 .. default-domain:: mongodb
@@ -12,9 +12,9 @@ Run Relational Migrator as a System Service on Debian
    :depth: 1
    :class: singlecol
 
-When you install Relational Migrator on a Debian server, you can also set up 
-Relational Migrator to run as a system service. By running Relational Migrator as 
-a system service, Relational Migrator automatically starts when the server starts.
+When you install {+rel-mig+} on a Debian server, you can also set up 
+{+rel-mig+} to run as a system service. By running {+rel-mig+} as 
+a system service, {+rel-mig+} automatically starts when the server starts.
 
 Steps
 -----
@@ -27,10 +27,10 @@ Steps
    .. code-block::
 
       [Unit]
-      Description=MongoDB Relational Migrator
+      Description=MongoDB {+rel-mig+}
 
       [Service]
-      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB Relational Migrator
+      ExecStart="/opt/mongodb-relational-migrator/bin/MongoDB {+rel-mig+}
 
       [Install]
       WantedBy=multi-user.target
@@ -41,7 +41,7 @@ Steps
 
       systemctl daemon-reload
 
-#. Enable the Relational Migrator service to automatically start when the server starts. 
+#. Enable the {+rel-mig+} service to automatically start when the server starts. 
 
    You can manage the service with the following ``systemctl`` commands: 
 

@@ -18,7 +18,7 @@ toc_landing_pages = [
 "projects",
 "mapping-rules/introduction",
 "mapping-rules/mapping-rule-options/introduction",
-"mapping-rules/fields/calculated-fields/calculated-fields",
+"mapping-rules/fields/calculated-fields",
 "mapping-rules/fields/field-customizations",
 "mapping-rules/synthetic-foreign-key/synthetic-foreign-keys",
 "table-filters",
@@ -43,12 +43,15 @@ toc_landing_pages = [
 "database-connections/oracle",
 "database-connections/postgres",
 "database-connections/sql-server",
-"database-connections/sybase"
+"database-connections/sybase",
+"database-connections/migrator-without-live-connection"
 ]
 
 [constants]
 connector-version = "2.7.0"
 ddl = ":abbr:`DDL (Data Definition Language)`"
+mdb-rel-mig = "MongoDB Relational Migrator"
+rel-mig = "Relational Migrator"
 migrator-api = "REST API Documentation"
 migrator-api-endpoints = "Endpoints"
 

@@ -12,7 +12,7 @@ Manage Database Connections
    :depth: 1
    :class: singlecol
 
-You can copy, edit, or delete database connections from the Relational Migrator
+You can copy, edit, or delete database connections from the {+rel-mig+}
 :guilabel:`Connections` page. Saved connections are listed by their environment
 tag. You can mouse over the :icon-fa5:`info-circle` icon for a connection to
 see a list of projects that use that connection.
@@ -71,7 +71,7 @@ Delete a Connection
 
 You can delete a connection that you no longer need. Deleting a relational
 database connection causes any projects using that connection to fall back to
-Relational Migrator's last copy of the database contents. Mapping rules remain
+{+rel-mig+}'s last copy of the database contents. Mapping rules remain
 in place.
 
 Steps
