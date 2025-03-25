@@ -119,9 +119,7 @@ skip step one.
      - ``snake_case``
      - ``UPPER_SNAKE_CASE``
 
-#. Choose an :guilabel:`Initial mappings` option for your MongoDB schema.
-   
-   .. include:: /includes/project-initial-mappings.rst
+#. .. include:: /includes/project-initial-mappings.rst
 
 #. Enter a name for your project.
 
