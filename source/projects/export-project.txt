@@ -1,4 +1,3 @@
-.. _export-project:
 
 ================
 Export a Project
