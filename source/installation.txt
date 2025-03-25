@@ -30,7 +30,7 @@ and the recommended migration scenario for each deployment model:
 
      - Details
 
-   * - Local
+   * - Local Desktop
 
      - Install Relational Migrator to a single machine that cannot 
        be externally accessed.
@@ -45,23 +45,8 @@ and the recommended migration scenario for each deployment model:
      - Evaluation and small production jobs expected to run for less than a day. Note 
        that larger migrations can be broken down into separate jobs using 
        :ref:`table filters <rm-table-filters>`.
-    
-   * - Docker
 
-     - Install Relational Migrator in a way that is simple to replicate
-       and independent of the operating system.
-
-       For more information, see :ref:`<rm-install-docker>`.
-      
-     - 
-       - Evaluation
-
-     - Intended for quick evaluation. Docker installation is not recommended
-       for production workloads as it may not provide a resilient production 
-       environment.
-       
-
-   * - Unattended server
+   * - Unattended Server/:abbr:`VM (Virtual Machine)`
 
      - Install Relational Migrator on an unattended server that binds Relational 
        Migrator to an IP address and port and exposes it as a web application.
@@ -70,14 +55,14 @@ and the recommended migration scenario for each deployment model:
 
      - 
        - Testing
-       - Smaller (<100GB) Migrations
+       - Smaller (<100GB) Production Migrations
 
      - Suitable for the majority of use cases, including tests and small production migrations. 
        Note that installing as an unattended server is not a highly-availably solution, and 
        users may need to intervene in the event of an application issue.
       
 
-   * - Kafka
+   * - Kafka Cluster
 
      - `Apache Kafka <https://kafka.apache.org/>`__ is an open-source platform for distributed 
        workloads.
@@ -95,7 +80,7 @@ and the recommended migration scenario for each deployment model:
        Using Relational Migrator with Kafka enables high availability and automatic failure 
        recovery where supported by the underlying cluster configuration.
 
-   * - Kafka with Confluent Cloud
+   * - Kafka on Confluent Cloud
 
      - `Confluent  <https://www.confluent.io/>`__ is a fully-managed Kafka hosting 
        provider run by the founders of Kafka. 
