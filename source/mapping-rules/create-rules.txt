@@ -52,7 +52,7 @@ Complete the following steps to create a mapping rule.
       If you opened this pane from the :guilabel:`Relational` header, input
       the name of the target collection. If you opened the pane from 
       the :guilabel:`MongoDB` header, select the name of the source table
-      from the menu.
+      from the drop-down menu.
 
    .. step:: Define options for the new mapping rule.
 
