@@ -1,3 +1,7 @@
+.. _rm-create-rule:
+.. _create-rule-relational:
+.. _create-rule-mongodb:
+
 ====================
 Create Mapping Rules
 ====================

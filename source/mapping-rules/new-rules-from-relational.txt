@@ -1,5 +1,3 @@
-.. _create-rule-relational:
-
 ============================
 Create Rules From Relational
 ============================

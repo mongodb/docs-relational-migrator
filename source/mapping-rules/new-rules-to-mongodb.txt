@@ -1,5 +1,3 @@
-.. _create-rule-mongodb:
-
 ========================
 Create Rules to MongoDB
 ========================
