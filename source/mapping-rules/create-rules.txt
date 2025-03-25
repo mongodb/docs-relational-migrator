@@ -5,7 +5,7 @@ Create Mapping Rules
 .. contents:: On this page
    :local:
    :backlinks: none
-   :depth: 2
+   :depth: 1
    :class: singlecol
 
 Creating mapping rules is how you translate your relational tables into
@@ -52,7 +52,7 @@ Complete the following steps to create a mapping rule.
       If you opened this pane from the :guilabel:`Relational` header, input
       the name of the target collection. If you opened the pane from 
       the :guilabel:`MongoDB` header, select the name of the source table
-      from the drop-down.
+      from the menu.
 
    .. step:: Define options for the new mapping rule.
 
@@ -68,15 +68,14 @@ Complete the following steps to create a mapping rule.
       - Include or exclude a field from your migration job by clicking the
         :icon-fa5:`check-square` icon next to the field name.
 
-   .. step:: (Optional) Select a BSON type or set null handling 
-             rules for your mapping rule.
+   .. step:: (Optional) Select a BSON type or set null handling rules for your mapping rule.
 
       a. Click the :icon-fa5:`chevron-left` icon next to the field 
          you want to customize.
 
-      b. Select a :guilabel:`BSON type`.
+      #. Select a :guilabel:`BSON type`.
 
-      c. Select a :guilabel:`Null handling` option.
+      #. Select a :guilabel:`Null handling` option.
 
          - :guilabel:`Insert as null`: preserves null values, and nulls 
            are inserted into your destination collection.
