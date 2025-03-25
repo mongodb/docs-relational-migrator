@@ -143,7 +143,7 @@ Explore libraries and tools for MongoDB.
    :titlesonly:
    :hidden:
 
-   Introduction </getting-started>
+   Overview </getting-started>
    Installation </installation>
    Connect to Databases </database-connections/database-connections>
    Data Modeling </mapping-rules/introduction>
