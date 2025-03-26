@@ -22,6 +22,8 @@ When creating a project with a live connection you:
 
 - Select the database, schema, and tables that are part of the migration.
 
+.. include:: /includes/fact-supports-oracle-materialized-views.rst
+
 About this Task
 ---------------
 
