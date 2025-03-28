@@ -23,7 +23,7 @@ About this Task
   need to be the same as the credentials used when creating your project.
 
 - You use an existing :ref:`Relational Database Connection
-  <rm-save-relational-connection>`, or create one when you create the migration job.
+  <rm-database-connections>`, or create one when you create the migration job.
 
 .. include:: /includes/fact-kafka-additional-time.rst
 
@@ -53,7 +53,7 @@ Steps
      On the :guilabel:`Connect to your source database` form, enter the
      connection details to create the JDBC URI for your relational database. 
       
-     To use a saved :ref:`relational database connection <rm-save-relational-connection>`, 
+     To use a saved :ref:`relational database connection <rm-database-connections>`, 
      click :guilabel:`Use a saved connection`
      and select it from the drop-down, then enter credentials if required.
       

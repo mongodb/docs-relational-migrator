@@ -1,5 +1,5 @@
 - For information about supported databases and versions, see 
-  :ref:`rm-supported-dbs-and-versions`.
+  :ref:`<supported-databases>`.
 
 - For information on managing saved connections, see :ref:`Manage Database Connections <rm-manage-connections>`.
 
