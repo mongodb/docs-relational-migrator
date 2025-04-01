@@ -30,6 +30,13 @@ model can be influenced by customizing:
 .. image:: /img/schema-mapping/schema-mapping-relational-migrator-concept-diagram-b.png
    :figwidth: 450 px
    :alt: Schema Mapping Concept
+  
+.. tip::
+
+   If you use an Oracle relational database, {+rel-mig+} supports *materialized views*.
+   You can use materialized views to simplify complex mappings involving many tables 
+   into a single source table. {+rel-mig+} does not support materialized views for other 
+   databases at this time.
 
 Example
 -------

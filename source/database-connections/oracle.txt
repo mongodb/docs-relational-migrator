@@ -33,6 +33,20 @@ About this Task
    For information on database configuration and required permissions, see
    :ref:`Configure Oracle <rm-prereq-oracle>`.
 
+.. _rm-oracle-materialized-views:
+
+Materialized Views
+~~~~~~~~~~~~~~~~~~
+
+{+rel-mig+} supports Oracle materialized views. If your data model requires 
+complex mappings involving many tables, you can create a materialized view 
+using a custom SQL query instead. The materialized view acts as a single source 
+table and simplifies the required mappings. Performing complex joins in your 
+Oracle source database can streamline your migration project and may improve 
+performance compared to a migration job that performs the same transformations 
+live. For more information, see the 
+`Oracle SQL Language Reference <https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/CREATE-MATERIALIZED-VIEW.html>`__.
+
 Steps
 -----
 
