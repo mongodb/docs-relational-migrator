@@ -58,7 +58,7 @@ that are expected to run for less than one day.
 
 .. note:: 
   
-   If you need to perform a larger migration, you can break the migration into multiple 
+   If you must perform a larger migration, you can break the migration into multiple 
    jobs using :ref:`table filters <rm-table-filters>`.
 
 
