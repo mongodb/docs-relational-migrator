@@ -16,7 +16,7 @@ Supported Deployment Models
 ---------------------------
 
 The following table describes {+rel-mig+}'s supported deployment models  
-and the recommended use cases for each deployment model:
+and example use cases for each deployment model:
 
 .. list-table::
    :header-rows: 1
@@ -53,12 +53,12 @@ Local Desktop
 ~~~~~~~~~~~~~
 
 You can install {+rel-mig+} to a single machine that cannot be externally accessed.
-Installing locally is suitable for development, evaluation, and small production jobs 
+Local installations are suitable for development, evaluation, and small production jobs 
 that are expected to run for less than one day.
 
 .. note:: 
   
-   If you must perform a larger migration, you can split the migration into multiple 
+   If you must perform a large migration, you can split the migration into multiple 
    jobs using :ref:`table filters <rm-table-filters>`.
 
 
@@ -77,7 +77,7 @@ including tests and production migrations.
 .. note::
    
    Installing {+rel-mig+} on an unattended server is not a highly-available solution. 
-   Users must monitor the server and intervene if an application issue occurs. 
+   If an application issue occurs, users must manually intervene. 
 
 For more information, see :ref:`<unattended-server>`.
 
@@ -87,8 +87,8 @@ Kafka Cluster
 ~~~~~~~~~~~~~
 
 `Apache Kafka <https://kafka.apache.org/>`__ is an open-source platform for distributed 
-workloads. If you are using {+rel-mig+} for critical production workloads or long-running 
-:abbr:`CDC (Change Data Capture)` syncs, Kafka is recommended. Using {+rel-mig+}
+workloads. If you use {+rel-mig+} for critical production workloads or long-running 
+:abbr:`CDC (Change Data Capture)` syncs, MongoDB recommends Kafka. Using {+rel-mig+}
 as a Kafka Connect plugin can enable high availability and automatic failure recovery, provided
 that the underlying cluster configuration supports these features.
 
