@@ -10,3 +10,5 @@ Relational Migrator:
 .. code-block::
 
    migrator.app.telemetry.enable: false 
+
+For information about the ``user.properties`` file location, see :ref:`<file-location>`.
