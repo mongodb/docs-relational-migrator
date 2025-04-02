@@ -1,8 +1,8 @@
 .. _unattended-server:
 
-=============================
-Production Installation Guide
-=============================
+=======================
+Production Installation
+=======================
 
 .. default-domain:: mongodb
 

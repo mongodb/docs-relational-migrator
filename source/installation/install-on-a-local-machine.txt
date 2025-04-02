@@ -1,8 +1,8 @@
 .. _local-machine-install:
 
-============================
-Developer Installation Guide
-============================
+========================
+Development Installation
+========================
 
 .. default-domain:: mongodb
 
