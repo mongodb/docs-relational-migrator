@@ -19,7 +19,7 @@ Connect to Oracle
 .. tip::
    
    {+rel-mig+} supports Oracle materialized views. Use materialized views
-   to simplify complex :ref:`mapping rules <rm-mapping-rules>` involving 
+   to simplify complex :ref:`mapping rules <rm-mapping-rules>` that invole 
    multiple tables into a single source table. For more information, see the 
    `Oracle SQL Language Reference <https://docs.oracle.com/en/database/oracle/oracle-database/23/sqlrf/CREATE-MATERIALIZED-VIEW.html>`__.
 
