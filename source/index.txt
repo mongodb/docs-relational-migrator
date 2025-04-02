@@ -146,6 +146,7 @@ Explore libraries and tools for MongoDB.
    Overview </getting-started>
    Installation </installation>
    Connect to Databases </database-connections/database-connections>
+   Pre-Migration Analysis </app-analysis>
    Data Modeling </mapping-rules/introduction>
    Data Migration </jobs/sync-jobs>
    Code Generation </code-generation>
