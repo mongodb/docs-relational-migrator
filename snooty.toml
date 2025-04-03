@@ -14,7 +14,7 @@ toc_landing_pages = [
 "installation/install-on-a-local-machine",
 "installation/install-on-an-unattended-server",
 "installation/kafka-deployments/migrator-with-kafka",
-"database-connections/database-connections",
+"database-connections",
 "app-analysis",
 "projects",
 "mapping-rules/introduction",
