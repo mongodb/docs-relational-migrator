@@ -54,7 +54,7 @@ Steps
 
    .. step:: Configure environment variables
 
-      a. Configure ``MIGRATOR_DATA_PATH``
+      a. Configure ``MIGRATOR_PATH_DATA``
 
          In your ``docker-compose`` file, configure the ``MIGRATOR_DATA_PATH`` variable to a 
          path where {+rel-mig+} saves data for persistence.
