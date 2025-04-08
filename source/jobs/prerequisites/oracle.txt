@@ -152,7 +152,7 @@ Steps
             the container database. The service user should be assigned a 
             quota on those tablespaces.
 
-            .. code-block: sql
+            .. code-block:: sql
                :copyable: true
 
                CONNECT sys/oraclepw@PDB_NAME as sysdba;
@@ -268,7 +268,7 @@ Steps
             the container database. The service user should be assigned a 
             quota on those tablespaces.
 
-            .. code-block: sql
+            .. code-block:: sql
                :copyable: true
 
                CREATE TABLESPACE logminer_tbs;
