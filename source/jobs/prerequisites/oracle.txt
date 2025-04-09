@@ -147,10 +147,7 @@ Steps
 
          .. step:: Create tablespaces
 
-            a. A continuous migration in a multi-tenant architecture requires 
-               a tablespace to be created in each pluggable database and in 
-               the container database. The service user should be assigned a 
-               quota on those tablespaces.
+            a. Create the required tablespaces:
 
                .. code-block:: sql
                   :copyable: true
@@ -163,7 +160,11 @@ Steps
                   CREATE TABLESPACE logminer_tbs DATAFILE '/opt/oracle/oradata/CDB_NAME/logminer_tbs.dbf'
                   SIZE 25M REUSE AUTOEXTEND ON MAXSIZE UNLIMITED;
 
-            #. Assign quote for the tablespaces to the service user:
+               A continuous migration in a multi-tenant architecture requires 
+               a tablespace in each pluggable database and in the container 
+               database.
+
+            #. Assign quota for the tablespaces to the service user:
 
                .. code-block:: sql
                   :copyable: true
@@ -263,16 +264,17 @@ Steps
          
          .. step:: Create tablespaces
 
-            A continuous migration in a multi-tenant architecture requires 
-            a tablespace to be created in each pluggable database and in 
-            the container database. The service user should be assigned a 
-            quota on those tablespaces.
-
+            Create the required tablespaces:
+            
             .. code-block:: sql
                :copyable: true
 
                CREATE TABLESPACE logminer_tbs;
                CALL rdsadmin.rdsadmin_util.alter_default_tablespace(tablespace_name => 'logminer_tbs');
+
+            A continuous migration in a multi-tenant architecture requires a 
+            tablespace in each pluggable database and in the container database. 
+            Assign the service user a quota on those tablespaces.
 
 Learn More
 ----------
