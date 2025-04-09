@@ -147,28 +147,28 @@ Steps
 
          .. step:: Create tablespaces
 
-            A continuous migration in a multi-tenant architecture requires 
-            a tablespace to be created in each pluggable database and in 
-            the container database. The service user should be assigned a 
-            quota on those tablespaces.
+            a. A continuous migration in a multi-tenant architecture requires 
+               a tablespace to be created in each pluggable database and in 
+               the container database. The service user should be assigned a 
+               quota on those tablespaces.
 
-            .. code-block:: sql
-               :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-               CONNECT sys/oraclepw@PDB_NAME as sysdba;
-               CREATE TABLESPACE logminer_tbs DATAFILE '/opt/oracle/oradata/CDB_NAME/PDB_NAME/logminer_tbs.dbf'
-               SIZE 25M REUSE AUTOEXTEND ON MAXSIZE UNLIMITED
+                  CONNECT sys/oraclepw@PDB_NAME as sysdba;
+                  CREATE TABLESPACE logminer_tbs DATAFILE '/opt/oracle/oradata/CDB_NAME/PDB_NAME/logminer_tbs.dbf'
+                  SIZE 25M REUSE AUTOEXTEND ON MAXSIZE UNLIMITED
 
-               CONNECT sys/password@CDB_NAME as sysdba;
-               CREATE TABLESPACE logminer_tbs DATAFILE '/opt/oracle/oradata/CDB_NAME/logminer_tbs.dbf'
-               SIZE 25M REUSE AUTOEXTEND ON MAXSIZE UNLIMITED;
+                  CONNECT sys/password@CDB_NAME as sysdba;
+                  CREATE TABLESPACE logminer_tbs DATAFILE '/opt/oracle/oradata/CDB_NAME/logminer_tbs.dbf'
+                  SIZE 25M REUSE AUTOEXTEND ON MAXSIZE UNLIMITED;
 
-            Assign quote for the tablespaces to the service user:
+            #. Assign quote for the tablespaces to the service user:
 
-            .. code-block: sql
-               :copyable: true
+               .. code-block:: sql
+                  :copyable: true
 
-               ALTER USER <user> DEFAULT TABLESPACE LOGMINER_TBS QUOTA UNLIMITED ON LOGMINER_TBS CONTAINER=ALL;
+                  ALTER USER <user> DEFAULT TABLESPACE LOGMINER_TBS QUOTA UNLIMITED ON LOGMINER_TBS CONTAINER=ALL;
 
    .. tab:: Continuous Jobs (Amazon RDS)
       :tabid: enable-continuous-jobs-rds
