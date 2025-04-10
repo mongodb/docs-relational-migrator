@@ -72,14 +72,14 @@ the following actions:
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-1.rst
       
-   To create a connection string:
+      To create a connection string:
    
-   .. procedure::
-      :style: normal 
+      .. procedure::
+         :style: normal 
       
-      .. step:: Enter the following database informatino:
+         .. step:: Enter the following database informatino:
 
-         .. include:: /includes/table-mysql-connection-fields.rst
+            .. include:: /includes/table-mysql-connection-fields.rst
 
    .. include:: /includes/database-connections/connect-to-db-steps-part-2.rst
 
