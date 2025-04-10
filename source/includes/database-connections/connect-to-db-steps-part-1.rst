@@ -6,8 +6,17 @@
       
    In the :guilabel:`Database type` drop-down, select |db-type|.
 
-.. step:: To enter a connection string directly:
+.. step:: Add a connection string
+   
+   You can enter a connection string directly, or create a connection string by 
+   entering your database information.
+   
+   To enter a connection string directly:
+     
+      a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
+      
+      #. Paste your connection string into the :guilabel:`JDBC URI`.
 
-   a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
+   To create a connection string, enter the following:
+   
 
-   #. Paste your connection string into the :guilabel:`JDBC URI`.

@@ -1,8 +1,8 @@
 .. _kafka-intro:
 
-======================
-Kafka Deployment Guide
-======================
+=================
+Kafka Deployments
+=================
 
 .. default-domain:: mongodb
 

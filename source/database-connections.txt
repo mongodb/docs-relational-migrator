@@ -40,10 +40,10 @@ Use {+rel-mig+} Without a Live Database Connection
 If you don't have a live connection to your relational database, you can 
 use the following options to visualize and model your data:
 
-- Create a project with Data Definition Language (DDL) files exported from 
+- :ref:`Create a project with Data Definition Language (DDL) files <create-project-schema-file>` exported from 
   your relational database.
 
-- Create a project using a sample relational database schema.
+- :ref:`Create a project using a sample relational database schema <create-project-sample-schema>`.
 
 .. note::
 

@@ -73,7 +73,8 @@ migrations. For more information, see :ref:`<kafka-intro>`.
 Use Cases
 ---------
 
-{+rel-mig+} supports both Snapshot and Continuous migration jobs.
+{+rel-mig+} supports both Snapshot and Continuous 
+:ref:`migration jobs <rm-migration-job-types>`.
 
 .. include:: /includes/fact-short-sync-job-desc.rst
 
@@ -115,7 +116,7 @@ Migrate Without Downtime
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your application must remain online to support reads and writes
-during the migration process, you can use Change Data Capture (CDC) to
+during the migration process, you can use Change Data Capture to
 migrate data without downtime. This process is called a **continuous**
 migration.
 
@@ -138,9 +139,6 @@ data store. Depending on your workload, migrating a data store could
 cause :abbr:`CDC (Change Data Capture)` to run indefinitely without
 completing, which is not recommended with {+rel-mig+}.
 
-{+rel-mig+} will support more migration scenarios and use cases
-in future releases.
-
 .. _supported-databases:
 
 Supported Databases and Versions
@@ -153,6 +151,7 @@ Source Databases and Versions
 
 .. include:: /includes/table-supported-dbs-and-versions.rst
 
+For information on connecting to relational databases, see :ref:`<rm-database-connections>`.
 
 .. _jdbc-databases:
 
@@ -176,6 +175,7 @@ Target Databases and Versions
 
 .. include:: /includes/table-supported-mongodb-versions.rst
 
+For information on connecting to MongoDB, see :ref:`<rm-connect-to-mongo>`.
 
 Learn More
 ----------
