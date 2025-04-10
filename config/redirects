@@ -86,3 +86,7 @@ define: versions master
 [*]: ${prefix}/connection-strings -> ${base}/database-connections/database-connections
 [*]: ${prefix}/connection-strings/mongodb-database-connection-strings -> ${base}/database-connections/database-connections
 [*]: ${prefix}/connection-strings/relational-database-connection-strings -> ${base}/database-connections/database-connections
+
+# DOCSP-48961 final review before merging docs-uplift into master
+[*]: ${prefix}/projects/create-project-sample-schema -> ${base}/database-connections/create-project-sample-schema
+[*]: ${prefix}/projects/create-project-loading-schema-files -> ${base}/database-connections/create-project-loading-schema-files

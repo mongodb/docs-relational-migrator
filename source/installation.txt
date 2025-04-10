@@ -88,7 +88,7 @@ Kafka Cluster
 
 `Apache Kafka <https://kafka.apache.org/>`__ is an open-source platform for distributed 
 workloads. If you use {+rel-mig+} for critical production workloads or long-running 
-:abbr:`CDC (Change Data Capture)` syncs, MongoDB recommends Kafka. Using {+rel-mig+}
+:abbr:`CDC (Change Data Capture)` syncs, MongoDB recommends using Kafka. Using {+rel-mig+}
 as a Kafka Connect plugin can enable high availability and automatic failure recovery, provided
 that the underlying cluster configuration supports these features.
 

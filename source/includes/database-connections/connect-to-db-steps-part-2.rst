@@ -6,10 +6,12 @@
    convenience. Leaving the drop-down empty is the same as selecting 
    the "None" tag.
 
-.. step:: (Optional) Click :guilabel:`Test connection`
+.. step:: Test and save your connection
+   
+   a. (Optional) Click :guilabel:`Test connection`
 
-   {+rel-mig+} attempts to authenticate and connect to the database.
+         {+rel-mig+} attempts to authenticate and connect to the database.
          
-.. step:: Click :guilabel:`Save`
+   #. Click :guilabel:`Save`
 
-   The saved connection is available for use in all jobs and projects.
+      The saved connection is available for use in all jobs and projects.

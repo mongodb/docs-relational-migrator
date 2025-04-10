@@ -49,5 +49,5 @@ Get Started
    :titlesonly:
    :hidden:
 
-   Load a DDL File </projects/create-project-loading-schema-files.txt>
-   Use Sample Schema </projects/create-project-sample-schema.txt>
+   Load a DDL File </database-connections/create-project-loading-schema-files.txt>
+   Use Sample Schema </database-connections/create-project-sample-schema.txt>
