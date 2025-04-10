@@ -11,8 +11,11 @@
    You can enter a connection string directly, or create a connection string by 
    entering your database information.
    
-   To enter a connection string directly:
+   To enter a connection string directly: 
+   
+   .. procedure::
+      :style: normal
      
-      a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
+      .. step:: Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
       
-      #. Paste your connection string into the :guilabel:`JDBC URI`.
+      .. step:: Paste your connection string into the :guilabel:`JDBC URI`.
