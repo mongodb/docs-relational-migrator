@@ -10,7 +10,7 @@
    
    a. (Optional) Click :guilabel:`Test connection`
 
-         {+rel-mig+} attempts to authenticate and connect to the database.
+      {+rel-mig+} attempts to authenticate and connect to the database.
          
    #. Click :guilabel:`Save`
 
