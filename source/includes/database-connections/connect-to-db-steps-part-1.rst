@@ -16,7 +16,3 @@
       a. Above :guilabel:`JDBC URI`, enable the :guilabel:`Enter URI manually` toggle.
       
       #. Paste your connection string into the :guilabel:`JDBC URI`.
-
-   To create a connection string, enter the following:
-   
-
