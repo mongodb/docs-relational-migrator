@@ -31,7 +31,7 @@ To connect to a source relational database, see the following procedures:
 - :ref:`Connect to Sybase <rm-connect-to-sybase>`
 - :ref:`Connect to DB2 <rm-connect-to-db2>`
 
-To connect to a MongoDB instance, see :ref:`Connect to MongoDB <rm-connect-to-mongo>`.
+To connect to a destination database, see :ref:`Connect to MongoDB <rm-connect-to-mongo>`.
 
 
 Use {+rel-mig+} Without a Live Database Connection
