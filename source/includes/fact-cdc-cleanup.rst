@@ -1,2 +1,2 @@
-Continuous migration jobs may create additional cache collections that are 
-removed upon completion.
+Continuous migration jobs may create temporary cache collections that are 
+removed on completion.
