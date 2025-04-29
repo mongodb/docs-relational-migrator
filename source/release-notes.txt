@@ -24,18 +24,19 @@ page.
 
 Data Integrity Advisory:
 
-.. important::
+.. warning::
 
    This release includes two critical fixes for data integrity issues affecting 
-   Snapshot and Continuous Migrations as listed below. The Relational Migrator 
-   team has also identified further data integrity issues that affect certain 
-   Continuous Migration configurations. These issues are scheduled to 
-   be addressed shortly in an upcoming release. For safety, this release 
-   temporarily disables Continuous Migrations (CDC mode) for projects which 
-   include any embedded document or array mappings. Potentially affected users 
-   will be provided instructions to override this check.
-
- 
+   previous versions of Relational Migrator. The Relational Migrator team has 
+   also identified further data integrity issues that affect certain Snapshot 
+   and Continuous Migration configurations. These issues are scheduled to be 
+   addressed in an upcoming release. This 1.13.1 release temporarily disables 
+   Continuous Migrations (CDC mode) for projects which include any embedded 
+   document or array mappings. If Relational Migrator indicates that you may
+   be affected when running a new CDC job after upgrading, MongoDB recommends
+   holding off on performing Continuous Migration jobs in production or
+   manually verifying your migrated data for potential data loss until further 
+   updates are available.
 
 Critical Bug Fixes:
 
@@ -57,7 +58,7 @@ Improvements:
 - Improved error and warning reporting for pre-migration and post-migration 
   tasks.
 - Imported and new projects now use a consistent naming scheme to generate 
-  their overall project ID.
+  their project ID.
 - Added support for Oracle JDBC Driver version 23.
  
 
