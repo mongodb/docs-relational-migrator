@@ -17,6 +17,51 @@ Download the latest {+rel-mig+} binary from the `release page <https://www.mongo
 For installation instructions, see the :ref:`Installation <installation>` 
 page. 
 
+1.13.1 Changelog
+----------------
+
+*Released April 29, 2025*
+
+Important Data Integrity Advisory:
+
+This release includes two critical fixes for data integrity issues affecting 
+Snapshot and Continuous Migrations as listed below. The Relational Migrator 
+team has also identified additional data integrity issues that affect certain 
+Continuous Migration configurations. These additional issues are scheduled to 
+be addressed shortly in an upcoming release. For safety, this release 
+temporarily disables Continuous Migrations (CDC mode) for projects which 
+include any embedded document or array mappings. Potentially affected users 
+will be provided instructions to override this check.
+
+ 
+
+Critical Bug Fixes:
+
+- Fixed an issue where Snapshot Migrations could fail to populate deeply nested 
+  Embedded Arrays if the mappings are structured such that an Embedded Document 
+  mapping is between two Embedded Array mappings in the mapping hierarchy.
+- Fixed an issue with Continuous Migrations where relational tables with no 
+  primary key could cause duplicate entries in embedded arrays when the row 
+  is updated.
+ 
+
+Improvements:
+
+- Improved performance for snapshot migrations containing embedded arrays.
+- Faster initial database loads when connecting to large databases containing many tables.
+- Enhanced migration and verification errors with additional details and debugging information. 
+- Improved error and warning reporting for pre-migration and post-migration tasks.
+- Imported and new projects now use a consistent naming scheme to generate their overall project ID.
+- Added support for Oracle JDBC Driver version 23.
+ 
+
+Bug Fixes:
+
+- Fixed an issue with idempotent-mode snapshot migrations where subsequent runs of the migration could cause duplicate entries in embedded arrays. This occurs with nested mappings where the embedded array contains additional embedded documents or arrays.
+- Fixed an issue where fields containing dot characters in their name cause errors during snapshot and continuous migrations.
+- Fixed issues where editing an embedded mapping field to add the prefix _id would result in the unexpected UI behaviour.
+- Updated generated prerequisite configuration and permissions SQL script for Oracle to include AWS RDS instructions.
+
 1.13.0 Changelog
 ----------------
 
