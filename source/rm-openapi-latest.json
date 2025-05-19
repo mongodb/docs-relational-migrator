@@ -17,7 +17,7 @@
     "/analysis/{projectId}/task": {
       "get": {
         "operationId": "getAnalysisTask",
-        "description": "Get pre-migration analysis task by `projectId`!",
+        "description": "Get pre-migration analysis task by `projectId`.",
         "parameters": [
           {
             "name": "projectId",
