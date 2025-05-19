@@ -5,14 +5,14 @@ on:
   workflow_dispatch: # Allow manual trigger in case of quick fix
   push:
     branches:
-      - main
+      - master
     paths:
       - 'source/rm-openapi-latest.json'
 
   # For previews
   pull_request:
     branches:
-      - main
+      - master
     paths:
       - 'source/rm-openapi-latest.json'
 
