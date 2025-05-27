@@ -24,11 +24,14 @@ page.
 
 Data Integrity Issues Update: 
 
-Investigation and resolution of data integrity issues affecting certain CDC and 
-snapshot migration configurations is ongoing as a high-priority project. 
-Continuous mode migrations (CDC) remains disabled in this release for projects 
-that contain embedded documents and arrays. Note that snapshot migrations and 
-'one-to-one' CDC migrations that contain no embeddings are still enabled. 
+.. warning::
+
+   Investigation and resolution of data integrity issues affecting certain CDC 
+   and snapshot migration configurations is ongoing as a high-priority project. 
+   Continuous mode migrations (CDC) remains disabled in this release for
+   projects that contain embedded documents and arrays. Note that snapshot 
+   migrations and 'one-to-one' CDC migrations that contain no embeddings are 
+   still enabled. 
 
 Critical Bug Fixes:
 
