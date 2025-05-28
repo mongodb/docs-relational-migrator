@@ -130,7 +130,15 @@ Steps
             After you select all the tables in the database, click 
             :guilabel:`Next`.
 
-         .. step:: 
+         .. step:: Define your schema
+
+            Under :guilabel:`Initial mappings`, ensure that you select 
+            :guilabel:`Start with a MongoDB schema that matches your relational schema`
+            and click :guilabel:`Next`. 
+
+         .. step:: Name your project 
+
+         .. step:: Click Done 
 
 Learn More
 ----------
