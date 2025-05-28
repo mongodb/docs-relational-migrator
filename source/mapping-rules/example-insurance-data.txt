@@ -1,0 +1,138 @@
+.. _rm-example-insurance-data:
+
+==============================
+Example: Insurance Data Models
+==============================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+
+
+About this Task
+---------------
+
+In this tutorial, you will use the {+rel-mig+} to transform a 21-table schema 
+into a simple five-collection MongoDB model. Specifically, we will focus on the 
+Object Management Group’s `Party Role model <https://www.omg.org/spec/PC/1.0/PDF>`__ 
+and how the model can be ported from a relational structure to MongoDB’s 
+document model.
+
+Before You Begin 
+----------------
+
+This example uses PostgreSQL as the relational database management system that 
+holds the original schema to migrate to MongoDB. Ensure you have access 
+to a PostgreSQL database server instance with permissions to create a new 
+database and user. The instance can be in the cloud, on-prem, or on your local 
+machine.
+
+Install the following PostgreSQL Client Applications: 
+
+- `psql <https://www.postgresql.org/docs/15/app-psql.html>`__: a command-line 
+  application that allows you to interactively type in queries, issue them to 
+  PostgreSQL, and see the query results.
+
+- `pg_restore <https://www.postgresql.org/docs/15/app-pgrestore.html>`__: a 
+  command-line application that restores the PostgreSQL database from the 
+  `sample archive file <https://github.com/mongodb-industry-solutions/insurance-relational-refactoring>`__.
+  
+  - This archive file contains all the tables, relationships, and sample data 
+    from the Party Role model in a tabular format. 
+
+Steps 
+-----
+
+.. procedure:: 
+   :style: normal
+
+   .. step:: Replicate the Party Role model in PostgreSQL
+
+      .. procedure:: 
+         :style: connected 
+
+         .. step:: Connect to the PostgreSQL database 
+
+            .. code-block:: 
+               
+               psql -h <host> -p <port> -U <user> -d <database>
+
+            If you have a newly installed local instance with default 
+            parameters, use ``127.0.0.1`` as your host, ``5432`` as your 
+            port, ``postgres`` as your database, and type ``whoami`` in your 
+            terminal for a default username.
+
+         .. step:: Create a database to load your data 
+
+            .. code-block:: 
+               
+               CREATE DATABASE mongodb_insurance_model;
+
+         .. step:: Create a user that has access to the new database 
+
+            .. code-block:: 
+               
+               CREATE USER istadmin WITH PASSWORD `<password>`;
+               ALTER DATABASE mongodb_insurance_model OWNER TO istadmin;
+            
+            Ensure that you replace ``<password>`` with a strong password of 
+            your choice.
+
+         .. step:: Populate the database with the Party Role model. 
+
+            Navigate to the folder where you downloaded the archive file's 
+            backup of the database and run the following command to load the 
+            data: 
+
+            .. code-block:: 
+               
+               pg_restore -h <host> -p <port> -U <user> -d mongodb_insurance_model mongodb_insurance_model.tar
+
+         .. step:: Verify the successful restore of the database 
+
+            .. code-block:: 
+
+               psql -h <host> -p <port> -U <user>-d mongodb_insurance_model -c "SELECT * FROM pg_catalog.pg_tables WHERE schemaname='omg';"
+
+            You should see a list of 21 tables similar to the following image: 
+
+            .. image:: /img/mapping-rules/mapping-rule-insurance-tables.png
+               :alt: List of 21 tables in the Party Role model
+
+   .. step:: Connect to {+rel-mig+}
+
+      .. procedure:: 
+         :style: connected 
+
+         .. step:: Create a new project in {+rel-mig+}
+
+            Click :guilabel:`New Project` at the top-right of the {+rel-mig+} 
+            home screen.
+
+         .. step:: Connect to your PostgreSQL database
+
+            Click the :guilabel:`Connect to Database` button and select 
+            :guilabel:`PostgreSQL` in the drop-down menu. Enter the connection 
+            details for your PostgreSQL instance, including the host, port,
+            user, and password. 
+
+            Ensure that you test your connection before you click 
+            :guilabel:`Connect`. If you receive a ``no encryption`` error, click 
+            on the :guilabel:`SSL` tab and enable :guilabel:`Use SSL`.
+         
+         .. step:: Select all tables from the OMG schema in the mongodb_insurance_model database 
+
+            After you select all the tables in the database, click 
+            :guilabel:`Next`.
+
+         .. step:: 
+
+Learn More
+----------
+
+
