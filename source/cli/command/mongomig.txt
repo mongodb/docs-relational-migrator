@@ -1,0 +1,82 @@
+.. _mongomig:
+
+========
+mongomig
+========
+
+.. meta::
+   :description: Manage migrations to MongoDB using the Relational Migrator CLI with intuitive terminal commands.
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+CLI tool to manage MongoDB Relational Migrator.
+
+The Relational Migrator CLI is a command line interface built specifically for MongoDB Atlas. You can manage your migration jobs from the terminal with short, intuitive commands.
+		
+Use the --help flag with any command for more info on that command.
+
+Options
+-------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 10 10 60
+
+   * - Name
+     - Type
+     - Required
+     - Description
+   * - -h, --help
+     - 
+     - false
+     - Shows help for mongomig.
+   * - -v, --version
+     - string
+     - false
+     - Shows the current version of mongomig.
+
+Examples
+--------
+
+.. code-block::
+   :copyable: false
+
+   # Display the help menu for mongomig:
+   mongomig --help
+
+Related Commands
+----------------
+
+* :ref:`mongomig-diagnostic` - Generate and download a diagnostic file for your migration project.
+* :ref:`mongomig-project-list` - 
+* :ref:`mongomig-project-import` - 
+* :ref:`mongomig-project-delete` - 
+* :ref:`mongomig-job-list` - 
+* :ref:`mongomig-job-start` - 
+* :ref:`mongomig-job-status` - 
+* :ref:`mongomig-job-log` - 
+* :ref:`mongomig-job-pause` - 
+* :ref:`mongomig-job-resume` - 
+* :ref:`mongomig-job-stop` - 
+
+
+.. toctree::
+   :titlesonly:
+
+   diagnostic </cli/command/mongomig-diagnostic>
+   project list </cli/command/>
+   project import </cli/command/>
+   project delete </cli/command/>
+   job list </cli/command/>
+   job start </cli/command/>
+   job status </cli/command/>
+   job log </cli/command/>
+   job pause  </cli/command/>
+   job resume </cli/command/>
+   job stop </cli/command/>

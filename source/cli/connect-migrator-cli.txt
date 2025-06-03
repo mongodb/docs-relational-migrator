@@ -1,0 +1,35 @@
+.. _connect-migrator-cli:
+
+========================================
+Connect from the Relational Migrator CLI
+========================================
+
+.. meta::
+   :description: 
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Test Locally
+------------
+
+You can test the CLI locally by running the following command with any optional arguments:
+
+.. code-block::
+   :copyable: false
+
+   ./gradlew cli --args="<command><argument>"
+
+The following example runs ``mongomig project list`` locally and returns a list of migrator 
+projects:
+
+.. code-block::
+   :copyable: false
+
+   # Display the help menu for mongomig:
+   ./gradlew cli --args="project list"

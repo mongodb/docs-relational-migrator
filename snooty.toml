@@ -35,6 +35,7 @@ toc_landing_pages = [
 "diagrams/manage-diagrams",
 "getting-started",
 "api-docs",
+"command-line-interface",
 "deployment-considerations",
 "code-generation/query-converter-test-queries",
 "code-generation/query-converter/query-management",

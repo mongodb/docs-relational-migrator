@@ -1,0 +1,16 @@
+.. _rm-cli-overview:
+
+=======================
+Relational Migrator CLI
+=======================
+
+The Relational Migrator CLI is a command line interface built specifcally for 
+Relational Migrator. Interact with your projects, manage migration jobs, and 
+generate diagnostics with short, intuitive commands.
+
+.. toctree::
+   :hidden:
+   :titlesonly:
+
+   Install or Update </cli/install-migrator-cli>
+   mongomig </cli/command/mongomig>

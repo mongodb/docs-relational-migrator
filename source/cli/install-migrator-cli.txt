@@ -1,0 +1,16 @@
+.. _install-migrator-cli:
+
+=============================================
+Install or Update the Relational Migrator CLI
+=============================================
+
+.. meta::
+   :description: 
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol

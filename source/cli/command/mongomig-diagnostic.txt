@@ -1,0 +1,79 @@
+.. _mongomig-diagnostic:
+
+===================
+mongomig diagnostic
+===================
+
+.. meta::
+   :description: Generate and download a diagnostic file for your migration project using the CLI.
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 1
+   :class: singlecol
+
+Generates and returns a diagnostic file for the specified project.
+
+Syntax
+------
+
+.. code-block::
+   :caption: Command Syntax
+
+   mongomig diagnostic <project-id>[options]
+
+.. Code end marker, please don't delete this comment
+
+Arguments
+---------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 10 10 60
+
+   * - Name
+     - Type
+     - Required
+     - Description
+   * - project-id
+     - string
+     - false
+     - The project ID of the migration project that you want diagnostics for.
+
+Options
+-------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 20 10 10 60
+
+   * - Name
+     - Type
+     - Required
+     - Description
+   * - -h, --help
+     - 
+     - false
+     - Shows help for diagnostic.
+
+Output
+------
+
+If the command succeeds, the CLI returns output similar to the following sample. Values in brackets represent your values.
+
+.. code-block::
+
+   Successfully downloaded diagnostic file to /Users/DownloadLocation/MongoDB-Relational-Migrator-diagnostics-2025-03-03T06:33:25.444675Z.zip
+   
+
+Examples
+--------
+
+.. code-block::
+   :copyable: false
+
+   # Generate and download a diagnostics report for the project with the ID a461918430524db7aa38b0f98a67ec5c
+   mongomig diagnostic a461918430524db7aa38b0f98a67ec5c
