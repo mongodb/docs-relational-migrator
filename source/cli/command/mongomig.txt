@@ -70,13 +70,13 @@ Related Commands
    :titlesonly:
 
    diagnostic </cli/command/mongomig-diagnostic>
-   project list </cli/command/>
-   project import </cli/command/>
-   project delete </cli/command/>
-   job list </cli/command/>
-   job start </cli/command/>
-   job status </cli/command/>
-   job log </cli/command/>
-   job pause  </cli/command/>
-   job resume </cli/command/>
-   job stop </cli/command/>
+   project list </cli/command/mongomig-project-list>
+   project import </cli/command/mongomig-project-import>
+   project delete </cli/command/mongomig-project-delete>
+   job list </cli/command/mongomig-job-list>
+   job start </cli/command/mongomig-job-start>
+   job status </cli/command/mongomig-job-status>
+   job log </cli/command/mongomig-job-log>
+   job pause  </cli/command/mongomig-job-pause>
+   job resume </cli/command/mongomig-job-resume>
+   job stop </cli/command/mongomig-job-stop>
