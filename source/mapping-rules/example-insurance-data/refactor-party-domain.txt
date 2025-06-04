@@ -68,20 +68,24 @@ Steps
       
    .. step:: Add mappings for the party_location_address table
     
-      Next to :guilabel:`Mappings to MongoDB Model`, click :guilabel:`Add` and 
-      select :guilabel:`Embedded array`. Choose 
-      :guilabel:`party_location_address` from the 
-      :guilabel:`Parent collection` drop-down menu. 
+      Next to :guilabel:`Mappings to MongoDB Model` and click :guilabel:`Add`.
+      Since a party can have many location addresses, select 
+      :guilabel:`Embedded array`. Choose :guilabel:`party_location_address` from 
+      the :guilabel:`Source table` drop-down menu. 
 
       Under the :guilabel:`All fields` checkbox, deselect the 
       ``partyIdentifier`` field and click :guilabel:`Save and close`.
 
-   .. step:: Add mappings for the location_address 
+   .. step:: Add mappings for the location_address table
 
       To include the address information within the  ``party_location_address`` 
       collection, click :guilabel:`Add` and select 
       :guilabel:`Embedded document`. Choose :guilabel:`location_address` from 
-      the :guilabel:`Source table` drop-down menu. 
+      the :guilabel:`Source table` drop-down menu.
+
+      Under :guilabel:`Advanced settings`, click the 
+      :guilabel:`Merge fields into the parent` checkbox. This option ensures 
+      that the document doesn't have more nested fields than necessary. 
       
       Click :guilabel:`Save and close`.
 
@@ -99,9 +103,8 @@ Steps
       .. important:: 
 
          Don't delete the ``location_address`` collection, as it still has an 
-         existing relationship with the ``insurable_object`` table that we'll 
-         add mapping rules for in a later step.
-    
+         existing relationship with the ``insurable_object`` table, which we'll 
+         add mapping rules to in a later step.
 
 Next Steps
 ----------

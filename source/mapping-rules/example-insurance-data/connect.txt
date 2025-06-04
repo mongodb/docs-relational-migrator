@@ -56,5 +56,8 @@ Steps
       This generates a schema where each collection corresponds to a table in 
       the original relational schema.
 
+      By default, {+rel-mig+} displays a horizontally split view of the 
+      :guilabel:`Relational` (top) and :guilabel:`MongoDB` (bottom) models. 
+
 Learn More
 ----------
