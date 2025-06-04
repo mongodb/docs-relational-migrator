@@ -1,0 +1,59 @@
+.. _rm-example-connect:
+
+=========================
+Refactor the Party Domain
+=========================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+About this Task 
+---------------
+
+Steps 
+-----
+
+.. procedure:: 
+   :style: normal
+
+   .. step:: Create a new project in {+rel-mig+}
+
+      Click :guilabel:`New Project` at the top-right of the {+rel-mig+} 
+      home screen.
+
+   .. step:: Connect to your PostgreSQL database
+
+      Click the :guilabel:`Connect to Database` button and select 
+      :guilabel:`PostgreSQL` in the drop-down menu. Enter the connection 
+      details for your PostgreSQL instance, including the host, port,
+      user, and password. 
+
+      Ensure that you test your connection before you click 
+      :guilabel:`Connect`. If you receive a ``no encryption`` error, click 
+      on the :guilabel:`SSL` tab and enable :guilabel:`Use SSL`.
+   
+   .. step:: Select all tables from the OMG schema in the mongodb_insurance_model database 
+
+      After you select all the tables in the database, click 
+      :guilabel:`Next`.
+
+   .. step:: Define your schema
+
+      Under :guilabel:`Initial mappings`, ensure that you select 
+      :guilabel:`Start with a MongoDB schema that matches your relational schema`
+      and click :guilabel:`Next`. 
+
+   .. step:: Name your project 
+
+   .. step:: Click Done 
+
+      This generates a schema where each collection corresponds to a table in 
+      the original relational schema.
+
+Learn More
+----------

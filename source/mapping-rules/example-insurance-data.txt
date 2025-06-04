@@ -114,222 +114,42 @@ To replicate the Party Role model in PostgreSQL, follow the following steps:
 Steps 
 -----
 
-The following steps guide you through connecting to your PostgreSQL database and 
-refactoring Party entities into MongoDB documents:
+The example tutorial consists of the following steps:
 
 .. procedure:: 
-   :style: normal
+   :style: normal 
 
-   .. step:: Create a new project in {+rel-mig+}
+   .. step:: Connect to Relational Migrator 
 
-      Click :guilabel:`New Project` at the top-right of the {+rel-mig+} 
-      home screen.
-
-   .. step:: Connect to your PostgreSQL database
-
-      Click the :guilabel:`Connect to Database` button and select 
-      :guilabel:`PostgreSQL` in the drop-down menu. Enter the connection 
-      details for your PostgreSQL instance, including the host, port,
-      user, and password. 
-
-      Ensure that you test your connection before you click 
-      :guilabel:`Connect`. If you receive a ``no encryption`` error, click 
-      on the :guilabel:`SSL` tab and enable :guilabel:`Use SSL`.
-   
-   .. step:: Select all tables from the OMG schema in the mongodb_insurance_model database 
-
-      After you select all the tables in the database, click 
-      :guilabel:`Next`.
-
-   .. step:: Define your schema
-
-      Under :guilabel:`Initial mappings`, ensure that you select 
-      :guilabel:`Start with a MongoDB schema that matches your relational schema`
-      and click :guilabel:`Next`. 
-
-   .. step:: Name your project 
-
-   .. step:: Click Done 
-
-      This generates a schema where each collection corresponds to a table in 
-      the original relational schema.
+      Connect your PostgreSQL database to {+rel-mig}+}. See 
+      :ref:`rm-example-connect`.
 
    .. step:: Refactor the Party domain 
 
-      .. procedure:: 
-         :style: connected
-         
-         .. step:: From the MongoDB view, click the ``party`` collection
-
-            On the right side of the screen, the :guilabel:`Mappings` menu 
-            opens.
-
-         .. step:: Add mappings for the person, organization, and grouping collections
-
-            Next to :guilabel:`Mappings to MongoDB Model`, click 
-            :guilabel:`Add`. Click :guilabel:`Embedded documents` and select 
-            :guilabel:`person` from the :guilabel:`Source table` drop-down menu.
-
-            After you click :guilabel:`Save and close`, repeat this process for 
-            the :guilabel:`organization` and :guilabel:`grouping` tables.
-
-         .. step:: Add mappings for the party_location_address collection
-
-            Next to :guilabel:`Mappings to MongoDB Model`, click 
-            :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
-            :guilabel:`party_location_address` from the 
-            :guilabel:`Parent collection` drop-down menu. 
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``partyIdentifier`` field and click :guilabel:`Save and close`.
-
-         .. step:: Add mappings for the location_address 
-
-            To include the address information within the  
-            ``party_location_address`` collection, click 
-            :guilabel:`Add` and select :guilabel:`Embedded document`. Choose 
-            :guilabel:`location_address` from the :guilabel:`Source table` 
-            drop-down menu. 
-            
-            Click :guilabel:`Save and close`.
+      Refactor the Party domain in the MongoDB view of {+rel-mig+}. See
+      :ref:`rm-example-refactor-party-domain`.
 
    .. step:: Refactor the Policy domain 
 
-      .. procedure:: 
-         :style: connected
-         
-         .. step:: From the MongoDB view, click the policy collection
+      Refactor the Policy domain in the MongoDB view of {+rel-mig+}. See
+      :ref:`rm-example-refactor-policy-domain`.
 
-            On the right side of the screen, the :guilabel:`Mappings` menu 
-            opens.
+   .. step:: Refactor the Claim & Litigation domain 
 
-         .. step:: Add mappings for the policy_party_role collection
+      Refactor the Claim & Litigation domains in the MongoDB view of 
+      {+rel-mig+}. See :ref:`rm-example-refactor-claim-litigation-domain`.
 
-            Next to :guilabel:`Mappings to MongoDB Model`, click 
-            :guilabel:`Add`. Click :guilabel:`Embedded array` and select 
-            :guilabel:`policy_party_role` from the :guilabel:`Source table` 
-            drop-down menu.
+   .. step:: Migrate your data to MongoDB
 
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``partyIdentifier`` field and click :guilabel:`Save and close`.
+      Migrate your data to your MongoDB instance by using the {+rel-mig+}. See 
+      :ref:`rm-example-insurance-migrate-data`.
 
-         .. step:: Add mappings for the agreement collection
+.. toctree::
+   :titlesonly:
+   :hidden:
 
-            Next to :guilabel:`Mappings to MongoDB Model`, click 
-            :guilabel:`Add` and select :guilabel:`Embedded document`. Choose 
-            :guilabel:`agreement` from the :guilabel:`Source table` drop-down 
-            menu. 
-
-            Click :guilabel:`Save and close`.
-
-         .. step:: Add mappings for the policy_coverage_part collection
-
-            To include the coverage information from the  
-            ``policy_coverage_part`` collection, click 
-            :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
-            :guilabel:`policy_coverage_part` from the :guilabel:`Source table` 
-            drop-down menu. 
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``policyIdentifier`` field and click :guilabel:`Save and close`.
-
-         .. step:: Embed policy_coverage_detail information under policyCoverageParts
-
-            To include the coverage details from the  
-            ``policy_coverage_detail`` collection, click 
-            :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
-            :guilabel:`policy_coverage_detail` from the :guilabel:`Source table` 
-            drop-down menu and ensure that the :guilabel:`Root path` prefix is 
-            ``policyCoverageParts``.
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``policyIdentifier`` and ``coveragePartCode`` fields, and click 
-            :guilabel:`Save and close`.
-
-         .. step:: Add mappings for the insurabe_object collection 
-
-            To include the coverage information from the  ``insurable_object`` 
-            collection, click :guilabel:`Add` and select 
-            :guilabel:`Embedded array`. Choose :guilabel:`insurable_object` 
-            from the :guilabel:`Source table` drop-down menu. 
-
-         .. step:: Embed policy_limit, policy_deductible, and insurabe_object information 
-
-            To include ``policy_limit`` information, click :guilabel:`Add` and 
-            select :guilabel:`Embedded array`. Choose :guilabel:`policy_limit` 
-            from the :guilabel:`Source table` drop-down menu and ensure that the 
-            :guilabel:`Root path` prefix is ``policyCoverageParts``.
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``policyCoverageDetailIdentifier`` field and click 
-            :guilabel:`Save and close`.
-
-            Repeat the process for ``policy_deductible``. For ``insurable_object``, 
-            select :guilabel:`Embedded document` instead of 
-            :guilabel:`Embedded array`.
-
-         .. step:: Embed insurable_object_party_role 
-
-            Insurable objects have additional relationships to specify the 
-            address and roles played by the different parties. To include this 
-            information, click :guilabel:`Add` and select
-            :guilabel:`Embedded array`. Choose 
-            :guilabel:`insurable_object_party_role` from the 
-            :guilabel:`Source table` drop-down menu. 
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``insurableObjectIdentifier`` field and click 
-            :guilabel:`Save and close`.
-
-         .. step:: Remove referenced collections
-
-            After you add all necessary mappings, you can remove the 
-            ``policyCoveragePart``, ``policyCoverageDetail``, 
-            ``policyDeductible``, and ``policyLimit`` collections from the MDB 
-            view of {+rel-mig+}.
-
-   .. step:: Refactor the Claim domain
-
-      .. procedure:: 
-         :style: connected 
-
-         .. step:: From the MongoDB view, click the claim collection
-
-            On the right side of the screen, the :guilabel:`Mappings` menu 
-            opens.
-
-         .. step:: Embed the claim_party_role table 
-
-            Next to :guilabel:`Mappings to MongoDB Model`, click 
-            :guilabel:`Add`. Click :guilabel:`Embedded array` and select 
-            :guilabel:`claim_party_role` from the :guilabel:`Source table` 
-            drop-down menu.
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``claimIdentifier`` field and click :guilabel:`Save and close`.
-
-         .. step:: Embed the insurable_object table under the claim collection 
-
-            Next to :guilabel:`Mappings to MongoDB Model`, click
-            :guilabel:`Add` and select :guilabel:`Embedded diocuments`. Choose 
-            :guilabel:`insurable_object` from the :guilabel:`Source table` 
-            drop-down menu. 
-
-            Click :guilabel:`Save and close`.
-
-         .. step:: Embed the policy_coverage_detail table within insurableObject 
-
-            Next to :guilabel:`Mappings to MongoDB Model`, click
-            :guilabel:`Add` and select :guilabel:`Embedded array`. Choose
-            :guilabel:`policy_coverage_detail` from the :guilabel:`Source table`
-            drop-down menu.
-
-            Under the :guilabel:`All fields` checkbox, deselect the 
-            ``insurableObjectIdentifier`` field, and click 
-            :guilabel:`Save and close`.
-
-
-Learn More
-----------
-
-
+   Connect to Relational Migrator </mapping-rules/example-insurance-data/connect>
+   Refactor the Party Domain </mapping-rules/example-insurance-data/refactor-party-domain>
+   Refactor the Policy Domain </mapping-rules/example-insurance-data/refactor-policy-domain>
+   Refactor the Claim & Ligitation Domain </mapping-rules/example-insurance-data/refactor-claim-litigation-domain> 
+   Migrate Your Data </mapping-rules/example-insurance-data/migrate-data>  

@@ -1,0 +1,115 @@
+.. _rm-example-refactor-policy-domain:
+
+==========================
+Refactor the Policy Domain
+==========================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+About this Task 
+---------------
+
+Steps 
+-----
+
+.. procedure:: 
+   :style: normal
+         
+   .. step:: From the MongoDB view, click the policy collection
+
+      On the right side of the screen, the :guilabel:`Mappings` menu 
+      opens.
+
+   .. step:: Add mappings for the policy_party_role collection
+
+      Next to :guilabel:`Mappings to MongoDB Model`, click 
+      :guilabel:`Add`. Click :guilabel:`Embedded array` and select 
+      :guilabel:`policy_party_role` from the :guilabel:`Source table` 
+      drop-down menu.
+
+      Under the :guilabel:`All fields` checkbox, deselect the 
+      ``partyIdentifier`` field and click :guilabel:`Save and close`.
+
+   .. step:: Add mappings for the agreement collection
+
+      Next to :guilabel:`Mappings to MongoDB Model`, click 
+      :guilabel:`Add` and select :guilabel:`Embedded document`. Choose 
+      :guilabel:`agreement` from the :guilabel:`Source table` drop-down 
+      menu. 
+
+      Click :guilabel:`Save and close`.
+
+   .. step:: Add mappings for the policy_coverage_part collection
+
+      To include the coverage information from the  
+      ``policy_coverage_part`` collection, click 
+      :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
+      :guilabel:`policy_coverage_part` from the :guilabel:`Source table` 
+      drop-down menu. 
+
+      Under the :guilabel:`All fields` checkbox, deselect the 
+      ``policyIdentifier`` field and click :guilabel:`Save and close`.
+
+   .. step:: Embed policy_coverage_detail information under policyCoverageParts
+
+      To include the coverage details from the  
+      ``policy_coverage_detail`` collection, click 
+      :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
+      :guilabel:`policy_coverage_detail` from the :guilabel:`Source table` 
+      drop-down menu and ensure that the :guilabel:`Root path` prefix is 
+      ``policyCoverageParts``.
+
+      Under the :guilabel:`All fields` checkbox, deselect the 
+      ``policyIdentifier`` and ``coveragePartCode`` fields, and click 
+      :guilabel:`Save and close`.
+
+   .. step:: Add mappings for the insurabe_object collection 
+
+      To include the coverage information from the  ``insurable_object`` 
+      collection, click :guilabel:`Add` and select 
+      :guilabel:`Embedded array`. Choose :guilabel:`insurable_object` 
+      from the :guilabel:`Source table` drop-down menu. 
+
+   .. step:: Embed policy_limit, policy_deductible, and insurabe_object information 
+
+      To include ``policy_limit`` information, click :guilabel:`Add` and 
+      select :guilabel:`Embedded array`. Choose :guilabel:`policy_limit` 
+      from the :guilabel:`Source table` drop-down menu and ensure that the 
+      :guilabel:`Root path` prefix is ``policyCoverageParts``.
+
+      Under the :guilabel:`All fields` checkbox, deselect the 
+      ``policyCoverageDetailIdentifier`` field and click 
+      :guilabel:`Save and close`.
+
+      Repeat the process for ``policy_deductible``. For ``insurable_object``, 
+      select :guilabel:`Embedded document` instead of 
+      :guilabel:`Embedded array`.
+
+   .. step:: Embed insurable_object_party_role 
+
+      Insurable objects have additional relationships to specify the 
+      address and roles played by the different parties. To include this 
+      information, click :guilabel:`Add` and select
+      :guilabel:`Embedded array`. Choose 
+      :guilabel:`insurable_object_party_role` from the 
+      :guilabel:`Source table` drop-down menu. 
+
+      Under the :guilabel:`All fields` checkbox, deselect the 
+      ``insurableObjectIdentifier`` field and click 
+      :guilabel:`Save and close`.
+
+   .. step:: Remove referenced collections
+
+      After you add all necessary mappings, you can remove the 
+      ``policyCoveragePart``, ``policyCoverageDetail``, 
+      ``policyDeductible``, and ``policyLimit`` collections from the MDB 
+      view of {+rel-mig+}.
+
+Learn More
+----------

@@ -1,0 +1,57 @@
+.. _rm-example-refactor-party-domain:
+
+=========================
+Refactor the Party Domain
+=========================
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+About this Task 
+---------------
+
+Steps 
+-----
+
+.. procedure:: 
+   :style: normal
+
+   .. step:: From the MongoDB view, click the party collection
+      
+      On the right side of the screen, the :guilabel:`Mappings` menu opens.
+
+   .. step:: Add mappings for the person, organization, and grouping collections
+
+      Next to :guilabel:`Mappings to MongoDB Model`, click :guilabel:`Add`. 
+      Click :guilabel:`Embedded documents` and select :guilabel:`person` from 
+      the :guilabel:`Source table` drop-down menu.
+      
+      After you click :guilabel:`Save and close`, repeat this process for the 
+      :guilabel:`organization` and :guilabel:`grouping` tables.
+      
+   .. step:: Add mappings for the party_location_address collection
+    
+      Next to :guilabel:`Mappings to MongoDB Model`, click :guilabel:`Add` and 
+      select :guilabel:`Embedded array`. Choose 
+      :guilabel:`party_location_address` from the 
+      :guilabel:`Parent collection` drop-down menu. 
+
+      Under the :guilabel:`All fields` checkbox, deselect the 
+      ``partyIdentifier`` field and click :guilabel:`Save and close`.
+
+   .. step:: Add mappings for the location_address 
+
+      To include the address information within the  ``party_location_address`` 
+      collection, click :guilabel:`Add` and select 
+      :guilabel:`Embedded document`. Choose :guilabel:`location_address` from 
+      the :guilabel:`Source table` drop-down menu. 
+      
+      Click :guilabel:`Save and close`.
+
+Learn More
+----------
