@@ -1,8 +1,8 @@
 .. _rm-example-connect:
 
-=========================
-Refactor the Party Domain
-=========================
+==============================
+Connect to {+rel-mig+}
+==============================
 
 .. default-domain:: mongodb
 
