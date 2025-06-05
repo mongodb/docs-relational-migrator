@@ -98,11 +98,11 @@ Steps
       - ``person``
       - ``organization``
       - ``grouping``
-      - ``party_location_address``
+      - ``partyLocationAddress``
 
       .. important:: 
 
-         Don't delete the ``location_address`` collection, as it still has an 
+         Don't delete the ``locationAddress`` collection, as it still has an 
          existing relationship with the ``insurable_object`` table, which we'll 
          add mapping rules to in a later step.
 

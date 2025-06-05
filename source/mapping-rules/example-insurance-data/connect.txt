@@ -59,5 +59,9 @@ Steps
       By default, {+rel-mig+} displays a horizontally split view of the 
       :guilabel:`Relational` (top) and :guilabel:`MongoDB` (bottom) models. 
 
-Learn More
+Next Steps
 ----------
+
+After you connect to your PostgreSQL database, you can start :ref:`refactoring the
+Party domain <rm-example-refactor-party-domain>`.
+

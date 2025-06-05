@@ -15,28 +15,58 @@ Refactor the Policy Domain
 About this Task 
 ---------------
 
+The Policy domain includes the following key entities:
+
+- **Insurable Object**: An object insured by a policy agreement. 
+- **Insurable Object Party Role**: An associative entitiy which links the 
+  following entities: 
+
+  - Parties
+  - Party Roles
+  - Insurable Objects
+
+- **Agreement Party Role**: An associative entity which links the 
+  following entities: 
+
+  - Parties
+  - Party Roles
+  - Agreements (which are related to a product and policy)
+
+A policy can have both several insurable objects to cover and several parties' 
+agreements involved. For instance, a policy may have many parties involved, 
+and each party might be part of multiple policies. This results in a 
+many-to-many relationship between roles and agreements.
+
+Before You Begin 
+----------------
+
+Refactoring the Policy domain is the third step of the :ref:`insurance data 
+model example tutorial <rm-example-insurance-data>`. Before you refactor the 
+Party domain, ensure that you :ref:`connected to your PostgreSQL database 
+<rm-example-connect>` in {+rel-mig+} and :ref:`refactored the Party domain 
+<rm-example-refactor-party-domain>`.
+
 Steps 
 -----
 
 .. procedure:: 
    :style: normal
          
-   .. step:: From the MongoDB view, click the policy collection
+   .. step:: From the MongoDB view of {+rel-mig+}, click the policy collection
 
       On the right side of the screen, the :guilabel:`Mappings` menu 
       opens.
 
-   .. step:: Add mappings for the policy_party_role collection
+   .. step:: Add mappings for the policy_party_role table
 
-      Next to :guilabel:`Mappings to MongoDB Model`, click 
-      :guilabel:`Add`. Click :guilabel:`Embedded array` and select 
-      :guilabel:`policy_party_role` from the :guilabel:`Source table` 
-      drop-down menu.
+      Next to :guilabel:`Mappings to MongoDB Model`, click :guilabel:`Add`. 
+      Click :guilabel:`Embedded array` and select :guilabel:`policy_party_role` 
+      from the :guilabel:`Source table` drop-down menu.
 
       Under the :guilabel:`All fields` checkbox, deselect the 
-      ``partyIdentifier`` field and click :guilabel:`Save and close`.
+      ``policyIdentifier`` field and click :guilabel:`Save and close`.
 
-   .. step:: Add mappings for the agreement collection
+   .. step:: Add mappings for the agreement table
 
       Next to :guilabel:`Mappings to MongoDB Model`, click 
       :guilabel:`Add` and select :guilabel:`Embedded document`. Choose 
@@ -45,10 +75,9 @@ Steps
 
       Click :guilabel:`Save and close`.
 
-   .. step:: Add mappings for the policy_coverage_part collection
+   .. step:: Add mappings for the policy_coverage_part table
 
-      To include the coverage information from the  
-      ``policy_coverage_part`` collection, click 
+      Next to :guilabel:`Mappings to MongoDB Model`, click 
       :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
       :guilabel:`policy_coverage_part` from the :guilabel:`Source table` 
       drop-down menu. 
@@ -56,27 +85,28 @@ Steps
       Under the :guilabel:`All fields` checkbox, deselect the 
       ``policyIdentifier`` field and click :guilabel:`Save and close`.
 
-   .. step:: Embed policy_coverage_detail information under policyCoverageParts
+   .. step:: Embed policy_coverage_detail information under the policyCoverageParts collection
 
-      To include the coverage details from the  
-      ``policy_coverage_detail`` collection, click 
-      :guilabel:`Add` and select :guilabel:`Embedded array`. Choose 
-      :guilabel:`policy_coverage_detail` from the :guilabel:`Source table` 
-      drop-down menu and ensure that the :guilabel:`Root path` prefix is 
-      ``policyCoverageParts``.
+      Each coverage part has details included in the ``policy_coverage_detail``
+      table. To embed this information, click :guilabel:`Add` and select 
+      :guilabel:`Embedded array`. Choose :guilabel:`policy_coverage_detail` 
+      from the :guilabel:`Source table` drop-down menu and ensure that the 
+      :guilabel:`Root path` prefix is ``policyCoverageParts``.
 
       Under the :guilabel:`All fields` checkbox, deselect the 
       ``policyIdentifier`` and ``coveragePartCode`` fields, and click 
       :guilabel:`Save and close`.
 
-   .. step:: Add mappings for the insurabe_object collection 
+   .. step:: Add mappings for the insurable_object table 
 
       To include the coverage information from the  ``insurable_object`` 
       collection, click :guilabel:`Add` and select 
-      :guilabel:`Embedded array`. Choose :guilabel:`insurable_object` 
+      :guilabel:`Embedded document`. Choose :guilabel:`insurable_object` 
       from the :guilabel:`Source table` drop-down menu. 
 
-   .. step:: Embed policy_limit, policy_deductible, and insurabe_object information 
+      Click :guilabel:`Save and close`.
+
+   .. step:: Embed policy_limit and policy_deductible information under 
 
       To include ``policy_limit`` information, click :guilabel:`Add` and 
       select :guilabel:`Embedded array`. Choose :guilabel:`policy_limit` 
@@ -87,9 +117,7 @@ Steps
       ``policyCoverageDetailIdentifier`` field and click 
       :guilabel:`Save and close`.
 
-      Repeat the process for ``policy_deductible``. For ``insurable_object``, 
-      select :guilabel:`Embedded document` instead of 
-      :guilabel:`Embedded array`.
+      Repeat the process for ``policy_deductible``.
 
    .. step:: Embed insurable_object_party_role 
 
@@ -104,12 +132,24 @@ Steps
       ``insurableObjectIdentifier`` field and click 
       :guilabel:`Save and close`.
 
-   .. step:: Remove referenced collections
+   .. step:: Remove collections that are no longer needed 
+      
+      Now that you mapped all the necessary tables to the ``policy`` collection, 
+      you can delete the following collections from the MongoDB view of 
+      {+rel-mig+}:
 
-      After you add all necessary mappings, you can remove the 
-      ``policyCoveragePart``, ``policyCoverageDetail``, 
-      ``policyDeductible``, and ``policyLimit`` collections from the MDB 
-      view of {+rel-mig+}.
+      - ``agreement``
+      - ``policyPartyRole``
+      - ``policyCoveragePart``
+      - ``policyCoverageDetail``
+      - ``policyDeductible``
+      - ``policyLimit``
 
-Learn More
+Next Steps
 ----------
+
+Next Steps
+----------
+
+After you map the Policy domain, you can refactor the Claim & Litigation domain 
+in a similar manner. See :ref:`rm-example-refactor-claim-litigation-domain`.
