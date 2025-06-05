@@ -73,7 +73,7 @@ Steps
       :guilabel:`Embedded array`. Choose :guilabel:`party_location_address` from 
       the :guilabel:`Source table` drop-down menu. 
 
-      Under the :guilabel:`All fields` checkbox, deselect the 
+      Under the :guilabel:`All fields` checkbox, uncheck the 
       ``partyIdentifier`` field and click :guilabel:`Save and close`.
 
    .. step:: Add mappings for the location_address table

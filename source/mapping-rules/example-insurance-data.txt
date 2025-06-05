@@ -35,10 +35,9 @@ This example requires the following applications:
 
 - {+mdb-rel-mig+} version 1.4.3 or higher
 
-- MongoDB version 7.0 or higher: Ensure you have access to a MongoDB instance 
-  with write permissions to create the new database to where you will migrate 
-  the data. You can install the latest version of MongoDB Community or deploy a 
-  free MongoDB Atlas cluster.
+- MongoDB version 7.0 or higher: Ensure you have access to a MongoDB Atlas 
+  cluster with write permissions to create the new database to where you will 
+  migrate the data. 
 
 - PostgreSQL version 16 or higher: Ensure you have access to a PostgreSQL 
   database server instance with permissions to create a new database and user. 
@@ -134,10 +133,15 @@ The example tutorial consists of the following steps:
       Refactor the Policy domain in the MongoDB view of {+rel-mig+}. See
       :ref:`rm-example-refactor-policy-domain`.
 
-   .. step:: Refactor the Claim & Litigation domain 
+   .. step:: Refactor the Claim domain 
 
-      Refactor the Claim & Litigation domains in the MongoDB view of 
-      {+rel-mig+}. See :ref:`rm-example-refactor-claim-litigation-domain`.
+      Refactor the Claim domain in the MongoDB view of 
+      {+rel-mig+}. See :ref:`rm-example-refactor-claim-domain`.
+
+   .. step:: Refactor the Litigation domain 
+
+      Refactor the Litigation domain in the MongoDB view of 
+      {+rel-mig+}. See :ref:`rm-example-refactor-litigation-domain`.
 
    .. step:: Migrate your data to MongoDB
 
@@ -151,5 +155,6 @@ The example tutorial consists of the following steps:
    Connect to Relational Migrator </mapping-rules/example-insurance-data/connect>
    Refactor the Party Domain </mapping-rules/example-insurance-data/refactor-party-domain>
    Refactor the Policy Domain </mapping-rules/example-insurance-data/refactor-policy-domain>
-   Refactor the Claim & Ligitation Domain </mapping-rules/example-insurance-data/refactor-claim-litigation-domain> 
+   Refactor the Claim Domain </mapping-rules/example-insurance-data/refactor-claim-domain> 
+   Refactor the Litigation Domain </mapping-rules/example-insurance-data/refactor-litigation-domain>
    Migrate Your Data </mapping-rules/example-insurance-data/migrate-data>  

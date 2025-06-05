@@ -21,7 +21,7 @@ The Policy domain includes the following key entities:
 - **Insurable Object Party Role**: An associative entitiy which links the 
   following entities: 
 
-  - Parties
+  - Party
   - Party Roles
   - Insurable Objects
 
@@ -63,7 +63,7 @@ Steps
       Click :guilabel:`Embedded array` and select :guilabel:`policy_party_role` 
       from the :guilabel:`Source table` drop-down menu.
 
-      Under the :guilabel:`All fields` checkbox, deselect the 
+      Under the :guilabel:`All fields` checkbox, uncheck the 
       ``policyIdentifier`` field and click :guilabel:`Save and close`.
 
    .. step:: Add mappings for the agreement table
@@ -82,7 +82,7 @@ Steps
       :guilabel:`policy_coverage_part` from the :guilabel:`Source table` 
       drop-down menu. 
 
-      Under the :guilabel:`All fields` checkbox, deselect the 
+      Under the :guilabel:`All fields` checkbox, uncheck the 
       ``policyIdentifier`` field and click :guilabel:`Save and close`.
 
    .. step:: Embed policy_coverage_detail information under the policyCoverageParts collection
@@ -93,7 +93,7 @@ Steps
       from the :guilabel:`Source table` drop-down menu and ensure that the 
       :guilabel:`Root path` prefix is ``policyCoverageParts``.
 
-      Under the :guilabel:`All fields` checkbox, deselect the 
+      Under the :guilabel:`All fields` checkbox, uncheck the 
       ``policyIdentifier`` and ``coveragePartCode`` fields, and click 
       :guilabel:`Save and close`.
 
@@ -113,7 +113,7 @@ Steps
       from the :guilabel:`Source table` drop-down menu and ensure that the 
       :guilabel:`Root path` prefix is ``policyCoverageParts``.
 
-      Under the :guilabel:`All fields` checkbox, deselect the 
+      Under the :guilabel:`All fields` checkbox, uncheck the 
       ``policyCoverageDetailIdentifier`` field and click 
       :guilabel:`Save and close`.
 
@@ -128,7 +128,7 @@ Steps
       :guilabel:`insurable_object_party_role` from the 
       :guilabel:`Source table` drop-down menu. 
 
-      Under the :guilabel:`All fields` checkbox, deselect the 
+      Under the :guilabel:`All fields` checkbox, uncheck the 
       ``insurableObjectIdentifier`` field and click 
       :guilabel:`Save and close`.
 
@@ -148,8 +148,5 @@ Steps
 Next Steps
 ----------
 
-Next Steps
-----------
-
-After you map the Policy domain, you can refactor the Claim & Litigation domain 
-in a similar manner. See :ref:`rm-example-refactor-claim-litigation-domain`.
+After you map the Policy domain, refactor the Claim domain in a similar manner. 
+See :ref:`rm-example-refactor-claim-domain`.
