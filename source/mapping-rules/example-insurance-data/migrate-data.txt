@@ -50,7 +50,6 @@ Steps
 
       In this example, we will leave all options as default. This will migrate 
       our data in :guilabel:`Snapshot` mode, which loads all your data at once. 
-      To learn about more sync job alternatives, see :ref:`rm-sync-jobs`.
 
       After you review the options, click :guilabel:`Review Summary`
 
@@ -62,3 +61,8 @@ Steps
       Once ready, {+rel-mig+} displays the the ``COMPLETED`` tag in the 
       :guilabel:`Snapshot stage` card. You can now connect to your database and 
       view how all your data loaded in MongoDB Atlas or Compass.
+
+Learn More 
+----------
+
+- :ref:`rm-sync-jobs`

@@ -12,6 +12,13 @@ Refactor the Litigation Domain
    :depth: 2
    :class: singlecol
 
+Litigations may have several parties involved, in which each party plays a 
+specific role with an associated claim. Additionally, we will embed fields in 
+the claim domain apart from its identifier. This way, we can have a snapshot of 
+the claim details at the time the litigation was made, so even if the claim 
+details change, we won’t lose the original claim data associated with the 
+litigation.
+
 About this Task 
 ---------------
 
@@ -31,6 +38,10 @@ The Litigation domain includes the following key entities:
   - Party
   - Party Roles
   - Insurable Objects
+
+The relationship between litigations and parties through the facilitated through 
+the ``litigation_party_role`` table, which we will represent in MongoDB by using 
+an embedded array. 
 
 Before You Begin
 ----------------
@@ -107,9 +118,6 @@ Steps
         - ``locationAddress``
         - ``insurableObjectParty``
 
-Next Steps
-----------
-
 You have modeled the entire relationship schema in just five collections: 
 
 - ``party``
@@ -117,6 +125,9 @@ You have modeled the entire relationship schema in just five collections:
 - ``policy``
 - ``claim``
 - ``litigation``
+
+Next Steps
+----------
 
 Now that you completed your model, you need to :ref:`migrate the data 
 <rm-example-insurance-migrate-data>` to your MongoDB instance. 

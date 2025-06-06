@@ -12,7 +12,7 @@ Example: Insurance Data Models
    :depth: 2
    :class: singlecol
 
-In this tutorial, you will use the {+rel-mig+} to transform a 21-table schema 
+This sample tutorial uses the {+rel-mig+} to transform a 21-table schema 
 into a simple five-collection MongoDB model.
 
 About this Task
@@ -21,12 +21,13 @@ About this Task
 In the sample data set, all people, organizations, and groups are represented as 
 Parties, which can be related to other major objects with specified roles. The 
 Party design also provides a common approach for describing communication 
-identifiers, relationships between parties, and legal identifiers.
+identifiers, relationships between parties, and legal identifiers. 
 
-After you connect to your PostgreSQL database, you will use the 
-{+rel-mig+} to port the Object Management Group’s 
-`Party Role model <https://www.omg.org/spec/PC/1.0/PDF>`__ from a relational 
-structure to MongoDB’s document model.
+In this tutorial, you will use the {+rel-mig+} to port the Object Management 
+Group’s `Party Role model <https://www.omg.org/spec/PC/1.0/PDF>`__ from a 
+relational structure to MongoDB’s document model. Specifically, you will 
+refactor the Party model in the context of the Policy, Claim, and Litigation 
+domains.
 
 Before You Begin 
 ----------------
@@ -35,9 +36,9 @@ This example requires the following applications:
 
 - {+mdb-rel-mig+} version 1.4.3 or higher
 
-- MongoDB version 7.0 or higher: Ensure you have access to a MongoDB Atlas 
-  cluster with write permissions to create the new database to where you will 
-  migrate the data. 
+- `MongoDB Atlas <https://www.mongodb.com/atlas/database?tck=docs_server>__`: 
+   Ensure you have access to an Atlas cluster with write permissions to create 
+   the new database to where you will migrate the data. 
 
 - PostgreSQL version 16 or higher: Ensure you have access to a PostgreSQL 
   database server instance with permissions to create a new database and user. 

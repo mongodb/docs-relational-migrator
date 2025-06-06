@@ -12,6 +12,15 @@ Refactor the Party Domain
    :depth: 2
    :class: singlecol
 
+In the original PostgreSQL schema, parties are represented through one-to-one 
+relationships. The Party table holds the common attributes for all parties, 
+while the other tables store specific information for each party class. These 
+differences result in distinct fields for each class, which forces tabular 
+schemas like PostgreSQL to create new tables. 
+
+You can embed this information under a single MongoDB ``party`` document by 
+adding mappings for each table in the relational database. 
+
 About this Task 
 ---------------
 
@@ -30,14 +39,6 @@ A Party includes the following key entities:
 
 - **Communication Identity**: Includes information such as the email, phone, and 
   address for a Party. 
-
-In the original PostgreSQL schema, parties are represented through one-to-one 
-relationships. The Party table holds the common attributes for all parties, 
-while the other tables store specific information for each party class. These 
-differences result in distinct fields for each class, which forces tabular 
-schemas like PostgreSQL to create new tables. You can embed all this information 
-under a single MongoDB document by adding mappings for each table in the 
-relational database. 
 
 Before You Begin
 ----------------
@@ -109,5 +110,5 @@ Steps
 Next Steps
 ----------
 
-After you map the Party domain, you can refactor the Policy domain in a similar 
-manner. See :ref:`rm-example-refactor-policy-domain`.
+After you map the Party domain, you can refactor the Policy domain. See 
+:ref:`rm-example-refactor-policy-domain`.

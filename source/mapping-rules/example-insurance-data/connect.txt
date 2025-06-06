@@ -65,3 +65,8 @@ Next Steps
 After you connect to your PostgreSQL database, you can start :ref:`refactoring the
 Party domain <rm-example-refactor-party-domain>`.
 
+Learn More
+----------
+
+- :ref:`rm-database-connections`
+- :ref:`rm-connect-to-postgres`

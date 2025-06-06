@@ -15,20 +15,12 @@ Refactor the Claim Domain
 About this Task 
 ---------------
 
-The Claim & Litigation domain includes the following key entities:
+The Claim domain includes the following key entities:
 
 - **Claim**: Claim for coverage or compensation
-- **Litigation**: Claim litigation 
 - **Claim Party Role**: An associative entity which links the following entities:
 
   - Party
-  - Party Roles
-  - Insurable Objects
-
-- **Litigation Party Role**: An associative entity which links the following 
-  entities:
-
-  - Claims
   - Party Roles
   - Insurable Objects
 
@@ -38,8 +30,6 @@ The Claim & Litigation domain includes the following key entities:
   - Party
   - Party Roles
   - Insurable Objects
-
-In this step, the Cliaim and Litigation entities are closely related.
 
 Before You Begin
 ----------------

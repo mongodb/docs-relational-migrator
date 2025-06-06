@@ -12,6 +12,15 @@ Refactor the Policy Domain
    :depth: 2
    :class: singlecol
 
+A policy can have both several insurable objects to cover and several parties' 
+agreements involved. For instance, a policy may have many parties involved, 
+and each party might be part of multiple policies. This results in a 
+many-to-many relationship between roles and agreements.
+
+Similar to the Party domain, you can embed this information under the 
+MongoDB ``policy`` document by adding mappings for each table in the relational 
+database. 
+
 About this Task 
 ---------------
 
@@ -31,11 +40,6 @@ The Policy domain includes the following key entities:
   - Parties
   - Party Roles
   - Agreements (which are related to a product and policy)
-
-A policy can have both several insurable objects to cover and several parties' 
-agreements involved. For instance, a policy may have many parties involved, 
-and each party might be part of multiple policies. This results in a 
-many-to-many relationship between roles and agreements.
 
 Before You Begin 
 ----------------
