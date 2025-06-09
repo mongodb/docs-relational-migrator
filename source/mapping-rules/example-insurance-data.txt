@@ -37,8 +37,8 @@ This example requires the following applications:
 - {+mdb-rel-mig+} version 1.4.3 or higher
 
 - `MongoDB Atlas <https://www.mongodb.com/atlas/database?tck=docs_server>`__: 
-   Ensure you have access to an Atlas cluster with write permissions to create 
-   the new database to where you will migrate the data. 
+  Ensure you have access to an Atlas cluster with write permissions to create 
+  the new database to where you will migrate the data. 
 
 - PostgreSQL version 16 or higher: Ensure you have access to a PostgreSQL 
   database server instance with permissions to create a new database and user. 
