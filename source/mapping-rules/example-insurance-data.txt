@@ -12,8 +12,8 @@ Example: Insurance Data Models
    :depth: 2
    :class: singlecol
 
-This sample tutorial uses the {+rel-mig+} to transform a 21-table schema 
-into a simple five-collection MongoDB model.
+This sample tutorial uses the {+rel-mig+} to transform a 21-table insurance data 
+schema into a simple five-collection MongoDB model.
 
 About this Task
 ---------------
