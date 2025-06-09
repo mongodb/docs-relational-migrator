@@ -12,6 +12,13 @@ Refactor the Claim Domain
    :depth: 2
    :class: singlecol
 
+In this step, you will refactor the Claim domain by adding mappings for 
+each related table in the relational database and embedding all claim-related 
+information under a single MongoDB ``claim`` document. Since the Claim and 
+Litigation domains are closely related, you will also recreate the many-to-many 
+relationship between the two domains by referencing the Litigation entity 
+from the ``claim`` document.
+
 About this Task 
 ---------------
 

@@ -12,8 +12,8 @@ Migrate Your Data to MongoDB
    :depth: 2
    :class: singlecol
 
-About this Task 
----------------
+Now that you have simplified your data model into five collections, you can 
+migrate your data from PostgreSQL to MongoDB Atlas.
 
 Before You Begin 
 ----------------

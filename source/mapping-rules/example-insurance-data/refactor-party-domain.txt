@@ -12,8 +12,8 @@ Refactor the Party Domain
    :depth: 2
    :class: singlecol
 
-In the original PostgreSQL schema, parties are represented through one-to-one 
-relationships. The Party table holds the common attributes for all parties, 
+The original PostgreSQL schema represents parties through one-to-one 
+relationships. The ``party`` table holds the common attributes for all parties, 
 while the other tables store specific information for each party class. These 
 differences result in distinct fields for each class, which forces tabular 
 schemas like PostgreSQL to create new tables. 

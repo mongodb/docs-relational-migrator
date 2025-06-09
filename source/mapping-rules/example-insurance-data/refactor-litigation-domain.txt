@@ -13,11 +13,11 @@ Refactor the Litigation Domain
    :class: singlecol
 
 Litigations may have several parties involved, in which each party plays a 
-specific role with an associated claim. Additionally, we will embed fields in 
-the claim domain apart from its identifier. This way, we can have a snapshot of 
-the claim details at the time the litigation was made, so even if the claim 
-details change, we won’t lose the original claim data associated with the 
-litigation.
+specific role with an associated claim. Since the Claim and Litigation domains 
+are closely related, we will embed fields in the claim domain apart from its 
+identifier. This way, we can have a snapshot of the claim details at the time 
+the litigation was made, so even if the claim details change, we won’t lose the 
+original claim data associated with the litigation.
 
 About this Task 
 ---------------
@@ -39,7 +39,7 @@ The Litigation domain includes the following key entities:
   - Party Roles
   - Insurable Objects
 
-The relationship between litigations and parties through the facilitated through 
+The relationship between litigations and parties are the facilitated through 
 the ``litigation_party_role`` table, which we will represent in MongoDB by using 
 an embedded array. 
 
